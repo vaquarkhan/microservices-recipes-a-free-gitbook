@@ -40,7 +40,6 @@ Microservice architecture, or simply microservices, is a distinctive method of d
 - from  https://martinfowler.com/articles/microservices.html
 
 
-![Alt Text](http://blog.arungupta.me/wp-content/uploads/2015/04/microservices-function.png)
 
 
 The Microservices approach is about breaking your system ("pile of code") into many small services, each typically has its own:
@@ -54,7 +53,6 @@ The Microservices approach is about breaking your system ("pile of code") into m
 
 
 ## Why-Microservice 
-![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZc-LdXFX_xqNCIup-yjaBBg7StcER0cLWR8Ofh5CjkSj6tOv)
 
 * Microservice make our system loosely coupled, i.e. if we need to update, repair, or replace a Microservice, we don't need to rebuild our entire application, just swap out the part that needs it.
 * To built each Microservice can use different languages and tools. Microservices communicate with well defined interface
@@ -215,9 +213,6 @@ Consider this architecture style for:
 
 
 -------------------------------------------------------------------------------------------------------------
-
-
-![Alt Text](https://labs.sogeti.com/wp-content/uploads/2016/11/microservices.gif)
 
 
 
@@ -767,16 +762,6 @@ Note: If the mock parameter is included in a request to the production environme
 ### Rest
 - https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
 
-## The Sins of Microservices 
-
-![Alt Text](https://images-na.ssl-images-amazon.com/images/I/51lIAjGuqgL._SX342_.jpg)
-
-
-- https://www.infoq.com/articles/seven-uservices-antipatterns
-- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
-- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
-- https://dzone.com/articles/microservices-please-dont
-- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
 
 -----------------------------------------------------------------
 ### Link
@@ -810,8 +795,29 @@ Note: If the mock parameter is included in a request to the production environme
 - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
 
 -------------------------------------------------------------------
+### Microservices Anti Patterns
 
-### Video 
+![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
+
+- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
+- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
+- https://vimeo.com/198927025
+- https://vimeo.com/118020043
+- https://www.youtube.com/watch?v=uTGIrzzmcv8
+- https://www.youtube.com/watch?v=VaYmRe104HU
+- https://www.youtube.com/watch?v=X0tjziAQfNQ
+- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
+- https://vimeo.com/118020043
+
+## The Sins of Microservices 
+
+- https://www.infoq.com/articles/seven-uservices-antipatterns
+- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
+- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
+- https://dzone.com/articles/microservices-please-dont
+- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
+
+### Microservices Video 
 
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
 
@@ -845,23 +851,6 @@ Note: If the mock parameter is included in a request to the production environme
 - https://www.youtube.com/watch?v=yVZS1HZrlEw
 - https://www.youtube.com/watch?v=k42jqkjtYKY
 - https://www.infoq.com/presentations/aggregates-modular-microservices
-
-
-### Microservices Anti Patterns
-
-![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
-
-- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
-- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
-- https://vimeo.com/198927025
-- https://vimeo.com/118020043
-- https://www.youtube.com/watch?v=uTGIrzzmcv8
-- https://www.youtube.com/watch?v=VaYmRe104HU
-- https://www.youtube.com/watch?v=X0tjziAQfNQ
-- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
-- https://vimeo.com/118020043
-
-
 
 
 -------------------------------------------------------------------
