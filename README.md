@@ -1,5 +1,5 @@
 
-# Microservices Recipes- A Free GitBook 
+# Microservices Recipes- a free GitBook 
 
 #### Microservices are small, autonomous services that work together. 
 
