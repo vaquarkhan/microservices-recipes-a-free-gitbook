@@ -98,17 +98,11 @@ With our individual services being small in size, the cost to replace them with 
 * Competency needed to manage and deploy the microservices,devops 
 * http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html
 
-
-
 ![Alt Text](https://media.licdn.com/dms/image/C4E22AQET5GfBwLR_VQ/feedshare-shrink_8192/0?e=1547067600&v=beta&t=gPeIppK9kNSLlM-fhooUBCOmXOaX359OFyhfO3cwXno)
-
-
-
 
 ## Design Guidelines
 
-### Architecture Principles
-* Single Responsibility Principle 
+### Architecture Principles* Single Responsibility Principle 
 * Domain Driven Design
 * Start withrelatively broad service boundaries to begin with, refactoring to smaller ones (based on business requirements) 
 
@@ -216,6 +210,10 @@ Consider this architecture style for:
 
 * An organization that consists of small development teams.
 
+### How to Model Microservice 
+
+
+
 ###  Microservices vs SOA
 
 ![Alt Text](http://lh6.ggpht.com/-rMus2S1lWlY/VSbOJPqvxzI/AAAAAAAAAhI/7FZBTbZRLk8/MicroservicesVsSOA-SystemLayers.png?imgmax=800)
@@ -223,7 +221,6 @@ Consider this architecture style for:
 - https://dzone.com/articles/microservices-vs-soa-whats-the-difference
 - http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
 
-### How to Model Microservice 
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -854,6 +851,7 @@ Note: If the mock parameter is included in a request to the production environme
 - https://www.youtube.com/watch?v=GzrZworHpIk
 - https://www.youtube.com/watch?v=MrV0DqTqpFU
 - https://www.youtube.com/watch?v=Jw6TYEb1Opw
+- https://www.youtube.com/watch?v=KPtLbSEFe6c
 
 ### Microservices Patterns
 
