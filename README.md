@@ -180,6 +180,10 @@ With our individual services being small in size, the cost to replace them with 
 * serverless architecture
 * monitoring and logging for microservices
 
+[![Watch the video](https://vimeo.com/131632250)
+
+
+
 ### Microservice Design Patterns
 * [Design patterns for microservices](https://azure.microsoft.com/en-us/blog/design-patterns-for-microservices/)
 * [Microservice Design Patterns](http://blog.arungupta.me/microservice-design-patterns/)
@@ -217,6 +221,9 @@ Consider this architecture style for:
 
 - https://dzone.com/articles/microservices-vs-soa-whats-the-difference
 - http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
+
+### How to Model Microservice 
+
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -799,6 +806,7 @@ Note: If the mock parameter is included in a request to the production environme
 - https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
 - https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
 - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+- https://samnewman.io/talks/principles-of-microservices/
 
 -------------------------------------------------------------------
 ### Microservices Anti Patterns
