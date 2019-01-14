@@ -882,6 +882,14 @@ Note: If the mock parameter is included in a request to the production environme
 - https://www.youtube.com/watch?v=k42jqkjtYKY
 - https://www.infoq.com/presentations/aggregates-modular-microservices
 
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| Developing Microservices with Aggregates Chris Richardson |- https://www.infoq.com/presentations/aggregates-modular-microservices
+
+
+
+
+
 
 -------------------------------------------------------------------
 ### Code 
