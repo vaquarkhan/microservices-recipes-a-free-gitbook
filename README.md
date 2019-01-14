@@ -211,6 +211,12 @@ Consider this architecture style for:
 
 * An organization that consists of small development teams.
 
+###  Microservices vs SOA
+
+![Alt Text](http://lh6.ggpht.com/-rMus2S1lWlY/VSbOJPqvxzI/AAAAAAAAAhI/7FZBTbZRLk8/MicroservicesVsSOA-SystemLayers.png?imgmax=800)
+
+- https://dzone.com/articles/microservices-vs-soa-whats-the-difference
+- http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
 
 -------------------------------------------------------------------------------------------------------------
 
