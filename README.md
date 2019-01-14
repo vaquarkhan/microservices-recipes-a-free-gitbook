@@ -98,7 +98,9 @@ With our individual services being small in size, the cost to replace them with 
 * Competency needed to manage and deploy the microservices,devops 
 * http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html
 
-![Alt Text](https://media.licdn.com/dms/image/C4E22AQET5GfBwLR_VQ/feedshare-shrink_8192/0?e=1547067600&v=beta&t=gPeIppK9kNSLlM-fhooUBCOmXOaX359OFyhfO3cwXno)
+
+![Alt Text](https://pbs.twimg.com/media/DEJ3V2xUwAIVS7i.jpg)
+
 
 ## Design Guidelines
 
