@@ -962,10 +962,10 @@ Inspired by the [coming soon...]().
 
 ------------------------------------------------------------------------------------------------------
 
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Note.svg/2000px-Note.svg.png)
+![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-## Note :  Still fixing this book and adding content ,referance ,formatting etc ,You are welcome to participate and contribute to build one page to get all good microservice resources .give back to Technical community :)     
+#### Note :  Still fixing this book and adding content ,referance ,formatting etc ,You are welcome to participate and contribute to build one page to get all good microservice resources .give back to Technical community :)     
     
     
     
