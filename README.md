@@ -29,7 +29,7 @@
 Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations. The trend has grown popular in recent years as Enterprises look to become more Agile and move towards a DevOps and continuous testing. Microservices can help create scalable, testable software that can be delivered weekly, not yearly.
 
 ![Alt Text](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/microservices-logical.svg)
-
+ Microservices architecture (Image courtesy: Cloud Application Architecture Guide).
 
 * As a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API
 * Services are built around business capabilities
@@ -876,15 +876,16 @@ Note: If the mock parameter is included in a request to the production environme
 No                  |    about     | url
 ------------------- | ------------ | -------------------
 1| Developing Microservices with Aggregates Chris Richardson |- https://www.infoq.com/presentations/aggregates-modular-microservices
-2| --|- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
-3|-- |- https://www.infoq.com/presentations/microservices-patterns-practices-panel
-4|-- |- https://www.youtube.com/watch?v=_YzzxrSIQGw
-5|-- |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
-6|-- |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
-7|-- |- https://www.youtube.com/watch?v=84W9iY3CwdQ
-8|-- |- https://www.youtube.com/watch?v=yVZS1HZrlEw
-9|-- |- https://www.youtube.com/watch?v=k42jqkjtYKY
-10|-- |- https://www.infoq.com/presentations/aggregates-modular-microservices
+2| Top 5+ Microservices Architecture and Design Best Practices
+Ajitesh Kumar  |- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+3|Microservices: Patterns and Practices Panel
+C. Richardson, R. Shoup, L. Ryan, R. Tangirala, and R. Schloming participate in a discussion on microservices and the challenges faced at scale, the strategies to use and more. |- https://www.infoq.com/presentations/microservices-patterns-practices-panel
+4 Microservices Patterns Red Hat Videos  |- https://www.youtube.com/watch?v=_YzzxrSIQGw
+5|7 Microservice Patterns Explained (Ivar Grimstad)  |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
+6|Three Microservice Patterns to Tear Down Your Monoliths  |- https://www.youtube.com/watch?v=84W9iY3CwdQ
+7|14 Architectural patterns for microservice development  |- https://www.youtube.com/watch?v=yVZS1HZrlEw
+8|Reducing Microservices Architecture Complexity with Istio and Kubernetes  |- https://www.youtube.com/watch?v=k42jqkjtYKY
+9|Developing Microservices with Aggregates  |- https://www.infoq.com/presentations/aggregates-modular-microservices
 
 
 
