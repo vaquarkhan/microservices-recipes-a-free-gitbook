@@ -174,7 +174,6 @@ With our individual services being small in size, the cost to replace them with 
 * serverless architecture
 * monitoring and logging for microservices
 
-[![Watch the video]()
 
 [![asciicast](https://i.vimeocdn.com/video/523960449.webp?mw=1000&mh=563&q=70)](https://vimeo.com/131632250)
 
