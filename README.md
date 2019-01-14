@@ -876,11 +876,9 @@ Note: If the mock parameter is included in a request to the production environme
 No                  |    about     | url
 ------------------- | ------------ | -------------------
 1| Developing Microservices with Aggregates Chris Richardson |- https://www.infoq.com/presentations/aggregates-modular-microservices
-2| Top 5+ Microservices Architecture and Design Best Practices
-Ajitesh Kumar  |- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
-3|Microservices: Patterns and Practices Panel
-C. Richardson, R. Shoup, L. Ryan, R. Tangirala, and R. Schloming participate in a discussion on microservices and the challenges faced at scale, the strategies to use and more. |- https://www.infoq.com/presentations/microservices-patterns-practices-panel
-4 Microservices Patterns Red Hat Videos  |- https://www.youtube.com/watch?v=_YzzxrSIQGw
+2| Top 5+ Microservices Architecture and Design Best Practices Ajitesh Kumar  |- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+3|Microservices: Patterns and Practices Panel C. Richardson, R. Shoup, L. Ryan, R. Tangirala, and R. Schloming participate in a discussion on microservices and the challenges faced at scale, the strategies to use and more. |-https://www.infoq.com/presentations/microservices-patterns-practices-panel
+4 | Microservices Patterns Red Hat Videos  |- https://www.youtube.com/watch?v=_YzzxrSIQGw
 5|7 Microservice Patterns Explained (Ivar Grimstad)  |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
 6|Three Microservice Patterns to Tear Down Your Monoliths  |- https://www.youtube.com/watch?v=84W9iY3CwdQ
 7|14 Architectural patterns for microservice development  |- https://www.youtube.com/watch?v=yVZS1HZrlEw
