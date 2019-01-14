@@ -210,9 +210,6 @@ Consider this architecture style for:
 
 * An organization that consists of small development teams.
 
-### How to Model Microservice 
-
-
 
 ###  Microservices vs SOA
 
@@ -852,6 +849,7 @@ Note: If the mock parameter is included in a request to the production environme
 - https://www.youtube.com/watch?v=MrV0DqTqpFU
 - https://www.youtube.com/watch?v=Jw6TYEb1Opw
 - https://www.youtube.com/watch?v=KPtLbSEFe6c
+- https://www.youtube.com/watch?v=ez9GWESKG4I
 
 ### Microservices Patterns
 
