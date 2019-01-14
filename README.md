@@ -196,6 +196,18 @@ This document borrows heavily from:
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 * [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) 
 
+### Validate microservices design 
+
+After you identify the microservices in your application, validate your design against the following criteria:
+
+* 0Each service has a single responsibility.
+* There are no chatty calls between services. If splitting functionality into two services causes them to be overly chatty, it may be a symptom that these functions belong in the same service.
+* Each service is small enough that it can be built by a small team working independently.
+* There are no inter-dependencies that will require two or more services to be deployed in lock-step. It should always be possible to deploy a service without redeploying any other services.
+* Services are not tightly coupled, and can evolve independently.
+* Your service boundaries will not create problems with data consistency or integrity. Sometimes it's important to maintain data consistency by putting functionality into a single microservice. That said, consider whether you really need strong consistency. There are strategies for addressing eventual consistency in a distributed system, and the benefits of decomposing services often outweigh the challenges of managing eventual consistency.
+
+- from docs.microsoft.com
 
 ### When to use this architecture
 
@@ -217,6 +229,11 @@ Consider this architecture style for:
 - https://dzone.com/articles/microservices-vs-soa-whats-the-difference
 - http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
 
+
+### What is BoundedContext 
+
+DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
+Martin fowler
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -801,7 +818,8 @@ Note: If the mock parameter is included in a request to the production environme
 - https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
 - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
 - https://samnewman.io/talks/principles-of-microservices/
-
+- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
+- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
 -------------------------------------------------------------------
 ### Microservices Anti Patterns
 
@@ -944,7 +962,7 @@ Inspired by the [coming soon...]().
 
     
 
-    
+## Note :  i still fixing this book and adding content referance , not final version :)     
     
     
     
