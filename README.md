@@ -412,7 +412,7 @@ No                  |    about     | url
 
 
 -------------------------------------------------------------------
-### Code 
+ 
 
 ![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
 
@@ -482,38 +482,36 @@ No               |  url
 
 ### Link
 
-- Twitter: https://dev.twitter.com/docs/api
-- Facebook: http://developers.facebook.com/docs/reference/api/
-- LinkedIn: https://developer.linkedin.com/apis
-- https://developers.google.com/+/web/api/rest/latest/activities/list
-- http://restfulapi.net/resource-naming/
-- https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
-- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#deployment-package
-- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/ 
-- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
-- https://www.martinfowler.com/microservices/
-- https://opensource.com/article/18/4/guide-design-microservices
-- https://microservices.io/patterns/microservices.html
-- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
-- https://blog.philipphauer.de/restful-api-design-best-practices/
-- https://martinfowler.com/tags/domain%20driven%20design.html
-- http://dddcommunity.org/
-- https://www.infoq.com/presentations/ddd-microservices-2016
-- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
-- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
-- https://martinfowler.com/bliki/MicroservicePrerequisites.html
-- https://martinfowler.com/bliki/DevOpsCulture.html"
-- https://semver.org/ 
-- https://cloud.google.com/apis/design/versioning
-- https://pivotal.io/cloud-native
-- https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
-- https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
-- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
-- https://samnewman.io/talks/principles-of-microservices/
-- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
-- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
-- https://martinfowler.com/articles/microservices.html
-- https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| Twitter |- https://developer.twitter.com/en/docs
+2| Facebook |- https://developer.twitter.com/en/docs
+3| LinkedIn |- https://www.linkedin.com/developers#
+4| Google |- https://developers.google.com/+/web/api/rest/latest/activities/list
+8| Microservices in Practice - Key Architectural Concepts of an MSA  |- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/
+9|Guidelines for Designing Microservices  |- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
+10| Microservices Resource Guide  |- https://www.martinfowler.com/microservices/
+10| 5 guiding principles you should know before you design a microservice   |- https://opensource.com/article/18/4/guide-design-microservices 
+11| Pattern: Microservice Architecture  |- https://microservices.io/patterns/microservices.html
+12| Scaling Uber from 1 to 100s of Services   |- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
+13| tagged by: domain driven design    |- https://martinfowler.com/tags/domain%20driven%20design.html
+14| DDD - The Bounded Context Explained   |- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
+15| MicroservicePrerequisites    |- https://martinfowler.com/bliki/MicroservicePrerequisites.html
+16| DevOpsCulture     |- https://martinfowler.com/bliki/DevOpsCulture.html
+17| What are Cloud-Native Applications?      |-  https://pivotal.io/cloud-native
+18| JSONP     |-  https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about
+19| Microservices architecture style      |-  https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+20| Microservices architecture       |-  https://samnewman.io/talks/principles-of-microservices/
+21| Designing microservices: Identifying microservice boundaries  |-  https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
+| DDD Strategic Patterns: How to Define Bounded Contexts   |-  https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
+22| Microservices    |- https://martinfowler.com/articles/microservices.html
+23| Daniel Jacobson on Ephemeral APIs and Continuous Innovation at Netflix     |- https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
+24| Versioning       |- https://cloud.google.com/apis/design/versioning
+25|Semantic Versioning 2.0.0      |-https://semver.org/
+26| RESTful API Design. Best Practices in a Nutshell.   |- https://blog.philipphauer.de/restful-api-design-best-practices/
+27| Rest API Tutorial |- https://restfulapi.net/resource-naming/
+28| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+
 
 -------------------------------------------------------------------
 ### Microservices Anti Patterns
