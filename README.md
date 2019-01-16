@@ -299,11 +299,8 @@ Martin fowler
 - [Testing Strategies in a Microservice Architecture](http://martinfowler.com/articles/microservice-testing/) - Approaches for managing the additional testing complexity of multiple independently deployable components.
 - [Your Server as a Function](http://monkey.org/~marius/funsrv.pdf) :small_orange_diamond:<sup>PDF</sup> - Describes three abstractions which combine to present a powerful programming model for building safe, modular, and efficient server software: Composable futures, services and filters.
 
-
------
-
 <ul>
-<li>I highly recommend the book <a target="_blank" href="https://www.amazon.com/gp/product/0134602412/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134602412&amp;linkCode=as2&amp;tag=blogphilippha-20&amp;linkId=5ad6bd5406995461d921a0bc0bfde2da" data-amzn-asin="0134602412">Microservices: Flexible Software Architecture</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=blogphilippha-20&amp;l=am2&amp;o=1&amp;a=0134602412" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;display:inline;">
+<li><a target="_blank" href="https://www.amazon.com/gp/product/0134602412/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134602412&amp;linkCode=as2&amp;tag=blogphilippha-20&amp;linkId=5ad6bd5406995461d921a0bc0bfde2da" data-amzn-asin="0134602412">Microservices: Flexible Software Architecture</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=blogphilippha-20&amp;l=am2&amp;o=1&amp;a=0134602412" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;display:inline;">
  by Eberhard Wolff.</li>
 <li>Eberhard Wolff: Java Application Servers Are Dead. <a href="https://f.vimeocdn.com/p/flash/moogaloop/6.0.39/moogaloop.swf?clip_id=110555653&amp;controller=player2&amp;view=moogaloop_swf&amp;cdn_url=http%3A%2F%2Ff.vimeocdn.com&amp;player_url=player.vimeo.com&amp;moogaloop_type=moogaloop">Talk</a>&nbsp;(in German). <a href="http://de.slideshare.net/ewolff/java-application-servers-are-dead">Slides</a>&nbsp;(in English).</li>
 <li>Eberhard Wolff: <a href="https://vimeo.com/123738886">Micro Services – weder&nbsp;Micro noch&nbsp;Service?</a>. (in&nbsp;German).</li>
