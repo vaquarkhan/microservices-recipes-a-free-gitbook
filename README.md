@@ -868,26 +868,26 @@ Note: If the mock parameter is included in a request to the production environme
 
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
 
-- https://www.youtube.com/watch?v=KV3j3MZTXgk
-- https://pivotal.io/microservices
-- https://www.youtube.com/watch?v=WFtmCaqIjkA
-- https://www.youtube.com/watch?v=j6ow-UemzBc
-- https://www.youtube.com/watch?v=CZ3wIuvmHeM
-- https://www.apiacademy.co/resources/videos/designing-a-microservices-architecture
-- https://www.youtube.com/watch?v=n_V8hBRoshY
-- https://www.youtube.com/watch?v=EpyPFnjue38
-- https://www.youtube.com/watch?v=iJVW7v8O9BU
-- https://www.youtube.com/watch?v=PFQnNFe27kU
-- https://www.youtube.com/watch?v=wlt7nCRWx_w
-- https://www.youtube.com/watch?v=gfh-VCTwMw8
-- https://www.youtube.com/watch?v=X0tjziAQfNQ
-- https://www.youtube.com/watch?v=I56HzTKvZKc
-- https://www.youtube.com/watch?v=Fz1PoXqxAZc
-- https://www.youtube.com/watch?v=GzrZworHpIk
-- https://www.youtube.com/watch?v=MrV0DqTqpFU
-- https://www.youtube.com/watch?v=Jw6TYEb1Opw
-- https://www.youtube.com/watch?v=KPtLbSEFe6c
-- https://www.youtube.com/watch?v=ez9GWESKG4I
+
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| What are the Advantages of Microservices? - Sam Newman  |- https://www.youtube.com/watch?v=KV3j3MZTXgk
+2| Design Microservice Architectures the Right Way   |- https://www.youtube.com/watch?v=j6ow-UemzBc
+3| Mastering Chaos - A Netflix Guide to Microservices    |- https://www.youtube.com/watch?v=CZ3wIuvmHeM
+4| API Academy Microservices Boot Camp @ CA World: Designing a Microservices Architecture     |-https://www.youtube.com/watch?v=iZNSPKxAd5w
+5| Data Strategies for Microservice Architectures    |- https://www.youtube.com/watch?v=n_V8hBRoshY
+6| Refactor your Java EE application using Microservices and Containers by Arun Gupta   |-https://www.youtube.com/watch?v=iJVW7v8O9BU
+7| Principles Of Microservices by Sam Newman s    |-https://www.youtube.com/watch?v=PFQnNFe27kU
+8| PGOTO 2016 • Appsec and Microservices • Sam Newman  | - https://www.youtube.com/watch?v=wlt7nCRWx_w
+9| Avoiding Microservice Megadisasters - Jimmy Bogard   | - https://www.youtube.com/watch?v=gfh-VCTwMw8
+10| 10 Tips for failing badly at Microservices by David Schmitz  | -  https://www.youtube.com/watch?v=X0tjziAQfNQ
+11| Lessons from the Birth of Microservices at Google   | - https://www.youtube.com/watch?v=Fz1PoXqxAZc
+12| Event Sourcing You are doing it wrong by David Schmitz    | - https://www.youtube.com/watch?v=GzrZworHpIk
+13| The hardest part of microservices is your data     | - https://www.youtube.com/watch?v=MrV0DqTqpFU
+14| Data Design and Modeling for Microservices      | - https://www.youtube.com/watch?v=KPtLbSEFe6c
+15| The Art of Discovering Bounded Contexts by Nick Tune       | - https://www.youtube.com/watch?v=ez9GWESKG4I
+
+
 
 ### Microservices Patterns
 
@@ -903,8 +903,8 @@ No                  |    about     | url
 7|14 Architectural patterns for microservice development  |- https://www.youtube.com/watch?v=yVZS1HZrlEw
 8|Reducing Microservices Architecture Complexity with Istio and Kubernetes  |- https://www.youtube.com/watch?v=k42jqkjtYKY
 9|Developing Microservices with Aggregates  |- https://www.infoq.com/presentations/aggregates-modular-microservices
-
-
+10| The Seven Deadly Sins of Microservices by Daniel Bryant     | - https://www.youtube.com/watch?v=Jw6TYEb1Opw
+11| Microservices Anti-Patterns   | - https://www.youtube.com/watch?v=I56HzTKvZKc
 
 
 -------------------------------------------------------------------
