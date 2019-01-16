@@ -125,8 +125,15 @@ Marshalling and Un marshalling - When one component needs data from another comp
 
 #### Network Security - 
 Inter Service Communication needs to be secured to avoid any inter communication security breach. Due to several moving parts, these applications are more prone to security vulnerabilities.
-Testing - Testing of such application is definitely harder compared to a monolith application.
-Production monitoring - Cost to monitor such application are higher. Unavailability of the right tools are also an issue to be considered.
+
+#### Testing - 
+Testing of such application is definitely harder compared to a monolith application.
+
+#### Production monitoring - 
+ Unavailability of the right tools are also an issue to be considered.
+
+#### Log analysis -
+Need log analysis tool for log analysis ,Spalunk or ELK stack
 
 #### :) 
 * It is very difficult to maintain multiple Microservices.
@@ -138,8 +145,8 @@ Production monitoring - Cost to monitor such application are higher. Unavailabil
 
 
 
-
 ![Alt Text](https://pbs.twimg.com/media/DEJ3V2xUwAIVS7i.jpg)
+
 
 
 ## Design Guidelines
@@ -238,11 +245,11 @@ This document borrows heavily from:
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 * [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) 
 
-### Validate microservices design 
+### Certify microservices design :
 
 After you identify the microservices in your application, validate your design against the following criteria:
 
-* 0Each service has a single responsibility.
+* Each service has a single responsibility.
 * There are no chatty calls between services. If splitting functionality into two services causes them to be overly chatty, it may be a symptom that these functions belong in the same service.
 * Each service is small enough that it can be built by a small team working independently.
 * There are no inter-dependencies that will require two or more services to be deployed in lock-step. It should always be possible to deploy a service without redeploying any other services.
