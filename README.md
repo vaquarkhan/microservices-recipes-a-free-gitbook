@@ -109,26 +109,26 @@ With our individual services being small in size, the cost to replace them with 
 
 ### Cons 
 
-### Team Communication Overhead - 
+#### Team Communication Overhead - 
 Microservice architecture reduces the team management complexity, but it is not able to diminish the need of team communication. They need to make sure an update in one’s service is not breaking some other functionality. We can find this problem in monolith architecture applications too.
 
-### Non uniform application - 
+#### Non uniform application - 
 We can choose a different technology stack for a different component (polyglot). It leads to the problem of non uniform application design and architecture. It may can increase maintenance cost in the long run.
 
-### Dev Ops complexity - 
+#### Dev Ops complexity - 
 We need to have a mature Dev Ops team to handle the complexity involved in maintaining Microservice based application. Due to several moving parts of the application, it becomes complex and requires a high level of expertise.
 Increased Resource use - Initial investment to run these applications are high because all the independently running components need their own runtime containers with more memory and CPU.
 
-### Increase Network communication - 
+#### Increase Network communication - 
 Independently running components interact with each other over a network. Such systems require reliable and fast network connections.
 Marshalling and Un marshalling - When one component needs data from another component, the sender marshals the data in some standard from its internal representation, while the receiver un-marshalls data into its own representation before use. This definitely requires more processing compared to conventional application architecture.
 
-### Network Security - 
+#### Network Security - 
 Inter Service Communication needs to be secured to avoid any inter communication security breach. Due to several moving parts, these applications are more prone to security vulnerabilities.
 Testing - Testing of such application is definitely harder compared to a monolith application.
 Production monitoring - Cost to monitor such application are higher. Unavailability of the right tools are also an issue to be considered.
 
-### :) 
+#### :) 
 * It is very difficult to maintain multiple Microservices.
 * It is very difficult to maintain versioning among Microservices.
 * It is extremely difficult to find good architects for creating Microservice architecture in right way.
