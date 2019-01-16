@@ -503,14 +503,14 @@ No                  |    about     | url
 19| Microservices architecture style      |-  https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
 20| Microservices architecture       |-  https://samnewman.io/talks/principles-of-microservices/
 21| Designing microservices: Identifying microservice boundaries  |-  https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
-| DDD Strategic Patterns: How to Define Bounded Contexts   |-  https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
-22| Microservices    |- https://martinfowler.com/articles/microservices.html
-23| Daniel Jacobson on Ephemeral APIs and Continuous Innovation at Netflix     |- https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
-24| Versioning       |- https://cloud.google.com/apis/design/versioning
-25|Semantic Versioning 2.0.0      |-https://semver.org/
-26| RESTful API Design. Best Practices in a Nutshell.   |- https://blog.philipphauer.de/restful-api-design-best-practices/
-27| Rest API Tutorial |- https://restfulapi.net/resource-naming/
-28| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+22 | DDD Strategic Patterns: How to Define Bounded Contexts   |-  https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
+23| Microservices    |- https://martinfowler.com/articles/microservices.html
+24| Daniel Jacobson on Ephemeral APIs and Continuous Innovation at Netflix     |- https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
+25| Versioning       |- https://cloud.google.com/apis/design/versioning
+26|Semantic Versioning 2.0.0      |-https://semver.org/
+27| RESTful API Design. Best Practices in a Nutshell.   |- https://blog.philipphauer.de/restful-api-design-best-practices/
+28| Rest API Tutorial |- https://restfulapi.net/resource-naming/
+29| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
 
 
 -------------------------------------------------------------------
