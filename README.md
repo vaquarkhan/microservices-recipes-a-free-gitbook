@@ -255,6 +255,285 @@ DDD deals with large models by dividing them into different Bounded Contexts and
 Martin fowler
 
 
+## Real Life Stories
+
+- [A Journey into Microservices](https://sudo.hailoapp.com/services/2015/03/09/journey-into-a-microservice-world-part-1/)
+- [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
+- [Failing at microservices](https://rclayton.silvrback.com/failing-at-microservices)
+- [How to talk to your friends about microservices](https://blog.pivotal.io/labs/labs/how-to-talk-to-your-friends-about-microservices)
+- [How we build microservices at Karma](https://blog.yourkarma.com/building-microservices-at-karma)
+- [How we ended up with microservices at SoundCloud](http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html)
+- [Microservices: lessons from the frontline](https://www.thoughtworks.com/insights/blog/microservices-lessons-frontline)
+- [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
+- [Scaling microservices at Gilt with Scala, Docker and AWS](http://www.infoq.com/news/2015/04/scaling-microservices-gilt)
+
+## Enterprise & Verticals
+
+- [Interact ![c]](https://interact.io/) - CRM microservices for rapid delivery of tailored solutions.
+- [Predix ![c]](https://predix.io/) - Industrial microservices platform.
+- [YaaS ![c]](https://www.yaas.io) - SAP Hybris microservices ecosystem.
+
+## Theory
+
+![Alt Text](http://www.animatedimages.org/data/media/53/animated-book-image-0032.gif)
+
+### Articles & Papers
+
+- [AKF Scale Cube](http://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/) - Model depicting the dimensions to scale a service.
+- [Benchmark Requirements for Microservices Architecture Research](https://goo.gl/14ElnV) :small_orange_diamond:<sup>PDF</sup> - Set of requirements that may be useful in selecting a community-owned architecture benchmark to support repeatable microservices research.
+- [Building Microservices? Here is What You Should Know](https://cloudncode.blog/2016/07/22/msa-getting-started/) - A practical overview, based on real-world experience, of what one would need to know in order to build Microservices.
+- [CALM](http://db.cs.berkeley.edu/papers/cidr11-bloom.pdf) :small_orange_diamond:<sup>PDF</sup> - Consistency as logical monotonicity.
+- [Canary Release](http://martinfowler.com/bliki/CanaryRelease.html) - Technique to reduce the risk of introducing a new software version in production by slowly rolling out the change to a small subset of users before rolling it out to the entire infrastructure and making it available to everybody.
+- [CAP Theorem](http://blog.thislongrun.com/2015/03/the-cap-theorem-series.html) -  States that it is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: Consistency, Availability and Partition tolerance.
+- [Cloud Design Patterns](https://msdn.microsoft.com/en-us/library/dn600223.aspx) - Contains twenty-four design patterns that are useful in cloud-hosted applications. Includes: Circuit Breaker, Competing Consumers, CQRS, Event Sourcing, Gatekeeper, Cache-Aside, etc.
+- [Microservice Architecture](http://martinfowler.com/articles/microservices.html) - Particular way of designing software applications as suites of independently deployable services.
+- [Microservices and SOA](http://www.oracle.com/technetwork/issue-archive/2015/15-mar/o25architect-2458702.html) - Similarities, differences, and where we go from here.
+- [Microservices – Please, don’t](http://basho.com/posts/technical/microservices-please-dont/) - Critical advice about some problems regarding a microservices approach.
+- [Microservices RefCard](https://dzone.com/refcardz/getting-started-with-microservices) - Getting started with microservices.
+- [Microservices Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html) - Guide to ponder costs and benefits of the mircoservices architectural style.
+- [Reactive Manifesto](http://www.reactivemanifesto.org/) - Reactive systems definition.
+- [Reactive Streams](http://www.reactive-streams.org/) - Initiative to provide a standard for asynchronous stream processing with non-blocking back pressure.
+- [ROCAS](http://resources.1060research.com/docs/2015/Resource-Oriented-Computing-Adaptive-Systems-ROCAS-1.2.pdf) :small_orange_diamond:<sup>PDF</sup> - Resource Oriented Computing for Adaptive Systems.
+- [SECO](http://ceur-ws.org/Vol-746/IWSECO2011-6-DengYu.pdf) :small_orange_diamond:<sup>PDF</sup> - Understanding software ecosystems: a strategic modeling approach.
+- [Service Discovery in a Microservice Architecture](https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/) - Overview of discovery and registration patterns.
+- [Testing Strategies in a Microservice Architecture](http://martinfowler.com/articles/microservice-testing/) - Approaches for managing the additional testing complexity of multiple independently deployable components.
+- [Your Server as a Function](http://monkey.org/~marius/funsrv.pdf) :small_orange_diamond:<sup>PDF</sup> - Describes three abstractions which combine to present a powerful programming model for building safe, modular, and efficient server software: Composable futures, services and filters.
+
+### Talks
+
+- [Bla Bla Microservices Bla Bla](http://jonasboner.com/bla-bla-microservices-bla-bla/) - A talk at the O’Reilly Software Architecture Conference, April 2016.
+- [Challenges in Implementing MicroServices](https://www.youtube.com/watch?v=yPf5MfOZPY0) - A presentation at GOTO 2015 by Fred George.
+- [Microservices](https://www.youtube.com/watch?v=wgdBVIX9ifA) - A presentation at GOTO Berlin 2014 by Martin Fowler.
+
+### Tutorials
+
+- [Developing a RESTful Microservice in Python](http://www.skybert.net/python/developing-a-restful-micro-service-in-python/) - A story of how an aging Java project was replaced with a microservice built with Python and Flask.
+- [Developing and Testing Microservices With Docker](http://mherman.org/blog/2017/04/18/developing-and-testing-microservices-with-docker) - An example of the processes involved in creating a simple Docker-packaged Node microservice.
+- [Game On!](https://game-on.org/) - Microservices architecture explained in the context of an old-school text-based adventure game.
+- [Microservices without the Servers](https://aws.amazon.com/blogs/compute/microservices-without-the-servers/) - Step by step demo-driven talk about serverless architecture.
+- Microservices in C#: [Part 1](http://insidethecpu.com/2015/07/17/microservices-in-c-part-1-building-and-testing/), [Part 2](http://insidethecpu.com/2015/07/31/microservices-in-c-part-2-consistent-message-delivery/), [Part 3](http://insidethecpu.com/2015/08/14/microservices-in-c-part-3-queue-pool-sizing/), [Part 4](http://insidethecpu.com/2015/08/28/microservices-in-c-part-4-scaling-out/), [Part 5](http://insidethecpu.com/2015/09/11/microservices-in-c-part-5-autoscaling/).
+- [Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html)
+- [Reactive Microservices](https://github.com/theiterators/reactive-microservices) - Project showcasing different microservice communication styles using Scala, Akka, Play and other tools from Scala ecosystem.
+- [Using Packer and Ansible to build immutable infrastructure](https://blog.codeship.com/packer-ansible/)
+
+### Books
+
+- [Building Microservices](https://www.nginx.com/wp-content/uploads/2015/01/Building_Microservices_Nginx.pdf) :small_orange_diamond:<sup>PDF</sup> - Building Microservices: Designing Fine-grained Systems. Sam Newman. Preview Edition.
+- [Microservice Architecture: Aligning Principles, Practices, and Culture](http://shop.oreilly.com/product/0636920050308.do) - Practical advice for the strategy and design of Microservices.
+- [Microservices in Action](https://www.manning.com/books/microservices-in-action) - A practical book about building and deploying microservice-based applications.
+- [Microservice Patterns](https://www.manning.com/books/microservice-patterns) - Teaches how to build applications with the microservice architecture and how to refactor a monolithic application to a microservices.
+- [Microservices from Theory to Practice](http://www.redbooks.ibm.com/abstracts/sg248275.html?Open) - Microservices from Theory to Practice: Creating Applications in IBM Bluemix Using the Microservices Approach. IBM Redbooks publication.
+- [Migrating to Cloud Native Application Architectures](http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook) - This O’Reilly report defines the unique characteristics of cloud native application architectures such as microservices and twelve-factor applications.
+- [Testing Microservices with Mountebank](https://www.manning.com/books/testing-microservices-with-mountebank) - Provides a testing strategy using mountebank for service virtualization, promoting independent releases of Microservices
+- [The Art of Scalability](http://theartofscalability.com/) - The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise. Martin L. Abbott, Michael T. Fisher.
+- [The New Stack eBook Series](http://thenewstack.io/ebookseries/) - A Comprehensive Overview of the Docker and Container Ecosystem.
+  + Book 1: The Docker Container Ecosystem.
+  + Book 2: Applications & Microservices with Docker & Containers.
+  + Book 3: Automation & Orchestration with Docker & Containers.
+  + Book 4: Network, Security & Storage with Docker & Containers.
+  + Book 5: Monitoring & Management with Docker & Containers.
+- [The Tao of Microservices](https://www.manning.com/books/the-tao-of-microservices) - Teaches the path to understanding how to apply microservices architecture with your own real-world projects.
+- [IBM Redbook](https://www.redbooks.ibm.com/redbooks/pdfs/sg248275.pdf) - IBM Red book
+* [Antifragile: Things That Gain from Disorder](http://www.amazon.com/gp/product/0812979680)
+* [The Black Swan](http://www.amazon.com/The-Black-Swan-Improbable-Robustness/dp/081297381X)
+* [Implementing Domain-Driven Design](http://www.amazon.co.uk/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
+* [Building Micro Services - Sam Newman](http://www.amazon.co.uk/Building-Microservices-Sam-Newman/dp/1491950358)
+* [Building Micro Services - Sam Newman Downloadable preview edition](http://nginx.com/wp-content/uploads/2015/01/Building_Microservices_Nginx.pdf)
+* [Antifragile Software - Russ Miles](https://leanpub.com/antifragilesoftware)
+* [software-architecture-patterns from O`REILLY in English](http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf)
+* [Production Ready Microservices - Susan J. Fowler](http://shop.oreilly.com/product/0636920053675.do)
+* [Microservices in Production - Susan J. Fowler (free ebook)](http://www.oreilly.com/programming/free/microservices-in-production.csp)
+* [Microservices with Docker, Flask, and React - Michael Herman](https://testdriven.io/)
+
+### Sites
+
+- [Microservices Resource Guide](http://martinfowler.com/microservices/) - Martin Fowler's choice of articles, videos, books, and podcasts that can teach you more about the microservices architectural style.
+- [Microservice Patterns](http://microservices.io/) - Microservice architecture patterns and best practices.
+- [Microservice Antipatterns and Pitfalls](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls) - Microservice mostly known antipatterns and pitfalls.
+- [The 12-Factors App](http://12factor.net) - A methodology for building software-as-a-service applications.
+
+
+### Microservices Quotes
+* [Building-microservices]( https://www.goodreads.com/work/quotes/41956437-building-microservices-designing-fine-grained-systems)
+* [Microservices-patterns-and-applications]( https://www.goodreads.com/work/quotes/45004498-microservices-patterns-and-applications-designing-fine-grained-service)
+
+
+### Resource Naming
+- https://www.restapitutorial.com/lessons/restfulresourcenaming.html
+
+### Rest
+- https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
+
+
+-----------------------------------------------------------------
+### Link
+
+- Twitter: https://dev.twitter.com/docs/api
+- Facebook: http://developers.facebook.com/docs/reference/api/
+- LinkedIn: https://developer.linkedin.com/apis
+- https://developers.google.com/+/web/api/rest/latest/activities/list
+- http://restfulapi.net/resource-naming/
+- https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#deployment-package
+- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/ 
+- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
+- https://www.martinfowler.com/microservices/
+- https://opensource.com/article/18/4/guide-design-microservices
+- https://microservices.io/patterns/microservices.html
+- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
+- https://blog.philipphauer.de/restful-api-design-best-practices/
+- https://martinfowler.com/tags/domain%20driven%20design.html
+- http://dddcommunity.org/
+- https://www.infoq.com/presentations/ddd-microservices-2016
+- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
+- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
+- https://martinfowler.com/bliki/MicroservicePrerequisites.html
+- https://martinfowler.com/bliki/DevOpsCulture.html"
+- https://semver.org/ 
+- https://cloud.google.com/apis/design/versioning
+- https://pivotal.io/cloud-native
+- https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
+- https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
+- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+- https://samnewman.io/talks/principles-of-microservices/
+- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
+- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
+- https://martinfowler.com/articles/microservices.html
+
+-------------------------------------------------------------------
+### Microservices Anti Patterns
+
+![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
+
+- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
+- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
+- https://vimeo.com/198927025
+- https://vimeo.com/118020043
+- https://www.youtube.com/watch?v=uTGIrzzmcv8
+- https://www.youtube.com/watch?v=VaYmRe104HU
+- https://www.youtube.com/watch?v=X0tjziAQfNQ
+- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
+- https://vimeo.com/118020043
+
+## The Sins of Microservices 
+
+- https://www.infoq.com/articles/seven-uservices-antipatterns
+- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
+- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
+- https://dzone.com/articles/microservices-please-dont
+- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
+
+### Microservices Video 
+
+![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
+
+
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| What are the Advantages of Microservices? - Sam Newman  |- https://www.youtube.com/watch?v=KV3j3MZTXgk
+2| Design Microservice Architectures the Right Way   |- https://www.youtube.com/watch?v=j6ow-UemzBc
+3| Mastering Chaos - A Netflix Guide to Microservices    |- https://www.youtube.com/watch?v=CZ3wIuvmHeM
+4| API Academy Microservices Boot Camp @ CA World: Designing a Microservices Architecture     |-https://www.youtube.com/watch?v=iZNSPKxAd5w
+5| Data Strategies for Microservice Architectures    |- https://www.youtube.com/watch?v=n_V8hBRoshY
+6| Refactor your Java EE application using Microservices and Containers by Arun Gupta   |-https://www.youtube.com/watch?v=iJVW7v8O9BU
+7| Principles Of Microservices by Sam Newman s    |-https://www.youtube.com/watch?v=PFQnNFe27kU
+8| PGOTO 2016 • Appsec and Microservices • Sam Newman  | - https://www.youtube.com/watch?v=wlt7nCRWx_w
+9| Avoiding Microservice Megadisasters - Jimmy Bogard   | - https://www.youtube.com/watch?v=gfh-VCTwMw8
+10| 10 Tips for failing badly at Microservices by David Schmitz  | -  https://www.youtube.com/watch?v=X0tjziAQfNQ
+11| Lessons from the Birth of Microservices at Google   | - https://www.youtube.com/watch?v=Fz1PoXqxAZc
+12| Event Sourcing You are doing it wrong by David Schmitz    | - https://www.youtube.com/watch?v=GzrZworHpIk
+13| The hardest part of microservices is your data     | - https://www.youtube.com/watch?v=MrV0DqTqpFU
+14| Data Design and Modeling for Microservices      | - https://www.youtube.com/watch?v=KPtLbSEFe6c
+15| The Art of Discovering Bounded Contexts by Nick Tune       | - https://www.youtube.com/watch?v=ez9GWESKG4I
+
+
+
+### Microservices Patterns
+
+
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| Developing Microservices with Aggregates Chris Richardson |- https://www.infoq.com/presentations/aggregates-modular-microservices
+2| Top 5+ Microservices Architecture and Design Best Practices Ajitesh Kumar  |- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+3|Microservices: Patterns and Practices Panel C. Richardson, R. Shoup, L. Ryan, R. Tangirala, and R. Schloming participate in a discussion on microservices and the challenges faced at scale, the strategies to use and more. |-https://www.infoq.com/presentations/microservices-patterns-practices-panel
+4 | Microservices Patterns Red Hat Videos  |- https://www.youtube.com/watch?v=_YzzxrSIQGw
+5|7 Microservice Patterns Explained (Ivar Grimstad)  |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
+6|Three Microservice Patterns to Tear Down Your Monoliths  |- https://www.youtube.com/watch?v=84W9iY3CwdQ
+7|14 Architectural patterns for microservice development  |- https://www.youtube.com/watch?v=yVZS1HZrlEw
+8|Reducing Microservices Architecture Complexity with Istio and Kubernetes  |- https://www.youtube.com/watch?v=k42jqkjtYKY
+9|Developing Microservices with Aggregates  |- https://www.infoq.com/presentations/aggregates-modular-microservices
+10| The Seven Deadly Sins of Microservices by Daniel Bryant     | - https://www.youtube.com/watch?v=Jw6TYEb1Opw
+11| Microservices Anti-Patterns   | - https://www.youtube.com/watch?v=I56HzTKvZKc
+
+
+-------------------------------------------------------------------
+### Code 
+
+![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
+
+
+
+
+No               |  url
+------------------- | -------------
+1        | - https://github.com/vaquarkhan/microservice-poc
+2        | - https://github.com/vaquarkhan/microservice-poc
+3        | - https://github.com/vaquarkhan/awesome-microservices
+4        |- https://github.com/vaquarkhan/microservice-docker-project
+5        |- https://github.com/vaquarkhan/flowing-retail-microservice-kafka
+6        |- https://github.com/vaquarkhan/spring-boot-microservices-series
+7        |- https://github.com/vaquarkhan/A-curated-list-of-Microservice
+8        |- https://github.com/vaquarkhan/sample-spring-microservices
+9        |-  https://github.com/vaquarkhan/microservice-kafka
+10        |-  https://github.com/vaquarkhan/oreilly-building-microservices-training
+11        |-   https://github.com/vaquarkhan/micromono
+12        |-  https://github.com/vaquarkhan/spring-cloud-microservice-example
+13        |-   https://github.com/vaquarkhan/jwt-microservices-JavaRoadStorm2016
+14        |-   https://github.com/vaquarkhan/micro
+15        |-   https://github.com/vaquarkhan/microservices-centralized-configuration
+16        |-   https://github.com/vaquarkhan/micro-company
+17        |-   https://github.com/vaquarkhan/PiggyMetrics-microservice-poc
+18        |-   https://github.com/vaquarkhan/spring-cloud-microservice
+19        |-   https://github.com/vaquarkhan/CQRS-microservice-sampler
+20        |-   https://github.com/vaquarkhan/Microservices-Deployment-Cookbook
+21        |-   https://github.com/vaquarkhan/storyteller-microservices
+22        |-   https://github.com/vaquarkhan/microservice-security
+23        |-   https://github.com/vaquarkhan/microservices-demo
+24        |-   https://github.com/vaquarkhan/spring-cloud-microservices-ELKStack
+25        |-   https://github.com/vaquarkhan/event-stream-processing-microservices
+26        |-   https://github.com/vaquarkhan/FraudDetection-Microservices-gemfire
+27        |-   https://github.com/vaquarkhan/microservice-sampler
+28        |-   https://github.com/vaquarkhan/microserviceApplication
+29        |-   https://github.com/vaquarkhan/Microservices-With-Spring-Student-Files
+30        |-   https://github.com/vaquarkhan/spring-boot-netflix-microservice-demo
+31        |-   https://github.com/vaquarkhan/spring-netflix-oss-microservices
+32        |-   https://github.com/vaquarkhan/rest-microservices
+33        |-   https://github.com/vaquarkhan/cloud-native-microservice-strangler-example
+34        |-   https://github.com/vaquarkhan/microservices-SpringCloud-netflix
+35        |-   https://github.com/vaquarkhan/knowledge-driven-microservice
+36        |-   https://github.com/vaquarkhan/event-driven-microservices-platform
+37        |-   https://github.com/vaquarkhan/devnexus-microservice-sample
+38        |-   https://github.com/vaquarkhan/microservices
+39        |-   https://github.com/vaquarkhan/Spring-Microservices
+40        |-   https://github.com/vaquarkhan/bootiful-microservices
+41        |-   https://github.com/vaquarkhan/vk-microservices-with-spring-cloud
+42        |-   https://github.com/vaquarkhan/cf-SpringBootTrader-microservice
+43        |-   https://github.com/vaquarkhan/Refactor-monolith-to-microservices
+44        |-   https://github.com/vaquarkhan/microservices-dashboard
+45        |-   https://github.com/vaquarkhan/microservice-camel-in-action
+46        |-   https://github.com/vaquarkhan/cloud-native-app-microservice-labs
+47        |-   https://github.com/vaquarkhan/spring-boot-8-microservices
+48        |-   https://github.com/vaquarkhan/building-microservices
+49        |-   https://github.com/vaquarkhan/spring-doge-microservice
+50        |-   https://github.com/vaquarkhan/microservice-service-registration-and-discovery
+51        |-   https://github.com/ewolff/microservice
+52        |-   https://github.com/semplify/Reactive-Microservice-Training
+53        |-   https://gitlab.com/training-microservices-2018-06
+54        |-   https://github.com/vaquarkhan/train-ticket
+55        |-   https://github.com/cer/event-sourcing-examples
+56        |-   https://github.com/finn-no/Docker-and-Microservices
+57        |-   https://github.com/nielskrijger/auth-server
+
 -------------------------------------------------------------------------------------------------------------
 
 
@@ -696,284 +975,7 @@ Note: If the mock parameter is included in a request to the production environme
 - [Awesome CI/CD DevOps](https://github.com/ciandcd/awesome-ciandcd) - A curated list of awesome tools for continuous integration, continuous delivery and DevOps.
 
 
-## Real Life Stories
 
-- [A Journey into Microservices](https://sudo.hailoapp.com/services/2015/03/09/journey-into-a-microservice-world-part-1/)
-- [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
-- [Failing at microservices](https://rclayton.silvrback.com/failing-at-microservices)
-- [How to talk to your friends about microservices](https://blog.pivotal.io/labs/labs/how-to-talk-to-your-friends-about-microservices)
-- [How we build microservices at Karma](https://blog.yourkarma.com/building-microservices-at-karma)
-- [How we ended up with microservices at SoundCloud](http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html)
-- [Microservices: lessons from the frontline](https://www.thoughtworks.com/insights/blog/microservices-lessons-frontline)
-- [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
-- [Scaling microservices at Gilt with Scala, Docker and AWS](http://www.infoq.com/news/2015/04/scaling-microservices-gilt)
-
-## Enterprise & Verticals
-
-- [Interact ![c]](https://interact.io/) - CRM microservices for rapid delivery of tailored solutions.
-- [Predix ![c]](https://predix.io/) - Industrial microservices platform.
-- [YaaS ![c]](https://www.yaas.io) - SAP Hybris microservices ecosystem.
-
-## Theory
-
-![Alt Text](http://www.animatedimages.org/data/media/53/animated-book-image-0032.gif)
-
-### Articles & Papers
-
-- [AKF Scale Cube](http://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/) - Model depicting the dimensions to scale a service.
-- [Benchmark Requirements for Microservices Architecture Research](https://goo.gl/14ElnV) :small_orange_diamond:<sup>PDF</sup> - Set of requirements that may be useful in selecting a community-owned architecture benchmark to support repeatable microservices research.
-- [Building Microservices? Here is What You Should Know](https://cloudncode.blog/2016/07/22/msa-getting-started/) - A practical overview, based on real-world experience, of what one would need to know in order to build Microservices.
-- [CALM](http://db.cs.berkeley.edu/papers/cidr11-bloom.pdf) :small_orange_diamond:<sup>PDF</sup> - Consistency as logical monotonicity.
-- [Canary Release](http://martinfowler.com/bliki/CanaryRelease.html) - Technique to reduce the risk of introducing a new software version in production by slowly rolling out the change to a small subset of users before rolling it out to the entire infrastructure and making it available to everybody.
-- [CAP Theorem](http://blog.thislongrun.com/2015/03/the-cap-theorem-series.html) -  States that it is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: Consistency, Availability and Partition tolerance.
-- [Cloud Design Patterns](https://msdn.microsoft.com/en-us/library/dn600223.aspx) - Contains twenty-four design patterns that are useful in cloud-hosted applications. Includes: Circuit Breaker, Competing Consumers, CQRS, Event Sourcing, Gatekeeper, Cache-Aside, etc.
-- [Microservice Architecture](http://martinfowler.com/articles/microservices.html) - Particular way of designing software applications as suites of independently deployable services.
-- [Microservices and SOA](http://www.oracle.com/technetwork/issue-archive/2015/15-mar/o25architect-2458702.html) - Similarities, differences, and where we go from here.
-- [Microservices – Please, don’t](http://basho.com/posts/technical/microservices-please-dont/) - Critical advice about some problems regarding a microservices approach.
-- [Microservices RefCard](https://dzone.com/refcardz/getting-started-with-microservices) - Getting started with microservices.
-- [Microservices Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html) - Guide to ponder costs and benefits of the mircoservices architectural style.
-- [Reactive Manifesto](http://www.reactivemanifesto.org/) - Reactive systems definition.
-- [Reactive Streams](http://www.reactive-streams.org/) - Initiative to provide a standard for asynchronous stream processing with non-blocking back pressure.
-- [ROCAS](http://resources.1060research.com/docs/2015/Resource-Oriented-Computing-Adaptive-Systems-ROCAS-1.2.pdf) :small_orange_diamond:<sup>PDF</sup> - Resource Oriented Computing for Adaptive Systems.
-- [SECO](http://ceur-ws.org/Vol-746/IWSECO2011-6-DengYu.pdf) :small_orange_diamond:<sup>PDF</sup> - Understanding software ecosystems: a strategic modeling approach.
-- [Service Discovery in a Microservice Architecture](https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/) - Overview of discovery and registration patterns.
-- [Testing Strategies in a Microservice Architecture](http://martinfowler.com/articles/microservice-testing/) - Approaches for managing the additional testing complexity of multiple independently deployable components.
-- [Your Server as a Function](http://monkey.org/~marius/funsrv.pdf) :small_orange_diamond:<sup>PDF</sup> - Describes three abstractions which combine to present a powerful programming model for building safe, modular, and efficient server software: Composable futures, services and filters.
-
-### Talks
-
-- [Bla Bla Microservices Bla Bla](http://jonasboner.com/bla-bla-microservices-bla-bla/) - A talk at the O’Reilly Software Architecture Conference, April 2016.
-- [Challenges in Implementing MicroServices](https://www.youtube.com/watch?v=yPf5MfOZPY0) - A presentation at GOTO 2015 by Fred George.
-- [Microservices](https://www.youtube.com/watch?v=wgdBVIX9ifA) - A presentation at GOTO Berlin 2014 by Martin Fowler.
-
-### Tutorials
-
-- [Developing a RESTful Microservice in Python](http://www.skybert.net/python/developing-a-restful-micro-service-in-python/) - A story of how an aging Java project was replaced with a microservice built with Python and Flask.
-- [Developing and Testing Microservices With Docker](http://mherman.org/blog/2017/04/18/developing-and-testing-microservices-with-docker) - An example of the processes involved in creating a simple Docker-packaged Node microservice.
-- [Game On!](https://game-on.org/) - Microservices architecture explained in the context of an old-school text-based adventure game.
-- [Microservices without the Servers](https://aws.amazon.com/blogs/compute/microservices-without-the-servers/) - Step by step demo-driven talk about serverless architecture.
-- Microservices in C#: [Part 1](http://insidethecpu.com/2015/07/17/microservices-in-c-part-1-building-and-testing/), [Part 2](http://insidethecpu.com/2015/07/31/microservices-in-c-part-2-consistent-message-delivery/), [Part 3](http://insidethecpu.com/2015/08/14/microservices-in-c-part-3-queue-pool-sizing/), [Part 4](http://insidethecpu.com/2015/08/28/microservices-in-c-part-4-scaling-out/), [Part 5](http://insidethecpu.com/2015/09/11/microservices-in-c-part-5-autoscaling/).
-- [Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html)
-- [Reactive Microservices](https://github.com/theiterators/reactive-microservices) - Project showcasing different microservice communication styles using Scala, Akka, Play and other tools from Scala ecosystem.
-- [Using Packer and Ansible to build immutable infrastructure](https://blog.codeship.com/packer-ansible/)
-
-### Books
-
-- [Building Microservices](https://www.nginx.com/wp-content/uploads/2015/01/Building_Microservices_Nginx.pdf) :small_orange_diamond:<sup>PDF</sup> - Building Microservices: Designing Fine-grained Systems. Sam Newman. Preview Edition.
-- [Microservice Architecture: Aligning Principles, Practices, and Culture](http://shop.oreilly.com/product/0636920050308.do) - Practical advice for the strategy and design of Microservices.
-- [Microservices in Action](https://www.manning.com/books/microservices-in-action) - A practical book about building and deploying microservice-based applications.
-- [Microservice Patterns](https://www.manning.com/books/microservice-patterns) - Teaches how to build applications with the microservice architecture and how to refactor a monolithic application to a microservices.
-- [Microservices from Theory to Practice](http://www.redbooks.ibm.com/abstracts/sg248275.html?Open) - Microservices from Theory to Practice: Creating Applications in IBM Bluemix Using the Microservices Approach. IBM Redbooks publication.
-- [Migrating to Cloud Native Application Architectures](http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook) - This O’Reilly report defines the unique characteristics of cloud native application architectures such as microservices and twelve-factor applications.
-- [Testing Microservices with Mountebank](https://www.manning.com/books/testing-microservices-with-mountebank) - Provides a testing strategy using mountebank for service virtualization, promoting independent releases of Microservices
-- [The Art of Scalability](http://theartofscalability.com/) - The Art of Scalability: Scalable Web Architecture, Processes, and Organizations for the Modern Enterprise. Martin L. Abbott, Michael T. Fisher.
-- [The New Stack eBook Series](http://thenewstack.io/ebookseries/) - A Comprehensive Overview of the Docker and Container Ecosystem.
-  + Book 1: The Docker Container Ecosystem.
-  + Book 2: Applications & Microservices with Docker & Containers.
-  + Book 3: Automation & Orchestration with Docker & Containers.
-  + Book 4: Network, Security & Storage with Docker & Containers.
-  + Book 5: Monitoring & Management with Docker & Containers.
-- [The Tao of Microservices](https://www.manning.com/books/the-tao-of-microservices) - Teaches the path to understanding how to apply microservices architecture with your own real-world projects.
-- [IBM Redbook](https://www.redbooks.ibm.com/redbooks/pdfs/sg248275.pdf) - IBM Red book
-* [Antifragile: Things That Gain from Disorder](http://www.amazon.com/gp/product/0812979680)
-* [The Black Swan](http://www.amazon.com/The-Black-Swan-Improbable-Robustness/dp/081297381X)
-* [Implementing Domain-Driven Design](http://www.amazon.co.uk/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
-* [Building Micro Services - Sam Newman](http://www.amazon.co.uk/Building-Microservices-Sam-Newman/dp/1491950358)
-* [Building Micro Services - Sam Newman Downloadable preview edition](http://nginx.com/wp-content/uploads/2015/01/Building_Microservices_Nginx.pdf)
-* [Antifragile Software - Russ Miles](https://leanpub.com/antifragilesoftware)
-* [software-architecture-patterns from O`REILLY in English](http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf)
-* [Production Ready Microservices - Susan J. Fowler](http://shop.oreilly.com/product/0636920053675.do)
-* [Microservices in Production - Susan J. Fowler (free ebook)](http://www.oreilly.com/programming/free/microservices-in-production.csp)
-* [Microservices with Docker, Flask, and React - Michael Herman](https://testdriven.io/)
-
-### Sites
-
-- [Microservices Resource Guide](http://martinfowler.com/microservices/) - Martin Fowler's choice of articles, videos, books, and podcasts that can teach you more about the microservices architectural style.
-- [Microservice Patterns](http://microservices.io/) - Microservice architecture patterns and best practices.
-- [Microservice Antipatterns and Pitfalls](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls) - Microservice mostly known antipatterns and pitfalls.
-- [The 12-Factors App](http://12factor.net) - A methodology for building software-as-a-service applications.
-
-
-### Microservices Quotes
-* [Building-microservices]( https://www.goodreads.com/work/quotes/41956437-building-microservices-designing-fine-grained-systems)
-* [Microservices-patterns-and-applications]( https://www.goodreads.com/work/quotes/45004498-microservices-patterns-and-applications-designing-fine-grained-service)
-
-
-### Resource Naming
-- https://www.restapitutorial.com/lessons/restfulresourcenaming.html
-
-### Rest
-- https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
-
-
------------------------------------------------------------------
-### Link
-
-- Twitter: https://dev.twitter.com/docs/api
-- Facebook: http://developers.facebook.com/docs/reference/api/
-- LinkedIn: https://developer.linkedin.com/apis
-- https://developers.google.com/+/web/api/rest/latest/activities/list
-- http://restfulapi.net/resource-naming/
-- https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
-- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#deployment-package
-- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/ 
-- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
-- https://www.martinfowler.com/microservices/
-- https://opensource.com/article/18/4/guide-design-microservices
-- https://microservices.io/patterns/microservices.html
-- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
-- https://blog.philipphauer.de/restful-api-design-best-practices/
-- https://martinfowler.com/tags/domain%20driven%20design.html
-- http://dddcommunity.org/
-- https://www.infoq.com/presentations/ddd-microservices-2016
-- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
-- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
-- https://martinfowler.com/bliki/MicroservicePrerequisites.html
-- https://martinfowler.com/bliki/DevOpsCulture.html"
-- https://semver.org/ 
-- https://cloud.google.com/apis/design/versioning
-- https://pivotal.io/cloud-native
-- https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
-- https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
-- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
-- https://samnewman.io/talks/principles-of-microservices/
-- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
-- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
-- https://martinfowler.com/articles/microservices.html
-
--------------------------------------------------------------------
-### Microservices Anti Patterns
-
-![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
-
-- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
-- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
-- https://vimeo.com/198927025
-- https://vimeo.com/118020043
-- https://www.youtube.com/watch?v=uTGIrzzmcv8
-- https://www.youtube.com/watch?v=VaYmRe104HU
-- https://www.youtube.com/watch?v=X0tjziAQfNQ
-- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
-- https://vimeo.com/118020043
-
-## The Sins of Microservices 
-
-- https://www.infoq.com/articles/seven-uservices-antipatterns
-- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
-- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
-- https://dzone.com/articles/microservices-please-dont
-- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
-
-### Microservices Video 
-
-![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
-
-
-No                  |    about     | url
-------------------- | ------------ | -------------------
-1| What are the Advantages of Microservices? - Sam Newman  |- https://www.youtube.com/watch?v=KV3j3MZTXgk
-2| Design Microservice Architectures the Right Way   |- https://www.youtube.com/watch?v=j6ow-UemzBc
-3| Mastering Chaos - A Netflix Guide to Microservices    |- https://www.youtube.com/watch?v=CZ3wIuvmHeM
-4| API Academy Microservices Boot Camp @ CA World: Designing a Microservices Architecture     |-https://www.youtube.com/watch?v=iZNSPKxAd5w
-5| Data Strategies for Microservice Architectures    |- https://www.youtube.com/watch?v=n_V8hBRoshY
-6| Refactor your Java EE application using Microservices and Containers by Arun Gupta   |-https://www.youtube.com/watch?v=iJVW7v8O9BU
-7| Principles Of Microservices by Sam Newman s    |-https://www.youtube.com/watch?v=PFQnNFe27kU
-8| PGOTO 2016 • Appsec and Microservices • Sam Newman  | - https://www.youtube.com/watch?v=wlt7nCRWx_w
-9| Avoiding Microservice Megadisasters - Jimmy Bogard   | - https://www.youtube.com/watch?v=gfh-VCTwMw8
-10| 10 Tips for failing badly at Microservices by David Schmitz  | -  https://www.youtube.com/watch?v=X0tjziAQfNQ
-11| Lessons from the Birth of Microservices at Google   | - https://www.youtube.com/watch?v=Fz1PoXqxAZc
-12| Event Sourcing You are doing it wrong by David Schmitz    | - https://www.youtube.com/watch?v=GzrZworHpIk
-13| The hardest part of microservices is your data     | - https://www.youtube.com/watch?v=MrV0DqTqpFU
-14| Data Design and Modeling for Microservices      | - https://www.youtube.com/watch?v=KPtLbSEFe6c
-15| The Art of Discovering Bounded Contexts by Nick Tune       | - https://www.youtube.com/watch?v=ez9GWESKG4I
-
-
-
-### Microservices Patterns
-
-
-No                  |    about     | url
-------------------- | ------------ | -------------------
-1| Developing Microservices with Aggregates Chris Richardson |- https://www.infoq.com/presentations/aggregates-modular-microservices
-2| Top 5+ Microservices Architecture and Design Best Practices Ajitesh Kumar  |- https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
-3|Microservices: Patterns and Practices Panel C. Richardson, R. Shoup, L. Ryan, R. Tangirala, and R. Schloming participate in a discussion on microservices and the challenges faced at scale, the strategies to use and more. |-https://www.infoq.com/presentations/microservices-patterns-practices-panel
-4 | Microservices Patterns Red Hat Videos  |- https://www.youtube.com/watch?v=_YzzxrSIQGw
-5|7 Microservice Patterns Explained (Ivar Grimstad)  |- https://www.youtube.com/watch?v=4IFVBfLBl1Y
-6|Three Microservice Patterns to Tear Down Your Monoliths  |- https://www.youtube.com/watch?v=84W9iY3CwdQ
-7|14 Architectural patterns for microservice development  |- https://www.youtube.com/watch?v=yVZS1HZrlEw
-8|Reducing Microservices Architecture Complexity with Istio and Kubernetes  |- https://www.youtube.com/watch?v=k42jqkjtYKY
-9|Developing Microservices with Aggregates  |- https://www.infoq.com/presentations/aggregates-modular-microservices
-10| The Seven Deadly Sins of Microservices by Daniel Bryant     | - https://www.youtube.com/watch?v=Jw6TYEb1Opw
-11| Microservices Anti-Patterns   | - https://www.youtube.com/watch?v=I56HzTKvZKc
-
-
--------------------------------------------------------------------
-### Code 
-
-![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
-
-
-
-
-No               |  url
-------------------- | -------------
-1        | - https://github.com/vaquarkhan/microservice-poc
-2        | - https://github.com/vaquarkhan/microservice-poc
-3        | - https://github.com/vaquarkhan/awesome-microservices
-4        |- https://github.com/vaquarkhan/microservice-docker-project
-5        |- https://github.com/vaquarkhan/flowing-retail-microservice-kafka
-6        |- https://github.com/vaquarkhan/spring-boot-microservices-series
-7        |- https://github.com/vaquarkhan/A-curated-list-of-Microservice
-8        |- https://github.com/vaquarkhan/sample-spring-microservices
-9        |-  https://github.com/vaquarkhan/microservice-kafka
-10        |-  https://github.com/vaquarkhan/oreilly-building-microservices-training
-11        |-   https://github.com/vaquarkhan/micromono
-12        |-  https://github.com/vaquarkhan/spring-cloud-microservice-example
-13        |-   https://github.com/vaquarkhan/jwt-microservices-JavaRoadStorm2016
-14        |-   https://github.com/vaquarkhan/micro
-15        |-   https://github.com/vaquarkhan/microservices-centralized-configuration
-16        |-   https://github.com/vaquarkhan/micro-company
-17        |-   https://github.com/vaquarkhan/PiggyMetrics-microservice-poc
-18        |-   https://github.com/vaquarkhan/spring-cloud-microservice
-19        |-   https://github.com/vaquarkhan/CQRS-microservice-sampler
-20        |-   https://github.com/vaquarkhan/Microservices-Deployment-Cookbook
-21        |-   https://github.com/vaquarkhan/storyteller-microservices
-22        |-   https://github.com/vaquarkhan/microservice-security
-23        |-   https://github.com/vaquarkhan/microservices-demo
-24        |-   https://github.com/vaquarkhan/spring-cloud-microservices-ELKStack
-25        |-   https://github.com/vaquarkhan/event-stream-processing-microservices
-26        |-   https://github.com/vaquarkhan/FraudDetection-Microservices-gemfire
-27        |-   https://github.com/vaquarkhan/microservice-sampler
-28        |-   https://github.com/vaquarkhan/microserviceApplication
-29        |-   https://github.com/vaquarkhan/Microservices-With-Spring-Student-Files
-30        |-   https://github.com/vaquarkhan/spring-boot-netflix-microservice-demo
-31        |-   https://github.com/vaquarkhan/spring-netflix-oss-microservices
-32        |-   https://github.com/vaquarkhan/rest-microservices
-33        |-   https://github.com/vaquarkhan/cloud-native-microservice-strangler-example
-34        |-   https://github.com/vaquarkhan/microservices-SpringCloud-netflix
-35        |-   https://github.com/vaquarkhan/knowledge-driven-microservice
-36        |-   https://github.com/vaquarkhan/event-driven-microservices-platform
-37        |-   https://github.com/vaquarkhan/devnexus-microservice-sample
-38        |-   https://github.com/vaquarkhan/microservices
-39        |-   https://github.com/vaquarkhan/Spring-Microservices
-40        |-   https://github.com/vaquarkhan/bootiful-microservices
-41        |-   https://github.com/vaquarkhan/vk-microservices-with-spring-cloud
-42        |-   https://github.com/vaquarkhan/cf-SpringBootTrader-microservice
-43        |-   https://github.com/vaquarkhan/Refactor-monolith-to-microservices
-44        |-   https://github.com/vaquarkhan/microservices-dashboard
-45        |-   https://github.com/vaquarkhan/microservice-camel-in-action
-46        |-   https://github.com/vaquarkhan/cloud-native-app-microservice-labs
-47        |-   https://github.com/vaquarkhan/spring-boot-8-microservices
-48        |-   https://github.com/vaquarkhan/building-microservices
-49        |-   https://github.com/vaquarkhan/spring-doge-microservice
-50        |-   https://github.com/vaquarkhan/microservice-service-registration-and-discovery
-51        |-   https://github.com/ewolff/microservice
-52        |-   https://github.com/semplify/Reactive-Microservice-Training
-53        |-   https://gitlab.com/training-microservices-2018-06
-54        |-   https://github.com/vaquarkhan/train-ticket
-55        |-   https://github.com/cer/event-sourcing-examples
-56        |-   https://github.com/finn-no/Docker-and-Microservices
-57        |-   https://github.com/nielskrijger/auth-server
 
 ---------------------------------------------------------------------------------
 
