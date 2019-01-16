@@ -43,7 +43,8 @@ Martinfowler:
 * Sam Newman provides a succinct definition of microservices in Building Microservices: “Microservices are small, autonomous services that work together.”
 
 * Frye:The idea with microservices is to focus on building individual services that do one thing and one thing well.
-Nic Grange, CTO at Retriever Communications: “Microservices are an approach to designing software systems that are made up of small independent services that each have a specific purpose.”
+
+* Nic Grange, CTO at Retriever Communications: “Microservices are an approach to designing software systems that are made up of small independent services that each have a specific purpose.”
 
 * Ali Hussain, CTO at Flux7: “Microservices are an approach to addressing a large or complex business problem using a set of smaller, simpler services that work together; a microservice runs its own unique process that contributes to an overarching business goal.”
 
@@ -52,7 +53,8 @@ Nic Grange, CTO at Retriever Communications: “Microservices are an approach to
 * Dustin Horning, Solutions Engineer at Zesty.io: “Microservices are to software what factories are to manufacturing. Instead of having one person [or] machine build a whole car, each area is specialized in its task: This one hammers rivets, this one paints.” AND “Microservices is breaking down one large objective into its parts, and having those parts be accomplished independently.” (OK, that was two explanations, but we’ll let it slide.)
 
 * Justin Bingham, CTO at Janeiro Digital: “Microservices are components of an application or broader ecosystem architected to operate independently – each responsible for a specific business or technical domain.”
-Michael Ducy, Director of Product Marketing at Chef: “It's breaking down the development and release of applications into smaller pieces of work.”
+
+* Michael Ducy, Director of Product Marketing at Chef: “It's breaking down the development and release of applications into smaller pieces of work.”
 
 * Kong Yang, Head Geek at SolarWinds: “Microservices are a method of developing software applications which are made up of independently deployable, modular services. Each microservice runs a unique process and communicates through a well-defined, lightweight mechanism, such as a container, to serve a business goal.”
 
