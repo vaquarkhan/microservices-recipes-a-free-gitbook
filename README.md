@@ -540,8 +540,7 @@ No                  |    about     | url
 2| Microservices Anti-patterns: It’s All About the People  |- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
 3| The 7 Deadly Sins of Microservices  |-  https://opencredo.com/blogs/7-deadly-sins-of-microservices/
 4| Microservices? Please, Don't  |-  https://dzone.com/articles/microservices-please-dont
-5| How Anti-Patterns Can Stifle Microservices Adoption in the Enterprise
- |-  https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
+5| How Anti-Patterns Can Stifle Microservices Adoption in the Enterprise |-  https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
 
 -------------------------------------------------------------------------------------------------------------
 
