@@ -366,62 +366,7 @@ Martin fowler
 
 
 -----------------------------------------------------------------
-### Link
 
-- Twitter: https://dev.twitter.com/docs/api
-- Facebook: http://developers.facebook.com/docs/reference/api/
-- LinkedIn: https://developer.linkedin.com/apis
-- https://developers.google.com/+/web/api/rest/latest/activities/list
-- http://restfulapi.net/resource-naming/
-- https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
-- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#deployment-package
-- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/ 
-- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
-- https://www.martinfowler.com/microservices/
-- https://opensource.com/article/18/4/guide-design-microservices
-- https://microservices.io/patterns/microservices.html
-- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
-- https://blog.philipphauer.de/restful-api-design-best-practices/
-- https://martinfowler.com/tags/domain%20driven%20design.html
-- http://dddcommunity.org/
-- https://www.infoq.com/presentations/ddd-microservices-2016
-- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
-- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
-- https://martinfowler.com/bliki/MicroservicePrerequisites.html
-- https://martinfowler.com/bliki/DevOpsCulture.html"
-- https://semver.org/ 
-- https://cloud.google.com/apis/design/versioning
-- https://pivotal.io/cloud-native
-- https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
-- https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
-- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
-- https://samnewman.io/talks/principles-of-microservices/
-- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
-- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
-- https://martinfowler.com/articles/microservices.html
-
--------------------------------------------------------------------
-### Microservices Anti Patterns
-
-![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
-
-- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
-- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
-- https://vimeo.com/198927025
-- https://vimeo.com/118020043
-- https://www.youtube.com/watch?v=uTGIrzzmcv8
-- https://www.youtube.com/watch?v=VaYmRe104HU
-- https://www.youtube.com/watch?v=X0tjziAQfNQ
-- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
-- https://vimeo.com/118020043
-
-## The Sins of Microservices 
-
-- https://www.infoq.com/articles/seven-uservices-antipatterns
-- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
-- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
-- https://dzone.com/articles/microservices-please-dont
-- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
 
 ### Microservices Video 
 
@@ -533,6 +478,66 @@ No               |  url
 55        |-   https://github.com/cer/event-sourcing-examples
 56        |-   https://github.com/finn-no/Docker-and-Microservices
 57        |-   https://github.com/nielskrijger/auth-server
+
+
+### Link
+
+- Twitter: https://dev.twitter.com/docs/api
+- Facebook: http://developers.facebook.com/docs/reference/api/
+- LinkedIn: https://developer.linkedin.com/apis
+- https://developers.google.com/+/web/api/rest/latest/activities/list
+- http://restfulapi.net/resource-naming/
+- https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#deployment-package
+- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/ 
+- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
+- https://www.martinfowler.com/microservices/
+- https://opensource.com/article/18/4/guide-design-microservices
+- https://microservices.io/patterns/microservices.html
+- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
+- https://blog.philipphauer.de/restful-api-design-best-practices/
+- https://martinfowler.com/tags/domain%20driven%20design.html
+- http://dddcommunity.org/
+- https://www.infoq.com/presentations/ddd-microservices-2016
+- http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx
+- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
+- https://martinfowler.com/bliki/MicroservicePrerequisites.html
+- https://martinfowler.com/bliki/DevOpsCulture.html"
+- https://semver.org/ 
+- https://cloud.google.com/apis/design/versioning
+- https://pivotal.io/cloud-native
+- https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons/34904942
+- https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?answertab=votes#tab-top
+- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+- https://samnewman.io/talks/principles-of-microservices/
+- https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
+- https://dzone.com/articles/ddd-strategic-patterns-how-to-define-bounded-conte
+- https://martinfowler.com/articles/microservices.html
+- https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
+
+-------------------------------------------------------------------
+### Microservices Anti Patterns
+
+![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
+
+- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
+- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
+- https://vimeo.com/198927025
+- https://vimeo.com/118020043
+- https://www.youtube.com/watch?v=uTGIrzzmcv8
+- https://www.youtube.com/watch?v=VaYmRe104HU
+- https://www.youtube.com/watch?v=X0tjziAQfNQ
+- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
+- https://vimeo.com/118020043
+
+## The Sins of Microservices 
+
+- https://www.infoq.com/articles/seven-uservices-antipatterns
+- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
+- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
+- https://dzone.com/articles/microservices-please-dont
+- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
+
 
 -------------------------------------------------------------------------------------------------------------
 
