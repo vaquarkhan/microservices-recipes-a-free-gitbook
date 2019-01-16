@@ -40,7 +40,7 @@ Martinfowler:
 * Services may be written in different programming languages(polyglot development).
 * Services should use separate data storage (polyglot persistence ).
 
-* Sam Newman provides a succinct definition of microservices in Building Microservices: “Microservices are small, autonomous services that work together.”
+* Sam Newman : “Microservices are small, autonomous services that work together.”
 
 * Frye:The idea with microservices is to focus on building individual services that do one thing and one thing well.
 
