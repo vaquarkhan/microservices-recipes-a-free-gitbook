@@ -299,11 +299,6 @@ Martin fowler
 - [Testing Strategies in a Microservice Architecture](http://martinfowler.com/articles/microservice-testing/) - Approaches for managing the additional testing complexity of multiple independently deployable components.
 - [Your Server as a Function](http://monkey.org/~marius/funsrv.pdf) :small_orange_diamond:<sup>PDF</sup> - Describes three abstractions which combine to present a powerful programming model for building safe, modular, and efficient server software: Composable futures, services and filters.
 
-<ul>
-in 2018</a>. A critical reflection about microservices. Highly recommended.</li>
-<li>James Lewis, Martin Fowler: <a href="http://martinfowler.com/articles/microservices.html">Microservices</a>.</li>
-<li>David Parnas: <a href="http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf">On the Criteria To Be Used in Decomposing Systems into Modules</a> (1972). This paper describes the three benefits of modularity. Although the paper is very old, it is still valid.</li>
-</ul>
 
 -----
 
