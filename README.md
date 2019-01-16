@@ -479,6 +479,23 @@ No               |  url
 56        |-   https://github.com/finn-no/Docker-and-Microservices
 57        |-   https://github.com/nielskrijger/auth-server
 
+### Microservices Anti Patterns
+
+![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
+
+
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| Don’t Build a Distributed Monolith  |- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
+2| In this talk from the API360 Microservices Summit in New York, June 2016,  Vijay Alagarasan of Asurion explores lessons learned and anti-patterns to avoid when implementing microservices.   |-  https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
+3|Microservices Anti-Patterns   |- https://vimeo.com/198927025
+4|Microservices Anti-Patterns   |- https://vimeo.com/118020043
+5|API360 Microservices Summit – Microservices Antipatterns – Vijay Alagarasan, Asurion   |-  https://www.youtube.com/watch?v=uTGIrzzmcv8
+6|Stefan Tilkov - Microservices Patterns and Anti-patterns    |- https://www.youtube.com/watch?v=VaYmRe104HU
+7|10 Tips for failing badly at Microservices by David Schmitz     |- https://www.youtube.com/watch?v=X0tjziAQfNQ
+8|10 Tips for failing badly at Microservices by David Schmitz     |-https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
+
+
 
 ### Link
 
@@ -513,29 +530,18 @@ No                  |    about     | url
 29| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
 
 
--------------------------------------------------------------------
-### Microservices Anti Patterns
 
-![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
-
-- https://www.microservices.com/talks/dont-build-a-distributed-monolith/
-- https://www.apiacademy.co/resources/videos/api360-microservices-summit-microservices-anti-patterns
-- https://vimeo.com/198927025
-- https://vimeo.com/118020043
-- https://www.youtube.com/watch?v=uTGIrzzmcv8
-- https://www.youtube.com/watch?v=VaYmRe104HU
-- https://www.youtube.com/watch?v=X0tjziAQfNQ
-- https://www.oreilly.com/library/view/microservices-antipatterns-and/9781491963937/video255789.html
-- https://vimeo.com/118020043
 
 ## The Sins of Microservices 
 
-- https://www.infoq.com/articles/seven-uservices-antipatterns
-- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
-- https://opencredo.com/blogs/7-deadly-sins-of-microservices/
-- https://dzone.com/articles/microservices-please-dont
-- https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
-
+No                  |    about     | url
+------------------- | ------------ | -------------------
+1| Seven Microservices Anti-patterns  |- https://www.infoq.com/articles/seven-uservices-antipatterns
+2| Microservices Anti-patterns: It’s All About the People  |- https://opencredo.com/blogs/microservices-anti-patterns-its-all-about-the-people/
+3| The 7 Deadly Sins of Microservices  |-  https://opencredo.com/blogs/7-deadly-sins-of-microservices/
+4| Microservices? Please, Don't  |-  https://dzone.com/articles/microservices-please-dont
+5| How Anti-Patterns Can Stifle Microservices Adoption in the Enterprise
+ |-  https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
 
 -------------------------------------------------------------------------------------------------------------
 
