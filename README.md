@@ -228,10 +228,10 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 
 
 ### Microservice Design Patterns
-* [Design patterns for microservices](https://azure.microsoft.com/en-us/blog/design-patterns-for-microservices/)
-* [Microservice Design Patterns](http://blog.arungupta.me/microservice-design-patterns/)
-* [Design Patterns for Microservices](https://dzone.com/articles/design-patterns-for-microservices)
-* [Pattern: Microservice Architecture](https://microservices.io/patterns/microservices.html)
+* [Design patterns for microservices Article 1](https://azure.microsoft.com/en-us/blog/design-patterns-for-microservices/)
+* [Design patterns for microservices Article 2](http://blog.arungupta.me/microservice-design-patterns/)
+* [Design patterns for microservices Article 3](https://dzone.com/articles/design-patterns-for-microservices)
+* [Design patterns for microservices Article 4](https://microservices.io/patterns/microservices.html)
 
 
 
