@@ -300,6 +300,7 @@ APIs are standardized wrappers that create an interface through which microservi
 
 Microservices are most often used internally, while APIs are used to expose functionality to the outside world. 
 
+- https://www.youtube.com/watch?v=qGFRbOq4fmQ
 
 
 
