@@ -80,6 +80,7 @@ Each Microservice should have it's own datastore.
 
 ## Pros-and-cons
 
+### Advantages
 Sam Newman in Building Microservices, enumerates the key benefits of Microservices as following:
 
 #### Technology Heterogeneity
@@ -107,7 +108,7 @@ If you work at a medium-size or bigger organization, chances are you are aware o
 
 With our individual services being small in size, the cost to replace them with a better implementation, or even delete them altogether, is much easier to manage.
 
-### Cons 
+### Disadvantages 
 
 #### Team Communication Overhead - 
 Microservice architecture reduces the team management complexity, but it is not able to diminish the need of team communication. They need to make sure an update in one’s service is not breaking some other functionality. We can find this problem in monolith architecture applications too.
@@ -143,9 +144,6 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 * It is very difficult to maintain multiple Microservices as increased Complexity.
 
 * It is extremely difficult to find good architects for creating Microservice architecture in right way.
-
-
-
 
 
 
@@ -258,7 +256,7 @@ After you identify the microservices in your application, validate your design a
 
 - from docs.microsoft.com
 
-### When to use this architecture
+### When to use microservice architecture
 
 Consider this architecture style for:
 
@@ -311,7 +309,7 @@ Martin fowler
 
 How big a Microservice should be is: it should have a well defined bounded context that will enable us to work without having to consider, or swap, between contexts.
 
-### How to identify bounded context -T<BD >Going to write new gitbook. 
+#### How to identify bounded context  ? - Going to write new gitbook. 
 
 ## Real Life Stories
 
@@ -1063,7 +1061,7 @@ Inspired by the [coming soon...]().
 ![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-#### Note :  This is not final Book as still working on it,You are welcome to participate and contribute to build one page index to get all good microservice resources . I have tried to add attribution if you didn't find your name in attribution plz raise issue in github ,if your claim is valid i will add proper attribution.     
+#### Note :Book  still updating and draft version,you are welcome to participate and contribute to build one page microservice index to get all microservice resources .If you didn't find your name in attribution plz raise issue in github ,if  claim is valid i will add  attribution on content .     
     
     
     
