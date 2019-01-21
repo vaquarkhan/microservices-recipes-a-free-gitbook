@@ -270,13 +270,32 @@ Consider this architecture style for:
 
 * An organization that consists of small development teams.
 
+### The Scale Cube
+Scale Cube, defined by Martin L. Abbott and Michael T. Fisher. This model explains how infinite scaling can be achieved by implementing a three-dimensional approach.
 
+The Art of Scalability  book describes three dimension scalability model: the scale cube.  The microservice architecture is an application of Y-axis scaling on the scale cube. 
+
+    •	Horizontal Duplication and Cloning (X-Axis )
+    •	Functional Decomposition and Segmentation - Microservices (Y-Axis)
+    •	Horizontal Data Partitioning - Shards (Z-Axis)
+
+
+![Alt Text](https://microservices.io/i/DecomposingApplications.021.jpg )
+
+  - https://microservices.io/articles/scalecube.html
+ -  https://akfpartners.com/growth-blog/scale-cube/
+ -  https://www.infoq.com/articles/microservices-intro
+ -  https://medium.com/@cinish/microservices-architecture-5da90504f92a
+ 
 ###  Microservices vs SOA
 
 ![Alt Text](http://lh6.ggpht.com/-rMus2S1lWlY/VSbOJPqvxzI/AAAAAAAAAhI/7FZBTbZRLk8/MicroservicesVsSOA-SystemLayers.png?imgmax=800)
 
 - https://dzone.com/articles/microservices-vs-soa-whats-the-difference
 - http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
+
+###  Microservices vs API
+
 
 
 ### What is BoundedContext 
