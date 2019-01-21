@@ -325,11 +325,6 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
 - [Scaling microservices at Gilt with Scala, Docker and AWS](http://www.infoq.com/news/2015/04/scaling-microservices-gilt)
 
-## Enterprise & Verticals
-
-- [Interact ![c]](https://interact.io/) - CRM microservices for rapid delivery of tailored solutions.
-- [Predix ![c]](https://predix.io/) - Industrial microservices platform.
-- [YaaS ![c]](https://www.yaas.io) - SAP Hybris microservices ecosystem.
 
 ## Theory
 
