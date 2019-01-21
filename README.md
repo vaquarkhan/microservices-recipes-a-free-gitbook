@@ -296,6 +296,11 @@ The Art of Scalability  book describes three dimension scalability model: the sc
 
 ###  Microservices vs API
 
+APIs are standardized wrappers that create an interface through which microservices can be packaged and surfaced. This makes APIs the logical enforcement point for key concerns of a microservices architecture such as security, governance, and reuse. Because APIs are able to house these concerns, they are considered a foundational component of a microservices architecture. 
+
+Microservices are most often used internally, while APIs are used to expose functionality to the outside world. 
+
+
 
 
 ### What is BoundedContext 
