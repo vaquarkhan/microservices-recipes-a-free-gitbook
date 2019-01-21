@@ -296,8 +296,8 @@ The Art of Scalability  book describes three dimension scalability model: the sc
 
 ###  Microservices vs API
 
-APIs are standardized wrappers that create an interface through which microservices can be packaged and surfaced. This makes APIs the logical enforcement point for key concerns of a microservices architecture such as security, governance, and reuse. Because APIs are able to house these concerns, they are considered a foundational component of a microservices architecture. 
-
+APIs are standardized wrappers that create an interface through which microservices can be packaged and surfaced. This makes APIs the logical enforcement point for key concerns of a microservices architecture such as security, governance, and reuse. Because APIs are able to house these concerns, they are considered a foundational component of a microservices architecture(mulesoft). 
+                               
 Microservices are most often used internally, while APIs are used to expose functionality to the outside world. 
 
 - https://www.youtube.com/watch?v=qGFRbOq4fmQ
@@ -309,6 +309,9 @@ Microservices are most often used internally, while APIs are used to expose func
 DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 Martin fowler
 
+How big a Microservice should be is: it should have a well defined bounded context that will enable us to work without having to consider, or swap, between contexts.
+
+### How to identify bounded context -T<BD >Going to write new gitbook. 
 
 ## Real Life Stories
 
