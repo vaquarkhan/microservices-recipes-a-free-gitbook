@@ -1063,7 +1063,7 @@ Inspired by the [coming soon...]().
 ![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-#### Note :  Still fixing this book and adding content ,referance ,formatting etc ,You are welcome to participate and contribute to build one page to get all good microservice resources .give back to Technical community :)     
+#### Note :  This is not final Book as still working on it,You are welcome to participate and contribute to build one page index to get all good microservice resources . I have tried to add attribution if you didn't find your name in attribution plz raise issue in github ,if your claim is valid i will add proper attribution.     
     
     
     
