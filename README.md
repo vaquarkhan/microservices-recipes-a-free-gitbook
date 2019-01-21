@@ -135,13 +135,13 @@ Testing of such application is definitely harder compared to a monolith applicat
 #### Log analysis -
 Need log analysis tool for log analysis ,Spalunk or ELK stack
 
-#### :) 
-* It is very difficult to maintain multiple Microservices.
-* It is very difficult to maintain versioning among Microservices.
-* It is extremely difficult to find good architects for creating Microservice architecture in right way.
-* Increased Complexity
+
 * Microservices - Not A Free Lunch! http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html
 
+
+* It is very difficult to maintain multiple Microservices as increased Complexity.
+
+* It is extremely difficult to find good architects for creating Microservice architecture in right way.
 
 
 
