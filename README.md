@@ -972,7 +972,9 @@ TBD
     
     
 * [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
-    
+* [Microservicios 2.0: Spring Cloud Netflix vs Kubernetes & Istio
+](https://www.paradigmadigital.com/dev/microservicios-2-0-spring-cloud-netflix-vs-kubernetes-istio/)
+ 
 ---------------------------------------------------------------------------------
 
 ### Mock Responses
