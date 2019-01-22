@@ -163,13 +163,13 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 
 ## Design Guidelines
 
-### Architecture Principles
+#### Architecture Principles
 
 * Single Responsibility Principle 
 * Domain Driven Design
 * Start withrelatively broad service boundaries to begin with, refactoring to smaller ones (based on business requirements) 
 
-### Core patterns
+#### Core patterns
 
 * [Monolithic architecture from Chris Richardson](http://microservices.io/patterns/monolithic.html)
 * [Microservices architecture from Chris Richardson](http://microservices.io/patterns/microservices.html)
@@ -178,14 +178,14 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 * [Circuit Breaker from Martin Fowler](http://martinfowler.com/bliki/CircuitBreaker.html)
 * [Circuit Breaker ~ netflix](http://doc.akka.io/docs/akka/snapshot/common/circuitbreaker.html)
 
-### Deployment patterns
+#### Deployment patterns
 
 * [Multiple service instances per host](http://microservices.io/patterns/deployment/multiple-services-per-host.html)
 * [Service instance per host](http://microservices.io/patterns/deployment/single-service-per-host.html)
 * [Service instance per VM](http://microservices.io/patterns/deployment/service-per-vm.html)
 * [Service instance per Container](http://microservices.io/patterns/deployment/service-per-container.html)
 
-### Service discovery
+#### Service discovery
 
 * [Client-side discovery from Chris Richardson](http://microservices.io/patterns/client-side-discovery.html)
 * [Server-side discovery from Chris Richardson ](http://microservices.io/patterns/apigateway.html)
@@ -194,7 +194,7 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 * [3rd party registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
 * [Service discovery with consul & etcd](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
 
-### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
+#### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
 
 #### Standardized service contract. Strategies include:
 * REST API design best practices,
@@ -706,9 +706,9 @@ A compiled list to public failure/horror stories related to microservice infrast
 
 ---------------------------------------------------------------------------
 
-### REST APIs
+## REST APIs
 
-## Pragmatic REST
+### Pragmatic REST
 
 These guidelines aim to support a truly RESTful API. Here are a few exceptions:
 * Put the version number of the API in the URL (see examples below). Don’t accept any requests that do not specify a version number.
@@ -716,9 +716,9 @@ These guidelines aim to support a truly RESTful API. Here are a few exceptions:
     * http://example.gov/api/v1/magazines.json
     * http://example.gov/api/v1/magazines.xml
 
-## RESTful URLs
+### RESTful URLs
 
-### General guidelines for RESTful URLs
+#### General guidelines for RESTful URLs
 * A URL identifies a resource.
 * URLs should include nouns, not verbs.
 * Use plural nouns only for consistency (no singular nouns).
@@ -731,7 +731,7 @@ These guidelines aim to support a truly RESTful API. Here are a few exceptions:
 * Specify optional fields in a comma separated list.
 * Formats should be in the form of api/v2/resource/{id}.json
 
-### Good URL examples
+#### Good URL examples
 * List of magazines:
     * GET http://www.example.gov/api/v1/magazines.json
 * Filtering is a query:
@@ -748,7 +748,7 @@ These guidelines aim to support a truly RESTful API. Here are a few exceptions:
 * Add a new article to a particular magazine:
     * POST http://example.gov/api/v1/magazines/1234/articles
 
-### Bad URL examples
+#### Bad URL examples
 * Non-plural noun:
     * http://www.example.gov/magazine
     * http://www.example.gov/magazine/1234
@@ -758,7 +758,7 @@ These guidelines aim to support a truly RESTful API. Here are a few exceptions:
 * Filter outside of query string
     * http://www.example.gov/magazines/2011/desc
 
-## HTTP Verbs
+#### HTTP Verbs
 
 HTTP verbs, or methods, should be used in compliance with their definitions under the [HTTP/1.1](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) standard.
 The action taken on the representation will be contextual to the media type being worked on and its current state. Here's an example of how HTTP verbs map to create, read, update, delete operations in a particular context:
@@ -772,13 +772,13 @@ The action taken on the representation will be contextual to the media type bein
 (Example from Web API Design, by Brian Mulloy, Apigee.)
 
 
-## Responses
+#### Responses
 
 * No values in keys
 * No internal-specific names (e.g. "node" and "taxonomy term")
 * Metadata should only contain direct properties of the response set, not properties of the members of the response set
 
-### Good examples
+#### Good examples
 
 No values in keys:
 
@@ -788,7 +788,7 @@ No values in keys:
     ],
 
 
-### Bad examples
+#### Bad examples
 
 Values in keys:
 
@@ -798,7 +798,7 @@ Values in keys:
     ],
 
 
-## Error handling
+#### Error handling
 
 Error responses should include a common HTTP status code, message for the developer, message for the end-user (when appropriate), internal error code (corresponding to some specific internally determined ID), links where developers can find more info. For example:
 
@@ -818,7 +818,7 @@ Use three simple, common response codes indicating (1) success, (2) failure due 
 * 500 - Internal Server Error
 
 
-## Versions
+#### Versions
 
 * Never release an API without a version number.
 * Versions should be integers, not decimal numbers, prefixed with ‘v’. For example:
@@ -827,7 +827,7 @@ Use three simple, common response codes indicating (1) success, (2) failure due 
 * Maintain APIs at least one version back.
 
 
-## Record limits
+#### Record limits
 
 * If no limit is specified, return results with a default limit.
 * To get records 51 through 75 do this:
@@ -848,9 +848,9 @@ Information about record limits and total available count should also be include
         "results": []
     }
 
-## Request & Response Examples
+### Request & Response Examples
 
-### API Resources
+#### API Resources
 
   - [GET /magazines](#get-magazines)
   - [GET /magazines/[id]](#get-magazinesid)
@@ -903,7 +903,7 @@ Response body:
         ]
     }
 
-### GET /magazines/[id]
+#### GET /magazines/[id]
 
 Example: http://example.gov/api/v1/magazines/[id].json
 
@@ -922,7 +922,7 @@ Response body:
 
 
 
-### POST /magazines/[id]/articles
+#### POST /magazines/[id]/articles
 
 Example: Create – POST  http://example.gov/api/v1/magazines/[id]/articles
 
@@ -940,19 +940,18 @@ Request body:
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante ut augue scelerisque ornare. Aliquam tempus rhoncus quam vel luctus. Sed scelerisque fermentum fringilla. Suspendisse tincidunt nisl a metus feugiat vitae vestibulum enim vulputate. Quisque vehicula dictum elit, vitae cursus libero auctor sed. Vestibulum fermentum elementum nunc. Proin aliquam erat in turpis vehicula sit amet tristique lorem blandit. Nam augue est, bibendum et ultrices non, interdum in est. Quisque gravida orci lobortis... "
         }
     ]
+---------------------------------------------------------------------------------
 
-
-## Mock Responses
+### Mock Responses
 It is suggested that each resource accept a 'mock' parameter on the testing server. Passing this parameter should return a mock data response (bypassing the backend).
 
 Implementing this feature early in development ensures that the API will exhibit consistent behavior, supporting a test driven development methodology.
 
 Note: If the mock parameter is included in a request to the production environment, an error should be raised.
 
+---------------------------------------------------------------------------------
 
-
-
-### API Doc
+#### API Doc
 
 
 - [Aglio](https://github.com/danielgtaylor/aglio) - API Blueprint renderer with theme support that outputs static HTML.
@@ -963,9 +962,9 @@ Note: If the mock parameter is included in a request to the production environme
 - [Spring REST Docs](http://projects.spring.io/spring-restdocs/) - Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test.
 - [Swagger](http://swagger.io/) - A simple yet powerful representation of your RESTful API.
 
+---------------------------------------------------------------------------------
 
-
-### Security
+#### Security
 
 - [Crtauth](https://github.com/spotify/crtauth) - A public key backed client/server authentication system.
 - [Dex](https://github.com/coreos/dex) - Opinionated auth/directory service with pluggable connectors. OpenID Connect provider and third-party OAuth 2.0 delegation.
@@ -989,8 +988,9 @@ Note: If the mock parameter is included in a request to the production environme
 - [RFC7644](https://tools.ietf.org/html/rfc7644) - SCIM: Protocol, an application-level, REST protocol for provisioning and managing identity data on the web.
 - [OIDCONN](http://openid.net/connect/) - OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It allows clients to verify the identity of the end-user based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the end-user in an interoperable and REST-like manner.
 
+---------------------------------------------------------------------------------
 
-### Serialization
+#### Serialization
 
 - [Avro](https://avro.apache.org/) - Apache data serialization system providing rich data structures in a compact, fast, binary data format.
 - [BooPickle](https://github.com/ochrons/boopickle) - Binary serialization library for efficient network communication. For Scala and Scala.js
@@ -1010,8 +1010,9 @@ Note: If the mock parameter is included in a request to the production environme
 - [SBinary](https://github.com/harrah/sbinary) - Library for describing binary formats for Scala types.
 - [Thrift](http://thrift.apache.org/) - The Apache Thrift software framework, for scalable cross-language services development.
 
+---------------------------------------------------------------------------------
 
-### Storage
+#### Storage
 
 - [Apache Hive](https://hive.apache.org/) - Data warehouse infrastructure built on top of Hadoop.
 - [Apache Cassandra](http://cassandra.apache.org) - Column-oriented and providing high availability with no single point of failure.
@@ -1041,6 +1042,8 @@ Note: If the mock parameter is included in a request to the production environme
 - [Voldemort](https://github.com/voldemort/voldemort) - Open source clone of Amazon DynamoDB
 - [VoltDB ![c]](https://www.voltdb.com/) - In-Memory ACID compliant distributed database.
 
+---------------------------------------------------------------------------------
+
 ### Testing
 
 - [Goreplay](https://github.com/buger/goreplay) - A tool for capturing and replaying live HTTP traffic into a test environment.
@@ -1051,8 +1054,9 @@ Note: If the mock parameter is included in a request to the production environme
 - [Wilma](https://github.com/epam/Wilma) - Combined HTTP/HTTPS service stub and transparent proxy solution.
 - [WireMock](http://wiremock.org/) - Flexible library for stubbing and mocking web services. Unlike general purpose mocking tools it works by creating an actual HTTP server that your code under test can connect to as it would a real web service.
 
+---------------------------------------------------------------------------------
 
-### Continuous Integration and Continuous Delivery
+#### Continuous Integration and Continuous Delivery
 
 
 ![Alt Text](https://i.pinimg.com/originals/94/59/59/945959ad493a20fa7e348379763dbcda.jpg)
