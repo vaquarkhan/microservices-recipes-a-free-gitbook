@@ -950,7 +950,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-#### API Doc
+### API Doc
 
 
 - [Aglio](https://github.com/danielgtaylor/aglio) - API Blueprint renderer with theme support that outputs static HTML.
@@ -963,7 +963,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-#### Security
+### Security
 
 - [Crtauth](https://github.com/spotify/crtauth) - A public key backed client/server authentication system.
 - [Dex](https://github.com/coreos/dex) - Opinionated auth/directory service with pluggable connectors. OpenID Connect provider and third-party OAuth 2.0 delegation.
@@ -989,7 +989,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-#### Serialization
+### Serialization
 
 - [Avro](https://avro.apache.org/) - Apache data serialization system providing rich data structures in a compact, fast, binary data format.
 - [BooPickle](https://github.com/ochrons/boopickle) - Binary serialization library for efficient network communication. For Scala and Scala.js
@@ -1011,7 +1011,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-#### Storage
+### Storage
 
 - [Apache Hive](https://hive.apache.org/) - Data warehouse infrastructure built on top of Hadoop.
 - [Apache Cassandra](http://cassandra.apache.org) - Column-oriented and providing high availability with no single point of failure.
@@ -1055,7 +1055,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-#### Continuous Integration and Continuous Delivery
+### Continuous Integration and Continuous Delivery
 
 
 ![Alt Text](https://i.pinimg.com/originals/94/59/59/945959ad493a20fa7e348379763dbcda.jpg)
