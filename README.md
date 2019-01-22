@@ -165,9 +165,12 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 
 #### Architecture Principles
 
-* Single Responsibility Principle 
-* Domain Driven Design
 * Start withrelatively broad service boundaries to begin with, refactoring to smaller ones (based on business requirements) 
+* [Single Responsibility Principle](https://codeburst.io/understanding-solid-principles-single-responsibility-b7c7ec0bf80)
+* [domain-driven design](https://dzone.com/refcardz/getting-started-domain-driven?chapter=1)
+
+
+
 
 #### Core patterns
 
@@ -205,45 +208,45 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 #### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
 
 #### Standardized service contract. Strategies include:
-* REST API design best practices,
-* API gateway,
-* contract-first design
+* [REST API design best practices](#pragmatic-rest)
+* [API gateway](https://apigee.com/about/cp/api-gateway)    
+* [contract-first design](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.435.2220&rep=rep1&type=pdf)     
 
 #### Service loose coupling. Strategies include:
-* Service Facade pattern
-* Legacy Wrapper pattern
-* point-to-point, publish-subscribe and other messaging patterns
-* event-driven architecture
+* [Service Facade pattern](https://www.ibm.com/support/knowledgecenter/pt-br/SSMKHH_9.0.0/com.ibm.etools.mft.pattern.sen.doc/sen/sf/overview.htm)  
+* [Legacy Wrapper pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/legacy_wrapper) 
+* [point-to-point, publish-subscribe and other messaging patterns](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)  
+* [event-driven architecture](https://microservices.io/patterns/data/event-driven-architecture.html)  
 
 #### Service reusability. Strategies include:
-* modeling for reuse,
-* Strangler Application pattern
+* [modeling for reuse](#)  
+* [Strangler Application pattern](https://www.martinfowler.com/bliki/StranglerApplication.html)   
 
 #### Service autonomy. Strategies include:
-* Saga pattern
-* modeling services with DDD
-* Database per Microservice pattern
-* Service Data Replication pattern
-* CQRS and event sourcing
+* [Saga pattern](https://microservices.io/patterns/data/saga.html) 
+* [modeling services with DDD](https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture) 
+* [Database per Microservice pattern](https://microservices.io/patterns/data/database-per-service.html) 
+* [Service Data Replication pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_data_replication) 
+* [CQRS ](https://martinfowler.com/bliki/CQRS.html) 
+* [Event sourcing](https://microservices.io/patterns/data/event-sourcing.html) 
 
 #### Service statelessness. Strategies include:
-* Asynchronous processing
-* State Messaging pattern
-* Service Callback pattern
+* [Asynchronous processing](https://www.ibm.com/support/knowledgecenter/en/SSGMCP_4.2.0/com.ibm.cics.ts.intercommunication.doc/topics/dfht1ke.html) 
+* [State Messaging pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/state_messaging) 
+* [Service Callback pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_callback) 
+
 
 #### Service discoverability. Strategies include:
-* service registry
-* service governance
+ * [service registry](https://microservices.io/patterns/service-registry.html)
+ * [service governance](http://www.cs.cmu.edu/~ibm-soa/CMU-SOA-Day-Sachdeva-SOA-Governance.pdf)
 
 #### Service deployability. Strategies include:
-* continuous delivery
-* blue-green deployment
-* laC
-* DevOps
-* externalized configuration
-* containerization
-* serverless architecture
-* monitoring and logging for microservices
+* [continuous delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
+* [blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html)
+* [externalized configuration](https://microservices.io/patterns/externalized-configuration.html)
+* [containerization](https://cloud.google.com/containers/)
+* [serverless architecture](https://martinfowler.com/articles/serverless.html)
+* [monitoring and logging for microservices](https://dzone.com/articles/distributed-logging-architecture-for-microservices)
 
 
 [![asciicast](https://i.vimeocdn.com/video/523960449.webp?mw=1000&mh=563&q=70)](https://vimeo.com/131632250)
@@ -1067,12 +1070,7 @@ Note: If the mock parameter is included in a request to the production environme
 ### Continuous Integration and Continuous Delivery
 
 
-![Alt Text](https://i.pinimg.com/originals/94/59/59/945959ad493a20fa7e348379763dbcda.jpg)
-
-
 - [Awesome CI/CD DevOps](https://github.com/ciandcd/awesome-ciandcd) - A curated list of awesome tools for continuous integration, continuous delivery and DevOps.
-
-
 
 
 ---------------------------------------------------------------------------------
