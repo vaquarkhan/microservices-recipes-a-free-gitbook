@@ -953,20 +953,20 @@ Request body:
     ]
     
 --------------------------------------------------------------------------------- 
-   ### Spring Cloud for Microservices 
+ ### Spring Cloud for Microservices 
       
-   .... TBD
+TBD
    
-   ### Kubernetes for Microservices
+### Kubernetes for Microservices
    
-   .....TBD
+TBD
    
-   ### Spring Cloud  vs Kubernetes
+### Spring Cloud  vs Kubernetes
     
-    ![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
+![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
     
     
-    * [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
+* [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
     
 ---------------------------------------------------------------------------------
 
