@@ -566,6 +566,7 @@ No               |  url
 57        |-   https://github.com/nielskrijger/auth-server
 58        |-   https://developer.github.com/v3/repos/
 59        |-   https://github.com/vaquarkhan/ftgo-application
+60        |-   https://github.com/IBM/GameOn-Java-Microservices-on-Kubernetes
 
 ### Microservices Anti Patterns
 
