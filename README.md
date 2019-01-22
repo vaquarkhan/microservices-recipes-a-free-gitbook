@@ -314,8 +314,7 @@ Leveraging the pieces of that practice that makes sense for me and getting most 
 
 ### Microservice vs Nanoservices
 
-Nanoservice is an antipattern where a service is too fine-grained. A nanoservice is a service whose overhead (communications, maintenance, and so on) outweighs its utility. Like Steve and others, Arnon concludes that Microservices is just another name for SOA
-
+Nanoservice is an antipattern where a service is too fine-grained. A nanoservice is a service whose overhead (communications, maintenance, and so on) outweighs its utility. 
 
 
 ### What is BoundedContext 
