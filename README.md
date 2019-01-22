@@ -704,7 +704,7 @@ A compiled list to public failure/horror stories related to microservice infrast
 1. Ensure that your GET, PUT, and DELETE operations are all [idempotent](http://www.restapitutorial.com/lessons/idempotency.html).  There should be no adverse side affects from operations.
 
 
-## Documentation & Modeling
+---------------------------------------------------------------------------
 
 ### REST APIs
 
@@ -1053,6 +1053,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 
 ### Continuous Integration and Continuous Delivery
+
 
 ![Alt Text](https://i.pinimg.com/originals/94/59/59/945959ad493a20fa7e348379763dbcda.jpg)
 
