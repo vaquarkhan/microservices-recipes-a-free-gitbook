@@ -548,6 +548,7 @@ No               |  url
 56        |-   https://github.com/finn-no/Docker-and-Microservices
 57        |-   https://github.com/nielskrijger/auth-server
 58        |-   https://developer.github.com/v3/repos/
+59        |-   https://github.com/vaquarkhan/ftgo-application
 
 ### Microservices Anti Patterns
 
