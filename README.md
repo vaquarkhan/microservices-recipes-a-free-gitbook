@@ -194,6 +194,14 @@ Need log analysis tool for log analysis ,Spalunk or ELK stack
 * [3rd party registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
 * [Service discovery with consul & etcd](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
 
+#### Service Mesh
+
+* [What Is a Service Mesh](https://www.nginx.com/blog/what-is-a-service-mesh/)
+* [istio](https://istio.io/docs/concepts/what-is-istio/)
+* [Service mesh vs api getway](https://medium.com/microservices-in-practice/service-mesh-vs-api-gateway-a6d814b9bf56)
+
+
+
 #### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
 
 #### Standardized service contract. Strategies include:
