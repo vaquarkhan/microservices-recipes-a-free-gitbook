@@ -32,14 +32,6 @@ Microservice architecture, or simply microservices, is a distinctive method of d
 
 Microservices architecture (Image courtesy: Cloud Application Architecture Guide).
 
-Martinfowler:
-* As a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API
-* Services are built around business capabilities
-* services are independently deployable and scalable
-* Bare minimum of centralized management of these services
-* Services may be written in different programming languages(polyglot development).
-* Services should use separate data storage (polyglot persistence ).
-
 * Sam Newman : “Microservices are small, autonomous services that work together.”
 
 * Frye:The idea with microservices is to focus on building individual services that do one thing and one thing well.
@@ -60,6 +52,14 @@ Martinfowler:
 
 * Microservices allow an organization to reduce dependencies, develop faster, and scale.—Aviran Mordo
 
+Microservices Definition by Lewis/Fowler:
+
+* As a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API
+* Services are built around business capabilities
+* services are independently deployable and scalable
+* Bare minimum of centralized management of these services
+* Services may be written in different programming languages(polyglot development).
+* Services should use separate data storage (polyglot persistence ).
 
 The Microservices approach is about breaking your system ("pile of code") into many small services, each typically has its own:
 
