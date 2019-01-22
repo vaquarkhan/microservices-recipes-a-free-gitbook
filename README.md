@@ -470,6 +470,11 @@ No                  |    about     | url
 13| The hardest part of microservices is your data     | - https://www.youtube.com/watch?v=MrV0DqTqpFU
 14| Data Design and Modeling for Microservices      | - https://www.youtube.com/watch?v=KPtLbSEFe6c
 15| The Art of Discovering Bounded Contexts by Nick Tune       | - https://www.youtube.com/watch?v=ez9GWESKG4I
+16| The challenges of migrating 150+ microservices to Kubernetes -Sarah Wells (Financial Times)       | - https://www.youtube.com/watch?v=fgI3cOdv87I&feature=youtu.be
+
+
+
+
 
 
 
