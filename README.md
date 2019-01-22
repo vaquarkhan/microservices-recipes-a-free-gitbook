@@ -79,6 +79,18 @@ The Microservices approach is about breaking your system ("pile of code") into m
 Each Microservice should have it's own datastore.
 * Small team capable to work on design, web development, coding, database admin and operations.
 
+## When to use microservice architecture
+
+Consider this architecture style for:
+
+* Large applications that require a high release velocity.
+
+* Complex applications that need to be highly scalable.
+
+* Applications with rich domains or many subdomains.
+
+* An organization that consists of small development teams.
+
 
 ## Pros-and-cons
 
@@ -260,17 +272,6 @@ After you identify the microservices in your application, validate your design a
 
 - from docs.microsoft.com
 
-### When to use microservice architecture
-
-Consider this architecture style for:
-
-* Large applications that require a high release velocity.
-
-* Complex applications that need to be highly scalable.
-
-* Applications with rich domains or many subdomains.
-
-* An organization that consists of small development teams.
 
 ### The Scale Cube
 Scale Cube, defined by Martin L. Abbott and Michael T. Fisher. This model explains how infinite scaling can be achieved by implementing a three-dimensional approach.
