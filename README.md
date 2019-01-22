@@ -622,8 +622,7 @@ A compiled list to public failure/horror stories related to microservice infrast
 -------------------------------------------------------------------------------------------------------------
 
 
-
-# API Design 
+## API Design Design guidelines
 1. Build the API with consumers in mind--as a product in its own right.
     * Not for a specific UI.
     * Embrace flexibility / tunability of each endpoint (see #5, 6 & 7).
@@ -706,7 +705,7 @@ A compiled list to public failure/horror stories related to microservice infrast
 
 ---------------------------------------------------------------------------
 
-## REST APIs
+## REST APIs Design guidelines
 
 ### Pragmatic REST
 
