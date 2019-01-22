@@ -58,6 +58,8 @@ Martinfowler:
 
 * Kong Yang, Head Geek at SolarWinds: “Microservices are a method of developing software applications which are made up of independently deployable, modular services. Each microservice runs a unique process and communicates through a well-defined, lightweight mechanism, such as a container, to serve a business goal.”
 
+* Microservices allow an organization to reduce dependencies, develop faster, and scale.—Aviran Mordo
+
 
 The Microservices approach is about breaking your system ("pile of code") into many small services, each typically has its own:
 
@@ -300,7 +302,12 @@ Microservices are most often used internally, while APIs are used to expose func
 
 - https://www.youtube.com/watch?v=qGFRbOq4fmQ
 
+### Microservice vs Miniservice
 
+Miniservices have been called pragmatic microservices. You can get started with them faster and pick and choose the pieces that make sense for your team.
+Leveraging the pieces of that practice that makes sense for me and getting most of the functionality benefits," says Ross Garrett. 
+
+- https://searchmicroservices.techtarget.com/feature/Miniservices-may-deliver-much-to-microservices-purists-chagrin
 
 ### What is BoundedContext 
 
@@ -311,7 +318,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 
 #### How to identify bounded context  ? - Going to write new gitbook. 
 
-## Real Life Stories
+## Real Life Sucess Stories
 
 - [A Journey into Microservices](https://sudo.hailoapp.com/services/2015/03/09/journey-into-a-microservice-world-part-1/)
 - [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
@@ -596,6 +603,13 @@ No                  |    about     | url
 3| The 7 Deadly Sins of Microservices  |-  https://opencredo.com/blogs/7-deadly-sins-of-microservices/
 4| Microservices? Please, Don't  |-  https://dzone.com/articles/microservices-please-dont
 5| How Anti-Patterns Can Stifle Microservices Adoption in the Enterprise |-  https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
+
+
+### microservice failure stories
+
+A compiled list to public failure/horror stories related to microservice infrastructure.
+
+
 
 -------------------------------------------------------------------------------------------------------------
 
