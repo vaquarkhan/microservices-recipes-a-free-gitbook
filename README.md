@@ -951,6 +951,23 @@ Request body:
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante ut augue scelerisque ornare. Aliquam tempus rhoncus quam vel luctus. Sed scelerisque fermentum fringilla. Suspendisse tincidunt nisl a metus feugiat vitae vestibulum enim vulputate. Quisque vehicula dictum elit, vitae cursus libero auctor sed. Vestibulum fermentum elementum nunc. Proin aliquam erat in turpis vehicula sit amet tristique lorem blandit. Nam augue est, bibendum et ultrices non, interdum in est. Quisque gravida orci lobortis... "
         }
     ]
+    
+--------------------------------------------------------------------------------- 
+   ### Spring Cloud for Microservices 
+      
+   .... TBD
+   
+   ### Kubernetes for Microservices
+   
+   .....TBD
+   
+   ### Spring Cloud  vs Kubernetes
+    
+    ![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
+    
+    
+    * [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
+    
 ---------------------------------------------------------------------------------
 
 ### Mock Responses
