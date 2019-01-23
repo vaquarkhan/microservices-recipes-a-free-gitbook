@@ -11,9 +11,38 @@
 
 * [Definition](#definition)
 * [Why-Microservice](#Why-Microservice)
+* [When-to-use-microservice-architecture](#When-to-use-microservice-architecture)
 * [Pros-and-cons](#pros-and-cons)
-* [Guidelines](#guidelines)
-* [Pragmatic REST](#pragmatic-rest)
+* [Microservice Design Guidelines](#guidelines)
+* [Certify microservices design](#Certify-microservices-design)
+* [The Scale Cube](#The-Scale-Cube)
+* [Microservices-vs-SOA](#Microservices-vs-SOA)
+* [Microservices-vs-API](#Microservices-vs-API)
+* [Microservice-vs-Miniservic](#Microservice-vs-Miniservic)
+* [Microservice-vs-Nanoservices](#Microservice-vs-Nanoservices)
+* [What-is-BoundedContext ](#What-is-BoundedContext )
+* [Real-Life-Sucess-Stories ](#Real-Life-Sucess-Stories )
+* [Theory ](#Theory )
+* [Talks ](#Talks )
+* [Tutorials ](#Tutorials )
+* [Books ](#Books )
+* [Sites ](#Sites )
+* [Microservices-Quotes ](#Microservices-Quotes )
+* [Microservices-Quotes ](#Microservices-Quotes )
+* [Resource-Naming ](#Resource-Naming )
+* [Microservices-Video ](#Microservices-Video )
+* [Microservices-Patterns ](#Microservices-Patterns )
+* [Code-example ](#Code-example )
+* [Microservices-Anti-Patterns ](#Microservices-Anti-Patterns)
+* [Article-Links ](#Article-Links )
+* [The-Sins-of-Microservices](#The-Sins-of-Microservices )
+* [Microservice-failure-stories](#Microservice-failure-stories )
+* [API-Design-guidelines](#API-Design-guidelines)
+* [REST-APIs-Design-guidelines](#REST-APIs-Design-guidelines)
+* [Spring-Cloud-for-Microservices ](#Spring-Cloud-for-Microservices )
+* [Kubernetes-for-Microservices ](#Kubernetes-for-Microservices )
+* [Spring-Cloud-vs-Kubernetes  ](#Spring-Cloud-vs-Kubernetes )
+* [REST-APIs-Design-guidelines](#REST-APIs-Design-guidelines)
 * [RESTful URLs](#restful-urls)
 * [HTTP Verbs](#http-verbs)
 * [Responses](#responses)
@@ -22,6 +51,14 @@
 * [Record limits](#record-limits)
 * [Request & Response Examples](#request--response-examples)
 * [Mock Responses](#mock-responses)
+* [API-Doc](#API-Doc)
+* [Security](#Security)
+* [Serialization](#Serialization)
+* [Storage](#Storage)
+* [Testing](#Testing)
+* [Continuous-Integration-and-Continuous-Delivery](#Continuous-Integration-and-Continuous-Delivery)
+
+---------------------------------------------------------------------
 
 
 ## Definition 
@@ -79,7 +116,7 @@ The Microservices approach is about breaking your system ("pile of code") into m
 Each Microservice should have it's own datastore.
 * Small team capable to work on design, web development, coding, database admin and operations.
 
-## When to use microservice architecture
+## When-to-use-microservice-architecture
 
 Consider this architecture style for:
 
@@ -271,7 +308,7 @@ This document borrows heavily from:
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 * [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) 
 
-### Certify microservices design :
+### Certify-microservices-design :
 
 After you identify the microservices in your application, validate your design against the following criteria:
 
@@ -285,7 +322,7 @@ After you identify the microservices in your application, validate your design a
 - from docs.microsoft.com
 
 
-### The Scale Cube
+### The-Scale-Cube
 Scale Cube, defined by Martin L. Abbott and Michael T. Fisher. This model explains how infinite scaling can be achieved by implementing a three-dimensional approach.
 
 The Art of Scalability  book describes three dimension scalability model: the scale cube.  The microservice architecture is an application of Y-axis scaling on the scale cube. 
@@ -302,14 +339,14 @@ The Art of Scalability  book describes three dimension scalability model: the sc
  -  https://www.infoq.com/articles/microservices-intro
  -  https://medium.com/@cinish/microservices-architecture-5da90504f92a
  
-###  Microservices vs SOA
+###  Microservices-vs-SOA
 
 ![Alt Text](http://lh6.ggpht.com/-rMus2S1lWlY/VSbOJPqvxzI/AAAAAAAAAhI/7FZBTbZRLk8/MicroservicesVsSOA-SystemLayers.png?imgmax=800)
 
 - https://dzone.com/articles/microservices-vs-soa-whats-the-difference
 - http://www.soa4u.co.uk/2015/04/a-word-about-microservice-architectures.html
 
-###  Microservices vs API
+###  Microservices-vs-API
 
 APIs are standardized wrappers that create an interface through which microservices can be packaged and surfaced. This makes APIs the logical enforcement point for key concerns of a microservices architecture such as security, governance, and reuse. Because APIs are able to house these concerns, they are considered a foundational component of a microservices architecture(mulesoft). 
                                
@@ -317,19 +354,19 @@ Microservices are most often used internally, while APIs are used to expose func
 
 - https://www.youtube.com/watch?v=qGFRbOq4fmQ
 
-### Microservice vs Miniservice
+### Microservice-vs-Miniservice
 
 Miniservices have been called pragmatic microservices. You can get started with them faster and pick and choose the pieces that make sense for your team.
 Leveraging the pieces of that practice that makes sense for me and getting most of the functionality benefits," says Ross Garrett. 
 
 - https://searchmicroservices.techtarget.com/feature/Miniservices-may-deliver-much-to-microservices-purists-chagrin
 
-### Microservice vs Nanoservices
+### Microservice-vs-Nanoservices
 
 Nanoservice is an antipattern where a service is too fine-grained. A nanoservice is a service whose overhead (communications, maintenance, and so on) outweighs its utility. 
 
 
-### What is BoundedContext 
+### What-is-BoundedContext 
 
 DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 Martin fowler
@@ -338,7 +375,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 
 #### How to identify bounded context  ? - Going to write new gitbook. 
 
-## Real Life Sucess Stories
+## Real-Life-Sucess-Stories
 
 - [A Journey into Microservices](https://sudo.hailoapp.com/services/2015/03/09/journey-into-a-microservice-world-part-1/)
 - [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
@@ -434,12 +471,12 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [The 12-Factors App](http://12factor.net) - A methodology for building software-as-a-service applications.
 
 
-### Microservices Quotes
+### Microservices-Quotes
 * [Building-microservices]( https://www.goodreads.com/work/quotes/41956437-building-microservices-designing-fine-grained-systems)
 * [Microservices-patterns-and-applications]( https://www.goodreads.com/work/quotes/45004498-microservices-patterns-and-applications-designing-fine-grained-service)
 
 
-### Resource Naming
+### Resource-Naming
 - https://www.restapitutorial.com/lessons/restfulresourcenaming.html
 
 
@@ -448,7 +485,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 -----------------------------------------------------------------
 
 
-### Microservices Video 
+### Microservices-Video 
 
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
 
@@ -473,12 +510,7 @@ No                  |    about     | url
 16| The challenges of migrating 150+ microservices to Kubernetes -Sarah Wells (Financial Times)       | - https://www.youtube.com/watch?v=fgI3cOdv87I&feature=youtu.be
 
 
-
-
-
-
-
-### Microservices Patterns
+### Microservices-Patterns
 
 
 No                  |    about     | url
@@ -497,7 +529,7 @@ No                  |    about     | url
 
 
 -------------------------------------------------------------------
- ## Code example
+ ## Code-example
 
 ![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
 
@@ -566,7 +598,7 @@ No               |  url
 59        |-   https://github.com/vaquarkhan/ftgo-application
 60        |-   https://github.com/IBM/GameOn-Java-Microservices-on-Kubernetes
 
-### Microservices Anti Patterns
+### Microservices-Anti-Patterns
 
 ![Alt Text](https://vignette.wikia.nocookie.net/fantendo/images/4/48/BUT_IT%27S_WRONG.gif/revision/latest?cb=20141204195436)
 
@@ -584,7 +616,7 @@ No                  |    about     | url
 
 
 
-### Link
+### Article-Links
 
 No                  |    about     | url
 ------------------- | ------------ | -------------------
@@ -617,9 +649,7 @@ No                  |    about     | url
 29| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
 
 
-
-
-## The Sins of Microservices 
+## The-Sins-of-Microservices 
 
 No                  |    about     | url
 ------------------- | ------------ | -------------------
@@ -630,7 +660,7 @@ No                  |    about     | url
 5| How Anti-Patterns Can Stifle Microservices Adoption in the Enterprise |-  https://blog.appdynamics.com/engineering/how-to-avoid-antipatterns-with-microservices/
 
 
-### microservice failure stories
+### Microservice-failure-stories
 
 A compiled list to public failure/horror stories related to microservice infrastructure.
 
@@ -639,7 +669,8 @@ A compiled list to public failure/horror stories related to microservice infrast
 -------------------------------------------------------------------------------------------------------------
 
 
-## API Design guidelines
+## API-Design-guidelines
+
 1. Build the API with consumers in mind--as a product in its own right.
     * Not for a specific UI.
     * Embrace flexibility / tunability of each endpoint (see #5, 6 & 7).
@@ -722,9 +753,8 @@ A compiled list to public failure/horror stories related to microservice infrast
 
 ---------------------------------------------------------------------------
 
-## REST APIs Design guidelines
+## REST-APIs-Design-guidelines
 
-### Pragmatic REST
 
 These guidelines aim to support a truly RESTful API. Here are a few exceptions:
 * Put the version number of the API in the URL (see examples below). Don’t accept any requests that do not specify a version number.
@@ -960,15 +990,15 @@ Request body:
 - https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
 
 --------------------------------------------------------------------------------- 
- ### Spring Cloud for Microservices 
+ ### Spring-Cloud-for-Microservices 
       
 TBD
    
-### Kubernetes for Microservices
+### Kubernetes-for-Microservices
    
 TBD
    
-### Spring Cloud  vs Kubernetes
+### Spring-Cloud-vs-Kubernetes
     
 ![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
     
@@ -988,7 +1018,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-### API Doc
+### API-Doc
 
 
 - [Aglio](https://github.com/danielgtaylor/aglio) - API Blueprint renderer with theme support that outputs static HTML.
@@ -1093,7 +1123,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-### Continuous Integration and Continuous Delivery
+### Continuous-Integration-and-Continuous-Delivery
 
 
 - [Awesome CI/CD DevOps](https://github.com/ciandcd/awesome-ciandcd) - A curated list of awesome tools for continuous integration, continuous delivery and DevOps.
