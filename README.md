@@ -185,7 +185,7 @@ Testing of such application is definitely harder compared to a monolith applicat
  Unavailability of the right tools are also an issue to be considered.
 
 #### Log analysis -
-Need log analysis tool for log analysis ,Spalunk or ELK stack
+Need log analysis tool for log analysis ,Splunk or ELK stack
 
 
 
