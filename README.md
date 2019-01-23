@@ -18,7 +18,7 @@
 * [The-Scale-Cube](#The-Scale-Cube)
 * [Microservices-vs-SOA](#Microservices-vs-SOA)
 * [Microservices-vs-API](#Microservices-vs-API)
-* [Microservice-vs-Miniservic](#Microservice-vs-Miniservic)
+* [Microservice-vs-Miniservice](#Microservice-vs-Miniservice)
 * [Microservice-vs-Nanoservices](#Microservice-vs-Nanoservices)
 * [What-is-BoundedContext ](#What-is-BoundedContext )
 * [Real-Life-Sucess-Stories ](#Real-Life-Sucess-Stories )
