@@ -1150,7 +1150,7 @@ Inspired by the [coming soon...]().
 ![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-#### Note :Book  still updating and draft version,you are welcome to participate and contribute to build one page microservice index to get all microservice resources .If you didn't find your name in attribution plz raise issue in github ,if  claim is valid i will add  attribution on content .     
+#### Note :This is draft version,you are welcome to participate and contribute to build one page microservice index to get all microservice resources .If you didn't find your name in attribution plz raise issue in github ,if claim is valid  will add  attribution on content .     
     
     
     
