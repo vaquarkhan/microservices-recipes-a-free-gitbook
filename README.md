@@ -442,8 +442,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 ### Resource Naming
 - https://www.restapitutorial.com/lessons/restfulresourcenaming.html
 
-### Rest
-- https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
+
 
 
 -----------------------------------------------------------------
@@ -498,10 +497,9 @@ No                  |    about     | url
 
 
 -------------------------------------------------------------------
- 
+ ## Code example
 
 ![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
-
 
 
 
@@ -959,6 +957,8 @@ Request body:
         }
     ]
     
+- https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
+
 --------------------------------------------------------------------------------- 
  ### Spring Cloud for Microservices 
       
