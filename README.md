@@ -190,7 +190,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 
 ![Alt Text](https://pbs.twimg.com/media/DEJ3V2xUwAIVS7i.jpg)
-
+Scale Cube (Image courtesy:pivotal)
 
 * Microservices - Not A Free Lunch! http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html
 
@@ -336,6 +336,8 @@ The Art of Scalability  book describes three dimension scalability model: the sc
 
 
 ![Alt Text](https://microservices.io/i/DecomposingApplications.021.jpg )
+
+Scale Cube (Image courtesy:microservices.io)
 
   - https://microservices.io/articles/scalecube.html
  -  https://akfpartners.com/growth-blog/scale-cube/
