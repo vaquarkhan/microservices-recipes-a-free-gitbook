@@ -384,7 +384,6 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [How we build microservices at Karma](https://blog.yourkarma.com/building-microservices-at-karma)
 - [How we ended up with microservices at SoundCloud](http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html)
 - [Microservices: lessons from the frontline](https://www.thoughtworks.com/insights/blog/microservices-lessons-frontline)
-- [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
 - [Scaling microservices at Gilt with Scala, Docker and AWS](http://www.infoq.com/news/2015/04/scaling-microservices-gilt)
 - [Walmart Successfully Revitalized its Failing Architecture with Microservices](https://www.youtube.com/watch?v=SPGCdziXlHU)
 - [Spotify Builds User Experience with Microservices](https://www.youtube.com/watch?v=7LGPeBgNFuU)
@@ -420,7 +419,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
 - [Failing at microservices](https://rclayton.silvrback.com/failing-at-microservices)
 - [How to talk to your friends about microservices](https://blog.pivotal.io/labs/labs/how-to-talk-to-your-friends-about-microservices)
-
+- [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
 
 -----
 
