@@ -380,7 +380,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
 #### How to identify bounded context  ? - Going to write new gitbook. 
 
 ## Real-Life-Sucess-Stories
-
+- [ Companies about their experiences using microservices:](https://microservices.io/articles/whoisusingmicroservices.html)
 - [A Journey into Microservices](https://sudo.hailoapp.com/services/2015/03/09/journey-into-a-microservice-world-part-1/)
 - [Clean microservice architecture](http://blog.cleancoder.com/uncle-bob/2014/10/01/CleanMicroserviceArchitecture.html)
 - [Failing at microservices](https://rclayton.silvrback.com/failing-at-microservices)
@@ -390,7 +390,10 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Microservices: lessons from the frontline](https://www.thoughtworks.com/insights/blog/microservices-lessons-frontline)
 - [Monolith first](http://martinfowler.com/bliki/MonolithFirst.html)
 - [Scaling microservices at Gilt with Scala, Docker and AWS](http://www.infoq.com/news/2015/04/scaling-microservices-gilt)
-
+- [Walmart Successfully Revitalized its Failing Architecture with Microservices](https://www.youtube.com/watch?v=SPGCdziXlHU)
+- [Spotify Builds User Experience with Microservices](https://www.youtube.com/watch?v=7LGPeBgNFuU)
+- [Adopting Microservices at Netflix: Lessons for Architectural Design](https://www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/)
+- [One Call expand the transport network beyond popular ride-sharing services](https://www.sourcefuse.com/microservices-design-development-explained-case-study/)
 
 ## Theory
 
@@ -512,6 +515,8 @@ No                  |    about     | url
 14| Data Design and Modeling for Microservices      | - https://www.youtube.com/watch?v=KPtLbSEFe6c
 15| The Art of Discovering Bounded Contexts by Nick Tune       | - https://www.youtube.com/watch?v=ez9GWESKG4I
 16| The challenges of migrating 150+ microservices to Kubernetes -Sarah Wells (Financial Times)       | - https://www.youtube.com/watch?v=fgI3cOdv87I&feature=youtu.be
+17| Revitalizing Aging Architectures with Microservices       | - https://www.youtube.com/watch?v=SPGCdziXlHU
+
 
 
 ### Microservices-Patterns
