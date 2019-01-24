@@ -67,7 +67,7 @@ Microservice architecture, or simply microservices, is a distinctive method of d
 
 ![Alt Text](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/microservices-logical.svg)
 
-Microservices architecture (Image courtesy: Cloud Application Architecture Guide).
+Microservices architecture (courtesy: Cloud Application Architecture Guide and smartbear).
 
 * Sam Newman : “Microservices are small, autonomous services that work together.”
 
