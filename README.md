@@ -666,7 +666,7 @@ No                  |    about     | url
 
 A compiled list to public failure/horror stories related to microservice infrastructure.
 
-
+TBD
 
 -------------------------------------------------------------------------------------------------------------
 
