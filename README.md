@@ -457,7 +457,7 @@ How big a Microservice should be is: it should have a well defined bounded conte
   + Book 4: Network, Security & Storage with Docker & Containers.
   + Book 5: Monitoring & Management with Docker & Containers.
 - [The Tao of Microservices](https://www.manning.com/books/the-tao-of-microservices) - Teaches the path to understanding how to apply microservices architecture with your own real-world projects.
-- [IBM Redbook](https://www.redbooks.ibm.com/redbooks/pdfs/sg248275.pdf) - IBM Red book
+* - [IBM Redbook](https://www.redbooks.ibm.com/redbooks/pdfs/sg248275.pdf) - IBM Red book
 * [Antifragile: Things That Gain from Disorder](http://www.amazon.com/gp/product/0812979680)
 * [The Black Swan](http://www.amazon.com/The-Black-Swan-Improbable-Robustness/dp/081297381X)
 * [Implementing Domain-Driven Design](http://www.amazon.co.uk/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
