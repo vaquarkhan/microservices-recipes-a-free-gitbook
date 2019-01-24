@@ -361,9 +361,21 @@ Microservices are design to use internally, while APIs are used to expose functi
 ### Microservice-vs-Miniservice
 
 Miniservices have been called pragmatic microservices. You can get started with them faster and pick and choose the pieces that make sense for your team.
+
+“[A miniservice is] like a group of microservices come together in a little pattern.”
+— Ross Garrett
+
+“Each microservice must handle its own data, miniservices may share data.”
+— Arnaud Lauret
+
+Don’t confuse architectural perfection with business value.”
+— Ross Garrett
+
+
 Leveraging the pieces of that practice that makes sense for me and getting most of the functionality benefits," says Ross Garrett. 
 
 - https://searchmicroservices.techtarget.com/feature/Miniservices-may-deliver-much-to-microservices-purists-chagrin
+- https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/
 
 ### Microservice-vs-Nanoservices
 
@@ -389,6 +401,14 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Spotify Builds User Experience with Microservices](https://www.youtube.com/watch?v=7LGPeBgNFuU)
 - [Adopting Microservices at Netflix: Lessons for Architectural Design](https://www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/)
 - [One Call expand the transport network beyond popular ride-sharing services](https://www.sourcefuse.com/microservices-design-development-explained-case-study/)
+- [Etsy Moved to an API-First Architecture:](https://www.infoq.com/news/2016/08/etsy-api-first-architecture)
+- [Best Buy transformation.:](https://blog.runscope.com/posts/monolith-microservices-transforming-real-world-ecommerce-platform-using-strangler-pattern)
+- [Cradlepoint:](https://cradlepoint.com/blog/matt-messinger/behind-code-series-how-we-moved-monolith-microservices)
+- [virtusa:](https://www.virtusa.com/success-story/virtusa-modernizes-retirement-services-processing-leveraging-devops-and-microservices/)
+- [Uber Engineering:] (https://eng.uber.com/building-tincup/)
+- [Lessons From the Birth of Microservices at Google
+:] (https://dzone.com/articles/lessons-from-the-birth-of-microservices-at-google)
+
 
 ## Theory
 
