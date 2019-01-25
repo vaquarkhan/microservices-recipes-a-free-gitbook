@@ -408,6 +408,8 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Uber Engineering:] (https://eng.uber.com/building-tincup/)
 - [Lessons From the Birth of Microservices at Google
 :] (https://dzone.com/articles/lessons-from-the-birth-of-microservices-at-google)
+- [Cloud Native Journey in Synchrony Financial:](https://content.pivotal.io/slides/cloud-native-journey-in-synchrony-financial)
+- [Capital one Building Microservices on AWS using Serverless Framework :](https://www.youtube.com/watch?v=7mBo6pT09RM)
 
 
 ## Theory
