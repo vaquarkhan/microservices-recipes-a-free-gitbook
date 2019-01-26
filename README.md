@@ -245,7 +245,6 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 * [Service Mesh With Istio on Kubernetes in 5 Steps](https://dzone.com/articles/service-mesh-with-istio-on-kubernetes-in-5-steps)
 
 
-
 #### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
 
 #### Standardized service contract. Strategies include:
@@ -323,6 +322,11 @@ After you identify the microservices in your application, validate your design a
 * Your service boundaries will not create problems with data consistency or integrity. Sometimes it's important to maintain data consistency by putting functionality into a single microservice. That said, consider whether you really need strong consistency. There are strategies for addressing eventual consistency in a distributed system, and the benefits of decomposing services often outweigh the challenges of managing eventual consistency.
 
 - from docs.microsoft.com
+
+#### know where you stand or going in future Architecture
+
+![Alt Text](https://cdn-images-1.medium.com/max/2000/1*f5yQlyPApGNPfauFBe0pTA.png ) 
+- [by Xiao Ma]( https://medium.engineering/microservice-architecture-at-medium-9c33805eb74f)
 
 
 ### The-Scale-Cube
