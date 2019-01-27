@@ -1082,7 +1082,7 @@ Kubernetes is an open-source system for automating deployment, scaling, and mana
 
 * Kubernetes is still a relatively new platform (2 years old), and it is still actively developed and growing. Therefore there are many new features added with every release that may be difficult to keep up with. The good news is that this has been envisaged, and the API is extensible and backward compatible.
 
-* [ Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
+ [ Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
 
 ---------------------------------------------------------------------------------
 
