@@ -331,7 +331,7 @@ After you identify the microservices in your application, validate your design a
 * Loose coupling — services know little about each other. A change to one service should not require changing the others. Communication between services should happen only through public service interfaces.
 * High cohesion — each service encapsulates all related behaviors and data together. If we need to build a new feature, all the changes should be localized to just one single service.
 
-- [Xiao Ma article]( https://medium.engineering/microservice-architecture-at-medium-9c33805eb74f)
+- [Copied from Xiao Ma article]( https://medium.engineering/microservice-architecture-at-medium-9c33805eb74f)
 
 
 ### The-Scale-Cube
@@ -1082,12 +1082,12 @@ Kubernetes is an open-source system for automating deployment, scaling, and mana
 
 * Kubernetes is still a relatively new platform (2 years old), and it is still actively developed and growing. Therefore there are many new features added with every release that may be difficult to keep up with. The good news is that this has been envisaged, and the API is extensible and backward compatible.
 
- [ Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
+ [copied from Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
+* [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
 
 ---------------------------------------------------------------------------------
 
 
-* [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
 * [Microservicios 2.0: Spring Cloud Netflix vs Kubernetes & Istio
 ](https://www.paradigmadigital.com/dev/microservicios-2-0-spring-cloud-netflix-vs-kubernetes-istio/)
  
