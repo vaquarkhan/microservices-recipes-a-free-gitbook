@@ -326,7 +326,12 @@ After you identify the microservices in your application, validate your design a
 ###  Know where you stand or going in future Architecture
 
 ![Alt Text](https://cdn-images-1.medium.com/max/2000/1*f5yQlyPApGNPfauFBe0pTA.png ) 
-- [by Xiao Ma]( https://medium.engineering/microservice-architecture-at-medium-9c33805eb74f)
+
+* Single purpose — each service should focus on one single purpose and do it well.
+* Loose coupling — services know little about each other. A change to one service should not require changing the others. Communication between services should happen only through public service interfaces.
+* High cohesion — each service encapsulates all related behaviors and data together. If we need to build a new feature, all the changes should be localized to just one single service.
+
+- [Xiao Ma article]( https://medium.engineering/microservice-architecture-at-medium-9c33805eb74f)
 
 
 ### The-Scale-Cube
