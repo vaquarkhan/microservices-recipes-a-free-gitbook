@@ -686,6 +686,9 @@ No                  |    about     | url
 27| RESTful API Design. Best Practices in a Nutshell.   |- https://blog.philipphauer.de/restful-api-design-best-practices/
 28| Rest API Tutorial |- https://restfulapi.net/resource-naming/
 29| REST API Design - Resource Modeling |-https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+30| Improve time to market with microservices  |-https://www.ibm.com/cloud/garage/architectures/microservices?cm_sp=Blog-_-blogcta-_-ArchCenter
+31|Digital Applications using a Microservice Architecture  |-https://github.com/ibm-cloud-architecture/refarch-cloudnative
+
 
 
 ## The-Sins-of-Microservices 
@@ -1031,8 +1034,9 @@ Request body:
 --------------------------------------------------------------------------------- 
  ### Spring-Cloud-for-Microservices 
       
-TBD
-   
+   ![Alt Text](https://spring.io/img/homepage/diagram-distributed-systems.svg)
+   - https://spring.io/projects/spring-cloud
+
 ### Kubernetes-for-Microservices
    
 TBD
@@ -1042,6 +1046,45 @@ TBD
 ![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
     
     
+    
+### Spring Cloud
+Spring Cloud provides tools for developers to quickly build some of the common patterns in distributed systems such as configuration management, service discovery, circuit breakers, routing, etc. It is build on top of Netflix OSS libraries, written in Java, for Java developers.
+
+### Strengths
+* The unified programing model offered by the Spring Platform itself and rapid application creation abilities of Spring Boot give developers a great microservice development experience. For example, with few annotations, you can create a Config Server, and with few more annotations, you can get the client libraries to configure your services.
+
+* There is a rich selection of libraries covering the majority of runtime concerns. Since all libraries are written in Java, it offers multiple features, greater control, and fine tuning options.
+
+* The different Spring Cloud libraries are well-integrated with one another. For example, a Feign client will also use Hystrix for Circuit Breaking, and Ribbon for load balancing requests. Everything is annotation driven, making it easy to develop for Java developers.
+
+### Weaknesses
+* One of the major advantages of the Spring Cloud is also its drawback — it is limited to Java only. A strong motivation for the MSA is the ability to interchange technology stacks, libraries, and even languages, when required. That is not possible with Spring Cloud. If you want to consume Spring Cloud/Netflix OSS infrastructure services, such as configuration management, service discovery, or load balancing, the solution is not elegant. The Netflix Prana project implements the sidecar pattern to expose Java-based client libraries over HTTP to make it possible for applications written in non-JVM languages to exist in the NetflixOSS ecosystem, but it is not very elegant.
+
+* There is too much responsibility for Java developers to care about and for Java applications to handle. Each microservice needs to run various clients for configuration retrieval, service discovery, and load balancing. It is easy to set those up, but that doesn't hide the buildtime and runtime dependencies to the environment. For example, developers can create a Config Server with @EnableConfigServer, but that is only the happy path. Every time developers want to run a single microservice, they need to have the Config Server up and running. For a controlled environment, developers have to think about making the Config Server highly available, and since it can be backed by Git or Svn, they need a shared file system for it. Similarly, for service discovery, developers need to start a Eureka server first. For a controlled environment, they need to cluster it with multiple instances on each AZ, etc. It feels like as a Java developers have to build and manage a non-trivial microservices platform in addition to implementing all the functional services.
+
+* Spring Cloud alone has a shorter scope in the microservices journey, and developers will also need to consider automated deployments, scheduling, resource management, process isolation, self-healing, build pipelines, etc. for a complete microservices experience. For this point, I think it is not fair to compare Spring Cloud alone to Kubernetes, and a more fair comparison would be between Spring Cloud + Cloud Foundry (or Docker Swarm) and Kubernetes. But that also means that for a complete end-to-end microservices experience, Spring Cloud must be supplemented with an application platform like Kubernetes itself.
+
+
+### Kubernetes
+Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It is polyglot and provides primitives for provisioning, running, scaling and managing distributed systems.
+
+### Strengths
+* Kubernetes is a polyglot and language agnostic container management platform that is capable of running both cloud-native and traditional containerized applications. The services it provides, such as configuration management, service discovery, load balancing, metrics collection, and log aggregation, are consumable by a variety of languages. This allows having one platform in the organization that can be used by multiple teams (including Java developers using Spring) and serve multiple purposes: application development, testing environments, build environments (to run source control system, build server, artifact repositories), etc.
+
+* When compared to Spring Cloud, Kubernetes addresses a wider set of MSA concerns. In addition to providing runtime services, Kubernetes also lets you provision environments, set resource constraints, RBAC, manage application lifecycle, enable autoscaling and self-healing (behaving almost like an antifragile platform).
+
+* Kubernetes technology is based on Google's 15 years of R&D and experience of managing containers. In addition, with close to 1000 committers, it is one of the most active Open Source communities on Github.
+
+### Weaknesses
+* Kubernetes is polyglot and, as such, its services and primitives are generic and not optimized for different platforms such as Spring Cloud for JVM. For example, configurations are passed to applications as environment variables or a mounted file system. It doesn't have the fancy configuration updating capabilities offered by Spring Cloud Config.
+
+* Kubernetes is not a developer-focused platform. It is intended to be used by DevOps-minded IT personnel. As such, Java developers need to learn some new concepts and be open to learning new ways of solving problems. Despite it being super easy to start a developer instance of Kubernetes using MiniKube, there is a significant operation overhead to install a highly available Kubernetes cluster manually.
+
+* Kubernetes is still a relatively new platform (2 years old), and it is still actively developed and growing. Therefore there are many new features added with every release that may be difficult to keep up with. The good news is that this has been envisaged, and the API is extensible and backward compatible.
+
+* [ Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
+
+
 * [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
 * [Microservicios 2.0: Spring Cloud Netflix vs Kubernetes & Istio
 ](https://www.paradigmadigital.com/dev/microservicios-2-0-spring-cloud-netflix-vs-kubernetes-istio/)
