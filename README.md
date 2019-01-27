@@ -1084,6 +1084,8 @@ Kubernetes is an open-source system for automating deployment, scaling, and mana
 
 * [ Bilgin Ibryam Article  ](https://dzone.com/articles/deploying-microservices-spring-cloud-vs-kubernetes)
 
+---------------------------------------------------------------------------------
+
 
 * [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/)
 * [Microservicios 2.0: Spring Cloud Netflix vs Kubernetes & Istio
