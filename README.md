@@ -1229,7 +1229,7 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 
 “Microservice,” :- “Microservice we are following mostly the domain-driven approach, the idea is to have a cross-functional team.”
 
-* [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.fastcompany.com/50106/inside-mind-jeff-bezos-5) 
+* [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.bizjournals.com/bizjournals/how-to/human-resources/2016/11/jeff-bezos-two-pizza-rule-for-building-productive.html) 
 
 ---------------------------------------------------------------------------------
 
