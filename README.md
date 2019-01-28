@@ -57,7 +57,7 @@
 * [Storage](#Storage)
 * [Testing](#Testing)
 * [Continuous-Integration-and-Continuous-Delivery](#Continuous-Integration-and-Continuous-Delivery)
-* [Conway’s-Law ](#Conway’s-Law)
+* [Conway’s-Law ](#Conways-Law)
 
 
 ---------------------------------------------------------------------
@@ -1218,7 +1218,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-### Conway’s-Law 
+### Conways-Law 
 
 “Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” — Melvin Conway (1967).
 
