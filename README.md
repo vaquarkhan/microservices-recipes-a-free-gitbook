@@ -57,6 +57,8 @@
 * [Storage](#Storage)
 * [Testing](#Testing)
 * [Continuous-Integration-and-Continuous-Delivery](#Continuous-Integration-and-Continuous-Delivery)
+* [Conway’s-Law ](#Conway’s-Law)
+
 
 ---------------------------------------------------------------------
 
@@ -499,6 +501,8 @@ How big a Microservice should be is: it should have a well defined bounded conte
 * [Production Ready Microservices - Susan J. Fowler](http://shop.oreilly.com/product/0636920053675.do)
 * [Microservices in Production - Susan J. Fowler (free ebook)](http://www.oreilly.com/programming/free/microservices-in-production.csp)
 * [Microservices with Docker, Flask, and React - Michael Herman](https://testdriven.io/)
+* [Microservices on AWS](https://d1.awsstatic.com/whitepapers/microservices-on-aws.pdf)
+
 
 ### Sites
 
@@ -1212,6 +1216,20 @@ Note: If the mock parameter is included in a request to the production environme
 
 - [Awesome CI/CD DevOps](https://github.com/ciandcd/awesome-ciandcd) - A curated list of awesome tools for continuous integration, continuous delivery and DevOps.
 
+---------------------------------------------------------------------------------
+
+### Conway’s-Law 
+
+“Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” — Melvin Conway (1967).
+
+
+Conway's Law asserts that organizations are constrained to produce application designs which are copies of their communication structures. This often leads to unintended friction points.
+
+The 'Inverse Conway Maneuver' recommends evolving your team and organizational structure to promote your desired architecture. Ideally your technology architecture will display isomorphism with your business architecture.
+
+“Microservice,” :- “Microservice we are following mostly the domain-driven approach, the idea is to have a cross-functional team.”
+
+* [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.fastcompany.com/50106/inside-mind-jeff-bezos-5) 
 
 ---------------------------------------------------------------------------------
 
