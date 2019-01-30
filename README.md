@@ -101,6 +101,9 @@ Microservices Definition by Lewis/Fowler:
 * Services may be written in different programming languages(polyglot development).
 * Services should use separate data storage (polyglot persistence ).
 
+“Microservices are important simply because they add unique value in a way of simplification of complexity in systems.  By breaking apart your system or application into many smaller parts, you show ways of reducing duplication, increasing cohesion and lowering your coupling between parts, thus making your overall system parts easier to understand, more scalable, and easier to change. The downside of a distributed system is that it is always more complex from a systems standpoint. The overhead of many small services to manage is another factor to consider. ” 
+― Lucas Krause,
+
 The Microservices approach is about breaking your system ("pile of code") into many small services, each typically has its own:
 
 * Clear business-related responsibility
