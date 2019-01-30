@@ -1236,25 +1236,16 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 
 ### Orchestrate-microservices
 
-Conductor is an orchestration engine that runs in the cloud.
+"We came across the decision to orchestrate our microservices by using a "god" like service that controls the business logic or a choreographed approach where the microservices basically pass messages, In microservice architecture choreography is preferred over orchestration."
 
-Netflix orchestration framwork with the following features:
-
-* Allow creating complex process / business flows in which individual task is implemented by a microservice.
-* A JSON DSL based blueprint defines the execution flow.
-* Provide visibility and traceability into the these process flows.
-* Expose control semantics around pause, resume, restart, etc allowing for better devops experience.
-* Allow greater reuse of existing microservices providing an easier path for onboarding.
-* User interface to visualize the process flows.
-* Ability to synchronously process all the tasks when needed.
-* Ability to scale millions of concurrently running process flows.
-* Backed by a queuing service abstracted from the clients.
-* Be able to operate on HTTP or other transports e.g. gRPC
-
+* Conductor is an orchestration engine (Netflix orchestration framwork)
 - https://netflix.github.io/conductor/
 
+* Zeebe is a new open source orchestration engine for distributed microservices. It allows users to define orchestration flows visually using BPMN. Zeebe is horizontally scalable and fault tolerant so that you can reliably process all your transactions as they happen.
 
-#### Remember: 
+- https://zeebe.io/
+
+#### If you create own orchestration Remember: 
 
 - You are an orchestrator, a coordinator of data and functions. You are not a transformer. Stay out of the business of messing with other people’s schema.
 
