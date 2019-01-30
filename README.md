@@ -1237,9 +1237,23 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 
 ---------------------------------------------------------------------------------
 
-### Orchestrate-microservices
+
+### Orchestrate vs Choreography
+
+
+![Service orchestration](https://i.stack.imgur.com/hUbdsm.png)
+The relationship between all the participating services are described by a single endpoint
+
+![Service Choreography](https://i.stack.imgur.com/e186jm.png)
+Service choreography is a global description of the participating services, which is defined by exchange of messages, rules of interaction and agreements between two or more endpoints. Choreography employs a decentralized approach for service composition.
+
+andrei- stack
+
 
 "We came across the decision to orchestrate our microservices by using a "god" like service that controls the business logic or a choreographed approach where the microservices basically pass messages, In microservice architecture choreography is preferred over orchestration."
+
+
+### Orchestrate-microservices
 
 * Conductor is an orchestration engine (Netflix orchestration framwork)
 - https://netflix.github.io/conductor/
