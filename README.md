@@ -58,6 +58,7 @@
 * [Testing](#Testing)
 * [Continuous-Integration-and-Continuous-Delivery](#Continuous-Integration-and-Continuous-Delivery)
 * [Conway’s-Law ](#Conways-Law)
+* [Orchestrate-microservices](#Orchestrate-microservices)
 
 
 ---------------------------------------------------------------------
@@ -1233,6 +1234,37 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 
 ---------------------------------------------------------------------------------
 
+### Orchestrate-microservices
+
+Conductor is an orchestration engine that runs in the cloud.
+
+Netflix orchestration framwork with the following features:
+
+* Allow creating complex process / business flows in which individual task is implemented by a microservice.
+* A JSON DSL based blueprint defines the execution flow.
+* Provide visibility and traceability into the these process flows.
+* Expose control semantics around pause, resume, restart, etc allowing for better devops experience.
+* Allow greater reuse of existing microservices providing an easier path for onboarding.
+* User interface to visualize the process flows.
+* Ability to synchronously process all the tasks when needed.
+* Ability to scale millions of concurrently running process flows.
+* Backed by a queuing service abstracted from the clients.
+* Be able to operate on HTTP or other transports e.g. gRPC
+
+- https://netflix.github.io/conductor/
+
+
+#### Remember: 
+
+- You are an orchestrator, a coordinator of data and functions. You are not a transformer. Stay out of the business of messing with other people’s schema.
+
+- Recommended ones include the Saga pattern, routing slips, and stateful workflows. Each pattern works with a certain level of complexity. Study up and match the right patterns to your orchestration.
+
+- https://medium.com/capital-one-tech/microservices-when-to-react-vs-orchestrate-c6b18308a14c 
+
+
+
+---------------------------------------------------------------------------------
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz5RYcuKTPMnf09nLpjxciGuQeAP58RH8IkIIsSomeqqrPHs2)
 
 
