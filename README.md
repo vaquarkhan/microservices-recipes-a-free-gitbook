@@ -22,6 +22,7 @@
 * [Microservice-vs-Nanoservices](#Microservice-vs-Nanoservices)
 * [What-is-BoundedContext ](#What-is-BoundedContext )
 * [Real-Life-Sucess-Stories ](#Real-Life-Sucess-Stories )
+* [Orchestrate-microservices](#Orchestrate-microservices)
 * [Theory ](#Theory )
 * [Talks ](#Talks )
 * [Tutorials ](#Tutorials )
@@ -58,7 +59,6 @@
 * [Testing](#Testing)
 * [Continuous-Integration-and-Continuous-Delivery](#Continuous-Integration-and-Continuous-Delivery)
 * [Conway’s-Law ](#Conways-Law)
-* [Orchestrate-microservices](#Orchestrate-microservices)
 
 
 ---------------------------------------------------------------------
@@ -425,6 +425,49 @@ How big a Microservice should be is: it should have a well defined bounded conte
 :] (https://dzone.com/articles/lessons-from-the-birth-of-microservices-at-google)
 - [Cloud Native Journey in Synchrony Financial:](https://content.pivotal.io/slides/cloud-native-journey-in-synchrony-financial)
 - [Capital one Building Microservices on AWS using Serverless Framework :](https://www.youtube.com/watch?v=7mBo6pT09RM)
+
+
+---------------------------------------------------------------------------------
+
+
+### Orchestrate vs Choreography
+
+
+![Service orchestration](https://i.stack.imgur.com/hUbdsm.png)
+
+The relationship between all the participating services are described by a single endpoint
+
+![Service Choreography](https://i.stack.imgur.com/e186jm.png)
+
+Service choreography is a global description of the participating services, which is defined by exchange of messages, rules of interaction and agreements between two or more endpoints. Choreography employs a decentralized approach for service composition.
+
+andrei from stack
+
+
+"We came across the decision to orchestrate our microservices by using a "god" like service that controls the business logic or a choreographed approach where the microservices basically pass messages, In microservice architecture choreography is preferred over orchestration."
+
+
+### Orchestrate-microservices
+
+* Conductor is an orchestration engine (Netflix orchestration framwork)
+- https://netflix.github.io/conductor/
+
+* Zeebe is a new open source orchestration engine for distributed microservices. It allows users to define orchestration flows visually using BPMN. Zeebe is horizontally scalable and fault tolerant so that you can reliably process all your transactions as they happen.
+
+- https://zeebe.io/
+
+#### If you create own orchestration Remember: 
+
+- You are an orchestrator, a coordinator of data and functions. You are not a transformer. Stay out of the business of messing with other people’s schema.
+
+- Recommended ones include the Saga pattern, routing slips, and stateful workflows. Each pattern works with a certain level of complexity. Study up and match the right patterns to your orchestration.
+
+- https://medium.com/capital-one-tech/microservices-when-to-react-vs-orchestrate-c6b18308a14c 
+
+
+
+---------------------------------------------------------------------------------
+
 
 
 ## Theory
@@ -1234,45 +1277,8 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 “Microservice,” :- “Microservice we are following mostly the domain-driven approach, the idea is to have a cross-functional team.”
 
 * [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.bizjournals.com/bizjournals/how-to/human-resources/2016/11/jeff-bezos-two-pizza-rule-for-building-productive.html) 
+--------------------------------------------------
 
----------------------------------------------------------------------------------
-
-
-### Orchestrate vs Choreography
-
-
-![Service orchestration](https://i.stack.imgur.com/hUbdsm.png)
-The relationship between all the participating services are described by a single endpoint
-
-![Service Choreography](https://i.stack.imgur.com/e186jm.png)
-Service choreography is a global description of the participating services, which is defined by exchange of messages, rules of interaction and agreements between two or more endpoints. Choreography employs a decentralized approach for service composition.
-
-andrei- stack
-
-
-"We came across the decision to orchestrate our microservices by using a "god" like service that controls the business logic or a choreographed approach where the microservices basically pass messages, In microservice architecture choreography is preferred over orchestration."
-
-
-### Orchestrate-microservices
-
-* Conductor is an orchestration engine (Netflix orchestration framwork)
-- https://netflix.github.io/conductor/
-
-* Zeebe is a new open source orchestration engine for distributed microservices. It allows users to define orchestration flows visually using BPMN. Zeebe is horizontally scalable and fault tolerant so that you can reliably process all your transactions as they happen.
-
-- https://zeebe.io/
-
-#### If you create own orchestration Remember: 
-
-- You are an orchestrator, a coordinator of data and functions. You are not a transformer. Stay out of the business of messing with other people’s schema.
-
-- Recommended ones include the Saga pattern, routing slips, and stateful workflows. Each pattern works with a certain level of complexity. Study up and match the right patterns to your orchestration.
-
-- https://medium.com/capital-one-tech/microservices-when-to-react-vs-orchestrate-c6b18308a14c 
-
-
-
----------------------------------------------------------------------------------
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz5RYcuKTPMnf09nLpjxciGuQeAP58RH8IkIIsSomeqqrPHs2)
 
 
