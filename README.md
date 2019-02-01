@@ -335,7 +335,7 @@ Reuse continues to be a principle of microservice design. However, the scope of 
 
 However, it must be noted that the canonical model in its restricted scope can be of benefit. In line with the reuse it facilitates, its scope has been reduced. With the ‘merit based reuse’ approach, an emerging model is preferred over a predetermined one. Teams can agree on communication models for deciding how microservices must be adapted for use outside the contexts in which they were designed.
 
-A collaboration hub like Anypoint Exchange encourages merit-based reuse with reviews and ratings. If an existing microservice API does not suit your domain or ‘business group’, you might be better off building another microservice that does it.
+If an existing microservice API does not suit your domain or ‘business group’, you might be better off building another microservice that does it.
 
 
 -Alison Jarris
