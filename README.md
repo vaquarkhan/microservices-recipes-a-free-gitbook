@@ -439,6 +439,8 @@ How big a Microservice should be is: it should have a well defined bounded conte
 - [Capital one Building Microservices on AWS using Serverless Framework :](https://www.youtube.com/watch?v=7mBo6pT09RM)
 
 
+![Alt Text](http://szjug.github.io/files/20150917-big-data/big-data-dog-2.jpg)
+
 ---------------------------------------------------------------------------------
 
 
