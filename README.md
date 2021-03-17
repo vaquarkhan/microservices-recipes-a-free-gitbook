@@ -1315,7 +1315,7 @@ Inspired by the [coming soon...]().
 ![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-### Note :This is draft version, Please share your thoughts ,comments, suggestions to improve it .
+### Note :Draft version.
 
 #### You are welcome to participate and contribute to build one page microservice index.If you didn't find your name in attribution plz raise issue in github ,if claim is valid  will add  attribution on content .     
     
