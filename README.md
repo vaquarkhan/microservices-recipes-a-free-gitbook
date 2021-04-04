@@ -1100,6 +1100,11 @@ Request body:
 - https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
 
 --------------------------------------------------------------------------------- 
+### AWS Microservices
+
+- https://www.linkedin.com/posts/sayten_1-hour-for-microservices-for-busy-professionals-ugcPost-6780519830018674688-rHnD/
+- 
+-------------------------------------------------------------------------------
  ### Spring-Cloud-for-Microservices 
       
    ![Alt Text](https://spring.io/img/homepage/diagram-distributed-systems.svg)
