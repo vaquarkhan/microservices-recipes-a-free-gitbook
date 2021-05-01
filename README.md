@@ -116,11 +116,10 @@ The Microservices approach is about breaking your system ("pile of code") into m
 
 ## Why-Microservice 
 
-* Microservice make our system loosely coupled, i.e. if we need to update, repair, or replace a Microservice, we don't need to rebuild our entire application, just swap out the part that needs it.
-* To built each Microservice can use different languages and tools. Microservices communicate with well defined interface
-* The communication should be stateless for scalability(copies of Microservice) and reliability(one copy fail other copy can serve), the most common methods for communication between Microservices are HTTP and messaging.
-Each Microservice should have it's own datastore.
-* Small team capable to work on design, web development, coding, database admin and operations.
+* Microservice makes our system loosely coupled, i.e., if we need to update, repair, or replace a Microservice we, don't need to rebuild our entire application. Just swap out the part that needs it.
+* To build each Microservice, can use different languages and tools. Microservices communicate with a well-defined interface.
+* The communication should be stateless for scalability (copies of Microservice) and reliability (one copy fail other copy can serve). The most common methods for communication between Microservices are HTTP and messaging. Each Microservice should have its datastore.
+* A small team capable work on design, web development, coding, database admin, and operations.
 
 ## When-to-use-microservice-architecture
 
