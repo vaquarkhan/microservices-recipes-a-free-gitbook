@@ -210,7 +210,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 #### Architecture Principles
 
-* Start withrelatively broad service boundaries to begin with, refactoring to smaller ones (based on business requirements) 
+* Start with relatively broad service boundaries, to begin, refactoring to smaller ones (based on business requirements)
 * [Single Responsibility Principle](https://codeburst.io/understanding-solid-principles-single-responsibility-b7c7ec0bf80)
 * [domain-driven design](https://dzone.com/refcardz/getting-started-domain-driven?chapter=1)
 
