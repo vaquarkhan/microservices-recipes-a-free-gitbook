@@ -13,7 +13,7 @@
 * [Why-Microservice](#Why-Microservice)
 * [When-to-use-microservice-architecture](#When-to-use-microservice-architecture)
 * [Pros-and-cons](#pros-and-cons)
-* [Microservice-Design-Guidelines](#guidelines)
+* [Microservice-Design-Guidelines](#design-guidelines)
 * [Certify-microservices-design](#Certify-microservices-design)
 * [The-Scale-Cube](#The-Scale-Cube)
 * [Microservices-vs-SOA](#Microservices-vs-SOA)
@@ -315,7 +315,7 @@ This document borrows heavily from:
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 * [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) 
 
-### Certify-microservices-design :
+### Certify-microservices-design
 
 After you identify the microservices in your application, validate your design against the following criteria:
 
