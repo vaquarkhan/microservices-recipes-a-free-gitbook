@@ -237,7 +237,6 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 * [Client-side discovery from Chris Richardson](http://microservices.io/patterns/client-side-discovery.html)
 * [Server-side discovery from Chris Richardson ](http://microservices.io/patterns/server-side-discovery.html)
-* [API gateway pattern from Chris Richardson](http://microservices.io/patterns/apigateway.html)
 * [Service registry pattern from Chris Richardson](http://microservices.io/patterns/service-registry.html)
 * [Self registration pattern from Chris Richardson](http://microservices.io/patterns/self-registration.html)
 * [3rd party registration pattern from Chris Richardson](http://microservices.io/patterns/3rd-party-registration.html)
