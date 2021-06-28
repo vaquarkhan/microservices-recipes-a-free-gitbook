@@ -237,9 +237,10 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 * [Client-side discovery from Chris Richardson](http://microservices.io/patterns/client-side-discovery.html)
 * [Server-side discovery from Chris Richardson ](http://microservices.io/patterns/server-side-discovery.html)
-* [Service registry from Chris Richardson](http://microservices.io/patterns/apigateway.html)
-* [Self registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
-* [3rd party registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
+* [API gateway pattern from Chris Richardson](http://microservices.io/patterns/apigateway.html)
+* [Service registry pattern from Chris Richardson](http://microservices.io/patterns/service-registry.html)
+* [Self registration pattern from Chris Richardson](http://microservices.io/patterns/self-registration.html)
+* [3rd party registration pattern from Chris Richardson](http://microservices.io/patterns/3rd-party-registration.html)
 * [Service discovery with consul & etcd](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
 
 #### Service Mesh
