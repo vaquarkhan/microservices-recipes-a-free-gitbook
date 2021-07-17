@@ -250,7 +250,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 * [Service Mesh With Istio on Kubernetes in 5 Steps](https://dzone.com/articles/service-mesh-with-istio-on-kubernetes-in-5-steps)
 
 
-#### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
+#### [Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)](https://www.sei.cmu.edu/education-outreach/courses/course.cfm?coursecode=P125)
 
 #### Standardized service contract. Strategies include:
 * [REST API design best practices](#pragmatic-rest)
