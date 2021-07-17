@@ -253,7 +253,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 #### [Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)](https://www.sei.cmu.edu/education-outreach/courses/course.cfm?coursecode=P125)
 
 #### Standardized service contract. Strategies include:
-* [REST API design best practices](#pragmatic-rest)
+* [REST API design best practices](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 * [API gateway](https://apigee.com/about/cp/api-gateway)    
 * [contract-first design](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.435.2220&rep=rep1&type=pdf)     
 
