@@ -254,7 +254,8 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 #### Standardized service contract. Strategies include:
 * [REST API design best practices](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
-* [API gateway](https://apigee.com/about/cp/api-gateway)    
+* [Apigee API gateway](https://apigee.com/about/cp/api-gateway)
+* [WSO2 API Manager](https://wso2.com/api-manager/)    
 * [contract-first design](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.435.2220&rep=rep1&type=pdf)     
 
 #### Service loose coupling. Strategies include:
