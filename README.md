@@ -265,7 +265,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 * [event-driven architecture](https://microservices.io/patterns/data/event-driven-architecture.html)  
 
 #### Service reusability. Strategies include:
-* [modeling for reuse](#)  
+* modeling for reuse  
 * [Strangler Application pattern](https://www.martinfowler.com/bliki/StranglerApplication.html)   
 
 #### Service autonomy. Strategies include:
