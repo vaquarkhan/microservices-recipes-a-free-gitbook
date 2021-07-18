@@ -1,7 +1,7 @@
 
-# Microservices Recipes- a free gitbook 
+# Microservices Recipes- a free gitbook
 
-#### Microservices are small, autonomous services that work together. 
+#### Microservices are small, autonomous services that work together.
 
 ![Alt Text](https://cdn-images-1.medium.com/max/1600/1*os1hoijFv6Iupb11uKAKIA.gif)
 
@@ -13,7 +13,7 @@
 * [Why-Microservice](#Why-Microservice)
 * [When-to-use-microservice-architecture](#When-to-use-microservice-architecture)
 * [Pros-and-cons](#pros-and-cons)
-* [Microservice-Design-Guidelines](#guidelines)
+* [Microservice-Design-Guidelines](#design-guidelines)
 * [Certify-microservices-design](#Certify-microservices-design)
 * [The-Scale-Cube](#The-Scale-Cube)
 * [Microservices-vs-SOA](#Microservices-vs-SOA)
@@ -64,7 +64,7 @@
 ---------------------------------------------------------------------
 
 
-## Definition 
+## Definition
 
 Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations. The trend has grown popular in recent years as Enterprises look to become more Agile and move towards a DevOps and continuous testing. Microservices can help create scalable, testable software that can be delivered weekly, not yearly.
 
@@ -101,7 +101,7 @@ Microservices Definition by Lewis/Fowler:
 * Services may be written in different programming languages(polyglot development).
 * Services should use separate data storage (polyglot persistence ).
 
-“Microservices are important simply because they add unique value in a way of simplification of complexity in systems.  By breaking apart your system or application into many smaller parts, you show ways of reducing duplication, increasing cohesion and lowering your coupling between parts, thus making your overall system parts easier to understand, more scalable, and easier to change. The downside of a distributed system is that it is always more complex from a systems standpoint. The overhead of many small services to manage is another factor to consider. ” 
+“Microservices are important simply because they add unique value in a way of simplification of complexity in systems.  By breaking apart your system or application into many smaller parts, you show ways of reducing duplication, increasing cohesion and lowering your coupling between parts, thus making your overall system parts easier to understand, more scalable, and easier to change. The downside of a distributed system is that it is always more complex from a systems standpoint. The overhead of many small services to manage is another factor to consider. ”
 ― Lucas Krause,
 
 The Microservices approach is about breaking your system ("pile of code") into many small services, each typically has its own:
@@ -114,13 +114,12 @@ The Microservices approach is about breaking your system ("pile of code") into m
 * UI
 
 
-## Why-Microservice 
+## Why-Microservice
 
-* Microservice make our system loosely coupled, i.e. if we need to update, repair, or replace a Microservice, we don't need to rebuild our entire application, just swap out the part that needs it.
-* To built each Microservice can use different languages and tools. Microservices communicate with well defined interface
-* The communication should be stateless for scalability(copies of Microservice) and reliability(one copy fail other copy can serve), the most common methods for communication between Microservices are HTTP and messaging.
-Each Microservice should have it's own datastore.
-* Small team capable to work on design, web development, coding, database admin and operations.
+* Microservice makes our system loosely coupled, i.e., if we need to update, repair, or replace a Microservice we, don't need to rebuild our entire application. Just swap out the part that needs it.
+* To build each Microservice, can use different languages and tools. Microservices communicate with a well-defined interface.
+* The communication should be stateless for scalability (copies of Microservice) and reliability (one copy fail other copy can serve). The most common methods for communication between Microservices are HTTP and messaging. Each Microservice should have its datastore.
+* A small team capable work on design, web development, coding, database admin, and operations.
 
 ## When-to-use-microservice-architecture
 
@@ -165,29 +164,29 @@ If you work at a medium-size or bigger organization, chances are you are aware o
 
 With our individual services being small in size, the cost to replace them with a better implementation, or even delete them altogether, is much easier to manage.
 
-### Disadvantages 
+### Disadvantages
 
-#### Team Communication Overhead - 
+#### Team Communication Overhead -
 Microservice architecture reduces the team management complexity, but it is not able to diminish the need of team communication. They need to make sure an update in one’s service is not breaking some other functionality. We can find this problem in monolith architecture applications too.
 
-#### Non uniform application - 
+#### Non uniform application -
 We can choose a different technology stack for a different component (polyglot). It leads to the problem of non uniform application design and architecture. It may can increase maintenance cost in the long run.
 
-#### Dev Ops complexity - 
+#### Dev Ops complexity -
 We need to have a mature Dev Ops team to handle the complexity involved in maintaining Microservice based application. Due to several moving parts of the application, it becomes complex and requires a high level of expertise.
 Increased Resource use - Initial investment to run these applications are high because all the independently running components need their own runtime containers with more memory and CPU.
 
-#### Increase Network communication - 
+#### Increase Network communication -
 Independently running components interact with each other over a network. Such systems require reliable and fast network connections.
 Marshalling and Un marshalling - When one component needs data from another component, the sender marshals the data in some standard from its internal representation, while the receiver un-marshalls data into its own representation before use. This definitely requires more processing compared to conventional application architecture.
 
-#### Network Security - 
+#### Network Security -
 Inter Service Communication needs to be secured to avoid any inter communication security breach. Due to several moving parts, these applications are more prone to security vulnerabilities.
 
-#### Testing - 
+#### Testing -
 Testing of such application is definitely harder compared to a monolith application.
 
-#### Production monitoring - 
+#### Production monitoring -
  Unavailability of the right tools are also an issue to be considered.
 
 #### Log analysis -
@@ -211,7 +210,7 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 
 #### Architecture Principles
 
-* Start withrelatively broad service boundaries to begin with, refactoring to smaller ones (based on business requirements) 
+* Start with relatively broad service boundaries, to begin, refactoring to smaller ones (based on business requirements)
 * [Single Responsibility Principle](https://codeburst.io/understanding-solid-principles-single-responsibility-b7c7ec0bf80)
 * [domain-driven design](https://dzone.com/refcardz/getting-started-domain-driven?chapter=1)
 
@@ -237,10 +236,10 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 #### Service discovery
 
 * [Client-side discovery from Chris Richardson](http://microservices.io/patterns/client-side-discovery.html)
-* [Server-side discovery from Chris Richardson ](http://microservices.io/patterns/apigateway.html)
-* [Service registry from Chris Richardson](http://microservices.io/patterns/apigateway.html)
-* [Self registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
-* [3rd party registration from Chris Richardson](http://microservices.io/patterns/apigateway.html)
+* [Server-side discovery from Chris Richardson ](http://microservices.io/patterns/server-side-discovery.html)
+* [Service registry pattern from Chris Richardson](http://microservices.io/patterns/service-registry.html)
+* [Self registration pattern from Chris Richardson](http://microservices.io/patterns/self-registration.html)
+* [3rd party registration pattern from Chris Richardson](http://microservices.io/patterns/3rd-party-registration.html)
 * [Service discovery with consul & etcd](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
 
 #### Service Mesh
@@ -251,35 +250,36 @@ Need log analysis tool for log analysis ,Splunk or ELK stack
 * [Service Mesh With Istio on Kubernetes in 5 Steps](https://dzone.com/articles/service-mesh-with-istio-on-kubernetes-in-5-steps)
 
 
-#### Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)
+#### [Strategies and patterns for realizing the seven design guidelines applied to microservices (sei.cmu.edu)](https://www.sei.cmu.edu/education-outreach/courses/course.cfm?coursecode=P125)
 
 #### Standardized service contract. Strategies include:
-* [REST API design best practices](#pragmatic-rest)
-* [API gateway](https://apigee.com/about/cp/api-gateway)    
+* [REST API design best practices](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
+* [Apigee API gateway](https://apigee.com/about/cp/api-gateway)
+* [WSO2 API Manager](https://wso2.com/api-manager/)    
 * [contract-first design](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.435.2220&rep=rep1&type=pdf)     
 
 #### Service loose coupling. Strategies include:
 * [Service Facade pattern](https://www.ibm.com/support/knowledgecenter/pt-br/SSMKHH_9.0.0/com.ibm.etools.mft.pattern.sen.doc/sen/sf/overview.htm)  
-* [Legacy Wrapper pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/legacy_wrapper) 
+* [Legacy Wrapper pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/legacy_wrapper)
 * [point-to-point, publish-subscribe and other messaging patterns](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)  
 * [event-driven architecture](https://microservices.io/patterns/data/event-driven-architecture.html)  
 
 #### Service reusability. Strategies include:
-* [modeling for reuse](#)  
+* modeling for reuse  
 * [Strangler Application pattern](https://www.martinfowler.com/bliki/StranglerApplication.html)   
 
 #### Service autonomy. Strategies include:
-* [Saga pattern](https://microservices.io/patterns/data/saga.html) 
-* [modeling services with DDD](https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture) 
-* [Database per Microservice pattern](https://microservices.io/patterns/data/database-per-service.html) 
-* [Service Data Replication pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_data_replication) 
-* [CQRS ](https://martinfowler.com/bliki/CQRS.html) 
-* [Event sourcing](https://microservices.io/patterns/data/event-sourcing.html) 
+* [Saga pattern](https://microservices.io/patterns/data/saga.html)
+* [modeling services with DDD](https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture)
+* [Database per Microservice pattern](https://microservices.io/patterns/data/database-per-service.html)
+* [Service Data Replication pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_data_replication)
+* [CQRS ](https://martinfowler.com/bliki/CQRS.html)
+* [Event sourcing](https://microservices.io/patterns/data/event-sourcing.html)
 
 #### Service statelessness. Strategies include:
-* [Asynchronous processing](https://www.ibm.com/support/knowledgecenter/en/SSGMCP_4.2.0/com.ibm.cics.ts.intercommunication.doc/topics/dfht1ke.html) 
-* [State Messaging pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/state_messaging) 
-* [Service Callback pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_callback) 
+* [Asynchronous processing](https://www.ibm.com/support/knowledgecenter/en/SSGMCP_4.2.0/com.ibm.cics.ts.intercommunication.doc/topics/dfht1ke.html)
+* [State Messaging pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/state_messaging)
+* [Service Callback pattern](https://patterns.arcitura.com/soa-patterns/design_patterns/service_callback)
 
 
 #### Service discoverability. Strategies include:
@@ -314,9 +314,9 @@ This document borrows heavily from:
 * [API Facade Pattern](http://apigee.com/about/resources/ebooks/api-fa%C3%A7ade-pattern), by Brian Mulloy, Apigee
 * [Web API Design](http://pages.apigee.com/web-api-design-ebook.html), by Brian Mulloy, Apigee
 * [Fielding's Dissertation on REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
-* [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) 
+* [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
-### Certify-microservices-design :
+### Certify-microservices-design
 
 After you identify the microservices in your application, validate your design against the following criteria:
 
@@ -343,7 +343,7 @@ If an existing microservice API does not suit your domain or ‘business group�
 
 ###  Know where you stand or going in future Architecture
 
-![Alt Text](https://cdn-images-1.medium.com/max/2000/1*f5yQlyPApGNPfauFBe0pTA.png ) 
+![Alt Text](https://cdn-images-1.medium.com/max/2000/1*f5yQlyPApGNPfauFBe0pTA.png )
 
 * Single purpose — each service should focus on one single purpose and do it well.
 * Loose coupling — services know little about each other. A change to one service should not require changing the others. Communication between services should happen only through public service interfaces.
@@ -355,7 +355,7 @@ If an existing microservice API does not suit your domain or ‘business group�
 ### The-Scale-Cube
 Scale Cube, defined by Martin L. Abbott and Michael T. Fisher. This model explains how infinite scaling can be achieved by implementing a three-dimensional approach.
 
-The Art of Scalability  book describes three dimension scalability model: the scale cube.  The microservice architecture is an application of Y-axis scaling on the scale cube. 
+The Art of Scalability  book describes three dimension scalability model: the scale cube.  The microservice architecture is an application of Y-axis scaling on the scale cube.
 
     •	Horizontal Duplication and Cloning (X-Axis )
     •	Functional Decomposition and Segmentation - Microservices (Y-Axis)
@@ -371,7 +371,7 @@ Scale Cube (Image courtesy:microservices.io)
  -  https://www.infoq.com/articles/microservices-intro
  -  https://medium.com/@cinish/microservices-architecture-5da90504f92a
  - https://github.com/vaquarkhan/awesome-scalability
- 
+
 ###  Microservices-vs-SOA
 
 ![Alt Text](http://lh6.ggpht.com/-rMus2S1lWlY/VSbOJPqvxzI/AAAAAAAAAhI/7FZBTbZRLk8/MicroservicesVsSOA-SystemLayers.png?imgmax=800)
@@ -382,7 +382,7 @@ Scale Cube (Image courtesy:microservices.io)
 ###  Microservices-vs-API
 
 APIs are standardized wrappers that create an interface through which microservices can be packaged and surfaced. This makes APIs the logical enforcement point for key concerns of a microservices architecture such as security, governance, and reuse. Because APIs are able to house these concerns, they are considered a foundational component of a microservices architecture(mulesoft).                        
-Microservices are design to use internally, while APIs are used to expose functionality to the outside world. 
+Microservices are design to use internally, while APIs are used to expose functionality to the outside world.
 
 - https://www.youtube.com/watch?v=qGFRbOq4fmQ
 
@@ -400,24 +400,24 @@ Don’t confuse architectural perfection with business value.”
 — Ross Garrett
 
 
-Leveraging the pieces of that practice that makes sense for me and getting most of the functionality benefits," says Ross Garrett. 
+Leveraging the pieces of that practice that makes sense for me and getting most of the functionality benefits," says Ross Garrett.
 
 - https://searchmicroservices.techtarget.com/feature/Miniservices-may-deliver-much-to-microservices-purists-chagrin
 - https://thenewstack.io/miniservices-a-realistic-alternative-to-microservices/
 
 ### Microservice-vs-Nanoservices
 
-Nanoservice is an antipattern where a service is too fine-grained. A nanoservice is a service whose overhead (communications, maintenance, and so on) outweighs its utility. 
+Nanoservice is an antipattern where a service is too fine-grained. A nanoservice is a service whose overhead (communications, maintenance, and so on) outweighs its utility.
 
 
-### What-is-BoundedContext 
+### What-is-BoundedContext
 
 DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.
 Martin fowler
 
 How big a Microservice should be is: it should have a well defined bounded context that will enable us to work without having to consider, or swap, between contexts.
 
-#### How to identify bounded context  ? 
+#### How to identify bounded context  ?
 
 - https://github.com/vaquarkhan/Domain-driven-design
 
@@ -473,13 +473,13 @@ andrei from stack
 
 - https://zeebe.io/
 
-#### If you create own orchestration Remember: 
+#### If you create own orchestration Remember:
 
 - You are an orchestrator, a coordinator of data and functions. You are not a transformer. Stay out of the business of messing with other people’s schema.
 
 - Recommended ones include the Saga pattern, routing slips, and stateful workflows. Each pattern works with a certain level of complexity. Study up and match the right patterns to your orchestration.
 
-- https://medium.com/capital-one-tech/microservices-when-to-react-vs-orchestrate-c6b18308a14c 
+- https://medium.com/capital-one-tech/microservices-when-to-react-vs-orchestrate-c6b18308a14c
 
 
 
@@ -590,7 +590,7 @@ andrei from stack
 -----------------------------------------------------------------
 
 
-### Microservices-Video 
+### Microservices-Video
 
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2UGRK07Psnp-c3A0AscUl8dledtVbXpYe4l_Tx4YegL2e-fWrg)
 
@@ -734,7 +734,7 @@ No                  |    about     | url
 8| Microservices in Practice - Key Architectural Concepts of an MSA  |- https://wso2.com/whitepapers/microservices-in-practice-key-architectural-concepts-of-an-msa/
 9|Guidelines for Designing Microservices  |- https://medium.com/@WSO2/guidelines-for-designing-microservices-71ee1997776c
 10| Microservices Resource Guide  |- https://www.martinfowler.com/microservices/
-10| 5 guiding principles you should know before you design a microservice   |- https://opensource.com/article/18/4/guide-design-microservices 
+10| 5 guiding principles you should know before you design a microservice   |- https://opensource.com/article/18/4/guide-design-microservices
 11| Pattern: Microservice Architecture  |- https://microservices.io/patterns/microservices.html
 12| Scaling Uber from 1 to 100s of Services   |- https://www.microservices.com/talks/scaling-uber-from-1-to-100s-of-services/
 13| tagged by: domain driven design    |- https://martinfowler.com/tags/domain%20driven%20design.html
@@ -759,7 +759,7 @@ No                  |    about     | url
 
 
 
-## The-Sins-of-Microservices 
+## The-Sins-of-Microservices
 
 No                  |    about     | url
 ------------------- | ------------ | -------------------
@@ -1096,30 +1096,30 @@ Request body:
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante ut augue scelerisque ornare. Aliquam tempus rhoncus quam vel luctus. Sed scelerisque fermentum fringilla. Suspendisse tincidunt nisl a metus feugiat vitae vestibulum enim vulputate. Quisque vehicula dictum elit, vitae cursus libero auctor sed. Vestibulum fermentum elementum nunc. Proin aliquam erat in turpis vehicula sit amet tristique lorem blandit. Nam augue est, bibendum et ultrices non, interdum in est. Quisque gravida orci lobortis... "
         }
     ]
-    
+
 - https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_2_1_1
 
---------------------------------------------------------------------------------- 
+---------------------------------------------------------------------------------
 ### AWS Microservices
 
 - https://www.linkedin.com/posts/sayten_1-hour-for-microservices-for-busy-professionals-ugcPost-6780519830018674688-rHnD/
 
 -------------------------------------------------------------------------------
- ### Spring-Cloud-for-Microservices 
-      
-   ![Alt Text](https://spring.io/img/homepage/diagram-distributed-systems.svg)
+ ### Spring-Cloud-for-Microservices
+
+   ![Alt Text](images/diagram-distributed-systems.svg)
    - https://spring.io/projects/spring-cloud
 
 ### Kubernetes-for-Microservices
-   
+
 TBD
-   
+
 ### Spring-Cloud-vs-Kubernetes
-    
+
 ![Alt Text](https://developers.redhat.com/blog/wp-content/uploads/2016/12/screen-shot-2016-12-06-at-10-32-19-768x310.png)
-    
-    
-    
+
+
+
 ### Spring Cloud
 Spring Cloud provides tools for developers to quickly build some of the common patterns in distributed systems such as configuration management, service discovery, circuit breakers, routing, etc. It is build on top of Netflix OSS libraries, written in Java, for Java developers.
 
@@ -1163,7 +1163,7 @@ Kubernetes is an open-source system for automating deployment, scaling, and mana
 
 * [Microservicios 2.0: Spring Cloud Netflix vs Kubernetes & Istio
 ](https://www.paradigmadigital.com/dev/microservicios-2-0-spring-cloud-netflix-vs-kubernetes-istio/)
- 
+
 ---------------------------------------------------------------------------------
 
 ### Mock Responses
@@ -1287,7 +1287,7 @@ Note: If the mock parameter is included in a request to the production environme
 
 ---------------------------------------------------------------------------------
 
-### Conways-Law 
+### Conways-Law
 
 “Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” — Melvin Conway (1967).
 
@@ -1298,7 +1298,7 @@ The 'Inverse Conway Maneuver' recommends evolving your team and organizational s
 
 “Microservice,” :- “Microservice we are following mostly the domain-driven approach, the idea is to have a cross-functional team.”
 
-* [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.bizjournals.com/bizjournals/how-to/human-resources/2016/11/jeff-bezos-two-pizza-rule-for-building-productive.html) 
+* [Create smaller, multi-functional teams that are no bigger than what two pizzas can feed](https://www.bizjournals.com/bizjournals/how-to/human-resources/2016/11/jeff-bezos-two-pizza-rule-for-building-productive.html)
 --------------------------------------------------
 
 ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz5RYcuKTPMnf09nLpjxciGuQeAP58RH8IkIIsSomeqqrPHs2)
@@ -1311,9 +1311,9 @@ Inspired by the [coming soon...]().
     <embed src="https://www.redbooks.ibm.com/redbooks/pdfs/sg248357.pdf">
         <p>This browser does not support PDFs. Please download the Microservice IBM Redbooks PDF to view it: <a href="https://www.redbooks.ibm.com/redbooks/pdfs/sg248357.pdf">Download PDF</a>.</p>
     </embed>
- 
- 
- 
+
+
+
 
 ------------------------------------------------------------------------------------------------------
 
@@ -1321,9 +1321,6 @@ Inspired by the [coming soon...]().
 
 
 ### Note :
-  
+
 - Draft version.
 - You are welcome to contribute and participate in the building of the one page index for microservice. If you fail to find your name in the attribution, plz raise an issue on GitHub . If the claim is valid will add attribution to the content.      
-    
-
-
