@@ -491,4 +491,4 @@ In the next chapter, we'll explore real-world case studies and practical applica
 
 **Navigation:**
 - [← Previous: Chapter 8](08-monitoring-and-observability.md)
-- [Next: Chapter 10 →](10-real-world-case-studies.md)
+- [Next: Chapter 10 →](10-asynchronous-messaging-patterns.md)

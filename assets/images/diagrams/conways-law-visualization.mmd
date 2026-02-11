@@ -1,76 +1,84 @@
-graph TB
-    subgraph "Organizational Structure"
-        subgraph "Team A: Frontend"
-            FE1[Frontend Developer]
-            FE2[UI/UX Designer]
-            FE3[Frontend Lead]
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','secondaryColor':'#fff','tertiaryColor':'#fff','fontSize':'16px'}}}%%
+graph LR
+    subgraph ORG["🏢 ORGANIZATIONAL STRUCTURE"]
+        direction TB
+        subgraph TEAM_FE["👥 Team A: Frontend"]
+            FE1["Frontend<br/>Developer"]
+            FE2["UI/UX<br/>Designer"]
+            FE3["Frontend<br/>Lead"]
         end
         
-        subgraph "Team B: Backend API"
-            BE1[Backend Developer]
-            BE2[API Architect]
-            BE3[Backend Lead]
+        subgraph TEAM_BE["👥 Team B: Backend API"]
+            BE1["Backend<br/>Developer"]
+            BE2["API<br/>Architect"]
+            BE3["Backend<br/>Lead"]
         end
         
-        subgraph "Team C: Data Platform"
-            DB1[Database Admin]
-            DB2[Data Engineer]
-            DB3[Platform Lead]
+        subgraph TEAM_DB["👥 Team C: Data Platform"]
+            DB1["Database<br/>Admin"]
+            DB2["Data<br/>Engineer"]
+            DB3["Platform<br/>Lead"]
         end
         
-        subgraph "Team D: DevOps"
-            DO1[DevOps Engineer]
-            DO2[Infrastructure Lead]
-            DO3[Security Engineer]
+        subgraph TEAM_DO["👥 Team D: DevOps"]
+            DO1["DevOps<br/>Engineer"]
+            DO2["Infrastructure<br/>Lead"]
+            DO3["Security<br/>Engineer"]
         end
     end
     
-    subgraph "System Architecture (Mirror)"
-        subgraph "Frontend Layer"
-            React[React SPA]
-            Mobile[Mobile App]
-            Web[Web Portal]
+    subgraph SYS["⚙️ SYSTEM ARCHITECTURE MIRROR"]
+        direction TB
+        subgraph SYS_FE["🖥️ Frontend Layer"]
+            React["React<br/>SPA"]
+            Mobile["Mobile<br/>App"]
+            Web["Web<br/>Portal"]
         end
         
-        subgraph "API Gateway Layer"
-            Gateway[API Gateway]
-            Auth[Auth Service]
-            BFF[Backend for Frontend]
+        subgraph SYS_API["🔌 API Gateway Layer"]
+            Gateway["API<br/>Gateway"]
+            Auth["Auth<br/>Service"]
+            BFF["Backend for<br/>Frontend"]
         end
         
-        subgraph "Data Services Layer"
-            UserDB[(User Database)]
-            Analytics[(Analytics DB)]
-            Cache[(Redis Cache)]
+        subgraph SYS_DATA["💾 Data Services Layer"]
+            UserDB[("User<br/>Database")]
+            Analytics[("Analytics<br/>DB")]
+            Cache[("Redis<br/>Cache")]
         end
         
-        subgraph "Infrastructure Layer"
-            K8s[Kubernetes]
-            Monitor[Monitoring]
-            CI[CI/CD Pipeline]
+        subgraph SYS_INFRA["🔧 Infrastructure Layer"]
+            K8s["Kubernetes<br/>Cluster"]
+            Monitor["Monitoring<br/>Stack"]
+            CI["CI/CD<br/>Pipeline"]
         end
     end
     
-    %% Conway's Law Connections
-    FE3 -.-> React
-    FE3 -.-> Mobile
-    BE3 -.-> Gateway
-    BE3 -.-> Auth
-    DB3 -.-> UserDB
-    DB3 -.-> Analytics
-    DO2 -.-> K8s
-    DO2 -.-> Monitor
+    %% Conway's Law Connections - Team to System Mirror
+    FE3 -.->|"mirrors"| React
+    FE3 -.->|"mirrors"| Mobile
+    BE3 -.->|"mirrors"| Gateway
+    BE3 -.->|"mirrors"| Auth
+    DB3 -.->|"mirrors"| UserDB
+    DB3 -.->|"mirrors"| Analytics
+    DO2 -.->|"mirrors"| K8s
+    DO2 -.->|"mirrors"| Monitor
     
-    %% Communication Patterns
-    React --> Gateway
-    Mobile --> BFF
-    Gateway --> Auth
-    Auth --> UserDB
-    Gateway --> Analytics
+    %% System Communication Patterns
+    React -->|"API calls"| Gateway
+    Mobile -->|"API calls"| BFF
+    Gateway -->|"authenticates"| Auth
+    Auth -->|"queries"| UserDB
+    Gateway -->|"logs"| Analytics
     
-    classDef teamBox fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
-    classDef systemBox fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000
-    classDef connection stroke:#ff5722,stroke-width:3px,stroke-dasharray: 5 5
+    %% Styling with high contrast
+    classDef teamStyle fill:#FFE082,stroke:#F57C00,stroke-width:3px,color:#000,font-weight:bold
+    classDef systemStyle fill:#90CAF9,stroke:#1565C0,stroke-width:3px,color:#000,font-weight:bold
+    classDef dbStyle fill:#A5D6A7,stroke:#2E7D32,stroke-width:3px,color:#000,font-weight:bold
+    classDef infraStyle fill:#CE93D8,stroke:#6A1B9A,stroke-width:3px,color:#000,font-weight:bold
+    classDef mirrorConnection stroke:#E53935,stroke-width:3px,stroke-dasharray:8 4
     
-    class FE1,FE2,FE3,BE1,BE2,BE3,DB1,DB2,DB3,DO1,DO2,DO3 teamBox
-    class React,Mobile,Web,Gateway,Auth,BFF,UserDB,Analytics,Cache,K8s,Monitor,CI systemBox
+    class FE1,FE2,FE3,BE1,BE2,BE3,DB1,DB2,DB3,DO1,DO2,DO3 teamStyle
+    class React,Mobile,Web,Gateway,Auth,BFF systemStyle
+    class UserDB,Analytics,Cache dbStyle
+    class K8s,Monitor,CI infraStyle

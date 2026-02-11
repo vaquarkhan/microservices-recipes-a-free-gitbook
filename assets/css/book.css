@@ -1033,6 +1033,37 @@ a:hover {
   }
 }
 
+/* Diagram images - ensure full readability */
+img[src*="diagrams/"] {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 2rem auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Specific fix for Conway's Law and other complex diagrams */
+img[src*="conways-law"],
+img[src*="team-topologies"],
+img[src*="bounded-context"],
+img[src*="granularity"] {
+  max-width: none !important;
+  width: auto !important;
+  max-height: none !important;
+  cursor: zoom-in;
+}
+
+/* Allow diagrams to be clicked for full-size view */
+img[src*="diagrams/"]:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
 /* Print styles */
 @media print {
   .book-header,
@@ -1055,5 +1086,11 @@ a:hover {
     content: " (" attr(href) ")";
     font-size: 0.8em;
     color: #666;
+  }
+  
+  /* Ensure diagrams print at full size */
+  img[src*="diagrams/"] {
+    max-width: 100% !important;
+    page-break-inside: avoid;
   }
 }
