@@ -1,0 +1,20 @@
+graph TD
+    subgraph "Classic SOA - The ESB Era"
+        A[Service A] -->|SOAP/XML| ESB((Enterprise Service Bus))
+        B[Service B] -->|SOAP/XML| ESB
+        C[Service C] -->|SOAP/XML| ESB
+        ESB -->|Centralized Logic| D[Legacy Mainframe]
+        ESB -->|Orchestration| E[External API]
+        style ESB fill:#f9d5e5,stroke:#b85450,stroke-width:4px
+        style A fill:#f5f5f5,stroke:#333
+        style B fill:#f5f5f5,stroke:#333
+        style C fill:#f5f5f5,stroke:#333
+    end
+    subgraph "Microservices - Smart Endpoints"
+        X[Order Service] -->|gRPC| Y[Payment Service]
+        Y -->|Domain Event| Z[Inventory Context]
+        X -.->|Async Event| Z
+        style X fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+        style Y fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+        style Z fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    end

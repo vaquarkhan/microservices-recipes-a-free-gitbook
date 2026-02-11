@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant App as Application
+    participant DB as Database
+    participant Outbox as Outbox Table
+    participant CDC as Change Data Capture
+    participant EventBus as Event Bus
+    participant Consumer as Consumer Service
+    
+    App->>DB: BEGIN TRANSACTION
+    App->>DB: INSERT Order
+    App->>Outbox: INSERT Event
+    App->>DB: COMMIT
+    
+    Note over DB,Outbox: Atomic write ensures<br/>consistency
+    
+    CDC->>Outbox: Poll for new events
+    CDC->>EventBus: Publish Event
+    EventBus->>Consumer: Deliver Event
+    Consumer-->>EventBus: ACK
+    CDC->>Outbox: Mark as Published

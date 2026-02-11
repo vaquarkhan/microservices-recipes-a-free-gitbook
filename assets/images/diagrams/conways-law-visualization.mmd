@@ -1,0 +1,76 @@
+graph TB
+    subgraph "Organizational Structure"
+        subgraph "Team A: Frontend"
+            FE1[Frontend Developer]
+            FE2[UI/UX Designer]
+            FE3[Frontend Lead]
+        end
+        
+        subgraph "Team B: Backend API"
+            BE1[Backend Developer]
+            BE2[API Architect]
+            BE3[Backend Lead]
+        end
+        
+        subgraph "Team C: Data Platform"
+            DB1[Database Admin]
+            DB2[Data Engineer]
+            DB3[Platform Lead]
+        end
+        
+        subgraph "Team D: DevOps"
+            DO1[DevOps Engineer]
+            DO2[Infrastructure Lead]
+            DO3[Security Engineer]
+        end
+    end
+    
+    subgraph "System Architecture (Mirror)"
+        subgraph "Frontend Layer"
+            React[React SPA]
+            Mobile[Mobile App]
+            Web[Web Portal]
+        end
+        
+        subgraph "API Gateway Layer"
+            Gateway[API Gateway]
+            Auth[Auth Service]
+            BFF[Backend for Frontend]
+        end
+        
+        subgraph "Data Services Layer"
+            UserDB[(User Database)]
+            Analytics[(Analytics DB)]
+            Cache[(Redis Cache)]
+        end
+        
+        subgraph "Infrastructure Layer"
+            K8s[Kubernetes]
+            Monitor[Monitoring]
+            CI[CI/CD Pipeline]
+        end
+    end
+    
+    %% Conway's Law Connections
+    FE3 -.-> React
+    FE3 -.-> Mobile
+    BE3 -.-> Gateway
+    BE3 -.-> Auth
+    DB3 -.-> UserDB
+    DB3 -.-> Analytics
+    DO2 -.-> K8s
+    DO2 -.-> Monitor
+    
+    %% Communication Patterns
+    React --> Gateway
+    Mobile --> BFF
+    Gateway --> Auth
+    Auth --> UserDB
+    Gateway --> Analytics
+    
+    classDef teamBox fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
+    classDef systemBox fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000
+    classDef connection stroke:#ff5722,stroke-width:3px,stroke-dasharray: 5 5
+    
+    class FE1,FE2,FE3,BE1,BE2,BE3,DB1,DB2,DB3,DO1,DO2,DO3 teamBox
+    class React,Mobile,Web,Gateway,Auth,BFF,UserDB,Analytics,Cache,K8s,Monitor,CI systemBox

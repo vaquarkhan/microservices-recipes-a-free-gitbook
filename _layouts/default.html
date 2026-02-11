@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/book.css" | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <!-- Header Navigation -->
+      <header class="book-header">
+        <nav class="book-nav">
+          <div class="nav-brand">
+            <a href="{{ "/" | relative_url }}" class="brand-link">
+              📖 Microservices Recipes
+            </a>
+            <span class="brand-subtitle">The Architect's Field Guide</span>
+          </div>
+          
+          <div class="nav-links">
+            <a href="{{ "/" | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ "/PREFACE.html" | relative_url }}" class="nav-link">Preface</a>
+            <a href="{{ "/AUTHOR.html" | relative_url }}" class="nav-link">Author</a>
+            <div class="nav-dropdown">
+              <a href="#" class="nav-link dropdown-toggle">Chapters ▼</a>
+              <div class="dropdown-content">
+                <div class="dropdown-section">
+                  <h4>Part I: Sociotechnical Substrate</h4>
+                  <a href="{{ "/chapters/01-introduction-to-microservices.html" | relative_url }}">Ch 1: Definition Wars</a>
+                  <a href="{{ "/chapters/02-design-principles-and-patterns.html" | relative_url }}">Ch 2: Distributed Monolith</a>
+                  <a href="{{ "/chapters/03-service-communication.html" | relative_url }}">Ch 3: Domain Driven Design</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part II: Data Architecture</h4>
+                  <a href="{{ "/chapters/04-data-management.html" | relative_url }}">Ch 4: End of ACID</a>
+                  <a href="{{ "/chapters/05-deployment-and-operations.html" | relative_url }}">Ch 5: Saga Pattern</a>
+                  <a href="{{ "/chapters/06-resilience-and-reliability.html" | relative_url }}">Ch 6: Dual Write Problem</a>
+                  <a href="{{ "/chapters/07-security.html" | relative_url }}">Ch 7: Data Mesh vs Fabric</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part III: Inter Process Communication</h4>
+                  <a href="{{ "/chapters/08-monitoring-and-observability.html" | relative_url }}">Ch 8: Trinity of Protocols</a>
+                  <a href="{{ "/chapters/09-testing-strategies.html" | relative_url }}">Ch 9: eBPF Networking</a>
+                  <a href="{{ "/chapters/10-real-world-case-studies.html" | relative_url }}">Ch 10: Messaging Patterns</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <a href="#" class="nav-link dropdown-toggle">Reference ▼</a>
+              <div class="dropdown-content">
+                <a href="{{ "/reference/glossary.html" | relative_url }}">📖 Glossary</a>
+                <a href="{{ "/reference/quick-reference.html" | relative_url }}">⚡ Quick Reference</a>
+                <a href="{{ "/reference/bibliography.html" | relative_url }}">📚 Bibliography</a>
+              </div>
+            </div>
+            <a href="https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook" class="nav-link github-link" target="_blank">
+              <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Breadcrumb Navigation -->
+      {% if page.url != "/" %}
+      <nav class="breadcrumb">
+        <a href="{{ "/" | relative_url }}">🏠 Home</a>
+        {% assign url_parts = page.url | split: '/' %}
+        {% assign breadcrumb_url = '' %}
+        {% for part in url_parts %}
+          {% if part != '' and part != 'index.html' %}
+            {% assign breadcrumb_url = breadcrumb_url | append: '/' | append: part %}
+            {% if forloop.last %}
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-current">{{ page.title | default: part | replace: '.html', '' | replace: '-', ' ' | capitalize }}</span>
+            {% else %}
+              <span class="breadcrumb-separator">›</span>
+              <a href="{{ breadcrumb_url | relative_url }}">{{ part | replace: '-', ' ' | capitalize }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </nav>
+      {% endif %}
+
+      <!-- Main Content -->
+      <main class="book-content">
+        {{ content }}
+      </main>
+
+      <!-- Chapter Navigation -->
+      {% if page.url contains '/chapters/' %}
+      <nav class="chapter-navigation">
+        {% assign chapters = site.pages | where_exp: "page", "page.url contains '/chapters/'" | sort: "url" %}
+        {% for chapter in chapters %}
+          {% if chapter.url == page.url %}
+            {% assign current_index = forloop.index0 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        
+        <div class="nav-buttons">
+          {% if current_index > 0 %}
+            {% assign prev_chapter = chapters[current_index | minus: 1] %}
+            <a href="{{ prev_chapter.url | relative_url }}" class="nav-button prev">
+              ← Previous: {{ prev_chapter.title | truncate: 30 }}
+            </a>
+          {% else %}
+            <a href="{{ "/PREFACE.html" | relative_url }}" class="nav-button prev">
+              ← Previous: Preface
+            </a>
+          {% endif %}
+          
+          {% if current_index < chapters.size | minus: 1 %}
+            {% assign next_chapter = chapters[current_index | plus: 1] %}
+            <a href="{{ next_chapter.url | relative_url }}" class="nav-button next">
+              Next: {{ next_chapter.title | truncate: 30 }} →
+            </a>
+          {% else %}
+            <a href="{{ "/reference/glossary.html" | relative_url }}" class="nav-button next">
+              Next: Glossary →
+            </a>
+          {% endif %}
+        </div>
+      </nav>
+      {% endif %}
+
+      <!-- Footer -->
+      <footer class="book-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>📖 Microservices Recipes</h4>
+            <p>The Architect's Field Guide</p>
+            <p>Featuring The Khan Pattern™</p>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="{{ "/" | relative_url }}">Home</a>
+            <a href="{{ "/PREFACE.html" | relative_url }}">Preface</a>
+            <a href="{{ "/AUTHOR.html" | relative_url }}">Author</a>
+            <a href="{{ "/reference/quick-reference.html" | relative_url }}">Quick Reference</a>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Community</h4>
+            <a href="https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook" target="_blank">GitHub Repository</a>
+            <a href="https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues" target="_blank">Report Issues</a>
+            <a href="https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/discussions" target="_blank">Discussions</a>
+            <a href="{{ "/CONTRIBUTING.html" | relative_url }}">Contributing</a>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <a href="https://linkedin.com/in/vaquar-khan" target="_blank">LinkedIn</a>
+            <a href="https://github.com/vaquarkhan" target="_blank">GitHub</a>
+            <a href="https://us.amazon.com/stores/Vaquar-Khan/author/B0DMJCG9W6" target="_blank">Amazon Author</a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Vaquar Khan. Licensed under <a href="{{ "/LICENSE" | relative_url }}">MIT License</a>.</p>
+          <p>Made with ❤️ for the microservices community</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+      ↑ Top
+    </button>
+
+    <script>
+      // Back to top functionality
+      window.onscroll = function() {
+        const button = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // Dropdown functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+        dropdowns.forEach(dropdown => {
+          const toggle = dropdown.querySelector('.dropdown-toggle');
+          const content = dropdown.querySelector('.dropdown-content');
+          
+          toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+          
+          // Close dropdown when clicking outside
+          document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+              content.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

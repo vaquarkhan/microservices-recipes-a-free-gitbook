@@ -1,0 +1,60 @@
+graph TB
+    subgraph "Clean Domain Model (What We Want)"
+        subgraph "Shipping Service Domain"
+            ShippingService[Shipping Service]
+            CleanAddress["CustomerAddress<br/>- street: String<br/>- city: String<br/>- zipCode: String<br/>- isActive: boolean"]
+            BusinessLogic["Business Logic<br/>- calculateShipping<br/>- validateAddress<br/>- processOrder"]
+        end
+    end
+    
+    subgraph "Anti-Corruption Layer (The Translator)"
+        ACL[Anti-Corruption Layer]
+        Translator["Legacy Translator<br/>- translateAddress<br/>- mapStatusCodes<br/>- handleErrors"]
+        Adapter["Service Adapter<br/>- fetchCustomerData<br/>- transformResponse<br/>- cacheResults"]
+    end
+    
+    subgraph "Legacy External System (What We Get)"
+        subgraph "Legacy ERP System"
+            LegacyAPI[Legacy Customer API]
+            DirtyData["LegacyUserDTO<br/>- K_12_ADDR: 123 Main|Springfield|90210<br/>- STAT_ID: 99<br/>- CUST_TYP: PREM<br/>- LST_UPD: 20240215143022"]
+            LegacyDB[("Legacy Database<br/>Cryptic Field Names<br/>Magic Numbers<br/>Inconsistent Formats")]
+        end
+    end
+    
+    %% Data Flow
+    ShippingService -->|Request Customer Data| ACL
+    ACL -->|Fetch Raw Data| LegacyAPI
+    LegacyAPI -->|Return Dirty Data| ACL
+    ACL -->|Clean Translation| ShippingService
+    
+    %% Internal ACL Processing
+    ACL --> Translator
+    ACL --> Adapter
+    Translator -->|Parse and Clean Data| CleanAddress
+    
+    %% Legacy System Details
+    LegacyAPI --> DirtyData
+    LegacyAPI --> LegacyDB
+    
+    subgraph "Translation Examples"
+        Example1["K_12_ADDR: 123 Main|Springfield|90210<br/>↓<br/>street: 123 Main<br/>city: Springfield<br/>zipCode: 90210"]
+        
+        Example2["STAT_ID: 99 → isActive: true<br/>STAT_ID: 00 → isActive: false"]
+    end
+    
+    subgraph "Benefits of ACL Pattern"
+        Benefits["✅ Domain Model Stays Clean<br/>✅ Legacy Changes Isolated<br/>✅ Easy to Test Business Logic<br/>✅ Future Migration Simplified<br/>❌ Additional Latency<br/>❌ Translation Maintenance"]
+    end
+    
+    %% Styling
+    classDef domainModel fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px,color:#000
+    classDef aclLayer fill:#fff3e0,stroke:#ef6c00,stroke-width:3px,color:#000
+    classDef legacySystem fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000
+    classDef example fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    classDef benefits fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    
+    class ShippingService,CleanAddress,BusinessLogic domainModel
+    class ACL,Translator,Adapter aclLayer
+    class LegacyAPI,DirtyData,LegacyDB legacySystem
+    class Example1,Example2 example
+    class Benefits benefits

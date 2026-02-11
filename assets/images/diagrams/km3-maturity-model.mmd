@@ -1,0 +1,57 @@
+graph LR
+    subgraph "Stage 1: AWAKEN"
+        A1[Cloud-Native<br/>Foundation]
+        A2[Containerization]
+        A3[CI/CD Pipelines]
+        A4[Immutable<br/>Infrastructure]
+        
+        A1 --> A2
+        A1 --> A3
+        A1 --> A4
+        
+        style A1 fill:#ffd700,stroke:#ff8c00,stroke-width:3px,color:#000
+        style A2 fill:#fff4e6,stroke:#ff8c00
+        style A3 fill:#fff4e6,stroke:#ff8c00
+        style A4 fill:#fff4e6,stroke:#ff8c00
+    end
+    
+    subgraph "Stage 2: AMPLIFY"
+        B1[The Resilient<br/>Mesh]
+        B2[Circuit Breakers]
+        B3[Service Mesh]
+        B4[Chaos<br/>Engineering]
+        
+        B1 --> B2
+        B1 --> B3
+        B1 --> B4
+        
+        style B1 fill:#87ceeb,stroke:#4682b4,stroke-width:3px,color:#000
+        style B2 fill:#e6f3ff,stroke:#4682b4
+        style B3 fill:#e6f3ff,stroke:#4682b4
+        style B4 fill:#e6f3ff,stroke:#4682b4
+    end
+    
+    subgraph "Stage 3: AUTOMATE"
+        C1[The Antifragile<br/>Ecosystem]
+        C2[Self-Healing]
+        C3[Auto-Remediation]
+        C4[Continuous<br/>Optimization]
+        
+        C1 --> C2
+        C1 --> C3
+        C1 --> C4
+        
+        style C1 fill:#90ee90,stroke:#228b22,stroke-width:3px,color:#000
+        style C2 fill:#e6ffe6,stroke:#228b22
+        style C3 fill:#e6ffe6,stroke:#228b22
+        style C4 fill:#e6ffe6,stroke:#228b22
+    end
+    
+    A1 ==>|Graduate| B1
+    B1 ==>|Graduate| C1
+    
+    Start([Start Here]) --> A1
+    C1 --> Goal([Antifragile<br/>System])
+    
+    style Start fill:#ff6b6b,stroke:#c92a2a,stroke-width:2px,color:#fff
+    style Goal fill:#51cf66,stroke:#2f9e44,stroke-width:2px,color:#fff

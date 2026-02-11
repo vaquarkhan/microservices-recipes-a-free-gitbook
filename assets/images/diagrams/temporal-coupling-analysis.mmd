@@ -1,0 +1,63 @@
+graph TB
+    subgraph "Git Repository Analysis"
+        GitRepo["Git Repository<br/>📂 Commit History<br/>🕐 Temporal Data"]
+        
+        CommitA["Commit A<br/>Modified: user.py, order.py<br/>Author: Dev1<br/>Time: 10:30 AM"]
+        
+        CommitB["Commit B<br/>Modified: user.py, payment.py<br/>Author: Dev2<br/>Time: 2:15 PM"]
+        
+        CommitC["Commit C<br/>Modified: order.py, inventory.py<br/>Author: Dev1<br/>Time: 4:45 PM"]
+        
+        GitRepo --> CommitA
+        GitRepo --> CommitB
+        GitRepo --> CommitC
+    end
+    
+    subgraph "Temporal Coupling Matrix"
+        Matrix["File Coupling Analysis<br/>📊 Jaccard Similarity<br/><br/>Formula: Intersection / Union<br/><br/>user.py ↔ order.py: 0.67<br/>user.py ↔ payment.py: 0.33<br/>order.py ↔ inventory.py: 0.50"]
+    end
+    
+    subgraph "VaquarKhan (Khan) Granularity Protocol"
+        Protocol["Cognitive Load Assessment<br/>🧠 Team can hold domain model<br/>📏 Goldilocks Zone optimization<br/>⚖️ Balance coupling vs cohesion"]
+    end
+    
+    subgraph "Service Boundary Recommendations"
+        HighCoupling["High Coupling (>0.6)<br/>🔴 Keep Together<br/>user.py + order.py<br/>→ User-Order Service"]
+        
+        MediumCoupling["Medium Coupling (0.3-0.6)<br/>🟡 Consider Context<br/>order.py + inventory.py<br/>→ Evaluate Business Logic"]
+        
+        LowCoupling["Low Coupling (<0.3)<br/>🟢 Separate Services<br/>user.py + payment.py<br/>→ Independent Services"]
+    end
+    
+    CommitA --> Matrix
+    CommitB --> Matrix
+    CommitC --> Matrix
+    
+    Matrix --> Protocol
+    Protocol --> HighCoupling
+    Protocol --> MediumCoupling
+    Protocol --> LowCoupling
+    
+    subgraph "Implementation"
+        UserOrderService["User-Order Service<br/>👥 Single Team<br/>🚀 High Cohesion<br/>📦 Shared Database"]
+        
+        PaymentService["Payment Service<br/>💳 Independent Team<br/>🔒 PCI Compliance<br/>🗄️ Separate Database"]
+        
+        InventoryService["Inventory Service<br/>📦 Warehouse Team<br/>📊 Real-time Stock<br/>🔄 Event-Driven Updates"]
+    end
+    
+    HighCoupling --> UserOrderService
+    LowCoupling --> PaymentService
+    MediumCoupling --> InventoryService
+    
+    classDef git fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef analysis fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef protocol fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
+    classDef coupling fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef service fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    
+    class GitRepo,CommitA,CommitB,CommitC git
+    class Matrix analysis
+    class Protocol protocol
+    class HighCoupling,MediumCoupling,LowCoupling coupling
+    class UserOrderService,PaymentService,InventoryService service

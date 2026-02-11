@@ -1,0 +1,47 @@
+graph TB
+    Client[Client Request]
+    Router[Cell Router<br/>Route 53 + API Gateway]
+    
+    Client --> Router
+    
+    Router --> Cell1[Cell 1]
+    Router --> Cell2[Cell 2]
+    Router --> Cell3[Cell 3]
+    
+    subgraph Cell1[Cell 1 - US East]
+        C1API[API Gateway]
+        C1App[Application Tier]
+        C1DB[(Database)]
+        C1Cache[Cache]
+        
+        C1API --> C1App
+        C1App --> C1DB
+        C1App --> C1Cache
+    end
+    
+    subgraph Cell2[Cell 2 - US West]
+        C2API[API Gateway]
+        C2App[Application Tier]
+        C2DB[(Database)]
+        C2Cache[Cache]
+        
+        C2API --> C2App
+        C2App --> C2DB
+        C2App --> C2Cache
+    end
+    
+    subgraph Cell3[Cell 3 - EU]
+        C3API[API Gateway]
+        C3App[Application Tier]
+        C3DB[(Database)]
+        C3Cache[Cache]
+        
+        C3API --> C3App
+        C3App --> C3DB
+        C3App --> C3Cache
+    end
+    
+    style Cell1 fill:#d5e8d4,stroke:#82b366
+    style Cell2 fill:#d5e8d4,stroke:#82b366
+    style Cell3 fill:#d5e8d4,stroke:#82b366
+    style Router fill:#3498db,stroke:#2c3e50,color:#fff

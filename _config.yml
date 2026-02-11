@@ -1,1 +1,118 @@
-theme: jekyll-theme-cayman
+# GitHub Pages Configuration for Microservices Recipes
+title: "Microservices Recipes: The Architect's Field Guide"
+description: "A comprehensive guide to building, scaling, and managing microservices architectures. Featuring The Khan Pattern™ for Adaptive Granularity."
+author: "Viquar Khan"
+email: "viquar.khan@example.com"
+url: "https://vaquarkhan.github.io"
+baseurl: "/microservices-recipes-a-free-gitbook"
+
+# Theme
+theme: minima
+remote_theme: pages-themes/architect@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# Highlighting
+highlighter: rouge
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Preface"
+    url: "/PREFACE"
+  - title: "Author"
+    url: "/AUTHOR"
+  - title: "Chapters"
+    url: "/chapters/"
+  - title: "Reference"
+    url: "/reference/"
+
+# Social links
+github_username: vaquarkhan
+linkedin_username: vaquar-khan-b695577
+
+# Book metadata
+book:
+  title: "Microservices Recipes: The Architect's Field Guide"
+  subtitle: "Featuring The Khan Pattern™ for Adaptive Granularity"
+  author: "Viquar Khan"
+  version: "2024.1"
+  isbn: "978-0-000000-00-0"
+  publisher: "Open Source"
+  publication_date: "2024-01-15"
+  language: "en"
+  
+# SEO
+lang: en_US
+logo: /assets/images/logo.png
+twitter:
+  username: vaquarkhan
+  card: summary_large_image
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:name/
+  reference:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "chapters"
+      type: "pages"
+    values:
+      layout: "chapter"
+  - scope:
+      path: "reference"
+      type: "pages"
+    values:
+      layout: "reference"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - .gitbook.yaml
+  - book.json
+
+# Include
+include:
+  - _pages
+  - assets
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed

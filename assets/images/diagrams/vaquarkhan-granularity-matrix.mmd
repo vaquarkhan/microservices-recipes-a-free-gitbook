@@ -1,0 +1,43 @@
+graph TB
+    subgraph "Revised VaquarKhan (Khan) Granularity Matrix"
+        subgraph "High Cognitive Load (L̂ > 0.7)"
+            GodZone["🔴 ZONE II<br/>God Services<br/>(High L̂, Any RVx)<br/><br/>MANDATE: SPLIT<br/>Accept Network Tax<br/>for Team Scalability"]
+            ComplexZone["🟡 COMPLEX ZONE<br/>High Load Services<br/>(High L̂, Moderate RVx)<br/><br/>OPTIMIZE: Refactor<br/>Reduce Complexity"]
+        end
+        
+        subgraph "Low Cognitive Load (L̂ ≤ 0.7)"
+            OptimumZone["🟢 ZONE IV<br/>VaquarKhan Optimum<br/>(High RVx, High Ŝ, Moderate L̂)<br/><br/>MAINTAIN: Perfect Balance<br/>Efficient + Manageable"]
+            NanoZone["🔵 ZONE I<br/>Nano-Services<br/>(Low RVx ≤ 0.3)<br/><br/>MANDATE: MERGE<br/>Network Tax > Value"]
+        end
+        
+        subgraph "Distributed Monolith (Low Ŝ ≤ 0.4)"
+            CoupledZone["🟠 ZONE III<br/>Distributed Monolith<br/>(Low Ŝ, Any RVx)<br/><br/>MANDATE: REFACTOR<br/>Wrong Boundaries"]
+        end
+    end
+    
+    subgraph "Normalized Metrics (0-1 Scale)"
+        KineticEff["Kinetic Efficiency (Ê)<br/>T_compute / T_total<br/>Measured via Tracing"]
+        CognitiveLoad["Cognitive Load (L̂)<br/>Sigmoid(Volume + Complexity)<br/>Measured via Static Analysis"]
+        SemanticDist["Semantic Distinctness (Ŝ)<br/>1 - CouplingRatio<br/>Measured via Git Analysis"]
+    end
+    
+    KineticEff --> OptimumZone
+    KineticEff --> NanoZone
+    CognitiveLoad --> GodZone
+    CognitiveLoad --> ComplexZone
+    SemanticDist --> CoupledZone
+    SemanticDist --> OptimumZone
+    
+    classDef godZone fill:#ffebee,stroke:#d32f2f,stroke-width:3px,color:#000
+    classDef complexZone fill:#fff8e1,stroke:#f57c00,stroke-width:3px,color:#000
+    classDef optimumZone fill:#e8f5e8,stroke:#388e3c,stroke-width:3px,color:#000
+    classDef nanoZone fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    classDef coupledZone fill:#fff3e0,stroke:#ff9800,stroke-width:3px,color:#000
+    classDef metric fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    
+    class GodZone godZone
+    class ComplexZone complexZone
+    class OptimumZone optimumZone
+    class NanoZone nanoZone
+    class CoupledZone coupledZone
+    class KineticEff,CognitiveLoad,SemanticDist metric
