@@ -294,7 +294,6 @@ Khan, Viquar. (2024). Microservices Recipes: The Architect's Field Guide
 ### **Need Help with Citations?**
 For assistance with proper citation format or academic use:
 
-**Email:** [Your professional email for citation inquiries]  
 **LinkedIn:** [www.linkedin.com/in/vaquar-khan-b695577/](https://www.linkedin.com/in/vaquar-khan-b695577/)  
 **GitHub Issues:** For technical citation questions
 
