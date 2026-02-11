@@ -63,9 +63,6 @@ book:
 # SEO
 lang: en_US
 logo: /assets/images/logo.png
-twitter:
-  username: vaquarkhan
-  card: summary_large_image
 
 # Collections
 collections:
