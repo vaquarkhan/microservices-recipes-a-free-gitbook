@@ -572,10 +572,23 @@ This chapter explored asynchronous messaging patterns as the nervous system of d
 
 ## What's Next?
 
-This concludes our comprehensive journey through microservices architecture patterns and practices. The principles and patterns covered in this book provide the foundation for building scalable, resilient, and maintainable distributed systems.
+This concludes the first 10 chapters of our comprehensive journey through microservices architecture patterns and practices. The principles and patterns covered provide the foundation for building scalable, resilient, and maintainable distributed systems.
+
+### 📚 Want to Read More?
+
+**Chapters 11-20 are available in the complete edition!** Explore advanced topics including:
+- Event Sourcing & CQRS
+- MLOps & Model Serving
+- Financial Services & Healthcare Microservices
+- IoT & Edge Computing
+- Blockchain Integration
+- And much more!
+
+👉 **[See Full Book Preview & Table of Contents](../BOOK-PREVIEW.md)**
 
 ---
 
 **Navigation:**
 - [← Previous: Chapter 9](09-testing-strategies.md)
+- [📖 View Complete Book Preview](../BOOK-PREVIEW.md)
 - [Next: Bibliography →](../reference/bibliography.md)
