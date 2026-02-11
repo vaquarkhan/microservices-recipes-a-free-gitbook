@@ -10,11 +10,30 @@ description: "A comprehensive guide to microservices architecture featuring The 
 # GitBook plugins configuration
 plugins:
   - search
-  - mermaid
+  - mermaid-gb3
   - code
   - prism
+  - github
+  - image-captions
+
+# Plugin configurations
+pluginsConfig:
+  github:
+    url: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
+  image-captions:
+    caption: "Figure _PAGE_IMAGE_NUMBER_. - _CAPTION_"
 
 # Theme configuration
 theme:
   default:
     showLevel: true
+    
+# PDF options
+pdf:
+  fontSize: 12
+  paperSize: "a4"
+  margin:
+    top: 56
+    bottom: 56
+    right: 62
+    left: 62

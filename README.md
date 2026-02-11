@@ -65,7 +65,7 @@
 |---------|-------|-------------|-----------|
 | **[8](chapters/08-monitoring-and-observability.md)** | **The Trinity of Protocols** | HTTP/REST, gRPC, and GraphQL communication patterns | 22 min |
 | **[9](chapters/09-testing-strategies.md)** | **The Rise of eBPF Networking and the Post Sidecar Era** | Next-generation service mesh and networking | 28 min |
-| **[10](chapters/10-real-world-case-studies.md)** | **Asynchronous Messaging Patterns** | Event-driven architecture and messaging strategies | 30 min |
+| **[10](chapters/10-asynchronous-messaging-patterns.md)** | **Asynchronous Messaging Patterns** | Event-driven architecture and messaging strategies | 30 min |
 
 ---
 
@@ -213,8 +213,6 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 
 ## 🤝 **Community & Support**
 
-## 🤝 **Community & Support**
-
 ### **🌟 Support This Open Knowledge Initiative**
 If you find this resource valuable, please help us keep it free and accessible:
 
@@ -231,8 +229,7 @@ If you find this resource valuable, please help us keep it free and accessible:
 
 ### **Professional Networks**
 - 🔗 **LinkedIn**: [Microservices Architecture Practitioners Group](https://www.linkedin.com/groups/microservices-practitioners)
-- 🐦 **Twitter**: Follow [@vaquarkhan](https://twitter.com/vaquarkhan) for updates
-- 📚 **ResearchGate**: [Academic Collaboration Hub](https://researchgate.net/profile/viquar-khan)
+- � **ResearchGate**: [Academic Collaboration Hub](https://researchgate.net/profile/viquar-khan)
 
 ### **Stay Updated**
 - 📢 **Watch** this repository for updates
