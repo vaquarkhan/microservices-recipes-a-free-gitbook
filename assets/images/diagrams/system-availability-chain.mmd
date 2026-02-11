@@ -1,0 +1,61 @@
+graph LR
+    subgraph "Monolithic System"
+        MonoApp["Monolithic App<br/>99.9% SLA<br/>A_system = 99.9%"]
+    end
+    
+    subgraph "Distributed Monolith (Anti-Pattern)"
+        Client["Client Request<br/>Checkout Process"]
+        
+        ServiceA["Service A<br/>User Auth<br/>99.9% SLA"]
+        ServiceB["Service B<br/>Inventory<br/>99.9% SLA"]
+        ServiceC["Service C<br/>Payment<br/>99.9% SLA"]
+        ServiceD["Service D<br/>Tax Calc<br/>99.9% SLA"]
+        ServiceE["Service E<br/>Shipping<br/>99.9% SLA"]
+        ServiceF["Service F<br/>Loyalty<br/>99.9% SLA"]
+        ServiceG["Service G<br/>Notification<br/>99.9% SLA"]
+        
+        Client --> ServiceA
+        ServiceA --> ServiceB
+        ServiceB --> ServiceC
+        ServiceC --> ServiceD
+        ServiceD --> ServiceE
+        ServiceE --> ServiceF
+        ServiceF --> ServiceG
+    end
+    
+    subgraph "Availability Calculation"
+        Formula["System Availability Formula<br/>A_system = A_service^n<br/><br/>Where:<br/>A_service = 99.9% (0.999)<br/>n = 7 services<br/><br/>A_system = 0.999^7 = 99.3%<br/>❌ SLA Violation!"]
+        
+        Degradation["Availability Degradation<br/>📉 Each additional service<br/>reduces system availability<br/><br/>1 service: 99.9%<br/>5 services: 99.5%<br/>10 services: 99.0%<br/>20 services: 98.0%"]
+    end
+    
+    subgraph "Solutions"
+        AsyncPattern["Async Patterns<br/>📬 Event-Driven<br/>🔄 Eventual Consistency<br/>⚡ Break Synchronous Chains"]
+        
+        CircuitBreaker["Circuit Breaker<br/>🔌 Fail Fast<br/>🛡️ Prevent Cascades<br/>📊 Graceful Degradation"]
+        
+        Bulkhead["Bulkhead Pattern<br/>🚢 Isolate Failures<br/>🔒 Resource Isolation<br/>🎯 Critical Path Protection"]
+    end
+    
+    ServiceA -.-> Formula
+    ServiceB -.-> Formula
+    ServiceC -.-> Formula
+    ServiceD -.-> Formula
+    ServiceE -.-> Formula
+    ServiceF -.-> Formula
+    ServiceG -.-> Formula
+    
+    Formula --> Degradation
+    Degradation --> AsyncPattern
+    Degradation --> CircuitBreaker
+    Degradation --> Bulkhead
+    
+    classDef monolith fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef service fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    classDef calculation fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef solution fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    
+    class MonoApp monolith
+    class Client,ServiceA,ServiceB,ServiceC,ServiceD,ServiceE,ServiceF,ServiceG service
+    class Formula,Degradation calculation
+    class AsyncPattern,CircuitBreaker,Bulkhead solution

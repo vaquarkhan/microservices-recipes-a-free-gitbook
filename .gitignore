@@ -1,0 +1,36 @@
+# Kiro IDE folders
+.kiro/
+
+# Node modules
+node_modules/
+
+# Build outputs
+_book/
+*.epub
+*.mobi
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+.cache/
+
+# AI-generated and development files
+CLEANUP-SUMMARY.md
+ANALYTICS-TRACKING.md
+COMMUNITY-SUPPORT.md
+SUMMARY.md

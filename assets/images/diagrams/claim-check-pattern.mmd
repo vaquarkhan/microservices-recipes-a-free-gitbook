@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant P as Producer Service
+    participant S3 as Amazon S3
+    participant SQS as SQS Queue
+    participant C as Consumer Service
+    
+    Note over P,C: Claim Check Pattern - Large Payload Handling
+    
+    P->>S3: 1. Store large payload (10MB video file)
+    S3-->>P: 2. Return S3 object key/URL
+    
+    Note over P: Create lightweight claim check
+    P->>SQS: 3. Send claim check message<br/>{<br/>  "s3Bucket": "media-bucket",<br/>  "s3Key": "videos/abc123.mp4",<br/>  "metadata": {...}<br/>}
+    
+    Note over SQS: Message size: ~1KB instead of 10MB
+    
+    SQS->>C: 4. Deliver claim check
+    C->>S3: 5. Retrieve payload using claim check
+    S3-->>C: 6. Return large payload
+    
+    Note over C: Process the actual data
+    C->>C: 7. Process video file
+    
+    C->>S3: 8. Delete processed file (cleanup)
+    S3-->>C: 9. Confirm deletion
+    
+    Note over P,C: VaquarKhan (Khan) Index Analysis:<br/>✅ Kinetic Friction: Reduced (queue not clogged)<br/>✅ Network Tax: Accepted (S3 latency for infinite payload)<br/>✅ Cognitive Load: Minimized (simple pattern)

@@ -1,0 +1,63 @@
+graph TD
+    Start["Service Communication<br/>Protocol Selection"]
+    
+    VKIndex{"Calculate VaquarKhan (Khan) Index<br/>Ψ = (K × S) / (C + ε)"}
+    
+    Start --> VKIndex
+    
+    subgraph "Index Zones"
+        BlueZone{"Blue Zone<br/>Nano-Services<br/>Low Ψ, Low K"}
+        GreenZone{"Green Zone<br/>VaquarKhan Optimum<br/>High Ψ, High S"}
+        RedZone{"Red Zone<br/>God Services<br/>High Ψ, High C"}
+    end
+    
+    VKIndex --> BlueZone
+    VKIndex --> GreenZone
+    VKIndex --> RedZone
+    
+    subgraph "Architectural Decisions"
+        Merge["MERGE SERVICES<br/>🔄 Eliminate Network Tax<br/>Consolidate to Monolith"]
+        Split["SPLIT SERVICES<br/>✂️ Accept Network Tax<br/>Reduce Cognitive Load"]
+        Optimize["OPTIMIZE PROTOCOL<br/>⚡ Choose Best Protocol"]
+    end
+    
+    BlueZone --> Merge
+    RedZone --> Split
+    GreenZone --> Optimize
+    
+    subgraph "Protocol Choices"
+        REST["REST/HTTP<br/>🌐 Public APIs<br/>📱 Mobile/Web Clients<br/>🔓 Loose Coupling"]
+        
+        gRPC["gRPC<br/>⚡ Internal Services<br/>🔧 High Performance<br/>📊 Binary Protocol"]
+        
+        GraphQL["GraphQL<br/>🎯 BFF Layer<br/>📱 Client Aggregation<br/>🔍 Flexible Queries"]
+        
+        Async["Async Messaging<br/>📬 Event-Driven<br/>🔄 Eventual Consistency<br/>📈 High Throughput"]
+    end
+    
+    Optimize --> REST
+    Optimize --> gRPC
+    Optimize --> GraphQL
+    Optimize --> Async
+    
+    subgraph "Use Case Criteria"
+        PublicAPI{"Public API?<br/>External Clients?"}
+        HighPerf{"High Performance<br/>Internal Communication?"}
+        Aggregation{"Client Aggregation<br/>Flexible Queries?"}
+        EventDriven{"Event-Driven<br/>Async Processing?"}
+    end
+    
+    REST --> PublicAPI
+    gRPC --> HighPerf
+    GraphQL --> Aggregation
+    Async --> EventDriven
+    
+    classDef zone fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef decision fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef protocol fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef criteria fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    
+    class BlueZone,GreenZone,RedZone zone
+    class Merge,Split,Optimize decision
+    class REST,gRPC,GraphQL,Async protocol
+    class PublicAPI,HighPerf,Aggregation,EventDriven criteria

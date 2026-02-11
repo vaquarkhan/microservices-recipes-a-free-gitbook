@@ -1,0 +1,61 @@
+graph TD
+    subgraph "Producer Service"
+        Producer["Order Service<br/>📦 Generating Events<br/>Rate: 1000 msg/sec"]
+    end
+    
+    subgraph "Message Queue (SQS)"
+        Queue["SQS Queue<br/>📬 Buffer<br/>Visibility Timeout: 30s<br/>Max Receive Count: 3"]
+        DLQ["Dead Letter Queue<br/>☠️ Failed Messages<br/>Manual Intervention Required"]
+    end
+    
+    subgraph "Consumer Service"
+        Lambda["Lambda Consumer<br/>⚡ Processing Events<br/>Concurrency: 100<br/>Processing Time: 2s"]
+        
+        subgraph "Backpressure Mechanisms"
+            Throttle["Throttling<br/>🚦 Rate Limiting<br/>Reserved Concurrency"]
+            Circuit["Circuit Breaker<br/>🔌 Fail Fast<br/>Prevent Cascade"]
+            Retry["Retry Logic<br/>🔄 Exponential Backoff<br/>Jitter"]
+        end
+    end
+    
+    subgraph "Flow Control States"
+        Normal["Normal Flow<br/>🟢 Healthy<br/>Queue Depth < 1000"]
+        Pressure["Backpressure<br/>🟡 Warning<br/>Queue Depth > 1000<br/>Processing Lag"]
+        Overload["Overload<br/>🔴 Critical<br/>Queue Depth > 10000<br/>DLQ Messages"]
+    end
+    
+    Producer -->|"Push Model"| Queue
+    Queue -->|"Pull Model<br/>Long Polling"| Lambda
+    
+    Lambda --> Throttle
+    Lambda --> Circuit
+    Lambda --> Retry
+    
+    Queue -.->|"Max Retries Exceeded"| DLQ
+    
+    Queue --> Normal
+    Normal -->|"Load Increases"| Pressure
+    Pressure -->|"Load Continues"| Overload
+    Overload -->|"Intervention"| Normal
+    
+    subgraph "VaquarKhan (Khan) Pattern Application"
+        Pattern["Network Tax Management<br/>💸 Accept S3 latency for infinite payload<br/>🧠 Minimize Cognitive Load<br/>⚖️ Balance K (efficiency) vs C (complexity)"]
+    end
+    
+    Throttle --> Pattern
+    Circuit --> Pattern
+    Retry --> Pattern
+    
+    classDef producer fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef queue fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef consumer fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef control fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef state fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef pattern fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
+    
+    class Producer producer
+    class Queue,DLQ queue
+    class Lambda consumer
+    class Throttle,Circuit,Retry control
+    class Normal,Pressure,Overload state
+    class Pattern pattern

@@ -1,0 +1,48 @@
+graph TD
+    subgraph "Monolithic Architecture"
+        MonoApp["Monolithic Application<br/>🏢 Single Deployment Unit"]
+        MonoCall["Function Call<br/>⚡ Nanoseconds<br/>💾 Memory Pointer Jump"]
+        MonoCognitive["High Cognitive Load<br/>🧠 Complex Codebase<br/>👥 Team Bottlenecks"]
+    end
+    
+    subgraph "Microservices Architecture"
+        ServiceA["Service A<br/>🔧 Order Management"]
+        ServiceB["Service B<br/>💳 Payment Processing"]
+        ServiceC["Service C<br/>📦 Inventory Management"]
+        
+        NetworkCall["Network Call<br/>🌐 Milliseconds<br/>📡 RPC + Serialization"]
+        NetworkTax["Network Tax<br/>💸 Latency Penalty<br/>🔄 Serialization Overhead<br/>⚠️ Partial Failures"]
+        
+        LowCognitive["Lower Cognitive Load<br/>🧠 Focused Domains<br/>👥 Independent Teams<br/>🚀 Parallel Development"]
+    end
+    
+    MonoApp --> MonoCall
+    MonoCall --> MonoCognitive
+    
+    ServiceA --> NetworkCall
+    NetworkCall --> ServiceB
+    ServiceB --> NetworkCall
+    NetworkCall --> ServiceC
+    
+    NetworkCall --> NetworkTax
+    ServiceA --> LowCognitive
+    ServiceB --> LowCognitive
+    ServiceC --> LowCognitive
+    
+    subgraph "VaquarKhan (Khan) Index Formula"
+        Formula["Ψ = (K × S) / (C + ε)<br/><br/>K = Kinetic Efficiency<br/>S = Semantic Distinctness<br/>C = Cognitive Load<br/>ε = Stability Constant"]
+    end
+    
+    MonoCognitive -.->|"High C"| Formula
+    LowCognitive -.->|"Low C"| Formula
+    NetworkTax -.->|"Affects K"| Formula
+    
+    classDef monolith fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    classDef microservice fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef network fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef formula fill:#e1f5fe,stroke:#0277bd,stroke-width:3px
+    
+    class MonoApp,MonoCall,MonoCognitive monolith
+    class ServiceA,ServiceB,ServiceC,LowCognitive microservice
+    class NetworkCall,NetworkTax network
+    class Formula formula

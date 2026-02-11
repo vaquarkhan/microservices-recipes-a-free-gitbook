@@ -1,0 +1,34 @@
+graph TB
+    subgraph "Stream-Aligned Teams"
+        Team1[Order Team<br/>Full Stack Ownership]
+        Team2[Payment Team<br/>Full Stack Ownership]
+        Team3[Shipping Team<br/>Full Stack Ownership]
+    end
+    
+    subgraph "Platform Team"
+        Platform[Platform Team<br/>Infrastructure & Tools<br/>CI/CD, Monitoring, K8s]
+    end
+    
+    subgraph "Enabling Team"
+        Enabling[Enabling Team<br/>Coaching & Guidance<br/>Best Practices]
+    end
+    
+    subgraph "Complicated Subsystem Team"
+        ML[ML/AI Team<br/>Specialized Domain]
+    end
+    
+    Platform -.->|Provides Platform| Team1
+    Platform -.->|Provides Platform| Team2
+    Platform -.->|Provides Platform| Team3
+    
+    Enabling -.->|Coaches| Team1
+    Enabling -.->|Coaches| Team2
+    
+    Team2 -->|Uses| ML
+    
+    style Team1 fill:#d5e8d4,stroke:#82b366
+    style Team2 fill:#d5e8d4,stroke:#82b366
+    style Team3 fill:#d5e8d4,stroke:#82b366
+    style Platform fill:#dae8fc,stroke:#6c8ebf
+    style Enabling fill:#fff2cc,stroke:#d6b656
+    style ML fill:#f8cecc,stroke:#b85450

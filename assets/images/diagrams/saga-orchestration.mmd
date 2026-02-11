@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant Client
+    participant Orchestrator
+    participant OrderService
+    participant PaymentService
+    participant InventoryService
+    
+    Client->>Orchestrator: Create Order
+    Orchestrator->>OrderService: Create Order
+    OrderService-->>Orchestrator: Order Created
+    
+    Orchestrator->>PaymentService: Process Payment
+    PaymentService-->>Orchestrator: Payment Success
+    
+    Orchestrator->>InventoryService: Reserve Items
+    InventoryService-->>Orchestrator: Items Reserved
+    
+    Orchestrator-->>Client: Order Complete
+    
+    Note over Orchestrator: If any step fails,<br/>orchestrator triggers<br/>compensating transactions

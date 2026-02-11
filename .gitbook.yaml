@@ -1,0 +1,20 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+title: "Microservices Recipes: The Architect's Field Guide"
+description: "A comprehensive guide to microservices architecture featuring The Khan Pattern™ for Adaptive Granularity"
+
+# GitBook plugins configuration
+plugins:
+  - search
+  - mermaid
+  - code
+  - prism
+
+# Theme configuration
+theme:
+  default:
+    showLevel: true

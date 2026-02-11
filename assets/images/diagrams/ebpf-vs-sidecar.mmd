@@ -1,0 +1,58 @@
+graph TB
+    subgraph "Traditional Sidecar Architecture (Legacy)"
+        subgraph "Pod A"
+            AppA["Application A<br/>🚀 Business Logic"]
+            ProxyA["Envoy Proxy<br/>🔄 Sidecar"]
+        end
+        
+        subgraph "Pod B"
+            AppB["Application B<br/>🚀 Business Logic"]
+            ProxyB["Envoy Proxy<br/>🔄 Sidecar"]
+        end
+        
+        UserSpace["User Space<br/>📊 4x Context Switches<br/>💸 High CPU Overhead<br/>⏱️ Millisecond Latency"]
+        
+        AppA --> ProxyA
+        ProxyA -.->|"Network"| ProxyB
+        ProxyB --> AppB
+        
+        ProxyA --> UserSpace
+        ProxyB --> UserSpace
+    end
+    
+    subgraph "eBPF Architecture (Modern)"
+        subgraph "Node"
+            AppC["Application C<br/>🚀 Business Logic"]
+            AppD["Application D<br/>🚀 Business Logic"]
+            
+            KernelSpace["Kernel Space<br/>⚡ eBPF Programs<br/>🔧 Cilium CNI<br/>🛡️ Tetragon Security"]
+        end
+        
+        AppC -.->|"Direct Kernel"| KernelSpace
+        AppD -.->|"Direct Kernel"| KernelSpace
+        KernelSpace -.->|"Zero-Copy Networking"| AppC
+        KernelSpace -.->|"Zero-Copy Networking"| AppD
+    end
+    
+    subgraph "Performance Comparison"
+        SidecarPerf["Sidecar Performance<br/>🐌 20-50ms latency<br/>💾 2x memory usage<br/>🔥 High CPU for serialization"]
+        
+        EbpfPerf["eBPF Performance<br/>⚡ Microsecond latency<br/>💾 50% less memory<br/>🚀 Kernel-native efficiency"]
+        
+        VKIndex["VaquarKhan (Khan) Index<br/>K_x = (K_efficiency^β) / (C_load^α) × Φ_semantic<br/><br/>eBPF: Higher K_efficiency<br/>Sidecar: Higher C_load"]
+    end
+    
+    UserSpace --> SidecarPerf
+    KernelSpace --> EbpfPerf
+    
+    SidecarPerf --> VKIndex
+    EbpfPerf --> VKIndex
+    
+    classDef sidecar fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    classDef ebpf fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef performance fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef formula fill:#e1f5fe,stroke:#0277bd,stroke-width:3px
+    
+    class AppA,AppB,ProxyA,ProxyB,UserSpace,SidecarPerf sidecar
+    class AppC,AppD,KernelSpace,EbpfPerf ebpf
+    class VKIndex formula

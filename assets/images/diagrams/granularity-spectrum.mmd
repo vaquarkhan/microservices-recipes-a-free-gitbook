@@ -1,0 +1,8 @@
+graph LR
+    A[Monolith<br/>High Coupling<br/>Slow Build] -->|Decompose| B[Macroservices<br/>Domain Aligned]
+    B -->|Ideal Zone| C[Bounded Contexts<br/>Right-Sized Services]
+    C -->|Over-Decompose| D[Nanoservices<br/>Network Overhead<br/>Distributed Spaghetti]
+    style C fill:#d5e8d4,stroke:#82b366,stroke-width:4px
+    style A fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    style D fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    style B fill:#fff4e6,stroke:#d79b00,stroke-width:2px

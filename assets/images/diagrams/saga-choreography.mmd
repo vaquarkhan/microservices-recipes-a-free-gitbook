@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant OrderService
+    participant EventBus
+    participant PaymentService
+    participant InventoryService
+    participant NotificationService
+    
+    OrderService->>EventBus: OrderCreated Event
+    EventBus->>PaymentService: OrderCreated
+    PaymentService->>EventBus: PaymentProcessed Event
+    
+    EventBus->>InventoryService: PaymentProcessed
+    InventoryService->>EventBus: ItemsReserved Event
+    
+    EventBus->>NotificationService: ItemsReserved
+    NotificationService->>EventBus: CustomerNotified Event
+    
+    Note over EventBus: Each service listens<br/>and publishes events<br/>No central orchestrator

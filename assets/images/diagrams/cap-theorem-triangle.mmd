@@ -1,0 +1,46 @@
+graph TB
+    subgraph "CAP Theorem: Choose Any Two"
+        C[Consistency<br/>All nodes see the same data<br/>at the same time]
+        A[Availability<br/>System remains operational<br/>even during failures]
+        P[Partition Tolerance<br/>System continues despite<br/>network failures]
+        
+        C --- A
+        A --- P
+        P --- C
+    end
+    
+    subgraph "Real-World System Examples"
+        subgraph "CA Systems (Consistency + Availability)"
+            RDBMS[Traditional RDBMS<br/>PostgreSQL, MySQL<br/>❌ Not Partition Tolerant]
+        end
+        
+        subgraph "CP Systems (Consistency + Partition Tolerance)"
+            MongoDB[MongoDB<br/>Redis Cluster<br/>❌ May become unavailable]
+            Zookeeper[Apache Zookeeper<br/>etcd<br/>❌ Sacrifices availability]
+        end
+        
+        subgraph "AP Systems (Availability + Partition Tolerance)"
+            Dynamo[Amazon DynamoDB<br/>Cassandra<br/>❌ Eventually consistent]
+            DNS[DNS System<br/>Web Caches<br/>❌ Stale data possible]
+        end
+    end
+    
+    subgraph "VaquarKhan (Khan) Protocol Guidance"
+        Decision{Business Requirements}
+        Decision -->|Financial Transactions<br/>Strong Consistency Required| CP_Choice[Choose CP<br/>MongoDB, Redis Cluster]
+        Decision -->|User Experience<br/>High Availability Critical| AP_Choice[Choose AP<br/>DynamoDB, Cassandra]
+        Decision -->|Single Data Center<br/>No Network Partitions| CA_Choice[Choose CA<br/>Traditional RDBMS]
+    end
+    
+    %% Styling
+    classDef capNode fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000,font-weight:bold
+    classDef caSystem fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef cpSystem fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    classDef apSystem fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    classDef decision fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    
+    class C,A,P capNode
+    class RDBMS caSystem
+    class MongoDB,Zookeeper cpSystem
+    class Dynamo,DNS apSystem
+    class Decision,CP_Choice,AP_Choice,CA_Choice decision

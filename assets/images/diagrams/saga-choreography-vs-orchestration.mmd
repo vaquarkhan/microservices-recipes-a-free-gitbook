@@ -1,0 +1,65 @@
+graph TB
+    subgraph "Choreography Pattern (Event-Driven)"
+        subgraph "Services Communicate via Events"
+            OrderSvc1[Order Service]
+            PaymentSvc1[Payment Service]
+            InventorySvc1[Inventory Service]
+            ShippingSvc1[Shipping Service]
+        end
+        
+        OrderSvc1 -->|OrderCreated Event| PaymentSvc1
+        PaymentSvc1 -->|PaymentProcessed Event| InventorySvc1
+        InventorySvc1 -->|InventoryReserved Event| ShippingSvc1
+        
+        %% Compensation Flow
+        ShippingSvc1 -.->|ShippingFailed Event| InventorySvc1
+        InventorySvc1 -.->|InventoryReleased Event| PaymentSvc1
+        PaymentSvc1 -.->|PaymentRefunded Event| OrderSvc1
+    end
+    
+    subgraph "Orchestration Pattern (Centralized)"
+        subgraph "Central Orchestrator Controls Flow"
+            Orchestrator[Saga Orchestrator<br/>AWS Step Functions]
+            OrderSvc2[Order Service]
+            PaymentSvc2[Payment Service]
+            InventorySvc2[Inventory Service]
+            ShippingSvc2[Shipping Service]
+        end
+        
+        Orchestrator -->|1. Create Order| OrderSvc2
+        Orchestrator -->|2. Process Payment| PaymentSvc2
+        Orchestrator -->|3. Reserve Inventory| InventorySvc2
+        Orchestrator -->|4. Arrange Shipping| ShippingSvc2
+        
+        %% Compensation Flow
+        Orchestrator -.->|Compensate: Refund| PaymentSvc2
+        Orchestrator -.->|Compensate: Release| InventorySvc2
+        Orchestrator -.->|Compensate: Cancel| OrderSvc2
+    end
+    
+    subgraph "Trade-off Analysis"
+        subgraph "Choreography Pros/Cons"
+            ChoreoPros[✅ Loose Coupling<br/>✅ Service Autonomy<br/>✅ Scalability<br/>❌ Complex Debugging<br/>❌ Pinball Architecture<br/>❌ Hard to Track State]
+        end
+        
+        subgraph "Orchestration Pros/Cons"
+            OrchPros[✅ Clear Business Logic<br/>✅ Easy Debugging<br/>✅ Centralized Monitoring<br/>❌ Single Point of Failure<br/>❌ Tight Coupling<br/>❌ Orchestrator Complexity]
+        end
+    end
+    
+    subgraph "VaquarKhan (Khan) Protocol Recommendation"
+        Recommendation[For Financial Transactions:<br/>Use Orchestration<br/><br/>For Non-Critical Workflows:<br/>Use Choreography<br/><br/>Hybrid: Orchestration for core,<br/>Choreography for notifications]
+    end
+    
+    %% Styling
+    classDef choreographyService fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef orchestrationService fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    classDef orchestrator fill:#fff3e0,stroke:#ef6c00,stroke-width:3px,color:#000
+    classDef analysis fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    classDef recommendation fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
+    
+    class OrderSvc1,PaymentSvc1,InventorySvc1,ShippingSvc1 choreographyService
+    class OrderSvc2,PaymentSvc2,InventorySvc2,ShippingSvc2 orchestrationService
+    class Orchestrator orchestrator
+    class ChoreoPros,OrchPros analysis
+    class Recommendation recommendation

@@ -1,0 +1,20 @@
+graph LR
+    Client[Client]
+    Gateway[API Gateway<br/>Strangler Facade]
+    
+    Client --> Gateway
+    
+    Gateway -->|Old Routes| Legacy[Legacy Monolith]
+    Gateway -->|New Routes| New1[New Service 1]
+    Gateway -->|New Routes| New2[New Service 2]
+    Gateway -->|New Routes| New3[New Service 3]
+    
+    Legacy -.->|Gradually<br/>Migrate| New1
+    Legacy -.->|Gradually<br/>Migrate| New2
+    Legacy -.->|Gradually<br/>Migrate| New3
+    
+    style Gateway fill:#3498db,stroke:#2c3e50,color:#fff
+    style Legacy fill:#f8cecc,stroke:#b85450
+    style New1 fill:#d5e8d4,stroke:#82b366
+    style New2 fill:#d5e8d4,stroke:#82b366
+    style New3 fill:#d5e8d4,stroke:#82b366
