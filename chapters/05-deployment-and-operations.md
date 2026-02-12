@@ -73,6 +73,7 @@ Architects must recognize that compensation is not always a perfect undo. While 
 The implementation of Saga requires a mechanism to coordinate the sequence of local transactions. This coordination generally falls into two topological categories: Choreography (decentralized) and Orchestration (centralized). The choice between these two is not merely stylistic; it profoundly impacts the coupling, observability, scalability, and failure modes of the distributed system.
 
 ![Saga Choreography vs Orchestration](../assets/images/diagrams/saga-choreography-vs-orchestration.png)
+
 *Figure 5.1: Comparison of Saga choreography (event-driven) vs orchestration (centralized) patterns, showing trade-offs in coupling, observability, and failure handling*
 
 **Table 5.1: Comparative Analysis of Saga Topologies**

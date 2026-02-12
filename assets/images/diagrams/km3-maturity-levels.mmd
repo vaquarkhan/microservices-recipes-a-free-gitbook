@@ -1,0 +1,17 @@
+graph TD
+    L0["Level 0: MONOLITHIC<br/>Team: 1-10 engineers<br/>Services: 1<br/>Focus: Build foundation"]
+    L1["Level 1: MODULAR MONOLITH<br/>Team: 10-30 engineers<br/>Services: 1 with modules<br/>Focus: Prepare for extraction"]
+    L2["Level 2: ESSENTIAL MICROSERVICES<br/>Team: 30-100 engineers<br/>Services: 5-20<br/>Focus: Learn & stabilize"]
+    L3["Level 3: OPTIMIZED MICROSERVICES<br/>Team: 100-500 engineers<br/>Services: 20-100<br/>Focus: Scale & optimize"]
+    L4["Level 4: HYPERSCALE<br/>Team: 500+ engineers<br/>Services: 100+<br/>Focus: Innovation & automation"]
+    
+    L0 -->|Build CI/CD<br/>Add monitoring| L1
+    L1 -->|Extract 1-3 services<br/>Implement tracing| L2
+    L2 -->|Add service mesh<br/>Establish governance| L3
+    L3 -->|eBPF networking<br/>AIOps| L4
+    
+    style L0 fill:#e8e8e8,stroke:#666666,stroke-width:2px
+    style L1 fill:#d4e6f1,stroke:#3498db,stroke-width:2px
+    style L2 fill:#d5f4e6,stroke:#27ae60,stroke-width:2px
+    style L3 fill:#fdeaa8,stroke:#f39c12,stroke-width:2px
+    style L4 fill:#fadbd8,stroke:#e74c3c,stroke-width:2px

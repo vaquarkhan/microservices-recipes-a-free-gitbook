@@ -134,6 +134,7 @@ The Senior Architect uses these patterns to categorize dependencies and calculat
 The Architect must maintain a live Context Map. Unlike a UML diagram, this map includes the quality of the connection.
 
 ![Bounded Context Map](../assets/images/diagrams/bounded-context-map.png)
+
 *Figure 3.2: Context map showing relationships between bounded contexts with different coupling patterns and power dynamics*
 
 **Analysis:** The Recommendation Service "Conforms" to Identity (it just uses the UserID provided). However, it uses an ACL to talk to the Mainframe. Why? Because the Mainframe uses obscure COBOL data structures that we don't want leaking into our modern Python recommendation algorithms.
@@ -143,6 +144,7 @@ The Architect must maintain a live Context Map. Unlike a UML diagram, this map i
 The Anti-Corruption Layer is the most critical pattern for modernizing legacy systems. It allows you to build a new, clean microservice that interacts with a "Big Ball of Mud" monolith without becoming infected by the monolith's bad design.
 
 ![Anti-Corruption Layer Pattern](../assets/images/diagrams/anti-corruption-layer-pattern.png)
+
 *Figure 3.1: Anti-Corruption Layer pattern protecting clean domain models from legacy system complexity through translation and adaptation layers*
 
 ### 3.3.1 Anatomy of an ACL

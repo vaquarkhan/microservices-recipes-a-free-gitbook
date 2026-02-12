@@ -55,6 +55,7 @@ Validity: The decided value must have been proposed by some process.
 The FLP result implies that we cannot distinguish between a process that has failed (crashed) and a process that is simply very slow or suffering from network latency. If we set a timeout to decide that a node is dead, we risk "split brain" scenarios where the node is actually alive and continues to process writes, leading to data corruption. While practical algorithms like Paxos and Raft circumvent FLP by introducing partial synchrony (using timeouts and leader election terms), the theoretical ceiling remains in a partitioned network, you cannot have both 100% availability and perfect consistency. This is the essence of the CAP Theorem, which forces the architect to choose between Consistency (CP) and Availability (AP) in the presence of Partitions.
 
 ![CAP Theorem Triangle](../assets/images/diagrams/cap-theorem-triangle.png)
+
 *Figure 4.1: CAP Theorem visualization showing the fundamental trade-offs between Consistency, Availability, and Partition tolerance, with real-world system examples and VaquarKhan (Khan) Protocol guidance*
 
 4.2 The Consistency Spectrum: A Dial, not a Switch

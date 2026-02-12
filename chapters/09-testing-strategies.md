@@ -38,6 +38,7 @@ The mandate for 2026 is unambiguous: eliminate this tax. The transition from use
 To understand why this migration is inevitable for high-scale systems, examine the performance delta through the lens of the Khan Index. The index quantifies the efficiency of architectural decisions, penalizing high "Cognitive Load" and low "Kinetic Efficiency".
 
 ![eBPF vs Sidecar Architecture](../assets/images/diagrams/ebpf-vs-sidecar.png)
+
 *Figure 9.1: Comparison of traditional sidecar architecture vs modern eBPF architecture, showing performance and efficiency improvements*
 
 #### The Revised Khan Index Formula for eBPF Analysis:

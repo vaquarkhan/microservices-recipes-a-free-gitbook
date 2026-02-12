@@ -1,0 +1,25 @@
+gantt
+    title Black Friday 2017 Crisis Timeline
+    dateFormat HH:mm
+    axisFormat %H:%M
+    
+    section Normal Operation
+    System Running Normally    :done, 00:00, 08:00
+    
+    section Crisis Begins
+    Traffic Spike Starts        :crit, 08:00, 08:30
+    First Service Failures      :crit, 08:30, 09:00
+    Cascade Failures Begin      :crit, 09:00, 10:00
+    
+    section Full Outage
+    34 Services Down            :crit, 10:00, 12:00
+    Database Pool Exhaustion    :crit, 10:30, 12:30
+    Message Queue Backlog 2.3M  :crit, 11:00, 13:00
+    
+    section Recovery
+    Emergency Rollback          :active, 12:00, 13:00
+    Partial Service Restored    :active, 13:00, 14:00
+    Full Recovery               :done, 14:00, 15:00
+    
+    section Impact
+    Revenue Loss $4.7M          :milestone, 14:00, 0m
