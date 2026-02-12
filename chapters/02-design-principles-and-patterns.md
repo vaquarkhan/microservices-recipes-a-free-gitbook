@@ -95,6 +95,7 @@ To understand why intelligent, well intentioned engineering teams build distribu
 In his seminal 1968 paper, "How Do Committees Invent?", Melvin Conway posited that "organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations". This observation, now known as Conway's Law, asserts that the interface structure of a software system will necessarily show a congruence specifically a homomorphism with the social structure of the organization that produced it.
 
 ![Conway's Law Visualization](../assets/images/diagrams/conways-law-visualization.png)
+
 *Figure 2.1: Conway's Law in action - organizational team structure directly mirrors the resulting system architecture, demonstrating the sociotechnical coupling in software design*
 
 ## Conway observed a specific mechanism for this mirroring:

@@ -48,6 +48,7 @@ Before a single line of interface definition language (IDL) is written, the arch
 The VaquarKhan (Khan) Index (Ψ) serves as the "Check Engine Light" for microservice granularity, providing a quantitative basis for protocol selection. It moves the discussion from subjective preference to objective metric, assessing whether a service boundary contributes to system velocity or merely adds to the "Network Tax".
 
 ![VaquarKhan Granularity Matrix](../assets/images/diagrams/vaquarkhan-granularity-matrix.png)
+
 *Figure 8.1: The VaquarKhan (Khan) Granularity Matrix showing the four architectural zones and their corresponding mandates*
 
 ### 8.1.2 Mathematical Rigor and Dimensional Consistency
@@ -120,6 +121,7 @@ The resulting score maps services into the VaquarKhan (Khan) Granularity Matrix 
 The "Distributed System Tax" is quantified through the Latency Chain Model. In 2026, empirical analysis confirms that deep synchronous chains of microservices are inherently fragile due to variance amplification. The latency of a microservice architecture is defined as:
 
 ![Network Tax vs Cognitive Load](../assets/images/diagrams/network-tax-cognitive-load.png)
+
 *Figure 8.2: Comparison of Network Tax in Monolithic vs Microservices Architecture, illustrating the VaquarKhan (Khan) Index trade-offs*
 
 ```
@@ -161,6 +163,7 @@ While REST excels at the edge, it hits a hard "Performance Wall" when applied to
 If REST is the public face of the application, gRPC is its internal nervous system. Developed by Google and built on the HTTP/2 standard (and increasingly HTTP/3), gRPC has become the de facto standard for synchronous inter-service communication in 2026 architectures. It is the technical answer to the "Network Tax," designed specifically to minimize the latency and bandwidth costs of distribution.
 
 ![Protocol Selection Tree](../assets/images/diagrams/protocol-selection-tree.png)
+
 *Figure 8.3: Decision tree for protocol selection based on VaquarKhan (Khan) Index analysis and use case requirements*
 
 ### 8.3.1 The Performance Delta: gRPC vs. REST

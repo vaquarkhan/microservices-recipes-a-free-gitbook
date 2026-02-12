@@ -35,6 +35,7 @@ In microservices architecture, this safety net is gone. We have voluntarily trad
 This brings us to the Dual Write Problem, the most pervasive source of data corruption in distributed systems.
 
 ![Dual Write Problem](../assets/images/diagrams/dual-write-problem.png)
+
 *Figure 6.1: The Dual Write Problem sequence diagram showing failure scenarios and the Transactional Outbox pattern solution for guaranteed consistency*
 
 ## 6.1 The Fallacy of save() and publish()
