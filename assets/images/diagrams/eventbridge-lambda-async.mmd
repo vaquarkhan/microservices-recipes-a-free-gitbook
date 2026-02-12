@@ -1,0 +1,20 @@
+graph TD
+    Producer["Service A<br/>(Producer)"]
+    EventBridge["EventBridge<br/>(Event Bus)"]
+    SendEmail["Lambda:<br/>SendEmail"]
+    UpdateCache["Lambda:<br/>UpdateCache"]
+    LogAnalytics["Lambda:<br/>LogAnalytics"]
+    NotifySlack["Lambda:<br/>NotifySlack"]
+    
+    Producer -->|PutEvents| EventBridge
+    EventBridge --> SendEmail
+    EventBridge --> UpdateCache
+    EventBridge --> LogAnalytics
+    EventBridge --> NotifySlack
+    
+    style Producer fill:#e1f5ff
+    style EventBridge fill:#fff9c4
+    style SendEmail fill:#c8e6c9
+    style UpdateCache fill:#c8e6c9
+    style LogAnalytics fill:#c8e6c9
+    style NotifySlack fill:#c8e6c9

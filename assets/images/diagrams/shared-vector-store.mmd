@@ -1,0 +1,14 @@
+graph TD
+    Support["Support Service"]
+    Sales["Sales Service"]
+    Marketing["Marketing Service"]
+    VectorStore["Shared Vector Store<br/>(Customer Embeddings)<br/><br/>Namespace Isolation:<br/>- support.*<br/>- sales.*<br/>- marketing.*"]
+    
+    Support --> VectorStore
+    Sales --> VectorStore
+    Marketing --> VectorStore
+    
+    style Support fill:#e3f2fd
+    style Sales fill:#e8f5e9
+    style Marketing fill:#fff3e0
+    style VectorStore fill:#f3e5f5

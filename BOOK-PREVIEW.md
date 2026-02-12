@@ -9,13 +9,13 @@
 
 ---
 
-## Introducing the VaquarKhan Protocol™
+## Introducing the Khan Protocol™
 
 ### A Mathematically Rigorous Framework for Architectural Governance
 
-The **VaquarKhan Protocol** represents the first mathematically rigorous framework for microservices architectural decision-making. Introduced throughout this book and formalized in Chapter 8, it provides quantitative guidance for the most critical architectural questions.
+The **Khan Protocol** represents a mathematically rigorous framework for microservices architectural decision-making. Introduced throughout this book and formalized in Chapter 8, it provides quantitative guidance for the most critical architectural questions.
 
-### The VaquarKhan Index (RVx)
+### The Khan Index (RVx)
 
 ```
 RVx = (Ê^β × Ŝ) / (L̂^α + ε)
@@ -33,11 +33,11 @@ RVx = (Ê^β × Ŝ) / (L̂^α + ε)
 1. **Zone I - Nano-Swarm** (RVx ≤ 0.3): MERGE - Network tax exceeds value
 2. **Zone II - God Services** (L̂ > 0.7): SPLIT - Cognitive overload
 3. **Zone III - Distributed Monolith** (Ŝ ≤ 0.4): REFACTOR - Wrong boundaries
-4. **Zone IV - VaquarKhan Optimum** (RVx > 0.6): MAINTAIN - Balanced architecture
+4. **Zone IV - Khan Optimum** (RVx > 0.6): MAINTAIN - Balanced architecture
 
 ### Implementation and Measurement
 
-The VaquarKhan Protocol is fully implemented in Chapter 8 with:
+The Khan Protocol is fully implemented in Chapter 8 with:
 - **Measurement protocols** using OpenTelemetry, SonarQube, and Git analysis
 - **Python implementation** with complete code examples
 - **Organizational calibration guidance** for tuning parameters
@@ -47,12 +47,12 @@ The VaquarKhan Protocol is fully implemented in Chapter 8 with:
 
 ### Why It Matters
 
-**Before VaquarKhan:**
+**Before Khan:**
 - Architectural decisions based on intuition
 - No quantitative framework for service granularity
 - Distributed monoliths discovered only after deployment
 
-**After VaquarKhan:**
+**After Khan:**
 - Data-driven architectural governance
 - Measurable thresholds for merge/split decisions
 - Continuous monitoring of architectural health
@@ -62,13 +62,13 @@ The VaquarKhan Protocol is fully implemented in Chapter 8 with:
 ## What You've Read: The Foundation (Chapters 1-10)
 
 ### Part I: The Sociotechnical Substrate (Chapters 1-3)
-✅ Organization and architecture alignment, distributed monolith avoidance, Domain-Driven Design
+- Organization and architecture alignment, distributed monolith avoidance, Domain-Driven Design
 
 ### Part II: The Distributed Data Problem (Chapters 4-7)
-✅ Data consistency, Saga pattern, Transactional Outbox, Data Mesh vs. Fabric
+- Data consistency, Saga pattern, Transactional Outbox, Data Mesh vs. Fabric
 
 ### Part III: The Communication Layer (Chapters 8-10)
-✅ Protocol selection, eBPF networking, asynchronous messaging with VaquarKhan Protocol
+- Protocol selection, eBPF networking, asynchronous messaging with Khan Protocol
 
 ---
 
@@ -115,7 +115,7 @@ Solve the operational complexity explosion with Terraform at scale, AWS CDK patt
 #### Chapter 15: Observability 2.0
 **From Telemetry to Understanding**
 
-Transcend traditional monitoring with OpenTelemetry deep dive, distributed tracing at scale, VaquarKhan Index dashboards, and AI-powered anomaly detection.
+Transcend traditional monitoring with OpenTelemetry deep dive, distributed tracing at scale, Khan Index dashboards, and AI-powered anomaly detection.
 
 **Key Recipe**: Complete observability stack with OpenTelemetry, Grafana, Loki, and Tempo on EKS.
 
@@ -146,7 +146,7 @@ Transform toy RAG implementations into production-grade systems. Master vector d
 #### Chapter 18: The Modular Monolith
 **The Great Consolidation of 2026**
 
-Understand when microservices are the wrong choice. Learn modular monolith patterns, the VaquarKhan decision matrix, and safe consolidation strategies.
+Understand when microservices are the wrong choice. Learn modular monolith patterns, the Khan decision matrix, and safe consolidation strategies.
 
 **Key Recipe**: Refactoring microservices into a modular monolith using Spring Modulith and Kotlin.
 
@@ -166,7 +166,7 @@ Master the only proven pattern for safely migrating monoliths. Learn routing str
 #### Chapter 20: The Khan Microservices Maturity Model (KM3™)
 **Measuring Architectural Evolution**
 
-Assess and improve your microservices maturity with the industry's first quantitative framework. Five maturity levels, assessment dimensions, and improvement roadmaps.
+Assess and improve your microservices maturity with a comprehensive quantitative framework. Five maturity levels, assessment dimensions, and improvement roadmaps.
 
 **Key Recipe**: Automated maturity assessment dashboard with CloudWatch metrics and QuickSight.
 
@@ -182,15 +182,13 @@ Assess and improve your microservices maturity with the industry's first quantit
 Available on GitHub: [github.com/vaquarkhan/microservices-recipes-a-free-gitbook](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
 
 **Includes:**
-- Complete VaquarKhan Protocol documentation
+- Complete Khan Protocol documentation
 - All 10 foundation chapters
-- 100+ production-ready code recipes
 - 30+ professional diagrams
 - Full access to community discussions
 
 ### Full Edition (Chapters 1-20)
 **Coming Soon - 2026**
-
 
 **What You Get:**
 - All 20 chapters (350+ pages)
@@ -198,9 +196,6 @@ Available on GitHub: [github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 - AI integration patterns (Agentic AI, RAG at Scale)
 - Migration playbooks (Modular Monolith, Strangler Fig)
 - Khan Microservices Maturity Model (KM3™)
-- Exclusive case studies and interviews
-- Video tutorials and workshops
-- Access to private community forum
 
 ---
 
@@ -209,24 +204,3 @@ Available on GitHub: [github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 - **LinkedIn**: [linkedin.com/in/vaquar-khan-b695577](https://www.linkedin.com/in/vaquar-khan-b695577/)
 - **GitHub**: [github.com/vaquarkhan](https://github.com/vaquarkhan)
 - **Free Mentorship**: [adplist.org/mentors/vaquar-khan](https://adplist.org/mentors/vaquar-khan)
-
----
-
-**Microservices Recipes: The Senior Architect's Field Guide**  
-*By Viquar Khan*  
-*© 2026 - All Rights Reserved*
-
-<div align="center">
-  <img src="assets/images/cover-image-3.png" alt="Microservices Architecture" width="600"/>
-  
-  ---
-  
-  **Ready to Master Microservices Architecture?**  
-  
-  ⭐ Star the repository on GitHub  
-  📖 Read the free edition (Chapters 1-10)  
-  🚀 Pre-order the full edition (Chapters 1-20)  
-  💬 Join the community discussions  
-  
-  [Get Started Now →](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
-</div>
