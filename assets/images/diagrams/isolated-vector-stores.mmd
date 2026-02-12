@@ -1,0 +1,13 @@
+graph LR
+    subgraph ProductService["Product Catalog Service"]
+        ProductDB["Product Embeddings<br/>(Weaviate)"]
+    end
+    
+    subgraph FraudService["Fraud Detection Service"]
+        FraudDB["Transaction Vectors<br/>(Qdrant)"]
+    end
+    
+    style ProductService fill:#e3f2fd
+    style FraudService fill:#ffebee
+    style ProductDB fill:#90caf9
+    style FraudDB fill:#ef9a9a

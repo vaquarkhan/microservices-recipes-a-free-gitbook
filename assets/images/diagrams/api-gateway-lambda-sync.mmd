@@ -1,0 +1,27 @@
+graph TD
+    Client["Client"]
+    APIGateway["API Gateway<br/>(REST/HTTP API)"]
+    GetOrder["Lambda:<br/>GetOrder"]
+    CreateOrder["Lambda:<br/>CreateOrder"]
+    UpdateOrder["Lambda:<br/>UpdateOrder"]
+    DeleteOrder["Lambda:<br/>DeleteOrder"]
+    DynamoDB["DynamoDB<br/>(Orders)"]
+    
+    Client -->|HTTPS| APIGateway
+    APIGateway --> GetOrder
+    APIGateway --> CreateOrder
+    APIGateway --> UpdateOrder
+    APIGateway --> DeleteOrder
+    
+    GetOrder --> DynamoDB
+    CreateOrder --> DynamoDB
+    UpdateOrder --> DynamoDB
+    DeleteOrder --> DynamoDB
+    
+    style Client fill:#e1f5ff
+    style APIGateway fill:#fff9c4
+    style GetOrder fill:#c8e6c9
+    style CreateOrder fill:#c8e6c9
+    style UpdateOrder fill:#c8e6c9
+    style DeleteOrder fill:#c8e6c9
+    style DynamoDB fill:#ffccbc

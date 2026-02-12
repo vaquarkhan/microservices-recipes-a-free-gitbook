@@ -6,7 +6,7 @@
 
 ### Professional Background
 
-A polyglot developer skilled in Java, Scala, Python, and other languages, Viquar has excelled in various technical roles. As an expert group member of JSR 368 (Java™ Message Service 2.1), he has shaped industry standards and actively contributes to open-source projects like Apache Spark and Terraform. His technical insights have reached and benefited over 7.5 million users on Stack Overflow.
+A polyglot developer skilled in Java, Scala, Python, and other languages, Viquar has excelled in various technical roles. As an expert group member of JSR 368 (Java™ Message Service 2.1), he has shaped industry standards and actively contributes to open-source projects like Apache Spark and Terraform. His technical insights have reached and benefited over 7.5 million users on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
 
 Viquar brings deep expertise in:
 - **Microservices Architecture**: Designing and implementing scalable, resilient distributed systems
@@ -15,9 +15,9 @@ Viquar brings deep expertise in:
 - **Data Engineering**: Advanced data pipeline and analytics solutions
 - **Team Leadership**: Guiding development teams through architectural transformations
 
-### The VaquarKhan (Khan) Pattern™
+### The Khan Pattern™
 
-Viquar is the creator of **The VaquarKhan (Khan) Pattern™ for Adaptive Granularity**, **The VaquarKhan (Khan) Granularity Protocol™**, and **The VaquarKhan (Khan) Microservices Maturity Model (KM3™)** — proprietary methodologies that represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
+Viquar is the creator of **The Khan Pattern™ for Adaptive Granularity**, **The Khan Granularity Protocol™**, and **The Khan Microservices Maturity Model (KM3™)** -- proprietary methodologies that represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
 
 These frameworks stand on the shoulders of giants, building upon foundational works including:
 - **Cognitive Load Theory** from Team Topologies by Matthew Skelton and Manuel Pais
