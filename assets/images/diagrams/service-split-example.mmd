@@ -1,0 +1,44 @@
+graph TB
+    subgraph "BEFORE: God Service Anti-Pattern"
+        Client1[Multiple Clients]
+        
+        GodService["User Service (God Service)<br/>8,000 LOC<br/>L̂: 0.88<br/>RVx: 0.29<br/><br/>• Authentication<br/>• Authorization<br/>• Profile Management<br/>• Preferences<br/>• Notifications<br/>• Activity Tracking<br/>• Settings<br/>• ... 50 more methods"]
+        
+        DB1[(Monolithic<br/>User DB)]
+        
+        Client1 --> GodService
+        GodService --> DB1
+    end
+    
+    Arrow[" "]
+    
+    subgraph "AFTER: Focused Services"
+        Client2[Multiple Clients]
+        
+        S1[Auth Service<br/>L̂: 0.35<br/>RVx: 0.92]
+        S2[Profile Service<br/>L̂: 0.28<br/>RVx: 0.88]
+        S3[Preferences Service<br/>L̂: 0.22<br/>RVx: 0.95]
+        S4[Notification Service<br/>L̂: 0.31<br/>RVx: 0.85]
+        
+        DB2[(Auth DB)]
+        DB3[(Profile DB)]
+        DB4[(Prefs DB)]
+        DB5[(Notif DB)]
+        
+        Client2 --> S1
+        Client2 --> S2
+        Client2 --> S3
+        Client2 --> S4
+        
+        S1 --> DB2
+        S2 --> DB3
+        S3 --> DB4
+        S4 --> DB5
+    end
+    
+    style GodService fill:#ffcccc,stroke:#cc0000,stroke-width:3px
+    style S1 fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    style S2 fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    style S3 fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    style S4 fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    style Arrow fill:none,stroke:none
