@@ -59,7 +59,7 @@ The VaquarKhan Protocol is fully implemented in Chapter 8 with:
 
 ---
 
-## What You've Read: The Foundation (Chapters 1-10)
+## What You've Read: The Foundation (Chapters 1-11)
 
 ### Part I: The Sociotechnical Substrate (Chapters 1-3)
 ✅ Organization and architecture alignment, distributed monolith avoidance, Domain-Driven Design
@@ -70,13 +70,16 @@ The VaquarKhan Protocol is fully implemented in Chapter 8 with:
 ### Part III: The Communication Layer (Chapters 8-10)
 ✅ Protocol selection, eBPF networking, asynchronous messaging with VaquarKhan Protocol
 
+### Part IV: The Khan Pattern™ Deep Dive (Chapter 11)
+✅ **NEW!** Origin story, detailed metrics, KM3™ Maturity Model, practical implementation guide
+
 ---
 
-## What Awaits: Advanced Chapters (11-20)
+## What Awaits: Advanced Chapters (12-20)
 
-### Part IV: Resilience Engineering & Advanced Scaling
+### Part V: Resilience Engineering & Advanced Scaling
 
-#### Chapter 11: Cell-Based Architecture
+#### Chapter 12: Cell-Based Architecture
 **The AWS Pattern for Infinite Scale**
 
 Learn how Amazon achieves fault isolation at massive scale through cellular architecture. Discover routing cells, data cells, compute cells, and the mathematics of 99.999% availability.
@@ -85,7 +88,7 @@ Learn how Amazon achieves fault isolation at massive scale through cellular arch
 
 ---
 
-#### Chapter 12: Shuffle Sharding
+#### Chapter 13: Shuffle Sharding
 **The Secret Weapon Against Cascading Failures**
 
 Master the advanced isolation technique that prevents noisy neighbors from destroying your system. Learn shuffle sharding mathematics, implementation strategies, and AWS native solutions.
@@ -94,7 +97,7 @@ Master the advanced isolation technique that prevents noisy neighbors from destr
 
 ---
 
-#### Chapter 13: Chaos Engineering
+#### Chapter 14: Chaos Engineering
 **Embracing Failure as a Design Principle**
 
 Move beyond hope-driven reliability to engineered resilience. From Netflix's Chaos Monkey to AWS Fault Injection Simulator, learn how to build systems that survive real-world chaos.

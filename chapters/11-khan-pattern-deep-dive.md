@@ -54,6 +54,10 @@ The crisis came during Black Friday 2017. Under peak load, our microservices arc
 - Revenue loss: $4.7 million in 6 hours
 - Customer trust: severely damaged
 
+![Black Friday Crisis Timeline](../assets/images/diagrams/black-friday-crisis-timeline.png)
+
+*Figure 11.1: Timeline of the Black Friday 2017 crisis that led to the creation of the Khan Pattern™*
+
 The executive team demanded answers. The board questioned the entire microservices strategy. My career was on the line.
 
 ### 11.1.2 The Revelation: What Was Really Wrong
@@ -96,6 +100,10 @@ Over the next 18 months (2018-2019), I led a systematic research effort:
 - Documented patterns and anti-patterns
 
 **The Result:** The Khan Pattern™ for Adaptive Granularity was born—the industry's first mathematically rigorous, context-aware framework for microservices decomposition.
+
+![RVx Calculation Flow](../assets/images/diagrams/rvx-calculation-flow.png)
+
+*Figure 11.2: The RVx calculation flow showing data collection, metric calculation, and decision-making process*
 
 
 ## 11.2 The Core Problem: Why Traditional Approaches Fail
@@ -200,7 +208,11 @@ A high RVx means the service provides value that justifies its complexity. A low
 
 #### Metric 1: Kinetic Efficiency (Ê)
 
+**Real-World Scenario:** Imagine you're running an e-commerce platform. You have a "Product Recommendation Service" that suggests products to users.
+
 **Definition:** The ratio of useful computation to total transaction time.
+
+**The Problem:** Your service takes 58ms to respond, but only 45ms is actual business logic. The rest is network overhead, JSON serialization, and service mesh processing. Is this service efficient?
 
 **Formula:**
 ```
@@ -230,6 +242,8 @@ T_mesh = 2ms          # Envoy proxy overhead
 # This is GOOD - low network tax
 ```
 
+**Real-World Impact:** This service is spending most of its time doing actual work. The 22.4% overhead is acceptable for a distributed system.
+
 ```python
 # Service B: Simple Data Fetcher
 T_compute = 2ms       # Simple SELECT query
@@ -242,6 +256,13 @@ T_mesh = 2ms          # Envoy proxy overhead
 # Interpretation: Only 13.3% is useful work
 # This is BAD - high network tax, candidate for merging
 ```
+
+**Real-World Impact:** This service spends 86.7% of its time on overhead! The network cost is 6.5x higher than the actual work. This is a classic nano-service that should be merged with its caller.
+
+**When You See This in Production:**
+- Ê > 0.7: Service is efficient, keep it
+- Ê 0.3-0.7: Borderline, monitor for degradation
+- Ê < 0.3: Strong candidate for merging
 
 
 **Automated Collection with OpenTelemetry:**
@@ -293,7 +314,11 @@ def calculate_kinetic_efficiency(service_name, time_window="1h"):
 
 #### Metric 2: Semantic Distinctness (Ŝ)
 
+**Real-World Scenario:** You have a "Payment Service" and an "Order Service". Every time you fix a bug in Payment, you also have to update Order. Every time you add a feature to Order, Payment needs changes too. Are these really separate services?
+
 **Definition:** The degree of independence from other services, measured by temporal coupling.
+
+**The Problem:** Services that always change together aren't truly independent. They're a distributed monolith masquerading as microservices.
 
 **Formula:**
 ```
@@ -319,6 +344,8 @@ CouplingRatio = 15 / 100 = 0.15
 # This is GOOD - service has clear boundaries
 ```
 
+**Real-World Impact:** Payment Service can evolve independently 85% of the time. The 15% coupling is acceptable—some coordination is natural in distributed systems.
+
 ```python
 # Service B: User Profile Service
 # Analysis of last 100 commits:
@@ -331,6 +358,13 @@ CouplingRatio = 60 / 100 = 0.60
 # Interpretation: Only 40% independent
 # This is BAD - services are tightly coupled, consider merging
 ```
+
+**Real-World Impact:** User Profile Service can't evolve independently. 60% of changes require coordinating with other services. This creates deployment bottlenecks and slows down development.
+
+**When You See This in Production:**
+- Ŝ > 0.7: Service is independent, good boundaries
+- Ŝ 0.4-0.7: Some coupling, acceptable but monitor
+- Ŝ < 0.4: High coupling, wrong boundaries—refactor or merge
 
 **Automated Collection with Git Analysis:**
 
@@ -391,7 +425,11 @@ print(f"Semantic Distinctness: {S_hat:.3f}")
 
 #### Metric 3: Cognitive Load (L̂)
 
+**Real-World Scenario:** You're onboarding a new engineer. For Service A, they're productive in 2 days. For Service B, they need 3 weeks to understand it. Why the difference?
+
 **Definition:** The mental effort required to understand and modify the service.
+
+**The Problem:** Complex services slow down development, increase bugs, and make it hard to onboard new team members. But how do you measure "complexity"?
 
 **Formula:**
 ```
@@ -406,6 +444,8 @@ Where:
 ```
 
 **Data Source:** Static code analysis (SonarQube, CodeClimate, custom tools)
+
+**Why This Formula?** The sigmoid function ensures L̂ stays between 0 and 1, with complexity weight (w₂) being highest because cyclomatic complexity is the strongest predictor of maintainability issues.
 
 **Calculation Example:**
 
@@ -444,7 +484,11 @@ L_hat_simple = calculate_cognitive_load(
 )
 print(f"Simple Service L̂: {L_hat_simple:.3f}")
 # Output: L̂: 0.007 (very low cognitive load - GOOD)
+```
 
+**Real-World Impact:** This service is easy to understand. New engineers can be productive quickly. Bug fixes are straightforward.
+
+```python
 # Example 2: Complex Service
 L_hat_complex = calculate_cognitive_load(
     lines_of_code=8000,
@@ -454,6 +498,13 @@ L_hat_complex = calculate_cognitive_load(
 print(f"Complex Service L̂: {L_hat_complex:.3f}")
 # Output: L̂: 0.924 (very high cognitive load - SPLIT CANDIDATE)
 ```
+
+**Real-World Impact:** This service is a nightmare to maintain. New engineers need weeks to understand it. Every change risks breaking something. This is a God Service that should be split.
+
+**When You See This in Production:**
+- L̂ < 0.3: Simple service, easy to maintain
+- L̂ 0.3-0.7: Moderate complexity, manageable
+- L̂ > 0.7: Too complex, strong candidate for splitting
 
 **Integration with SonarQube:**
 
@@ -563,26 +614,9 @@ RVx = 0.293
 
 Based on RVx and individual metrics, services fall into four zones:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                 KHAN GRANULARITY MATRIX                 │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  Zone I: NANO-SWARM          │  Zone IV: OPTIMUM       │
-│  (RVx ≤ 0.3, Low Ê)          │  (RVx > 0.6, Balanced)  │
-│  ❌ MERGE                     │  ✅ MAINTAIN            │
-│  Network tax too high        │  Well-designed service  │
-│                              │                         │
-├──────────────────────────────┼─────────────────────────┤
-│                              │                         │
-│  Zone III: DISTRIBUTED       │  Zone II: GOD SERVICE   │
-│  MONOLITH                    │  (L̂ > 0.7, High        │
-│  (Ŝ ≤ 0.4, High Coupling)    │  Complexity)            │
-│  🔄 REFACTOR                 │  ✂️ SPLIT               │
-│  Wrong boundaries            │  Too complex            │
-│                              │                         │
-└─────────────────────────────────────────────────────────┘
-```
+![Khan Granularity Matrix Zones](../assets/images/diagrams/khan-granularity-matrix-zones.png)
+
+*Figure 11.3: The Khan Granularity Matrix showing four decision zones with actionable recommendations*
 
 **Decision Rules:**
 
@@ -616,6 +650,10 @@ After developing the RVx Index, I realized another critical gap: organizations a
 The KM3™ provides a roadmap for organizational evolution, with specific guidance for each maturity level.
 
 ### 11.4.2 The Five Maturity Levels
+
+![KM3 Maturity Levels](../assets/images/diagrams/km3-maturity-levels.png)
+
+*Figure 11.4: The KM3™ Maturity Model showing the five levels of microservices evolution*
 
 **Level 0: Monolithic (Foundation)**
 
@@ -1269,6 +1307,10 @@ for action in analyzer.get_priority_actions():
 
 Identify services with RVx < 0.3 and merge them:
 
+![Service Merge Example](../assets/images/diagrams/service-merge-example.png)
+
+*Figure 11.6: Example of merging nano-services into a consolidated service, showing RVx improvement*
+
 ```python
 # Example: Merging two nano-services
 
@@ -1303,6 +1345,10 @@ class UserProfileService:
 **Priority 2: Split God Services (High Impact, Medium Risk)**
 
 Identify services with L̂ > 0.7 and split them:
+
+![Service Split Example](../assets/images/diagrams/service-split-example.png)
+
+*Figure 11.5: Example of splitting a God Service into focused microservices, showing before and after RVx scores*
 
 ```python
 # Example: Splitting a god service

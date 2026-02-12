@@ -592,5 +592,5 @@ This concludes the first 10 chapters of our comprehensive journey through micros
 
 **Navigation:**
 - [← Previous: Chapter 9](09-testing-strategies.md)
+- [Next: Chapter 11 →](11-khan-pattern-deep-dive.md)
 - [📖 View Complete Book Preview](../BOOK-PREVIEW.md)
-- [Next: Bibliography →](../reference/bibliography.md)
