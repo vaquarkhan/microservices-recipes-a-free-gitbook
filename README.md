@@ -278,7 +278,7 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
-**The VaquarKhan (Khan) Pattern™**,
+**The VaquarKhan ,Khan Pattern™**,
  **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)** are proprietary methodologies developed by Viquar Khan.
 
 **License**: MIT License | **[Legal Disclaimer](DISCLAIMER.md)** | **[Citation Guide](CITATIONS.md)**
