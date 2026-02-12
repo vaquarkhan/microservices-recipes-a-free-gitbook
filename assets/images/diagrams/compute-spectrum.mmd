@@ -1,0 +1,16 @@
+graph LR
+    subgraph "CONTROL vs SIMPLICITY"
+        EC2["EC2 Instances<br/>Max Control<br/>Max Complexity<br/><br/>You manage:<br/>- OS patches<br/>- Scaling<br/>- Networking<br/>- Load balancing"]
+        ECS["ECS/EKS<br/>Containers<br/>Orchestration<br/><br/>You manage:<br/>- Containers<br/>- Orchestration<br/>- Scaling<br/>- Networking"]
+        Fargate["Fargate<br/>Serverless<br/>Containers<br/><br/>AWS manages:<br/>- Containers<br/>- Scaling<br/>- Patching"]
+        Lambda["Lambda<br/>Function<br/>as Service<br/><br/>AWS manages:<br/>- Everything<br/>- Scaling<br/>- Patching<br/>- Runtime"]
+        
+        EC2 --> ECS
+        ECS --> Fargate
+        Fargate --> Lambda
+    end
+    
+    style EC2 fill:#ff9999
+    style ECS fill:#ffcc99
+    style Fargate fill:#99ccff
+    style Lambda fill:#99ff99

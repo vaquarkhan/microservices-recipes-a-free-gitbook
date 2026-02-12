@@ -5,11 +5,11 @@
 **COMPREHENSIVE COPYRIGHT & LEGAL NOTICE**
 
 **Microservices Recipes: The Architect's Field Guide**  
-Copyright © 2017-2024 by Viquar Khan. All rights reserved.
+Copyright © 2017-2026 by Viquar Khan. All rights reserved.
 
 ### Publication Information
 - **First Edition**: January 2017
-- **Second Edition**: January 2024 (The VaquarKhan (Khan) Pattern™ Edition)
+- **Second Edition**: January 2024 (The Khan Pattern™ Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **ISBN**: Not assigned (Open Source Publication)
@@ -21,15 +21,13 @@ The views, opinions, and architectural patterns expressed in this book are solel
 
 ## Intellectual Property & Proprietary Frameworks
 
-The **VaquarKhan (Khan) Granularity Protocol™**, **The VaquarKhan (Khan) Pattern™**, and **The VaquarKhan (Khan) Microservices Maturity Model (KM3™)** are proprietary methodologies developed by Viquar Khan. These frameworks represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
-
-**Industry Recognition**: The VaquarKhan (Khan) Pattern™ has gained widespread recognition as an industry-standard methodology for microservices architecture, validated through practical application across numerous organizations and academic research.
+The **Khan Granularity Protocol™**, **The Khan Pattern™**, and **The Khan Microservices Maturity Model (KM3™)** are proprietary methodologies developed by Viquar Khan. These frameworks represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
 
 However, these frameworks stand on the shoulders of giants. This text explicitly acknowledges the following foundational works and prior art upon which these protocols are built:
 
 ### Comprehensive Acknowledgments
 
-- **Cognitive Load Theory**: The application of Cognitive Load Theory (Intrinsic, Extraneous, Germane) to software team boundaries is derived from the seminal work of Matthew Skelton and Manuel Pais in *Team Topologies* (IT Revolution, 2019), which builds on the psychological research of John Sweller (1988). The "VaquarKhan (Khan) Granularity Protocol" utilizes these definitions to calculate architectural scoring.
+- **Cognitive Load Theory**: The application of Cognitive Load Theory (Intrinsic, Extraneous, Germane) to software team boundaries is derived from the seminal work of Matthew Skelton and Manuel Pais in *Team Topologies* (IT Revolution, 2019), which builds on the psychological research of John Sweller (1988). The "Khan Granularity Protocol" utilizes these definitions to calculate architectural scoring.
 
 - **Team API**: The concept and definition of a "Team API" are directly attributed to the Team Topologies framework by Skelton and Pais.
 
@@ -61,11 +59,11 @@ The code recipes provided in this book are for educational purposes. While every
 
 ## License
 
-This book is released under the **MIT License**, making it freely available for personal and commercial use. We believe knowledge should be accessible to everyone.
+This book is released under the **MIT License**, making it freely available for personal and commercial use. I believe knowledge should be accessible to everyone.
 
 ## Contributing
 
-This book is the **original work of Viquar VaquarKhan (Khan)**. While we welcome specific types of community input, this is primarily an **author-driven publication**. We accept:
+This book is the original work of Viquar Khan. While I welcome specific types of community input, this is primarily an author-driven publication. I accept:
 
 - **Issue Reports**: Found an error or have a suggestion? [Open an issue](https://github.com/VaquarKhan/microservices-recipes-a-free-gitbook/issues)
 - **Case Studies**: Share real-world implementation experiences using patterns from this book

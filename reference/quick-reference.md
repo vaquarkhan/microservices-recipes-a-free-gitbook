@@ -15,7 +15,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 - [ ] **Autonomy**: Independently deployable and scalable
 - [ ] **Resilience**: Designed to handle failures gracefully
 
-### The VaquarKhan (Khan) Pattern™ Decision Matrix
+### Khan Pattern Decision Matrix
 
 | Factor | Fine-Grained | Medium-Grained | Coarse-Grained |
 |--------|--------------|----------------|----------------|
@@ -495,4 +495,4 @@ Logging: ELK Stack
 
 *This quick reference is designed to be printed or bookmarked for easy access during development. For detailed explanations, refer to the full chapters in this book.*
 
-**Last Updated**: January 2024
+**Last Updated**: February 2026

@@ -54,7 +54,9 @@ While 95% might sound acceptable in some contexts, it implies that one in twenty
 A_system = 0.99^50 ≈ 60.5%
 ```
 
-This mathematical reality explains why distributed monoliths are plagued by "ghost outages" periods where the system is technically "up" (no single service is fully down/red on the dashboard), but user transactions fail due to timeouts and transient network glitches cascading through tight coupling chains. The latency tail is equally punitive; the 99th percentile latency of the composite service becomes the sum of the 99th percentile latencies of all downstream calls, ensuring that the system is only as fast as its slowest component.
+This mathematical reality explains why distributed monoliths are plagued by "ghost outages" - periods where the system is technically "up" (no single service is fully down/red on the dashboard), but user transactions fail due to timeouts and transient network glitches cascading through tight coupling chains. 
+
+The latency tail is equally punitive. The 99th percentile latency of the composite service becomes the sum of the 99th percentile latencies of all downstream calls. Your system is only as fast as its slowest component.
 
 ### 2.1.2 A Taxonomy of Coupling
 

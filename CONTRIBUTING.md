@@ -6,7 +6,7 @@
 
 ## Contribution Scope
 
-While this is primarily an **author-driven publication**, we welcome specific types of community input to enhance the value for all readers:
+While this is primarily an **author-driven publication**, I welcome specific types of community input to enhance the value for all readers:
 
 ### ✅ **Welcome Contributions**
 
@@ -18,7 +18,7 @@ While this is primarily an **author-driven publication**, we welcome specific ty
 
 #### **📚 Real-World Case Studies**
 - **Implementation experiences** using patterns from this book
-- **Production lessons learned** applying The VaquarKhan (Khan) Pattern™
+- **Production lessons learned** applying The Khan Pattern™
 - **Success stories** and transformation journeys
 - **Anonymous case studies** from your organization (with proper anonymization)
 
@@ -71,10 +71,10 @@ All contributions are **subject to author review and approval**. The author rese
 ## Legal Framework
 
 By contributing, you acknowledge that:
-- This is the **original work of Viquar Khan**
-- Contributions become part of the work under **MIT License**
-- The **author retains full editorial control**
-- **Proprietary methodologies** remain the intellectual property of Viquar Khan
+- This is the original work of Viquar Khan
+- Contributions become part of the work under MIT License
+- The author retains full editorial control
+- Proprietary methodologies remain the intellectual property of Viquar Khan
 
 ---
 

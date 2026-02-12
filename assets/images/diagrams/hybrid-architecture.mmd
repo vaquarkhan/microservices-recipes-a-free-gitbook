@@ -1,0 +1,30 @@
+graph TD
+    subgraph EKS["EKS Cluster<br/>(Always Running)"]
+        CoreAPI["Core API"]
+        UserService["User Service"]
+        OrderService["Order Service"]
+    end
+    
+    subgraph Lambda["Lambda Functions<br/>(Event-Driven)"]
+        ImageResize["Image Resize"]
+        EmailSend["Email Send"]
+        ReportGen["Report Gen"]
+        Webhook["Webhook"]
+    end
+    
+    EventBridge["EventBridge<br/>(Event Bus)"]
+    
+    EKS <--> Lambda
+    EKS --> EventBridge
+    Lambda --> EventBridge
+    
+    style EKS fill:#e3f2fd
+    style Lambda fill:#f1f8e9
+    style EventBridge fill:#fff9c4
+    style CoreAPI fill:#90caf9
+    style UserService fill:#90caf9
+    style OrderService fill:#90caf9
+    style ImageResize fill:#aed581
+    style EmailSend fill:#aed581
+    style ReportGen fill:#aed581
+    style Webhook fill:#aed581

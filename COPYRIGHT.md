@@ -2,22 +2,20 @@
 
 ## Microservices Recipes: The Architect's Field Guide
 
-**Copyright © 2017-2024 by Viquar Khan. All rights reserved.**
+**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
 ---
 
 ## 📋 **Publication Information**
 
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Subtitle**: Featuring The VaquarKhan (Khan) Pattern™ for Adaptive Granularity
+- **Subtitle**: Featuring The Khan Pattern™ for Adaptive Granularity
 - **Author**: Viquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2024 (The VaquarKhan (Khan) Pattern™ Edition)
+- **Second Edition**: January 2024 (The Khan Pattern™ Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
-- **GitHub Stars**: 606+ developers
-- **Community Forks**: 228+ repositories
 
 ---
 
@@ -26,17 +24,17 @@
 ### **Proprietary Methodologies (© Viquar Khan)**
 The following methodologies are original works and proprietary frameworks developed by Viquar Khan:
 
-1. **The VaquarKhan (Khan) Pattern™** for Adaptive Granularity
+1. **The Khan Pattern™** for Adaptive Granularity
    - Systematic methodology for determining optimal microservice boundaries
    - Context-driven, adaptive framework for service decomposition
    - Motto: "Stop splitting, start governing"
 
-2. **VaquarKhan (Khan) Granularity Protocol™**
+2. **Khan Granularity Protocol™**
    - Scoring system for microservice granularity decisions
    - Quantitative assessment framework for service boundaries
    - Operational guidelines for granularity optimization
 
-3. **VaquarKhan (Khan) Microservices Maturity Model (KM3™)**
+3. **Khan Microservices Maturity Model (KM3™)**
    - Maturity assessment framework for microservices adoption
    - Organizational capability evaluation system
    - Evolution roadmap for distributed systems maturity
@@ -53,33 +51,31 @@ The following methodologies are original works and proprietary frameworks develo
 
 ### **MIT License Terms**
 This work is licensed under the MIT License, which permits:
-- ✅ **Commercial use** with proper attribution
-- ✅ **Modification** and derivative works
-- ✅ **Distribution** with license preservation
-- ✅ **Private use** for personal and organizational purposes
+-  **Commercial use** with proper attribution
+-  **Modification** and derivative works
+-  **Distribution** with license preservation
+-  **Private use** for personal and organizational purposes
 
 ### **Attribution Requirements**
 When using this work, you MUST:
-1. **Preserve copyright notice**: "© 2017-2024 Viquar Khan"
+1. **Preserve copyright notice**: "© 2017-2026 Viquar Khan"
 2. **Include MIT License** text in derivative works
 3. **Provide proper citation** (see [CITATIONS.md](CITATIONS.md))
 4. **Credit proprietary methodologies** when referenced
 
 ### **Trademark Protection**
-- **The VaquarKhan (Khan) Pattern™** is a trademark of Viquar Khan *(widely recognized industry methodology)*
-- **VaquarKhan (Khan) Granularity Protocol™** is a trademark of Viquar Khan
-- **VaquarKhan (Khan) Microservices Maturity Model (KM3™)** is a trademark of Viquar Khan
-
-**Industry Recognition**: The VaquarKhan (Khan) Pattern™ has gained widespread recognition in the microservices architecture community through practical application, academic citations, and industry adoption across multiple organizations.
+- **The Khan Pattern™** is a trademark of Viquar Khan
+- **Khan Granularity Protocol™** is a trademark of Viquar Khan
+- **Khan Microservices Maturity Model (KM3™)** is a trademark of Viquar Khan
 
 ---
 
 ## 🚫 **Prohibited Uses**
 
 The following uses are explicitly prohibited:
-- ❌ **Removing or altering** copyright notices
-- ❌ **Using without proper attribution** in academic or commercial contexts
-- ❌ **Trademark infringement** of proprietary methodology names
+-  **Removing or altering** copyright notices
+-  **Using without proper attribution** in academic or commercial contexts
+-  **Trademark infringement** of proprietary methodology names
 
 ---
 
@@ -138,14 +134,14 @@ This work is protected by copyright laws in:
 - Berne Convention signatory countries
 - WIPO member nations
 
-**Universal Copyright Notice**: © 2017-2024 Viquar Khan. All rights reserved worldwide.
+**Universal Copyright Notice**: © 2017-2026 Viquar Khan. All rights reserved worldwide.
 
 ---
 
 ## 📅 **Version History**
 
 - **v1.0** (January 2017): Initial release and copyright establishment
-- **v2.0** (January 2024): The VaquarKhan (Khan) Pattern™ Edition with enhanced copyright protection
+- **v2.0** (January 2026): The Khan Pattern™ Edition with enhanced copyright protection
 
 ---
 
