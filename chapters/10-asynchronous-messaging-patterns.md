@@ -38,6 +38,7 @@ Without these mechanisms, the system remains vulnerable to "Entropic Collapse." 
 In fluid dynamics, backpressure refers to the resistance or force opposing the desired flow of fluid through pipes. In distributed software systems, it is the mechanism by which a downstream consumer signals to an upstream producer that it is overwhelmed and cannot accept more work. In the absence of backpressure, systems fail catastrophically rather than degrading gracefully.
 
 ![Backpressure Flow Control](../assets/images/diagrams/backpressure-flow-control.png)
+
 *Figure 10.1: Backpressure flow control mechanisms in distributed systems, showing producer-consumer patterns and VaquarKhan (Khan) Pattern application*
 
 The architectural imperative for 2026 is to move beyond simple buffering and implement active flow control. The VaquarKhan (Khan) Pattern emphasizes that while splitting services reduces Kinetic Friction (workload per unit), it introduces the risk of "latency storms" if the communication channels are not governed by strict physics.
@@ -302,6 +303,7 @@ resource "aws_dynamodb_table" "idempotency_store" {
 ## 10.4 Implementing the Claim Check Pattern for Large Message Payloads
 
 ![Claim Check Pattern](../assets/images/diagrams/claim-check-pattern.png)
+
 *Figure 10.2: Claim Check Pattern sequence diagram showing large payload handling with S3 storage and lightweight message queuing*
 
 ### Problem Context

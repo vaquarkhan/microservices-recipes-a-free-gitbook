@@ -66,6 +66,7 @@ The Senior Architect must differentiate between these styles to prevent "acciden
 | **Team Structure** | Horizontal: UI Team, DB Team, Middleware Team. | Vertical: Stream-aligned teams owning the full stack. |
 
 ![SOA vs Microservices](../assets/images/diagrams/soa-vs-microservices.png)
+
 *Figure 1.2: Comparison of SOA and Microservices architectural patterns, highlighting the key differences in governance and logic distribution*
 
 **The Mandate:** Do not build a microservices architecture that relies on a "Service Mesh" to handle heavy business logic. If your Istio or Envoy configuration contains complex routing rules based on business payload data, you have just reinvented the ESB.
@@ -93,6 +94,7 @@ Adopting the team-centric sizing principles from Team Topologies, the VaquarKhan
 We can visualize the relationship between Granularity and Overhead:
 
 ![Granularity Spectrum](../assets/images/diagrams/granularity-spectrum.png)
+
 *Figure 1.4: The granularity spectrum showing the relationship between service size, cognitive load, and operational overhead*
 
 - **Zone of Monolith:** Complexity comes from code entanglement and slow build times.
@@ -116,6 +118,7 @@ Success Rate = (0.999)^50 ≈ 0.951 = 95.1%
 ```
 
 ![System Availability Chain](../assets/images/diagrams/system-availability-chain.png)
+
 *Figure 1.3: Mathematical analysis of system availability degradation in synchronous service chains, demonstrating the distributed monolith anti-pattern*
 
 You have architected a system that fails 5% of the time by default.
@@ -125,6 +128,7 @@ You have architected a system that fails 5% of the time by default.
 The most reliable method for identifying true service boundaries is not the whiteboard diagram, but the version control history. Files that change together, stay together. This is the principle of Temporal Coupling Analysis.
 
 ![Temporal Coupling Analysis](../assets/images/diagrams/temporal-coupling-analysis.png)
+
 *Figure 1.1: Git repository analysis showing temporal coupling patterns and service boundary recommendations based on commit history*
 
 **Problem:** You are tasked with migrating a legacy monolith to microservices. How do you know where to draw the lines?
