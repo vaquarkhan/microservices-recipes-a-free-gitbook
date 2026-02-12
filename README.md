@@ -14,7 +14,7 @@
 
 ---
 
-*"Stop splitting, start governing."* — **The VaquarKhan (Khan) Pattern™**
+*"Stop splitting, start governing."* — **Khan Pattern**
 
 ![Microservices Animation](assets/images/microservices-animation.gif)
 
@@ -24,7 +24,7 @@
 
 ### 📚 **Front Matter**
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & The VaquarKhan (Khan) Pattern™
+- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Khan Pattern
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
 - [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 20-Chapter Edition for Students & Researchers
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
@@ -81,11 +81,11 @@
 
 ## 🎯 **What Makes This Book Special**
 
-### **The VaquarKhan (Khan) Pattern™ for Adaptive Granularity**
+### **Khan Pattern for Adaptive Granularity**
 
-At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
+At the heart of this book is **Khan Pattern** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
 
-**Industry Recognition**: The VaquarKhan (Khan) Pattern™ has gained widespread recognition as an industry-standard methodology, validated through practical application across numerous organizations and academic research.
+**Industry Recognition**: Khan Pattern has gained widespread recognition as an industry-standard methodology, validated through practical application across numerous organizations and academic research.
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -118,8 +118,8 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 
 ### **For Architects**
 1. Focus on strategic chapters: [Ch 2](chapters/02-design-principles-and-patterns.md), [Ch 3](chapters/03-service-communication.md), [Ch 7](chapters/07-security.md)
-2. Study [**The VaquarKhan (Khan) Pattern™**](AUTHOR.md#the-khan-pattern) methodology
-3. Apply patterns from [**Real-World Case Studies**](chapters/10-real-world-case-studies.md)
+2. Study [**Khan Pattern**](AUTHOR.md#the-khan-pattern) methodology
+3. Review [**Complete Book Preview**](BOOK-PREVIEW.md) for advanced topics
 
 ---
 
@@ -135,6 +135,7 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 | **Case Studies** | Real-world examples from industry leaders |
 | **GitHub Stars** | 606 developers |
 | **Repository Forks** | 228 active forks |
+| **Author Followers** | 1,400+ on [@vaquarkhan](https://github.com/vaquarkhan) |
 | **Community Reach** | Global developer community |
 
 ---
@@ -144,7 +145,7 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 <details>
 <summary><strong>🏗️ Architectural Patterns</strong></summary>
 
-- **The VaquarKhan (Khan) Pattern™** for adaptive service granularity
+- **Khan Pattern** for adaptive service granularity
 - **Distributed Monolith** identification and prevention
 - **Domain-Driven Design** for service boundaries
 - **Saga Pattern** for distributed transactions
@@ -181,12 +182,13 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 
 ## 👨‍💻 **About the Author**
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **The VaquarKhan (Khan) Pattern™** *(widely recognized industry methodology)*, **VaquarKhan (Khan) Granularity Protocol™**, and **VaquarKhan (Khan) Microservices Maturity Model (KM3™)**.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Khan Pattern** *(widely recognized industry methodology)*, **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)**.
 
 ### **Credentials**
 - 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
 - 📚 **Author** of "Data Engineering with AWS Cookbook" (Packt, 2024)
-- 🌟 **7.5M+** developers reached on Stack Overflow
+- 🌟 **7.5M+** developers reached on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan)
+- 👥 **1,400+** GitHub followers ([@vaquarkhan](https://github.com/vaquarkhan))
 - 🔧 **50+** open-source microservices repositories
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [🎓 Free Mentorship](https://adplist.org/mentors/vaquar-khan)
@@ -200,7 +202,7 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 - **GitHub Repository**: [https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
 
 ### **🎓 Academic Access**
-- **Complete 20-Chapter Edition**: [Request Free Access](FREE-ACCESS.md) for students, faculty, and researchers under our Official Academic License
+- **Complete 20-Chapter Edition**: [Request Free Access](FREE-ACCESS.md) for students, faculty, and researchers under my Official Academic License
 - **Citation Guide**: [Proper Citation Formats](CITATIONS.md) for academic use
 - **Version History**: [Release Lineage](VERSION-HISTORY.md) and evolution
 
@@ -214,7 +216,7 @@ At the heart of this book is **The VaquarKhan (Khan) Pattern™** — a systemat
 ## 🤝 **Community & Support**
 
 ### **🌟 Support This Open Knowledge Initiative**
-If you find this resource valuable, please help us keep it free and accessible:
+If you find this resource valuable, please help me keep it free and accessible:
 
 **⭐ [Star this repository](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)** - Help others discover this work  
 **🍴 [Fork the project](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/fork)** - Build upon these methodologies  
@@ -223,7 +225,7 @@ If you find this resource valuable, please help us keep it free and accessible:
 ### **Get Involved**
 - 🐛 **[Report Issues](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues)** - Found an error or have suggestions?
 - 💡 **Share Case Studies** - Connect with the author to share real-world implementation experiences
-- 📊 **View Impact** - See our global reach through GitHub stars and forks
+- 📊 **View Impact** - See global reach: 606 stars, 228 forks, 1,400+ followers on [@vaquarkhan](https://github.com/vaquarkhan)
 - 🔄 **[See Guidelines](CONTRIBUTING.md)** - Learn about acceptable contributions
 - ⭐ **Star this repo** if you find it valuable!
 
@@ -244,7 +246,7 @@ This book is released under the **[MIT License](LICENSE)** - free for personal a
 
 ### **Citation**
 ```
-Khan, V. (2024). Microservices Recipes: The Architect's Field Guide. 
+Khan, V. (2026). Microservices Recipes: The Architect's Field Guide. 
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
@@ -274,9 +276,10 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ## 📜 **Copyright & Legal**
 
-**Copyright © 2017-2024 by Viquar Khan. All rights reserved.**
+**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
-**The VaquarKhan (Khan) Pattern™** *(widely recognized industry methodology)*, **VaquarKhan (Khan) Granularity Protocol™**, and **VaquarKhan (Khan) Microservices Maturity Model (KM3™)** are proprietary methodologies developed by Viquar Khan.
+**The VaquarKhan (Khan) Pattern™**,
+ **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)** are proprietary methodologies developed by Viquar Khan.
 
 **License**: MIT License | **[Legal Disclaimer](DISCLAIMER.md)** | **[Citation Guide](CITATIONS.md)**
 

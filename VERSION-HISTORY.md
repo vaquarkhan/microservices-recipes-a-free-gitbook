@@ -11,9 +11,9 @@
 **Major Release - Complete Architectural Overhaul**
 
 #### **🎯 New Features & Enhancements:**
-- **The VaquarKhan (Khan) Pattern™ for Adaptive Granularity** - Systematic approach to microservice boundaries
-- **VaquarKhan (Khan) Granularity Protocol™** - Systematic methodology for service decomposition
-- **VaquarKhan (Khan) Microservices Maturity Model (KM3™)** - Assessment framework for organizational readiness
+- **Khan Pattern for Adaptive Granularity** - Systematic approach to microservice boundaries
+- **Khan Granularity Protocol** - Systematic methodology for service decomposition
+- **Khan Microservices Maturity Model (KM3)** - Assessment framework for organizational readiness
 - **Enhanced Chapter Structure** - Professional headers with reading time and difficulty indicators
 - **Modern Web Experience** - Responsive design with interactive elements
 - **Updated Case Studies** - Real-world implementations from 2020-2024
@@ -63,7 +63,7 @@
 ## 🔄 **Evolution Timeline**
 
 ### **2017 - Genesis**
-- **Initial concept** developed during AWS Professional Services engagements
+- **Initial concept** developed version one when microservice stared
 - **First draft** based on real-world enterprise transformations
 - **Community feedback** incorporated from early adopters
 
@@ -82,7 +82,7 @@
 - **Service mesh evolution** documented with real implementations
 - **Observability revolution** captured with OpenTelemetry standards
 
-### **2024 - The VaquarKhan (Khan) Pattern™**
+### **2024 - Khan Pattern**
 - **Systematic methodology** introduced for adaptive granularity
 - **Complete architectural framework** for modern distributed systems
 - **Industry validation** through successful enterprise implementations
@@ -91,10 +91,10 @@
 
 ## 📈 **Version Comparison Matrix**
 
-| Feature | Version 1.0 (2017) | Version 2.0 (2024) |
+| Feature | Version 1.0 (2017) | Version 2.0 (2026) |
 |---------|-------------------|-------------------|
 | **Chapters** | 8 foundational | 10 comprehensive |
-| **Methodologies** | General principles | The VaquarKhan (Khan) Pattern™ |
+| **Methodologies** | General principles | Khan Pattern |
 | **Technology Focus** | Docker, basic K8s | Modern cloud-native |
 | **Networking** | Traditional service mesh | eBPF and post-sidecar |
 | **Data Patterns** | Basic CQRS/ES | Advanced distributed patterns |
@@ -108,12 +108,12 @@
 
 ## 🎯 **Future Roadmap**
 
-### **Version 2.1** - *Planned Q2 2024*
+### **Version 2.1** - *Planned Q2 2026*
 - **AI/ML Integration Patterns** - Microservices for machine learning workloads
 - **Sustainability Metrics** - Green computing considerations for distributed systems
 - **Advanced Observability** - AIOps and intelligent monitoring patterns
 
-### **Version 3.0** - *Conceptual 2025*
+### **Version 3.0** - *Conceptual 2026*
 - **Quantum-Ready Architectures** - Preparing for quantum computing integration
 - **Edge Computing Patterns** - Distributed systems at the network edge
 - **Autonomous Systems** - Self-healing and self-optimizing microservices
@@ -124,21 +124,21 @@
 
 ### **Recommended Citation (APA Style):**
 ```
-Khan, V. (2024). Microservices Recipes: The Architect's Field Guide (2nd ed.). 
+Khan, V. (2026). Microservices Recipes: The Architect's Field Guide (2nd ed.). 
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
 ### **Recommended Citation (IEEE Style):**
 ```
 V. Khan, "Microservices Recipes: The Architect's Field Guide," 2nd ed., 
-GitHub Repository, 2024. [Online]. Available: 
+GitHub Repository, 2026. [Online]. Available: 
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
 ### **Recommended Citation (Chicago Style):**
 ```
 Khan, Viquar. Microservices Recipes: The Architect's Field Guide. 2nd ed. 
-GitHub, 2024. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
+GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
 ```
 
 

@@ -1,0 +1,20 @@
+graph TD
+    User["User Query:<br/>'What's the status of my order?'"]
+    APIGateway["API Gateway<br/>(Intent Detection)"]
+    OrderService["Order Service<br/><br/>1. Extract user_id<br/>2. Query vector DB<br/>3. Retrieve context"]
+    VectorDB["Vector Database<br/>(Order Embeddings)<br/><br/>Returns: Top 5<br/>relevant orders"]
+    LLM["LLM Service<br/>(GPT-4 / Claude)<br/><br/>Prompt:<br/>'Given context:<br/>[order details]<br/>Answer: ...'"]
+    Response["Response to User"]
+    
+    User --> APIGateway
+    APIGateway --> OrderService
+    OrderService --> VectorDB
+    VectorDB --> LLM
+    LLM --> Response
+    
+    style User fill:#e1f5ff
+    style APIGateway fill:#fff9c4
+    style OrderService fill:#c8e6c9
+    style VectorDB fill:#f3e5f5
+    style LLM fill:#ffccbc
+    style Response fill:#e1f5ff

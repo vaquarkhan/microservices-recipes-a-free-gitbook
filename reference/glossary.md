@@ -124,7 +124,7 @@ A compact, URL-safe means of representing claims to be transferred between two p
 
 ## K
 
-**VaquarKhan (Khan) Pattern™**
+**Khan Pattern**
 A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints.
 
 **Kubernetes**

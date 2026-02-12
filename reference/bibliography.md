@@ -307,7 +307,7 @@ Author, A. A. (Year). Title of paper. In *Proceedings of Conference Name* (pp. p
 
 ## Additional Reading Recommendations
 
-For readers interested in deepening their understanding of specific topics covered in this book, we recommend focusing on the following areas:
+For readers interested in deepening their understanding of specific topics covered in this book, I recommend focusing on the following areas:
 
 ### For Beginners
 - Start with Newman's "Building Microservices" (Item 1)

@@ -107,45 +107,45 @@ Mechanism: Updates are propagated asynchronously (gossip protocols).
 
 The Challenge: The definition of "eventually" is vague (milliseconds to hours). The critical challenge is how replicas converge when conflicting updates occur during the divergence window. Simple "Last Writer Wins" (LWW) strategies can lead to data loss. More sophisticated systems use semantic reconciliation (CRDTs).
 
-4.3 The Mathematics of Convergence: CRDTs and Vector Clocks
+## 4.3 The Mathematics of Convergence: CRDTs and Vector Clocks
 
-When systems embrace eventual consistency, they accept that different nodes will hold different versions of the data at the same time. This leads to conflicts. The naive "Last Writer Wins" (LWW) strategy, based on wall clock time, is fraught with peril due to clock skew. If Server A's clock is 100ms behind Server B, valid data can be silently overwritten. To solve this without centralization, we turn to logical clocks and mathematical data structures that guarantee convergence.
+When systems embrace eventual consistency, they accept that different nodes will hold different versions of the data at the same time. This leads to conflicts. 
 
-4.3.1 Vector Clocks: Capturing Causality
+The naive "Last Writer Wins" (LWW) strategy, based on wall clock time, is fraught with peril due to clock skew. If Server A's clock is 100ms behind Server B, valid data can be silently overwritten. To solve this without centralization, we turn to logical clocks and mathematical data structures that guarantee convergence.
 
-Vector clocks replace physical timestamps with a vector of integers, where each element corresponds to a node in the system. They allow the system to mathematically distinguish between causal events (one happened after the other) and concurrent events (happened independently).
-## The Algorithm:
-Every node Ni maintains a vector V where V[i] is its logical clock.
+### 4.3.1 Vector Clocks: Capturing Causality
 
-On a local event (update), Ni increments V[i].
+Vector clocks replace physical timestamps with a vector of integers, where each element corresponds to a node in the system. They let the system mathematically distinguish between causal events (one happened after the other) and concurrent events (happened independently).
 
-When sending a message (replication), Ni attaches its vector V.
+**The Algorithm:**
 
-When receiving a message with vector W, Ni updates its clock: V[j] = max(V[j], W[j]) for all , and then increments $V[i].
-## Conflict Detection Example:
+Every node Ni maintains a vector V where V[i] is its logical clock. On a local event (update), Ni increments V[i]. When sending a message (replication), Ni attaches its vector V. When receiving a message with vector W, Ni updates its clock: V[j] = max(V[j], W[j]) for all j, and then increments V[i].
 
-## Step 1: Server A writes object X. Vector: [A:1].
+**Conflict Detection Example:**
 
-## Step 2: Server A updates X. Vector: [A:2].
+Server A writes object X. Vector: [A:1].  
+Server A updates X. Vector: [A:2].
+
 Relationship: [A:2] descends from [A:1] because 2 > 1. This is a causal update; [A:2] overwrites [A:1].
-## Step 3: A network partition occurs. Server A cannot reach Server B.
 
-## Step 4: Server A updates X again. Vector: [A:3].
+A network partition occurs. Server A can't reach Server B.
 
-## Step 5: Server B, having seen [A:2], receives a conflicting update from a client. Server B increments its own counter. Vector: ``.
+Server A updates X again. Vector: [A:3].  
+Server B, having seen [A:2], receives a conflicting update from a client. Server B increments its own counter. Vector: [A:2, B:1].
 
-## Step 6 (Reconciliation): The partition heals. The servers exchange vectors [A:3] and
+The partition heals. The servers exchange vectors [A:3] and [A:2, B:1].
 
-## Compare elements:
-Index A: 3 > 2 (A is ahead).
+Compare elements:
+- Index A: 3 > 2 (A is ahead)
+- Index B: 0 < 1 (B is ahead)
 
-Index B: 0 < 1 (B is ahead).
-
-Result: Neither vector is "greater" than the other. They are concurrent. The system has detected a conflict.
+Result: Neither vector is "greater" than the other. They're concurrent. The system has detected a conflict.
 
 Unlike LWW, which would arbitrarily pick one (likely B, if B's wall clock is slightly ahead), Vector Clocks preserve both versions as "siblings." The system returns both versions to the client, pushing the responsibility of reconciliation (merging the shopping cart) to the application logic.
-## The Size Explosion Problem:
-A major limitation of vector clocks is size. The vector grows with the number of participating nodes (actors). In a system with thousands of transient clients or servers, the vector can become metadata heavy. Amazon's original Dynamo solved this by truncating the vector (removing the oldest entries) when it reached a certain size (e.g., 10), though this risked false positives in reconciliation.
+
+**The Size Explosion Problem:**
+
+A major limitation of vector clocks is size. The vector grows with the number of participating nodes. In a system with thousands of transient clients or servers, the vector can become metadata-heavy. Amazon's original Dynamo solved this by truncating the vector (removing the oldest entries) when it reached a certain size (e.g., 10), though this risked false positives in reconciliation.
 
 4.3.2 Conflict free Replicated Data Types (CRDTs)
 

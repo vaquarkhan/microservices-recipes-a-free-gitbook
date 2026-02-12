@@ -28,11 +28,11 @@ readingTime: "30 minutes"
 > *"There is a third: Data consistency in distributed systems."*  
 > **The Senior Architect's Addendum**
 
-In monolithic architecture, consistency is often taken for granted. The Relational Database Management System (RDBMS) acts as a massive, reliable safety net. If you want to create an order, debit a customer's balance, and insert a row into a notification table, you simply wrap these operations in a `BEGIN TRANSACTION... COMMIT` block. The database guarantees Atomicity: either all these things happen, or none of them do.
+In monolithic architecture, consistency is often taken for granted. The RDBMS acts as a massive, reliable safety net. If you want to create an order, debit a customer's balance, and insert a row into a notification table, you simply wrap these operations in a `BEGIN TRANSACTION... COMMIT` block. The database guarantees Atomicity: either all these things happen, or none of them do.
 
-In microservices architecture, this safety net is gone. We have voluntarily traded the safety of ACID for the scalability of partitioning. However, business requirements do not change just because our architecture did. We still need to update our database and notify other systems that something happened.
+In microservices architecture, this safety net is gone. We've voluntarily traded the safety of ACID for the scalability of partitioning. But business requirements don't change just because our architecture did. We still need to update our database and notify other systems that something happened.
 
-This brings us to the Dual Write Problem, the most pervasive source of data corruption in distributed systems.
+This brings us to the Dual Write Problem - the most pervasive source of data corruption in distributed systems.
 
 ![Dual Write Problem](../assets/images/diagrams/dual-write-problem.png)
 *Figure 6.1: The Dual Write Problem sequence diagram showing failure scenarios and the Transactional Outbox pattern solution for guaranteed consistency*
@@ -62,9 +62,11 @@ Imagine the line `db.save(order)` executes successfully. The database commits th
 
 Then, the instruction pointer moves to `publisher.publish(...)`.
 
-Suddenly, a network blink occurs. The connection to the Message Broker times out. Or perhaps the process gets killed by the Kubernetes OOM (Out of Memory) killer.
+Suddenly, a network blink occurs. The connection to the Message Broker times out. Or perhaps the process gets killed by the Kubernetes OOM killer.
 
-**The Result**: The order exists in the database, but no event was ever sent. The Shipping Service never knows how to ship it. The Billing Service never knows to charge for it. The customer sees a "Success" screen, but the order effectively falls into a black hole. This is a **Zombie Record**.
+**The Result:** The order exists in the database, but no event was ever sent. The Shipping Service never knows to ship it. The Billing Service never knows to charge for it. The customer sees a "Success" screen, but the order effectively falls into a black hole. This is a **Zombie Record**.
+
+I've debugged this scenario at 2 AM more times than I'd like to admit.
 
 ### 6.1.2 Failure Mode B: The Ghost Message
 
@@ -82,9 +84,9 @@ def create_order(order):
 
 Now, imagine `publisher.publish(...)` succeeds. The event goes out to the Shipping Service, which immediately starts printing a shipping label.
 
-Then, `db.save(order)` executes. But wait—the order fails validation. Or the database constraint is violated (e.g., "Duplicate Order ID"). The transaction rolls back.
+Then, `db.save(order)` executes. But the order fails validation. Or the database constraint is violated (e.g., "Duplicate Order ID"). The transaction rolls back.
 
-**The Result**: The order does not exist in the Order Service, but the rest of the system believes it does. You have shipped a product for an order that you have no record of. This is a **Ghost Message**.
+**The Result:** The order doesn't exist in the Order Service, but the rest of the system believes it does. You've shipped a product for an order that you have no record of. This is a **Ghost Message**.
 
 ### 6.1.3 The Two Generals Problem
 
