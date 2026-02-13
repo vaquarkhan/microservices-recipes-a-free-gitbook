@@ -1,4 +1,4 @@
-# 🎓 Free Mentorship with Viquar Khan
+﻿# 🎓 Free Mentorship with Viquar Khan
 
 **Personal Guidance from the Creator of The VaquarKhan (Khan) Pattern™**
 
@@ -13,7 +13,7 @@
 - Senior Data Architect at AWS Professional Services
 - Creator of Khan Pattern methodology
 - Expert Group Member of JSR 368 (Java™ Message Service 2.1)
-- Author of "Data Engineering with AWS Cookbook" (Packt, 2024)
+- Author of "Data Engineering with AWS Cookbook" (Packt, 2026)
 - 7.5M+ developers reached on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan)
 - 1,400+ followers on [GitHub](https://github.com/vaquarkhan)
 

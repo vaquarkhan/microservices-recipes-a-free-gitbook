@@ -1,4 +1,4 @@
-# 📖 Microservices Recipes: The Architect's Field Guide
+﻿# 📖 Microservices Recipes: The Architect's Field Guide
 
 ![Book Cover](assets/images/cover-image-1.png)
 
@@ -6,7 +6,7 @@
 
 *by **Viquar Khan***
 
-**Version 2.0** - *The Khan Pattern™ Edition* (January 2024)
+**Version 2.0** - *The Khan Pattern™ Edition* (January 2026)
 
 ---
 
@@ -18,7 +18,7 @@
 - **Title**: Microservices Recipes: The Architect's Field Guide
 - **Author**: Viquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2024 (The Khan Pattern™ Edition)
+- **Second Edition**: January 2026 (The Khan Pattern™ Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook

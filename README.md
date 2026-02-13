@@ -1,4 +1,4 @@
-# 📖 Microservices Recipes: The Architect's Field Guide
+﻿# 📖 Microservices Recipes: The Architect's Field Guide
 
 <div align="center">
 
@@ -6,7 +6,9 @@
 
 **A practical guide to building, scaling, and managing microservices architectures**
 
-*Featuring The VaquarKhan (Khan) Pattern™ for Adaptive Granularity*
+> "Microservices are small, autonomous services that work together." — Sam Newman, *Building Microservices*
+
+*Featuring The Adaptive Granularity Strategy (Author's Method)*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -69,6 +71,15 @@
 
 ---
 
+### 🎯 **Part IV: The Adaptive Granularity Strategy**
+*Focus: Quantitative framework for microservices decomposition*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[11](chapters/11-khan-pattern-deep-dive.md)** | **The Adaptive Granularity Strategy - Origin, Metrics, and Maturity Model** | Mathematical framework for optimal service boundaries | 40 min |
+
+---
+
 ### 📚 **Reference Materials**
 
 | Resource | Description |
@@ -85,7 +96,7 @@
 
 At the heart of this book is **Khan Pattern** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
 
-**Industry Recognition**: Khan Pattern has gained widespread recognition as an industry-standard methodology, validated through practical application across numerous organizations and academic research.
+**Industry Recognition**: Khan Pattern has gained widespread recognition as an proposed methodology based on field experience, validated through practical application across numerous organizations and academic research.
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -186,7 +197,7 @@ At the heart of this book is **Khan Pattern** — a systematic methodology for d
 
 ### **Credentials**
 - 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
-- 📚 **Author** of "Data Engineering with AWS Cookbook" (Packt, 2024)
+- 📚 **Author** of "Data Engineering with AWS Cookbook" (Packt, 2026)
 - 🌟 **7.5M+** developers reached on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan)
 - 👥 **1,400+** GitHub followers ([@vaquarkhan](https://github.com/vaquarkhan))
 - 🔧 **50+** open-source microservices repositories

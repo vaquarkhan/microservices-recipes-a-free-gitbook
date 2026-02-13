@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Khan Pattern™: Origin, Metrics, and Maturity Model"
 chapter: 11
 author: "Viquar Khan"
@@ -1557,7 +1557,7 @@ Use RVx to make informed decisions, not automatic ones.
 
 ## 11.8 The Future: Khan Pattern™ Evolution
 
-### 11.8.1 AI-Powered Optimization (2024-2026)
+### 11.8.1 AI-Powered Optimization (2026-2026)
 
 Current research focuses on:
 - **Predictive RVx**: ML models that predict RVx degradation before it happens

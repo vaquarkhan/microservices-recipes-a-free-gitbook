@@ -1,4 +1,4 @@
-# 🎓 Free Academic & Research Access
+﻿# 🎓 Free Academic & Research Access
 
 **Microservices Recipes: The Architect's Field Guide**  
 *Complete Edition Available for Educational Use*

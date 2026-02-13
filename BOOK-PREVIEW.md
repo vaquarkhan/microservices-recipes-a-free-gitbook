@@ -1,4 +1,4 @@
-# The Complete Microservices Architecture Guide
+﻿# The Complete Microservices Architecture Guide
 
 <div align="center">
   <img src="assets/images/cover-image-1.png" alt="Microservices Recipes Book Cover" width="400"/>

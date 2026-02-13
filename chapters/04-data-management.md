@@ -1,8 +1,8 @@
----
+﻿---
 title: "Data Management"
 chapter: 4
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices

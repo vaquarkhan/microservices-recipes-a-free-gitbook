@@ -1,8 +1,8 @@
----
+﻿---
 title: "The Rise of eBPF Networking and the Post Sidecar Era"
 chapter: 9
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices
@@ -477,7 +477,7 @@ This query reveals the 99th percentile latency for network flows targeting the i
 
 While this chapter has focused on eBPF and container-based networking, the modern architect must understand the full **compute spectrum** for microservices. Serverless computing—specifically AWS Lambda—represents a fundamentally different approach to microservices deployment that trades control for operational simplicity.
 
-**The Compute Spectrum (2024-2026):**
+**The Compute Spectrum (2026-2026):**
 
 ![Compute Spectrum](../assets/images/diagrams/compute-spectrum.png)
 *Figure 9.2: The compute spectrum showing the trade-off between control and simplicity from EC2 to Lambda, with management responsibilities at each level*
