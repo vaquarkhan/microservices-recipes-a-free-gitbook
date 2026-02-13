@@ -310,7 +310,7 @@ Focus: The single hardest aspect of microservices—managing data distributed ac
 
 ---
 
-## 3.5 The Khan Pattern™ for Adaptive Granularity
+## 3.5 The Adaptive Granularity Strategy
 
 ### The Centerpiece of Modern Microservices Architecture
 
@@ -324,7 +324,7 @@ Traditional approaches offer rigid rules:
 
 These heuristics fail because they ignore context. A two-week rewrite might be trivial for a startup with three developers but catastrophic for an enterprise with compliance requirements. A strict domain boundary might make sense for e-commerce but create operational nightmares in healthcare.
 
-**The Khan Pattern™** introduces a paradigm shift: **context-driven, adaptive granularity**. Instead of following one-size-fits-all rules, this pattern provides a quantitative framework for making granularity decisions based on your specific organizational, technical, and business context.
+**The Adaptive Granularity Strategy** introduces a paradigm shift: **context-driven, adaptive granularity**. Instead of following one-size-fits-all rules, this pattern provides a quantitative framework for making granularity decisions based on your specific organizational, technical, and business context.
 
 ### 3.5.1 The Problem: Why Traditional Approaches Fail
 
@@ -358,9 +358,9 @@ Conversely, a healthcare provider "adopted microservices" by splitting their mon
 
 **The Pattern:** They had created a **Distributed Monolith**—the most common anti-pattern in microservices adoption.
 
-### 3.5.2 The Khan Pattern™ Framework: Four-Dimensional Analysis
+### 3.5.2 The Adaptive Granularity Strategy Framework: Four-Dimensional Analysis
 
-The Khan Pattern™ evaluates service granularity across four dimensions:
+The Adaptive Granularity Strategy evaluates service granularity across four dimensions:
 
 #### Dimension 1: Organizational Maturity (O)
 
@@ -373,7 +373,7 @@ The Khan Pattern™ evaluates service granularity across four dimensions:
 | **Level 3: Scaling** | 50-200 developers | Container orchestration | **Microservices** - 20-50 services with clear boundaries |
 | **Level 4: Enterprise** | 200+ developers | Full observability stack | **Adaptive** - Mix of macro and micro based on domain |
 
-**Khan Pattern™ Rule:** Your granularity should match your operational capability. A startup with 5 developers attempting to manage 50 microservices will fail due to operational overhead.
+**Adaptive Granularity Strategy Rule:** Your granularity should match your operational capability. A startup with 5 developers attempting to manage 50 microservices will fail due to operational overhead.
 
 #### Dimension 2: Business Domain Complexity (D)
 
@@ -385,7 +385,7 @@ The Khan Pattern™ evaluates service granularity across four dimensions:
 | **Supporting Domain** | Medium (monthly) | Low | **Medium** - Shared service, multiple teams |
 | **Generic Domain** | Low (yearly) | High (compliance) | **Low** - Buy/outsource (Auth0, Stripe) |
 
-**Khan Pattern™ Rule:** Invest in isolation for your Core Domain. Don't build microservices for Generic Domains—buy them.
+**Adaptive Granularity Strategy Rule:** Invest in isolation for your Core Domain. Don't build microservices for Generic Domains—buy them.
 
 #### Dimension 3: Technical Constraints (T)
 
@@ -401,7 +401,7 @@ The Khan Pattern™ evaluates service granularity across four dimensions:
 | **Scale Factor** | 10x variance | **Fine** - Independent scaling needed |
 | **Scale Factor** | < 2x variance | **Coarse** - Shared scaling OK |
 
-**Khan Pattern™ Rule:** Strong consistency requirements force coarser granularity. If two entities must be updated atomically, they belong in the same service.
+**Adaptive Granularity Strategy Rule:** Strong consistency requirements force coarser granularity. If two entities must be updated atomically, they belong in the same service.
 
 #### Dimension 4: Evolutionary Trajectory (E)
 
@@ -413,7 +413,7 @@ The Khan Pattern™ evaluates service granularity across four dimensions:
 | **Brownfield** | 2-5 years | **Strangler Fig** - Gradually extract bounded contexts |
 | **Legacy** | 5+ years | **Anti-Corruption Layer** - Isolate before extracting |
 
-**Khan Pattern™ Rule:** Never start with microservices. Start with a well-structured monolith and extract services as you learn the domain.
+**Adaptive Granularity Strategy Rule:** Never start with microservices. Start with a well-structured monolith and extract services as you learn the domain.
 
 ### 3.5.3 The Mathematical Foundation: The RVx Index
 
@@ -494,7 +494,7 @@ Based on the RVx score, services fall into four zones:
 - **Mandate:** **MAINTAIN** - Continue monitoring, avoid premature optimization
 - **Example:** Well-designed bounded contexts with clear domain ownership
 
-### 3.5.5 Implementation Guide: Applying the Khan Pattern™
+### 3.5.5 Implementation Guide: Applying the Adaptive Granularity Strategy
 
 #### Step 1: Measure Your Current State
 
@@ -563,7 +563,7 @@ Integrate RVx calculation into your observability platform (Grafana, DataDog, Ne
 ```yaml
 # Example: Grafana Dashboard Config
 dashboard:
-  title: "Khan Pattern™ Service Health"
+  title: "Adaptive Granularity Strategy Service Health"
   panels:
     - title: "RVx Score by Service"
       type: "gauge"
@@ -589,7 +589,7 @@ dashboard:
         message: "Service exceeds complexity threshold - consider splitting"
 ```
 
-### 3.5.6 Case Studies: The Khan Pattern™ in Action
+### 3.5.6 Case Studies: The Adaptive Granularity Strategy in Action
 
 #### Case Study 1: E-Commerce Platform Recovery
 
@@ -604,7 +604,7 @@ dashboard:
 - P99 Latency: 2.3 seconds
 - Deployment Success Rate: 62%
 
-**Khan Pattern™ Application:**
+**Adaptive Granularity Strategy Application:**
 
 1. **Measurement Phase (Month 1):**
    - Instrumented all services with OpenTelemetry
@@ -628,7 +628,7 @@ dashboard:
 - Deployment Success Rate: 94%
 - Developer Satisfaction: +45% (internal survey)
 
-**Key Lesson:** More services ≠ better architecture. The Khan Pattern™ provided objective criteria for consolidation.
+**Key Lesson:** More services ≠ better architecture. The Adaptive Granularity Strategy provided objective criteria for consolidation.
 
 #### Case Study 2: Financial Services Compliance
 
@@ -641,7 +641,7 @@ dashboard:
 Traditional microservices advice: "Split everything into small services"
 Reality: Financial regulations require strong consistency and audit trails
 
-**Khan Pattern™ Application:**
+**Adaptive Granularity Strategy Application:**
 
 1. **Domain Analysis:**
    - Core Domain: Account Management, Transaction Processing (high regulatory burden)
@@ -668,7 +668,7 @@ Reality: Financial regulations require strong consistency and audit trails
 - Core services remain stable (quarterly releases)
 - Zero compliance violations
 
-**Key Lesson:** The Khan Pattern™ allows for **heterogeneous granularity**—different parts of the system can have different service sizes based on their constraints.
+**Key Lesson:** The Adaptive Granularity Strategy allows for **heterogeneous granularity**—different parts of the system can have different service sizes based on their constraints.
 
 #### Case Study 3: Healthcare System Modernization
 
@@ -677,10 +677,10 @@ Reality: Financial regulations require strong consistency and audit trails
 - Problem: 25-year-old monolith, HIPAA compliance, patient safety critical
 - Constraint: can't afford downtime
 
-**Khan Pattern™ Application:**
+**Adaptive Granularity Strategy Application:**
 
 1. **Strangler Fig Strategy:**
-   - Used Khan Pattern™ to identify extraction candidates
+   - Used Adaptive Granularity Strategy to identify extraction candidates
    - Prioritized services with high RVx potential and low regulatory risk
 
 2. **Extraction Order (based on RVx analysis):**
@@ -702,7 +702,7 @@ Reality: Financial regulations require strong consistency and audit trails
 - Monolith reduced by 40% in size
 - Remaining monolith is now manageable (L̂ = 0.55)
 
-**Key Lesson:** The Khan Pattern™ respects constraints. Sometimes the right answer is "don't split this."
+**Key Lesson:** The Adaptive Granularity Strategy respects constraints. Sometimes the right answer is "don't split this."
 
 ### 3.5.7 Industry Validation and Adoption
 
@@ -729,14 +729,14 @@ Reality: Financial regulations require strong consistency and audit trails
 - **khan-cli** (Go): Command-line tool for quick assessments
 
 **Commercial Integration:**
-- **DataDog:** Khan Pattern™ metrics available as custom integration
+- **DataDog:** Adaptive Granularity Strategy metrics available as custom integration
 - **New Relic:** RVx score included in service health dashboard
 - **Dynatrace:** Automated zone classification and recommendations
 
 ### 3.5.9 Common Questions and Misconceptions
 
 **Q: Isn't this just premature optimization?**
-A: No. The Khan Pattern™ is about **avoiding premature decomposition**. It provides objective criteria for when to split and when to consolidate.
+A: No. The Adaptive Granularity Strategy is about **avoiding premature decomposition**. It provides objective criteria for when to split and when to consolidate.
 
 **Q: What if my RVx score is borderline (e.g., 0.55)?**
 A: Use the **Hysteresis Principle**: Don't make changes for small score variations. Only act when RVx crosses major thresholds (0.3, 0.6) and stays there for 30+ days.
@@ -745,9 +745,9 @@ A: Use the **Hysteresis Principle**: Don't make changes for small score variatio
 A: Yes. The pattern applies to any distributed system. For serverless, Ê becomes even more critical due to cold start overhead.
 
 **Q: What about team autonomy? Doesn't this force centralized decision-making?**
-A: No. The Khan Pattern™ provides **data for decision-making**, not mandates. Teams use RVx scores to justify their architectural choices to stakeholders.
+A: No. The Adaptive Granularity Strategy provides **data for decision-making**, not mandates. Teams use RVx scores to justify their architectural choices to stakeholders.
 
-### 3.5.10 The Future: Khan Pattern™ 2.0
+### 3.5.10 The Future: Adaptive Granularity Strategy 2.0
 
 **Upcoming Enhancements (2026-2027):**
 
@@ -773,7 +773,7 @@ A: No. The Khan Pattern™ provides **data for decision-making**, not mandates. 
 
 ### Conclusion: Stop Splitting, Start Governing
 
-The Khan Pattern™ represents a fundamental shift in how we think about microservices architecture. Instead of asking "How small should my services be?", we ask "What granularity optimizes for my specific context?"
+The Adaptive Granularity Strategy represents a fundamental shift in how we think about microservices architecture. Instead of asking "How small should my services be?", we ask "What granularity optimizes for my specific context?"
 
 **The Three Principles:**
 
@@ -781,7 +781,7 @@ The Khan Pattern™ represents a fundamental shift in how we think about microse
 2. **Measurement Over Opinion:** Use quantitative metrics (RVx) instead of subjective judgment
 3. **Evolution Over Perfection:** Architecture is a journey, not a destination—measure, adapt, improve
 
-As we move into Chapter 4, we'll explore how these principles apply to the hardest problem in microservices: managing data across service boundaries. The Khan Pattern™ will guide us in determining when to share data, when to duplicate it, and when to accept eventual consistency.
+As we move into Chapter 4, we'll explore how these principles apply to the hardest problem in microservices: managing data across service boundaries. The Adaptive Granularity Strategy will guide us in determining when to share data, when to duplicate it, and when to accept eventual consistency.
 
 ---
 

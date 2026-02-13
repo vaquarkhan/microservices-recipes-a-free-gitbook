@@ -287,7 +287,7 @@ As microservices architectures evolve to support AI/ML workloads, a new category
 - **Anomaly Detection:** Identify outliers in high-dimensional space
 - **Multimodal Search:** Query across text, images, and audio using unified embeddings
 
-The architectural question: **Should vector databases be treated as shared infrastructure or as service-specific data stores?** The answer, guided by the Khan Pattern™, depends on semantic cohesion.
+The architectural question: **Should vector databases be treated as shared infrastructure or as service-specific data stores?** The answer, guided by the Adaptive Granularity Strategy, depends on semantic cohesion.
 
 ### 8.4.1 Vector Database Landscape (2026-2026)
 
@@ -403,7 +403,7 @@ results = support_service.semantic_search("customers interested in upgrades")
 ![Isolated Vector Stores](../assets/images/diagrams/isolated-vector-stores.png)
 *Figure 8.5: Isolated vector stores pattern showing separate databases for distinct semantic domains (Product Catalog vs Fraud Detection)*
 
-**Khan Pattern™ Guidance:**
+**Adaptive Granularity Strategy Guidance:**
 
 ```python
 # Decision matrix for vector database placement

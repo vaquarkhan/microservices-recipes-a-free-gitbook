@@ -1,4 +1,4 @@
-﻿# References and Bibliography
+# References and Bibliography
 
 > **Note**: This bibliography provides comprehensive citations for all sources, technologies, companies, and methodologies referenced throughout this book. All citations follow academic standards and are provided for educational purposes under fair use doctrine.
 
@@ -46,7 +46,7 @@
     - Classic patterns for enterprise application design
     - Foundation for many microservices architectural patterns
 
-11. M. Fowler and J. Lewis, "Microservices: a definition of this new architectural term," martinfowler.com, Mar. 2014. [Online]. Available: https://martinfowler.com/articles/microservices.html
+11. M. Fowler and J. Lewis, "Microservices," martinfowler.com, Mar. 2014. [Online]. Available: https://martinfowler.com/articles/microservices.html
     - Seminal article that helped popularize the microservices term
     - Essential reading for understanding microservices characteristics
 
@@ -92,71 +92,79 @@
 
 23. **Segment**: A. Reinhart, "Goodbye Microservices: From 100s of problem children to 1 superstar," Segment Blog, 2020. [Online]. Available: https://segment.com/blog/goodbye-microservices/
 
-24. **Amazon**: J. Willard, "The Evolution of Microservices Architecture with AI-Driven Enhancements," *International Journal of Recent Engineering Science*, vol. 12, no. 1, 2025.
+24. **Amazon**: J. Willard and J. Hutson, "The Evolution and Future of Microservices Architecture with AI-Driven Enhancements," *International Journal of Recent Engineering Science (IJRES)*, vol. 12, no. 1, pp. 16–22, 2025.
 
-25. **Amazon Web Services**: Amazon Web Services, Inc., "AWS Well-Architected Framework," AWS Documentation, 2023. [Online]. Available: https://aws.amazon.com/architecture/well-architected/
+25. **Etsy**: M. Seedat et al., "Transition Strategies from Monolithic to Microservices Architectures: A Domain-Driven Approach and Case Study," *VAWKUM Transactions on Computer Sciences*, vol. 11, no. 2, 2023.
+
+26. **Amazon Web Services**: Amazon Web Services, Inc., "AWS Well-Architected Framework," AWS Documentation, 2023. [Online]. Available: https://aws.amazon.com/architecture/well-architected/
     - Best practices for cloud architecture design
     - Includes microservices-specific guidance
 
-26. **Amazon DynamoDB**: G. DeCandia et al., "Dynamo: Amazon's Highly Available Key-value Store," in *Proc. 21st ACM Symposium on Operating Systems Principles (SOSP)*, Stevenson, WA, 2007, pp. 205–220.
+27. **Amazon DynamoDB**: G. DeCandia et al., "Dynamo: Amazon's Highly Available Key-value Store," in *Proc. 21st ACM Symposium on Operating Systems Principles (SOSP)*, Stevenson, WA, 2007, pp. 205–220.
     - Technical paper on Amazon's Dynamo database
     - Influential work on distributed database design
 
-27. **Amazon Aurora**: A. Verbitski et al., "Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases," in *Proc. ACM SIGMOD International Conference on Management of Data*, San Francisco, CA, 2017, pp. 1041–1052.
+28. **Amazon Aurora**: A. Verbitski et al., "Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases," in *Proc. ACM SIGMOD International Conference on Management of Data*, San Francisco, CA, 2017, pp. 1041–1052.
 
-28. **Amazon Eventually Consistent**: W. Vogels, "Eventually Consistent," *Communications of the ACM*, vol. 52, no. 1, pp. 40–44, Jan. 2009.
+29. **Amazon Eventually Consistent**: W. Vogels, "Eventually Consistent," *Communications of the ACM*, vol. 52, no. 1, pp. 40–44, Jan. 2009.
     - Amazon's approach to consistency in distributed systems
     - Essential for understanding eventual consistency patterns
 
-29. Microsoft, *Cloud Application Architecture Guide*. Redmond, WA: Microsoft Press, 2017.
+30. Microsoft, *Cloud Application Architecture Guide*. Redmond, WA: Microsoft Press, 2017.
 
-30. **Microsoft Azure**: Microsoft Azure, "Azure Architecture Center," 2016-present. [Online]. Available: https://docs.microsoft.com/azure/architecture/
+31. **Microsoft Azure**: Microsoft Azure, "Azure Architecture Center," 2016-present. [Online]. Available: https://docs.microsoft.com/azure/architecture/
     - Comprehensive architecture guidance and patterns
     - Includes microservices reference architectures
 
-31. **Google**: E. Brewer, "CAP Twelve Years Later: How the 'Rules' Have Changed," *IEEE Computer*, vol. 45, no. 2, pp. 23–29, Feb. 2012.
+32. **Google**: E. Brewer, "CAP Twelve Years Later: How the 'Rules' Have Changed," *IEEE Computer*, vol. 45, no. 2, pp. 23–29, Feb. 2012.
 
-32. **Google CAP Theorem**: E. A. Brewer, "Towards Robust Distributed Systems," in *Proc. 19th Annual ACM Symposium on Principles of Distributed Computing (PODC)*, Portland, OR, 2000.
+33. **Google CAP Theorem**: E. A. Brewer, "Towards Robust Distributed Systems," in *Proc. 19th Annual ACM Symposium on Principles of Distributed Computing (PODC)*, Portland, OR, 2000.
     - Introduction of the CAP theorem
     - Essential for understanding trade-offs in distributed systems
 
-33. **Google gRPC**: Google, Inc., "gRPC: A high performance, open source universal RPC framework," gRPC Documentation, 2023. [Online]. Available: https://grpc.io/
+34. **Google gRPC**: Google, Inc., "gRPC: A high performance, open source universal RPC framework," gRPC Documentation, 2023. [Online]. Available: https://grpc.io/
     - Specification and documentation for gRPC
     - Essential for high-performance service communication
 
-34. **Google MapReduce**: J. Dean and S. Ghemawat, "MapReduce: Simplified Data Processing on Large Clusters," *Communications of the ACM*, vol. 51, no. 1, pp. 107–113, Jan. 2008.
+35. **Google MapReduce**: J. Dean and S. Ghemawat, "MapReduce: Simplified Data Processing on Large Clusters," *Communications of the ACM*, vol. 51, no. 1, pp. 107–113, Jan. 2008.
     - Google's MapReduce framework
     - Foundational work on distributed data processing
 
-35. **Google Bigtable**: F. Chang et al., "Bigtable: A Distributed Storage System for Structured Data," *ACM Transactions on Computer Systems*, vol. 26, no. 2, Jun. 2008.
+36. **Google Bigtable**: F. Chang et al., "Bigtable: A Distributed Storage System for Structured Data," *ACM Transactions on Computer Systems*, vol. 26, no. 2, Jun. 2008.
     - Google's Bigtable distributed storage system
     - Influential work on distributed database design
+
+### Technical Standards & Patterns
+
+37. Microsoft, "Cloud Design Patterns: Prescriptive Architecture Guidance for Cloud Applications," Microsoft Docs, 2024. [Online].
+
+38. Google Cloud, "Microservices Architecture on Google Cloud," Google Cloud Architecture Center, 2024. [Online].
 
 ---
 
 ## Distributed Systems Theory
 
-36. M. Conway, "How Do Committees Invent?", *Datamation*, vol. 14, no. 4, pp. 28–31, Apr. 1968.
+39. M. Conway, "How Do Committees Invent?", *Datamation*, vol. 14, no. 4, pp. 28–31, Apr. 1968.
     - Original paper introducing Conway's Law
     - Fundamental to understanding organizational impact on system design
 
-37. L. Lamport, "Time, Clocks, and the Ordering of Events in a Distributed System," *Communications of the ACM*, vol. 21, no. 7, pp. 558–565, Jul. 1978.
+40. L. Lamport, "Time, Clocks, and the Ordering of Events in a Distributed System," *Communications of the ACM*, vol. 21, no. 7, pp. 558–565, Jul. 1978.
 
-38. M. J. Fischer, N. A. Lynch, and M. S. Paterson, "Impossibility of Distributed Consensus with One Faulty Process," *Journal of the ACM*, vol. 32, no. 2, pp. 374–382, Apr. 1985.
+41. M. J. Fischer, N. A. Lynch, and M. S. Paterson, "Impossibility of Distributed Consensus with One Faulty Process," *Journal of the ACM*, vol. 32, no. 2, pp. 374–382, Apr. 1985.
 
-39. S. Gilbert and N. Lynch, "Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services," *ACM SIGACT News*, vol. 33, no. 2, pp. 51–59, Jun. 2002.
+42. S. Gilbert and N. Lynch, "Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services," *ACM SIGACT News*, vol. 33, no. 2, pp. 51–59, Jun. 2002.
     - Formal proof of the CAP theorem
     - Critical for understanding consistency in distributed systems
 
-40. M. Shapiro, N. Preguiça, C. Baquero, and M. Zawirski, "Conflict-Free Replicated Data Types," in *Proc. 13th International Symposium on Stabilization, Safety, and Security of Distributed Systems*, Grenoble, France, 2011, pp. 386–400.
+43. M. Shapiro, N. Preguiça, C. Baquero, and M. Zawirski, "Conflict-Free Replicated Data Types," in *Proc. 13th International Symposium on Stabilization, Safety, and Security of Distributed Systems*, Grenoble, France, 2011, pp. 386–400.
 
-41. D. S. Parker Jr., G. J. Popek, G. Rudisin, A. Stoughton, B. J. Walker, E. Walton, J. M. Chow, D. Edwards, S. Kiser, and C. Kline, "Detection of Mutual Inconsistency in Distributed Systems," *IEEE Transactions on Software Engineering*, vol. SE-9, no. 3, pp. 240–247, May 1983.
+44. D. S. Parker Jr., G. J. Popek, G. Rudisin, A. Stoughton, B. J. Walker, E. Walton, J. M. Chow, D. Edwards, S. Kiser, and C. Kline, "Detection of Mutual Inconsistency in Distributed Systems," *IEEE Transactions on Software Engineering*, vol. SE-9, no. 3, pp. 240–247, May 1983.
 
-42. N. Dragoni et al., "Microservices: Yesterday, Today, and Tomorrow," in *Present and Ulterior Software Engineering*, Springer, 2017, pp. 195–216.
+45. N. Dragoni et al., "Microservices: Yesterday, Today, and Tomorrow," in *Present and Ulterior Software Engineering*, Springer, 2017, pp. 195–216.
     - Comprehensive survey of microservices research and practice
     - Excellent overview of the field's evolution
 
-43. D. Taibi and K. Systä, "From Monolithic Systems to Microservices: A Decomposition Framework based on Process Mining," in *Proc. 9th International Conference on Cloud Computing and Services Science*, 2019.
+46. D. Taibi and K. Systä, "From Monolithic Systems to Microservices: A Decomposition Framework based on Process Mining," in *Proc. 9th International Conference on Cloud Computing and Services Science*, 2019.
     - Research on systematic approaches to microservices decomposition
     - Practical framework for service boundary identification
 
@@ -164,13 +172,13 @@
 
 ## Data Management & Consistency
 
-44. H. Garcia-Molina and K. Salem, "Sagas," in *Proc. ACM SIGMOD International Conference on Management of Data*, San Francisco, CA, 1987, pp. 249–259.
+47. H. Garcia-Molina and K. Salem, "Sagas," in *Proc. ACM SIGMOD International Conference on Management of Data*, San Francisco, CA, 1987, pp. 249–259.
 
-45. P. A. Bernstein, V. Hadzilacos, and N. Goodman, *Concurrency Control and Recovery in Database Systems*. Boston, MA: Addison-Wesley, 1987.
+48. P. A. Bernstein, V. Hadzilacos, and N. Goodman, *Concurrency Control and Recovery in Database Systems*. Boston, MA: Addison-Wesley, 1987.
 
-46. D. B. Terry, M. M. Theimer, K. Petersen, A. J. Demers, M. J. Spreitzer, and C. H. Hauser, "Managing Update Conflicts in Bayou, a Weakly Connected Replicated Storage System," in *Proc. 15th ACM Symposium on Operating Systems Principles (SOSP)*, Copper Mountain, CO, 1995, pp. 172–182.
+49. D. B. Terry, M. M. Theimer, K. Petersen, A. J. Demers, M. J. Spreitzer, and C. H. Hauser, "Managing Update Conflicts in Bayou, a Weakly Connected Replicated Storage System," in *Proc. 15th ACM Symposium on Operating Systems Principles (SOSP)*, Copper Mountain, CO, 1995, pp. 172–182.
 
-47. Z. Dehghani, *Data Mesh: Delivering Data-Driven Value at Scale*. Sebastopol, CA: O'Reilly Media, 2022.
+50. Z. Dehghani, *Data Mesh: Delivering Data-Driven Value at Scale*. Sebastopol, CA: O'Reilly Media, 2022.
     - Foundational text on Data Mesh principles and implementation
     - Essential for understanding domain-driven data architecture
 
@@ -428,13 +436,13 @@
 
 ---
 
-## The Khan Pattern™ & Original Research
+## Adaptive Granularity Strategy & Author's Original Research
 
-119. **V. Khan**, "The Khan Pattern™ for Adaptive Granularity: A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+119. **V. Khan**, "Adaptive Granularity Strategy: A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
 120. **V. Khan**, "The Revised VaquarKhan Index (RVx): Mathematical Foundations for Service Boundary Analysis," *Technical Report*, 2019.
 
-121. **V. Khan**, "Khan Microservices Maturity Model (KM3™): An Evolutionary Framework for Organizational Assessment," *Technical Report*, 2020.
+121. **V. Khan**, "Microservices Maturity Assessment: An Evolutionary Framework for Organizational Assessment," *Technical Report*, 2020.
 
 122. **V. Khan**, "Black Friday 2017 Crisis Analysis: From Catastrophic Failure to Architectural Innovation," *Case Study*, 2018.
 
@@ -453,19 +461,19 @@
 
 125. **Fintech Startup Scale-Up (2021)**: Payment processing startup case study. *Case Study*, Chapter 11.
     - Problem: Premature microservices adoption with 5-person team managing 23 services
-    - Solution: Khan Pattern™ consolidation to modular monolith
+    - Solution: Adaptive Granularity Strategy consolidation to modular monolith
     - Results: 3x feature velocity improvement, 60% cost reduction
 
 ### E-Commerce & Retail
 
 126. **E-Commerce Platform Rescue (2019)**: Major retail company (Fortune 500) microservices recovery. *Case Study*, Chapter 11.
     - Problem: 127 microservices causing performance degradation and operational chaos
-    - Solution: Khan Pattern™ RVx analysis and service consolidation to 63 services
+    - Solution: Adaptive Granularity Strategy RVx analysis and service consolidation to 63 services
     - Results: 92% P99 latency improvement, 94% deployment success rate
 
 127. **E-Commerce Platform Recovery (2022)**: Mid-size e-commerce platform with 120 microservices. *Case Study*, Chapter 3.
     - Initial State: Average RVx 0.25 (Nano-Swarm zone), 71% services in Zone I
-    - Khan Pattern™ Application: Consolidated 85 nano-services into 12 macro-services
+    - Adaptive Granularity Strategy Application: Consolidated 85 nano-services into 12 macro-services
     - Results: P99 latency reduced from 2.3s to 180ms (92% improvement)
 
 128. **E-Commerce Order Creation Saga**: Practical implementation of choreography vs orchestration patterns. *Technical Example*, Chapter 5.
@@ -476,7 +484,7 @@
 
 129. **Healthcare System Modernization (2023)**: Healthcare provider microservices transformation. *Case Study*, Chapter 3.
     - Challenge: HIPAA compliance requirements with distributed architecture
-    - Solution: Khan Pattern™ heterogeneous granularity approach
+    - Solution: Adaptive Granularity Strategy heterogeneous granularity approach
     - Results: Compliance-friendly architecture with optimized service boundaries
 
 130. **Healthcare Data Consistency**: Real-world example of strong consistency requirements in medical systems. *Technical Example*, Chapter 4.
@@ -499,7 +507,7 @@
 
 133. **SaaS Platform Optimization (2023)**: B2B SaaS platform performance improvement. *Case Study*, Chapter 11.
     - Initial State: 42 services with average RVx 0.71
-    - Khan Pattern™ Application: Continuous monitoring and protocol optimization
+    - Adaptive Granularity Strategy Application: Continuous monitoring and protocol optimization
     - Results: RVx improved to 0.89, 35% cost reduction, 40% latency improvement
 
 ### Security & Compliance
@@ -516,7 +524,7 @@
 
 136. **Financial Services Compliance (2024)**: Regional bank microservices with SOX compliance. *Case Study*, Chapter 3.
     - Challenge: Strong consistency requirements for financial transactions
-    - Solution: Khan Pattern™ with compliance-aware service boundaries
+    - Solution: Adaptive Granularity Strategy with compliance-aware service boundaries
     - Results: Regulatory compliance maintained with modern architecture
 
 ### Infrastructure & Operations
@@ -548,7 +556,7 @@
 141. **The God Service**: Single service with excessive responsibility. *Anti-Pattern*, Chapter 1.
     - Symptom: 50,000+ lines of code, high cyclomatic complexity
     - Impact: Cognitive overload, multiple teams touching same service
-    - Solution: Extract bounded contexts using Khan Pattern™
+    - Solution: Extract bounded contexts using Adaptive Granularity Strategy
 
 142. **The Pinball Architecture**: Choreography gone wrong. *Anti-Pattern*, Chapter 5.
     - Symptom: Events bouncing between services, impossible to debug
@@ -603,7 +611,7 @@
 
 ## Citation Guidelines
 
-All references in this book follow academic citation standards. For proper attribution when citing this work or the Khan Pattern™, please refer to [CITATIONS.md](../CITATIONS.md).
+All references in this book follow academic citation standards. For proper attribution when citing this work or the Adaptive Granularity Strategy, please refer to [CITATIONS.md](../CITATIONS.md).
 
 ### Recommended Citation Format
 
@@ -636,7 +644,7 @@ All references in this book follow academic citation standards. For proper attri
 ### For Advanced Architects
 - Deep dive into Dehghani's "Data Mesh" (Item 47)
 - Study academic papers on distributed systems (Items 36-43)
-- Explore Khan Pattern™ research (Items 119-122)
+- Explore Adaptive Granularity Strategy research (Items 119-122)
 
 ### For Security Focus
 - Study Siriwardena's "Microservices Security in Action" (Item 4)
@@ -656,7 +664,7 @@ All references in this book follow academic citation standards. For proper attri
 
 **Content Licensing**: This bibliography includes references to open-source projects, academic papers, and commercial products. All citations are provided for educational purposes under fair use doctrine. No content from cited sources has been reproduced verbatim beyond standard quotation limits (30 consecutive words maximum).
 
-**Copyright Notice**: The Khan Pattern™, Revised VaquarKhan Index (RVx), and Khan Microservices Maturity Model (KM3™) are proprietary methodologies developed by Viquar Khan. Copyright © 2017-2026 by Viquar Khan. All rights reserved.
+**Copyright Notice**: The Adaptive Granularity Strategy (Author's Method), Service Decomposition Workflow (Author's Method), Microservices Maturity Assessment (Author's Method), and Revised VaquarKhan Index (RVx) are proprietary methodologies developed by Viquar Khan. The book content is © 2017-2026 by Viquar Khan. Methodology attribution is asserted without trademark claims.
 
 ---
 

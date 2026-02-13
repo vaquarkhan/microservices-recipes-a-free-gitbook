@@ -15,7 +15,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 - [ ] **Autonomy**: Independently deployable and scalable
 - [ ] **Resilience**: Designed to handle failures gracefully
 
-### Khan Pattern Decision Matrix
+### Adaptive Granularity Strategy Decision Matrix
 
 | Factor | Fine-Grained | Medium-Grained | Coarse-Grained |
 |--------|--------------|----------------|----------------|

@@ -9,7 +9,7 @@
 
 ---
 
-## Introducing the Khan Protocol™
+## Introducing the Service Decomposition Workflow
 
 ### A Mathematically Rigorous Framework for Architectural Governance
 
@@ -163,7 +163,7 @@ Master the only proven pattern for safely migrating monoliths. Learn routing str
 
 ### Part VIII: The Maturity Framework
 
-#### Chapter 20: The Khan Microservices Maturity Model (KM3™)
+#### Chapter 20: The Microservices Maturity Assessment
 **Measuring Architectural Evolution**
 
 Assess and improve your microservices maturity with a comprehensive quantitative framework. Five maturity levels, assessment dimensions, and improvement roadmaps.
@@ -195,7 +195,7 @@ Available on GitHub: [github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 - Advanced patterns (Cell-Based Architecture, Shuffle Sharding, Chaos Engineering)
 - AI integration patterns (Agentic AI, RAG at Scale)
 - Migration playbooks (Modular Monolith, Strangler Fig)
-- Khan Microservices Maturity Model (KM3™)
+- Microservices Maturity Assessment
 
 ---
 

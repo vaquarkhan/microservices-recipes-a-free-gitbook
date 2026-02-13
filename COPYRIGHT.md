@@ -1,4 +1,4 @@
-﻿# Copyright Notice
+# Copyright Notice
 
 ## Microservices Recipes: The Architect's Field Guide
 
@@ -9,10 +9,10 @@
 ## 📋 **Publication Information**
 
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Subtitle**: Featuring The Khan Pattern™ for Adaptive Granularity
+- **Subtitle**: Featuring The Adaptive Granularity Strategy (Author's Method)
 - **Author**: Viquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2026 (The Khan Pattern™ Edition)
+- **Second Edition**: January 2026 (The Adaptive Granularity Strategy Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
@@ -24,17 +24,17 @@
 ### **Proprietary Methodologies (© Viquar Khan)**
 The following methodologies are original works and proprietary frameworks developed by Viquar Khan:
 
-1. **The Khan Pattern™** for Adaptive Granularity
+1. **The Adaptive Granularity Strategy (Author's Method)**
    - Systematic methodology for determining optimal microservice boundaries
    - Context-driven, adaptive framework for service decomposition
    - Motto: "Stop splitting, start governing"
 
-2. **Khan Granularity Protocol™**
+2. **Service Decomposition Workflow (Author's Method)**
    - Scoring system for microservice granularity decisions
    - Quantitative assessment framework for service boundaries
    - Operational guidelines for granularity optimization
 
-3. **Khan Microservices Maturity Model (KM3™)**
+3. **Microservices Maturity Assessment (Author's Method)**
    - Maturity assessment framework for microservices adoption
    - Organizational capability evaluation system
    - Evolution roadmap for distributed systems maturity
@@ -63,10 +63,8 @@ When using this work, you MUST:
 3. **Provide proper citation** (see [CITATIONS.md](CITATIONS.md))
 4. **Credit proprietary methodologies** when referenced
 
-### **Trademark Protection**
-- **The Khan Pattern™** is a trademark of Viquar Khan
-- **Khan Granularity Protocol™** is a trademark of Viquar Khan
-- **Khan Microservices Maturity Model (KM3™)** is a trademark of Viquar Khan
+### **Proprietary Methodologies Notice**
+The Adaptive Granularity Strategy (Author's Method), Service Decomposition Workflow (Author's Method), and Microservices Maturity Assessment (Author's Method) are proprietary methodologies developed by Viquar Khan. These terms establish methodology ownership and attribution without trademark registration. See [DISCLAIMER.md](DISCLAIMER.md) for full legal notice.
 
 ---
 
@@ -141,7 +139,7 @@ This work is protected by copyright laws in:
 ## 📅 **Version History**
 
 - **v1.0** (January 2017): Initial release and copyright establishment
-- **v2.0** (January 2026): The Khan Pattern™ Edition with enhanced copyright protection
+- **v2.0** (January 2026): The Adaptive Granularity Strategy Edition with enhanced copyright protection
 
 ---
 

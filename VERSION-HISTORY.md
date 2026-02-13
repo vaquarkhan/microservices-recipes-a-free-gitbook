@@ -1,4 +1,4 @@
-﻿# 📚 Version History & Release Lineage
+# 📚 Version History & Release Lineage
 
 **Microservices Recipes: The Architect's Field Guide**  
 *by Viquar Khan*
@@ -7,13 +7,13 @@
 
 ## 🏷️ **Current Version: 2.0**
 
-### **Version 2.0** - *The VaquarKhan (Khan) Pattern™ Edition* (January 2026)
+### **Version 2.0** - *The Adaptive Granularity Strategy Edition* (January 2026)
 **Major Release - Complete Architectural Overhaul**
 
 #### **🎯 New Features & Enhancements:**
-- **Khan Pattern for Adaptive Granularity** - Systematic approach to microservice boundaries
-- **Khan Granularity Protocol** - Systematic methodology for service decomposition
-- **Khan Microservices Maturity Model (KM3)** - Assessment framework for organizational readiness
+- **Adaptive Granularity Strategy (Author's Method)** - Systematic approach to microservice boundaries
+- **Service Decomposition Workflow (Author's Method)** - Systematic methodology for service decomposition
+- **Microservices Maturity Assessment (Author's Method)** - Assessment framework for organizational readiness
 - **Enhanced Chapter Structure** - Professional headers with reading time and difficulty indicators
 - **Modern Web Experience** - Responsive design with interactive elements
 - **Updated Case Studies** - Real-world implementations from 2020-2026
@@ -82,7 +82,7 @@
 - **Service mesh evolution** documented with real implementations
 - **Observability revolution** captured with OpenTelemetry standards
 
-### **2026 - Khan Pattern**
+### **2026 - Adaptive Granularity Strategy**
 - **Systematic methodology** introduced for adaptive granularity
 - **Complete architectural framework** for modern distributed systems
 - **Industry validation** through successful enterprise implementations
@@ -94,13 +94,13 @@
 | Feature | Version 1.0 (2017) | Version 2.0 (2026) |
 |---------|-------------------|-------------------|
 | **Chapters** | 8 foundational | 10 comprehensive |
-| **Methodologies** | General principles | Khan Pattern |
+| **Methodologies** | General principles | Adaptive Granularity Strategy |
 | **Technology Focus** | Docker, basic K8s | Modern cloud-native |
 | **Networking** | Traditional service mesh | eBPF and post-sidecar |
 | **Data Patterns** | Basic CQRS/ES | Advanced distributed patterns |
 | **Security** | Traditional auth | Zero-trust architectures |
 | **Case Studies** | 2015-2017 examples | 2020-2026 implementations |
-| **Assessment Tools** | Informal checklists | KM3™ Maturity Model |
+| **Assessment Tools** | Informal checklists | Microservices Maturity Assessment |
 | **Reading Experience** | Basic markdown | Professional web experience |
 | **Accessibility** | Text-only | Multi-modal with diagrams |
 
@@ -157,4 +157,4 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 **Maintaining excellence through continuous evolution** 🚀
 
-*The VaquarKhan (Khan) Pattern™ represents the culmination of 7 years of real-world experience, community feedback, and architectural innovation.*
+*The Adaptive Granularity Strategy represents the culmination of 7 years of real-world experience, community feedback, and architectural innovation.*

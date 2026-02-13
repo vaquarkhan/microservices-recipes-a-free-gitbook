@@ -482,7 +482,7 @@ While this chapter has focused on eBPF and container-based networking, the moder
 ![Compute Spectrum](../assets/images/diagrams/compute-spectrum.png)
 *Figure 9.2: The compute spectrum showing the trade-off between control and simplicity from EC2 to Lambda, with management responsibilities at each level*
 
-### 9.6.1 When to Choose Serverless (Khan Pattern™ Guidance)
+### 9.6.1 When to Choose Serverless (Adaptive Granularity Strategy Guidance)
 
 **Decision Matrix:**
 
@@ -496,7 +496,7 @@ While this chapter has focused on eBPF and container-based networking, the moder
 | **Team Expertise** | Kubernetes knowledge | Event-driven patterns | Both |
 | **Compliance** | Full control needed | AWS-managed OK | Depends |
 
-**Khan Pattern™ RVx Adjustment for Serverless:**
+**Adaptive Granularity Strategy RVx Adjustment for Serverless:**
 
 ```
 RVx_Serverless = (Ê^β × Ŝ × Î) / (L̂^α + C_cold + ε)
@@ -791,7 +791,7 @@ print(calculate_breakeven(100_000_000, 200, 512))
 # {'eks_cost': 149, 'lambda_cost': 186.87, 'recommendation': 'EKS', 'savings': 37.87}
 ```
 
-**Khan Pattern™ Guidance:**
+**Adaptive Granularity Strategy Guidance:**
 - **< 10M requests/month:** Lambda is almost always cheaper
 - **10M - 50M requests/month:** Hybrid approach (Lambda for spikes, EKS for baseline)
 - **> 50M requests/month:** EKS/ECS is more cost-effective
@@ -864,7 +864,7 @@ fields @timestamp, @duration, @billedDuration, @memorySize, @maxMemoryUsed
 
 ### Conclusion: The Compute Spectrum Strategy
 
-The modern architect doesn't choose between containers and serverless—they orchestrate both. The Khan Pattern™ provides the framework for making these decisions based on workload characteristics, cost profiles, and operational maturity.
+The modern architect doesn't choose between containers and serverless—they orchestrate both. The Adaptive Granularity Strategy provides the framework for making these decisions based on workload characteristics, cost profiles, and operational maturity.
 
 **Key Takeaways:**
 - ✅ Use Lambda for event-driven, bursty workloads (< 15 min execution)
@@ -877,7 +877,7 @@ The modern architect doesn't choose between containers and serverless—they orc
 
 The shift to eBPF is not merely a performance optimization; it's a structural reorganization of the cloud-native stack. By pushing networking, security, and observability into the kernel, we drastically reduce the "Cognitive Load" (C_{load}) on application developers—they no longer need to worry about sidecar injections, mTLS certificate rotation, or trace instrumentation.
 
-Similarly, the evolution of serverless computing provides architects with new tools to optimize for cost, simplicity, and scalability. The key is understanding the full compute spectrum and applying the Khan Pattern™ to make context-aware decisions.
+Similarly, the evolution of serverless computing provides architects with new tools to optimize for cost, simplicity, and scalability. The key is understanding the full compute spectrum and applying the Adaptive Granularity Strategy to make context-aware decisions.
 
 For the Senior Architect, tools like Cilium and Tetragon provide the levers necessary to govern the entropy of microservices. Whether implementing a global Cell-Based Architecture via ClusterMesh or enforcing zero-trust with Tetragon, the power lies in the granularity of control. We are no longer managing "servers" or "proxies"; we are programming the network itself.
 
@@ -887,7 +887,7 @@ As we move into Chapter 10, we will leave the synchronous world of packets and e
 
 ## Summary
 
-This chapter explored the significant shift from traditional sidecar-based service mesh architectures to eBPF-powered networking solutions. We covered the mathematical foundations of the Khan Index for evaluating architectural efficiency, detailed implementation of Cilium ClusterMesh for cell-based architectures, runtime security enforcement with Tetragon, and provided a comprehensive migration playbook from AWS VPC CNI to Cilium. We also explored the serverless computing spectrum, comparing AWS Lambda with container-based approaches and providing guidance on when to use each based on the Khan Pattern™ framework. The chapter demonstrated how eBPF technology and serverless computing enable unprecedented performance improvements while reducing operational complexity in microservices environments.
+This chapter explored the significant shift from traditional sidecar-based service mesh architectures to eBPF-powered networking solutions. We covered the mathematical foundations of the Khan Index for evaluating architectural efficiency, detailed implementation of Cilium ClusterMesh for cell-based architectures, runtime security enforcement with Tetragon, and provided a comprehensive migration playbook from AWS VPC CNI to Cilium. We also explored the serverless computing spectrum, comparing AWS Lambda with container-based approaches and providing guidance on when to use each based on the Adaptive Granularity Strategy framework. The chapter demonstrated how eBPF technology and serverless computing enable unprecedented performance improvements while reducing operational complexity in microservices environments.
 
 ## What's Next?
 

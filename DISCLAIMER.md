@@ -1,8 +1,8 @@
-﻿# Disclaimer and Limitation of Liability
+# Disclaimer and Limitation of Liability
 
 ## Intellectual Property and Methodology Notice
 
-The architectural approaches described in this book, including the "Adaptive Granularity Strategy" (formerly referred to as the Khan Pattern) and "Microservices Maturity Assessment" (formerly KM3), are proprietary methodologies developed by the author, Viquar Khan, based on professional experience.
+The architectural approaches described in this book, including the "Adaptive Granularity Strategy (Author's Method)", "Service Decomposition Workflow (Author's Method)", and "Microservices Maturity Assessment (Author's Method)", are proprietary methodologies developed by the author, Viquar Khan, based on professional experience. These terms establish attribution and methodology ownership without trademark claims.
 
 **No Trademark Claims**: These terms are not registered trademarks in the United States or any other jurisdiction. The use of these terms is for descriptive purposes only and does not imply endorsement by any standards body (such as IEEE, IETF, or ISO). Any resemblance to registered trademarks is coincidental.
 

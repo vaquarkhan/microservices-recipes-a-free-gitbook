@@ -25,7 +25,7 @@ readingTime: "40 minutes"
   </div>
 </div>
 
-In the maturation of any distributed system, there comes a critical inflection point described in the VaquarKhan (Khan) Pattern™ as the transition from "Phase 2: Expansion" to the management of steady-state complexity. If the database serves as the memory of an organization, preserving state across time, the messaging infrastructure functions as its nervous system, transmitting signals—events, commands, and queries—across the chasm of the network. This chapter addresses the single most significant operational risk introduced during the "Expansion" phase: the management of the Network Tax.
+In the maturation of any distributed system, there comes a critical inflection point described in the Adaptive Granularity Strategy as the transition from "Phase 2: Expansion" to the management of steady-state complexity. If the database serves as the memory of an organization, preserving state across time, the messaging infrastructure functions as its nervous system, transmitting signals—events, commands, and queries—across the chasm of the network. This chapter addresses the single most significant operational risk introduced during the "Expansion" phase: the management of the Network Tax.
 
 When a monolithic application is decomposed to resolve high Kinetic Friction—where a single unit of compute is overwhelmed by competing concerns—the architect trades local, in-memory complexity for distributed, network-bound complexity. In the "One Cook Kitchen" (monolith), a function call is instantaneous, transactional, and guaranteed. In the distributed microservices environment, that same interaction becomes a probabilistic event subject to latency, serialization overhead, and partial failure. This is the Network Tax: the cost paid in latency and cognitive load for the privilege of independent scaling.
 
@@ -38,9 +38,9 @@ Without these mechanisms, the system remains vulnerable to "Entropic Collapse." 
 In fluid dynamics, backpressure refers to the resistance or force opposing the desired flow of fluid through pipes. In distributed software systems, it is the mechanism by which a downstream consumer signals to an upstream producer that it is overwhelmed and cannot accept more work. In the absence of backpressure, systems fail catastrophically rather than degrading gracefully.
 
 ![Backpressure Flow Control](../assets/images/diagrams/backpressure-flow-control.png)
-*Figure 10.1: Backpressure flow control mechanisms in distributed systems, showing producer-consumer patterns and VaquarKhan (Khan) Pattern application*
+*Figure 10.1: Backpressure flow control mechanisms in distributed systems, showing producer-consumer patterns and Adaptive Granularity Strategy application*
 
-The architectural imperative for 2026 is to move beyond simple buffering and implement active flow control. The VaquarKhan (Khan) Pattern emphasizes that while splitting services reduces Kinetic Friction (workload per unit), it introduces the risk of "latency storms" if the communication channels are not governed by strict physics.
+The architectural imperative for 2026 is to move beyond simple buffering and implement active flow control. The Adaptive Granularity Strategy emphasizes that while splitting services reduces Kinetic Friction (workload per unit), it introduces the risk of "latency storms" if the communication channels are not governed by strict physics.
 ### 10.1.1 The Push vs. Pull Dichotomy
 
 The fundamental determination of how backpressure is handled lies in the choice of messaging model: Push vs. Pull.
@@ -57,7 +57,7 @@ For the Senior Architect, the Pull Model via Amazon SQS is the non-negotiable st
 
 ### 10.1.2 Tuning the Lambda SQS Valve
 
-In modern cloud-native architectures (specifically AWS), the "Pull" model is often abstracted by the Lambda service, which manages the polling fleet on behalf of the developer. While this reduces operational overhead—the "Cognitive Load" variable in the VaquarKhan (Khan) Index—it obscures the mechanics of flow control. To manage backpressure effectively, one must understand how the Lambda Poller interacts with the SQS queue.
+In modern cloud-native architectures (specifically AWS), the "Pull" model is often abstracted by the Lambda service, which manages the polling fleet on behalf of the developer. While this reduces operational overhead—the "Cognitive Load" variable in the RVx Index—it obscures the mechanics of flow control. To manage backpressure effectively, one must understand how the Lambda Poller interacts with the SQS queue.
 
 #### The Scaling Behavior and Concurrency Limits
 
@@ -199,7 +199,7 @@ def lambda_handler(event, context):
 
 ### 10.2.4 The Redrive Workflow
 
-Moving a message to a DLQ is not the end of the story; it is a request for human or automated intervention. The VaquarKhan (Khan) Pattern dictates that we must minimize the "Cognitive Load" of operations. Therefore, the DLQ strategy must include a path for resolution.
+Moving a message to a DLQ is not the end of the story; it is a request for human or automated intervention. The Adaptive Granularity Strategy dictates that we must minimize the "Cognitive Load" of operations. Therefore, the DLQ strategy must include a path for resolution.
 
 #### The 2026 Operational Protocol
 
@@ -314,7 +314,7 @@ Furthermore, utilizing the full 1 MB capacity of a message bus introduces a seve
 
 The Claim Check Pattern (also referenced as Reference-Based Messaging). Instead of transmitting the heavy payload through the messaging system, the producer stores the data in a service optimized for large unstructured blobs (Amazon S3) and sends a lightweight "Claim Check" (a reference pointer) through the queue. The consumer receives the check, retrieves the payload from S3, processes it, and cleans up.
 
-#### The VaquarKhan (Khan) Index Analysis
+#### The RVx Index Analysis
 
 - **Kinetic Friction**: Reduced. The message bus is no longer clogged.
 - **Network Tax**: Mixed. We trade SQS bandwidth for S3 latency (the extra hop).
@@ -560,7 +560,7 @@ Asynchronous messaging is not merely a fire-and-forget mechanism; it is a commit
 
 The patterns detailed in this chapter—**Backpressure** (the valve), **Poison Message Handling** (the filter), and **Idempotency** (the memory)—are the non-negotiable requirements for a mature architecture. They are the mechanisms that prevent Kinetic Friction from escalating into Entropic Collapse.
 
-The **Claim Check Pattern** serves as the ultimate example of the VaquarKhan (Khan) Pattern in action: we deliberately accept the "Network Tax" of S3 latency to buy the "Kinetic" capability of processing effectively infinite payload sizes without clogging the system's arteries.
+The **Claim Check Pattern** serves as the ultimate example of the Adaptive Granularity Strategy in action: we deliberately accept the "Network Tax" of S3 latency to buy the "Kinetic" capability of processing effectively infinite payload sizes without clogging the system's arteries.
 
 As we move into Part IV (Resilience Engineering), remember: a distributed system that cannot handle its own flow is indistinguishable from a denial-of-service attack. Design your nervous system to tolerate the chaos, not just transmit it.
 
