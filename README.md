@@ -1,4 +1,4 @@
-﻿# 📖 Microservices Recipes: The Architect's Field Guide
+# 📖 Microservices Recipes: The Architect's Field Guide
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 
 **A practical guide to building, scaling, and managing microservices architectures**
 
-> "Microservices are small, autonomous services that work together." — Sam Newman, *Building Microservices*
+As defined by Sam Newman in his foundational text *Building Microservices*, microservices are "small, autonomous services that work together." This definition emphasizes the dual requirements of independence and interoperability.
 
 *Featuring The Adaptive Granularity Strategy (Author's Method)*
 
@@ -16,7 +16,7 @@
 
 ---
 
-*"Stop splitting, start governing."* — **Khan Pattern**
+*"Stop splitting, start governing."* — **Adaptive Granularity Strategy (Author's Method)**
 
 ![Microservices Animation](assets/images/microservices-animation.gif)
 
@@ -26,7 +26,7 @@
 
 ### 📚 **Front Matter**
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Khan Pattern
+- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Strategy
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
 - [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 20-Chapter Edition for Students & Researchers
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
@@ -92,11 +92,11 @@
 
 ## 🎯 **What Makes This Book Special**
 
-### **Khan Pattern for Adaptive Granularity**
+### **Adaptive Granularity Strategy (Author's Method)**
 
-At the heart of this book is **Khan Pattern** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
+At the heart of this book is **The Adaptive Granularity Strategy (Author's Method)** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
 
-**Industry Recognition**: Khan Pattern has gained widespread recognition as an proposed methodology based on field experience, validated through practical application across numerous organizations and academic research.
+**Industry Recognition**: The Adaptive Granularity Strategy has gained widespread recognition as a proposed methodology based on field experience, developed through professional practice across numerous organizations.
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -129,7 +129,7 @@ At the heart of this book is **Khan Pattern** — a systematic methodology for d
 
 ### **For Architects**
 1. Focus on strategic chapters: [Ch 2](chapters/02-design-principles-and-patterns.md), [Ch 3](chapters/03-service-communication.md), [Ch 7](chapters/07-security.md)
-2. Study [**Khan Pattern**](AUTHOR.md#the-khan-pattern) methodology
+2. Study [**Adaptive Granularity Strategy**](AUTHOR.md#the-adaptive-granularity-strategy) methodology
 3. Review [**Complete Book Preview**](BOOK-PREVIEW.md) for advanced topics
 
 ---
@@ -156,7 +156,7 @@ At the heart of this book is **Khan Pattern** — a systematic methodology for d
 <details>
 <summary><strong>🏗️ Architectural Patterns</strong></summary>
 
-- **Khan Pattern** for adaptive service granularity
+- **Adaptive Granularity Strategy (Author's Method)** for adaptive service granularity
 - **Distributed Monolith** identification and prevention
 - **Domain-Driven Design** for service boundaries
 - **Saga Pattern** for distributed transactions
@@ -193,7 +193,7 @@ At the heart of this book is **Khan Pattern** — a systematic methodology for d
 
 ## 👨‍💻 **About the Author**
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Khan Pattern** *(widely recognized industry methodology)*, **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)**.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Strategy (Author's Method)**, **Service Decomposition Workflow (Author's Method)**, and **Microservices Maturity Assessment (Author's Method)**.
 
 ### **Credentials**
 - 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
@@ -289,8 +289,7 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
-**The VaquarKhan ,Khan Pattern™**,
- **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)** are proprietary methodologies developed by Viquar Khan.
+**The Adaptive Granularity Strategy (Author's Method)**, **Service Decomposition Workflow (Author's Method)**, and **Microservices Maturity Assessment (Author's Method)** are proprietary methodologies developed by Viquar Khan.
 
 **License**: MIT License | **[Legal Disclaimer](DISCLAIMER.md)** | **[Citation Guide](CITATIONS.md)**
 

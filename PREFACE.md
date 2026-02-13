@@ -4,7 +4,7 @@
 
 I wrote *Microservices Recipes* to address a gap I've observed throughout my 22 years working with distributed systems at companies like Amazon: the disconnect between microservices theory and practical implementation. While countless resources explain what microservices are, few provide actionable guidance on how to build them successfully in real-world environments.
 
-This book introduces **The VaquarKhan (Khan) Pattern™ for Adaptive Granularity**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
+This book introduces **The Adaptive Granularity Strategy (Author's Method)**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
 
 The open-source nature of this project has been essential to its development. With over 600 GitHub stars and active contributions from the community, this work continues to evolve based on real-world feedback and implementation experiences.
 
@@ -12,9 +12,9 @@ Whether you're an architect at an enterprise organization or a developer buildin
 
 ---
 
-## The Khan Pattern™ for Adaptive Granularity
+## The Adaptive Granularity Strategy (Author's Method)
 
-The central contribution of this book is the Khan Pattern, a systematic methodology for microservice decomposition that addresses the "Granularity Paradox" - the challenge of determining optimal service boundaries.
+The central contribution of this book is the Adaptive Granularity Strategy (Author's Method), a systematic methodology for microservice decomposition that addresses the "Granularity Paradox" - the challenge of determining optimal service boundaries.
 
 ### The Challenge
 
@@ -26,7 +26,7 @@ Traditional microservice decomposition relies on qualitative guidelines that oft
 
 ### The Solution: The RVx Index
 
-The Khan Pattern introduces the RVx Index, a mathematical formula for measuring service boundary effectiveness:
+The Adaptive Granularity Strategy introduces the RVx Index, a mathematical formula for measuring service boundary effectiveness:
 
 ```
 RVx = (Ê^β × Ŝ) / (L̂^α + ε)
@@ -58,7 +58,7 @@ The pattern has been extended to address contemporary challenges:
 
 ### Core Patterns and Frameworks
 
-**Khan Pattern Decision Matrices:**
+**Adaptive Granularity Strategy Decision Matrices:**
 - Saga topology selection (Choreography vs. Orchestration)
 - Quantitative scoring for transaction patterns
 - Implementation checklists and anti-pattern identification
@@ -72,7 +72,7 @@ The pattern has been extended to address contemporary challenges:
 - Conway's Law in practice
 - Team Topologies integration
 - Cognitive Load Theory applied to service sizing
-- KM3 Maturity Model for organizational assessment
+- Microservices Maturity Assessment (Author's Method) for organizational assessment
 
 ---
 
@@ -84,11 +84,11 @@ This field guide is designed for the Senior Architect. It moves beyond rudimenta
 
 The modern architect acts not as a dictator of blueprints but as a gardener of ecosystems, cultivating a landscape where independent teams can thrive without descending into chaos.
 
-## Khan Pattern: A New Paradigm
+## Adaptive Granularity Strategy: A New Paradigm
 
 Traditional approaches to microservices decomposition often rely on rigid rules: "one service per database table," "services should be small enough to rewrite in two weeks," or "follow domain boundaries strictly." While these guidelines provide starting points, they fail to account for the diverse contexts in which microservices operate.
 
-Khan Pattern introduces context-driven, adaptive granularity. Instead of following one-size-fits-all rules, this pattern provides a framework for making granularity decisions based on:
+The Adaptive Granularity Strategy introduces context-driven, adaptive granularity. Instead of following one-size-fits-all rules, this pattern provides a framework for making granularity decisions based on:
 
 - **Organizational maturity and team structure**
 - **Business domain complexity and change frequency**
@@ -161,7 +161,7 @@ Welcome to the world of microservices architecture. This guide will help you bui
 ---
 
 **Viquar Khan**  
-*Author and Creator of The VaquarKhan (Khan) Pattern™*  
+*Author and Creator of The Adaptive Granularity Strategy*  
 *February 10, 2026*
 
 ---
@@ -171,15 +171,15 @@ Welcome to the world of microservices architecture. This guide will help you bui
 **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
 
 **Proprietary Methodologies:**
-- The VaquarKhan (Khan) Pattern™ for Adaptive Granularity *(Trademark of Viquar Khan)*
-- Khan Granularity Protocol *(Trademark of Viquar Khan)*
-- Khan Microservices Maturity Model (KM3) *(Trademark of Viquar Khan)*
+- The Adaptive Granularity Strategy (Author's Method)
+- Service Decomposition Workflow (Author's Method)
+- Microservices Maturity Assessment (Author's Method)
 
-**Note**: Khan Pattern is a widely recognized industry methodology for microservices architecture, developed through years of real-world application and continuous refinement.
+**Note**: These are proprietary methodologies developed through professional practice. See [DISCLAIMER.md](DISCLAIMER.md) for full legal notice.
 
 **Publication Information:**
 - First Edition: January 2017
-- Second Edition: January 2026 (Khan Pattern Edition)
+- Second Edition: January 2026 (Adaptive Granularity Strategy Edition)
 - License: MIT License
 - Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 

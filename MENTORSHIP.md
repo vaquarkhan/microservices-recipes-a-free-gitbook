@@ -1,17 +1,17 @@
 ﻿# 🎓 Free Mentorship with Viquar Khan
 
-**Personal Guidance from the Creator of The VaquarKhan (Khan) Pattern™**
+**Personal Guidance from the Creator of The Adaptive Granularity Strategy**
 
 ---
 
 ## 👨‍💻 **Meet Your Mentor**
 
-**Viquar Khan** is a Senior Data Architect at AWS Professional Services with over 20 years of experience in distributed systems, microservices architecture, and enterprise transformations. As the creator of **Khan Pattern**, **Khan Granularity Protocol**, and **Khan Microservices Maturity Model (KM3)**, Viquar has guided organizations through successful microservices transformations.
+**Viquar Khan** is a Senior Data Architect at AWS Professional Services with over 20 years of experience in distributed systems, microservices architecture, and enterprise transformations. As the creator of **Adaptive Granularity Strategy (Author's Method)**, **Service Decomposition Workflow (Author's Method)**, and **Microservices Maturity Assessment (Author's Method)**, Viquar has guided organizations through successful microservices transformations.
 
 ### **🏆 Professional Achievements**
 - 20+ years in software architecture and distributed systems
 - Senior Data Architect at AWS Professional Services
-- Creator of Khan Pattern methodology
+- Creator of Adaptive Granularity Strategy methodology
 - Expert Group Member of JSR 368 (Java™ Message Service 2.1)
 - Author of "Data Engineering with AWS Cookbook" (Packt, 2026)
 - 7.5M+ developers reached on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan)
@@ -40,7 +40,7 @@ Viquar offers **complimentary 1:1 mentorship sessions** to help developers, arch
 
 ### **🏗️ Architecture & Design**
 - Microservices Strategy - When and how to adopt microservices
-- Khan Pattern - Deep dive into adaptive granularity methodology
+- Adaptive Granularity Strategy - Deep dive into adaptive granularity methodology
 - System Design - Scalable, resilient distributed systems
 - Technology Selection - Choosing the right tools and platforms
 - Migration Planning - From monolith to microservices transformation
@@ -137,7 +137,7 @@ Viquar offers **complimentary 1:1 mentorship sessions** to help developers, arch
 - **Career Panel Discussions** - Multiple experts sharing insights
 
 #### **🛠️ Hands-On Workshops**
-- Khan Pattern Workshop - 3-hour intensive training
+- Adaptive Granularity Strategy Workshop - 3-hour intensive training
 - Microservices Design Workshop - Practical decomposition exercises
 - System Design Interview Prep - Mock interviews and feedback
 - Architecture Documentation Workshop - Creating effective diagrams
@@ -145,7 +145,7 @@ Viquar offers **complimentary 1:1 mentorship sessions** to help developers, arch
 ### **📖 Recommended Preparation**
 Before your session, consider reviewing:
 - This book - Especially chapters relevant to your questions
-- The Khan Pattern™ methodology in the AUTHOR.md file
+- The Adaptive Granularity Strategy methodology in the AUTHOR.md file
 - Your current challenges - Be specific about what you need help with
 - Industry best practices - Come with informed questions
 

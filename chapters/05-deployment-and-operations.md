@@ -86,11 +86,11 @@ The implementation of Saga requires a mechanism to coordinate the sequence of lo
 | Single Point of Failure | None; highly distributed | The Orchestrator (mitigated by HA services like AWS Step Functions) |
 | Mental Model | "Reactionary" - Services do what they do when triggered | "Authoritative" - A central brain defines the process |
 
-### Khan Pattern™ Decision Matrix: Choosing Your Saga Topology
+### Adaptive Granularity Strategy Decision Matrix: Choosing Your Saga Topology
 
-The choice between Choreography and Orchestration is not ideological—it's mathematical. The Khan Pattern™ provides a quantitative framework for this decision based on workflow characteristics.
+The choice between Choreography and Orchestration is not ideological—it's mathematical. The Adaptive Granularity Strategy provides a quantitative framework for this decision based on workflow characteristics.
 
-**Table 5.2: Khan Pattern™ Saga Selection Matrix**
+**Table 5.2: Adaptive Granularity Strategy Saga Selection Matrix**
 
 | Workflow Characteristic | Score | Choreography Viability | Orchestration Necessity | Recommended Pattern |
 |------------------------|-------|------------------------|------------------------|---------------------|
@@ -144,7 +144,7 @@ Decision Rule:
 - SCS = (4×2) + (4×3) + (8×1) = 8 + 12 + 8 = **28**
 - **Recommendation: Orchestration Required** (Step Functions with audit logging)
 
-### Khan Pattern™ Anti-Patterns to Avoid
+### Adaptive Granularity Strategy Anti-Patterns to Avoid
 
 **Anti-Pattern 1: "Choreography for Everything"**
 

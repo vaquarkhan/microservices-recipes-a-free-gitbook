@@ -80,7 +80,7 @@ If a service is so large that you're afraid to touch it, it's a monolith. If it'
 
 ### 1.2.2 Granularity vs. Cognitive Load
 
-The Khan Granularity Protocol™ builds on team-centric sizing principles from Team Topologies. It helps architects optimize for the "Goldilocks Zone" where the team can hold the entire domain model in their working memory.
+The Service Decomposition Workflow builds on team-centric sizing principles from Team Topologies. It helps architects optimize for the "Goldilocks Zone" where the team can hold the entire domain model in their working memory.
 
 Low cognitive load means the team understands the code completely. They can deploy on Friday afternoon with confidence.
 
@@ -293,7 +293,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic—it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
 
-**Khan Pattern™ Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
+**Adaptive Granularity Strategy Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
 
 ### 2. The Semantic API Revolution
 
@@ -301,7 +301,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI agents don't navigate REST APIs—they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
 
-**Khan Pattern™ Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
+**Adaptive Granularity Strategy Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
 - **Natural Language Descriptions:** Every endpoint must have clear, unambiguous descriptions that LLMs can parse
 - **Schema Validation:** Use JSON Schema or OpenAPI 3.1+ with rich examples
 - **Idempotency by Default:** AI agents may retry operations due to hallucination or uncertainty
@@ -312,7 +312,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**—numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
 
-**Khan Pattern™ Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
+**Adaptive Granularity Strategy Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
 
 **Decision Matrix:**
 
@@ -328,7 +328,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI services scale based on **token consumption**. A single API call to GPT-4 might cost $0.03 (for 1000 tokens), while a traditional REST call costs fractions of a cent.
 
-**Khan Pattern™ Guidance:** Introduce **Cost-Aware Circuit Breakers**. Traditional circuit breakers trip on error rates or latency. AI-native circuit breakers must also trip on:
+**Adaptive Granularity Strategy Guidance:** Introduce **Cost-Aware Circuit Breakers**. Traditional circuit breakers trip on error rates or latency. AI-native circuit breakers must also trip on:
 - **Token Burn Rate:** If a service exceeds its token budget, degrade gracefully
 - **Hallucination Detection:** If an AI service returns low-confidence responses repeatedly, circuit-break to prevent cascading errors
 
@@ -338,7 +338,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI services introduce **non-deterministic behavior**. The same input prompt can yield different outputs due to temperature settings, model updates, or stochastic sampling.
 
-**Khan Pattern™ Guidance:** Extend OpenTelemetry spans with **AI-specific attributes**:
+**Adaptive Granularity Strategy Guidance:** Extend OpenTelemetry spans with **AI-specific attributes**:
 - `ai.model.name`: Which model was used
 - `ai.prompt.hash`: SHA-256 of the input prompt (for reproducibility)
 - `ai.response.confidence`: Model's confidence score
@@ -354,7 +354,7 @@ The principles articulated by Fowler, Newman, and Richardson remain the bedrock 
 3. **Token Economics** must inform scaling and circuit-breaking strategies
 4. **Probabilistic Behavior** requires new observability primitives
 
-The Khan Pattern™ for Adaptive Granularity was designed precisely for this era of rapid technological evolution. It doesn't prescribe rigid rules but provides a **framework for reasoning** about service boundaries in the face of new constraints.
+The Adaptive Granularity Strategy was designed precisely for this era of rapid technological evolution. It doesn't prescribe rigid rules but provides a **framework for reasoning** about service boundaries in the face of new constraints.
 
 ---
 

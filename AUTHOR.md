@@ -15,9 +15,9 @@ Viquar brings deep expertise in:
 - **Data Engineering**: Advanced data pipeline and analytics solutions
 - **Team Leadership**: Guiding development teams through architectural transformations
 
-### The Khan Pattern™
+### The Adaptive Granularity Strategy
 
-Viquar is the creator of **The Khan Pattern™ for Adaptive Granularity**, **The Khan Granularity Protocol™**, and **The Khan Microservices Maturity Model (KM3™)** -- proprietary methodologies that represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
+Viquar is the creator of **The Adaptive Granularity Strategy (Author's Method)**, **The Service Decomposition Workflow (Author's Method)**, and **The Microservices Maturity Assessment (Author's Method)** — proprietary methodologies that represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
 
 These frameworks stand on the shoulders of giants, building upon foundational works including:
 - **Cognitive Load Theory** from Team Topologies by Matthew Skelton and Manuel Pais

@@ -14,6 +14,9 @@ A layer that isolates a client's domain model from another system's domain model
 **Asynchronous Communication**
 A communication pattern where the sender does not wait for a response from the receiver before continuing with other tasks. Common in microservices for loose coupling between services.
 
+**Adaptive Granularity Strategy (Author's Method)**
+A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints. Proprietary methodology developed by Viquar Khan. Formerly referred to as the Khan Pattern.
+
 ## B
 
 **Bounded Context**
@@ -123,9 +126,6 @@ The practice of designing your team structure to match your desired architecture
 A compact, URL-safe means of representing claims to be transferred between two parties, commonly used for authentication and authorization in microservices.
 
 ## K
-
-**Khan Pattern**
-A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints.
 
 **Kubernetes**
 An open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
@@ -271,7 +271,7 @@ A deployment target that represents a failure domain, such as an availability zo
 
 This glossary provides definitions for terms as they are used in the context of microservices architecture. Some terms may have broader or different meanings in other contexts. For more detailed explanations and examples, please refer to the relevant chapters in this book.
 
-Terms marked with ™ are proprietary concepts introduced in this book. All other terms represent industry-standard concepts and patterns.
+Proprietary methodologies (Adaptive Granularity Strategy (Author's Method), Service Decomposition Workflow (Author's Method), Microservices Maturity Assessment (Author's Method)) are described in [DISCLAIMER.md](../DISCLAIMER.md). All other terms represent industry-standard concepts and patterns.
 
 ---
 
