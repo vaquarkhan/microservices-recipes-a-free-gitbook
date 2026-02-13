@@ -1,8 +1,8 @@
----
+﻿---
 title: "Introduction to Microservices"
 chapter: 1
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices
@@ -279,11 +279,11 @@ The Senior Architect does not blindly "adopt microservices." They manipulate the
 
 ---
 
-## Khan's Commentary: Microservices in the 2024+ GenAI Era
+## Khan's Commentary: Microservices in the 2026+ GenAI Era
 
 ### The Evolution of Definitions
 
-Fowler and Newman laid out the principles of microservices architecture in the mid-2010s, the landscape was dominated by concerns of scalability, deployment independence, and organizational alignment. These principles still hold true, but the emergence of Generative AI and Large Language Models (LLMs) in 2023-2024 has changed how we think about of microservices design.
+Fowler and Newman laid out the principles of microservices architecture in the mid-2010s, the landscape was dominated by concerns of scalability, deployment independence, and organizational alignment. These principles still hold true, but the emergence of Generative AI and Large Language Models (LLMs) in 2023-2026 has changed how we think about of microservices design.
 
 As an AWS Senior Architect working at the intersection of distributed systems and AI/ML workloads, I've observed three critical shifts that demand an evolution of classical microservices thinking:
 
@@ -291,7 +291,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** A microservice should encapsulate a single business capability.
 
-**2024+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic—it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
+**2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic—it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
 
 **Khan Pattern™ Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
 
@@ -299,7 +299,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** APIs should be RESTful, following HTTP verbs and resource-oriented design.
 
-**2024+ Reality:** AI agents don't navigate REST APIs—they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
+**2026+ Reality:** AI agents don't navigate REST APIs—they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
 
 **Khan Pattern™ Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
 - **Natural Language Descriptions:** Every endpoint must have clear, unambiguous descriptions that LLMs can parse
@@ -310,7 +310,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** Each microservice owns its database (Database per Service pattern).
 
-**2024+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**—numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
+**2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**—numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
 
 **Khan Pattern™ Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
 
@@ -326,7 +326,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** Microservices scale independently based on CPU/memory.
 
-**2024+ Reality:** AI services scale based on **token consumption**. A single API call to GPT-4 might cost $0.03 (for 1000 tokens), while a traditional REST call costs fractions of a cent.
+**2026+ Reality:** AI services scale based on **token consumption**. A single API call to GPT-4 might cost $0.03 (for 1000 tokens), while a traditional REST call costs fractions of a cent.
 
 **Khan Pattern™ Guidance:** Introduce **Cost-Aware Circuit Breakers**. Traditional circuit breakers trip on error rates or latency. AI-native circuit breakers must also trip on:
 - **Token Burn Rate:** If a service exceeds its token budget, degrade gracefully
@@ -336,7 +336,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** Distributed tracing (OpenTelemetry) tracks deterministic request flows.
 
-**2024+ Reality:** AI services introduce **non-deterministic behavior**. The same input prompt can yield different outputs due to temperature settings, model updates, or stochastic sampling.
+**2026+ Reality:** AI services introduce **non-deterministic behavior**. The same input prompt can yield different outputs due to temperature settings, model updates, or stochastic sampling.
 
 **Khan Pattern™ Guidance:** Extend OpenTelemetry spans with **AI-specific attributes**:
 - `ai.model.name`: Which model was used
@@ -347,7 +347,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 ### Conclusion: The Adaptive Architect's Mandate
 
-The principles articulated by Fowler, Newman, and Richardson remain the bedrock of microservices architecture. However, the 2024+ era demands that we **extend, not replace**, these principles to account for the unique characteristics of AI/ML workloads:
+The principles articulated by Fowler, Newman, and Richardson remain the bedrock of microservices architecture. However, the 2026+ era demands that we **extend, not replace**, these principles to account for the unique characteristics of AI/ML workloads:
 
 1. **Computational Gravity** is as important as business domain boundaries
 2. **Semantic Clarity** is a first-class API requirement

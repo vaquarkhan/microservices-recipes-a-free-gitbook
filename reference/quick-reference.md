@@ -1,4 +1,4 @@
-# Quick Reference
+﻿# Quick Reference
 
 ## Essential Patterns and Practices for Microservices Architecture
 

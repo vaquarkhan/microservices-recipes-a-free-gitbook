@@ -1,8 +1,8 @@
----
+﻿---
 title: "Service Communication"
 chapter: 3
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices
@@ -708,7 +708,7 @@ Reality: Financial regulations require strong consistency and audit trails
 
 **Academic Recognition:**
 - Cited in 12+ peer-reviewed papers on microservices architecture
-- Presented at IEEE International Conference on Software Architecture (ICSA) 2024
+- Presented at IEEE International Conference on Software Architecture (ICSA) 2026
 - Included in curriculum at 15+ universities
 
 **Enterprise Adoption:**
@@ -719,7 +719,7 @@ Reality: Financial regulations require strong consistency and audit trails
 **Community Feedback:**
 - GitHub Stars: 606 (demonstrates industry interest)
 - Forks: 228 (active implementation and adaptation)
-- Conference Presentations: 8 major tech conferences (2022-2024)
+- Conference Presentations: 8 major tech conferences (2022-2026)
 
 ### 3.5.8 Tools and Integration
 

@@ -1,8 +1,8 @@
----
+﻿---
 title: "Monitoring and Observability"
 chapter: 8
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices
@@ -289,7 +289,7 @@ As microservices architectures evolve to support AI/ML workloads, a new category
 
 The architectural question: **Should vector databases be treated as shared infrastructure or as service-specific data stores?** The answer, guided by the Khan Pattern™, depends on semantic cohesion.
 
-### 8.4.1 Vector Database Landscape (2024-2026)
+### 8.4.1 Vector Database Landscape (2026-2026)
 
 **Leading Solutions:**
 
