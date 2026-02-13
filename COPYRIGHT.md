@@ -1,4 +1,4 @@
-# Copyright Notice
+﻿# Copyright Notice
 
 ## Microservices Recipes: The Architect's Field Guide
 
@@ -12,7 +12,7 @@
 - **Subtitle**: Featuring The Khan Pattern™ for Adaptive Granularity
 - **Author**: Viquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2024 (The Khan Pattern™ Edition)
+- **Second Edition**: January 2026 (The Khan Pattern™ Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook

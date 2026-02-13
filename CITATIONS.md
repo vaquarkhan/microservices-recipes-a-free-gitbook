@@ -1,4 +1,4 @@
-# 📖 How to Cite This Work
+﻿# 📖 How to Cite This Work
 
 **Microservices Recipes: The Architect's Field Guide**  
 *Proper Citation Formats for Academic and Professional Use*

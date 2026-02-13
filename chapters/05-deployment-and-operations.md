@@ -1,8 +1,8 @@
----
+﻿---
 title: "Deployment and Operations"
 chapter: 5
 author: "Viquar Khan"
-date: "2024-01-15"
+date: "2026-01-15"
 lastUpdated: "2026-02-10"
 tags: 
   - microservices
@@ -231,7 +231,7 @@ AWS EventBridge has emerged as the premier backbone for choreographed Sagas in t
 
 **Performance and Latency Improvements (2025 Outlook):**
 
-Historically, latency was a concern for event-driven architectures in synchronous user flows. However, recent benchmarks and announcements highlight massive optimizations. The end-to-end latency (P99) for EventBridge event buses has been reduced from over 2000ms in early 2023 to approximately 129ms as of late 2024/2025. This dramatic improvement—up to 94%—shifts the architectural calculus. Choreography, previously relegated to asynchronous background tasks, is now viable for near real-time user-facing flows where low latency is critical.
+Historically, latency was a concern for event-driven architectures in synchronous user flows. However, recent benchmarks and announcements highlight massive optimizations. The end-to-end latency (P99) for EventBridge event buses has been reduced from over 2000ms in early 2023 to approximately 129ms as of late 2026/2025. This dramatic improvement—up to 94%—shifts the architectural calculus. Choreography, previously relegated to asynchronous background tasks, is now viable for near real-time user-facing flows where low latency is critical.
 
 ### 5.3.4 The Necessity of Idempotency
 

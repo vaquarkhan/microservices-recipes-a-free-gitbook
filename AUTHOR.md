@@ -1,4 +1,4 @@
-# About the Author
+﻿# About the Author
 
 ## Viquar Khan
 
@@ -28,7 +28,7 @@ These frameworks stand on the shoulders of giants, building upon foundational wo
 ### Publications
 
 - **Microservices Recipes: The Architect's Field Guide** (2017, 2026)
-- **Data Engineering with AWS Cookbook** (Packt Publishing, 2024)
+- **Data Engineering with AWS Cookbook** (Packt Publishing, 2026)
 
 ### Philosophy
 
