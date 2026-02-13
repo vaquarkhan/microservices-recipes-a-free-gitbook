@@ -1,0 +1,41 @@
+graph LR
+    subgraph "Data Collection"
+        A1[OpenTelemetry<br/>Distributed Tracing]
+        A2[Git Repository<br/>Commit Analysis]
+        A3[SonarQube<br/>Static Analysis]
+    end
+    
+    subgraph "Metric Calculation"
+        B1["Ê = T_compute / T_total<br/>Kinetic Efficiency"]
+        B2["Ŝ = 1.0 - CouplingRatio<br/>Semantic Distinctness"]
+        B3["L̂ = Sigmoid(V,C,F)<br/>Cognitive Load"]
+    end
+    
+    subgraph "RVx Formula"
+        C1["RVx = (Ê × Ŝ) / (L̂ + ε)"]
+    end
+    
+    subgraph "Decision"
+        D1{RVx Score}
+        D2["< 0.3: MERGE"]
+        D3["0.3-0.6: MONITOR"]
+        D4["> 0.6: MAINTAIN"]
+    end
+    
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    
+    B1 --> C1
+    B2 --> C1
+    B3 --> C1
+    
+    C1 --> D1
+    D1 --> D2
+    D1 --> D3
+    D1 --> D4
+    
+    style C1 fill:#e1f5ff,stroke:#0066cc,stroke-width:3px
+    style D2 fill:#ffcccc,stroke:#cc0000,stroke-width:2px
+    style D3 fill:#ffffcc,stroke:#cccc00,stroke-width:2px
+    style D4 fill:#ccffcc,stroke:#00cc00,stroke-width:2px

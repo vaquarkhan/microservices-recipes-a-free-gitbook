@@ -1,0 +1,43 @@
+graph TB
+    subgraph "BEFORE: Nano-Swarm Anti-Pattern"
+        Client1[Client Request]
+        
+        S1[User Service<br/>RVx: 0.45]
+        S2[Avatar Service<br/>RVx: 0.18<br/>Ê: 0.12]
+        S3[Status Service<br/>RVx: 0.22<br/>Ê: 0.15]
+        S4[Preferences Service<br/>RVx: 0.28<br/>Ê: 0.20]
+        
+        DB1[(User DB)]
+        DB2[(Avatar DB)]
+        DB3[(Status DB)]
+        DB4[(Prefs DB)]
+        
+        Client1 --> S1
+        Client1 --> S2
+        Client1 --> S3
+        Client1 --> S4
+        
+        S1 --> DB1
+        S2 --> DB2
+        S3 --> DB3
+        S4 --> DB4
+    end
+    
+    Arrow[" "]
+    
+    subgraph "AFTER: Consolidated Service"
+        Client2[Client Request]
+        
+        S5[User Profile Service<br/>RVx: 0.87<br/>Ê: 0.78<br/>Single API Call]
+        
+        DB5[(User Profile DB<br/>Consolidated)]
+        
+        Client2 --> S5
+        S5 --> DB5
+    end
+    
+    style S2 fill:#ffcccc,stroke:#cc0000,stroke-width:2px
+    style S3 fill:#ffcccc,stroke:#cc0000,stroke-width:2px
+    style S4 fill:#ffcccc,stroke:#cc0000,stroke-width:2px
+    style S5 fill:#ccffcc,stroke:#00cc00,stroke-width:3px
+    style Arrow fill:none,stroke:none
