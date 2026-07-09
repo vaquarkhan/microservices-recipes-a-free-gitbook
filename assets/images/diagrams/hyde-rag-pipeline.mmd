@@ -1,0 +1,28 @@
+flowchart LR
+    Q["User query q"]
+    LLM1["LLM (temp=0)<br/>hypothetical doc h"]
+    EMB["Embedding model<br/>f(h)"]
+    IDX["Vector index<br/>ACL prefilter"]
+    RERANK["Cross-encoder<br/>rerank Top-K"]
+    LLM2["Generator<br/>with citations"]
+    ANS["Grounded answer"]
+
+    Q --> LLM1
+    LLM1 --> EMB
+    EMB --> IDX
+    IDX --> RERANK
+    RERANK --> LLM2
+    LLM2 --> ANS
+
+    subgraph Compare["Baseline RAG uses f(q)"]
+        Q2["query embedding"]
+    end
+    Q -.-> Q2
+
+    style Q fill:#e1f5ff,stroke:#3498db
+    style LLM1 fill:#ffccbc,stroke:#e64a19
+    style EMB fill:#f3e5f5,stroke:#8e24aa
+    style IDX fill:#fff9c4,stroke:#f39c12
+    style RERANK fill:#e8f4fc,stroke:#3498db
+    style LLM2 fill:#ffccbc,stroke:#e64a19
+    style ANS fill:#d5e8d4,stroke:#82b366,stroke-width:2px

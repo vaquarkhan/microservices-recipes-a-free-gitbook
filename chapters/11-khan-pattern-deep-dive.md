@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Granularity Governance: The Khan Microservice Pattern — Origin, Metrics, and Maturity Model"
+title: "Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model"
 chapter: 11
 author: "Viquar Khan"
 date: "2026-02-11"
@@ -62,7 +62,7 @@ The executive team demanded answers. The board questioned the entire microservic
 
 ### 11.1.2 The Revelation: What Was Really Wrong
 
-In the post-mortem analysis, I discovered something shocking: **the problem wasn't microservices—it was how we decided to split them.**
+In the post-mortem analysis, I discovered something shocking: **the problem wasn't microservices-it was how we decided to split them.**
 
 We had followed "best practices" that were actually **context-blind rules**:
 - "Services should be small" → We made them too small
@@ -99,7 +99,7 @@ Over the next 18 months (2018-2019), I led a systematic research effort:
 - Measured before/after improvements
 - Documented patterns and anti-patterns
 
-**The Result:** Adaptive Granularity Governance: The Khan Microservice Pattern for Adaptive Granularity was born—the industry's first mathematically rigorous, context-aware framework for microservices decomposition.
+**The Result:** Adaptive Granularity Governance: The Khan Microservice Pattern was born: the industry's first mathematically rigorous, context-aware framework for microservices decomposition.
 
 ![RVx Calculation Flow](../assets/images/diagrams/rvx-calculation-flow.png)
 
@@ -155,7 +155,7 @@ These flaws lead to predictable failure patterns:
 - Every team picks different languages, frameworks, databases
 - Operational complexity explodes
 - Knowledge silos form
-- Example: Java, Node.js, Python, Go, Ruby—all in one system with 30 services
+- Example: Java, Node.js, Python, Go, Ruby-all in one system with 30 services
 
 **The Premature Optimization**
 - Splitting before understanding the domain
@@ -344,7 +344,7 @@ CouplingRatio = 15 / 100 = 0.15
 # This is GOOD - service has clear boundaries
 ```
 
-**Real-World Impact:** Payment Service can evolve independently 85% of the time. The 15% coupling is acceptable—some coordination is natural in distributed systems.
+**Real-World Impact:** Payment Service can evolve independently 85% of the time. The 15% coupling is acceptable-some coordination is natural in distributed systems.
 
 ```python
 # Service B: User Profile Service
@@ -364,7 +364,7 @@ CouplingRatio = 60 / 100 = 0.60
 **When You See This in Production:**
 - Ŝ > 0.7: Service is independent, good boundaries
 - Ŝ 0.4-0.7: Some coupling, acceptable but monitor
-- Ŝ < 0.4: High coupling, wrong boundaries—refactor or merge
+- Ŝ < 0.4: High coupling, wrong boundaries: refactor or merge
 
 **Automated Collection with Git Analysis:**
 
@@ -1584,11 +1584,11 @@ Adapting Adaptive Granularity Governance: The Khan Microservice Pattern for edge
 
 ## 11.9 Conclusion: From Crisis to Clarity
 
-Adaptive Granularity Governance: The Khan Microservice Pattern was born from failure—a catastrophic Black Friday that cost millions and nearly ended my career. But that crisis led to a breakthrough: the realization that microservices needed quantitative, context-aware guidance.
+Adaptive Granularity Governance: The Khan Microservice Pattern was born from failure: a catastrophic Black Friday that cost millions and nearly ended my career. But that crisis led to a breakthrough: the realization that microservices needed quantitative, context-aware guidance.
 
 Over the past 8 years (2017-2025), Adaptive Granularity Governance: The Khan Microservice Pattern has evolved from a desperate solution to an industry-recognized methodology, validated across hundreds of organizations and thousands of services.
 
-**The Core Insight:** Microservices architecture isn't about following rules—it's about making measurable trade-offs based on your specific context.
+**The Core Insight:** Microservices architecture isn't about following rules: it's about making measurable trade-offs based on your specific context.
 
 **The Three Pillars:**
 1. **RVx Index**: Quantitative measurement of service effectiveness
@@ -1617,8 +1617,8 @@ Adaptive Granularity Governance: The Khan Microservice Pattern transforms micros
 ---
 
 **Navigation:**
-- [← Previous: Chapter 10](10-asynchronous-messaging-patterns.md)
-- [Next: Reference Materials →](../reference/quick-reference.md)
+- [Previous: Chapter 10](10-asynchronous-messaging-patterns.md)
+- [Next: Chapter 12](12-shuffle-sharding.md)
 
 ---
 

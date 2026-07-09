@@ -15,7 +15,7 @@ readingTime: "50 minutes"
 # Chapter 20: The Khan Microservices Maturity Model (KM3)
 
 <div class="chapter-header">
-  <h2 class="chapter-subtitle">Operationalizing Excellence—Beyond Velocity Metrics</h2>
+  <h2 class="chapter-subtitle">Operationalizing Excellence-Beyond Velocity Metrics</h2>
   <div class="chapter-meta">
     <span class="reading-time">📖 50 min read</span>
     <span class="difficulty">🎯 Expert</span>
@@ -28,7 +28,7 @@ DORA metrics capture **delivery throughput**; Richardson maturity models capture
 
 ![KM3 maturity model overview](../assets/images/diagrams/km3-maturity-model.png)
 
-*Figure 20.1: KM3 stages—Awaken → Amplify → Automate (illustrative diagram from project assets).*
+*Figure 20.1: KM3 stages-Awaken → Amplify → Automate (illustrative diagram from project assets).*
 
 ---
 
@@ -37,7 +37,7 @@ DORA metrics capture **delivery throughput**; Richardson maturity models capture
 | Stage | Emphasis | Non-negotiable signals |
 |-------|----------|------------------------|
 | **Awaken** | Immutable infra, CI/CD truth | No SSH “hot fixes”; artifacts versioned |
-| **Amplify** | Typed east–west traffic, data resilience | gRPC where sync dominates; RDS delete protection; DynamoDB PITR |
+| **Amplify** | Typed east-west traffic, data resilience | gRPC where sync dominates; RDS delete protection; DynamoDB PITR |
 | **Automate** | Antifragility & zero trust | Chaos in pipeline; JWT/OAuth propagation across toolchains |
 
 **Anti-pattern catalog:** lift-and-shift containerization **without** domain seams; REST chatter at high RPS **without** batching; chaos **without** abort conditions (contrast Chapter 13).
@@ -52,7 +52,7 @@ Construct a **capability matrix** per team × service:
 2. **Independent audit** by platform engineering (sample quarterly).  
 3. **Promotion** when *all* mandatory row gates pass **and** incident archetypes regress.
 
-KM3 is **not** a single badge—publish **heterogeneous** maturity (e.g., Stage-2 data, Stage-1 AI).
+KM3 is **not** a single badge; publish **heterogeneous** maturity (e.g., Stage-2 data, Stage-1 AI).
 
 ---
 
@@ -90,4 +90,10 @@ KM3 is an **original methodology by Viquar Khan**; please cite. Copyright in the
 
 ## 20.4 Synthesis
 
-KM3 closes the loop: **Chapter 11** explains *why* to adapt granularity; **Chapters 12–19** supply *how* to engineer resilience and migration; **KM3** defines *when* an organization has **earned** the right to operate complex distributed topologies **without** entropic collapse.
+KM3 closes the loop: **Chapter 11** explains *why* to adapt granularity; **Chapters 12-19** supply *how* to engineer resilience and migration; **KM3** defines *when* an organization has **earned** the right to operate complex distributed topologies **without** entropic collapse.
+
+---
+
+**Navigation:**
+- [Previous: Chapter 19](19-strangler-fig-pattern.md)
+- [Next: Reference Materials](../reference/quick-reference.md)

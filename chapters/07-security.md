@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Security"
 chapter: 7
 author: "Viquar Khan"
@@ -23,7 +23,7 @@ readingTime: "35 minutes"
 </div>
 
 > *"Data is the only asset that increases in value the more it's used. But it's also the only asset that becomes a liability the moment you lose context."*  
-> **— The Senior Architect's Paradox**
+> **- The Senior Architect's Paradox**
 
 For the past decade, industry has been engaged in a frantic attempt to solve the "Data Silo" problem. The initial solution, peaking around 2015, was the Data Lake - a centralized repository (typically Amazon S3 or HDFS) where all teams dumped their raw data. The architectural promise was that by centralizing storage, we would democratize access. Data scientists could swim through this pristine reservoir of insight, connecting dots that no one had seen before.
 
@@ -103,7 +103,7 @@ You have a Sales Domain (Producer) that generates revenue data. You have a Marke
 
 **Solution:**
 
-We will use Amazon DataZone (introduced in late 2023 and matured by 2025) as the Mesh Control Plane. We will configure Domain, Blueprints, and—crucially—Metadata Enforcement Rules to ensure governance compliance.
+We will use Amazon DataZone (introduced in late 2023 and matured by 2025) as the Mesh Control Plane. We will configure Domain, Blueprints, and-crucially-Metadata Enforcement Rules to ensure governance compliance.
 
 #### Phase 1: Infrastructure as Code (Terraform)
 
@@ -283,7 +283,7 @@ This shift transforms the Architect from a bottleneck into a platform enabler, a
 
 ### The New Threat Landscape
 
-The emergence of Large Language Models (LLMs) and AI agents as primary API consumers introduces unprecedented security challenges. Traditional API security models—designed for deterministic, human-controlled clients—are insufficient for probabilistic, autonomous agents that can:
+The emergence of Large Language Models (LLMs) and AI agents as primary API consumers introduces unprecedented security challenges. Traditional API security models-designed for deterministic, human-controlled clients-are insufficient for probabilistic, autonomous agents that can:
 
 - **Generate infinite request variations** through prompt engineering
 - **Discover hidden endpoints** through semantic reasoning
@@ -802,5 +802,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 6](06-resilience-and-reliability.md)
-- [Next: Chapter 8 →](08-monitoring-and-observability.md)
+- [Previous: Chapter 6](06-resilience-and-reliability.md)
+- [Next: Chapter 8](08-monitoring-and-observability.md)

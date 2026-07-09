@@ -113,7 +113,7 @@ Multiple services reading and writing to the same tables. If Service A changes a
 A single frontend request triggers a cascade of 50 synchronous internal calls. This destroys availability. If each of the 50 calls has a 99.9% success rate, the aggregate success rate is:
 
 ```
-Success Rate = (0.999)^50 ˜ 0.951 = 95.1%
+Success Rate = (0.999)^50 ï¿½ 0.951 = 95.1%
 ```
 
 ![System Availability Chain](../assets/images/diagrams/system-availability-chain.png)
@@ -291,7 +291,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** A microservice should encapsulate a single business capability.
 
-**2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic—it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
+**2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logicï¿½it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
 
 **Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
 
@@ -299,7 +299,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** APIs should be RESTful, following HTTP verbs and resource-oriented design.
 
-**2026+ Reality:** AI agents don't navigate REST APIs—they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
+**2026+ Reality:** AI agents don't navigate REST APIsï¿½they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
 
 **Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
 - **Natural Language Descriptions:** Every endpoint must have clear, unambiguous descriptions that LLMs can parse
@@ -310,7 +310,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** Each microservice owns its database (Database per Service pattern).
 
-**2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**—numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
+**2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**ï¿½numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
 
 **Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
 
@@ -369,5 +369,5 @@ In the next chapter, we'll dive deeper into design principles and patterns that 
 ---
 
 **Navigation:**
-- [? Previous: Preface](../PREFACE.md)
-- [Next: Chapter 2 ?](02-design-principles-and-patterns.md)
+- [Previous: Preface](../PREFACE.md)
+- [Next: Chapter 2](02-design-principles-and-patterns.md)

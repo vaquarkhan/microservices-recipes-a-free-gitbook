@@ -157,7 +157,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | Adaptive Granularity Governance: The Khan Microservice Pattern — Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
+| **Chapter 11** | Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
 
 ---
 
@@ -165,8 +165,8 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 12](chapters/12-shuffle-sharding.md)** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
-| **[Chapter 13](chapters/13-chaos-engineering.md)** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
+| **Chapter 12** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
+| **Chapter 13** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
 
 ---
 
@@ -174,8 +174,8 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
-| **[Chapter 15](chapters/15-observability-2.md)** | Observability 2.0 — Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
+| **Chapter 14** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
+| **Chapter 15** | Observability 2.0: Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
 
 ---
 
@@ -183,8 +183,8 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
-| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
+| **Chapter 16** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
+| **Chapter 17** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
 
 ---
 
@@ -192,8 +192,8 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 18](chapters/18-modular-monolith.md)** | The Modular Monolith | 📖 55 min | 🎯 Expert |
-| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
+| **Chapter 18** | The Modular Monolith | 📖 55 min | 🎯 Expert |
+| **Chapter 19** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
 
 ---
 
@@ -201,7 +201,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
+| **Chapter 20** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
 
 ---
 
@@ -219,7 +219,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ### **Adaptive Granularity Governance: The Khan Microservice Pattern for Adaptive Granularity**
 
-At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern** — a systematic approach to determining optimal microservice boundaries. Unlike rigid methodologies, it adapts to your specific:
+At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern**: a systematic approach to determining optimal microservice boundaries. Unlike rigid methodologies, it adapts to your specific:
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -227,7 +227,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 - **Evolutionary growth** and learning patterns
 
 > *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."*  
-> **— Viquar Khan**
+> **- Viquar Khan**
 
 ---
 

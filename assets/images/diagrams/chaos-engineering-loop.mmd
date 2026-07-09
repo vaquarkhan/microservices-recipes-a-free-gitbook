@@ -1,0 +1,20 @@
+flowchart LR
+    H["1. Hypothesis<br/>Steady state y(t) in R"]
+    E["2. Controlled fault phi<br/>FIS / game day"]
+    M["3. Measure SLIs<br/>vs control baseline"]
+    A["4. Abort if SLO burn<br/>CloudWatch alarm"]
+    L["5. Learn<br/>Fix system or refine model"]
+
+    H --> E
+    E --> M
+    M --> A
+    A -->|within bounds| L
+    A -->|violation| R["Rollback phi<br/>Capture telemetry"]
+    R --> L
+
+    style H fill:#e8f4fc,stroke:#3498db,stroke-width:2px
+    style E fill:#fff3cd,stroke:#f39c12,stroke-width:2px
+    style M fill:#e8f4fc,stroke:#3498db
+    style A fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    style L fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    style R fill:#f8cecc,stroke:#b85450

@@ -17,7 +17,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ---
 
-*"Stop splitting, start governing."* — **Adaptive Granularity Governance: The Khan Microservice Pattern**
+*"Stop splitting, start governing."* - **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 ![Microservices Animation](assets/images/microservices-animation.gif)
 
@@ -36,6 +36,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 - [⚖️ **Disclaimer**](DISCLAIMER.md) - Legal notice
 - [🤝 **Contributing**](CONTRIBUTING.md) - How to Contribute
 - [📜 **Version History**](VERSION-HISTORY.md) - Release lineage
+- [📋 **Changelog**](CHANGELOG.md) - 2017 to present change log
 - [🎓 **Free Academic Access**](FREE-ACCESS.md) - Academic edition notes
 - [📄 **CITATION.cff**](CITATION.cff) - Machine-readable citation metadata
 
@@ -80,7 +81,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[11](chapters/11-khan-pattern-deep-dive.md)** | **Adaptive Granularity Governance: The Khan Microservice Pattern** | Origin, RVx Index, and maturity model | 40 min |
+| **11** | **Adaptive Granularity Governance: The Khan Microservice Pattern** | Origin, RVx Index, and maturity model | 40 min |
 
 ---
 
@@ -89,8 +90,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[12](chapters/12-shuffle-sharding.md)** | **Shuffle Sharding & Blast-Radius Minimization** | Probabilistic tenant–shard assignment and collision analysis | 55 min |
-| **[13](chapters/13-chaos-engineering.md)** | **Chaos Engineering & Evidence-Based Resilience** | Hypotheses, game days, and AWS FIS guardrails | 60 min |
+| **12** | **Shuffle Sharding & Blast-Radius Minimization** | Probabilistic tenant-shard assignment and collision analysis | 55 min |
+| **13** | **Chaos Engineering & Evidence-Based Resilience** | Hypotheses, game days, and AWS FIS guardrails | 60 min |
 
 ---
 
@@ -99,8 +100,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[14](chapters/14-infrastructure-as-code-at-scale.md)** | **Infrastructure as Code at Scale** | Modules, drift, Terraform/CDK/Pulumi trade-offs | 58 min |
-| **[15](chapters/15-observability-2.md)** | **Observability 2.0** | OpenTelemetry, X-Ray, wide events, sampling design | 62 min |
+| **14** | **Infrastructure as Code at Scale** | Modules, drift, Terraform/CDK/Pulumi trade-offs | 58 min |
+| **15** | **Observability 2.0** | OpenTelemetry, X-Ray, wide events, sampling design | 62 min |
 
 ---
 
@@ -109,8 +110,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[16](chapters/16-agentic-ai-architectures.md)** | **Agentic AI Architectures** | Tool gateways, Bedrock agents, safety cases | 58 min |
-| **[17](chapters/17-rag-at-scale.md)** | **Retrieval-Augmented Generation at Scale** | HyDE, evaluation, ACL-aware corpora | 60 min |
+| **16** | **Agentic AI Architectures** | Tool gateways, Bedrock agents, safety cases | 58 min |
+| **17** | **Retrieval-Augmented Generation at Scale** | HyDE, evaluation, ACL-aware corpora | 60 min |
 
 ---
 
@@ -119,8 +120,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[18](chapters/18-modular-monolith.md)** | **The Modular Monolith** | Schema-per-module, ArchUnit, contraction economics | 55 min |
-| **[19](chapters/19-strangler-fig-pattern.md)** | **The Strangler Fig Pattern** | Edge routing, data strangler, parity proofs | 55 min |
+| **18** | **The Modular Monolith** | Schema-per-module, ArchUnit, contraction economics | 55 min |
+| **19** | **The Strangler Fig Pattern** | Edge routing, data strangler, parity proofs | 55 min |
 
 ---
 
@@ -129,7 +130,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[20](chapters/20-km3-maturity-model.md)** | **The Khan Microservices Maturity Model (KM3)** | Stages, instrumentation, X-Ray sampling | 50 min |
+| **20** | **The Khan Microservices Maturity Model (KM3)** | Stages, instrumentation, X-Ray sampling | 50 min |
 
 ---
 
@@ -156,7 +157,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 - **Technical constraints** and operational capabilities
 - **Evolutionary growth** and learning patterns
 
-> *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* — Viquar Khan
+> *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* - Viquar Khan
 
 ### **Key Features**
 
@@ -191,7 +192,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 | Metric | Value |
 |--------|-------|
-| **Total Chapters** | 20 (10 foundational + Adaptive Granularity + advanced arc) |
+| **Total Chapters** | 20 (chapters 1-10 linked in TOC; 11-20 listed without open links) |
 | **Reading Time** | ~4.5 hours total |
 | **Content Length** | 236,000+ characters |
 | **Code Examples** | 50+ practical implementations |

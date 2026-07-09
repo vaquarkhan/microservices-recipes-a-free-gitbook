@@ -92,10 +92,10 @@
 - **Service mesh evolution** documented with real implementations
 - **Observability revolution** captured with OpenTelemetry standards
 
-### **2026 - Adaptive Granularity Strategy**
-- **Systematic methodology** introduced for adaptive granularity
+### **2026 - Adaptive Granularity Governance**
+- **Systematic methodology** introduced (January 2026) under the historical name Adaptive Granularity Strategy, with the **RVx Index**
+- **July 2026:** renamed to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx unchanged); dual license and citation scaffolding published
 - **Complete architectural framework** for modern distributed systems
-- **Industry validation** through successful enterprise implementations
 
 ---
 
@@ -104,7 +104,7 @@
 | Feature | Version 1.0 (2017) | Version 2.0 (2026) |
 |---------|-------------------|-------------------|
 | **Chapters** | 8 foundational | 10 comprehensive |
-| **Methodologies** | General principles | Adaptive Granularity Strategy |
+| **Methodologies** | General principles | Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy) |
 | **Technology Focus** | Docker, basic K8s | Modern cloud-native |
 | **Networking** | Traditional service mesh | eBPF and post-sidecar |
 | **Data Patterns** | Basic CQRS/ES | Advanced distributed patterns |
@@ -167,4 +167,4 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 **Maintaining excellence through continuous evolution** 🚀
 
-*The Adaptive Granularity Strategy represents the culmination of 7 years of real-world experience, community feedback, and architectural innovation.*
+*Adaptive Granularity Governance: The Khan Microservice Pattern (formerly the Adaptive Granularity Strategy) represents years of real-world experience, community feedback, and architectural innovation. See [CHANGELOG.md](CHANGELOG.md) for 2017 to present.*

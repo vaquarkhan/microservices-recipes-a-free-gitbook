@@ -1,0 +1,29 @@
+flowchart TB
+    subgraph Apps["Application tier"]
+        S1["Service A<br/>OTel SDK"]
+        S2["Service B<br/>OTel SDK"]
+        S3["Service C<br/>OTel SDK"]
+    end
+
+    COL["OpenTelemetry Collector<br/>batch + tail sampling"]
+    M["Metrics TSDB<br/>CloudWatch / AMP"]
+    T["Trace backend<br/>X-Ray / Tempo"]
+    L["Logs / wide events<br/>S3 / OpenSearch"]
+    BPF["eBPF / Hubble<br/>L4 dependency graph"]
+    X["Cross-check<br/>trace DAG vs flows"]
+
+    S1 --> COL
+    S2 --> COL
+    S3 --> COL
+    COL --> M
+    COL --> T
+    COL --> L
+    BPF --> X
+    T --> X
+
+    style COL fill:#3498db,stroke:#2c3e50,color:#fff,stroke-width:2px
+    style M fill:#e8f4fc,stroke:#3498db
+    style T fill:#e8f4fc,stroke:#3498db
+    style L fill:#e8f4fc,stroke:#3498db
+    style BPF fill:#fff3cd,stroke:#f39c12
+    style X fill:#d5e8d4,stroke:#82b366,stroke-width:2px

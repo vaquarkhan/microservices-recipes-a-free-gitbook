@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Data Management"
 chapter: 4
 author: "Viquar Khan"
@@ -444,5 +444,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 3](03-service-communication.md)
-- [Next: Chapter 5 →](05-deployment-and-operations.md)
+- [Previous: Chapter 3](03-service-communication.md)
+- [Next: Chapter 5](05-deployment-and-operations.md)

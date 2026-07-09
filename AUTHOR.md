@@ -1,4 +1,4 @@
-﻿# About the Author
+# About the Author
 
 ## Viquar Khan
 
@@ -32,7 +32,7 @@ These frameworks stand on the shoulders of giants, building upon foundational wo
 
 ### Philosophy
 
-> "Stop splitting, start governing." — Viquar Khan
+> "Stop splitting, start governing." - Viquar Khan
 
 The modern architect acts not as a dictator of blueprints but as a gardener of ecosystems, cultivating a landscape where independent teams can thrive without descending into chaos.
 
@@ -51,4 +51,4 @@ The modern architect acts not as a dictator of blueprints but as a gardener of e
 
 ---
 
-*"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* — Viquar Khan
+*"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* - Viquar Khan

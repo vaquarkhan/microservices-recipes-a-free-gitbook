@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Resilience and Reliability"
 chapter: 6
 author: "Viquar Khan"
@@ -351,5 +351,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 5](05-deployment-and-operations.md)
-- [Next: Chapter 7 →](07-security.md)
+- [Previous: Chapter 5](05-deployment-and-operations.md)
+- [Next: Chapter 7](07-security.md)

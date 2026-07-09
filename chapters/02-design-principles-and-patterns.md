@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Design Principles and Patterns"
 chapter: 2
 author: "Viquar Khan"
@@ -15,7 +15,7 @@ readingTime: "25 minutes"
 # Chapter 2: Design Principles and Patterns
 
 <div class="chapter-header">
-  <h2 class="chapter-subtitle">The Distributed Monolith and Anti-Patterns – An Expanded Field Guide</h2>
+  <h2 class="chapter-subtitle">The Distributed Monolith and Anti-Patterns - An Expanded Field Guide</h2>
   <div class="chapter-meta">
     <span class="reading-time">📖 35 min read</span>
     <span class="difficulty">🎯 Advanced</span>
@@ -34,7 +34,7 @@ The emergence of the distributed monolith is rarely an intentional design choice
 
 The fundamental error in creating a Distributed Monolith is the violation of the fallacies of distributed computing, specifically regarding reliability and latency. When a monolithic application is sliced along technical layers rather than business domains, the resulting services must communicate incessantly to perform even the simplest unit of work.
 
-Consider a synchronous call chain where Service A calls Service B, which calls Service C. If each service has a Service Level Objective (SLO) of 99.9% availability, the composite availability of the chain is the product of the individual availability. In a "chatty" distributed monolith, a single user request such as "Checkout"—might trigger 50 synchronous internal calls to validate inventory, check credit limits, calculate tax, and update loyalty points. The mathematical availability drops precipitously.
+Consider a synchronous call chain where Service A calls Service B, which calls Service C. If each service has a Service Level Objective (SLO) of 99.9% availability, the composite availability of the chain is the product of the individual availability. In a "chatty" distributed monolith, a single user request such as "Checkout"-might trigger 50 synchronous internal calls to validate inventory, check credit limits, calculate tax, and update loyalty points. The mathematical availability drops precipitously.
 
 **The formula for system availability (A_system) in a synchronous chain is the product of the availability of each component (A_service) raised to the power of the number of dependencies (n):**
 
@@ -102,7 +102,7 @@ In his seminal 1968 paper, "How Do Committees Invent?", Melvin Conway posited th
 ## Conway observed a specific mechanism for this mirroring:
 "The realization by the initial designers that the system will be large... make[s] irresistible the temptation to assign too many people to a design effort. Application of the conventional wisdom of management to a large design organization causes its communication structure to disintegrate."
 
-When a monolithic organization is characterized by siloed functional departments like a "DBA Team," a "Backend Team," and a "Frontend Team"—attempts to build microservices, the communication costs dictate the architecture. The Backend team talks mostly to themselves, and occasionally to the DBAs. Consequently, they produce a single, monolithic "Backend Service" that connects to a single "Database." If they attempt to split it, they inevitably produce a layered distributed architecture that mirrors their silos:
+When a monolithic organization is characterized by siloed functional departments like a "DBA Team," a "Backend Team," and a "Frontend Team"-attempts to build microservices, the communication costs dictate the architecture. The Backend team talks mostly to themselves, and occasionally to the DBAs. Consequently, they produce a single, monolithic "Backend Service" that connects to a single "Database." If they attempt to split it, they inevitably produce a layered distributed architecture that mirrors their silos:
 
 A "Data Service" (mirroring the DBA team).
 
@@ -444,7 +444,7 @@ To expand beyond Chapter 2 is to recognize that architecture is a feedback loop:
 2. **Architecture imposes Cognitive Load**.
 3. **Cognitive Load determines Team Performance**.
 
-The role of the Senior Architect is to intervene in this loop using tools like the Inverse Conway Maneuver, Consumer-Driven Contracts, and Polyglot Persistence to ensure that the system remains a set of loosely coupled services, rather than a fragmented, distributed nightmare. The recipes provided here—specific code implementations, historical warnings, and mathematical models—are the weapons against this entropy.
+The role of the Senior Architect is to intervene in this loop using tools like the Inverse Conway Maneuver, Consumer-Driven Contracts, and Polyglot Persistence to ensure that the system remains a set of loosely coupled services, rather than a fragmented, distributed nightmare. The recipes provided here-specific code implementations, historical warnings, and mathematical models-are the weapons against this entropy.
 
 ## Key Terminology Reference
 
@@ -471,5 +471,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 1](01-introduction-to-microservices.md)
-- [Next: Chapter 3 →](03-service-communication.md)
+- [Previous: Chapter 1](01-introduction-to-microservices.md)
+- [Next: Chapter 3](03-service-communication.md)
