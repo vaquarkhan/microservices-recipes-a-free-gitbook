@@ -2,11 +2,11 @@
 
 ![Book Cover](assets/images/cover-image-1.png)
 
-**Featuring The Adaptive Granularity Strategy (Author's Method)**
+**Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 *by **Viquar Khan***
 
-**Version 2.0** - *The Adaptive Granularity Strategy Edition* (January 2026)
+**Version 2.0** - *Adaptive Granularity Governance: The Khan Microservice Pattern Edition* (January 2026)
 
 ---
 
@@ -18,14 +18,14 @@
 - **Title**: Microservices Recipes: The Architect's Field Guide
 - **Author**: Viquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2026 (The Adaptive Granularity Strategy Edition)
+- **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
 - **Publisher**: Open Source (GitHub)
 - **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ### **Proprietary Methodologies**
-The following methodologies are proprietary frameworks developed by Viquar Khan (attribution asserted, no trademark claims):
-- **The Adaptive Granularity Strategy (Author's Method)**
+The following are original methodologies by Vaquar Khan; please cite. No trademark is claimed at this time:
+- **Adaptive Granularity Governance: The Khan Microservice Pattern**
 - **Service Decomposition Workflow (Author's Method)**
 - **Microservices Maturity Assessment (Author's Method)**
 
@@ -57,13 +57,13 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ![Microservices Transformation](assets/images/microservices-animation.gif)
 
-*Visualizing the transformation journey with **The Adaptive Granularity Strategy***
+*Visualizing the transformation journey with **Adaptive Granularity Governance: The Khan Microservice Pattern***
 
 ---
 
 ## 🎯 What You'll Master
 
-✅ **The Adaptive Granularity Strategy** for optimal service boundaries  
+✅ **Adaptive Granularity Governance: The Khan Microservice Pattern** for optimal service boundaries  
 ✅ **Distributed Systems** design and implementation  
 ✅ **Anti-Pattern Prevention** and failure analysis  
 ✅ **Real-World Patterns** from industry leaders  
@@ -97,7 +97,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ### 🏗️ For Architects
 1. Focus on strategic chapters (2, 3, 7)
-2. Study [The Adaptive Granularity Strategy](AUTHOR.md#the-adaptive-granularity-strategy)
+2. Study [Adaptive Granularity Governance: The Khan Microservice Pattern](AUTHOR.md#the-adaptive-granularity-strategy)
 3. Review [Complete Book Preview](BOOK-PREVIEW.md)
 
 ---
@@ -106,7 +106,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ### 📚 **Front Matter**
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & The Adaptive Granularity Strategy
+- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Governance: The Khan Microservice Pattern
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
 - [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 20-Chapter Edition for Students & Researchers
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
@@ -147,7 +147,60 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 |---------|-------|-----------|------------|
 | **[Chapter 8](chapters/08-monitoring-and-observability.md)** | The Trinity of Protocols | 📖 22 min | 🎯 Advanced |
 | **[Chapter 9](chapters/09-testing-strategies.md)** | The Rise of eBPF Networking and the Post Sidecar Era | 📖 28 min | 🎯 Expert |
-| **[Chapter 10](chapters/10-real-world-case-studies.md)** | Asynchronous Messaging Patterns | 📖 30 min | 🎯 Expert |
+| **[Chapter 10](chapters/10-asynchronous-messaging-patterns.md)** | Asynchronous Messaging Patterns | 📖 30 min | 🎯 Expert |
+
+---
+
+### 🎯 **Part IV: Adaptive Granularity Governance: The Khan Microservice Pattern**
+*Focus: Quantitative framework for microservices decomposition*
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | Adaptive Granularity Governance: The Khan Microservice Pattern — Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
+
+---
+
+### 🧱 **Part V: Resilience Engineering & Advanced Scaling**
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 12](chapters/12-shuffle-sharding.md)** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
+| **[Chapter 13](chapters/13-chaos-engineering.md)** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
+
+---
+
+### 🏗️ **Part VI: The Platform Engineering Shift**
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
+| **[Chapter 15](chapters/15-observability-2.md)** | Observability 2.0 — Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
+
+---
+
+### 🤖 **Part VII: The AI Frontier (2026)**
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
+| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
+
+---
+
+### 🚀 **Part VIII: The Migration Playbook**
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 18](chapters/18-modular-monolith.md)** | The Modular Monolith | 📖 55 min | 🎯 Expert |
+| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
+
+---
+
+### 📈 **Part IX: Organizational Maturity**
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3™) | 📖 50 min | 🎯 Expert |
 
 ---
 
@@ -163,9 +216,9 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ## 🎯 What Makes This Book Special
 
-### **The Adaptive Granularity Strategy for Adaptive Granularity**
+### **Adaptive Granularity Governance: The Khan Microservice Pattern for Adaptive Granularity**
 
-At the heart of this book is **The Adaptive Granularity Strategy** — a systematic approach to determining optimal microservice boundaries. Unlike rigid methodologies, it adapts to your specific:
+At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern** — a systematic approach to determining optimal microservice boundaries. Unlike rigid methodologies, it adapts to your specific:
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -179,7 +232,7 @@ At the heart of this book is **The Adaptive Granularity Strategy** — a systema
 
 ## 👨‍💻 About the Author
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **The Adaptive Granularity Strategy**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**.
 
 ### 🎓 **Free Mentorship Available**
 **Book a FREE 1:1 mentorship session with Viquar Khan:**  

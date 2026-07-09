@@ -6,7 +6,7 @@
 
 ### Professional Background
 
-A polyglot developer skilled in Java, Scala, Python, and other languages, Viquar has excelled in various technical roles. As an expert group member of JSR 368 (Java™ Message Service 2.1), he has shaped industry standards and actively contributes to open-source projects like Apache Spark and Terraform. His technical insights have reached and benefited over 7.5 million users on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
+A polyglot developer skilled in Java, Scala, Python, and other languages, Viquar has excelled in various technical roles. As an expert group member of JSR 368 (Java Message Service 2.1), he has shaped industry standards and actively contributes to open-source projects like Apache Spark and Terraform. His technical insights have reached and benefited over 7.5 million users on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
 
 Viquar brings deep expertise in:
 - **Microservices Architecture**: Designing and implementing scalable, resilient distributed systems
@@ -15,9 +15,9 @@ Viquar brings deep expertise in:
 - **Data Engineering**: Advanced data pipeline and analytics solutions
 - **Team Leadership**: Guiding development teams through architectural transformations
 
-### The Adaptive Granularity Strategy
+### Adaptive Granularity Governance: The Khan Microservice Pattern
 
-Viquar is the creator of **The Adaptive Granularity Strategy (Author's Method)**, **The Service Decomposition Workflow (Author's Method)**, and **The Microservices Maturity Assessment (Author's Method)** — proprietary methodologies that represent original syntheses and scoring methodologies designed to operationalize distributed systems theory.
+Viquar is the creator of **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. These are original methodologies by the author; please cite. See [LICENSING.md](LICENSING.md) and [NAMING.md](NAMING.md). No trademark is claimed at this time.
 
 These frameworks stand on the shoulders of giants, building upon foundational works including:
 - **Cognitive Load Theory** from Team Topologies by Matthew Skelton and Manuel Pais

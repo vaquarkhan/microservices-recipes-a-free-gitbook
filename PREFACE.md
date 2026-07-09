@@ -1,10 +1,10 @@
-﻿# Preface
+# Preface
 
 ## Why This Book Exists
 
 I wrote *Microservices Recipes* to address a gap I've observed throughout my 22 years working with distributed systems at companies like Amazon: the disconnect between microservices theory and practical implementation. While countless resources explain what microservices are, few provide actionable guidance on how to build them successfully in real-world environments.
 
-This book introduces **The Adaptive Granularity Strategy (Author's Method)**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
+This book introduces **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
 
 The open-source nature of this project has been essential to its development. With over 600 GitHub stars and active contributions from the community, this work continues to evolve based on real-world feedback and implementation experiences.
 
@@ -12,9 +12,9 @@ Whether you're an architect at an enterprise organization or a developer buildin
 
 ---
 
-## The Adaptive Granularity Strategy (Author's Method)
+## Adaptive Granularity Governance: The Khan Microservice Pattern
 
-The central contribution of this book is the Adaptive Granularity Strategy (Author's Method), a systematic methodology for microservice decomposition that addresses the "Granularity Paradox" - the challenge of determining optimal service boundaries.
+The central contribution of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), a systematic methodology for microservice decomposition that addresses the "Granularity Paradox" - the challenge of determining optimal service boundaries.
 
 ### The Challenge
 
@@ -26,17 +26,17 @@ Traditional microservice decomposition relies on qualitative guidelines that oft
 
 ### The Solution: The RVx Index
 
-The Adaptive Granularity Strategy introduces the RVx Index, a mathematical formula for measuring service boundary effectiveness:
+**Adaptive Granularity Governance: The Khan Microservice Pattern** introduces the RVx Index, a mathematical formula for measuring service boundary effectiveness:
 
 ```
-RVx = (Ê^β × Ŝ) / (L̂^α + ε)
+RVx = (�^� � S) / (L^^a + e)
 
 Where:
-Ê (Kinetic Efficiency): Useful computation over total transaction time
-Ŝ (Semantic Distinctness): Independence via temporal coupling analysis
-L̂ (Cognitive Load): Normalized complexity from static analysis
-α, β = Empirical parameters (defaults: α=1.2, β=0.8)
-ε = Stability constant (default: 0.1)
+� (Kinetic Efficiency): Useful computation over total transaction time
+S (Semantic Distinctness): Independence via temporal coupling analysis
+L^ (Cognitive Load): Normalized complexity from static analysis
+a, � = Empirical parameters (defaults: a=1.2, �=0.8)
+e = Stability constant (default: 0.1)
 ```
 
 **Interpretation:**
@@ -58,7 +58,7 @@ The pattern has been extended to address contemporary challenges:
 
 ### Core Patterns and Frameworks
 
-**Adaptive Granularity Strategy Decision Matrices:**
+**Adaptive Granularity Governance Decision Matrices:**
 - Saga topology selection (Choreography vs. Orchestration)
 - Quantitative scoring for transaction patterns
 - Implementation checklists and anti-pattern identification
@@ -80,15 +80,15 @@ The pattern has been extended to address contemporary challenges:
 
 The transition from monolithic architecture to microservices is not merely a change in deployment strategy; it's a fundamental reorganization of data governance, inter-process communication, and organizational sociology. While the industry has coalesced around high-level definitions, the practical reality of implementing them at scale is fraught with profound complexity.
 
-This field guide is designed for the Senior Architect. It moves beyond rudimentary definitions to explore the nuanced tradeoffs involved in distributed systems, the "hard parts" where no perfect solution exists, only compromises. It synthesizes deep technical research, industry best practices, and specific cloud-native implementations—primarily within the Amazon Web Services (AWS) ecosystem—to provide a blueprint for building scalable, resilient, and secure distributed systems.
+This field guide is designed for the Senior Architect. It moves beyond rudimentary definitions to explore the nuanced tradeoffs involved in distributed systems, the "hard parts" where no perfect solution exists, only compromises. It synthesizes deep technical research, industry best practices, and specific cloud-native implementations�primarily within the Amazon Web Services (AWS) ecosystem�to provide a blueprint for building scalable, resilient, and secure distributed systems.
 
 The modern architect acts not as a dictator of blueprints but as a gardener of ecosystems, cultivating a landscape where independent teams can thrive without descending into chaos.
 
-## Adaptive Granularity Strategy: A New Paradigm
+## Adaptive Granularity Governance: A New Paradigm
 
 Traditional approaches to microservices decomposition often rely on rigid rules: "one service per database table," "services should be small enough to rewrite in two weeks," or "follow domain boundaries strictly." While these guidelines provide starting points, they fail to account for the diverse contexts in which microservices operate.
 
-The Adaptive Granularity Strategy introduces context-driven, adaptive granularity. Instead of following one-size-fits-all rules, this pattern provides a framework for making granularity decisions based on:
+Adaptive Granularity Governance: The Khan Microservice Pattern introduces context-driven, adaptive granularity. Instead of following one-size-fits-all rules, this pattern provides a framework for making granularity decisions based on:
 
 - **Organizational maturity and team structure**
 - **Business domain complexity and change frequency**
@@ -122,23 +122,23 @@ This book is designed to support an in-depth exploration of microservices archit
 
 The microservices landscape continues to evolve rapidly. New patterns emerge, technologies mature, and my understanding deepens. This book is designed to be a living document that evolves with the community.
 
-## 🌟 Community Adoption
+## ?? Community Adoption
 
-### **📊 Repository Engagement**
-- ⭐ **GitHub Stars:** 606 developers have starred this repository
-- 🍴 **Repository Forks:** 228 developers have forked for their own use  
-- 👁️ **Watchers:** 606+ developers are following updates book and 1400+ Profile
-- 📧 **Subscribers:** 32 developers receive email notifications
-- 📊 **Network Reach:** 228 repositories in the fork network
-- 📝 **Total Commits:** 121 commits by active contributors
-- 🌿 **Active Branches:** 8 development branches
-- 👥 **Contributors:** 1 primary author with community contributions
+### **?? Repository Engagement**
+- ? **GitHub Stars:** 606 developers have starred this repository
+- ?? **Repository Forks:** 228 developers have forked for their own use  
+- ??? **Watchers:** 606+ developers are following updates book and 1400+ Profile
+- ?? **Subscribers:** 32 developers receive email notifications
+- ?? **Network Reach:** 228 repositories in the fork network
+- ?? **Total Commits:** 121 commits by active contributors
+- ?? **Active Branches:** 8 development branches
+- ?? **Contributors:** 1 primary author with community contributions
 
-### **👥 Community Members**
+### **?? Community Members**
 
 The author's GitHub profile ([@vaquarkhan](https://github.com/vaquarkhan)) has **1,400+ followers**, demonstrating sustained influence and thought leadership in the distributed systems community. This following represents architects, engineers, and technical leaders who actively track contributions to the field.
 
-### **🌍 Global Impact**
+### **?? Global Impact**
 With **606 stars**, **228 forks**, and **1,400+ profile followers**, this work has reached developers across the globe, demonstrating the universal need for practical microservices guidance. The community spans from individual developers learning microservices to enterprise teams implementing large-scale transformations.
 
 
@@ -161,27 +161,26 @@ Welcome to the world of microservices architecture. This guide will help you bui
 ---
 
 **Viquar Khan**  
-*Author and Creator of The Adaptive Granularity Strategy*  
+*Author and Creator of Adaptive Granularity Governance: The Khan Microservice Pattern*  
 *February 10, 2026*
 
 ---
 
-## 📜 **Copyright Notice**
+## Copyright Notice
 
-**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+**Copyright � 2017-2026 by Vaquar Khan.**
 
-**Proprietary Methodologies:**
-- The Adaptive Granularity Strategy (Author's Method)
-- Service Decomposition Workflow (Author's Method)
-- Microservices Maturity Assessment (Author's Method)
+**Original methodologies (please cite):**
+- Adaptive Granularity Governance: The Khan Microservice Pattern (formerly the Adaptive Granularity Strategy)
+- Service Decomposition Workflow
+- Microservices Maturity Assessment (KM3)
 
-**Note**: These are proprietary methodologies developed through professional practice. See [DISCLAIMER.md](DISCLAIMER.md) for full legal notice.
+**Licensing:** Source code is MIT. Book text, diagrams, and figures are CC BY-NC-ND 4.0. See [LICENSING.md](LICENSING.md). No trademark is claimed at this time.
 
 **Publication Information:**
 - First Edition: January 2017
-- Second Edition: January 2026 (Adaptive Granularity Strategy Edition)
-- License: MIT License
+- Second Edition: January 2026 (Adaptive Granularity Governance edition)
 - Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
-For proper citation formats, see **[Citations Guide](CITATIONS.md)**  
-For complete legal information, see **[Legal Disclaimer](DISCLAIMER.md)**
+For citation formats, see **[Citations Guide](CITATIONS.md)**  
+For legal information, see **[Legal Disclaimer](DISCLAIMER.md)** and **[LICENSING.md](LICENSING.md)**

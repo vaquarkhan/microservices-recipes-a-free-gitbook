@@ -436,9 +436,9 @@
 
 ---
 
-## Adaptive Granularity Strategy & Author's Original Research
+## Adaptive Granularity Governance and Author Original Research
 
-119. **V. Khan**, "Adaptive Granularity Strategy: A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
 
 120. **V. Khan**, "The Revised VaquarKhan Index (RVx): Mathematical Foundations for Service Boundary Analysis," *Technical Report*, 2019.
 
@@ -461,19 +461,19 @@
 
 125. **Fintech Startup Scale-Up (2021)**: Payment processing startup case study. *Case Study*, Chapter 11.
     - Problem: Premature microservices adoption with 5-person team managing 23 services
-    - Solution: Adaptive Granularity Strategy consolidation to modular monolith
+    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern consolidation to modular monolith
     - Results: 3x feature velocity improvement, 60% cost reduction
 
 ### E-Commerce & Retail
 
 126. **E-Commerce Platform Rescue (2019)**: Major retail company (Fortune 500) microservices recovery. *Case Study*, Chapter 11.
     - Problem: 127 microservices causing performance degradation and operational chaos
-    - Solution: Adaptive Granularity Strategy RVx analysis and service consolidation to 63 services
+    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern RVx analysis and service consolidation to 63 services
     - Results: 92% P99 latency improvement, 94% deployment success rate
 
 127. **E-Commerce Platform Recovery (2022)**: Mid-size e-commerce platform with 120 microservices. *Case Study*, Chapter 3.
     - Initial State: Average RVx 0.25 (Nano-Swarm zone), 71% services in Zone I
-    - Adaptive Granularity Strategy Application: Consolidated 85 nano-services into 12 macro-services
+    - Adaptive Granularity Governance: The Khan Microservice Pattern Application: Consolidated 85 nano-services into 12 macro-services
     - Results: P99 latency reduced from 2.3s to 180ms (92% improvement)
 
 128. **E-Commerce Order Creation Saga**: Practical implementation of choreography vs orchestration patterns. *Technical Example*, Chapter 5.
@@ -484,7 +484,7 @@
 
 129. **Healthcare System Modernization (2023)**: Healthcare provider microservices transformation. *Case Study*, Chapter 3.
     - Challenge: HIPAA compliance requirements with distributed architecture
-    - Solution: Adaptive Granularity Strategy heterogeneous granularity approach
+    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern heterogeneous granularity approach
     - Results: Compliance-friendly architecture with optimized service boundaries
 
 130. **Healthcare Data Consistency**: Real-world example of strong consistency requirements in medical systems. *Technical Example*, Chapter 4.
@@ -507,7 +507,7 @@
 
 133. **SaaS Platform Optimization (2023)**: B2B SaaS platform performance improvement. *Case Study*, Chapter 11.
     - Initial State: 42 services with average RVx 0.71
-    - Adaptive Granularity Strategy Application: Continuous monitoring and protocol optimization
+    - Adaptive Granularity Governance: The Khan Microservice Pattern Application: Continuous monitoring and protocol optimization
     - Results: RVx improved to 0.89, 35% cost reduction, 40% latency improvement
 
 ### Security & Compliance
@@ -524,7 +524,7 @@
 
 136. **Financial Services Compliance (2024)**: Regional bank microservices with SOX compliance. *Case Study*, Chapter 3.
     - Challenge: Strong consistency requirements for financial transactions
-    - Solution: Adaptive Granularity Strategy with compliance-aware service boundaries
+    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern with compliance-aware service boundaries
     - Results: Regulatory compliance maintained with modern architecture
 
 ### Infrastructure & Operations
@@ -556,7 +556,7 @@
 141. **The God Service**: Single service with excessive responsibility. *Anti-Pattern*, Chapter 1.
     - Symptom: 50,000+ lines of code, high cyclomatic complexity
     - Impact: Cognitive overload, multiple teams touching same service
-    - Solution: Extract bounded contexts using Adaptive Granularity Strategy
+    - Solution: Extract bounded contexts using Adaptive Granularity Governance: The Khan Microservice Pattern
 
 142. **The Pinball Architecture**: Choreography gone wrong. *Anti-Pattern*, Chapter 5.
     - Symptom: Events bouncing between services, impossible to debug
@@ -611,7 +611,7 @@
 
 ## Citation Guidelines
 
-All references in this book follow academic citation standards. For proper attribution when citing this work or the Adaptive Granularity Strategy, please refer to [CITATIONS.md](../CITATIONS.md).
+All references in this book follow academic citation standards. For proper attribution when citing this work or Adaptive Granularity Governance: The Khan Microservice Pattern, please refer to [CITATIONS.md](../CITATIONS.md).
 
 ### Recommended Citation Format
 
@@ -644,7 +644,7 @@ All references in this book follow academic citation standards. For proper attri
 ### For Advanced Architects
 - Deep dive into Dehghani's "Data Mesh" (Item 47)
 - Study academic papers on distributed systems (Items 36-43)
-- Explore Adaptive Granularity Strategy research (Items 119-122)
+- Explore Adaptive Granularity Governance: The Khan Microservice Pattern research (Items 119-122)
 
 ### For Security Focus
 - Study Siriwardena's "Microservices Security in Action" (Item 4)
@@ -664,7 +664,7 @@ All references in this book follow academic citation standards. For proper attri
 
 **Content Licensing**: This bibliography includes references to open-source projects, academic papers, and commercial products. All citations are provided for educational purposes under fair use doctrine. No content from cited sources has been reproduced verbatim beyond standard quotation limits (30 consecutive words maximum).
 
-**Copyright Notice**: The Adaptive Granularity Strategy (Author's Method), Service Decomposition Workflow (Author's Method), Microservices Maturity Assessment (Author's Method), and Revised VaquarKhan Index (RVx) are proprietary methodologies developed by Viquar Khan. The book content is © 2017-2026 by Viquar Khan. Methodology attribution is asserted without trademark claims.
+**Copyright Notice**: Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern), the Service Decomposition Workflow, the Microservices Maturity Assessment (KM3), and the Revised VaquarKhan Index (RVx) are original methodologies by Vaquar Khan; please cite. Book content is © 2017-2026 by Vaquar Khan. Dual license: MIT for code, CC BY-NC-ND 4.0 for prose and figures. No trademark is claimed at this time. See [LICENSING.md](../LICENSING.md).
 
 ---
 

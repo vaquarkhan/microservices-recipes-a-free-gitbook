@@ -2,149 +2,90 @@
 
 ## Microservices Recipes: The Architect's Field Guide
 
-**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+**Copyright © 2017-2026 by Vaquar Khan.**
+
+This notice states who owns the work and how it is licensed. It does **not** cancel the MIT License on source code. See [LICENSING.md](LICENSING.md) for the dual-license rules.
 
 ---
 
-## 📋 **Publication Information**
+## Publication Information
 
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Subtitle**: Featuring The Adaptive Granularity Strategy (Author's Method)
-- **Author**: Viquar Khan
+- **Subtitle**: Featuring Adaptive Granularity Governance: The Khan Microservice Pattern
+- **Author**: Vaquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2026 (The Adaptive Granularity Strategy Edition)
+- **Second Edition**: January 2026 (Adaptive Granularity Governance edition; formerly Adaptive Granularity Strategy)
 - **Publisher**: Open Source (GitHub)
-- **License**: MIT License
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+- **Code license**: [MIT License](LICENSE)
+- **Prose and figures license**: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ---
 
-## 🏛️ **Intellectual Property Rights**
+## What copyright covers
 
-### **Proprietary Methodologies (© Viquar Khan)**
-The following methodologies are original works and proprietary frameworks developed by Viquar Khan:
+Copyright protects the author's original expression, including:
 
-1. **The Adaptive Granularity Strategy (Author's Method)**
-   - Systematic methodology for determining optimal microservice boundaries
-   - Context-driven, adaptive framework for service decomposition
-   - Motto: "Stop splitting, start governing"
+1. Book chapters and narrative text  
+2. Diagrams and figures  
+3. The written specification of **Adaptive Granularity Governance: The Khan Microservice Pattern**  
+4. The written specification of the **RVx Index**, **Saga Complexity Score (SCS)**, and **KM3**
 
-2. **Service Decomposition Workflow (Author's Method)**
-   - Scoring system for microservice granularity decisions
-   - Quantitative assessment framework for service boundaries
-   - Operational guidelines for granularity optimization
+## Original methodologies (please cite)
 
-3. **Microservices Maturity Assessment (Author's Method)**
-   - Maturity assessment framework for microservices adoption
-   - Organizational capability evaluation system
-   - Evolution roadmap for distributed systems maturity
+These are original methodologies by Vaquar Khan. Attribute and cite them; no trademark is claimed at this time:
 
-### **Original Contributions**
-- Architectural patterns and anti-patterns documentation
-- Production-tested code examples and implementations
-- Case studies and real-world application scenarios
-- Integration of sociotechnical systems theory with practical implementation
+1. **Adaptive Granularity Governance: The Khan Microservice Pattern**  
+   (formerly the Adaptive Granularity Strategy)  
+   Context-driven framework for microservice boundaries. Motto: "Stop splitting, start governing."
 
----
+2. **Service Decomposition Workflow**  
+   Quantitative workflow for granularity decisions, including the **RVx Index**.
 
-## ⚖️ **Legal Framework**
+3. **Microservices Maturity Assessment (KM3)**  
+   Organizational maturity stages for distributed systems readiness.
 
-### **MIT License Terms**
-This work is licensed under the MIT License, which permits:
--  **Commercial use** with proper attribution
--  **Modification** and derivative works
--  **Distribution** with license preservation
--  **Private use** for personal and organizational purposes
-
-### **Attribution Requirements**
-When using this work, you MUST:
-1. **Preserve copyright notice**: "© 2017-2026 Viquar Khan"
-2. **Include MIT License** text in derivative works
-3. **Provide proper citation** (see [CITATIONS.md](CITATIONS.md))
-4. **Credit proprietary methodologies** when referenced
-
-### **Proprietary Methodologies Notice**
-The Adaptive Granularity Strategy (Author's Method), Service Decomposition Workflow (Author's Method), and Microservices Maturity Assessment (Author's Method) are proprietary methodologies developed by Viquar Khan. These terms establish methodology ownership and attribution without trademark registration. See [DISCLAIMER.md](DISCLAIMER.md) for full legal notice.
+Preferred phrasing: *original methodology by the author; please cite*.
 
 ---
 
-## 🚫 **Prohibited Uses**
+## Dual license (summary)
 
-The following uses are explicitly prohibited:
--  **Removing or altering** copyright notices
--  **Using without proper attribution** in academic or commercial contexts
--  **Trademark infringement** of proprietary methodology names
+| Material | License |
+|----------|---------|
+| Source code and reference implementations | MIT |
+| Book text, diagrams, figures | CC BY-NC-ND 4.0 |
 
----
+Full rules: [LICENSING.md](LICENSING.md). Naming: [NAMING.md](NAMING.md). Citations: [CITATIONS.md](CITATIONS.md).
 
-## 📚 **Academic & Research Use**
+### Attribution when you reuse this work
 
-### **Educational Institutions**
-- **Permitted**: Use in coursework, research, and academic publications
-- **Required**: Proper academic citation (see [CITATIONS.md](CITATIONS.md))
-- **Encouraged**: Contributing improvements and case studies back to the community
-
-### **Corporate Training**
-- **Permitted**: Use in internal training and professional development
-- **Required**: Attribution in training materials and documentation
-- **Recommended**: Sharing anonymized case studies with the community
-
-### **Research Publications**
-- **Permitted**: Citation and reference in academic papers and research
-- **Required**: Following standard academic citation practices
-- **Encouraged**: Collaboration on research extensions and validations
+1. Preserve copyright notice: "© 2017-2026 Vaquar Khan"  
+2. For code: include the MIT License text  
+3. For prose/figures: follow CC BY-NC-ND 4.0 (attribution, non-commercial, no derivatives)  
+4. Cite the methodology when you reference it  
 
 ---
 
-## 🤝 **Community Contributions**
+## Prohibited without permission
 
-### **Contributor Rights**
-Contributors who submit accepted case studies or issue reports retain copyright to their specific contributions while granting rights consistent with the MIT License.
-
-### **Contribution Guidelines**
-- All contributions must be compatible with MIT License
-- Contributors must have rights to contribute their content
-- Contributions become part of the collective work under this copyright
-- **Author retains full editorial control** over all content
+- Removing or altering copyright notices  
+- Using book prose or figures commercially or as derivatives outside CC BY-NC-ND 4.0  
+- Implying a registered trademark in the methodology names  
 
 ---
 
-## 📞 **Contact Information**
+## Academic and research use
 
-### **Copyright Inquiries**
-For questions about copyright, licensing, or permissions:
-- **Email**: [Professional contact for copyright matters]
-- **LinkedIn**: [www.linkedin.com/in/vaquar-khan-b695577/](https://www.linkedin.com/in/vaquar-khan-b695577/)
-- **GitHub**: [@vaquarkhan](https://github.com/vaquarkhan)
-
-### **Legal Notices**
-For formal legal notices or DMCA requests:
-- **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues
-- **Direct Contact**: Through professional channels listed above
+- **Education**: Allowed with citation  
+- **Internal corporate training**: Allowed with attribution; commercial redistribution of the book text requires permission under CC BY-NC-ND  
+- **Research papers**: Cite using [CITATIONS.md](CITATIONS.md) or [CITATION.cff](CITATION.cff)  
 
 ---
 
-## 🌍 **International Copyright**
+## Version note
 
-This work is protected by copyright laws in:
-- United States (Copyright Act)
-- European Union (Copyright Directive)
-- Berne Convention signatory countries
-- WIPO member nations
+- **v2.0** (January 2026): Adaptive Granularity Strategy and RVx Index introduced (historical name)  
+- Later rename: **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged)  
 
-**Universal Copyright Notice**: © 2017-2026 Viquar Khan. All rights reserved worldwide.
-
----
-
-## 📅 **Version History**
-
-- **v1.0** (January 2017): Initial release and copyright establishment
-- **v2.0** (January 2026): The Adaptive Granularity Strategy Edition with enhanced copyright protection
-
----
-
-*This copyright notice is an integral part of the work and must be preserved in all copies and derivative works.*
-
-**Last Updated**: February 10, 2026  
-**Copyright Holder**: Viquar Khan  
-**License**: MIT License with attribution requirements
+See [VERSION-HISTORY.md](VERSION-HISTORY.md) and [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md).

@@ -5,7 +5,7 @@ structure:
   summary: SUMMARY.md
 
 title: "Microservices Recipes: The Architect's Field Guide"
-description: "A comprehensive guide to microservices architecture featuring The Khan Pattern™ for Adaptive Granularity"
+description: "A comprehensive guide to microservices architecture featuring Adaptive Granularity Governance: The Khan Microservice Pattern"
 
 # GitBook plugins configuration
 plugins:

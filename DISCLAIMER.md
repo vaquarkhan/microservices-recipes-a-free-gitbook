@@ -2,13 +2,15 @@
 
 ## Intellectual Property and Methodology Notice
 
-The architectural approaches described in this book, including the "Adaptive Granularity Strategy (Author's Method)", "Service Decomposition Workflow (Author's Method)", and "Microservices Maturity Assessment (Author's Method)", are proprietary methodologies developed by the author, Viquar Khan, based on professional experience. These terms establish attribution and methodology ownership without trademark claims.
+The architectural approaches described in this book, including **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**, are **original methodologies by the author, Vaquar Khan**, based on professional experience. Please cite them when you reuse or discuss them. See [LICENSING.md](LICENSING.md), [NAMING.md](NAMING.md), and [CITATIONS.md](CITATIONS.md).
 
-**No Trademark Claims**: These terms are not registered trademarks in the United States or any other jurisdiction. The use of these terms is for descriptive purposes only and does not imply endorsement by any standards body (such as IEEE, IETF, or ISO). Any resemblance to registered trademarks is coincidental.
+**Copyright** in the book text, diagrams, and written expression of these methodologies is held by Vaquar Khan (2017-2026). Source code in this repository is under the MIT License. Book prose and figures are under CC BY-NC-ND 4.0. Details: [LICENSING.md](LICENSING.md).
+
+**No trademark claims:** These methodology names are not registered trademarks. They identify the author's work for attribution. Any resemblance to registered marks is coincidental.
 
 ## Third-Party Trademarks
 
-All third-party trademarks (including but not limited to AWS, Azure, Google Cloud, Netflix, and Uber) are the property of their respective owners. Reference to these companies is for educational purposes under the doctrine of Fair Use to illustrate architectural case studies [8-12].
+All third-party trademarks (including but not limited to AWS, Azure, Google Cloud, Netflix, and Uber) are the property of their respective owners. Reference to these companies is for educational purposes under fair use to illustrate architectural case studies.
 
 ## Warranty Disclaimer
 
