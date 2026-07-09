@@ -1,0 +1,7 @@
+{
+  "compute_ms": 45,
+  "network_ms": 8,
+  "serialize_ms": 3,
+  "mesh_ms": 2,
+  "notes": "Example Order Validation style breakdown from Chapter 11"
+}
