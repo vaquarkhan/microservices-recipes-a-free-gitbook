@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Service Communication"
 chapter: 3
 author: "Viquar Khan"
@@ -17,21 +17,21 @@ readingTime: "25 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">Strategic Decomposition: Domain Driven Design</h2>
   <div class="chapter-meta">
-    <span class="reading-time">📖 30 min read</span>
-    <span class="difficulty">🎯 Advanced</span>
+    <span class="reading-time">?? 30 min read</span>
+    <span class="difficulty">?? Advanced</span>
   </div>
 </div>
 
 > *"Total unification of the domain model for a large system won't be feasible or cost effective."*  
-> **— Eric Evans, Domain Driven Design**
+> **� Eric Evans, Domain Driven Design**
 
-If Conway’s Law (Chapter 2) describes the human topology of a system, Domain Driven Design (DDD) describes its semantic topology.
+If Conway�s Law (Chapter 2) describes the human topology of a system, Domain Driven Design (DDD) describes its semantic topology.
 
 For the Senior Architect, DDD is often misunderstood. it's frequently conflated with its "Tactical" patterns Entities, Value Objects, Repositories, and Aggregates. While these patterns are vital for
 
 Writing clean code within a service, they don't solve the distributed system problem. You can build a perfectly valid "Aggregate" and still create a Distributed Monolith if that Aggregate is the wrong size or coupled to the wrong things.
 
-The Architect's primary concern is Strategic Design: determining where the model stops being valid. The single biggest cause of microservice failure is the attempt to create a "Single Source of Truth" for complex concepts like "Customer" or "Product" across the entire enterprise. This creates a Semantic Lock—a rigid dependency where every team must agree on a single definition, paralyzing velocity.
+The Architect's primary concern is Strategic Design: determining where the model stops being valid. The single biggest cause of microservice failure is the attempt to create a "Single Source of Truth" for complex concepts like "Customer" or "Product" across the entire enterprise. This creates a Semantic Lock�a rigid dependency where every team must agree on a single definition, paralyzing velocity.
 
 To decouple the system, we must first decouple the language.
 
@@ -49,7 +49,7 @@ Consider the concept of a "Book" in a large publishing house:
 
 **Editorial Context:** A "Book" is a manuscript. It has drafts, edits, a word count, and an author relationship. It doesn't have a price or dimensions yet.
 
-**Printing/Logistics Context:** A "Book" is a physical object. It has dimensions (H × W × D), paper weight, binding type, and warehouse location. It doesn't care about the plot or the author.
+**Printing/Logistics Context:** A "Book" is a physical object. It has dimensions (H � W � D), paper weight, binding type, and warehouse location. It doesn't care about the plot or the author.
 
 **eCommerce/Sales Context:** A "Book" is a product SKU. It has a price, a star rating, a cover image, and shipping eligibility.
 
@@ -266,11 +266,11 @@ It is not a "meeting." it's a massive, visual collaborative modeling session.
 
 **Action:** Add Blue stickies (Commands) before the events. Add Yellow stickies (Actors) who invoked the command.
 
-**Flow:** User (Yellow) → Place Order (Blue) → OrderCreated (Orange).
+**Flow:** User (Yellow) ? Place Order (Blue) ? OrderCreated (Orange).
 ## Step 4: The Semantic Coupling Check (The Pivot Points)
 This is the most critical step for microservice boundaries.
 
-The Architect’s Eye: Look for the same noun appearing in distant clusters.
+The Architect�s Eye: Look for the same noun appearing in distant clusters.
 
 In the Sales cluster, we see LeadConverted and ContractSigned. The "Customer" here is a prospect.
 
@@ -306,11 +306,11 @@ Use this technique to prove your architecture before writing a single line of co
 
 Sovereignty & The Consistency Challenge
 
-Focus: The single hardest aspect of microservices—managing data distributed across boundaries.
+Focus: The single hardest aspect of microservices�managing data distributed across boundaries.
 
 ---
 
-## 3.5 The Adaptive Granularity Strategy
+## 3.5 Adaptive Granularity Governance: The Khan Microservice Pattern
 
 ### The Centerpiece of Modern Microservices Architecture
 
@@ -324,7 +324,7 @@ Traditional approaches offer rigid rules:
 
 These heuristics fail because they ignore context. A two-week rewrite might be trivial for a startup with three developers but catastrophic for an enterprise with compliance requirements. A strict domain boundary might make sense for e-commerce but create operational nightmares in healthcare.
 
-**The Adaptive Granularity Strategy** introduces a paradigm shift: **context-driven, adaptive granularity**. Instead of following one-size-fits-all rules, this pattern provides a quantitative framework for making granularity decisions based on your specific organizational, technical, and business context.
+**Adaptive Granularity Governance: The Khan Microservice Pattern** introduces a paradigm shift: **context-driven, adaptive granularity**. Instead of following one-size-fits-all rules, this pattern provides a quantitative framework for making granularity decisions based on your specific organizational, technical, and business context.
 
 ### 3.5.1 The Problem: Why Traditional Approaches Fail
 
@@ -342,10 +342,10 @@ In 2018, a major financial services company decomposed their monolithic trading 
 
 With 847 services, each with 99.9% availability:
 ```
-System Availability = 0.999^23 ≈ 97.7%
+System Availability = 0.999^23 � 97.7%
 ```
 
-The system was technically "up" but functionally broken 2.3% of the time—unacceptable for financial trading.
+The system was technically "up" but functionally broken 2.3% of the time�unacceptable for financial trading.
 
 #### The Distributed Monolith
 
@@ -356,11 +356,11 @@ Conversely, a healthcare provider "adopted microservices" by splitting their mon
 - **No Independence:** Teams couldn't release independently
 - **Worst of Both Worlds:** Distributed system complexity without any benefits
 
-**The Pattern:** They had created a **Distributed Monolith**—the most common anti-pattern in microservices adoption.
+**The Pattern:** They had created a **Distributed Monolith**�the most common anti-pattern in microservices adoption.
 
-### 3.5.2 The Adaptive Granularity Strategy Framework: Four-Dimensional Analysis
+### 3.5.2 Adaptive Granularity Governance: The Khan Microservice Pattern Framework: Four-Dimensional Analysis
 
-The Adaptive Granularity Strategy evaluates service granularity across four dimensions:
+Adaptive Granularity Governance: The Khan Microservice Pattern evaluates service granularity across four dimensions:
 
 #### Dimension 1: Organizational Maturity (O)
 
@@ -373,7 +373,7 @@ The Adaptive Granularity Strategy evaluates service granularity across four dime
 | **Level 3: Scaling** | 50-200 developers | Container orchestration | **Microservices** - 20-50 services with clear boundaries |
 | **Level 4: Enterprise** | 200+ developers | Full observability stack | **Adaptive** - Mix of macro and micro based on domain |
 
-**Adaptive Granularity Strategy Rule:** Your granularity should match your operational capability. A startup with 5 developers attempting to manage 50 microservices will fail due to operational overhead.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Rule:** Your granularity should match your operational capability. A startup with 5 developers attempting to manage 50 microservices will fail due to operational overhead.
 
 #### Dimension 2: Business Domain Complexity (D)
 
@@ -385,7 +385,7 @@ The Adaptive Granularity Strategy evaluates service granularity across four dime
 | **Supporting Domain** | Medium (monthly) | Low | **Medium** - Shared service, multiple teams |
 | **Generic Domain** | Low (yearly) | High (compliance) | **Low** - Buy/outsource (Auth0, Stripe) |
 
-**Adaptive Granularity Strategy Rule:** Invest in isolation for your Core Domain. Don't build microservices for Generic Domains—buy them.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Rule:** Invest in isolation for your Core Domain. Don't build microservices for Generic Domains�buy them.
 
 #### Dimension 3: Technical Constraints (T)
 
@@ -401,7 +401,7 @@ The Adaptive Granularity Strategy evaluates service granularity across four dime
 | **Scale Factor** | 10x variance | **Fine** - Independent scaling needed |
 | **Scale Factor** | < 2x variance | **Coarse** - Shared scaling OK |
 
-**Adaptive Granularity Strategy Rule:** Strong consistency requirements force coarser granularity. If two entities must be updated atomically, they belong in the same service.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Rule:** Strong consistency requirements force coarser granularity. If two entities must be updated atomically, they belong in the same service.
 
 #### Dimension 4: Evolutionary Trajectory (E)
 
@@ -413,7 +413,7 @@ The Adaptive Granularity Strategy evaluates service granularity across four dime
 | **Brownfield** | 2-5 years | **Strangler Fig** - Gradually extract bounded contexts |
 | **Legacy** | 5+ years | **Anti-Corruption Layer** - Isolate before extracting |
 
-**Adaptive Granularity Strategy Rule:** Never start with microservices. Start with a well-structured monolith and extract services as you learn the domain.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Rule:** Never start with microservices. Start with a well-structured monolith and extract services as you learn the domain.
 
 ### 3.5.3 The Mathematical Foundation: The RVx Index
 
@@ -422,86 +422,86 @@ The Khan Index (RVx) quantifies whether a service boundary adds value or merely 
 **Formula:**
 
 ```
-RVx = (Ê^β × Ŝ) / (L̂^α + ε)
+RVx = (�^� � S) / (L^^a + e)
 
 Where:
-Ê = Kinetic Efficiency (useful computation / total transaction time)
-Ŝ = Semantic Distinctness (independence measured via temporal coupling)
-L̂ = Cognitive Load (normalized complexity from static analysis)
-α, β = Tuning parameters (default: α=1.2, β=0.8)
-ε = Stability constant (default: 0.1)
+� = Kinetic Efficiency (useful computation / total transaction time)
+S = Semantic Distinctness (independence measured via temporal coupling)
+L^ = Cognitive Load (normalized complexity from static analysis)
+a, � = Tuning parameters (default: a=1.2, �=0.8)
+e = Stability constant (default: 0.1)
 ```
 
 **Component Definitions:**
 
-**Ê (Kinetic Efficiency):** Ratio of business logic execution time to total request time
+**� (Kinetic Efficiency):** Ratio of business logic execution time to total request time
 ```
-Ê = T_business_logic / (T_business_logic + T_network + T_serialization)
+� = T_business_logic / (T_business_logic + T_network + T_serialization)
 
 Example:
 - Business logic: 50ms
 - Network calls: 200ms
 - Serialization: 50ms
-- Ê = 50 / (50 + 200 + 50) = 0.167 (16.7% efficient)
+- � = 50 / (50 + 200 + 50) = 0.167 (16.7% efficient)
 ```
 
-**Ŝ (Semantic Distinctness):** Measures how independent a service is from others
+**S (Semantic Distinctness):** Measures how independent a service is from others
 ```
-Ŝ = 1 - (Shared_Changes / Total_Changes)
+S = 1 - (Shared_Changes / Total_Changes)
 
 Example:
 - Service A had 100 commits last month
 - 40 of those commits also required changes to Service B
-- Ŝ = 1 - (40/100) = 0.6 (60% independent)
+- S = 1 - (40/100) = 0.6 (60% independent)
 ```
 
-**L̂ (Cognitive Load):** Normalized complexity score
+**L^ (Cognitive Load):** Normalized complexity score
 ```
-L̂ = (Cyclomatic_Complexity + Lines_of_Code/1000) / Max_Expected_Complexity
+L^ = (Cyclomatic_Complexity + Lines_of_Code/1000) / Max_Expected_Complexity
 
 Example:
 - Cyclomatic Complexity: 150
 - Lines of Code: 5,000
 - Max Expected: 200
-- L̂ = (150 + 5) / 200 = 0.775
+- L^ = (150 + 5) / 200 = 0.775
 ```
 
 ### 3.5.4 The Four Architectural Zones
 
 Based on the RVx score, services fall into four zones:
 
-**Zone I: Nano-Swarm (RVx ≤ 0.3)**
+**Zone I: Nano-Swarm (RVx = 0.3)**
 - **Diagnosis:** Network tax exceeds value delivered
 - **Symptoms:** High latency, low business logic execution time
 - **Mandate:** **MERGE** - Consolidate services to reduce network overhead
 - **Example:** 5 services that just pass data through without transformation
 
-**Zone II: God Services (L̂ > 0.7, regardless of RVx)**
+**Zone II: God Services (L^ > 0.7, regardless of RVx)**
 - **Diagnosis:** Cognitive overload, too much responsibility
 - **Symptoms:** Large codebase, high cyclomatic complexity, multiple teams touching it
 - **Mandate:** **SPLIT** - Extract bounded contexts
 - **Example:** A 50,000-line "User Service" handling authentication, profile, preferences, and notifications
 
-**Zone III: Distributed Monolith (Ŝ ≤ 0.4)**
+**Zone III: Distributed Monolith (S = 0.4)**
 - **Diagnosis:** Wrong boundaries, services change together
 - **Symptoms:** Coordinated deployments, shared database, temporal coupling
 - **Mandate:** **REFACTOR** - Realign boundaries based on domain
 - **Example:** Order Service and Inventory Service that always deploy together
 
-**Zone IV: VaquarKhan Optimum (RVx > 0.6, L̂ < 0.7, Ŝ > 0.4)**
+**Zone IV: VaquarKhan Optimum (RVx > 0.6, L^ < 0.7, S > 0.4)**
 - **Diagnosis:** Balanced architecture
 - **Symptoms:** Independent deployments, clear boundaries, manageable complexity
 - **Mandate:** **MAINTAIN** - Continue monitoring, avoid premature optimization
 - **Example:** Well-designed bounded contexts with clear domain ownership
 
-### 3.5.5 Implementation Guide: Applying the Adaptive Granularity Strategy
+### 3.5.5 Implementation Guide: Applying Adaptive Granularity Governance: The Khan Microservice Pattern
 
 #### Step 1: Measure Your Current State
 
 **Tools Required:**
-- **OpenTelemetry:** For measuring Ê (latency breakdown)
-- **SonarQube:** For measuring L̂ (code complexity)
-- **Git Analysis:** For measuring Ŝ (temporal coupling)
+- **OpenTelemetry:** For measuring � (latency breakdown)
+- **SonarQube:** For measuring L^ (code complexity)
+- **Git Analysis:** For measuring S (temporal coupling)
 
 **Measurement Protocol:**
 
@@ -512,18 +512,18 @@ import opentelemetry_metrics as otel
 import sonarqube_api as sonar
 import git_analyzer as git
 
-# Measure Kinetic Efficiency (Ê)
+# Measure Kinetic Efficiency (�)
 traces = otel.get_traces(service="order-service", days=30)
 business_logic_time = sum(t.business_duration for t in traces) / len(traces)
 total_time = sum(t.total_duration for t in traces) / len(traces)
 E_kinetic = business_logic_time / total_time
 
-# Measure Cognitive Load (L̂)
+# Measure Cognitive Load (L^)
 complexity = sonar.get_complexity(project="order-service")
 loc = sonar.get_lines_of_code(project="order-service")
 L_cognitive = (complexity + loc/1000) / 200  # Normalize to 200
 
-# Measure Semantic Distinctness (Ŝ)
+# Measure Semantic Distinctness (S)
 commits = git.get_commits(repo="order-service", days=90)
 shared_commits = git.count_multi_service_commits(commits)
 S_semantic = 1 - (shared_commits / len(commits))
@@ -545,11 +545,11 @@ else:
 
 #### Step 2: Calibrate for Your Organization
 
-The default parameters (α=1.2, β=0.8) work for most organizations, but you should calibrate based on your context:
+The default parameters (a=1.2, �=0.8) work for most organizations, but you should calibrate based on your context:
 
 **Calibration Matrix:**
 
-| Organization Type | α (Complexity Penalty) | β (Efficiency Weight) | Rationale |
+| Organization Type | a (Complexity Penalty) | � (Efficiency Weight) | Rationale |
 |-------------------|------------------------|----------------------|-----------|
 | **Startup** | 1.0 | 1.0 | Prioritize speed over perfection |
 | **Enterprise** | 1.5 | 0.6 | Prioritize maintainability over efficiency |
@@ -563,7 +563,7 @@ Integrate RVx calculation into your observability platform (Grafana, DataDog, Ne
 ```yaml
 # Example: Grafana Dashboard Config
 dashboard:
-  title: "Adaptive Granularity Strategy Service Health"
+  title: "Adaptive Granularity Governance: The Khan Microservice Pattern Service Health"
   panels:
     - title: "RVx Score by Service"
       type: "gauge"
@@ -580,16 +580,16 @@ dashboard:
           color: "green"
           label: "Zone IV: Optimal"
     
-    - title: "Cognitive Load (L̂)"
+    - title: "Cognitive Load (L^)"
       type: "graph"
       targets:
         - expr: "khan_cognitive_load"
       alert:
-        condition: "L̂ > 0.7"
+        condition: "L^ > 0.7"
         message: "Service exceeds complexity threshold - consider splitting"
 ```
 
-### 3.5.6 Case Studies: The Adaptive Granularity Strategy in Action
+### 3.5.6 Case Studies: Adaptive Granularity Governance: The Khan Microservice Pattern in Action
 
 #### Case Study 1: E-Commerce Platform Recovery
 
@@ -604,7 +604,7 @@ dashboard:
 - P99 Latency: 2.3 seconds
 - Deployment Success Rate: 62%
 
-**Adaptive Granularity Strategy Application:**
+**Adaptive Granularity Governance: The Khan Microservice Pattern Application:**
 
 1. **Measurement Phase (Month 1):**
    - Instrumented all services with OpenTelemetry
@@ -614,7 +614,7 @@ dashboard:
 2. **Consolidation Phase (Months 2-6):**
    - Merged 85 nano-services into 12 macro-services based on bounded contexts
    - Example: "Product Catalog" absorbed 8 services (ProductInfo, ProductImages, ProductReviews, ProductInventory, ProductPricing, ProductCategories, ProductSearch, ProductRecommendations)
-   - Rationale: All changed together (Ŝ = 0.2), minimal business logic (Ê = 0.15)
+   - Rationale: All changed together (S = 0.2), minimal business logic (� = 0.15)
 
 3. **Optimization Phase (Months 7-12):**
    - Refactored 15 services in Zone III (Distributed Monolith)
@@ -628,7 +628,7 @@ dashboard:
 - Deployment Success Rate: 94%
 - Developer Satisfaction: +45% (internal survey)
 
-**Key Lesson:** More services ≠ better architecture. The Adaptive Granularity Strategy provided objective criteria for consolidation.
+**Key Lesson:** More services ? better architecture. Adaptive Granularity Governance: The Khan Microservice Pattern provided objective criteria for consolidation.
 
 #### Case Study 2: Financial Services Compliance
 
@@ -641,7 +641,7 @@ dashboard:
 Traditional microservices advice: "Split everything into small services"
 Reality: Financial regulations require strong consistency and audit trails
 
-**Adaptive Granularity Strategy Application:**
+**Adaptive Granularity Governance: The Khan Microservice Pattern Application:**
 
 1. **Domain Analysis:**
    - Core Domain: Account Management, Transaction Processing (high regulatory burden)
@@ -649,7 +649,7 @@ Reality: Financial regulations require strong consistency and audit trails
    - Generic Domain: Authentication (bought Auth0)
 
 2. **Granularity Decision:**
-   - **Account Management:** Kept as macro-service (RVx = 0.55, but L̂ = 0.6)
+   - **Account Management:** Kept as macro-service (RVx = 0.55, but L^ = 0.6)
      - Rationale: Strong consistency required (ACID transactions)
      - Splitting would create distributed transaction complexity
    - **Transaction Processing:** Kept as macro-service
@@ -664,11 +664,11 @@ Reality: Financial regulations require strong consistency and audit trails
 
 **Results:**
 - Passed SOX audit on first attempt
-- Deployment frequency: Monthly → Weekly for supporting services
+- Deployment frequency: Monthly ? Weekly for supporting services
 - Core services remain stable (quarterly releases)
 - Zero compliance violations
 
-**Key Lesson:** The Adaptive Granularity Strategy allows for **heterogeneous granularity**—different parts of the system can have different service sizes based on their constraints.
+**Key Lesson:** Adaptive Granularity Governance: The Khan Microservice Pattern allows for **heterogeneous granularity**�different parts of the system can have different service sizes based on their constraints.
 
 #### Case Study 3: Healthcare System Modernization
 
@@ -677,10 +677,10 @@ Reality: Financial regulations require strong consistency and audit trails
 - Problem: 25-year-old monolith, HIPAA compliance, patient safety critical
 - Constraint: can't afford downtime
 
-**Adaptive Granularity Strategy Application:**
+**Adaptive Granularity Governance: The Khan Microservice Pattern Application:**
 
 1. **Strangler Fig Strategy:**
-   - Used Adaptive Granularity Strategy to identify extraction candidates
+   - Used Adaptive Granularity Governance: The Khan Microservice Pattern to identify extraction candidates
    - Prioritized services with high RVx potential and low regulatory risk
 
 2. **Extraction Order (based on RVx analysis):**
@@ -689,20 +689,20 @@ Reality: Financial regulations require strong consistency and audit trails
    - **Phase 3:** Billing (RVx potential: 0.65, high risk - kept for last)
    - **Never Extracted:** Electronic Health Records (EHR) core
      - Rationale: Strong consistency required, HIPAA audit complexity
-     - RVx analysis showed splitting would decrease score (Ê would drop due to network overhead)
+     - RVx analysis showed splitting would decrease score (� would drop due to network overhead)
 
 3. **Anti-Corruption Layer:**
    - Built ACL between new services and monolith
-   - Measured ACL performance: Ê = 0.4 (acceptable overhead for isolation benefit)
+   - Measured ACL performance: � = 0.4 (acceptable overhead for isolation benefit)
 
 **Results:**
 - 3 services extracted over 18 months
 - Zero patient safety incidents
 - HIPAA compliance maintained
 - Monolith reduced by 40% in size
-- Remaining monolith is now manageable (L̂ = 0.55)
+- Remaining monolith is now manageable (L^ = 0.55)
 
-**Key Lesson:** The Adaptive Granularity Strategy respects constraints. Sometimes the right answer is "don't split this."
+**Key Lesson:** Adaptive Granularity Governance: The Khan Microservice Pattern respects constraints. Sometimes the right answer is "don't split this."
 
 ### 3.5.7 Industry Validation and Adoption
 
@@ -714,7 +714,7 @@ Reality: Financial regulations require strong consistency and audit trails
 **Enterprise Adoption:**
 - 50+ documented implementations across Fortune 500 companies
 - Industries: Finance, Healthcare, E-commerce, Telecommunications
-- Average RVx improvement: 0.35 → 0.68 (94% increase)
+- Average RVx improvement: 0.35 ? 0.68 (94% increase)
 
 **Community Feedback:**
 - GitHub Stars: 606 (demonstrates industry interest)
@@ -729,25 +729,25 @@ Reality: Financial regulations require strong consistency and audit trails
 - **khan-cli** (Go): Command-line tool for quick assessments
 
 **Commercial Integration:**
-- **DataDog:** Adaptive Granularity Strategy metrics available as custom integration
+- **DataDog:** Adaptive Granularity Governance: The Khan Microservice Pattern metrics available as custom integration
 - **New Relic:** RVx score included in service health dashboard
 - **Dynatrace:** Automated zone classification and recommendations
 
 ### 3.5.9 Common Questions and Misconceptions
 
 **Q: Isn't this just premature optimization?**
-A: No. The Adaptive Granularity Strategy is about **avoiding premature decomposition**. It provides objective criteria for when to split and when to consolidate.
+A: No. Adaptive Granularity Governance: The Khan Microservice Pattern is about **avoiding premature decomposition**. It provides objective criteria for when to split and when to consolidate.
 
 **Q: What if my RVx score is borderline (e.g., 0.55)?**
 A: Use the **Hysteresis Principle**: Don't make changes for small score variations. Only act when RVx crosses major thresholds (0.3, 0.6) and stays there for 30+ days.
 
 **Q: Can I use this for serverless/FaaS?**
-A: Yes. The pattern applies to any distributed system. For serverless, Ê becomes even more critical due to cold start overhead.
+A: Yes. The pattern applies to any distributed system. For serverless, � becomes even more critical due to cold start overhead.
 
 **Q: What about team autonomy? Doesn't this force centralized decision-making?**
-A: No. The Adaptive Granularity Strategy provides **data for decision-making**, not mandates. Teams use RVx scores to justify their architectural choices to stakeholders.
+A: No. Adaptive Granularity Governance: The Khan Microservice Pattern provides **data for decision-making**, not mandates. Teams use RVx scores to justify their architectural choices to stakeholders.
 
-### 3.5.10 The Future: Adaptive Granularity Strategy 2.0
+### 3.5.10 The Future: Adaptive Granularity Governance: The Khan Microservice Pattern 2.0
 
 **Upcoming Enhancements (2026-2027):**
 
@@ -773,15 +773,15 @@ A: No. The Adaptive Granularity Strategy provides **data for decision-making**, 
 
 ### Conclusion: Stop Splitting, Start Governing
 
-The Adaptive Granularity Strategy represents a fundamental shift in how we think about microservices architecture. Instead of asking "How small should my services be?", we ask "What granularity optimizes for my specific context?"
+Adaptive Granularity Governance: The Khan Microservice Pattern represents a fundamental shift in how we think about microservices architecture. Instead of asking "How small should my services be?", we ask "What granularity optimizes for my specific context?"
 
 **The Three Principles:**
 
 1. **Context Over Dogma:** Your organization, domain, and constraints matter more than industry best practices
 2. **Measurement Over Opinion:** Use quantitative metrics (RVx) instead of subjective judgment
-3. **Evolution Over Perfection:** Architecture is a journey, not a destination—measure, adapt, improve
+3. **Evolution Over Perfection:** Architecture is a journey, not a destination�measure, adapt, improve
 
-As we move into Chapter 4, we'll explore how these principles apply to the hardest problem in microservices: managing data across service boundaries. The Adaptive Granularity Strategy will guide us in determining when to share data, when to duplicate it, and when to accept eventual consistency.
+As we move into Chapter 4, we'll explore how these principles apply to the hardest problem in microservices: managing data across service boundaries. Adaptive Granularity Governance: The Khan Microservice Pattern will guide us in determining when to share data, when to duplicate it, and when to accept eventual consistency.
 
 ---
 
@@ -796,5 +796,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 2](02-design-principles-and-patterns.md)
-- [Next: Chapter 4 →](04-data-management.md)
+- [? Previous: Chapter 2](02-design-principles-and-patterns.md)
+- [Next: Chapter 4 ?](04-data-management.md)

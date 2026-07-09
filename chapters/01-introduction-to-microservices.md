@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Introduction to Microservices"
 chapter: 1
 author: "Viquar Khan"
@@ -17,8 +17,8 @@ readingTime: "25 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">The Definition Wars & The Reality of SOA</h2>
   <div class="chapter-meta">
-    <span class="reading-time">📖 25 min read</span>
-    <span class="difficulty">🎯 Intermediate</span>
+    <span class="reading-time">?? 25 min read</span>
+    <span class="difficulty">?? Intermediate</span>
   </div>
 </div>
 
@@ -113,7 +113,7 @@ Multiple services reading and writing to the same tables. If Service A changes a
 A single frontend request triggers a cascade of 50 synchronous internal calls. This destroys availability. If each of the 50 calls has a 99.9% success rate, the aggregate success rate is:
 
 ```
-Success Rate = (0.999)^50 ≈ 0.951 = 95.1%
+Success Rate = (0.999)^50 � 0.951 = 95.1%
 ```
 
 ![System Availability Chain](../assets/images/diagrams/system-availability-chain.png)
@@ -291,17 +291,17 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** A microservice should encapsulate a single business capability.
 
-**2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic—it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
+**2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic�it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
 
-**Adaptive Granularity Strategy Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
 
 ### 2. The Semantic API Revolution
 
 **Classical Definition:** APIs should be RESTful, following HTTP verbs and resource-oriented design.
 
-**2026+ Reality:** AI agents don't navigate REST APIs—they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
+**2026+ Reality:** AI agents don't navigate REST APIs�they interpret **semantic interfaces**. OpenAI's Function Calling, Anthropic's Tool Use, and emerging standards like the Model Context Protocol (MCP) represent a paradigm shift. APIs are no longer just for humans or deterministic code; they're for probabilistic reasoning engines.
 
-**Adaptive Granularity Strategy Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
+**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Design APIs with **Semantic Clarity as a First-Class Requirement**:
 - **Natural Language Descriptions:** Every endpoint must have clear, unambiguous descriptions that LLMs can parse
 - **Schema Validation:** Use JSON Schema or OpenAPI 3.1+ with rich examples
 - **Idempotency by Default:** AI agents may retry operations due to hallucination or uncertainty
@@ -310,9 +310,9 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **Classical Definition:** Each microservice owns its database (Database per Service pattern).
 
-**2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**—numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
+**2026+ Reality:** Vector databases (Pinecone, Weaviate, Milvus) store **embeddings**�numerical representations of semantic meaning. The question: Should embeddings be centralized or distributed across services?
 
-**Adaptive Granularity Strategy Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
+**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Apply **Semantic Cohesion Analysis**. If multiple services need to perform semantic search over the same domain (e.g., "Customer 360"), a **Shared Vector Store** with strict access control is acceptable. However, if services operate in distinct semantic spaces (e.g., "Product Recommendations" vs. "Fraud Detection"), they should maintain **separate vector databases**.
 
 **Decision Matrix:**
 
@@ -328,7 +328,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI services scale based on **token consumption**. A single API call to GPT-4 might cost $0.03 (for 1000 tokens), while a traditional REST call costs fractions of a cent.
 
-**Adaptive Granularity Strategy Guidance:** Introduce **Cost-Aware Circuit Breakers**. Traditional circuit breakers trip on error rates or latency. AI-native circuit breakers must also trip on:
+**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Introduce **Cost-Aware Circuit Breakers**. Traditional circuit breakers trip on error rates or latency. AI-native circuit breakers must also trip on:
 - **Token Burn Rate:** If a service exceeds its token budget, degrade gracefully
 - **Hallucination Detection:** If an AI service returns low-confidence responses repeatedly, circuit-break to prevent cascading errors
 
@@ -338,7 +338,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI services introduce **non-deterministic behavior**. The same input prompt can yield different outputs due to temperature settings, model updates, or stochastic sampling.
 
-**Adaptive Granularity Strategy Guidance:** Extend OpenTelemetry spans with **AI-specific attributes**:
+**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Extend OpenTelemetry spans with **AI-specific attributes**:
 - `ai.model.name`: Which model was used
 - `ai.prompt.hash`: SHA-256 of the input prompt (for reproducibility)
 - `ai.response.confidence`: Model's confidence score
@@ -354,7 +354,7 @@ The principles articulated by Fowler, Newman, and Richardson remain the bedrock 
 3. **Token Economics** must inform scaling and circuit-breaking strategies
 4. **Probabilistic Behavior** requires new observability primitives
 
-The Adaptive Granularity Strategy was designed precisely for this era of rapid technological evolution. It doesn't prescribe rigid rules but provides a **framework for reasoning** about service boundaries in the face of new constraints.
+Adaptive Granularity Governance: The Khan Microservice Pattern was designed precisely for this era of rapid technological evolution. It doesn't prescribe rigid rules but provides a **framework for reasoning** about service boundaries in the face of new constraints.
 
 ---
 
@@ -369,5 +369,5 @@ In the next chapter, we'll dive deeper into design principles and patterns that 
 ---
 
 **Navigation:**
-- [← Previous: Preface](../PREFACE.md)
-- [Next: Chapter 2 →](02-design-principles-and-patterns.md)
+- [? Previous: Preface](../PREFACE.md)
+- [Next: Chapter 2 ?](02-design-principles-and-patterns.md)

@@ -1,4 +1,4 @@
-﻿# Quick Reference
+# Quick Reference
 
 ## Essential Patterns and Practices for Microservices Architecture
 
@@ -6,7 +6,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 
 ---
 
-## 🏗️ Design Principles
+## ??? Design Principles
 
 ### Core Principles Checklist
 - [ ] **Single Responsibility**: Each service has one reason to change
@@ -15,7 +15,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 - [ ] **Autonomy**: Independently deployable and scalable
 - [ ] **Resilience**: Designed to handle failures gracefully
 
-### Adaptive Granularity Strategy Decision Matrix
+### Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrix
 
 | Factor | Fine-Grained | Medium-Grained | Coarse-Grained |
 |--------|--------------|----------------|----------------|
@@ -29,7 +29,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 
 ---
 
-## 📡 Communication Patterns
+## ?? Communication Patterns
 
 ### Synchronous vs Asynchronous
 
@@ -44,10 +44,10 @@ This quick reference provides at-a-glance guidance for common microservices patt
 ### Communication Pattern Selection
 
 ```
-Query Data → REST/GraphQL
-Commands → Async Messages
-Events → Event Streaming
-Real-time → WebSockets/gRPC
+Query Data ? REST/GraphQL
+Commands ? Async Messages
+Events ? Event Streaming
+Real-time ? WebSockets/gRPC
 ```
 
 ### REST API Best Practices
@@ -68,13 +68,13 @@ DELETE /api/deleteOrder
 
 ---
 
-## 🗄️ Data Management Patterns
+## ??? Data Management Patterns
 
 ### Database per Service Rules
-- ✅ Each service owns its database
-- ✅ Access data only through service APIs
-- ❌ Never share databases between services
-- ❌ No direct database access from other services
+- ? Each service owns its database
+- ? Access data only through service APIs
+- ? Never share databases between services
+- ? No direct database access from other services
 
 ### Data Consistency Patterns
 
@@ -88,15 +88,15 @@ DELETE /api/deleteOrder
 ### CQRS Decision Tree
 
 ```
-Need different read/write models? → Yes → Consider CQRS
-High read/write ratio? → Yes → Consider CQRS
-Complex queries? → Yes → Consider CQRS
-Simple CRUD? → No → Skip CQRS
+Need different read/write models? ? Yes ? Consider CQRS
+High read/write ratio? ? Yes ? Consider CQRS
+Complex queries? ? Yes ? Consider CQRS
+Simple CRUD? ? No ? Skip CQRS
 ```
 
 ---
 
-## 🛡️ Resilience Patterns
+## ??? Resilience Patterns
 
 ### Essential Resilience Patterns
 
@@ -111,9 +111,9 @@ Simple CRUD? → No → Skip CQRS
 ### Circuit Breaker States
 
 ```
-CLOSED → Normal operation
-OPEN → Failing fast (no calls)
-HALF-OPEN → Testing recovery
+CLOSED ? Normal operation
+OPEN ? Failing fast (no calls)
+HALF-OPEN ? Testing recovery
 ```
 
 ### Retry Strategy
@@ -126,7 +126,7 @@ max_attempts = 3
 
 ---
 
-## 🔍 Service Discovery
+## ?? Service Discovery
 
 ### Discovery Patterns
 
@@ -151,12 +151,12 @@ GET /health
 
 ---
 
-## 🔐 Security Patterns
+## ?? Security Patterns
 
 ### Authentication & Authorization
 
 ```
-API Gateway → JWT Validation → Service Authorization
+API Gateway ? JWT Validation ? Service Authorization
 ```
 
 ### Security Checklist
@@ -186,13 +186,13 @@ API Gateway → JWT Validation → Service Authorization
 
 ---
 
-## 📊 Observability
+## ?? Observability
 
 ### Three Pillars of Observability
 
-1. **Metrics** → What is happening?
-2. **Logs** → Why is it happening?
-3. **Traces** → Where is it happening?
+1. **Metrics** ? What is happening?
+2. **Logs** ? Why is it happening?
+3. **Traces** ? Where is it happening?
 
 ### Essential Metrics
 
@@ -206,25 +206,25 @@ API Gateway → JWT Validation → Service Authorization
 
 ```
 Request ID: 12345
-├── Service A (10ms)
-├── Service B (50ms)
-│   ├── Database Query (30ms)
-│   └── External API (15ms)
-└── Service C (25ms)
++-- Service A (10ms)
++-- Service B (50ms)
+�   +-- Database Query (30ms)
+�   +-- External API (15ms)
++-- Service C (25ms)
 ```
 
 ### Log Levels
 
 ```
-ERROR → System errors, exceptions
-WARN → Potential issues, degraded performance
-INFO → Important business events
-DEBUG → Detailed diagnostic information
+ERROR ? System errors, exceptions
+WARN ? Potential issues, degraded performance
+INFO ? Important business events
+DEBUG ? Detailed diagnostic information
 ```
 
 ---
 
-## 🚀 Deployment Patterns
+## ?? Deployment Patterns
 
 ### Deployment Strategies Comparison
 
@@ -286,7 +286,7 @@ spec:
 
 ---
 
-## 🧪 Testing Strategies
+## ?? Testing Strategies
 
 ### Testing Pyramid for Microservices
 
@@ -325,7 +325,7 @@ interactions:
 
 ---
 
-## ⚠️ Anti-Patterns to Avoid
+## ?? Anti-Patterns to Avoid
 
 ### Common Anti-Patterns
 
@@ -339,7 +339,7 @@ interactions:
 
 ### Warning Signs
 
-🚨 **Red Flags**:
+?? **Red Flags**:
 - Services always deployed together
 - Frequent cross-service database queries
 - Cascading failures
@@ -348,7 +348,7 @@ interactions:
 
 ---
 
-## 📏 Sizing Guidelines
+## ?? Sizing Guidelines
 
 ### Service Size Indicators
 
@@ -377,7 +377,7 @@ Services per Team = 1-3 services
 
 ---
 
-## 🔧 Technology Stack Recommendations
+## ?? Technology Stack Recommendations
 
 ### Popular Technology Combinations
 
@@ -404,7 +404,7 @@ Logging: ELK Stack
 
 ---
 
-## 📋 Decision Checklists
+## ?? Decision Checklists
 
 ### Microservices Readiness Checklist
 
@@ -432,7 +432,7 @@ Logging: ELK Stack
 
 ---
 
-## 🎯 Quick Wins
+## ?? Quick Wins
 
 ### Start Here (Low Risk, High Value)
 
@@ -451,7 +451,7 @@ Logging: ELK Stack
 
 ---
 
-## 📚 Essential Resources
+## ?? Essential Resources
 
 ### Must-Read Books
 1. "Building Microservices" - Sam Newman
@@ -471,7 +471,7 @@ Logging: ELK Stack
 
 ---
 
-## 🆘 Troubleshooting Guide
+## ?? Troubleshooting Guide
 
 ### Common Issues and Solutions
 

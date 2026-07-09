@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Deployment and Operations"
 chapter: 5
 author: "Viquar Khan"
@@ -17,8 +17,8 @@ readingTime: "35 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">The Dissolution of Atomicity in the Cloud Native Era</h2>
   <div class="chapter-meta">
-    <span class="reading-time">📖 35 min read</span>
-    <span class="difficulty">🎯 Expert</span>
+    <span class="reading-time">?? 35 min read</span>
+    <span class="difficulty">?? Expert</span>
   </div>
 </div>
 
@@ -56,7 +56,7 @@ A Saga is not merely a chain of events; it's a state machine that guarantees a s
 
 1. **Compensatable Transactions**: These are the initial steps of the Saga that potentially need to be undone if a subsequent step fails. Examples include reserving inventory, placing a hold on credit, or creating a pending order. The defining characteristic is that the system must provide a corresponding "Compensating Transaction" for every compensatable step.
 
-2. **Pivot Transaction**: This is the critical turning point in the Saga—the "point of no return." it's typically the step that results in a significant external effect or a commitment that can't be easily reversed, such as charging a credit card or printing a shipping label. If the Pivot Transaction succeeds, the Saga is effectively guaranteed to be completed. If it fails, the Saga must retreat, executing compensating transactions for all preceding steps.
+2. **Pivot Transaction**: This is the critical turning point in the Saga�the "point of no return." it's typically the step that results in a significant external effect or a commitment that can't be easily reversed, such as charging a credit card or printing a shipping label. If the Pivot Transaction succeeds, the Saga is effectively guaranteed to be completed. If it fails, the Saga must retreat, executing compensating transactions for all preceding steps.
 
 3. **Retriable Transactions**: These transactions occur after the Pivot Transaction. Because Pivot has succeeded, the system is committed to finishing the workflow. Retriable transactions are those that are guaranteed to succeed eventually, such as sending a confirmation email or updating a secondary index. If they fail, they are simply retried until success, rather than triggering a rollback.
 
@@ -86,29 +86,29 @@ The implementation of Saga requires a mechanism to coordinate the sequence of lo
 | Single Point of Failure | None; highly distributed | The Orchestrator (mitigated by HA services like AWS Step Functions) |
 | Mental Model | "Reactionary" - Services do what they do when triggered | "Authoritative" - A central brain defines the process |
 
-### Adaptive Granularity Strategy Decision Matrix: Choosing Your Saga Topology
+### Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrix: Choosing Your Saga Topology
 
-The choice between Choreography and Orchestration is not ideological—it's mathematical. The Adaptive Granularity Strategy provides a quantitative framework for this decision based on workflow characteristics.
+The choice between Choreography and Orchestration is not ideological�it's mathematical. Adaptive Granularity Governance: The Khan Microservice Pattern provides a quantitative framework for this decision based on workflow characteristics.
 
-**Table 5.2: Adaptive Granularity Strategy Saga Selection Matrix**
+**Table 5.2: Adaptive Granularity Governance: The Khan Microservice Pattern Saga Selection Matrix**
 
 | Workflow Characteristic | Score | Choreography Viability | Orchestration Necessity | Recommended Pattern |
 |------------------------|-------|------------------------|------------------------|---------------------|
-| **Linear, 2-3 steps** | Low Complexity (C=1) | ✅ High | ⚠️ Optional | **Choreography** - Event-driven simplicity |
-| **Linear, 4-6 steps** | Medium Complexity (C=2) | ⚠️ Moderate | ✅ Recommended | **Orchestration** - Observability critical |
-| **Branching logic (if/else)** | High Complexity (C=3) | ❌ Low | ✅ Required | **Orchestration** - State machine needed |
-| **Parallel execution** | High Complexity (C=3) | ❌ Very Low | ✅ Required | **Orchestration** - Coordination essential |
-| **Long-running (>1 hour)** | High Complexity (C=3) | ❌ Very Low | ✅ Required | **Orchestration** - State persistence needed |
-| **Human approval steps** | High Complexity (C=4) | ❌ Not Viable | ✅ Required | **Orchestration** - Wait states needed |
-| **Strict SLA requirements** | High Risk (R=3) | ❌ Not Viable | ✅ Required | **Orchestration** - Guaranteed execution |
-| **Financial transactions** | High Risk (R=4) | ❌ Not Viable | ✅ Required | **Orchestration** - Audit trail mandatory |
-| **Background notifications** | Low Risk (R=1) | ✅ Ideal | ⚠️ Overkill | **Choreography** - Fire-and-forget |
-| **Analytics/Reporting** | Low Risk (R=1) | ✅ Ideal | ⚠️ Overkill | **Choreography** - Eventual consistency OK |
+| **Linear, 2-3 steps** | Low Complexity (C=1) | ? High | ?? Optional | **Choreography** - Event-driven simplicity |
+| **Linear, 4-6 steps** | Medium Complexity (C=2) | ?? Moderate | ? Recommended | **Orchestration** - Observability critical |
+| **Branching logic (if/else)** | High Complexity (C=3) | ? Low | ? Required | **Orchestration** - State machine needed |
+| **Parallel execution** | High Complexity (C=3) | ? Very Low | ? Required | **Orchestration** - Coordination essential |
+| **Long-running (>1 hour)** | High Complexity (C=3) | ? Very Low | ? Required | **Orchestration** - State persistence needed |
+| **Human approval steps** | High Complexity (C=4) | ? Not Viable | ? Required | **Orchestration** - Wait states needed |
+| **Strict SLA requirements** | High Risk (R=3) | ? Not Viable | ? Required | **Orchestration** - Guaranteed execution |
+| **Financial transactions** | High Risk (R=4) | ? Not Viable | ? Required | **Orchestration** - Audit trail mandatory |
+| **Background notifications** | Low Risk (R=1) | ? Ideal | ?? Overkill | **Choreography** - Fire-and-forget |
+| **Analytics/Reporting** | Low Risk (R=1) | ? Ideal | ?? Overkill | **Choreography** - Eventual consistency OK |
 
 **Scoring Formula:**
 
 ```
-Saga_Complexity_Score (SCS) = (C × 2) + (R × 3) + (S × 1)
+Saga_Complexity_Score (SCS) = (C � 2) + (R � 3) + (S � 1)
 
 Where:
 C = Complexity (1-4): Number of steps, branching, parallelism
@@ -116,7 +116,7 @@ R = Risk (1-4): Financial impact, SLA requirements, compliance
 S = Steps (1-10): Total number of service interactions
 
 Decision Rule:
-- SCS ≤ 8: Choreography is viable
+- SCS = 8: Choreography is viable
 - SCS 9-15: Orchestration recommended
 - SCS > 15: Orchestration required
 ```
@@ -124,27 +124,27 @@ Decision Rule:
 **Example Calculations:**
 
 **Scenario 1: E-commerce Order Creation (Simple)**
-- Steps: 3 (Order → Inventory → Payment)
+- Steps: 3 (Order ? Inventory ? Payment)
 - Complexity: C=1 (linear)
 - Risk: R=3 (financial transaction)
-- SCS = (1×2) + (3×3) + (3×1) = 2 + 9 + 3 = **14**
+- SCS = (1�2) + (3�3) + (3�1) = 2 + 9 + 3 = **14**
 - **Recommendation: Orchestration** (borderline, but financial risk tips the scale)
 
 **Scenario 2: User Registration Email**
-- Steps: 2 (User → Email)
+- Steps: 2 (User ? Email)
 - Complexity: C=1 (linear)
 - Risk: R=1 (non-critical)
-- SCS = (1×2) + (1×3) + (2×1) = 2 + 3 + 2 = **7**
+- SCS = (1�2) + (1�3) + (2�1) = 2 + 3 + 2 = **7**
 - **Recommendation: Choreography** (simple, low-risk notification)
 
 **Scenario 3: Loan Approval Workflow**
-- Steps: 8 (Application → Credit Check → Manual Review → Approval → Disbursement → Notification)
+- Steps: 8 (Application ? Credit Check ? Manual Review ? Approval ? Disbursement ? Notification)
 - Complexity: C=4 (branching, human approval, parallel checks)
 - Risk: R=4 (regulatory compliance, financial)
-- SCS = (4×2) + (4×3) + (8×1) = 8 + 12 + 8 = **28**
+- SCS = (4�2) + (4�3) + (8�1) = 8 + 12 + 8 = **28**
 - **Recommendation: Orchestration Required** (Step Functions with audit logging)
 
-### Adaptive Granularity Strategy Anti-Patterns to Avoid
+### Adaptive Granularity Governance: The Khan Microservice Pattern Anti-Patterns to Avoid
 
 **Anti-Pattern 1: "Choreography for Everything"**
 
@@ -156,7 +156,7 @@ Fix: Migrate to orchestration when SCS > 8
 
 Symptom: Using Step Functions for simple 2-step notifications  
 Impact: Unnecessary cost ($25 per million state transitions), added latency  
-Fix: Use choreography for fire-and-forget scenarios with SCS ≤ 8
+Fix: Use choreography for fire-and-forget scenarios with SCS = 8
 
 **Anti-Pattern 3: "Hybrid Confusion"**
 
@@ -167,7 +167,7 @@ Fix: Choose one pattern per business transaction; use orchestration to coordinat
 ### Implementation Checklist
 
 **Before Choosing Choreography:**
-- [ ] Workflow has ≤ 3 linear steps
+- [ ] Workflow has = 3 linear steps
 - [ ] No branching logic or conditional paths
 - [ ] Failure of any step is non-critical (can be retried later)
 - [ ] No strict SLA requirements
@@ -231,7 +231,7 @@ AWS EventBridge has emerged as the premier backbone for choreographed Sagas in t
 
 **Performance and Latency Improvements (2025 Outlook):**
 
-Historically, latency was a concern for event-driven architectures in synchronous user flows. However, recent benchmarks and announcements highlight massive optimizations. The end-to-end latency (P99) for EventBridge event buses has been reduced from over 2000ms in early 2023 to approximately 129ms as of late 2026/2025. This dramatic improvement—up to 94%—shifts the architectural calculus. Choreography, previously relegated to asynchronous background tasks, is now viable for near real-time user-facing flows where low latency is critical.
+Historically, latency was a concern for event-driven architectures in synchronous user flows. However, recent benchmarks and announcements highlight massive optimizations. The end-to-end latency (P99) for EventBridge event buses has been reduced from over 2000ms in early 2023 to approximately 129ms as of late 2026/2025. This dramatic improvement�up to 94%�shifts the architectural calculus. Choreography, previously relegated to asynchronous background tasks, is now viable for near real-time user-facing flows where low latency is critical.
 
 ### 5.3.4 The Necessity of Idempotency
 
@@ -271,7 +271,7 @@ def process_event(event):
 This code snippet demonstrates the "idempotency key" pattern. By leveraging DynamoDB's conditional writes, we ensure that the business logic executes exactly once, regardless of how many times the event is delivered.
 ## 5.4 Orchestration: The Centralized Controller
 
-As workflows increase in complexity—involving conditional branching, parallel processing, or strict compliance requirements—choreography becomes unmanageable. Orchestration centralizes the decision-making process. An Orchestrator (e.g., AWS Step Functions) tells the participants what to do via commands, rather than participants reacting to events.
+As workflows increase in complexity�involving conditional branching, parallel processing, or strict compliance requirements�choreography becomes unmanageable. Orchestration centralizes the decision-making process. An Orchestrator (e.g., AWS Step Functions) tells the participants what to do via commands, rather than participants reacting to events.
 
 ### 5.4.1 AWS Step Functions: The Standard for Orchestration
 
@@ -406,7 +406,7 @@ This configuration allows processing massive datasets without hitting the histor
 
 Perhaps the most dangerous misconception in distributed transactions is assuming that Sagas provide isolation. They do not. In a traditional ACID transaction, the Isolation property ensures that intermediate states of a transaction are invisible to other concurrent transactions. If Transaction A updates a row but hasn't been committed, Transaction B can't see that update (depending on the isolation level).
 
-In a Saga, every local transaction commits immediately. This means intermediate states—such as an order being created but not yet paid for—are visible to the entire system. This visibility leads to specific Data Anomalies that the architect must actively design against.
+In a Saga, every local transaction commits immediately. This means intermediate states�such as an order being created but not yet paid for�are visible to the entire system. This visibility leads to specific Data Anomalies that the architect must actively design against.
 
 ### 5.5.1 Classification of Distributed Anomalies
 
@@ -444,7 +444,7 @@ This strategy involves reordering the steps of a Saga to minimize the window of 
 
 - **Strategy**: Place the "Pivot Transaction" (the point of no return) as late as possible, or order the steps such that reversible actions happen before non-reversible ones.
 
-- **Example**: If a Saga involves CancelOrder (low risk, internal state change) and RefundPayment (high risk, external money movement), executing RefundPayment first is dangerous. If CancelOrder subsequently fails, you have refunded money for an active order. By reordering to CancelOrder → RefundPayment, you ensure that the money is only returned once the internal state is secured. This is termed "Pessimistic View" because it assumes failure is likely and minimizes the impact of a crash during the transaction.
+- **Example**: If a Saga involves CancelOrder (low risk, internal state change) and RefundPayment (high risk, external money movement), executing RefundPayment first is dangerous. If CancelOrder subsequently fails, you have refunded money for an active order. By reordering to CancelOrder ? RefundPayment, you ensure that the money is only returned once the internal state is secured. This is termed "Pessimistic View" because it assumes failure is likely and minimizes the impact of a crash during the transaction.
 
 #### 5.5.2.4 Reread Value (Optimistic Locking)
 
@@ -570,5 +570,5 @@ In the next chapter, we'll continue our journey through microservices architectu
 ---
 
 **Navigation:**
-- [← Previous: Chapter 4](04-data-management.md)
-- [Next: Chapter 6 →](06-resilience-and-reliability.md)
+- [? Previous: Chapter 4](04-data-management.md)
+- [Next: Chapter 6 ?](06-resilience-and-reliability.md)
