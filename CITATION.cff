@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this book or Adaptive Granularity Governance: The Khan Microservice Pattern, please cite it using these metadata."
+type: software
+title: "Microservices Recipes: The Architect's Field Guide"
+version: "2.0"
+date-released: "2026-01-01"
+abstract: "A field guide to microservices architecture featuring Adaptive Granularity Governance: The Khan Microservice Pattern and the RVx Index."
+authors:
+  - family-names: Khan
+    given-names: Vaquar
+    alias: Viquar Khan
+    orcid: ""
+repository-code: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
+url: "https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/"
+license: "MIT AND CC-BY-NC-ND-4.0"
+keywords:
+  - microservices
+  - adaptive-granularity-governance
+  - khan-microservice-pattern
+  - rvx-index
+  - distributed-systems
+  - architecture
+preferred-citation:
+  type: book
+  title: "Microservices Recipes: The Architect's Field Guide"
+  authors:
+    - family-names: Khan
+      given-names: Vaquar
+  year: 2026
+  version: "2.0"
+  url: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
+  notes: "Featuring Adaptive Granularity Governance: The Khan Microservice Pattern. Formerly Adaptive Granularity Strategy."

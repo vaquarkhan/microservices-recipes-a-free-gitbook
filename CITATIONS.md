@@ -58,20 +58,24 @@ Available at: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ## Citing Specific Patterns or Methodologies
 
-### The Adaptive Granularity Strategy
+### Adaptive Granularity Governance: The Khan Microservice Pattern
+
+(Formerly the Adaptive Granularity Strategy.)
 
 **APA:**
 ```
-Khan, V. (2026). The Adaptive Granularity Strategy. In 
-Microservices recipes: The architect's field guide. GitHub. 
+Khan, V. (2026). Adaptive Granularity Governance: The Khan Microservice Pattern.
+In Microservices recipes: The architect's field guide. GitHub.
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
 **IEEE:**
 ```
-[1] V. Khan, "The Adaptive Granularity Strategy," in 
+[1] V. Khan, "Adaptive Granularity Governance: The Khan Microservice Pattern," in
 Microservices Recipes: The Architect's Field Guide, GitHub, 2026.
 ```
+
+Historical citations that use "Adaptive Granularity Strategy" remain valid; prefer the current title for new work.
 
 ---
 

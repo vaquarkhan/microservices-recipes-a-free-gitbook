@@ -8,15 +8,16 @@
 
 As defined by Sam Newman in his foundational text *Building Microservices*, microservices are "small, autonomous services that work together." This definition emphasizes the dual requirements of independence and interoperability.
 
-*Featuring The Adaptive Granularity Strategy (Author's Method)*
+*Featuring Adaptive Granularity Governance: The Khan Microservice Pattern*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
+[![Prose: CC BY-NC-ND 4.0](https://img.shields.io/badge/Prose-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSING.md)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-*"Stop splitting, start governing."* — **Adaptive Granularity Strategy (Author's Method)**
+*"Stop splitting, start governing."* — **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 ![Microservices Animation](assets/images/microservices-animation.gif)
 
@@ -26,14 +27,17 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ### 📚 **Front Matter**
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Strategy
+- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan and Adaptive Granularity Governance
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
-- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 20-Chapter Edition for Students & Researchers
+- [⚖️ **Licensing**](LICENSING.md) - MIT for code; CC BY-NC-ND 4.0 for prose and figures
+- [🏷️ **Naming**](NAMING.md) - Methodology title and attribution
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
-- [📜 **Version History**](VERSION-HISTORY.md) - Release Lineage & Evolution
-- [📜 **Copyright Notice**](COPYRIGHT.md) - Complete Copyright & Legal Information
-- [⚖️ **Disclaimer**](DISCLAIMER.md) - Copyright & Legal Notice
+- [📜 **Copyright Notice**](COPYRIGHT.md) - Copyright and dual license
+- [⚖️ **Disclaimer**](DISCLAIMER.md) - Legal notice
 - [🤝 **Contributing**](CONTRIBUTING.md) - How to Contribute
+- [📜 **Version History**](VERSION-HISTORY.md) - Release lineage
+- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Academic edition notes
+- [📄 **CITATION.cff**](CITATION.cff) - Machine-readable citation metadata
 
 ---
 
@@ -71,12 +75,61 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ---
 
-### 🎯 **Part IV: The Adaptive Granularity Strategy**
-*Focus: Quantitative framework for microservices decomposition*
+### 🎯 **Part IV: Adaptive Granularity Governance**
+*Focus: Quantitative framework for microservices decomposition (The Khan Microservice Pattern)*
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[11](chapters/11-khan-pattern-deep-dive.md)** | **The Adaptive Granularity Strategy - Origin, Metrics, and Maturity Model** | Mathematical framework for optimal service boundaries | 40 min |
+| **[11](chapters/11-khan-pattern-deep-dive.md)** | **Adaptive Granularity Governance: The Khan Microservice Pattern** | Origin, RVx Index, and maturity model | 40 min |
+
+---
+
+### 🧱 **Part V: Resilience Engineering & Advanced Scaling**
+*Focus: Blast-radius control and evidence-based failure injection*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[12](chapters/12-shuffle-sharding.md)** | **Shuffle Sharding & Blast-Radius Minimization** | Probabilistic tenant–shard assignment and collision analysis | 55 min |
+| **[13](chapters/13-chaos-engineering.md)** | **Chaos Engineering & Evidence-Based Resilience** | Hypotheses, game days, and AWS FIS guardrails | 60 min |
+
+---
+
+### 🏗️ **Part VI: The Platform Engineering Shift**
+*Focus: Golden paths, policy-as-code, and telemetry economics*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[14](chapters/14-infrastructure-as-code-at-scale.md)** | **Infrastructure as Code at Scale** | Modules, drift, Terraform/CDK/Pulumi trade-offs | 58 min |
+| **[15](chapters/15-observability-2.md)** | **Observability 2.0** | OpenTelemetry, X-Ray, wide events, sampling design | 62 min |
+
+---
+
+### 🤖 **Part VII: The AI Frontier (2026)**
+*Focus: Probabilistic components inside deterministic architectures*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[16](chapters/16-agentic-ai-architectures.md)** | **Agentic AI Architectures** | Tool gateways, Bedrock agents, safety cases | 58 min |
+| **[17](chapters/17-rag-at-scale.md)** | **Retrieval-Augmented Generation at Scale** | HyDE, evaluation, ACL-aware corpora | 60 min |
+
+---
+
+### 🚀 **Part VIII: The Migration Playbook**
+*Focus: Monolith-first discipline and incremental replacement*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[18](chapters/18-modular-monolith.md)** | **The Modular Monolith** | Schema-per-module, ArchUnit, contraction economics | 55 min |
+| **[19](chapters/19-strangler-fig-pattern.md)** | **The Strangler Fig Pattern** | Edge routing, data strangler, parity proofs | 55 min |
+
+---
+
+### 📈 **Part IX: Organizational Maturity**
+*Focus: KM3 operational assessment*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[20](chapters/20-km3-maturity-model.md)** | **The Khan Microservices Maturity Model (KM3)** | Stages, instrumentation, X-Ray sampling | 50 min |
 
 ---
 
@@ -92,11 +145,11 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ## 🎯 **What Makes This Book Special**
 
-### **Adaptive Granularity Strategy (Author's Method)**
+### **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
-At the heart of this book is **The Adaptive Granularity Strategy (Author's Method)** — a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
+At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy): a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
 
-**Industry Recognition**: The Adaptive Granularity Strategy has gained widespread recognition as a proposed methodology based on field experience, developed through professional practice across numerous organizations.
+**Field basis:** The methodology is an original synthesis by the author, refined through professional practice. Please cite when you reuse it ([CITATIONS.md](CITATIONS.md)).
 
 - **Organizational maturity** and team structure
 - **Business domain complexity** and change frequency  
@@ -129,7 +182,7 @@ At the heart of this book is **The Adaptive Granularity Strategy (Author's Metho
 
 ### **For Architects**
 1. Focus on strategic chapters: [Ch 2](chapters/02-design-principles-and-patterns.md), [Ch 3](chapters/03-service-communication.md), [Ch 7](chapters/07-security.md)
-2. Study [**Adaptive Granularity Strategy**](AUTHOR.md#the-adaptive-granularity-strategy) methodology
+2. Study [**Adaptive Granularity Governance: The Khan Microservice Pattern**](AUTHOR.md#adaptive-granularity-governance-the-khan-microservice-pattern) (formerly Adaptive Granularity Strategy)
 3. Review [**Complete Book Preview**](BOOK-PREVIEW.md) for advanced topics
 
 ---
@@ -138,7 +191,7 @@ At the heart of this book is **The Adaptive Granularity Strategy (Author's Metho
 
 | Metric | Value |
 |--------|-------|
-| **Total Chapters** | 10 comprehensive chapters |
+| **Total Chapters** | 20 (10 foundational + Adaptive Granularity + advanced arc) |
 | **Reading Time** | ~4.5 hours total |
 | **Content Length** | 236,000+ characters |
 | **Code Examples** | 50+ practical implementations |
@@ -156,7 +209,7 @@ At the heart of this book is **The Adaptive Granularity Strategy (Author's Metho
 <details>
 <summary><strong>🏗️ Architectural Patterns</strong></summary>
 
-- **Adaptive Granularity Strategy (Author's Method)** for adaptive service granularity
+- **Adaptive Granularity Governance: The Khan Microservice Pattern** for adaptive service granularity
 - **Distributed Monolith** identification and prevention
 - **Domain-Driven Design** for service boundaries
 - **Saga Pattern** for distributed transactions
@@ -193,7 +246,7 @@ At the heart of this book is **The Adaptive Granularity Strategy (Author's Metho
 
 ## 👨‍💻 **About the Author**
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Strategy (Author's Method)**, **Service Decomposition Workflow (Author's Method)**, and **Microservices Maturity Assessment (Author's Method)**.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. Original methodologies by the author; please cite.
 
 ### **Credentials**
 - 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
@@ -285,14 +338,39 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 <div align="center">
 
-## 📜 **Copyright & Legal**
+## How to cite
 
-**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+Machine-readable metadata: [CITATION.cff](CITATION.cff). Full guide: [CITATIONS.md](CITATIONS.md).
 
-**The Adaptive Granularity Strategy (Author's Method)**, **Service Decomposition Workflow (Author's Method)**, and **Microservices Maturity Assessment (Author's Method)** are proprietary methodologies developed by Viquar Khan.
+**APA:**
+```
+Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.0)
+[Featuring Adaptive Granularity Governance: The Khan Microservice Pattern]. GitHub.
+https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+```
 
-**License**: MIT License | **[Legal Disclaimer](DISCLAIMER.md)** | **[Citation Guide](CITATIONS.md)**
+**IEEE:**
+```
+[1] V. Khan, Microservices Recipes: The Architect's Field Guide, ver. 2.0,
+featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub, 2026.
+[Online]. Available: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+```
 
-<sub>Last Updated: February 10, 2026 | Original work by Viquar Khan</sub>
+---
+
+## Copyright and licensing
+
+**Copyright © 2017-2026 by Vaquar Khan.**
+
+**Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Vaquar Khan; please cite. No trademark is claimed at this time.
+
+| Material | License |
+|----------|---------|
+| Source code | [MIT](LICENSE) |
+| Book text, diagrams, figures | [CC BY-NC-ND 4.0](LICENSING.md) |
+
+Details: [LICENSING.md](LICENSING.md) | [COPYRIGHT.md](COPYRIGHT.md) | [DISCLAIMER.md](DISCLAIMER.md) | [NAMING.md](NAMING.md)
+
+<sub>Last Updated: July 9, 2026 | Original work by Vaquar Khan</sub>
 
 </div>
