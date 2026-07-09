@@ -7,13 +7,16 @@
 
 ## 🏷️ **Current Version: 2.0**
 
-### **Version 2.0** - *The Adaptive Granularity Strategy Edition* (January 2026)
+### **Version 2.0** - *Adaptive Granularity Governance edition* (January 2026)
 **Major Release - Complete Architectural Overhaul**
 
+**Disclosure (historical name):** v2.0 (January 2026): Adaptive Granularity Strategy and RVx Index introduced.
+
 #### **🎯 New Features & Enhancements:**
-- **Adaptive Granularity Strategy (Author's Method)** - Systematic approach to microservice boundaries
-- **Service Decomposition Workflow (Author's Method)** - Systematic methodology for service decomposition
-- **Microservices Maturity Assessment (Author's Method)** - Assessment framework for organizational readiness
+- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy) - Systematic approach to microservice boundaries
+- **RVx Index** - Quantitative service-boundary effectiveness score
+- **Service Decomposition Workflow** - Systematic methodology for service decomposition
+- **Microservices Maturity Assessment (KM3)** - Assessment framework for organizational readiness
 - **Enhanced Chapter Structure** - Professional headers with reading time and difficulty indicators
 - **Modern Web Experience** - Responsive design with interactive elements
 - **Updated Case Studies** - Real-world implementations from 2020-2026
@@ -35,6 +38,13 @@
 - **Improved Navigation** - Enhanced user experience
 
 ---
+
+### **Version 2.0.1** - *Naming and licensing clarity* (July 9, 2026)
+
+- Renamed the methodology to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged).
+- Dual license documented: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures ([LICENSING.md](LICENSING.md)).
+- Added [NAMING.md](NAMING.md), [CITATION.cff](CITATION.cff), [docs/RVX-SPEC.md](docs/RVX-SPEC.md), [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md), reference-impl MVP, and validation plan.
+- Removed contradictory "All rights reserved" / "proprietary" language next to the MIT grant; no trademark symbols claimed.
 
 ## 📜 **Legacy Versions**
 
