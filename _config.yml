@@ -1,6 +1,6 @@
 # GitHub Pages Configuration for Microservices Recipes
 title: "Microservices Recipes: The Architect's Field Guide"
-description: "A comprehensive guide to building, scaling, and managing microservices architectures. Featuring The Khan Pattern™ for Adaptive Granularity."
+description: "A comprehensive guide to building, scaling, and managing microservices architectures. Featuring Adaptive Granularity Governance: The Khan Microservice Pattern."
 author: "Viquar Khan"
 email: "viquar.khan@example.com"
 url: "https://vaquarkhan.github.io"
@@ -52,7 +52,7 @@ linkedin_username: vaquar-khan-b695577
 # Book metadata
 book:
   title: "Microservices Recipes: The Architect's Field Guide"
-  subtitle: "Featuring The Khan Pattern™ for Adaptive Granularity"
+  subtitle: "Featuring Adaptive Granularity Governance: The Khan Microservice Pattern"
   author: "Viquar Khan"
   version: "2024.1"
   isbn: "978-0-000000-00-0"

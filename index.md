@@ -12,22 +12,23 @@
 
 ## 📜 **Copyright & Publication Information**
 
-**Copyright © 2017-2026 by Viquar Khan. All rights reserved.**
+**Copyright © 2017-2026 by Vaquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures. See [LICENSING.md](LICENSING.md).
 
 ### **Publication Details**
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Author**: Viquar Khan
+- **Author**: Vaquar Khan
 - **First Edition**: January 2017
 - **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
 - **Publisher**: Open Source (GitHub)
-- **License**: MIT License
+- **Code license**: MIT
+- **Prose and figures**: CC BY-NC-ND 4.0
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
-### **Proprietary Methodologies**
-The following are original methodologies by Vaquar Khan; please cite. No trademark is claimed at this time:
-- **Adaptive Granularity Governance: The Khan Microservice Pattern**
-- **Service Decomposition Workflow (Author's Method)**
-- **Microservices Maturity Assessment (Author's Method)**
+### **Original Methodologies (please cite)**
+The following are original methodologies by Vaquar Khan. No trademark is claimed at this time:
+- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy)
+- **Service Decomposition Workflow**
+- **Microservices Maturity Assessment (KM3)**
 
 ### **Citation Requirement**
 When referencing this work, please use proper academic citation. See **[Citations Guide](CITATIONS.md)** for complete formatting guidelines.
@@ -200,7 +201,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3™) | 📖 50 min | 🎯 Expert |
+| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
 
 ---
 
