@@ -75,7 +75,7 @@ By contributing, you acknowledge that:
 - This is the original work of Viquar Khan
 - Contributions become part of the work under MIT License
 - The author retains full editorial control
-- Proprietary methodologies remain the intellectual property of Viquar Khan
+- original methodologies remain the intellectual property of Viquar Khan
 
 ---
 
