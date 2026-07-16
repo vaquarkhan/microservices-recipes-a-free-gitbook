@@ -293,7 +293,7 @@ As an AWS Senior Architect working at the intersection of distributed systems an
 
 **2026+ Reality:** AI/ML models blur the line between "business logic" and "data." An LLM-powered recommendation service isn't just executing logic�it's performing inference on massive parameter spaces. The question becomes: Is the model itself a service, or is it infrastructure?
 
-**Adaptive Granularity Governance: The Khan Microservice Pattern Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
+**Adaptive Granularity Governance: The Khan Microservice Pattern™ Guidance:** Treat AI models as **Bounded Contexts with Computational Gravity**. The model's inference latency and resource requirements (GPU memory, token limits) become first-class architectural constraints. A 70B parameter model running on A100 GPUs can't be casually "split" like traditional business logic.
 
 ### 2. The Semantic API Revolution
 

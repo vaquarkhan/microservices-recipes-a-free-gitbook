@@ -15,7 +15,7 @@ This quick reference provides at-a-glance guidance for common microservices patt
 - [ ] **Autonomy**: Independently deployable and scalable
 - [ ] **Resilience**: Designed to handle failures gracefully
 
-### Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrix
+### Adaptive Granularity Governance: The Khan Microservice Pattern™ Decision Matrix
 
 | Factor | Fine-Grained | Medium-Grained | Coarse-Grained |
 |--------|--------------|----------------|----------------|

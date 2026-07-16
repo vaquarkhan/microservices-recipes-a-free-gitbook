@@ -31,4 +31,4 @@ python rvx_scorer.py \
 
 ## Attribution
 
-When you publish scores derived from this tool, cite **Adaptive Granularity Governance: The Khan Microservice Pattern** and the RVx Index ([CITATIONS.md](../CITATIONS.md)).
+When you publish scores derived from this tool, cite **Adaptive Granularity Governance: The Khan Microservice Pattern™** and the RVx Index ([CITATIONS.md](../CITATIONS.md)).

@@ -63,7 +63,7 @@ The original index formulation suffered from critical mathematical flaws that ha
 - **L^**: Static code analysis metrics (SonarQube, CodeClimate)  
 - **S**: Version control forensics (Git commit correlation analysis)
 
-This mathematical foundation transforms Adaptive Granularity Governance: The Khan Microservice Pattern from a conceptual framework into a rigorous engineering standard suitable for industrial application.
+This mathematical foundation transforms Adaptive Granularity Governance: The Khan Microservice Pattern™ from a conceptual framework into a rigorous engineering standard suitable for industrial application.
 
 #### The RVx Index Formula:
 

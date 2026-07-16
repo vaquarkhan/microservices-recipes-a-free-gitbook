@@ -58,7 +58,7 @@ Available at: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ## Citing Specific Patterns or Methodologies
 
-### Adaptive Granularity Governance: The Khan Microservice Pattern
+### Adaptive Granularity Governance: The Khan Microservice Pattern™
 
 (Formerly the Adaptive Granularity Strategy.)
 

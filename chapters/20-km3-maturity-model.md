@@ -84,7 +84,7 @@ Manage via **IaC** to avoid configuration drift; tie **reservoir** size to SLO b
 
 ## 20.3 Legal & usage
 
-KM3 is an **original methodology by Viquar Khan**; please cite. Copyright in the written expression is held by the author. Book prose is under CC BY-NC-ND 4.0; code under MIT. See [LICENSING.md](../LICENSING.md), [COPYRIGHT.md](../COPYRIGHT.md), and [CITATIONS.md](../CITATIONS.md). No trademark is claimed at this time.
+KM3 is an **original methodology by Viquar Khan**; please cite. Copyright in the written expression is held by the author. Book prose is under CC BY-NC-ND 4.0; code under MIT. See [LICENSING.md](../LICENSING.md), [COPYRIGHT.md](../COPYRIGHT.md), and [CITATIONS.md](../CITATIONS.md). Pattern names use ™ / ℠ as common-law identifiers; no registered trademark (®) is claimed unless stated.
 
 ---
 

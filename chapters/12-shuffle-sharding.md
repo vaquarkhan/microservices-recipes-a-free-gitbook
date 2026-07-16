@@ -54,7 +54,7 @@ Let a *shard* be an independently failing unit (compute fleet, storage partition
 
 **Proposition 12.1 (Shared fate probability, pairwise).** For two distinct tenants \(t, u\), let \(C\) be the event \(|A(t)\cap A(u)| \geq 1\) under uniform random \(k\)-subsets. Then \(\Pr[C]\) is **small** relative to pooling: collisions require overlapping combinatorial choices; for intuition, when \(k\) is modest, overlaps are rare; exact \(\Pr[C]\) depends on sampling model (sampling with/without replacement across tenants); in engineering practice we **Monte Carlo** empirically for chosen \((n,k)\).
 
-**Remark 12.1.** Adaptive Granularity Governance: The Khan Microservice Pattern treats **shuffle sharding** as an implementation of *antifragile isolation*: stress (shard failure) propagates only through **thin intersections** of the tenant graph.
+**Remark 12.1.** Adaptive Granularity Governance: The Khan Microservice Pattern™ treats **shuffle sharding** as an implementation of *antifragile isolation*: stress (shard failure) propagates only through **thin intersections** of the tenant graph.
 
 ![Shuffle sharding - each tenant receives k distinct shards; collisions are thin intersections](../assets/images/diagrams/shuffle-sharding-tenant-assignment.png)
 

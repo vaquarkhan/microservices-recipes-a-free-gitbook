@@ -310,7 +310,7 @@ Focus: The single hardest aspect of microservices�managing data distributed ac
 
 ---
 
-## 3.5 Adaptive Granularity Governance: The Khan Microservice Pattern
+## 3.5 Adaptive Granularity Governance: The Khan Microservice Pattern™
 
 ### The Centerpiece of Modern Microservices Architecture
 

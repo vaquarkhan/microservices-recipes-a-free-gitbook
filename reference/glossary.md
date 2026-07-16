@@ -14,7 +14,7 @@ A layer that isolates a client's domain model from another system's domain model
 **Asynchronous Communication**
 A communication pattern where the sender does not wait for a response from the receiver before continuing with other tasks. Common in microservices for loose coupling between services.
 
-**Adaptive Granularity Governance: The Khan Microservice Pattern**
+**Adaptive Granularity Governance: The Khan Microservice Pattern™**
 A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints. Original methodology by Vaquar Khan; please cite. Formerly the Adaptive Granularity Strategy (also referred to historically as the Khan Pattern). See [NAMING.md](../NAMING.md) and [LICENSING.md](../LICENSING.md).
 
 ## B
@@ -182,6 +182,9 @@ The practice of using different data storage technologies for different services
 **Property-Based Testing**
 A testing approach where properties (invariants) of the system are defined and tested against randomly generated inputs to verify system correctness.
 
+**PVDM℠**
+Acronym for **The Vaquar Pattern (PVDM)℠**: Physical → Verify → Durable → Metadata. A proof-gated serverless data-mesh integrity pattern by Vaquar Khan. Catalog/metadata commit proceeds only after multiset verification. See [NAMING.md](../NAMING.md). Primary implementation docs live in related repositories (e.g. CogniMesh).
+
 ## Q
 
 **Queue**
@@ -236,6 +239,9 @@ Terms describing the relationship between services in a request flow, where upst
 
 ## V
 
+**The Vaquar Pattern (PVDM)℠**
+Original data-integrity architecture for serverless data mesh by Vaquar Khan. Enforces Physical write, Verify (VRP), Durable resume, then Metadata/catalog commit. Marked **℠** in this repository. See [NAMING.md](../NAMING.md).
+
 **Versioning**
 The practice of managing changes to APIs and services over time while maintaining backward compatibility.
 
@@ -271,7 +277,7 @@ A deployment target that represents a failure domain, such as an availability zo
 
 This glossary provides definitions for terms as they are used in the context of microservices architecture. Some terms may have broader or different meanings in other contexts. For more detailed explanations and examples, please refer to the relevant chapters in this book.
 
-Original methodologies by Vaquar Khan (Adaptive Granularity Governance: The Khan Microservice Pattern, Service Decomposition Workflow, Microservices Maturity Assessment / KM3) are described in [DISCLAIMER.md](../DISCLAIMER.md) and [LICENSING.md](../LICENSING.md). Please cite. All other terms represent industry-standard concepts and patterns.
+Original methodologies by Vaquar Khan (Adaptive Granularity Governance: The Khan Microservice Pattern™, The Vaquar Pattern (PVDM)℠, Service Decomposition Workflow, Microservices Maturity Assessment / KM3) are described in [DISCLAIMER.md](../DISCLAIMER.md) and [LICENSING.md](../LICENSING.md). Please cite. All other terms represent industry-standard concepts and patterns.
 
 ---
 

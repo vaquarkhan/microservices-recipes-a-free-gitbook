@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model"
+title: "Adaptive Granularity Governance: The Khan Microservice Pattern™ - Origin, Metrics, and Maturity Model"
 chapter: 11
 author: "Viquar Khan"
 date: "2026-02-11"
@@ -1626,6 +1626,6 @@ Adaptive Granularity Governance: The Khan Microservice Pattern transforms micros
 
 Adaptive Granularity Governance: The Khan Microservice Pattern is an original methodology by Vaquar Khan; please cite. It provides a mathematically rigorous, context-aware framework for microservices decomposition.
 
-**Copyright © 2017-2026 by Vaquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](../LICENSING.md). No trademark is claimed at this time.
+**Copyright © 2017-2026 by Vaquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](../LICENSING.md). Pattern names use ™ / ℠ as common-law identifiers; no registered trademark (®) is claimed unless stated.
 
 For proper citation, see [Citations Guide](../CITATIONS.md)

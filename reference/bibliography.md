@@ -438,7 +438,7 @@
 
 ## Adaptive Granularity Governance and Author Original Research
 
-119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
+119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern™ (formerly Adaptive Granularity Governance: The Khan Microservice Pattern): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
 
 120. **V. Khan**, "The Revised VaquarKhan Index (RVx): Mathematical Foundations for Service Boundary Analysis," *Technical Report*, 2019.
 
@@ -664,7 +664,7 @@ All references in this book follow academic citation standards. For proper attri
 
 **Content Licensing**: This bibliography includes references to open-source projects, academic papers, and commercial products. All citations are provided for educational purposes under fair use doctrine. No content from cited sources has been reproduced verbatim beyond standard quotation limits (30 consecutive words maximum).
 
-**Copyright Notice**: Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern), the Service Decomposition Workflow, the Microservices Maturity Assessment (KM3), and the Revised VaquarKhan Index (RVx) are original methodologies by Vaquar Khan; please cite. Book content is © 2017-2026 by Vaquar Khan. Dual license: MIT for code, CC BY-NC-ND 4.0 for prose and figures. No trademark is claimed at this time. See [LICENSING.md](../LICENSING.md).
+**Copyright Notice**: Adaptive Granularity Governance: The Khan Microservice Pattern™ (formerly the Adaptive Granularity Strategy), The Vaquar Pattern (PVDM)℠, the Service Decomposition Workflow, the Microservices Maturity Assessment (KM3), and the Revised VaquarKhan Index (RVx) are original methodologies by Vaquar Khan; please cite. Book content is © 2017-2026 by Vaquar Khan. Dual license: MIT for code, CC BY-NC-ND 4.0 for prose and figures. Pattern names use ™ / ℠ as common-law identifiers; no registered trademark (®) is claimed unless stated. See [LICENSING.md](../LICENSING.md).
 
 ---
 

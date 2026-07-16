@@ -482,7 +482,7 @@ While this chapter has focused on eBPF and container-based networking, the moder
 ![Compute Spectrum](../assets/images/diagrams/compute-spectrum.png)
 *Figure 9.2: The compute spectrum showing the trade-off between control and simplicity from EC2 to Lambda, with management responsibilities at each level*
 
-### 9.6.1 When to Choose Serverless (Adaptive Granularity Governance: The Khan Microservice Pattern Guidance)
+### 9.6.1 When to Choose Serverless (Adaptive Granularity Governance: The Khan Microservice Pattern™ Guidance)
 
 **Decision Matrix:**
 

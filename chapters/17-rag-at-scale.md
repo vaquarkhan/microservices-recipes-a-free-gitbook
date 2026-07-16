@@ -24,7 +24,7 @@ readingTime: "60 minutes"
 
 ## Abstract
 
-**RAG** composes **information retrieval (IR)** with **conditional text generation**. At enterprise scale, **failure modes** mirror classical distributed data systems: *staleness*, *partition misrouting*, *hotspots*, and *evaluation drift*. This chapter positions RAG inside **Adaptive Granularity Governance: The Khan Microservice Pattern**: bounded contexts for corpora, explicit **ACL-aware metadata**, continuous **offline/online evaluation**, and tiered **embedding + rerank** stacks on AWS (OpenSearch Serverless, Bedrock embedding models, S3 as source-of-truth store).
+**RAG** composes **information retrieval (IR)** with **conditional text generation**. At enterprise scale, **failure modes** mirror classical distributed data systems: *staleness*, *partition misrouting*, *hotspots*, and *evaluation drift*. This chapter positions RAG inside **Adaptive Granularity Governance: The Khan Microservice Pattern™**: bounded contexts for corpora, explicit **ACL-aware metadata**, continuous **offline/online evaluation**, and tiered **embedding + rerank** stacks on AWS (OpenSearch Serverless, Bedrock embedding models, S3 as source-of-truth store).
 
 ![RAG architecture pattern](../assets/images/diagrams/rag-architecture.png)
 

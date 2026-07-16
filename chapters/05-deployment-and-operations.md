@@ -86,7 +86,7 @@ The implementation of Saga requires a mechanism to coordinate the sequence of lo
 | Single Point of Failure | None; highly distributed | The Orchestrator (mitigated by HA services like AWS Step Functions) |
 | Mental Model | "Reactionary" - Services do what they do when triggered | "Authoritative" - A central brain defines the process |
 
-### Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrix: Choosing Your Saga Topology
+### Adaptive Granularity Governance: The Khan Microservice Pattern™ Decision Matrix: Choosing Your Saga Topology
 
 The choice between Choreography and Orchestration is not ideological�it's mathematical. Adaptive Granularity Governance: The Khan Microservice Pattern provides a quantitative framework for this decision based on workflow characteristics.
 

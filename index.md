@@ -2,11 +2,11 @@
 
 ![Book Cover](assets/images/cover-image-1.png)
 
-**Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
+**Featuring Adaptive Granularity Governance: The Khan Microservice Pattern™**
 
 *by **Viquar Khan***
 
-**Version 2.0** - *Adaptive Granularity Governance: The Khan Microservice Pattern Edition* (January 2026)
+**Version 2.0** - *Adaptive Granularity Governance: The Khan Microservice Pattern™ Edition* (January 2026)
 
 ---
 
@@ -18,15 +18,16 @@
 - **Title**: Microservices Recipes: The Architect's Field Guide
 - **Author**: Vaquar Khan
 - **First Edition**: January 2017
-- **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
+- **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern™ Edition)
 - **Publisher**: Open Source (GitHub)
 - **Code license**: MIT
 - **Prose and figures**: CC BY-NC-ND 4.0
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ### **Original Methodologies (please cite)**
-The following are original methodologies by Vaquar Khan. No trademark is claimed at this time:
-- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy)
+The following are original methodologies by Vaquar Khan. Pattern names use **™** / **℠** as common-law identifiers; no registered trademark (®) is claimed unless stated:
+- **Adaptive Granularity Governance: The Khan Microservice Pattern™** (formerly Adaptive Granularity Strategy)
+- **The Vaquar Pattern (PVDM)℠**
 - **Service Decomposition Workflow**
 - **Microservices Maturity Assessment (KM3)**
 

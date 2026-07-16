@@ -18,7 +18,7 @@ While this is primarily an **author-driven publication**, I welcome specific typ
 
 #### **?? Real-World Case Studies**
 - **Implementation experiences** using patterns from this book
-- **Production lessons learned** applying Adaptive Granularity Governance: The Khan Microservice Pattern
+- **Production lessons learned** applying Adaptive Granularity Governance: The Khan Microservice Pattern™
 - **Success stories** and transformation journeys
 - **Anonymous case studies** from your organization (with proper anonymization)
 

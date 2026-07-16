@@ -4,7 +4,7 @@ All notable changes to **Microservices Recipes: The Architect's Field Guide** ar
 
 Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use ISO style where known. Edition history also lives in [VERSION-HISTORY.md](VERSION-HISTORY.md).
 
-**Methodology name today:** Adaptive Granularity Governance: The Khan Microservice Pattern  
+**Methodology name today:** Adaptive Granularity Governance: The Khan Microservice Pattern™  
 **Former name (keep in citations):** Adaptive Granularity Strategy  
 **Metric (unchanged):** RVx Index
 
@@ -12,7 +12,8 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 
 ## [Unreleased]
 
-- Chapters 12 to 20 and new diagram assets (local working tree; not yet in a release commit unless you add them).
+### Changed
+- Adopted common-law marks: **Adaptive Granularity Governance: The Khan Microservice Pattern™** and **The Vaquar Pattern (PVDM)℠**; updated [NAMING.md](NAMING.md) and legal notices (no ® claimed).
 
 ---
 
@@ -21,7 +22,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 ### Changed
 - Renamed the methodology to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index formulas and thresholds unchanged).
 - Dual license documented: **MIT** for source code; **CC BY-NC-ND 4.0** for book prose, diagrams, and figures ([LICENSING.md](LICENSING.md)).
-- Copyright and disclaimer wording clarified: original methodology by the author; please cite; **no trademark claimed** (no registered or trademark symbols for the methodology names).
+- Copyright and disclaimer wording clarified: original methodology by the author; please cite; at that time trademark symbols were not yet applied.
 
 ### Added
 - [NAMING.md](NAMING.md), [CITATION.cff](CITATION.cff), [docs/RVX-SPEC.md](docs/RVX-SPEC.md), [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md)
@@ -99,7 +100,7 @@ Public edition remained rooted in the 2017 foundational guide while content and 
 ## Notes on trademarks and copyright
 
 - **Copyright** protects the book text, diagrams, and written expression of the pattern. That is already asserted (2017 to 2026).
-- **Trademark symbols** (registered mark or trademark mark) are **not** used for methodology names in this repo because **no trademark registration is claimed** for those names at this time. See [NAMING.md](NAMING.md) and [LICENSING.md](LICENSING.md).
+- **™** marks **Adaptive Granularity Governance: The Khan Microservice Pattern**; **℠** marks **The Vaquar Pattern (PVDM)**. These are common-law identifiers. **® is not used** unless a mark is registered. See [NAMING.md](NAMING.md) and [LICENSING.md](LICENSING.md).
 - Reuse: cite the work; follow MIT for code and CC BY-NC-ND 4.0 for prose and figures.
 
 ---
