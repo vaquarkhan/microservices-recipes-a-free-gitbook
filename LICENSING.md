@@ -17,21 +17,22 @@ The author retains copyright in the original expression of this work, including:
 
 - the book manuscript and chapter text
 - diagrams and figures
-- the written description of **Adaptive Granularity Governance: The Khan Microservice Pattern**
+- the written description of **Adaptive Granularity Governance: The Khan Microservice Pattern™**
 - the written description of the **RVx Index**, **Saga Complexity Score (SCS)**, and **KM3** (Microservices Maturity Assessment)
 
 Copyright protects the *expression* of ideas (the text, diagrams, and code as written). It does **not** by itself stop others from independently implementing similar architectural ideas. Attribution and citation are required when you reuse this material under the licenses above.
 
-## Methodology names (not trademarks)
+## Methodology names (™ / ℠)
 
-The following names identify the author's original methodology and should be attributed and cited when referenced:
+The following names identify the author's original methodologies and should be attributed and cited when referenced:
 
-- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy)
+- **Adaptive Granularity Governance: The Khan Microservice Pattern™** (formerly the Adaptive Granularity Strategy)
+- **The Vaquar Pattern (PVDM)℠** (related data-mesh integrity pattern; primary docs elsewhere)
 - **RVx Index** (Revised VaquarKhan Index)
 - **Saga Complexity Score (SCS)**
 - **KM3** (Microservices Maturity Assessment / Khan Microservices Maturity Model)
 
-**No trademark is claimed at this time.** Do not treat these names as registered marks. See [NAMING.md](NAMING.md).
+**™** and **℠** are used as common-law identifiers for these pattern names. **No registered trademark (®) is claimed** unless explicitly stated. See [NAMING.md](NAMING.md).
 
 Preferred phrasing: *original methodology by the author; please cite* (see [CITATIONS.md](CITATIONS.md) and [CITATION.cff](CITATION.cff)).
 

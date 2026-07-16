@@ -1,7 +1,7 @@
 # RVx Index: Formal Specification
 
 **Status:** Normative for this repository (v2.0).  
-**Methodology:** Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy).  
+**Methodology:** Adaptive Granularity Governance: The Khan Microservice Pattern™ (formerly Adaptive Granularity Strategy).  
 **Copyright:** © 2017-2026 Vaquar Khan. Prose under CC BY-NC-ND 4.0; see [LICENSING.md](../LICENSING.md).  
 **Scope:** Naming and packaging may change; **this document does not change** published formulas or default thresholds from the book chapters.
 

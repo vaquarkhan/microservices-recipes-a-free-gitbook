@@ -4,7 +4,7 @@
 
 I wrote *Microservices Recipes* to address a gap I've observed throughout my 22 years working with distributed systems at companies like Amazon: the disconnect between microservices theory and practical implementation. While countless resources explain what microservices are, few provide actionable guidance on how to build them successfully in real-world environments.
 
-This book introduces **The Adaptive Granularity Governance: The Khan Microservice Pattern (Author's Method)**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
+This book introduces **The Adaptive Granularity Governance: The Khan Microservice Pattern™ (Author's Method)**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
 
 The open-source nature of this project has been essential to its development. With over 600 GitHub stars and active contributions from the community, this work continues to evolve based on real-world feedback and implementation experiences.
 

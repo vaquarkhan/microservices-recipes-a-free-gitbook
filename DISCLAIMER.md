@@ -2,11 +2,11 @@
 
 ## Intellectual Property and Methodology Notice
 
-The architectural approaches described in this book, including **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**, are **original methodologies by the author, Vaquar Khan**, based on professional experience. Please cite them when you reuse or discuss them. See [LICENSING.md](LICENSING.md), [NAMING.md](NAMING.md), and [CITATIONS.md](CITATIONS.md).
+The architectural approaches described in this book, including **Adaptive Granularity Governance: The Khan Microservice Pattern™** (formerly the Adaptive Granularity Strategy), the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**, are **original methodologies by the author, Vaquar Khan**, based on professional experience. Please cite them when you reuse or discuss them. Related work: **The Vaquar Pattern (PVDM)℠**. See [LICENSING.md](LICENSING.md), [NAMING.md](NAMING.md), and [CITATIONS.md](CITATIONS.md).
 
 **Copyright** in the book text, diagrams, and written expression of these methodologies is held by Vaquar Khan (2017-2026). Source code in this repository is under the MIT License. Book prose and figures are under CC BY-NC-ND 4.0. Details: [LICENSING.md](LICENSING.md).
 
-**No trademark claims:** These methodology names are not registered trademarks. They identify the author's work for attribution. Any resemblance to registered marks is coincidental.
+**Trademark / service mark notice:** Pattern names may appear with **™** (Khan Microservice Pattern) or **℠** (Vaquar Pattern / PVDM) as common-law identifiers. **No registered trademark (®) is claimed** unless explicitly stated. Any resemblance to third-party registered marks is coincidental.
 
 ## Third-Party Trademarks
 

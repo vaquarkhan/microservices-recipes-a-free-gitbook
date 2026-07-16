@@ -15,9 +15,9 @@ Viquar brings deep expertise in:
 - **Data Engineering**: Advanced data pipeline and analytics solutions
 - **Team Leadership**: Guiding development teams through architectural transformations
 
-### Adaptive Granularity Governance: The Khan Microservice Pattern
+### Adaptive Granularity Governance: The Khan Microservice Pattern™
 
-Viquar is the creator of **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy), the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. These are original methodologies by the author; please cite. See [LICENSING.md](LICENSING.md) and [NAMING.md](NAMING.md). No trademark is claimed at this time.
+Viquar is the creator of **Adaptive Granularity Governance: The Khan Microservice Pattern™** (formerly the Adaptive Granularity Strategy), **The Vaquar Pattern (PVDM)℠**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. These are original methodologies by the author; please cite. Pattern names use **™** / **℠** as common-law identifiers; no registered trademark (®) is claimed unless stated. See [LICENSING.md](LICENSING.md) and [NAMING.md](NAMING.md).
 
 These frameworks stand on the shoulders of giants, building upon foundational works including:
 - **Cognitive Load Theory** from Team Topologies by Matthew Skelton and Manuel Pais

@@ -33,4 +33,4 @@ See [VERSION-HISTORY.md](../VERSION-HISTORY.md).
 
 ## Rename (naming only)
 
-Later commits rename the methodology to **Adaptive Granularity Governance: The Khan Microservice Pattern**. The **RVx Index** formulas and thresholds are unchanged. See [NAMING.md](../NAMING.md).
+Later commits rename the methodology to **Adaptive Granularity Governance: The Khan Microservice Pattern™**. The **RVx Index** formulas and thresholds are unchanged. See [NAMING.md](../NAMING.md).

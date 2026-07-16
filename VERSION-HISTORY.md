@@ -13,7 +13,7 @@
 **Disclosure (historical name):** v2.0 (January 2026): Adaptive Granularity Strategy and RVx Index introduced.
 
 #### **🎯 New Features & Enhancements:**
-- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy) - Systematic approach to microservice boundaries
+- **Adaptive Granularity Governance: The Khan Microservice Pattern™** (formerly Adaptive Granularity Strategy) - Systematic approach to microservice boundaries
 - **RVx Index** - Quantitative service-boundary effectiveness score
 - **Service Decomposition Workflow** - Systematic methodology for service decomposition
 - **Microservices Maturity Assessment (KM3)** - Assessment framework for organizational readiness
@@ -44,7 +44,7 @@
 - Renamed the methodology to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged).
 - Dual license documented: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures ([LICENSING.md](LICENSING.md)).
 - Added [NAMING.md](NAMING.md), [CITATION.cff](CITATION.cff), [docs/RVX-SPEC.md](docs/RVX-SPEC.md), [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md), reference-impl MVP, and validation plan.
-- Removed contradictory "All rights reserved" / "proprietary" language next to the MIT grant; no trademark symbols claimed.
+- Removed contradictory "All rights reserved" / "proprietary" language next to the MIT grant; ™ / ℠ later adopted for pattern names (no ®).
 
 ## 📜 **Legacy Versions**
 

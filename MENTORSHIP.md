@@ -1,6 +1,6 @@
 ﻿# 🎓 Free Mentorship with Viquar Khan
 
-**Personal Guidance from the Creator of The Adaptive Granularity Governance: The Khan Microservice Pattern**
+**Personal Guidance from the Creator of The Adaptive Granularity Governance: The Khan Microservice Pattern™**
 
 ---
 

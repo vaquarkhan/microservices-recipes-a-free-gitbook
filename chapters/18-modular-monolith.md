@@ -24,7 +24,7 @@ readingTime: "55 minutes"
 
 ## Abstract
 
-The **modular monolith** deliberately packages multiple **bounded contexts** inside a **single deployable artifact** while enforcing **schema-per-module** isolation and **forbidden cross-module dependencies** in CI. It is the rational response when **deployment independence** yields less economic utility than **reduced network tax** and **operational surface area**, consistent with Adaptive Granularity Governance: The Khan Microservice Pattern’s **contraction** phase (Chapter 11). We analyze failure modes of shared databases, connect to **ArchUnit** fitness functions, and quantify **when** extraction to microservices becomes dominant in the RVx calculus.
+The **modular monolith** deliberately packages multiple **bounded contexts** inside a **single deployable artifact** while enforcing **schema-per-module** isolation and **forbidden cross-module dependencies** in CI. It is the rational response when **deployment independence** yields less economic utility than **reduced network tax** and **operational surface area**, consistent with Adaptive Granularity Governance: The Khan Microservice Pattern™’s **contraction** phase (Chapter 11). We analyze failure modes of shared databases, connect to **ArchUnit** fitness functions, and quantify **when** extraction to microservices becomes dominant in the RVx calculus.
 
 ![Service merge / consolidation - conceptual](../assets/images/diagrams/service-merge-example.png)
 

@@ -8,7 +8,7 @@
 
 As defined by Sam Newman in his foundational text *Building Microservices*, microservices are "small, autonomous services that work together." This definition emphasizes the dual requirements of independence and interoperability.
 
-*Featuring Adaptive Granularity Governance: The Khan Microservice Pattern*
+*Featuring Adaptive Granularity Governance: The Khan Microservice Pattern™*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
@@ -247,7 +247,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 ## 👨‍💻 **About the Author**
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. Original methodologies by the author; please cite.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern™**, **The Vaquar Pattern (PVDM)℠**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. Original methodologies by the author; please cite.
 
 ### **Credentials**
 - 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
@@ -363,7 +363,7 @@ featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub
 
 **Copyright © 2017-2026 by Vaquar Khan.**
 
-**Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Vaquar Khan; please cite. No trademark is claimed at this time.
+**Adaptive Granularity Governance: The Khan Microservice Pattern™**, **The Vaquar Pattern (PVDM)℠**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Vaquar Khan; please cite. Pattern names use **™** / **℠** as common-law identifiers; no registered trademark (®) is claimed unless stated.
 
 | Material | License |
 |----------|---------|

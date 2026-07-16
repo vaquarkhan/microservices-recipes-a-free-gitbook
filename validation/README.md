@@ -70,7 +70,7 @@ Parameters \(\alpha,\beta,\varepsilon\) and zone thresholds are **calibrated** p
 
 - Do not publish customer-identifying data.  
 - Anonymize service names.  
-- Cite Adaptive Granularity Governance: The Khan Microservice Pattern when publishing results.
+- Cite Adaptive Granularity Governance: The Khan Microservice Pattern™ when publishing results.
 
 ## 7. Next steps
 

@@ -11,7 +11,7 @@ This notice states who owns the work and how it is licensed. It does **not** can
 ## Publication Information
 
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Subtitle**: Featuring Adaptive Granularity Governance: The Khan Microservice Pattern
+- **Subtitle**: Featuring Adaptive Granularity Governance: The Khan Microservice Pattern™
 - **Author**: Vaquar Khan
 - **First Edition**: January 2017
 - **Second Edition**: January 2026 (Adaptive Granularity Governance edition; formerly Adaptive Granularity Strategy)
@@ -28,21 +28,24 @@ Copyright protects the author's original expression, including:
 
 1. Book chapters and narrative text  
 2. Diagrams and figures  
-3. The written specification of **Adaptive Granularity Governance: The Khan Microservice Pattern**  
+3. The written specification of **Adaptive Granularity Governance: The Khan Microservice Pattern™**  
 4. The written specification of the **RVx Index**, **Saga Complexity Score (SCS)**, and **KM3**
 
 ## Original methodologies (please cite)
 
-These are original methodologies by Vaquar Khan. Attribute and cite them; no trademark is claimed at this time:
+These are original methodologies by Vaquar Khan. Attribute and cite them. Pattern names use **™** / **℠** as common-law identifiers; **no registered trademark (®) is claimed** unless stated:
 
-1. **Adaptive Granularity Governance: The Khan Microservice Pattern**  
+1. **Adaptive Granularity Governance: The Khan Microservice Pattern™**  
    (formerly the Adaptive Granularity Strategy)  
    Context-driven framework for microservice boundaries. Motto: "Stop splitting, start governing."
 
-2. **Service Decomposition Workflow**  
+2. **The Vaquar Pattern (PVDM)℠**  
+   Proof-gated serverless data-mesh integrity pattern (Physical → Verify → Durable → Metadata). Primary implementation docs live in related repositories (e.g. CogniMesh).
+
+3. **Service Decomposition Workflow**  
    Quantitative workflow for granularity decisions, including the **RVx Index**.
 
-3. **Microservices Maturity Assessment (KM3)**  
+4. **Microservices Maturity Assessment (KM3)**  
    Organizational maturity stages for distributed systems readiness.
 
 Preferred phrasing: *original methodology by the author; please cite*.
@@ -71,7 +74,7 @@ Full rules: [LICENSING.md](LICENSING.md). Naming: [NAMING.md](NAMING.md). Citati
 
 - Removing or altering copyright notices  
 - Using book prose or figures commercially or as derivatives outside CC BY-NC-ND 4.0  
-- Implying a registered trademark in the methodology names  
+- Implying a **registered** trademark (®) in the methodology names without authorization  
 
 ---
 
@@ -86,6 +89,6 @@ Full rules: [LICENSING.md](LICENSING.md). Naming: [NAMING.md](NAMING.md). Citati
 ## Version note
 
 - **v2.0** (January 2026): Adaptive Granularity Strategy and RVx Index introduced (historical name)  
-- Later rename: **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged)  
+- Later rename: **Adaptive Granularity Governance: The Khan Microservice Pattern™** (RVx Index unchanged)  
 
 See [VERSION-HISTORY.md](VERSION-HISTORY.md) and [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md).
