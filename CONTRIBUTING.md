@@ -8,21 +8,21 @@
 
 While this is primarily an **author-driven publication**, I welcome specific types of community input to enhance the value for all readers:
 
-### ? **Welcome Contributions**
+### ✅ **Welcome Contributions**
 
-#### **?? Issue Reports**
+#### **📋 Issue Reports**
 - **Bug reports** - Found errors, typos, or technical inaccuracies
 - **Broken links** - Links that no longer work or redirect incorrectly
 - **Formatting issues** - Display problems or rendering errors
 - **Technical corrections** - Factual errors in code examples or explanations
 
-#### **?? Real-World Case Studies**
+#### **📚 Real-World Case Studies**
 - **Implementation experiences** using patterns from this book
 - **Production lessons learned** applying Adaptive Granularity Governance: The Khan Microservice Pattern
 - **Success stories** and transformation journeys
 - **Anonymous case studies** from your organization (with proper anonymization)
 
-#### **?? Future Edition Suggestions**
+#### **💡 Future Edition Suggestions**
 - **Topics you'd like to see** in future versions
 - **Additional patterns** that would be valuable
 - **Industry trends** that should be covered
@@ -30,19 +30,19 @@ While this is primarily an **author-driven publication**, I welcome specific typ
 
 ## How to Contribute
 
-### **?? Reporting Issues**
+### **🐛 Reporting Issues**
 1. **Check existing issues** to avoid duplicates
 2. **Use clear, descriptive titles** for your issue
 3. **Provide specific details** about the problem
 4. **Include screenshots** if relevant for formatting issues
 
-### **?? Sharing Case Studies**
+### **📖 Sharing Case Studies**
 1. **Email the author** with your case study proposal
 2. **Ensure proper anonymization** of sensitive information
 3. **Focus on lessons learned** and practical insights
 4. **Highlight specific patterns** used from the book
 
-### **?? Suggesting Future Content**
+### **💭 Suggesting Future Content**
 1. **Open a GitHub issue** with the "enhancement" label
 2. **Describe the specific topic** or pattern you'd like covered
 3. **Explain the business value** and use cases

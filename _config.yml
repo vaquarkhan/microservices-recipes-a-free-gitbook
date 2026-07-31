@@ -6,8 +6,7 @@ email: "viquar.khan@example.com"
 url: "https://vaquarkhan.github.io"
 baseurl: "/microservices-recipes-a-free-gitbook"
 
-# Theme
-theme: minima
+# Theme (architect provides base GitHub Pages styles; book.css overrides layout)
 remote_theme: pages-themes/architect@v0.2.0
 
 # Plugins
@@ -16,6 +15,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-relative-links
+
+# Encoding (prevents emoji → ?? during Jekyll build)
+encoding: utf-8
 
 # Markdown settings
 markdown: kramdown
@@ -27,7 +29,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false
 
 # Highlighting
 highlighter: rouge

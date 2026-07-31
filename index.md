@@ -1,12 +1,16 @@
-# 📖 Microservices Recipes: The Architect's Field Guide
+# 📖 Microservices Recipes
 
-![Book Cover](assets/images/cover-image-1.png)
+<span class="book-edition-kicker">The Architect's Field Guide</span>
+
+![Book Cover](assets/images/cover-image-1.png){:.book-cover-img}
 
 **Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 *by **Viquar Khan***
 
-**Version 2.0** - *Adaptive Granularity Governance: The Khan Microservice Pattern Edition* (January 2026)
+**Version 2.0** - *Adaptive Granularity Governance Edition* (January 2026)
+
+[Start reading →](chapters/01-introduction-to-microservices.md){: .book-cta} · [Preface](PREFACE.md) · [Author](AUTHOR.md)
 
 ---
 
@@ -42,11 +46,11 @@ This work is protected by copyright law. Unauthorized reproduction, distribution
 
 ## 🎓 **Academic & Research Access**
 
-**📚 Complete 20-Chapter Edition Available for Students & Researchers**
+**📚 Complete 20-Chapter Edition**
 
-This open-source version contains 10 comprehensive chapters. The **complete academic edition with 20 chapters** is available free for students, faculty, and researchers under my **Official Academic License**.
+This open-source edition includes all **20 chapters**. Additional academic licensing and citation guidance remain available for students, faculty, and researchers.
 
-**[📧 Request Free Academic Access](FREE-ACCESS.md)** | **[📖 View Citations Guide](CITATIONS.md)** | **[📜 Version History](VERSION-HISTORY.md)**
+**[📧 Request Academic Access / Mentorship](FREE-ACCESS.md)** | **[📖 View Citations Guide](CITATIONS.md)** | **[📜 Version History](VERSION-HISTORY.md)**
 
 ### 🎯 **FREE 1:1 Mentorship Available**
 **Get personal guidance from the author:** **[📅 Book FREE session with Viquar Khan](https://adplist.org/mentors/vaquar-khan)**  
@@ -56,7 +60,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 ## 🌐 **From Monolith to Microservices**
 
-![Microservices Transformation](assets/images/microservices-animation.gif)
+![Microservices Transformation](assets/images/microservices-animation.gif){:.book-hero-gif}
 
 *Visualizing the transformation journey with **Adaptive Granularity Governance: The Khan Microservice Pattern***
 
@@ -76,8 +80,8 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Metric | Value |
 |--------|-------|
-| **Chapters** | 10 comprehensive chapters |
-| **Read Time** | 4.5 hours total |
+| **Chapters** | 20 comprehensive chapters |
+| **Read Time** | ~15 hours total |
 | **Code Examples** | 50+ practical implementations |
 | **Patterns** | 25+ architectural patterns |
 | **Difficulty** | Intermediate → Advanced → Expert |
@@ -89,7 +93,7 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 ### 🔰 For Beginners
 1. [Start with Chapter 1](chapters/01-introduction-to-microservices.md)
 2. [Read the Preface](PREFACE.md)
-3. Progress through Parts I → II → III
+3. Progress through Parts I → IX
 
 ### ⚡ For Experienced Practitioners
 1. Review the Table of Contents below
@@ -157,51 +161,56 @@ This open-source version contains 10 comprehensive chapters. The **complete acad
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 11** | Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
+| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
 
 ---
 
 ### 🧱 **Part V: Resilience Engineering & Advanced Scaling**
+*Focus: Blast-radius control and evidence-based resilience*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 12** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
-| **Chapter 13** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
+| **[Chapter 12](chapters/12-shuffle-sharding.md)** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
+| **[Chapter 13](chapters/13-chaos-engineering.md)** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
 
 ---
 
 ### 🏗️ **Part VI: The Platform Engineering Shift**
+*Focus: Infrastructure APIs, telemetry, and cost-aware observability*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 14** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
-| **Chapter 15** | Observability 2.0: Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
+| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
+| **[Chapter 15](chapters/15-observability-2.md)** | Observability 2.0: Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
 
 ---
 
 ### 🤖 **Part VII: The AI Frontier (2026)**
+*Focus: Agentic systems and retrieval at production scale*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 16** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
-| **Chapter 17** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
+| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
+| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
 
 ---
 
 ### 🚀 **Part VIII: The Migration Playbook**
+*Focus: Evolutionary paths from monolith to services*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 18** | The Modular Monolith | 📖 55 min | 🎯 Expert |
-| **Chapter 19** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
+| **[Chapter 18](chapters/18-modular-monolith.md)** | The Modular Monolith | 📖 55 min | 🎯 Expert |
+| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
 
 ---
 
 ### 📈 **Part IX: Organizational Maturity**
+*Focus: Assessing and governing microservices excellence*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **Chapter 20** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
+| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
 
 ---
 

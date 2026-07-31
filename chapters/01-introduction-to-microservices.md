@@ -17,8 +17,8 @@ readingTime: "25 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">The Definition Wars & The Reality of SOA</h2>
   <div class="chapter-meta">
-    <span class="reading-time">?? 25 min read</span>
-    <span class="difficulty">?? Intermediate</span>
+    <span class="reading-time">📖 25 min read</span>
+    <span class="difficulty">🎯 Intermediate</span>
   </div>
 </div>
 

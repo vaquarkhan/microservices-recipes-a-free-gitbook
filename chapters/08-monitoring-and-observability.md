@@ -17,8 +17,8 @@ readingTime: "40 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">Inter-Process Communication (The Nervous System)</h2>
   <div class="chapter-meta">
-    <span class="reading-time">?? 40 min read</span>
-    <span class="difficulty">?? Expert</span>
+    <span class="reading-time">📖 40 min read</span>
+    <span class="difficulty">🎯 Expert</span>
   </div>
 </div>
 
@@ -387,10 +387,10 @@ results = support_service.semantic_search("customers interested in upgrades")
 ```
 
 **Governance:**
-- ? **Access Control:** Each service has API keys scoped to their namespace
-- ? **Cost Allocation:** Track usage per namespace for chargeback
-- ? **Schema Evolution:** Services can add metadata fields independently
-- ?? **Coupling Risk:** Shared infrastructure requires coordination for upgrades
+- ✅ **Access Control:** Each service has API keys scoped to their namespace
+- ✅ **Cost Allocation:** Track usage per namespace for chargeback
+- ✅ **Schema Evolution:** Services can add metadata fields independently
+- ⚠️ **Coupling Risk:** Shared infrastructure requires coordination for upgrades
 
 **Pattern 2: Service-Owned Vector Stores**
 
@@ -687,11 +687,11 @@ class FilterBasedMultiTenancy:
 ```
 
 **Security Best Practices:**
-- ? **Never trust client-provided tenant_id** - Extract from authenticated JWT
-- ? **Implement row-level security** at application layer
-- ? **Audit all cross-tenant queries** - Log and alert on violations
-- ? **Encrypt embeddings at rest** - Especially for sensitive data
-- ? **Regular penetration testing** - Verify isolation is enforced
+- ✅ **Never trust client-provided tenant_id** - Extract from authenticated JWT
+- ✅ **Implement row-level security** at application layer
+- ✅ **Audit all cross-tenant queries** - Log and alert on violations
+- ✅ **Encrypt embeddings at rest** - Especially for sensitive data
+- ✅ **Regular penetration testing** - Verify isolation is enforced
 
 ### 8.4.6 Performance Optimization
 

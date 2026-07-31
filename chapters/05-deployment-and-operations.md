@@ -17,8 +17,8 @@ readingTime: "35 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">The Dissolution of Atomicity in the Cloud Native Era</h2>
   <div class="chapter-meta">
-    <span class="reading-time">?? 35 min read</span>
-    <span class="difficulty">?? Expert</span>
+    <span class="reading-time">📖 35 min read</span>
+    <span class="difficulty">🎯 Expert</span>
   </div>
 </div>
 
@@ -94,16 +94,16 @@ The choice between Choreography and Orchestration is not ideological�it's math
 
 | Workflow Characteristic | Score | Choreography Viability | Orchestration Necessity | Recommended Pattern |
 |------------------------|-------|------------------------|------------------------|---------------------|
-| **Linear, 2-3 steps** | Low Complexity (C=1) | ? High | ?? Optional | **Choreography** - Event-driven simplicity |
-| **Linear, 4-6 steps** | Medium Complexity (C=2) | ?? Moderate | ? Recommended | **Orchestration** - Observability critical |
-| **Branching logic (if/else)** | High Complexity (C=3) | ? Low | ? Required | **Orchestration** - State machine needed |
-| **Parallel execution** | High Complexity (C=3) | ? Very Low | ? Required | **Orchestration** - Coordination essential |
-| **Long-running (>1 hour)** | High Complexity (C=3) | ? Very Low | ? Required | **Orchestration** - State persistence needed |
-| **Human approval steps** | High Complexity (C=4) | ? Not Viable | ? Required | **Orchestration** - Wait states needed |
-| **Strict SLA requirements** | High Risk (R=3) | ? Not Viable | ? Required | **Orchestration** - Guaranteed execution |
-| **Financial transactions** | High Risk (R=4) | ? Not Viable | ? Required | **Orchestration** - Audit trail mandatory |
-| **Background notifications** | Low Risk (R=1) | ? Ideal | ?? Overkill | **Choreography** - Fire-and-forget |
-| **Analytics/Reporting** | Low Risk (R=1) | ? Ideal | ?? Overkill | **Choreography** - Eventual consistency OK |
+| **Linear, 2-3 steps** | Low Complexity (C=1) | ✅ High | ⚠️ Optional | **Choreography** - Event-driven simplicity |
+| **Linear, 4-6 steps** | Medium Complexity (C=2) | ⚠️ Moderate | ✅ Recommended | **Orchestration** - Observability critical |
+| **Branching logic (if/else)** | High Complexity (C=3) | ❌ Low | ✅ Required | **Orchestration** - State machine needed |
+| **Parallel execution** | High Complexity (C=3) | ❌ Very Low | ✅ Required | **Orchestration** - Coordination essential |
+| **Long-running (>1 hour)** | High Complexity (C=3) | ❌ Very Low | ✅ Required | **Orchestration** - State persistence needed |
+| **Human approval steps** | High Complexity (C=4) | ❌ Not Viable | ✅ Required | **Orchestration** - Wait states needed |
+| **Strict SLA requirements** | High Risk (R=3) | ❌ Not Viable | ✅ Required | **Orchestration** - Guaranteed execution |
+| **Financial transactions** | High Risk (R=4) | ❌ Not Viable | ✅ Required | **Orchestration** - Audit trail mandatory |
+| **Background notifications** | Low Risk (R=1) | ✅ Ideal | ❌ Overkill | **Choreography** - Fire-and-forget |
+| **Analytics/Reporting** | Low Risk (R=1) | ✅ Ideal | ❌ Overkill | **Choreography** - Eventual consistency OK |
 
 **Scoring Formula:**
 
@@ -124,21 +124,21 @@ Decision Rule:
 **Example Calculations:**
 
 **Scenario 1: E-commerce Order Creation (Simple)**
-- Steps: 3 (Order ? Inventory ? Payment)
+- Steps: 3 (Order → Inventory → Payment)
 - Complexity: C=1 (linear)
 - Risk: R=3 (financial transaction)
 - SCS = (1�2) + (3�3) + (3�1) = 2 + 9 + 3 = **14**
 - **Recommendation: Orchestration** (borderline, but financial risk tips the scale)
 
 **Scenario 2: User Registration Email**
-- Steps: 2 (User ? Email)
+- Steps: 2 (User → Email)
 - Complexity: C=1 (linear)
 - Risk: R=1 (non-critical)
 - SCS = (1�2) + (1�3) + (2�1) = 2 + 3 + 2 = **7**
 - **Recommendation: Choreography** (simple, low-risk notification)
 
 **Scenario 3: Loan Approval Workflow**
-- Steps: 8 (Application ? Credit Check ? Manual Review ? Approval ? Disbursement ? Notification)
+- Steps: 8 (Application → Credit Check → Manual Review → Approval → Disbursement → Notification)
 - Complexity: C=4 (branching, human approval, parallel checks)
 - Risk: R=4 (regulatory compliance, financial)
 - SCS = (4�2) + (4�3) + (8�1) = 8 + 12 + 8 = **28**
@@ -444,7 +444,7 @@ This strategy involves reordering the steps of a Saga to minimize the window of 
 
 - **Strategy**: Place the "Pivot Transaction" (the point of no return) as late as possible, or order the steps such that reversible actions happen before non-reversible ones.
 
-- **Example**: If a Saga involves CancelOrder (low risk, internal state change) and RefundPayment (high risk, external money movement), executing RefundPayment first is dangerous. If CancelOrder subsequently fails, you have refunded money for an active order. By reordering to CancelOrder ? RefundPayment, you ensure that the money is only returned once the internal state is secured. This is termed "Pessimistic View" because it assumes failure is likely and minimizes the impact of a crash during the transaction.
+- **Example**: If a Saga involves CancelOrder (low risk, internal state change) and RefundPayment (high risk, external money movement), executing RefundPayment first is dangerous. If CancelOrder subsequently fails, you have refunded money for an active order. By reordering to CancelOrder → RefundPayment, you ensure that the money is only returned once the internal state is secured. This is termed "Pessimistic View" because it assumes failure is likely and minimizes the impact of a crash during the transaction.
 
 #### 5.5.2.4 Reread Value (Optimistic Locking)
 

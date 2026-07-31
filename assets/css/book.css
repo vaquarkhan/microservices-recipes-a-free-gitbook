@@ -10,7 +10,7 @@
   --border-color: #e1e5e9;
   --text-color: #24292e;
   --code-bg: #f6f8fa;
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family: 'Inter', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --mono-font: 'JetBrains Mono', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, monospace;
   --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -367,38 +367,32 @@ code {
   font-family: var(--mono-font);
   font-size: 0.9em;
   border: 1px solid var(--border-color);
-  color: #e83e8c;
+  color: #9b1b5a;
 }
 
 pre {
-  background: #282c34;
-  border: 1px solid #3e4451;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1rem 1.15rem;
   overflow-x: auto;
   font-family: var(--mono-font);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  box-shadow: var(--shadow-sm);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #24292f;
+  box-shadow: none;
   position: relative;
 }
 
 pre::before {
-  content: attr(data-lang);
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 0.75rem;
-  color: #abb2bf;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  content: none;
 }
 
 pre code {
   background: none;
   padding: 0;
   border: none;
-  color: #abb2bf;
+  color: inherit;
 }
 
 /* Tables - Enhanced */
@@ -735,8 +729,8 @@ img[src*="diagrams/"] {
 }
 
 img[src*="diagrams/"]:hover {
-  transform: scale(1.02);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color, #1b3a4b);
 }
 
 /* Figure captions */
@@ -1706,19 +1700,21 @@ code {
 }
 
 pre {
-  background: var(--code-bg);
-  border: 1px solid var(--border-color);
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
   font-family: var(--mono-font);
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #24292f;
 }
 
 pre code {
   background: none;
   padding: 0;
+  color: inherit;
 }
 
 /* Tables */
@@ -1929,22 +1925,21 @@ img[src*="diagrams/"] {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Specific fix for Conway's Law and other complex diagrams */
+/* Complex diagrams stay within the reading column */
 img[src*="conways-law"],
 img[src*="team-topologies"],
 img[src*="bounded-context"],
 img[src*="granularity"] {
-  max-width: none !important;
+  max-width: 100% !important;
   width: auto !important;
-  max-height: none !important;
+  height: auto !important;
   cursor: zoom-in;
 }
 
 /* Allow diagrams to be clicked for full-size view */
 img[src*="diagrams/"]:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
+  opacity: 0.98;
+  box-shadow: var(--shadow-md);
 }
 
 /* Print styles */
@@ -1975,5 +1970,117 @@ img[src*="diagrams/"]:hover {
   img[src*="diagrams/"] {
     max-width: 100% !important;
     page-break-inside: avoid;
+  }
+}
+
+/* =============================================================================
+   GitHub Pages — centered book reading layout
+   ============================================================================= */
+
+body {
+  background: #e8eaed;
+}
+
+.book-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1.75rem 3rem;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.07);
+}
+
+.book-shell > .book-header,
+.book-shell > .book-footer {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.book-content {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 0.25rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* Cover and hero media — book-style, not full-bleed */
+.book-content img.book-cover-img,
+.book-content img.book-hero-gif,
+.book-content img[src*="cover-image"],
+.book-content img[src*="microservices-animation"],
+.book-content > p:first-of-type img {
+  /* Display scale only — source PNG/GIF unchanged (no recompression) */
+  max-width: min(100%, 520px);
+  width: auto;
+  height: auto;
+  image-rendering: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Prevent decorative sections from breaking out of the page column */
+.book-cover-section,
+.philosophy-section,
+.chapter-header,
+.animated-section,
+.final-cta-section {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-radius: 12px;
+}
+
+.book-cover-section {
+  margin-top: 0 !important;
+}
+
+.cover-container {
+  grid-template-columns: 1fr;
+  max-width: 42rem;
+  gap: 2rem;
+}
+
+.main-cover {
+  max-width: min(100%, 360px);
+}
+
+/* Wider elements that still fit the shell */
+.book-content table,
+.book-content pre,
+.chapter-navigation {
+  max-width: 100%;
+}
+
+.book-nav {
+  max-width: none;
+}
+
+.dropdown-content {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 769px) {
+  .book-header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-shell {
+    padding: 0 1rem 2rem;
+  }
+
+  .book-shell > .book-header,
+  .book-shell > .book-footer {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

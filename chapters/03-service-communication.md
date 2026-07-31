@@ -17,8 +17,8 @@ readingTime: "25 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">Strategic Decomposition: Domain Driven Design</h2>
   <div class="chapter-meta">
-    <span class="reading-time">?? 30 min read</span>
-    <span class="difficulty">?? Advanced</span>
+    <span class="reading-time">📖 30 min read</span>
+    <span class="difficulty">🎯 Advanced</span>
   </div>
 </div>
 

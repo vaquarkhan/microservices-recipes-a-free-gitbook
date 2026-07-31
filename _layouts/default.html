@@ -9,14 +9,15 @@
     
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/book.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/atelier.css" | relative_url }}">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
     
-    <!-- Fonts -->
+    <!-- Fonts: display + book body + UI (not Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
     
     <!-- Syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
@@ -24,15 +25,18 @@
     <script>hljs.highlightAll();</script>
   </head>
 
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+  <body class="{% if page.url == '/' %}home-page{% endif %}{% if page.url contains '/chapters/' %} chapter-page{% endif %}">
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+    <div class="book-desk">
+    <div class="book-shell markdown-body">
       
       <!-- Header Navigation -->
       <header class="book-header">
         <nav class="book-nav">
           <div class="nav-brand">
             <a href="{{ "/" | relative_url }}" class="brand-link">
-              📖 Microservices Recipes
+              <img src="{{ "/assets/images/book-mark.svg" | relative_url }}" alt="" class="brand-mark" width="28" height="28">
+              Microservices Recipes
             </a>
             <span class="brand-subtitle">The Architect's Field Guide</span>
           </div>
@@ -62,6 +66,34 @@
                   <a href="{{ "/chapters/08-monitoring-and-observability.html" | relative_url }}">Ch 8: Trinity of Protocols</a>
                   <a href="{{ "/chapters/09-testing-strategies.html" | relative_url }}">Ch 9: eBPF Networking</a>
                   <a href="{{ "/chapters/10-asynchronous-messaging-patterns.html" | relative_url }}">Ch 10: Messaging Patterns</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part IV: Khan Pattern</h4>
+                  <a href="{{ "/chapters/11-khan-pattern-deep-dive.html" | relative_url }}">Ch 11: Khan Pattern</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part V: Resilience &amp; Scaling</h4>
+                  <a href="{{ "/chapters/12-shuffle-sharding.html" | relative_url }}">Ch 12: Shuffle Sharding</a>
+                  <a href="{{ "/chapters/13-chaos-engineering.html" | relative_url }}">Ch 13: Chaos Engineering</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part VI: Platform Engineering</h4>
+                  <a href="{{ "/chapters/14-infrastructure-as-code-at-scale.html" | relative_url }}">Ch 14: IaC at Scale</a>
+                  <a href="{{ "/chapters/15-observability-2.html" | relative_url }}">Ch 15: Observability 2.0</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part VII: AI Frontier</h4>
+                  <a href="{{ "/chapters/16-agentic-ai-architectures.html" | relative_url }}">Ch 16: Agentic AI</a>
+                  <a href="{{ "/chapters/17-rag-at-scale.html" | relative_url }}">Ch 17: RAG at Scale</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part VIII: Migration Playbook</h4>
+                  <a href="{{ "/chapters/18-modular-monolith.html" | relative_url }}">Ch 18: Modular Monolith</a>
+                  <a href="{{ "/chapters/19-strangler-fig-pattern.html" | relative_url }}">Ch 19: Strangler Fig</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part IX: Organizational Maturity</h4>
+                  <a href="{{ "/chapters/20-km3-maturity-model.html" | relative_url }}">Ch 20: KM3 Maturity</a>
                 </div>
               </div>
             </div>
@@ -104,6 +136,8 @@
       </nav>
       {% endif %}
 
+      <img class="book-ornament" src="{{ "/assets/images/book-ornament.svg" | relative_url }}" alt="" width="240" height="48">
+
       <!-- Main Content -->
       <main class="book-content">
         {{ content }}
@@ -122,7 +156,8 @@
         
         <div class="nav-buttons">
           {% if current_index > 0 %}
-            {% assign prev_chapter = chapters[current_index | minus: 1] %}
+            {% assign prev_index = current_index | minus: 1 %}
+            {% assign prev_chapter = chapters[prev_index] %}
             <a href="{{ prev_chapter.url | relative_url }}" class="nav-button prev">
               ← Previous: {{ prev_chapter.title | truncate: 30 }}
             </a>
@@ -132,8 +167,10 @@
             </a>
           {% endif %}
           
-          {% if current_index < chapters.size | minus: 1 %}
-            {% assign next_chapter = chapters[current_index | plus: 1] %}
+          {% assign last_index = chapters.size | minus: 1 %}
+          {% if current_index < last_index %}
+            {% assign next_index = current_index | plus: 1 %}
+            {% assign next_chapter = chapters[next_index] %}
             <a href="{{ next_chapter.url | relative_url }}" class="nav-button next">
               Next: {{ next_chapter.title | truncate: 30 }} →
             </a>
@@ -185,46 +222,101 @@
         </div>
       </footer>
     </div>
+    </div>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
       ↑ Top
     </button>
 
-    <script>
-      // Back to top functionality
-      window.onscroll = function() {
-        const button = document.getElementById("back-to-top");
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-          button.style.display = "block";
-        } else {
-          button.style.display = "none";
-        }
-      };
+    <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+      <button type="button" class="image-lightbox-close" id="image-lightbox-close" aria-label="Close">&times;</button>
+      <img src="" alt="">
+      <div class="image-lightbox-caption">Click anywhere to close · Esc</div>
+    </div>
 
+    <script>
       function scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
-      // Dropdown functionality
-      document.addEventListener('DOMContentLoaded', function() {
+      window.addEventListener('scroll', function () {
+        const button = document.getElementById('back-to-top');
+        const bar = document.getElementById('reading-progress');
+        const y = window.scrollY || document.documentElement.scrollTop;
+        if (button) {
+          button.style.display = y > 300 ? 'block' : 'none';
+        }
+        if (bar) {
+          const doc = document.documentElement;
+          const max = doc.scrollHeight - doc.clientHeight;
+          const pct = max > 0 ? (y / max) * 100 : 0;
+          bar.style.width = pct + '%';
+        }
+      }, { passive: true });
+
+      document.addEventListener('DOMContentLoaded', function () {
         const dropdowns = document.querySelectorAll('.nav-dropdown');
-        dropdowns.forEach(dropdown => {
+        dropdowns.forEach(function (dropdown) {
           const toggle = dropdown.querySelector('.dropdown-toggle');
           const content = dropdown.querySelector('.dropdown-content');
-          
-          toggle.addEventListener('click', function(e) {
+          toggle.addEventListener('click', function (e) {
             e.preventDefault();
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
           });
-          
-          // Close dropdown when clicking outside
-          document.addEventListener('click', function(e) {
+          document.addEventListener('click', function (e) {
             if (!dropdown.contains(e.target)) {
               content.style.display = 'none';
             }
           });
+        });
+
+        // Image lightbox: click to enlarge diagrams, cover, and hero media
+        const lightbox = document.getElementById('image-lightbox');
+        const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+        const closeBtn = document.getElementById('image-lightbox-close');
+
+        function openLightbox(src, alt) {
+          if (!lightbox || !lightboxImg) return;
+          lightboxImg.src = src;
+          lightboxImg.alt = alt || '';
+          lightbox.hidden = false;
+          lightbox.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+          if (!lightbox || !lightboxImg) return;
+          lightbox.classList.remove('is-open');
+          lightbox.hidden = true;
+          lightboxImg.src = '';
+          document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.book-content img').forEach(function (img) {
+          const src = img.getAttribute('src') || '';
+          const zoomable =
+            src.indexOf('diagrams/') !== -1 ||
+            src.indexOf('cover-image') !== -1 ||
+            src.indexOf('microservices-animation') !== -1 ||
+            img.classList.contains('book-cover-img') ||
+            img.classList.contains('book-hero-gif');
+          if (!zoomable) return;
+          img.setAttribute('title', 'Click to enlarge');
+          img.addEventListener('click', function (e) {
+            e.preventDefault();
+            openLightbox(img.currentSrc || img.src, img.alt);
+          });
+        });
+
+        if (lightbox) {
+          lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox || e.target === closeBtn) closeLightbox();
+          });
+        }
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeLightbox();
         });
       });
     </script>
