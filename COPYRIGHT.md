@@ -2,6 +2,8 @@
 
 ## Microservices Recipes: The Architect's Field Guide
 
+![The Architect's Field Guide](assets/images/cover-image-3.png){:.book-plate}
+
 **Copyright © 2017-2026 by Vaquar Khan.**
 
 This notice states who owns the work and how it is licensed. It does **not** cancel the MIT License on source code. See [LICENSING.md](LICENSING.md) for the dual-license rules.

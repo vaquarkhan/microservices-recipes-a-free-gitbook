@@ -641,6 +641,35 @@ body {
     5px 0 0 #c4b39a;
 }
 
+/* Lifestyle / mockup plates on front-matter pages */
+.book-content img.book-scene {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.35rem auto 1.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow-md);
+  cursor: zoom-in;
+}
+
+/* Colophon hardcover */
+.book-content img.book-plate {
+  max-width: min(100%, 280px);
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0.75rem auto 1.5rem;
+  border-radius: 2px 8px 8px 2px;
+  box-shadow:
+    14px 18px 32px rgba(18, 40, 51, 0.24),
+    3px 0 0 #d7c8b0,
+    6px 0 0 #c4b39a,
+    0 0 0 1px rgba(27, 58, 75, 0.12);
+  cursor: zoom-in;
+}
+
 .book-content img.book-hero-gif,
 .book-content img[src*="microservices-animation"],
 .book-content img[src*="hero-transformation"] {
@@ -932,9 +961,13 @@ body.home-page .book-content > hr {
   }
 
   .book-content img.book-cover-img,
-  .book-content img[src*="cover-image"] {
+  .book-content img.book-plate {
     transform: none;
-    max-width: min(100%, 320px);
+    max-width: min(100%, 280px);
+  }
+
+  .book-content img.book-scene {
+    max-width: 100%;
   }
 
   .book-nav {

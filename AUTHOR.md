@@ -2,6 +2,8 @@
 
 ## Viquar Khan
 
+![The Architect's Field Guide](assets/images/cover-image-1.png){:.book-scene}
+
 **Viquar Khan** is a Senior Data Architect at AWS Professional Services. He has spent more than twenty years on distributed systems and data architecture, mostly with financial institutions on AWS.
 
 ### Professional Background

@@ -1,5 +1,7 @@
 ﻿# Preface
 
+![The Architect's Field Guide on the desk](assets/images/cover-image-4.png){:.book-scene}
+
 I wrote this book because I kept seeing the same failure. A team splits a working system into services, calls the result modern, and then spends the next two years paying for a distributed monolith: lock-step deploys, a shared database, and a request path that dies because every hop can time out.
 
 The question that actually matters is not “how many services.” It is whether a boundary earns the cost of being remote. That is the spine of the book.
