@@ -55,7 +55,7 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 
 ## 🌐 **From Monolith to Microservices**
 
-![Microservices Transformation](assets/images/hero-transformation.png){:.book-hero-gif}
+![Microservices Transformation](assets/images/microservices-animation.gif){:.book-hero-gif}
 
 *A monolith on the left. Earned service boundaries on the right.*
 

@@ -301,7 +301,7 @@
 
         document.querySelectorAll('.book-content img').forEach(function (img) {
           const src = img.getAttribute('src') || '';
-          if (/\.png($|\?)/i.test(src)) {
+          if (/\.png($|\?)/i.test(src) && src.indexOf('cover-image') === -1) {
             const svgSrc = src.replace(/\.png(?=$|\?)/i, '.svg');
             const probe = new Image();
             probe.onload = function () { img.src = svgSrc; };

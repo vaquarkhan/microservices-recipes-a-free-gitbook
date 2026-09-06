@@ -1588,9 +1588,8 @@ def main() -> None:
         write_svg(path, factory())
         created.append(path)
 
-    cover = IMAGE_DIR / "cover-image-1.svg"
-    cover.write_text(render_cover_clean(), encoding="utf-8")
-    created.append(cover)
+    # Do not write cover-image-1.* — the published covers are cover-image-1.png
+    # through cover-image-4.png from the original book art.
 
     hero = IMAGE_DIR / "hero-transformation.svg"
     write_svg(hero, d_hero())
