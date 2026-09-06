@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Asynchronous Messaging Patterns"
 chapter: 10
 author: "Viquar Khan"
@@ -18,8 +18,8 @@ readingTime: "50 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">Publish What Happened. Do Not Wait.</h2>
   <div class="chapter-meta">
-    <span class="reading-time">📖 50 min read</span>
-    <span class="difficulty">🎯 Expert</span>
+    <span class="reading-time">?? 50 min read</span>
+    <span class="difficulty">?? Expert</span>
   </div>
 </div>
 
@@ -39,7 +39,7 @@ Backpressure is the mechanism by which an overwhelmed consumer signals upstream 
 
 Chapter 6 drew the general picture: a bounded buffer plus a signal back to the producer. On a queue, that buffer is the queue itself, and the signal is often implicit. The consumer simply stops taking work.
 
-![Queue backpressure](../assets/images/diagrams/queue-backpressure.svg)
+![Queue backpressure](../assets/images/diagrams/queue-backpressure.png)
 *Figure 10.1: Backpressure as flow control between a fast producer and a slower consumer. Work flows left to right from the producer toward the consumer. When the consumer cannot keep up, the excess does not pile up in the consumer's memory and crash it; instead it accumulates in a durable queue that sits between the two and is built to hold a backlog. The consumer pulls from that queue only as fast as it can actually process, and the queue depth and the age of the oldest message become visible signals of pressure. In a pull-based system the queue itself provides the backpressure, since the consumer simply polls more slowly. The alternative, a producer that pushes regardless of whether the consumer can cope, has no such shock absorber, and the pressure has nowhere to go but into a crash.*
 
 ### 10.1.1 Push versus pull
@@ -256,7 +256,7 @@ Messaging systems are optimized for high throughput of small messages, and they 
 
 The claim check pattern solves this by not sending the payload through the messaging system at all. The producer stores the large payload in a store built for large objects, such as Amazon S3, and sends only a small reference, the claim check, through the queue. The consumer receives the reference, retrieves the payload from the object store, processes it, and the payload is cleaned up afterward by a retention policy, not by a delete on the success path. The name comes from a coat check: you hand over the heavy coat and carry only the lightweight ticket.
 
-![Claim check](../assets/images/diagrams/claim-check-pattern.svg)
+![Claim check](../assets/images/diagrams/claim-check-pattern.png)
 *Figure 10.2: The claim check pattern moving a large payload out of the messaging path. On the left, the producer writes the heavy payload to an object store first, waits until that write is durable, and then places only a small message on the queue containing a reference to where the payload lives. The queue carries just that lightweight pointer, so the messaging system stays fast and cheap regardless of how large the actual data is. On the right, the consumer receives the pointer and fetches the full payload from a bucket the consumer already trusts, not from a bucket name the message supplied. The heavy data takes the path built for heavy data. The messaging system carries only the small coordination message it is optimized for. Cleanup is a lifecycle rule on the object, not a delete in the handler, so a redelivered message can still find its payload.*
 
 ### 10.4.1 The three phases

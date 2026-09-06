@@ -70,7 +70,7 @@ module "orders_queue" {
 
 `ref=main` is a fleet-wide deploy the next time anyone applies. Pin a version. Upgrade on purpose. That is Section 14.8 in one line.
 
-![The golden-path pipeline](../assets/images/diagrams/iac-golden-path-pipeline.svg)
+![The golden-path pipeline](../assets/images/diagrams/iac-golden-path-pipeline.png)
 *Figure 14.1: The golden-path pipeline. Infrastructure changes never touch the cloud from a laptop. They flow through a pull request, an automated plan, a policy check against that plan, and a human approval before a governed apply, so that every change is reviewed, recorded, and reversible. A failed policy check returns to the pull request. It does not become a conversation after the database is gone.*
 
 ## 14.3 State is the thing that will hurt you
@@ -158,7 +158,7 @@ At the largest scale, the unit of isolation stops being the module or the state 
 
 I said directly. Shared organization trails, shared billing, a compromised CI role that can assume into every account, and a module everyone pins to the same broken version are holes in the wall. An account is a cell. It is not magic.
 
-![Accounts as blast-radius boundaries](../assets/images/diagrams/accounts-as-blast-radius.svg)
+![Accounts as blast-radius boundaries](../assets/images/diagrams/accounts-as-blast-radius.png)
 *Figure 14.2: Accounts as blast-radius boundaries at estate scale. Each account is a self-contained container for a set of infrastructure, with its own limits, its own access controls, and its own failure domain. Arranging the estate as many bounded accounts rather than one large shared account means that a mistake or a breach in one is walled off from the rest, exactly as cells wall off failures within a single service. The infrastructure-as-code pipeline provisions into each account through the same governed golden path, so the isolation between accounts does not come at the cost of consistency across them: every account is built from the same reviewed, version-pinned modules with the same enforced policies.*
 
 Provisioning consistently across many accounts is where the golden path and versioned modules become essential rather than merely nice. Two structural practices make it work.

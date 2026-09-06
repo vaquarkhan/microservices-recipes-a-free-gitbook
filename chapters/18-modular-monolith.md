@@ -45,7 +45,7 @@ Inside a monolith, a boundary in the wrong place is cheap to move. It is a refac
 
 Martin Fowler's *Monolith First* observation, that you should not start with microservices unless you have already experienced the pain that justifies them, is the same point from a different angle. Microservices solve problems of scale, team autonomy, and independent deployment that a small system with a small team simply does not have. Adopting the solution before you have the problem means you pay the full operational cost, the pipelines, the observability, the distributed debugging, the network failure modes, and receive benefits you cannot yet use, because you do not have enough teams to deploy independently or enough scale to need independent scaling. The Chapter 11 framing makes this concrete: for a small system, almost no boundary clears the bar, so almost no boundary should be a service, and a metric that says so is not being timid, it is being correct.
 
-![The contraction move](../assets/images/diagrams/monolith-contraction.svg)
+![The contraction move](../assets/images/diagrams/monolith-contraction.png)
 *Figure 18.1: The contraction move. Two services that always changed together and paid a network tax for no real independence are merged back into modules within a single deployable. The diagram shows the before state, two services with a chatty synchronous edge between them, and the after state, one deployable with two modules and a plain in-process call between them. The point is that merging is not failure, it is the correct response when the granularity signals say the boundary was never earning its cost. Chapter 11 already made merging a first-class move. This figure is that move lived in.*
 
 ## 18.3 Enforcing boundaries that have no network to stop them
@@ -106,7 +106,7 @@ GRANT USAGE ON SCHEMA orders TO orders_app;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA orders TO orders_app;
 ```
 
-![Schema-per-module isolation](../assets/images/diagrams/schema-per-module.svg)
+![Schema-per-module isolation](../assets/images/diagrams/schema-per-module.png)
 *Figure 18.2: Schema-per-module isolation on shared infrastructure. Each module, orders and inventory in the diagram, has its own logical schema, and the application role for each module holds grants only on its own schema. The dashed line between them, the tempting cross-schema join, is shown blocked, because the grant simply does not exist. The message is that the data boundary is enforced by the database engine itself, so a developer cannot accidentally couple two modules through a join, and the discipline holds without relying on anyone remembering the rule. One shared `app` user would make this picture a lie.*
 
 When modules need each other's data, they get it the same way separate services would, through a published interface or through integration events, not through a shared table. The orders module does not read the inventory table; it calls inventory's published method, or it subscribes to inventory's events and keeps its own read model. This feels like more work than a join, and it is, and that is the point: the friction is the boundary doing its job, and it is the same friction you would pay across a network, except here you pay it in-process instead of in milliseconds on the wire. You get the decoupling of separate data ownership without the distribution tax, which is the modular monolith's central bargain.

@@ -36,7 +36,7 @@ Chapter 4 named the dual write as Two Generals in operational clothing and offer
 
 In a monolith, consistency is nearly free. To create an order, debit a balance, and write a notification row, you wrap the three in a single database transaction and the engine guarantees atomicity: all of them happen or none do. In microservices that safety net is gone, because you traded ACID for the scalability of partitioning. But the business still needs to update its own data and tell other systems that something happened, and that is where the dual write appears.
 
-![Dual Write Problem](../assets/images/diagrams/dual-write-problem.svg)
+![Dual Write Problem](../assets/images/diagrams/dual-write-problem.png)
 *Figure 6.1: The dual write and its fix. In the top sequence, a service writes to its database and then publishes an event as two separate operations; the diagram highlights the gap between them, where a crash or network failure leaves the database updated but the event unsent, or the reverse. In the bottom sequence, the transactional outbox fix: the event is written to an outbox table inside the same database transaction as the business data, so the two commit together atomically, and a separate relay publishes the event afterward. The dual write's danger lives entirely in the gap between two independent writes, and the outbox closes that gap by making them one write.*
 
 The most common code a developer writes in an event-driven system looks harmless:
@@ -276,7 +276,7 @@ Conflating the two is a common bug. A readiness check that fails on a transient 
 
 The last failure the toolkit must handle is too much work rather than a broken dependency. When requests arrive faster than a service can process them, an unmanaged service accepts them all, its queues grow, its memory fills, its latency climbs, and eventually it falls over, taking every in-flight request with it. The disciplined response is to push back or shed load before that happens, so the service degrades predictably under overload rather than collapsing.
 
-![Backpressure](../assets/images/diagrams/backpressure-flow-control.svg)
+![Backpressure](../assets/images/diagrams/backpressure-flow-control.png)
 *Figure 6.2: Backpressure as flow control. A producer sends work to a consumer through a bounded buffer. When the buffer fills, a backpressure signal flows back to the producer telling it to slow down, rather than letting the buffer grow without limit until memory is exhausted. A healthy system has a way to say not so fast: the bounded buffer plus the backpressure signal converts an unbounded, crash-prone overload into a bounded, survivable slowdown, which is the difference between a service that degrades and one that dies.*
 
 **Backpressure** is the cooperative version: the consumer signals the producer to slow down, and the producer obeys, so the buffer between them stays bounded. Streaming systems and reactive frameworks build this in, and a queue with a bounded size is its simplest form, because a full bounded queue naturally slows a producer that must wait to enqueue.

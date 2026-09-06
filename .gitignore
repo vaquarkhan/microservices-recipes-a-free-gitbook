@@ -38,8 +38,6 @@ npm-debug.log*
 **/__pycache__/
 *.py[cod]
 
-# 
 CLEANUP-SUMMARY.md
 ANALYTICS-TRACKING.md
 COMMUNITY-SUPPORT.md
-SUMMARY.md

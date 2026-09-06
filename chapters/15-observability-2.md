@@ -36,7 +36,7 @@ This definition has a sharp consequence that the dashboard-centric view misses: 
 
 The states you care about are, in the end, the ones that map to customer experience and to the health of the boundaries this book cares about. Is the checkout path succeeding? Is a particular tenant being served? Which boundary is adding the latency? These are the questions observability exists to answer, and every telemetry decision should be judged by whether it makes these questions cheaper to answer, not by whether it captures more data.
 
-![A unified telemetry plane](../assets/images/diagrams/observability-2-pipeline.svg)
+![A unified telemetry plane](../assets/images/diagrams/observability-2-pipeline.png)
 *Figure 15.1: A unified telemetry plane. Services emit traces, metrics, and structured wide events through an OpenTelemetry collector that batches, samples, and routes them to their backends. On the right, an independent dependency graph derived from kernel-level eBPF observation cross-checks the graph that the traces imply. When the two disagree, the difference is itself a finding: a connection the traces did not capture. The point of the diagram is that no single source is trusted alone. The collected signals and the kernel view check each other. The kernel view is still not omniscience. It sees sockets. It does not see your domain.*
 
 ## 15.2 Traces are evidence, not verdicts
@@ -162,7 +162,7 @@ This is where kernel-level observation earns its place. Tools built on eBPF obse
 
 Do not crown the kernel "ground truth" and stop thinking. eBPF sees five-tuples. It does not see that the destination was "inventory" rather than a sidecar, a node-local agent, or kube-dns. Encrypted traffic will not give you the HTTP route. Lambda, many Windows nodes, and anything whose kernel you do not control will not grow a probe, which Chapter 8 already said. Privileged kernel access is a security surface. And a connection to the instance metadata service is expected plumbing, not a new microservice. Filter the edges you already account for, or the cross-check becomes a firehose of noise.
 
-![Why the kernel view catches what traces miss](../assets/images/diagrams/ebpf-vs-trace-graph.svg)
+![Why the kernel view catches what traces miss](../assets/images/diagrams/ebpf-vs-trace-graph.png)
 *Figure 15.2: Why the kernel view catches what traces miss. Application traces, on one side, record only the calls your code knows it makes and was instrumented to report, so a dependency introduced by a library or a framework beneath your code is simply absent from them. Kernel-level eBPF observation, on the other side, sees every connection the process actually opens, because it watches below the application entirely. The value is in the comparison: an edge that appears in the kernel graph but not in the trace graph is a real connection your instrumentation never knew about, and once you have named it and decided it sits on the request path, it is exactly the kind of hidden synchronous coupling this book keeps warning about. The two sources are not redundant. Each sees a class of dependency the other cannot.*
 
 ## 15.6 Telemetry is a data-protection problem too

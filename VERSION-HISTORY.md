@@ -32,11 +32,8 @@
 - **Cloud-Native Focus** - AWS, Kubernetes, and modern container orchestration
 
 #### **📖 Content Updates:**
-- **10 Comprehensive Chapters** (expanded from original 8)
-- **New Chapter 9:** The Rise of eBPF Networking and the Post Sidecar Era
-- **New Chapter 10:** Real-World Case Studies with modern implementations
-- **Enhanced Security Chapter** - Zero-trust architectures and modern threat models
-- **Updated Data Management** - Event sourcing, CQRS, and distributed data patterns
+- RVx Index and KM3 introduced
+- Security, data, and observability chapters rewritten for current practice
 
 #### **🎨 Technical Improvements:**
 - **Clean Markdown Structure** - Compatible with all markdown processors
@@ -129,10 +126,7 @@
 ### **After 2.1**
 Version 2.1 shipped on September 6, 2026: 23 chapters, editorial SVGs, and the science arc (cost, construct validity, Goodhart). Further work is empirical validation of organic-production separation, not a new formula. See `validation/` and Chapter 22. The old "planned Q2 2026" 2.1 teaser on this page is retired.
 
-### **Version 3.0** - *Conceptual 2026*
-- **Quantum-Ready Architectures** - Preparing for quantum computing integration
-- **Edge Computing Patterns** - Distributed systems at the network edge
-- **Autonomous Systems** - Self-healing and self-optimizing microservices
+There is no “coming soon” half of the book. Version 2.1 is the public edition.
 
 ---
 

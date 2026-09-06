@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Testing Strategies"
 chapter: 9
 author: "Viquar Khan"
@@ -18,8 +18,8 @@ readingTime: "50 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">There Is No Whole System to Test. Test the Agreements.</h2>
   <div class="chapter-meta">
-    <span class="reading-time">📖 50 min read</span>
-    <span class="difficulty">🎯 Expert</span>
+    <span class="reading-time">?? 50 min read</span>
+    <span class="difficulty">?? Expert</span>
   </div>
 </div>
 
@@ -41,7 +41,7 @@ It is a gradient, not a quota. Some teams prefer the testing trophy, more integr
 
 Microservices do not overturn this pyramid so much as sharpen why its shape matters, and add a level the monolith did not need. The reason to keep the top of the pyramid narrow is not aesthetic. It is the same availability arithmetic from Chapter 1, applied to test reliability.
 
-![End-to-end test fragility](../assets/images/diagrams/e2e-test-fragility.svg)
+![End-to-end test fragility](../assets/images/diagrams/e2e-test-fragility.png)
 *Figure 9.1: Why broad end-to-end tests are fragile, shown through the same multiplication that governs availability. Each box is a service the test depends on, and each is available and behaving correctly only most of the time, say 99 percent. An end-to-end test that touches all of them passes reliably only if every single one is healthy at once, and that combined probability is the product of the individual ones. Ten services at 99 percent each yield roughly a 90 percent chance the whole chain is healthy, so about one run in ten fails for reasons unrelated to the code under test. Add more services and the test becomes useless: it fails so often from environmental flakiness that engineers stop trusting it and start ignoring its results. The narrowness of the pyramid's top is not a style preference. It is the direct consequence of this multiplication.*
 
 Hold the model honestly, the same way Chapter 1 did. The product `0.99^n` assumes independent failures. A shared staging cluster also fails as a unit, a bad deploy of the platform, a shared database, a certificate rotation, and those common-mode failures take the whole suite down at once. The test process itself adds flakes the production path does not have: brittle selectors, fixed sleeps, a clock that moved. The exact percentage is not the point. The point is that every extra service in the path is another way the test can fail without the change under test being wrong, and a suite that fails for that reason is a suite people learn to ignore.
@@ -186,7 +186,7 @@ Several practices make production a place you can test without endangering users
 
 **Controlled fault injection.** Deliberately introducing failures into production to verify the system withstands them is the practice of chaos engineering, which Chapter 13 covers in full. It is, at heart, a form of testing: it verifies resilience hypotheses against the only system where the answer truly counts. Do not start that practice without the abort on SLO burn that chapter requires.
 
-![Testing in production](../assets/images/diagrams/testing-in-production-loop.svg)
+![Testing in production](../assets/images/diagrams/testing-in-production-loop.png)
 *Figure 9.2: Testing in production as a disciplined loop. The practice is not reckless tampering with a live system. It begins with a hypothesis about how the system should behave under a specific condition, exposes that condition to a deliberately limited blast radius so that if the hypothesis is wrong the harm is contained, observes what actually happens against the telemetry from Chapter 8, and then either widens the experiment or withdraws immediately. Canary releases, feature-flagged rollouts, synthetic probes, and the fault injection of Chapter 13 all follow this same shape: verify real behavior in the real environment while keeping the cost of being wrong small.*
 
 The unifying principle across all four practices is blast-radius control. You test in production not by exposing everyone to risk, but by exposing a small, recoverable slice, watching closely, and being able to withdraw instantly. Done this way, production testing catches exactly the class of problem that pre-production testing structurally cannot, and it does so without gambling with the user base.

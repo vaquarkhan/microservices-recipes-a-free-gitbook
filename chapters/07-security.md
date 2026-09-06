@@ -88,7 +88,7 @@ The sections that follow are the building blocks that implement this posture.
 
 The first line of defense is the edge, where requests from outside enter your system. An API gateway is often sold as a routing and composition point. It is also a security control point, and centralizing edge concerns there keeps individual services from each reinventing them, badly.
 
-![API gateway as edge security](../assets/images/diagrams/api-gateway-security-boundary.svg)
+![API gateway as edge security](../assets/images/diagrams/api-gateway-security-boundary.png)
 *Figure 7.1: The API gateway as an edge security boundary. An external client on the left sends a request over the public internet. The gateway is the intended controlled entry point. It terminates TLS so encryption is enforced, it authenticates the caller and rejects anything without valid credentials, it applies rate limiting to blunt abuse and denial-of-service attempts, and it can run web application firewall rules to filter known attack patterns. Only after a request passes these checks is it forwarded inward, now carrying a verified identity that internal services can rely on only if that identity is signed or the path from the gateway is mutually authenticated. The gateway concentrates the controls that would otherwise have to be duplicated, and inconsistently implemented, in every service.*
 
 The gateway typically owns these edge responsibilities:
@@ -275,7 +275,7 @@ An AI agent is a fundamentally different kind of client, and the difference matt
 
 The controls in the earlier sections still apply. Agents must be authenticated, authorized, and rate limited like any client. But they need controls tuned to these differences.
 
-![Agent tool gateway](../assets/images/diagrams/agentic-ai-tool-gateway.svg)
+![Agent tool gateway](../assets/images/diagrams/agentic-ai-tool-gateway.png)
 *Figure 7.2: A gateway mediating calls from an autonomous AI agent. The agent on the left does not reach the backend services directly. Its requests pass through a control point that first verifies the agent's identity, then checks that the specific tool or endpoint being called is within the capabilities the agent has been granted, then enforces rate and cost limits scoped to that agent, and screens the input for injection attempts before allowing the call through. High-risk tools wait for a human. The services on the right receive only calls that a known agent, acting within its declared capabilities and within budget, is permitted to make. The gateway turns an unpredictable autonomous client into a bounded one.*
 
 ### 7.9.1 Give agents their own identity and bounded capabilities

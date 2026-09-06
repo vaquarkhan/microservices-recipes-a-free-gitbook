@@ -56,7 +56,7 @@ Dumb pipes does not mean "no broker." A topic, a queue, or an HTTP path is still
 
 There is a modern trap hiding here, and it is worth naming because it is easy to fall into. A service mesh such as Istio or Envoy is a powerful piece of infrastructure, and it is entirely possible to push business logic into it, routing on payload contents, making decisions based on the meaning of a request. If you do that, you have rebuilt the Enterprise Service Bus with a new logo. The mesh is meant to handle cross-cutting concerns like retries, timeouts, mutual TLS, and telemetry, which are genuinely infrastructure. Header-based canary or shadow routing is still infrastructure: it is about *which version* of a service receives a request, not about *what the business decides*. The moment your mesh configuration starts making business decisions, "orders over $1,000 go to the fraud workflow," you have moved intelligence back into the pipes, and the SOA failure mode is back with it.
 
-![SOA vs Microservices](../assets/images/diagrams/soa-vs-microservices.svg)
+![SOA vs Microservices](../assets/images/diagrams/soa-vs-microservices.png)
 *Figure 1.1: The structural difference between SOA and microservices, read left to right. On the SOA side, the services are thin and a central Enterprise Service Bus holds the routing, transformation, and business logic, so every service is coupled through that center and every change is coordinated through the team that owns it. On the microservices side, the bus is gone, the connections are plain transport, and each service holds its own logic, so services change independently. The two look similar as boxes and arrows but behave oppositely: the SOA arrangement centralizes intelligence and therefore coupling, while the microservices arrangement distributes intelligence and therefore autonomy.*
 
 ### 1.1.3 A decision table for avoiding accidental SOA
@@ -95,7 +95,7 @@ The reason size matters at all is not aesthetic. It is human. A boundary is main
 
 This is the sociotechnical heart of granularity, and it is why the third signal in the metric of Chapter 11 is a measure of complexity against team capacity rather than a measure of code alone. A boundary the owning team cannot hold in their heads will be maintained badly no matter how clean it looks in the dependency graph. A boundary that fits will be maintained well even if it is larger than fashion prefers. Size serves cognition, and cognition is what actually governs whether change stays safe.
 
-![Granularity Spectrum](../assets/images/diagrams/granularity-spectrum.svg)
+![Granularity Spectrum](../assets/images/diagrams/granularity-spectrum.png)
 *Figure 1.2: Granularity as a spectrum rather than a binary. At the left end, a coarse monolith, where complexity comes from code entanglement and slow builds. At the right end, a field of nanoservices, where complexity comes from network orchestration, serialization, and distributed spaghetti. In the middle sits the healthy band, where boundaries align with business capabilities such as payments or search. Both ends are failure modes and the value lives in the middle. Crucially, the location of the healthy band is not fixed: it shifts with the workload, the team, and the domain, which is why a single fixed size rule cannot find it and a measurement is needed.*
 
 The three zones on that spectrum are worth naming plainly.
@@ -143,7 +143,7 @@ Hold the model honestly. The formula `A^n` assumes independent failures and no r
 
 The lesson is not that synchronous calls are forbidden. It is that every synchronous hop across a boundary is a reliability cost, and that cost has to earn its keep. That is the same cost-versus-value logic the whole book applies.
 
-![System Availability Chain](../assets/images/diagrams/system-availability-chain.svg)
+![System Availability Chain](../assets/images/diagrams/system-availability-chain.png)
 *Figure 1.3: Why chatty synchronous chains destroy availability. Each box is a service call that succeeds 99.9 percent of the time on its own, which sounds excellent. The diagram follows the request down the chain and shows the combined success rate falling at every hop, because the request only succeeds if every call in the chain succeeds, and probabilities multiply. By fifty hops the combined success has dropped to about 95 percent, meaning roughly one request in twenty fails somewhere in the chain by design. Synchronous fan-out is not a small inefficiency. It is a structural attack on reliability that gets worse with every boundary the request must cross.*
 
 ## 1.4 Finding boundaries in the history, not on the whiteboard
@@ -288,7 +288,7 @@ if __name__ == "__main__":
     print("\nFull report saved to coupling_report.csv.")
 ```
 
-![Temporal Coupling Analysis](../assets/images/diagrams/temporal-coupling-analysis.svg)
+![Temporal Coupling Analysis](../assets/images/diagrams/temporal-coupling-analysis.png)
 *Figure 1.4: What the coupling analysis reveals. Pairs of files are ranked by their co-change score, computed from real commit history. The high-scoring pairs at the top, shown in the warm band, change together so often that they are effectively one unit, and splitting them across a service boundary would turn every routine change into a coordinated cross-service deployment. The low-scoring pairs at the bottom change independently and are safer to separate. The diagram makes visible what no whiteboard can: the behavioral coupling that lives in the history rather than in the import graph, which is the truth about where the system's real seams are.*
 
 **Step 3: Interpret the result.** Treat the bands as starting heuristics, not laws. Calibrate them to the age and commit style of the repository.

@@ -96,7 +96,7 @@ Shared kernel deserves the same honesty Chapter 2 gave shared libraries. A kerne
 
 The practical use is to label every edge in your architecture with its pattern. An edge marked partnership or shared kernel is a warning: those are the couplings that force synchronized deployments and recreate the distributed monolith. An edge marked anti-corruption layer, open host service, or published language is healthier. An edge that should be separate ways and is not is the most expensive kind of courtesy integration. The map is not decoration; it is a coupling budget you can read at a glance.
 
-![Bounded Context Map](../assets/images/diagrams/bounded-context-map.svg)
+![Bounded Context Map](../assets/images/diagrams/bounded-context-map.png)
 *Figure 3.1: A living context map. Unlike a plain architecture diagram, every connection is labeled with its relationship pattern and its direction, so you can see not just that two contexts talk but how they are coupled and who holds the power. In the figure, the recommendation service conforms only to identity's user identifier, while it protects itself from the mainframe with an anti-corruption layer. The type of each edge matters more than its existence: a map full of anti-corruption layers and open host services is healthy, and a map full of partnerships and shared kernels is a distributed monolith waiting to happen.*
 
 ## 3.3 The anti-corruption layer
@@ -105,7 +105,7 @@ The anti-corruption layer is the most important pattern for modernizing legacy s
 
 It is not only a legacy pattern. Any upstream whose model you refuse to absorb, a partner SOAP API, a vendor SaaS, a mainframe, deserves the same membrane. The banking composite in Chapter 2 failed because teams put a gateway in front of the core and then *read the legacy schema anyway*. A gateway without a translator is not an anti-corruption layer. It is a new door into the same room.
 
-![Anti-Corruption Layer Pattern](../assets/images/diagrams/anti-corruption-layer-pattern.svg)
+![Anti-Corruption Layer Pattern](../assets/images/diagrams/anti-corruption-layer-pattern.png)
 *Figure 3.2: The anti-corruption layer as a protective membrane. On the right is a legacy system with an ugly data model. On the left is a new service with a clean domain model. Between them the layer does three jobs, shown as three components: a facade that presents the clean interface, an adapter that physically talks to the legacy system, and a translator that maps the legacy model to the clean one. Legacy concepts stop at the layer and never reach the new service, so the new service's model stays pure and the cost of the legacy system's bad design is contained in one replaceable place.*
 
 The layer has three parts. The **facade** is a clean interface matching the new domain model. The **adapter** is the code that physically talks to the legacy system, whether over SQL, SOAP, or REST. The **translator** maps the ugly upstream data into clean downstream objects. Here is a concrete example: a new shipping service needs address data from a thirty-year-old legacy system that stores addresses as a single pipe-delimited string in a column called `K_12_ADDR` and uses the number 99 to mean an active user. The shipping service should see a clean address and a boolean, and never see `K_12_ADDR` at all.

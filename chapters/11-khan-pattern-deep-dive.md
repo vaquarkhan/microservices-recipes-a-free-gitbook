@@ -45,7 +45,7 @@ This is the failure Fulcrum is built to catch early, and the rest of the chapter
 
 The granularity paradox is the observation that decomposition, undertaken to reduce complexity, often increases it. A team splits a system to make it simpler to change and operate, and ends up with something harder to change and operate than what they started with. This is not a rare accident. It is the default outcome when the split is decided without measuring the three things that actually govern whether a boundary pays for itself.
 
-![Granularity spectrum](../assets/images/diagrams/granularity-spectrum.svg)
+![Granularity spectrum](../assets/images/diagrams/granularity-spectrum.png)
 *Figure 11.1: Granularity is a spectrum. Too coarse and you have a monolith. Too fine and you have a distributed monolith. The value lives in a band that shifts with the workload, the team, and the domain, which is why a single fixed rule cannot find it.*
 
 ### 11.2.1 Anatomy of a distributed monolith
@@ -54,7 +54,7 @@ Consider a request that in a monolith runs as a chain of in-process calls betwee
 
 Latency accumulates, because a remote call is slower than a function call, and because the tail latencies of several hops compound rather than average. Reliability degrades, because each synchronous edge can fail or time out, and a slow dependency can exhaust connection pools and cascade through the system. Autonomy is lost, because the services still change together, so a single feature touches several repositories and several deployment pipelines. The team pays the distribution tax on every request and never collects the independence that was supposed to justify it.
 
-![Network tax and cognitive load](../assets/images/diagrams/network-tax-cognitive-load.svg)
+![Network tax and cognitive load](../assets/images/diagrams/network-tax-cognitive-load.png)
 *Figure 11.2: Every boundary you cross adds a network tax at runtime and a cognitive tax on the people who own both sides. A boundary is only worth drawing when the value it creates exceeds both taxes.*
 
 ### 11.2.2 Why single-layer analysis misses it
@@ -101,7 +101,7 @@ S = 1 - co_change,   0 ≤ S ≤ 1
 
 The co-change fraction is the share of change sets that modify both the service and at least one other service across the boundary, over a trailing window. S approaches 1 when the service evolves independently and approaches 0 when it always ships together with its neighbours, which is the signature of hidden coupling. You measure S from version history. Chapter 1's Recipe 1.1 is the manual form of this signal. Here it becomes continuous, and it is aggregated at the unit of intent.
 
-![Temporal coupling](../assets/images/diagrams/temporal-coupling-analysis.svg)
+![Temporal coupling](../assets/images/diagrams/temporal-coupling-analysis.png)
 *Figure 11.3: Temporal coupling is invisible in the dependency graph but obvious in the commit history. Two services that always change together are one service wearing two names.*
 
 Two measurement rules keep S honest. Define a change set at the unit of intent, a merged pull request or a linked work item, not a raw commit, so that mechanical commits and squashing do not distort the signal. Exclude bot-only changes, Dependabot and the like, or a weekend of dependency bumps will look like a distributed monolith. Attribute shared code to every service that depends on it through an explicit, versioned map, rather than silently assigning it to one.
@@ -118,7 +118,7 @@ L = clamp( complexity / capacity , 0, 1 )
 
 The complexity numerator aggregates static measures such as cyclomatic complexity, module count, public surface area, and external contract size. Those are different units. A profile must declare how they are combined and scaled, not mix raw cyclomatic counts with raw file counts and hope. The capacity denominator uses team size and seniority, sourced from an organizational system of record rather than self-reported. L approaches 1 when the boundary demands more than the team can hold and approaches 0 when it is comfortably within capacity.
 
-![Conway and cognitive load](../assets/images/diagrams/conways-law-visualization.svg)
+![Conway and cognitive load](../assets/images/diagrams/conways-law-visualization.png)
 *Figure 11.4: Cognitive Load is where Conway's Law enters the sizing decision. A boundary the owning team cannot hold in their heads will be maintained badly no matter how clean it looks in the graph.*
 
 I need to be precise about what this signal is and is not, because the name invites overclaiming. The precise operational name for L is Capacity-Normalized Complexity. It is an organizational-complexity proxy, not a measurement of a human psychological state. The validated instruments for perceived mental workload, such as NASA-TLX, elicit subjective ratings or physiological signals from individuals performing a task. L does none of that. It estimates a standing structural pressure on a team from artifacts the team already produces, with no survey in the loop. I keep the label Cognitive Load only for the sociotechnical intuition it operationalizes, in the Team Topologies sense, and a reader who prefers the operational name may substitute it everywhere without changing a single definition or result. Chapter 2 already warned that Dunbar's 150 is not a team-size number. Do not smuggle it into the capacity denominator. L is also the lowest-confidence and most gameable of the three signals, which is exactly why the score treats it more gently than the other two, as the next section makes precise.
@@ -194,24 +194,24 @@ RVx              ≈  0.58
 
 That is the at-risk band, not the healthy one. The score improved, the named cause is gone, and the boundary is still not in the clear. I am not going to pretend a mid-range reading is a celebration. A reading that does clear the illustrative healthy band, at the same defaults, looks more like `E = 0.95`, `S = 0.90`, `L = 0.15`, which squashes to about 0.73. The value of the score is that it turns a boundary review from an argument into a reading with a remedy attached.
 
-![RVx calculation flow](../assets/images/diagrams/rvx-calculation-flow.svg)
+![RVx calculation flow](../assets/images/diagrams/rvx-calculation-flow.png)
 *Figure 11.5: The RVx calculation flow. Three signals are measured from data you already have, fused into a bounded score under a per-profile calibration, and read against bands that trigger a specific, diagnostic remedy rather than a generic warning.*
 
 ## 11.6 The Khan granularity matrix
 
 The composite tells you whether a boundary is healthy. The matrix tells you what kind of unhealthy it is, by reading the components rather than the single number. This is the view I recommend teams start with, because a diagnosis is more useful than a verdict.
 
-![Khan granularity matrix](../assets/images/diagrams/khan-granularity-matrix-zones.svg)
+![Khan granularity matrix](../assets/images/diagrams/khan-granularity-matrix-zones.png)
 *Figure 11.6: The Khan granularity matrix. Reading the three components places a boundary in a zone that names both the problem and the direction of the fix.*
 
 Four zones cover the common cases. A boundary with high efficiency, high distinctness, and manageable load is a healthy microservice, and the action is to leave it alone. A boundary with low efficiency but good distinctness and load is chatty, and the fix is to reduce synchronous hops or merge along the chattiest edge, not to split further. A boundary with good efficiency but low distinctness is a distributed monolith fragment, two services that are really one, and the fix is to merge them or to find the true seam that was missed. A boundary with high load, whatever else is true, is an ownership problem, and the fix is organizational, either shrinking the surface or changing who owns it, backed by the high-load gate rather than by the score alone.
 
 The matrix is also where the method earns its keep against the industry's silence on merging. The literature is full of advice on how to split and almost none on when to merge. Because RVx scores a distributed-monolith fragment as unhealthy and names distinctness as the cause, it makes merging a first-class, defensible move rather than an admission of failure.
 
-![Service split](../assets/images/diagrams/service-split-example.svg)
+![Service split](../assets/images/diagrams/service-split-example.png)
 *Figure 11.7: A split that raises the score, because it removes a chatty synchronous edge and the two ends genuinely change on their own schedules.*
 
-![Service merge](../assets/images/diagrams/service-merge-example.svg)
+![Service merge](../assets/images/diagrams/service-merge-example.png)
 *Figure 11.8: A merge that raises the score, because the two services always changed together and the boundary between them was paying a network tax for no independence in return.*
 
 ## 11.7 Fulcrum: the governance loop
@@ -228,7 +228,7 @@ The high-load gate deserves a direct mention here, because it is how the loop cl
 
 Boundaries decide how business transactions span services, and a boundary that splits a transaction forces the choreography-versus-orchestration choice Chapter 5 developed. The Saga Complexity Score, SCS, turns that qualitative choice into a reading. Chapter 5 pointed here and did not restate a formula. This is that formula.
 
-![Choreography versus orchestration](../assets/images/diagrams/saga-choreography-vs-orchestration.svg)
+![Choreography versus orchestration](../assets/images/diagrams/saga-choreography-vs-orchestration.png)
 *Figure 11.9: The choreography versus orchestration choice. Choreography is simpler when there are few steps and low risk. Orchestration earns its central controller when the transaction is complex, high-risk, or needs an audit trail.*
 
 SCS combines three declared inputs. I am not going to overload `S` a second time; that letter already means Semantic Distinctness.
@@ -246,7 +246,7 @@ SCS is a design-time score over the saga you drew, not a number mined from git. 
 
 RVx scores a boundary. KM3 applies RVx and its siblings at portfolio scale, so leadership can govern granularity across a whole estate rather than one service at a time. It is a five-level model, and I scope each level deliberately so that the model does not promise autonomous remediation it cannot safely deliver. Chapter 20 is the assessment instrumentation, promotion criteria, and how this ladder sits next to DORA and chaos programs. This section is the granularity-governance ladder those assessments assume.
 
-![KM3 levels](../assets/images/diagrams/km3-maturity-levels.svg)
+![KM3 levels](../assets/images/diagrams/km3-maturity-levels.png)
 *Figure 11.10: The five KM3 levels. Each level is real only if its preconditions are met, which keeps the model an honest assessment rather than a marketing ladder.*
 
 **Level 1, Ad hoc:** boundaries are chosen by intuition and no measurement exists. **Level 2, Instrumented:** the three signals are measured and dashboarded, with no gate. **Level 3, Governed:** RVx gates pull requests against a calibrated profile, so new distributed monoliths are prevented before they merge. **Level 4, Portfolio-managed:** scores are rolled up, refactoring investment is prioritised by score and traffic, and trends are tracked against outcomes. **Level 5, Self-correcting:** the safety-gated controller performs configuration-level remediation autonomously and prepares structural proposals for human execution.
