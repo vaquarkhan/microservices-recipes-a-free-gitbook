@@ -641,26 +641,6 @@ body {
     5px 0 0 #c4b39a;
 }
 
-.book-covers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin: 0 auto 2rem;
-  max-width: 920px;
-}
-
-.book-covers img,
-.book-content .book-covers img[src*="cover-image"] {
-  max-width: min(28%, 220px);
-  width: auto;
-  height: auto;
-  margin: 0;
-  border-radius: 4px;
-  box-shadow: var(--shadow-md);
-  cursor: zoom-in;
-}
-
 .book-content img.book-hero-gif,
 .book-content img[src*="microservices-animation"],
 .book-content img[src*="hero-transformation"] {
