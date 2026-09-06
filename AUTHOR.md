@@ -40,6 +40,7 @@ The job is not to draw a perfect target architecture. It is to keep the boundari
 
 ### Connect with Viquar
 
+- **ORCID**: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 - **LinkedIn**: [www.linkedin.com/in/vaquar-khan-b695577/](https://www.linkedin.com/in/vaquar-khan-b695577/)
 - **GitHub**: [github.com/vaquarkhan](https://github.com/vaquarkhan)
 - **Amazon Author**: [Viquar Khan on Amazon](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)

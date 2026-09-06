@@ -9,6 +9,7 @@ Use [CITATIONS.md](CITATIONS.md). Machine-readable metadata: [CITATION.cff](CITA
 ```
 Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1).
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+ORCID: https://orcid.org/0009-0008-3592-4162
 ```
 
 Code is MIT. Prose and figures are CC BY-NC-ND 4.0. See [LICENSING.md](LICENSING.md).

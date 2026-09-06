@@ -2,7 +2,7 @@
 
 **Status:** Normative for this repository (v3.0, aligned with Chapter 11 rewrite of 2026-09-06).  
 **Methodology:** Adaptive Granularity Governance: The Khan Microservice Pattern.  
-**Copyright:** © 2017-2026 Vaquar Khan. Prose under CC BY-NC-ND 4.0; see [LICENSING.md](../LICENSING.md).  
+**Copyright:** © 2017-2026 Viquar Khan. Prose under CC BY-NC-ND 4.0; see [LICENSING.md](../LICENSING.md).  
 **Scope:** Chapter 11 is the source of truth for formulas, bands, and honesty tiers. This file restates them so implementations do not drift.
 
 ## 1. Purpose

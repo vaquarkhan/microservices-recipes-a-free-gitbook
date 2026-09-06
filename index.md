@@ -16,11 +16,12 @@
 
 ## 📜 **Copyright & Publication Information**
 
-**Copyright © 2017-2026 by Vaquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures. See [LICENSING.md](LICENSING.md).
+**Copyright © 2017-2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures. See [LICENSING.md](LICENSING.md).
 
 ### **Publication Details**
 - **Title**: Microservices Recipes: The Architect's Field Guide
-- **Author**: Vaquar Khan
+- **Author**: Viquar Khan
+- **ORCID**: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 - **First Edition**: January 2017
 - **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
 - **Version 2.1**: September 6, 2026 (23-chapter science edition)
@@ -30,7 +31,7 @@
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ### **Original Methodologies (please cite)**
-The following are original methodologies by Vaquar Khan. No trademark is claimed at this time:
+The following are original methodologies by Viquar Khan. No trademark is claimed at this time:
 - **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy)
 - **Service Decomposition Workflow**
 - **Microservices Maturity Assessment (KM3)**
@@ -222,7 +223,7 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 **Book a FREE 1:1 mentorship session with Viquar Khan:**  
 **[📅 Schedule on ADPList](https://adplist.org/mentors/vaquar-khan)**
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)
+**Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)
 
 ---
 

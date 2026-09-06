@@ -6,12 +6,12 @@ This repository uses a **dual license**. Read this file before reusing material.
 
 | Material | License | Copyright holder |
 |----------|---------|------------------|
-| Source code, scripts, and reference implementations under `reference-impl/` (and similar code samples intended as software) | [MIT License](LICENSE) | Vaquar Khan (also styled Viquar Khan) |
-| Book text, Markdown chapters, diagrams, figures, and narrative documentation | [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/) | Vaquar Khan |
+| Source code, scripts, and reference implementations under `reference-impl/` (and similar code samples intended as software) | [MIT License](LICENSE) | Viquar Khan |
+| Book text, Markdown chapters, diagrams, figures, and narrative documentation | [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/) | Viquar Khan |
 
 ## Copyright (clear statement)
 
-**Copyright © 2017-2026 Vaquar Khan.**
+**Copyright © 2017-2026 Viquar Khan.**
 
 The author retains copyright in the original expression of this work, including:
 
@@ -27,7 +27,7 @@ Copyright protects the *expression* of ideas (the text, diagrams, and code as wr
 The following names identify the author's original methodology and should be attributed and cited when referenced:
 
 - **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy)
-- **RVx Index** (Revised VaquarKhan Index)
+- **RVx Index** (Revised ViquarKhan Index)
 - **Saga Complexity Score (SCS)**
 - **KM3** (Microservices Maturity Assessment / Khan Microservices Maturity Model)
 

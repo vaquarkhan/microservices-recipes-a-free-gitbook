@@ -4,7 +4,7 @@
 
 ![The Architect's Field Guide](assets/images/cover-image-3.png){:.book-plate}
 
-**Copyright © 2017-2026 by Vaquar Khan.**
+**Copyright © 2017-2026 by Viquar Khan.**
 
 This notice states who owns the work and how it is licensed. It does **not** cancel the MIT License on source code. See [LICENSING.md](LICENSING.md) for the dual-license rules.
 
@@ -14,7 +14,8 @@ This notice states who owns the work and how it is licensed. It does **not** can
 
 - **Title**: Microservices Recipes: The Architect's Field Guide
 - **Subtitle**: Featuring Adaptive Granularity Governance: The Khan Microservice Pattern
-- **Author**: Vaquar Khan
+- **Author**: Viquar Khan
+- **ORCID**: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 - **First Edition**: January 2017
 - **Second Edition**: January 2026 (Adaptive Granularity Governance edition; formerly Adaptive Granularity Strategy)
 - **Version 2.1**: September 6, 2026 (23-chapter science edition)
@@ -36,7 +37,7 @@ Copyright protects the author's original expression, including:
 
 ## Original methodologies (please cite)
 
-These are original methodologies by Vaquar Khan. Attribute and cite them; no trademark is claimed at this time:
+These are original methodologies by Viquar Khan. Attribute and cite them; no trademark is claimed at this time:
 
 1. **Adaptive Granularity Governance: The Khan Microservice Pattern**  
    (formerly the Adaptive Granularity Strategy)  
@@ -63,7 +64,7 @@ Full rules: [LICENSING.md](LICENSING.md). Naming: [NAMING.md](NAMING.md). Citati
 
 ### Attribution when you reuse this work
 
-1. Preserve copyright notice: "© 2017-2026 Vaquar Khan"  
+1. Preserve copyright notice: "© 2017-2026 Viquar Khan"  
 2. For code: include the MIT License text  
 3. For prose/figures: follow CC BY-NC-ND 4.0 (attribution, non-commercial, no derivatives)  
 4. Cite the methodology when you reference it  

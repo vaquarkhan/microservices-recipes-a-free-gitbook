@@ -9,7 +9,7 @@
 | **PRIMARY_NAME** | Adaptive Granularity Governance |
 | **SUB_NAME** | The Khan Microservice Pattern |
 | **Title convention** | `PRIMARY_NAME: The Khan Microservice Pattern` |
-| **Metric (unchanged)** | RVx Index (Revised VaquarKhan Index) |
+| **Metric (unchanged)** | RVx Index (Revised ViquarKhan Index) |
 | **Related** | Saga Complexity Score (SCS); KM3 (Microservices Maturity Assessment) |
 
 ## Historical name
@@ -18,7 +18,7 @@
 
 ## What these names mean legally
 
-- The names **identify the author's original methodology**. When you discuss or reuse the ideas from this book, **attribute and cite** Vaquar Khan.
+- The names **identify the author's original methodology**. When you discuss or reuse the ideas from this book, **attribute and cite** Viquar Khan.
 - **Copyright** covers the written expression (book text, diagrams, formal specs). See [LICENSING.md](LICENSING.md) and [COPYRIGHT.md](COPYRIGHT.md).
 - **No trademark is claimed at this time.** Do not add registered-trademark or trademark symbols to these names in this repository.
 

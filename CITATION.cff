@@ -7,9 +7,8 @@ date-released: "2026-09-06"
 abstract: "A field guide to microservices architecture featuring Adaptive Granularity Governance: The Khan Microservice Pattern and the RVx Index."
 authors:
   - family-names: Khan
-    given-names: Vaquar
-    alias: Viquar Khan
-    orcid: ""
+    given-names: Viquar
+    orcid: "https://orcid.org/0009-0008-3592-4162"
 repository-code: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
 url: "https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/"
 license: "MIT AND CC-BY-NC-ND-4.0"
@@ -25,7 +24,8 @@ preferred-citation:
   title: "Microservices Recipes: The Architect's Field Guide"
   authors:
     - family-names: Khan
-      given-names: Vaquar
+      given-names: Viquar
+      orcid: "https://orcid.org/0009-0008-3592-4162"
   year: 2026
   version: "2.1"
   url: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
