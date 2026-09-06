@@ -4,6 +4,10 @@
 
 ![Microservices Recipes Cover](assets/images/cover-image-1.png)
 
+![Cover](assets/images/cover-image-2.png)
+![Cover](assets/images/cover-image-3.png)
+![Cover](assets/images/cover-image-4.png)
+
 **A practical guide to building, scaling, and managing microservices architectures**
 
 As defined by Sam Newman in his foundational text *Building Microservices*, microservices are "small, autonomous services that work together." This definition emphasizes the dual requirements of independence and interoperability.
