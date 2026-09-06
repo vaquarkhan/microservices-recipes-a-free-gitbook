@@ -4,6 +4,12 @@
 
 ![Book Cover](assets/images/cover-image-1.png){:.book-cover-img}
 
+<div class="book-covers">
+![Cover](assets/images/cover-image-2.png)
+![Cover](assets/images/cover-image-3.png)
+![Cover](assets/images/cover-image-4.png)
+</div>
+
 **Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 *by **Viquar Khan***

@@ -615,14 +615,13 @@ body {
   }
 }
 
-/* Physical cover presentation (source PNG untouched) */
-.book-content img.book-cover-img,
-.book-content img[src*="cover-image"] {
+/* Physical cover presentation (original PNGs only) */
+.book-content img.book-cover-img {
   max-width: min(100%, 420px);
   width: auto;
   height: auto;
   display: block;
-  margin: 0.5rem auto 1.75rem;
+  margin: 0.5rem auto 1.25rem;
   border-radius: 2px 8px 8px 2px;
   box-shadow:
     18px 22px 40px rgba(18, 40, 51, 0.28),
@@ -634,13 +633,32 @@ body {
   cursor: zoom-in;
 }
 
-.book-content img.book-cover-img:hover,
-.book-content img[src*="cover-image"]:hover {
+.book-content img.book-cover-img:hover {
   transform: none;
   box-shadow:
     10px 28px 48px rgba(18, 40, 51, 0.32),
     2px 0 0 #d7c8b0,
     5px 0 0 #c4b39a;
+}
+
+.book-covers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  max-width: 920px;
+}
+
+.book-covers img,
+.book-content .book-covers img[src*="cover-image"] {
+  max-width: min(28%, 220px);
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+  cursor: zoom-in;
 }
 
 .book-content img.book-hero-gif,
