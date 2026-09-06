@@ -144,7 +144,7 @@ Viquar offers **complimentary 1:1 mentorship sessions** to help developers, arch
 
 ### **📖 Recommended Preparation**
 Before your session, consider reviewing:
-- This book - Especially chapters relevant to your questions
+- This book (all 23 chapters). Chapter 11 for the score, Chapters 21–23 for cost, validity, and gaming.
 - The Adaptive Granularity Governance: The Khan Microservice Pattern methodology in the AUTHOR.md file
 - Your current challenges - Be specific about what you need help with
 - Industry best practices - Come with informed questions

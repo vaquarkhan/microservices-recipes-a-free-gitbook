@@ -19,7 +19,7 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ### IEEE
 
 ```
-[1] V. Khan, "Microservices Recipes: The Architect's Field Guide," 
+[1] V. Khan, "Microservices Recipes: The Architect's Field Guide," ver. 2.1,
 GitHub repository, 2026. [Online]. Available: 
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```

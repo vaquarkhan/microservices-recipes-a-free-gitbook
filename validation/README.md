@@ -3,7 +3,8 @@
 **Status:** Scaffolding only. No labeled dataset is checked in yet.  
 **Goal:** Empirically test whether RVx separates healthy service boundaries from distributed-monolith / nano-service failure modes better than naive baselines.  
 **Spec:** [docs/RVX-SPEC.md](../docs/RVX-SPEC.md)  
-**Implementation stub:** [reference-impl/](../reference-impl/)
+**Implementation stub:** [reference-impl/](../reference-impl/)  
+**Book:** Chapter 11 defines the score. Chapter 22 states the evidence tiers. This folder is still a protocol, not a result.
 
 ## 1. Study question
 
