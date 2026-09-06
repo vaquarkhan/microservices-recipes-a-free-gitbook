@@ -50,7 +50,7 @@ The classroom slogan "pick any two of C, A, and P" is a teaching device, not a m
 
 Daniel Abadi's PACELC restatement is the useful next notch: *if* there is a partition, choose A or C; *else*, choose latency or consistency. Most of the pain in cloud systems is the *else*. Cross-region chatty reads pay a latency tax even when the network is healthy, which is why a ledger and a product catalog in the same application belong on different settings of the dial.
 
-![CAP Theorem Triangle](../assets/images/diagrams/cap-theorem-triangle.svg)
+![CAP Theorem Triangle](../assets/images/diagrams/cap-theorem-triangle.png)
 *Figure 4.1: The CAP theorem, and why it is a choice rather than a wish. The triangle places consistency, availability, and partition tolerance at the corners. Because network partitions are a fact of distributed life rather than an option, partition tolerance is not negotiable, so the real choice under a partition is the edge between consistency and availability. The diagram places real systems on the edges to make the choice concrete. Regional DynamoDB writes and Aurora sit on the CP side; Cassandra and default DynamoDB Global Tables sit on the AP side. CAP is not a limitation to lament but a decision the architect must make deliberately for each piece of data.*
 
 ## 4.2 The consistency spectrum
@@ -151,7 +151,7 @@ The rule immediately raises a hard question, because real business questions spa
 
 **The third is command query responsibility segregation, or CQRS**, which formalizes the second answer. The write side and the read side are separated: writes go to the owning services in their normalized form, and a separate read model, often built by consuming events, is denormalized specifically for the queries the system needs to answer. CQRS is powerful for read-heavy systems and for building materialized views that span services, and it is genuinely more complex, so it earns its place only when the query needs justify the extra moving parts.
 
-![Data ownership through events](../assets/images/diagrams/data-ownership-events.svg)
+![Data ownership through events](../assets/images/diagrams/data-ownership-events.png)
 *Figure 4.2: Data ownership and sharing done correctly. Each service owns its private store, shown boxed off so no other service can reach in. When a service needs another's data, it does not query that service's database; it consumes the domain events that service publishes and maintains its own local read model of just the fields it needs. The arrows between services carry events, not database queries, so ownership stays clean and the services stay independently changeable, at the cost of the eventual-consistency window the previous sections taught you to design for.*
 
 The rule to carry forward is that a service's database is private, cross-service data is shared through events and local projections rather than shared tables or cross-service queries, and the eventual consistency this introduces is not a defect to be engineered away but the honest price of independence, managed with the tools from earlier in this chapter.

@@ -39,7 +39,7 @@ The Richardson Maturity Model measures how thoroughly an API uses HTTP semantics
 
 KM3 measures a different thing: whether the organization has the architectural discipline and operational capability to run distributed systems safely, which is what determines whether the system survives contact with scale, failure, and change. It is complementary to DORA and Richardson, not a replacement, and a mature organization tracks all three, because they answer different questions: how fast you ship, how well your interfaces are designed, and whether your architecture and operations can bear the weight of distribution.
 
-![The five KM3 levels](../assets/images/diagrams/km3-staircase.svg)
+![The five KM3 levels](../assets/images/diagrams/km3-staircase.png)
 *Figure 20.1: The five KM3 levels as a staircase. Ad hoc at the bottom, where boundaries are guessed and nothing is measured, rising through Instrumented, where the signals are measured but not enforced, Governed, where the metric gates changes, Portfolio-managed, where boundaries are managed across the estate, to Self-correcting at the top, where a safety-gated controller remediates automatically. The diagram shows each step gated by the one below it, meaning a level cannot be reached without the preconditions of the lower levels, which is what keeps the model an honest assessment rather than a ladder to be gamed. Chapter 11's Figure 11.10 is the same staircase introduced. This chapter is how you place a team on it.*
 
 ## 20.2 The five levels
@@ -119,7 +119,7 @@ Moving from **Portfolio-managed to Self-correcting** is the most demanding and t
 
 A maturity level means little unless you can say what class of failure it protects against, and tying each level to the incidents it prevents is what turns KM3 from a scorecard into a diagnosis. It also provides the outcome-based confirmation that Section 20.4 asked for: a level is more credible when the incidents it is supposed to prevent have become rarer and are treated as capability defects, not merely when the capability is present on a slide.
 
-![The levels annotated with the defining capability](../assets/images/diagrams/km3-capabilities.svg)
+![The levels annotated with the defining capability](../assets/images/diagrams/km3-capabilities.png)
 *Figure 20.2: The levels annotated with the capability that defines each. Reading up, Ad hoc has no measurement, Instrumented adds the measured signals, Governed adds the gate that acts on them, Portfolio-managed adds estate-wide management of those scores, and Self-correcting adds the safety-gated automated loop. The value of viewing the levels this way is that each capability is the thing whose absence lets a specific class of incident through, so the staircase is also a ladder of failures progressively closed off.*
 
 The mapping is direct. At Level 1, Ad hoc, the characteristic incident is the distributed monolith that no one saw forming: services were split by intuition, the split was wrong, and the organization discovers the tangle only when a routine change requires coordinating six deployments. Nothing prevents this at Level 1 because nothing is measured, so the failure is invisible until it is operational. Reaching Level 2, Instrumented, does not prevent the failure outright, but it makes it visible, because the distinctness signal now shows the co-change coupling on a dashboard before it becomes an incident.

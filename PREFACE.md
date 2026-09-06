@@ -1,180 +1,38 @@
 ﻿# Preface
 
-## Why This Book Exists
+I wrote this book because I kept seeing the same failure. A team splits a working system into services, calls the result modern, and then spends the next two years paying for a distributed monolith: lock-step deploys, a shared database, and a request path that dies because every hop can time out.
 
-I wrote *Microservices Recipes* to address a gap I've observed throughout my 22 years working with distributed systems at companies like Amazon: the disconnect between microservices theory and practical implementation. While countless resources explain what microservices are, few provide actionable guidance on how to build them successfully in real-world environments.
+The question that actually matters is not “how many services.” It is whether a boundary earns the cost of being remote. That is the spine of the book.
 
-This book introduces **The Adaptive Granularity Governance: The Khan Microservice Pattern (Author's Method)**, a mathematically rigorous framework for determining optimal microservice boundaries. Rather than relying on subjective rules of thumb, this pattern provides quantitative methods for making architectural decisions that account for your specific organizational context.
+**Adaptive Granularity Governance** (the Khan Microservice Pattern) is how I make that question answerable. The RVx Index is the score. Chapter 11 is the only place the formula, the defaults, and the evidence tiers are written down. I am not reprinting the equation here. If an old slide has the exponents swapped, throw the slide away.
 
-The open-source nature of this project has been essential to its development. With over 600 GitHub stars and active contributions from the community, this work continues to evolve based on real-world feedback and implementation experiences.
+Read a score as a warning light, not a trophy:
 
-Whether you're an architect at an enterprise organization or a developer building your first distributed system, this book provides practical patterns and anti-patterns drawn from production experience.
+- **Above 0.7** — healthy on the declared profile. Still show the three components.
+- **0.4 to 0.7** — at risk. Find the weak signal before you split or merge.
+- **Below 0.4** — the boundary is not earning its keep.
 
----
+The whole book is here. Twenty-three chapters. There is no later paid half, and there is no ten-chapter teaser. Parts I–III are the substrate: organization, data, evidence. Chapter 11 is the measurement. Parts V–IX are isolation, platform, agents, migration, and maturity. Part X is cost, validity, and Goodhart.
 
-## The Adaptive Granularity Governance: The Khan Microservice Pattern (Author's Method)
+I work on AWS. The examples lean that way. The arguments are not AWS-specific.
 
-The central contribution of this book is the Adaptive Granularity Governance: The Khan Microservice Pattern (Author's Method), a systematic methodology for microservice decomposition that addresses the "Granularity Paradox" - the challenge of determining optimal service boundaries.
-
-### The Challenge
-
-Traditional microservice decomposition relies on qualitative guidelines that often lead to problems:
-- Arbitrary service boundaries based on intuition
-- No quantitative metrics to validate decisions
-- Inconsistent granularity across teams
-- High failure rates in transformations
-
-### The Solution: The RVx Index
-
-The Adaptive Granularity Governance: The Khan Microservice Pattern introduces the RVx Index, a score for whether a service boundary earns its distributed cost. Chapter 11 is the only place the formula, the defaults, and the evidence tiers are defined. I am not reprinting the equation here, because a preface that restates a formula with the exponents swapped is worse than a preface that points you to the source of truth.
-
-What you need before Chapter 11 is the idea, not the algebra. A boundary is worth deploying separately only when three things hold at once: it is efficient at runtime, it changes independently of its neighbors, and the team that owns it can carry it. The score fuses those three signals. It is a detector, not a number to maximize.
-
-**How to read a score, once you have Chapter 11:**
-- **RVx > 0.7:** the boundary looks healthy on the declared profile; keep watching the components
-- **0.4 to 0.7:** at-risk; diagnose which signal is weak before you split or merge
-- **RVx < 0.4:** the boundary is not earning its keep; investigate, do not celebrate a later bounce without a code change that explains it
-
-The defaults, the squash, and the honesty about what is proved versus hypothesized live in Chapter 11. If a slide or an older draft shows α and β reversed, discard the slide.
-
-### Modern Extensions
-
-The pattern has been extended to address contemporary challenges:
-- **AI/ML Integration:** Service boundaries for LLM and vector database workloads
-- **Token Economics:** Cost-aware circuit breakers for AI services
-- **Semantic APIs:** Design principles for AI agent communication
-- **Probabilistic Behavior:** Observability for non-deterministic systems
-
----
-
-## What This Book Covers
-
-### Core Patterns and Frameworks
-
-**Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrices:**
-- Saga topology selection (Choreography vs. Orchestration)
-- Quantitative scoring for transaction patterns
-- Implementation checklists and anti-pattern identification
-
-**Cross-Cloud Architecture:**
-- Unified patterns across AWS, Azure, and GCP
-- Cloud-agnostic design strategies
-- Multi-cloud orchestration patterns
-
-**Sociotechnical Integration:**
-- Conway's Law in practice
-- Team Topologies integration
-- Cognitive Load Theory applied to service sizing
-- Microservices Maturity Assessment (Author's Method) for organizational assessment
-
----
-
-## The Modern Architect's Role
-
-The transition from monolithic architecture to microservices is not merely a change in deployment strategy; it's a fundamental reorganization of data governance, inter-process communication, and organizational sociology. While the industry has coalesced around high-level definitions, the practical reality of implementing them at scale is fraught with profound complexity.
-
-This field guide is designed for the Senior Architect. It moves beyond rudimentary definitions to explore the nuanced tradeoffs involved in distributed systems, the "hard parts" where no perfect solution exists, only compromises. It synthesizes deep technical research, industry best practices, and specific cloud-native implementations-primarily within the Amazon Web Services (AWS) ecosystem-to provide a blueprint for building scalable, resilient, and secure distributed systems.
-
-The modern architect acts not as a dictator of blueprints but as a gardener of ecosystems, cultivating a landscape where independent teams can thrive without descending into chaos.
-
-## Adaptive Granularity Governance: The Khan Microservice Pattern: A New Paradigm
-
-Traditional approaches to microservices decomposition often rely on rigid rules: "one service per database table," "services should be small enough to rewrite in two weeks," or "follow domain boundaries strictly." While these guidelines provide starting points, they fail to account for the diverse contexts in which microservices operate.
-
-The Adaptive Granularity Governance: The Khan Microservice Pattern introduces context-driven, adaptive granularity. Instead of following one-size-fits-all rules, this pattern provides a framework for making granularity decisions based on:
-
-- **Organizational maturity and team structure**
-- **Business domain complexity and change frequency**
-- **Technical constraints and operational capabilities**
-- **Evolutionary growth and learning**
-
-The pattern's core philosophy is captured in its motto: **"Stop splitting, start governing."**
-
-## What Makes This Book Different
-
-### 1. Practical, Not Theoretical
-Every pattern, principle, and recommendation in this book has been tested in production environments. The examples are drawn from real implementations, and the anti-patterns are based on actual failures observed in the field.
-
-### 2. Holistic Approach
-Rather than focusing on individual technologies or patterns, this book provides a complete framework for microservices architecture, covering design, implementation, deployment, and operations.
-
-### 3. Context-Aware Guidance
-Recognizing that there's no universal solution, this book provides guidance for different organizational contexts, team sizes, and technical maturity levels.
-
-### 4. Evolution-Focused
-The book emphasizes that microservices architecture is not a destination but a journey. It provides strategies for evolving your architecture as your understanding and requirements mature.
-
-### 5. Anti-Pattern Awareness
-Learning from failures is as important as understanding successes. This book dedicates significant attention to common anti-patterns and how to avoid them.
-
-## The Master Blueprint
-
-This book is designed to support an in-depth exploration of microservices architecture. Each chapter builds upon the previous ones, creating a complete understanding of the challenges and solutions in distributed systems design.
-
-## A Living Document
-
-The microservices landscape continues to evolve rapidly. New patterns emerge, technologies mature, and my understanding deepens. This book is designed to be a living document that evolves with the community.
-
-## 🌟 Community Adoption
-
-### **📊 Repository Engagement**
-- ⭐ **GitHub Stars:** 606 developers have starred this repository
-- 🍴 **Repository Forks:** 228 developers have forked for their own use  
-- 👁️ **Watchers:** 606+ developers are following updates book and 1400+ Profile
-- 📧 **Subscribers:** 32 developers receive email notifications
-- 📊 **Network Reach:** 228 repositories in the fork network
-- 📝 **Total Commits:** 121 commits by active contributors
-- 🌿 **Active Branches:** 8 development branches
-- 👥 **Contributors:** 1 primary author with community contributions
-
-### **👥 Community Members**
-
-The author's GitHub profile ([@vaquarkhan](https://github.com/vaquarkhan)) has **1,400+ followers**, demonstrating sustained influence and thought leadership in the distributed systems community. This following represents architects, engineers, and technical leaders who actively track contributions to the field.
-
-### **🌍 Global Impact**
-With **606 stars**, **228 forks**, and **1,400+ profile followers**, this work has reached developers across the globe, demonstrating the universal need for practical microservices guidance. The community spans from individual developers learning microservices to enterprise teams implementing large-scale transformations.
-
-
-I encourage readers to:
-- **Share feedback** through the book's GitHub repository
-- **Contribute examples** and case studies from your own experience
-- **Report issues** or suggest improvements
-- **Engage in discussions** about patterns and practices
-
-## The Journey Ahead
-
-Microservices architecture is not about technology .it's about enabling organizations to build better software faster. It's about creating systems that can evolve with changing business needs while maintaining reliability and performance.
-
-The journey toward effective microservices architecture is challenging but rewarding. It requires not just technical skills but also organizational change, cultural adaptation, and continuous learning.
-
-This book is your field guide for that journey. It won't make the journey easy, but it will help you navigate the challenges more effectively and avoid the most common pitfalls.
-
-Welcome to the world of microservices architecture. This guide will help you build something remarkable.
-
----
+If you use the method, cite it. Formats are in [CITATIONS.md](CITATIONS.md).
 
 **Viquar Khan**  
-*Author and Creator of The Adaptive Granularity Governance: The Khan Microservice Pattern*  
-*September 6, 2026*
+September 6, 2026
 
 ---
 
-## 📜 **Copyright Notice**
+**Copyright © 2017–2026 by Viquar Khan.**
 
-**Copyright © 2017-2026 by Viquar Khan. **
+Original methods, please cite:
 
-**Proprietary Methodologies:**
-- The Adaptive Granularity Governance: The Khan Microservice Pattern (Author's Method)
-- Service Decomposition Workflow (Author's Method)
-- Microservices Maturity Assessment (Author's Method)
+- Adaptive Granularity Governance: The Khan Microservice Pattern
+- Service Decomposition Workflow
+- Microservices Maturity Assessment (KM3)
 
-**Note**: These are proprietary methodologies developed through professional practice. See [DISCLAIMER.md](DISCLAIMER.md) for full legal notice.
+First edition: January 2017. Second edition: January 2026. Version 2.1: September 2026.
 
-**Publication Information:**
-- First Edition: January 2017
-- Second Edition: January 2026 (Adaptive Granularity Governance edition)
-- Version 2.1: September 2026 (23-chapter science edition: cost, construct validity, Goodhart)
-- Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
-For citation formats, see **[Citations Guide](CITATIONS.md)**  
-For legal information, see **[Legal Disclaimer](DISCLAIMER.md)** and **[LICENSING.md](LICENSING.md)**
+See [CITATIONS.md](CITATIONS.md), [LICENSING.md](LICENSING.md), and [DISCLAIMER.md](DISCLAIMER.md).

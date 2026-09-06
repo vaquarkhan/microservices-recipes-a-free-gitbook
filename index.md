@@ -2,7 +2,7 @@
 
 <span class="book-edition-kicker">The Architect's Field Guide</span>
 
-![Book Cover](assets/images/cover-image-1.svg){:.book-cover-img}
+![Book Cover](assets/images/cover-image-1.png){:.book-cover-img}
 
 **Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
@@ -45,51 +45,23 @@ This work is protected by copyright law. Unauthorized reproduction, distribution
 
 ---
 
-## 🎓 **Academic & Research Access**
+## Cite this book
 
-**📚 Complete 23-Chapter Edition**
+All 23 chapters are public. There is no ten-chapter preview and no later paid edition.
 
-This open-source edition includes all **23 chapters**, including the three closing chapters on cost, construct validity, and Goodhart. Additional academic licensing and citation guidance remain available for students, faculty, and researchers.
-
-**[📧 Request Academic Access / Mentorship](FREE-ACCESS.md)** | **[📖 View Citations Guide](CITATIONS.md)** | **[📜 Version History](VERSION-HISTORY.md)**
-
-### 🎯 **FREE 1:1 Mentorship Available**
-**Get personal guidance from the author:** **[📅 Book FREE session with Viquar Khan](https://adplist.org/mentors/vaquar-khan)**  
-*Career advice, architecture guidance, and research support - completely free!*
+**[Citations](CITATIONS.md)** · **[Academic use](FREE-ACCESS.md)** · **[Version history](VERSION-HISTORY.md)** · **[Mentorship](https://adplist.org/mentors/vaquar-khan)**
 
 ---
 
 ## 🌐 **From Monolith to Microservices**
 
-![Microservices Transformation](assets/images/hero-transformation.svg){:.book-hero-gif}
+![Microservices Transformation](assets/images/hero-transformation.png){:.book-hero-gif}
 
-*Visualizing the transformation journey with **Adaptive Granularity Governance: The Khan Microservice Pattern***
-
----
-
-## 🎯 What You'll Master
-
-✅ **Adaptive Granularity Governance: The Khan Microservice Pattern** for optimal service boundaries  
-✅ **Distributed Systems** design and implementation  
-✅ **Anti-Pattern Prevention** and failure analysis  
-✅ **Real-World Patterns** from industry leaders  
-✅ **Production-Ready** code examples and recipes  
+*A monolith on the left. Earned service boundaries on the right.*
 
 ---
 
-## 📊 Book Statistics
-
-| Metric | Value |
-|--------|-------|
-| **Chapters** | 23 chapters, Parts I–X |
-| **Read Time** | ~15 hours total |
-| **Code Examples** | 50+ practical implementations |
-| **Patterns** | 25+ architectural patterns |
-| **Difficulty** | Intermediate → Advanced → Expert |
-
----
-
-## 🚀 Quick Start
+## Start here
 
 ### 🔰 For Beginners
 1. [Start with Chapter 1](chapters/01-introduction-to-microservices.md)
@@ -114,7 +86,7 @@ This open-source edition includes all **23 chapters**, including the three closi
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
 - [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Governance: The Khan Microservice Pattern
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
-- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 23-Chapter Edition for Students & Researchers
+- [🎓 **Academic use**](FREE-ACCESS.md) - The full book is public; cite it here
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
 - [📜 **Version History**](VERSION-HISTORY.md) - Release Lineage & Evolution
 - [📜 **Copyright Notice**](COPYRIGHT.md) - Complete Copyright & Legal Information
@@ -236,23 +208,13 @@ This open-source edition includes all **23 chapters**, including the three closi
 
 ---
 
-## 🎯 What Makes This Book Special
+## About the method
 
-### **Adaptive Granularity Governance: The Khan Microservice Pattern for Adaptive Granularity**
-
-At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern**: a systematic approach to determining optimal microservice boundaries. Unlike rigid methodologies, it adapts to your specific:
-
-- **Organizational maturity** and team structure
-- **Business domain complexity** and change frequency  
-- **Technical constraints** and operational capabilities
-- **Evolutionary growth** and learning patterns
-
-> *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."*  
-> **- Viquar Khan**
+A boundary is worth deploying separately only when it is efficient at runtime, independent in how it changes, and small enough for its team to own. Chapter 11 measures that. Chapter 23 is the rule that keeps the measurement honest: do not use the score to review people.
 
 ---
 
-## 👨‍💻 About the Author
+## About the author
 
 **[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**.
 
@@ -264,29 +226,11 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 ---
 
-## 🤝 Community & Support
+## Contribute
 
-### **🌟 Support This Open Knowledge Initiative**
-If you find this resource valuable:
+[Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) · [Cite it](CITATIONS.md) · [Open an issue](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues) · [Contributing](CONTRIBUTING.md)
 
-**⭐ [Star this repository](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)** - Help others discover this work  
-**🍴 [Fork the project](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/fork)** - Build upon these methodologies  
-**📖 [Cite properly](CITATIONS.md)** - Support academic recognition  
-
-### **📞 Get Involved**
-- 🐛 **[Report Issues](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues)** - Found an error or have suggestions?
-- 💡 **Share Case Studies** - Connect with the author to share real-world implementation experiences
-- 🔄 **[See Guidelines](CONTRIBUTING.md)** - Learn about acceptable contributions
-
----
-
-## Ready to Begin Your Journey?
-
-### Choose Your Path:
-
-**📖 [Start Reading - Chapter 1](chapters/01-introduction-to-microservices.md)**  
-**📜 [Read Preface](PREFACE.md)**  
-**⚡ [Quick Reference](reference/quick-reference.md)**
+[Chapter 1](chapters/01-introduction-to-microservices.md) · [Preface](PREFACE.md) · [Quick reference](reference/quick-reference.md)
 
 ---
 

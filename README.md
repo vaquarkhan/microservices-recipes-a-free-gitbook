@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Microservices Recipes Cover](assets/images/cover-image-1.svg)
+![Microservices Recipes Cover](assets/images/cover-image-1.png)
 
 **A practical guide to building, scaling, and managing microservices architectures**
 
@@ -19,7 +19,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 *"Stop splitting, start governing."* - **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
-![From a monolith to earned boundaries](assets/images/hero-transformation.svg)
+![From a monolith to earned boundaries](assets/images/hero-transformation.png)
 
 </div>
 
@@ -170,13 +170,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 > *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* - Viquar Khan
 
-### **Key Features**
-
-✅ **Practical, Not Theoretical** - Patterns drawn from practice, with honesty about evidence tiers  
-✅ **Context-Aware Guidance** - Solutions for different organizational contexts  
-✅ **Evolution-Focused** - Architecture as a journey, not a destination  
-✅ **Anti-Pattern Awareness** - Learn from real-world failures  
-✅ **Complete Framework** - Design through operations coverage  
+Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
 
 ---
 
@@ -185,7 +179,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 ### **For Beginners**
 1. Start with [**Chapter 1: Earned Boundaries**](chapters/01-introduction-to-microservices.md)
 2. Read [**The Preface**](PREFACE.md) to understand the book's philosophy
-3. Progress sequentially through Parts I → II → III
+3. Progress through Parts I → X. All 23 chapters are in this repo.
 
 ### **For Experienced Practitioners**
 1. Review the [**Table of Contents**](#-table-of-contents) above
@@ -208,14 +202,9 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 | **Code Examples** | Recipes in every practitioner chapter |
 | **Patterns Covered** | Decomposition, data, resilience, platform, AI, migration |
 | **Evidence stance** | Proved / demonstrated / hypothesized — Chapter 11 and 22 |
-| **GitHub Stars** | 606 developers |
-| **Repository Forks** | 228 active forks |
-| **Author Followers** | 1,400+ on [@vaquarkhan](https://github.com/vaquarkhan) |
-| **Community Reach** | Global developer community |
-
 ---
 
-## 🌟 **What You'll Master**
+## Topics covered
 
 <details>
 <summary><strong>🏗️ Architectural Patterns</strong></summary>

@@ -45,7 +45,7 @@ The consequence is subtle and powerful. Two tenants now share fate only to the e
 
 For two tenants to be fully knocked out together, every shard in A's subset would have to coincide with a failing shard, and for A and B to share a full outage their subsets would have to be identical or nearly so, which becomes combinatorially rare as the fleet grows.
 
-![Cells and shuffle sharding](../assets/images/diagrams/shuffle-and-cells.svg)
+![Cells and shuffle sharding](../assets/images/diagrams/shuffle-and-cells.png)
 *Figure 12.1: Two complementary isolation mechanisms. A request is first placed in a cell, by region or cohort, so a catastrophe stays inside that copy of the stack. Inside the cell, shuffle sharding places the tenant on a small subset of shards, so everyday shared fate among tenants is thin. Cells bound the large failure domain. Shuffle sharding bounds the smaller one. Neither does the other's job.*
 
 The reason this works is that the number of distinct small subsets you can draw from a fleet grows very fast. Choosing three shards out of forty is \(\binom{40}{3} = 9{,}880\) distinct combinations. If you have a few thousand tenants spread across nine thousand possible assignments, the chance that any two of them land on the exact same three shards is small, and the chance that a single shard failure fully knocks out any particular tenant is zero when \(k \ge 2\), because that tenant still has other shards. You have bought yourself a blast radius that is not one over the number of shards for a *total* outage. How many tenants *feel* the blip is a different number, and I will not let those two hide under one slogan.
@@ -60,7 +60,7 @@ Now the number the slogan skips. Under a uniform assignment, a given shard sits 
 
 Two tenants share only one shard, so a single shard failure degrades both slightly rather than taking either down. For them to be jointly and fully down, the failure has to cover the union of their subsets. The chance that two independently assigned tenants have *identical* subsets is \(1/\binom{n}{k}\). The chance they *intersect at all* is much higher, and it rises with \(k\). Recipe 12.2 measures both, because the overlap fraction alone will scare you on a small fleet even when nobody can be fully knocked out by one fault.
 
-![Two tenants share one shard](../assets/images/diagrams/shuffle-sharding-tenant-assignment.svg)
+![Two tenants share one shard](../assets/images/diagrams/shuffle-sharding-tenant-assignment.png)
 *Figure 12.2: Tenant A holds shards 3, 17, 40 and Tenant B holds shards 8, 17, 52. They intersect only at shard 17. A failure of shard 17 costs each tenant one third of its capacity if the router spreads and fails over, not its whole service. If the router cannot leave shard 17, the picture is ordinary sharding with extra drawings.*
 
 The design objectives, stated plainly, are three. First, isolation: limit how many tenants are fully affected by any single failure, and prefer many-slightly-degraded over few-fully-down. Second, load balance: avoid hot shards by spreading assignments evenly, which pseudo-random subset selection gives you for free as long as the hash is unbiased. Third, operational simplicity: compute the assignment from the tenant identifier with a pure function, so routing needs no global coordination and no shared assignment table that could itself become a bottleneck or a single point of failure.

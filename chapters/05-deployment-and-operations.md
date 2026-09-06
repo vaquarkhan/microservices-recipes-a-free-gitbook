@@ -72,7 +72,7 @@ Compensate in reverse order of the steps that actually completed. If you reserve
 
 A saga needs a way to coordinate its sequence of local transactions, and there are two topologies for that: choreography, which is decentralized, and orchestration, which is centralized. The choice is not stylistic; it shapes the coupling, observability, scalability, and failure modes of the whole system.
 
-![Saga Choreography vs Orchestration](../assets/images/diagrams/saga-choreography-vs-orchestration.svg)
+![Saga Choreography vs Orchestration](../assets/images/diagrams/saga-choreography-vs-orchestration.png)
 *Figure 5.1: The two saga topologies side by side. On the left, choreography: each service reacts to events published by the others, and there is no central application coordinator, so the workflow exists only as the emergent sum of the reactions. On the right, orchestration: a central orchestrator holds the workflow as an explicit state machine and issues commands to each participant, tracking where the transaction is at every moment. Choreography is loosely coupled but its state is scattered and hard to see, while orchestration centralizes both the control and the visibility at the cost of a component that knows about every participant.*
 
 | Feature | Choreography (event-driven) | Orchestration (command-driven) |
@@ -167,7 +167,7 @@ A managed event bus such as EventBridge is a strong backbone for choreographed s
 
 As workflows gain branching, parallelism, or compliance requirements, choreography becomes unmanageable, and orchestration centralizes the decisions. An orchestrator, such as AWS Step Functions, tells participants what to do through commands, rather than participants reacting to events, and it holds the workflow as an explicit state machine.
 
-![Orchestrated saga](../assets/images/diagrams/saga-orchestration.svg)
+![Orchestrated saga](../assets/images/diagrams/saga-orchestration.png)
 *Figure 5.2: An orchestrated saga in detail. The orchestrator in the center drives the workflow: it commands the order service, then the inventory service, then the payment service, receiving each result before issuing the next command, and it holds the current state of the transaction at all times. The dashed compensation path shows what happens on failure: when a step fails, the orchestrator runs the compensating commands for the steps already completed, in reverse order. Contrasted with Figure 5.1, the workflow here is an explicit, visible thing owned by one component, which is exactly what makes complex and high-risk sagas debuggable and auditable.*
 
 ### 5.4.1 Standard and Express workflows
