@@ -2,13 +2,7 @@
 
 <span class="book-edition-kicker">The Architect's Field Guide</span>
 
-![Book Cover](assets/images/cover-image-1.png){:.book-cover-img}
-
-<div class="book-covers">
-![Cover](assets/images/cover-image-2.png)
-![Cover](assets/images/cover-image-3.png)
-![Cover](assets/images/cover-image-4.png)
-</div>
+![Book Cover](assets/images/cover-image-2.png){:.book-cover-img}
 
 **Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
