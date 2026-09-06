@@ -89,7 +89,7 @@ Public edition remained rooted in the 2017 foundational guide while content and 
 - Anti-pattern identification and Conway's Law / organizational notes.
 - Technology-agnostic principles over tool fashion.
 
-**Copyright notice begins:** Copyright 2017 by Vaquar Khan (continued through later editions).
+**Copyright notice begins:** Copyright 2017 by Viquar Khan (continued through later editions).
 
 ---
 

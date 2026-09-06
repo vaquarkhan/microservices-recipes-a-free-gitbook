@@ -12,6 +12,7 @@
 ```
 Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1). 
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+https://orcid.org/0009-0008-3592-4162
 ```
 
 **In-text citation:** (Khan, 2026)
@@ -129,11 +130,12 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 When citing in academic papers, please include:
 
 1. **Author:** Viquar Khan
-2. **Year:** 2026
-3. **Title:** Microservices Recipes: The Architect's Field Guide
-4. **Source:** GitHub repository
-5. **URL:** https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
-6. **Access Date:** When you accessed the material
+2. **ORCID:** [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
+3. **Year:** 2026
+4. **Title:** Microservices Recipes: The Architect's Field Guide
+5. **Source:** GitHub repository
+6. **URL:** https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+7. **Access Date:** When you accessed the material
 
 ---
 

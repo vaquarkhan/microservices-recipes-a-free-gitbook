@@ -255,7 +255,7 @@ Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
 - 👥 **1,400+** GitHub followers ([@vaquarkhan](https://github.com/vaquarkhan))
 - 🔧 **50+** open-source microservices repositories
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [🎓 Free Mentorship](https://adplist.org/mentors/vaquar-khan)
+**Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [🎓 Free Mentorship](https://adplist.org/mentors/vaquar-khan)
 
 ---
 
@@ -294,7 +294,7 @@ If you find this resource valuable, please help me keep it free and accessible:
 - ⭐ **Star this repo** if you find it valuable!
 
 ### **Professional Networks**
-- 🔗 **LinkedIn**: [Vaquar Khan](https://www.linkedin.com/in/vaquar-khan-b695577/)
+- 🔗 **LinkedIn**: [Viquar Khan](https://www.linkedin.com/in/vaquar-khan-b695577/)
 
 ### **Stay Updated**
 - 📢 **Watch** this repository for updates
@@ -359,9 +359,9 @@ featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub
 
 ## Copyright and licensing
 
-**Copyright © 2017-2026 by Vaquar Khan.**
+**Copyright © 2017-2026 by Viquar Khan.**
 
-**Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Vaquar Khan; please cite. No trademark is claimed at this time.
+**Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Viquar Khan; please cite. No trademark is claimed at this time.
 
 | Material | License |
 |----------|---------|
@@ -370,6 +370,6 @@ featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub
 
 Details: [LICENSING.md](LICENSING.md) | [COPYRIGHT.md](COPYRIGHT.md) | [DISCLAIMER.md](DISCLAIMER.md) | [NAMING.md](NAMING.md)
 
-<sub>Last Updated: September 6, 2026 | Version 2.1 | Original work by Vaquar Khan</sub>
+<sub>Last Updated: September 6, 2026 | Version 2.1 | Original work by Viquar Khan</sub>
 
 </div>

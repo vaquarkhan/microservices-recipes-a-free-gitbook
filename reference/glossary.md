@@ -53,7 +53,7 @@ A layer that isolates a client's domain model from another system's domain model
 A communication pattern where the sender does not wait for a response from the receiver before continuing with other tasks. Common in microservices for loose coupling between services.
 
 **Adaptive Granularity Governance: The Khan Microservice Pattern**
-A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints. Original methodology by Vaquar Khan; please cite. Formerly the Adaptive Granularity Strategy (also referred to historically as the Khan Pattern). See [NAMING.md](../NAMING.md) and [LICENSING.md](../LICENSING.md).
+A context-aware framework for determining optimal microservice granularity, adapting to specific business context, team structure, and technical constraints. Original methodology by Viquar Khan; please cite. Formerly the Adaptive Granularity Strategy (also referred to historically as the Khan Pattern). See [NAMING.md](../NAMING.md) and [LICENSING.md](../LICENSING.md).
 
 ## B
 
@@ -309,7 +309,7 @@ A deployment target that represents a failure domain, such as an availability zo
 
 This glossary provides definitions for terms as they are used in the context of microservices architecture. Some terms may have broader or different meanings in other contexts. For more detailed explanations and examples, please refer to the relevant chapters in this book.
 
-Original methodologies by Vaquar Khan (Adaptive Granularity Governance: The Khan Microservice Pattern, Service Decomposition Workflow, Microservices Maturity Assessment / KM3) are described in [DISCLAIMER.md](../DISCLAIMER.md) and [LICENSING.md](../LICENSING.md). Please cite. All other terms represent industry-standard concepts and patterns.
+Original methodologies by Viquar Khan (Adaptive Granularity Governance: The Khan Microservice Pattern, Service Decomposition Workflow, Microservices Maturity Assessment / KM3) are described in [DISCLAIMER.md](../DISCLAIMER.md) and [LICENSING.md](../LICENSING.md). Please cite. All other terms represent industry-standard concepts and patterns.
 
 ---
 
