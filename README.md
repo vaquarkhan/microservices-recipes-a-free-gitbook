@@ -19,7 +19,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 *"Stop splitting, start governing."* - **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
-![From a monolith to earned boundaries](assets/images/hero-transformation.png)
+![Microservices Animation](assets/images/microservices-animation.gif)
 
 </div>
 
