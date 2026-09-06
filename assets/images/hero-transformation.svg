@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">From a monolith to earned boundaries</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="1080" height="540" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">From a monolith to earned boundaries</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <rect x="36.0" y="100.0" width="360.0" height="390.0" rx="14" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1"  />
+<text x="52.0" y="122.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Monolith</text>
+<rect x="70.0" y="150.0" width="290.0" height="300.0" rx="12" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1" filter="url(#cardShadow)" />
+<rect x="90.0" y="180.0" width="120.0" height="50.0" rx="10" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M102.0 181.0 h96.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="150.0" y="206.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Orders</text>
+<rect x="200.0" y="200.0" width="130.0" height="46.0" rx="10" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M212.0 201.0 h106.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="265.0" y="226.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory</text>
+<rect x="100.0" y="250.0" width="150.0" height="48.0" rx="10" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M112.0 251.0 h126.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="175.0" y="276.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Billing</text>
+<rect x="180.0" y="310.0" width="140.0" height="44.0" rx="10" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M192.0 311.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="250.0" y="336.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Users</text>
+<rect x="90.0" y="360.0" width="160.0" height="50.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M102.0 361.0 h136.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="170.0" y="386.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Shared tables</text>
+<path d="M 430 300 C 480 300, 500 300, 560 300" stroke="#9a6b3f" stroke-width="1.8" fill="none" marker-end="url(#arrowCopper)"/>
+<text x="500.0" y="280.0" fill="#9a6b3f" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >contract</text>
+<rect x="580.0" y="100.0" width="490.0" height="390.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
+<text x="596.0" y="122.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Earned service boundaries</text>
+<rect x="610.0" y="150.0" width="200.0" height="90.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M622.0 151.0 h176.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="710.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Orders</text>
+<text x="710.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >own store · own pace</text>
+<rect x="840.0" y="150.0" width="200.0" height="90.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M852.0 151.0 h176.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="940.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Payments</text>
+<text x="940.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >own store · own pace</text>
+<rect x="610.0" y="280.0" width="200.0" height="90.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M622.0 281.0 h176.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="710.0" y="306.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory</text>
+<text x="710.0" y="326.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >events, not a shared table</text>
+<rect x="840.0" y="280.0" width="200.0" height="90.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M852.0 281.0 h176.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="940.0" y="306.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Identity</text>
+<text x="940.0" y="326.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >conformist UserId only</text>
+<text x="28.0" y="542.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="font-style:italic;" >Boundaries are kept only when they earn efficiency, independence, and ownability.</text>
+</svg>

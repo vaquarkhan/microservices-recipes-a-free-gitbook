@@ -1,0 +1,24 @@
+graph LR
+    subgraph Inputs["Score path"]
+        E[Traces to E]
+        S[History to S]
+        L[Static analysis to L]
+        E --> R[Composite]
+        S --> R
+        L --> R
+    end
+
+    subgraph Outcomes["Outcome path"]
+        Lat[Tail latency]
+        Cost[Cloud cost]
+        Err[Error rate]
+    end
+
+    R -.->|predict, never compute| Lat
+    R -.->|predict, never compute| Cost
+    R -.->|predict, never compute| Err
+
+    style R fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style Lat fill:#e1f5ff,stroke:#1565c0
+    style Cost fill:#e1f5ff,stroke:#1565c0
+    style Err fill:#e1f5ff,stroke:#1565c0

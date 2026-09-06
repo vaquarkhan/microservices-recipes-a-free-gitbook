@@ -1,0 +1,10 @@
+graph LR
+    P[Producer] -->|publish| Q[Durable queue]
+    Q -->|pull at consumer rate| C[Consumer]
+    C --> D[Downstream limit]
+    Q -.->|depth and age rise| P
+
+    style Q fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style C fill:#c8e6c9,stroke:#2e7d32
+    style P fill:#e1f5ff,stroke:#1565c0
+    style D fill:#ffcdd2,stroke:#c62828

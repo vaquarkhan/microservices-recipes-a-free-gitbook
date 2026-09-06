@@ -1,0 +1,20 @@
+graph LR
+    subgraph Sidecar["Sidecar collection"]
+        App1[App] --> Proxy[Proxy in every pod]
+        Proxy --> Peer[Peer proxy]
+        Peer --> App2[App]
+    end
+
+    subgraph Kernel["Kernel-level collection"]
+        App3[App] --> Net[Ordinary traffic]
+        Net --> App4[App]
+        Kern[eBPF in the kernel] -.observe.-> Net
+    end
+
+    style Proxy fill:#ffcdd2,stroke:#c62828
+    style Peer fill:#ffcdd2,stroke:#c62828
+    style Kern fill:#c8e6c9,stroke:#2e7d32
+    style App1 fill:#e1f5ff,stroke:#1565c0
+    style App2 fill:#e1f5ff,stroke:#1565c0
+    style App3 fill:#e1f5ff,stroke:#1565c0
+    style App4 fill:#e1f5ff,stroke:#1565c0

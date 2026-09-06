@@ -1,29 +1,29 @@
-flowchart TB
-    subgraph Apps["Application tier"]
-        S1["Service A<br/>OTel SDK"]
-        S2["Service B<br/>OTel SDK"]
-        S3["Service C<br/>OTel SDK"]
+flowchart LR
+    subgraph Apps["Services"]
+        S1[Checkout]
+        S2[Inventory]
+        S3[Payments]
     end
 
-    COL["OpenTelemetry Collector<br/>batch + tail sampling"]
-    M["Metrics TSDB<br/>CloudWatch / AMP"]
-    T["Trace backend<br/>X-Ray / Tempo"]
-    L["Logs / wide events<br/>S3 / OpenSearch"]
-    BPF["eBPF / Hubble<br/>L4 dependency graph"]
-    X["Cross-check<br/>trace DAG vs flows"]
+    COL[OpenTelemetry collector]
+    M[Metrics]
+    T[Traces]
+    W[Wide events]
+    BPF[eBPF dependency graph]
+    X[Cross-check]
 
     S1 --> COL
     S2 --> COL
     S3 --> COL
     COL --> M
     COL --> T
-    COL --> L
+    COL --> W
     BPF --> X
     T --> X
 
-    style COL fill:#3498db,stroke:#2c3e50,color:#fff,stroke-width:2px
-    style M fill:#e8f4fc,stroke:#3498db
-    style T fill:#e8f4fc,stroke:#3498db
-    style L fill:#e8f4fc,stroke:#3498db
-    style BPF fill:#fff3cd,stroke:#f39c12
-    style X fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    style COL fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style X fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style BPF fill:#ffe0b2,stroke:#ef6c00
+    style T fill:#e1f5ff,stroke:#1565c0
+    style M fill:#e1f5ff,stroke:#1565c0
+    style W fill:#e1f5ff,stroke:#1565c0

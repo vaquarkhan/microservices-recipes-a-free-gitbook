@@ -2,11 +2,12 @@
 """
 RVx Index MVP scorer.
 
-Implements the Chapter 3 power form:
-  RVx = (E**beta * S) / (L**alpha + epsilon)
+Implements the Chapter 11 published form:
+  raw = (E**beta * S) / (L**alpha + epsilon)
+  RVx = raw / (1 + raw)
 
 Defaults: beta=1.2, alpha=0.8, epsilon=0.1
-Does not change book thresholds; zone labels are informational only.
+Bands are illustrative; zone labels are informational only.
 
 MVP only. See docs/RVX-SPEC.md.
 """
@@ -98,18 +99,23 @@ def semantic_from_git(repo: Path, service_path: str, days: int = 90) -> float:
     return clamp01(1.0 - (multi / service_commits))
 
 
-def rvx(e: float, s: float, l: float, beta: float, alpha: float, eps: float) -> float:
+def rvx_raw(e: float, s: float, l: float, beta: float, alpha: float, eps: float) -> float:
     return (e**beta * s) / (l**alpha + eps)
 
 
+def rvx(e: float, s: float, l: float, beta: float, alpha: float, eps: float) -> float:
+    raw = rvx_raw(e, s, l, beta, alpha, eps)
+    return raw / (1.0 + raw)
+
+
 def zone(rvx_score: float, e: float, s: float, l: float) -> str:
-    if rvx_score <= 0.3 and e < 0.3:
-        return "MERGE_CANDIDATE"
     if l > 0.7:
-        return "SPLIT_CANDIDATE"
-    if rvx_score > 0.6 and s > 0.6 and l < 0.7:
+        return "HIGH_LOAD_GATE"
+    if rvx_score < 0.4:
+        return "DISTRIBUTED_MONOLITH"
+    if rvx_score > 0.7:
         return "HEALTHY"
-    return "REVIEW"
+    return "AT_RISK"
 
 
 def main(argv: Iterable[str] | None = None) -> int:
@@ -142,17 +148,19 @@ def main(argv: Iterable[str] | None = None) -> int:
     else:
         s_hat = semantic_from_git(args.git_repo, args.service_path, args.days)
 
-    score = rvx(e_hat, s_hat, l_hat, args.beta, args.alpha, args.epsilon)
+    raw = rvx_raw(e_hat, s_hat, l_hat, args.beta, args.alpha, args.epsilon)
+    score = raw / (1.0 + raw)
     result = {
-        "E_hat": round(e_hat, 4),
-        "S_hat": round(s_hat, 4),
-        "L_hat": round(l_hat, 4),
+        "E": round(e_hat, 4),
+        "S": round(s_hat, 4),
+        "L": round(l_hat, 4),
         "beta": args.beta,
         "alpha": args.alpha,
         "epsilon": args.epsilon,
+        "RVx_raw": round(raw, 4),
         "RVx": round(score, 4),
         "zone": zone(score, e_hat, s_hat, l_hat),
-        "form": "power",
+        "form": "power_squashed",
         "mvp": True,
     }
     print(json.dumps(result, indent=2))

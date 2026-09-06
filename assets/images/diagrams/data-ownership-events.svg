@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="480" viewBox="0 0 980 480" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">Data ownership through events</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="960" height="460" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Data ownership through events</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Each service owns its store. Neighbors read a local projection.</text>
+  <rect x="40.0" y="100.0" width="280.0" height="300.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
+<text x="56.0" y="122.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Customer service</text>
+<rect x="60.0" y="150.0" width="240.0" height="80.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M72.0 151.0 h216.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="180.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Customer logic</text>
+<path d="M110.0 279.0 v72.0 a70.0 9.0 0 0 0 140.0 0 v-72.0 a70.0 9.0 0 0 0 -140.0 0z" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.2"/>
+<ellipse cx="180.0" cy="279.0" rx="70.0" ry="9.0" fill="#fffaf2" stroke="#2f6b55" stroke-width="1.2"/>
+<text x="180.0" y="321.0" fill="#15252f" font-size="11" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Private customer store</text>
+<rect x="360.0" y="140.0" width="250.0" height="220.0" rx="14" fill="#f6eed8" stroke="#b8860b" stroke-width="1"  />
+<text x="376.0" y="162.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Local read model</text>
+<rect x="380.0" y="190.0" width="210.0" height="110.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M392.0 191.0 h186.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="485.0" y="216.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Customer projection</text>
+<text x="485.0" y="236.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >only the fields orders need</text>
+<rect x="660.0" y="100.0" width="280.0" height="300.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
+<text x="676.0" y="122.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order service</text>
+<rect x="680.0" y="150.0" width="240.0" height="80.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M692.0 151.0 h216.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="800.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order logic</text>
+<path d="M730.0 279.0 v72.0 a70.0 9.0 0 0 0 140.0 0 v-72.0 a70.0 9.0 0 0 0 -140.0 0z" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.2"/>
+<ellipse cx="800.0" cy="279.0" rx="70.0" ry="9.0" fill="#fffaf2" stroke="#2f6b55" stroke-width="1.2"/>
+<text x="800.0" y="321.0" fill="#15252f" font-size="11" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Private order store</text>
+<line x1="301.6" y1="191.1" x2="373.4" y2="240.5" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="337.5" y="207.8" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >CustomerUpdated</text>
+<line x1="591.7" y1="244.0" x2="673.2" y2="194.2" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+</svg>

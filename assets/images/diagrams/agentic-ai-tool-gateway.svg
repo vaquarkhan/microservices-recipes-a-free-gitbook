@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="640" viewBox="0 0 1040 640" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">Agent tool gateway</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="1020" height="620" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Agent tool gateway</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Probabilistic planning stays behind a deterministic, authorized execute path.</text>
+  <rect x="32.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M44.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="120.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >User</text>
+<line x1="120.0" y1="154.0" x2="120.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="192.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M204.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="280.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Planner</text>
+<line x1="280.0" y1="154.0" x2="280.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="352.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M364.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="440.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Retrieved content</text>
+<line x1="440.0" y1="154.0" x2="440.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="512.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M524.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="600.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Tool gateway</text>
+<line x1="600.0" y1="154.0" x2="600.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="672.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M684.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="760.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Domain service</text>
+<line x1="760.0" y1="154.0" x2="760.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="832.0" y="100.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M844.0 101.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="920.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Human</text>
+<line x1="920.0" y1="154.0" x2="920.0" y2="600.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<line x1="120.0" y1="190.0" x2="280.0" y2="190.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="200.0" y="182.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Goal</text>
+<line x1="280.0" y1="226.0" x2="440.0" y2="226.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="360.0" y="218.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Fetch context</text>
+<line x1="440.0" y1="262.0" x2="280.0" y2="262.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="360.0" y="254.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Documents and tool results</text>
+<line x1="280.0" y1="298.0" x2="600.0" y2="298.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="440.0" y="290.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Proposed tool call + idempotency key</text>
+<path d="M600.0 334.0 c 36 0 36 28 0 28" fill="none" stroke="#9a6b3f" stroke-width="1.3" marker-end="url(#arrowCopper)"/>
+<text x="644.0" y="346.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Policy, schema, budget</text>
+<line x1="600.0" y1="370.0" x2="920.0" y2="370.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="760.0" y="362.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Approval if high-risk</text>
+<line x1="920.0" y1="406.0" x2="600.0" y2="406.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="760.0" y="398.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Approved or denied</text>
+<line x1="600.0" y1="442.0" x2="760.0" y2="442.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="680.0" y="434.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Versioned, authorized execute</text>
+<line x1="760.0" y1="478.0" x2="600.0" y2="478.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="680.0" y="470.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Receipt</text>
+<line x1="600.0" y1="514.0" x2="280.0" y2="514.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="440.0" y="506.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Structured observation</text>
+<line x1="280.0" y1="550.0" x2="120.0" y2="550.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="200.0" y="542.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Response</text>
+</svg>

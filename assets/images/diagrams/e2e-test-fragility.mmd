@@ -1,0 +1,13 @@
+graph LR
+    T[End-to-end test] --> A[Service A<br/>99 percent]
+    A --> B[Service B<br/>99 percent]
+    B --> C[Service C<br/>99 percent]
+    C --> D["… ten services"]
+    D --> R["Combined pass ≈ 90 percent<br/>one run in ten is environment"]
+
+    style T fill:#e1f5ff,stroke:#1565c0
+    style R fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style A fill:#fff9c4,stroke:#f57f17
+    style B fill:#fff9c4,stroke:#f57f17
+    style C fill:#fff9c4,stroke:#f57f17
+    style D fill:#fff9c4,stroke:#f57f17

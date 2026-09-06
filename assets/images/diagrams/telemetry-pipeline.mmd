@@ -1,0 +1,28 @@
+flowchart LR
+    subgraph Services["Instrumented services"]
+        A["Service A"]
+        B["Service B"]
+        C["Service C"]
+    end
+
+    COL["Collector<br/>receive · sample · filter · export"]
+    M["Metrics"]
+    T["Traces"]
+    L["Structured logs"]
+    OP["Operator"]
+
+    A --> COL
+    B --> COL
+    C --> COL
+    COL --> M
+    COL --> T
+    COL --> L
+    M --> OP
+    T --> OP
+    L --> OP
+
+    style COL fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style OP fill:#c8e6c9,stroke:#2e7d32
+    style A fill:#e1f5ff,stroke:#1565c0
+    style B fill:#e1f5ff,stroke:#1565c0
+    style C fill:#e1f5ff,stroke:#1565c0

@@ -1,0 +1,16 @@
+graph LR
+    subgraph Org["Organization"]
+        A1[Account A]
+        A2[Account B]
+        A3[Account C]
+    end
+    Pipe[Golden-path pipeline] --> A1
+    Pipe --> A2
+    Pipe --> A3
+    A1 -.->|contained| X[Fault or cost overrun]
+
+    style Pipe fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style A1 fill:#c8e6c9,stroke:#2e7d32
+    style A2 fill:#c8e6c9,stroke:#2e7d32
+    style A3 fill:#c8e6c9,stroke:#2e7d32
+    style X fill:#ffcdd2,stroke:#c62828

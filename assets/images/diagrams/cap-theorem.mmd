@@ -1,13 +1,13 @@
 graph TD
-    CAP[CAP Theorem]
-    CAP --> CP[Consistency + Partition Tolerance<br/>Sacrifice Availability]
-    CAP --> AP[Availability + Partition Tolerance<br/>Sacrifice Consistency]
-    CAP --> CA[Consistency + Availability<br/>No Partition Tolerance<br/>Single Node Only]
-    
-    CP --> CP1[Traditional RDBMS<br/>in Distributed Mode]
-    AP --> AP1[DynamoDB<br/>Cassandra<br/>Eventually Consistent]
-    CA --> CA1[Single PostgreSQL<br/>Not Distributed]
-    
+    CAP[CAP under a partition]
+    CAP --> CP[CP: consistency + partition tolerance<br/>refuse rather than guess]
+    CAP --> AP[AP: availability + partition tolerance<br/>answer rather than wait]
+    CAP --> CA[CA: single node<br/>not a distributed choice]
+
+    CP --> CP1[etcd · ZooKeeper<br/>Regional DynamoDB writes<br/>Aurora]
+    AP --> AP1[Cassandra<br/>Dynamo 2007 paper<br/>Global Tables MREC]
+    CA --> CA1[Single PostgreSQL]
+
     style CAP fill:#3498db,stroke:#2c3e50,stroke-width:3px,color:#fff
     style CP fill:#e74c3c,stroke:#c0392b,stroke-width:2px
     style AP fill:#2ecc71,stroke:#27ae60,stroke-width:2px

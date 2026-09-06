@@ -1,0 +1,23 @@
+graph LR
+    subgraph Order["Order service"]
+        ODB[(Private order store)]
+        OSvc[Order logic]
+        OSvc --> ODB
+    end
+
+    subgraph Customer["Customer service"]
+        CDB[(Private customer store)]
+        CSvc[Customer logic]
+        CSvc --> CDB
+    end
+
+    subgraph Read["Local read model"]
+        Proj[Customer projection<br/>only the fields orders need]
+    end
+
+    CSvc -->|"CustomerUpdated event"| Proj
+    Proj --> OSvc
+
+    style ODB fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    style CDB fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    style Proj fill:#fff3e0,stroke:#ef6c00,stroke-width:2px

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Microservices Recipes Cover](assets/images/cover-image-1.png)
+![Microservices Recipes Cover](assets/images/cover-image-1.svg)
 
 **A practical guide to building, scaling, and managing microservices architectures**
 
@@ -19,7 +19,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 *"Stop splitting, start governing."* - **Adaptive Granularity Governance: The Khan Microservice Pattern**
 
-![Microservices Animation](assets/images/microservices-animation.gif)
+![From a monolith to earned boundaries](assets/images/hero-transformation.svg)
 
 </div>
 
@@ -47,9 +47,9 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[1](chapters/01-introduction-to-microservices.md)** | **The Definition Wars & The Reality of SOA** | Understanding microservices lineage and avoiding SOA's mistakes | 15 min |
-| **[2](chapters/02-design-principles-and-patterns.md)** | **The Distributed Monolith and Anti Patterns** | Identifying and preventing distributed monolith anti-patterns | 25 min |
-| **[3](chapters/03-service-communication.md)** | **Strategic Decomposition: Domain Driven Design** | Applying DDD principles to determine service boundaries | 20 min |
+| **[1](chapters/01-introduction-to-microservices.md)** | **Earned Boundaries, Not Fashionable Ones** | SOA done right, replaceability over size, and finding seams in Git history | 35 min |
+| **[2](chapters/02-design-principles-and-patterns.md)** | **The Distributed Monolith: Diagnosis and First Remedies** | Connascence, Conway's Law, contracts, and the first resilience gate | 40 min |
+| **[3](chapters/03-service-communication.md)** | **Decouple the Language Before You Decouple the Code** | Bounded contexts, context maps, Event Storming, and aggregates | 40 min |
 
 ---
 
@@ -58,10 +58,10 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[4](chapters/04-data-management.md)** | **The End of ACID** | Understanding distributed data consistency challenges | 30 min |
-| **[5](chapters/05-deployment-and-operations.md)** | **Distributed Transactions (The Saga Pattern)** | Implementing reliable distributed transactions | 25 min |
-| **[6](chapters/06-resilience-and-reliability.md)** | **The Dual Write Problem** | Solving data consistency across service boundaries | 20 min |
-| **[7](chapters/07-security.md)** | **Data Mesh vs. Data Fabric** | Modern approaches to distributed data management | 18 min |
+| **[4](chapters/04-data-management.md)** | **The End of ACID** | Consistency dial, CRDTs, cloud internals, and data ownership | 45 min |
+| **[5](chapters/05-deployment-and-operations.md)** | **The Consistency Tax of Spanning Services** | Sagas, compensation, choreography vs orchestration, isolation | 45 min |
+| **[6](chapters/06-resilience-and-reliability.md)** | **Close the Dual Write, Then Survive Failure** | Outbox, timeouts, breakers, backpressure, and error budgets | 45 min |
+| **[7](chapters/07-security.md)** | **Every Hop Is a Door. Prove Who Is Knocking.** | Zero trust, tokens, secrets, and agent capability limits | 50 min |
 
 ---
 
@@ -70,9 +70,9 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **[8](chapters/08-monitoring-and-observability.md)** | **The Trinity of Protocols** | HTTP/REST, gRPC, and GraphQL communication patterns | 22 min |
-| **[9](chapters/09-testing-strategies.md)** | **The Rise of eBPF Networking and the Post Sidecar Era** | Next-generation service mesh and networking | 28 min |
-| **[10](chapters/10-asynchronous-messaging-patterns.md)** | **Asynchronous Messaging Patterns** | Event-driven architecture and messaging strategies | 30 min |
+| **[8](chapters/08-monitoring-and-observability.md)** | **You Cannot Attach a Debugger. Emit the Evidence First.** | Metrics, structured logs, traces, OpenTelemetry, and burn-rate alerts | 50 min |
+| **[9](chapters/09-testing-strategies.md)** | **There Is No Whole System to Test. Test the Agreements.** | Pyramid, contracts, async tests, and testing in production | 50 min |
+| **[10](chapters/10-asynchronous-messaging-patterns.md)** | **Publish What Happened. Do Not Wait.** | Backpressure, poison messages, idempotency, and claim check | 50 min |
 
 ---
 
@@ -81,7 +81,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **11** | **Adaptive Granularity Governance: The Khan Microservice Pattern** | Origin, RVx Index, and maturity model | 40 min |
+| **[11](chapters/11-khan-pattern-deep-dive.md)** | **A Boundary Earns Its Keep Only When All Three Hold** | Fulcrum, RVx, SCS, and KM3, with honesty tiers | 70 min |
 
 ---
 
@@ -90,8 +90,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **12** | **Shuffle Sharding & Blast-Radius Minimization** | Probabilistic tenant-shard assignment and collision analysis | 55 min |
-| **13** | **Chaos Engineering & Evidence-Based Resilience** | Hypotheses, game days, and AWS FIS guardrails | 60 min |
+| **[12](chapters/12-shuffle-sharding.md)** | **A Single Bad Shard Should Be a Footnote** | Shuffle sharding inside cells, with measured blast radius | 55 min |
+| **[13](chapters/13-chaos-engineering.md)** | **Break It on Purpose. Watch. Then You Know.** | Game days, FIS abort alarms, and metastable retries | 55 min |
 
 ---
 
@@ -100,8 +100,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **14** | **Infrastructure as Code at Scale** | Modules, drift, Terraform/CDK/Pulumi trade-offs | 58 min |
-| **15** | **Observability 2.0** | OpenTelemetry, X-Ray, wide events, sampling design | 62 min |
+| **[14](chapters/14-infrastructure-as-code-at-scale.md)** | **The Definition Is the Truth. Reality Is Reconciled Toward It.** | Desired state, locked state, three-layer policy, and version-pinned golden paths | 55 min |
+| **[15](chapters/15-observability-2.md)** | **Spend the Budget on Answers. Stay Sighted When It Counts.** | Wide events, tail sampling, eBPF cross-check, and retention tiers | 55 min |
 
 ---
 
@@ -110,8 +110,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **16** | **Agentic AI Architectures** | Tool gateways, Bedrock agents, safety cases | 58 min |
-| **17** | **Retrieval-Augmented Generation at Scale** | HyDE, evaluation, ACL-aware corpora | 60 min |
+| **[16](chapters/16-agentic-ai-architectures.md)** | **The Model Proposes. The Executor Disposes.** | Planner versus executor, tool gateway, and bounded multi-agent design | 55 min |
+| **[17](chapters/17-rag-at-scale.md)** | **Retrieval as a Data-Plane Discipline, Not a Prompt Trick** | ACL prefilter, hybrid retrieval, pinned embeddings, and shadow eval | 55 min |
 
 ---
 
@@ -120,8 +120,8 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **18** | **The Modular Monolith** | Schema-per-module, ArchUnit, contraction economics | 55 min |
-| **19** | **The Strangler Fig Pattern** | Edge routing, data strangler, parity proofs | 55 min |
+| **[18](chapters/18-modular-monolith.md)** | **The Right Number of Services Is Often One.** | Enforced modules, schema-per-module grants, and extraction on evidence | 55 min |
+| **[19](chapters/19-strangler-fig-pattern.md)** | **Replace It While It Is Still Running.** | Facade first, data ownership, shadow that does not persist twice | 55 min |
 
 ---
 
@@ -130,7 +130,18 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 | Chapter | Title | Description | Read Time |
 |---------|-------|-------------|-----------|
-| **20** | **The Khan Microservices Maturity Model (KM3)** | Stages, instrumentation, X-Ray sampling | 50 min |
+| **[20](chapters/20-km3-maturity-model.md)** | **Has This Organization Earned the Right to Distribute?** | Evidence-based KM3 assessment, not a badge race | 50 min |
+
+---
+
+### 📐 **Part X: The Science Behind the Metric**
+*Focus: Cost, construct validity, and anti-Goodhart discipline*
+
+| Chapter | Title | Description | Read Time |
+|---------|-------|-------------|-----------|
+| **[21](chapters/21-pricing-the-distributed-monolith.md)** | **Price the Waste. Name the Rest. Do Not Invent a Total.** | Wasted time as an identity, payback on hypothesized savings | 50 min |
+| **[22](chapters/22-construct-validity.md)** | **A Formula Confers No Truth. Outcomes Do.** | Construct validity, reliability, and evidence tiers | 50 min |
+| **[23](chapters/23-gaming-and-goodhart.md)** | **Never Point the Number at the People.** | Tamper-evidence, named attacks, and no score in reviews | 50 min |
 
 ---
 
@@ -161,7 +172,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 ### **Key Features**
 
-✅ **Practical, Not Theoretical** - Every pattern tested in production  
+✅ **Practical, Not Theoretical** - Patterns drawn from practice, with honesty about evidence tiers  
 ✅ **Context-Aware Guidance** - Solutions for different organizational contexts  
 ✅ **Evolution-Focused** - Architecture as a journey, not a destination  
 ✅ **Anti-Pattern Awareness** - Learn from real-world failures  
@@ -172,7 +183,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 ## 🚀 **Quick Start Guide**
 
 ### **For Beginners**
-1. Start with [**Chapter 1: The Definition Wars**](chapters/01-introduction-to-microservices.md)
+1. Start with [**Chapter 1: Earned Boundaries**](chapters/01-introduction-to-microservices.md)
 2. Read [**The Preface**](PREFACE.md) to understand the book's philosophy
 3. Progress sequentially through Parts I → II → III
 
@@ -192,12 +203,11 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 
 | Metric | Value |
 |--------|-------|
-| **Total Chapters** | 20 (chapters 1-10 linked in TOC; 11-20 listed without open links) |
-| **Reading Time** | ~4.5 hours total |
-| **Content Length** | 236,000+ characters |
-| **Code Examples** | 50+ practical implementations |
-| **Patterns Covered** | 25+ architectural patterns |
-| **Case Studies** | Real-world examples from industry leaders |
+| **Total Chapters** | 23 (Parts I–X; all linked in the TOC) |
+| **Reading Time** | ~19 hours across the full book |
+| **Code Examples** | Recipes in every practitioner chapter |
+| **Patterns Covered** | Decomposition, data, resilience, platform, AI, migration |
+| **Evidence stance** | Proved / demonstrated / hypothesized — Chapter 11 and 22 |
 | **GitHub Stars** | 606 developers |
 | **Repository Forks** | 228 active forks |
 | **Author Followers** | 1,400+ on [@vaquarkhan](https://github.com/vaquarkhan) |
@@ -267,7 +277,7 @@ At the heart of this book is **Adaptive Granularity Governance: The Khan Microse
 - **GitHub Repository**: [https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
 
 ### **🎓 Academic Access**
-- **Complete 20-Chapter Edition**: [Request Free Access](FREE-ACCESS.md) for students, faculty, and researchers under my Official Academic License
+- **Complete 23-Chapter Edition**: [Request Free Access](FREE-ACCESS.md) for students, faculty, and researchers under the academic terms in that page
 - **Citation Guide**: [Proper Citation Formats](CITATIONS.md) for academic use
 - **Version History**: [Release Lineage](VERSION-HISTORY.md) and evolution
 
@@ -295,8 +305,7 @@ If you find this resource valuable, please help me keep it free and accessible:
 - ⭐ **Star this repo** if you find it valuable!
 
 ### **Professional Networks**
-- 🔗 **LinkedIn**: [Microservices Architecture Practitioners Group](https://www.linkedin.com/groups/microservices-practitioners)
-- � **ResearchGate**: [Academic Collaboration Hub](https://researchgate.net/profile/viquar-khan)
+- 🔗 **LinkedIn**: [Vaquar Khan](https://www.linkedin.com/in/vaquar-khan-b695577/)
 
 ### **Stay Updated**
 - 📢 **Watch** this repository for updates
@@ -345,14 +354,14 @@ Machine-readable metadata: [CITATION.cff](CITATION.cff). Full guide: [CITATIONS.
 
 **APA:**
 ```
-Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.0)
+Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1)
 [Featuring Adaptive Granularity Governance: The Khan Microservice Pattern]. GitHub.
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
 **IEEE:**
 ```
-[1] V. Khan, Microservices Recipes: The Architect's Field Guide, ver. 2.0,
+[1] V. Khan, Microservices Recipes: The Architect's Field Guide, ver. 2.1,
 featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub, 2026.
 [Online]. Available: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
@@ -372,6 +381,6 @@ featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub
 
 Details: [LICENSING.md](LICENSING.md) | [COPYRIGHT.md](COPYRIGHT.md) | [DISCLAIMER.md](DISCLAIMER.md) | [NAMING.md](NAMING.md)
 
-<sub>Last Updated: July 9, 2026 | Original work by Vaquar Khan</sub>
+<sub>Last Updated: September 6, 2026 | Version 2.1 | Original work by Vaquar Khan</sub>
 
 </div>

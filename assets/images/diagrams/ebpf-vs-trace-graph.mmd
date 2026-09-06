@@ -1,0 +1,20 @@
+graph LR
+    subgraph Traces["Application traces"]
+        A1[Checkout] --> A2[Inventory]
+        A1 --> A3[Payments]
+    end
+
+    subgraph Kernel["Kernel eBPF view"]
+        B1[Checkout] --> B2[Inventory]
+        B1 --> B3[Payments]
+        B1 --> B4[Hidden DNS / metadata]
+    end
+
+    Diff[Edge only the kernel saw]
+
+    B4 -.-> Diff
+
+    style Traces fill:#e1f5ff,stroke:#1565c0
+    style Kernel fill:#fff9c4,stroke:#f57f17
+    style B4 fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style Diff fill:#ffcdd2,stroke:#c62828

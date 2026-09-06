@@ -26,23 +26,16 @@ Traditional microservice decomposition relies on qualitative guidelines that oft
 
 ### The Solution: The RVx Index
 
-The Adaptive Granularity Governance: The Khan Microservice Pattern introduces the RVx Index, a mathematical formula for measuring service boundary effectiveness:
+The Adaptive Granularity Governance: The Khan Microservice Pattern introduces the RVx Index, a score for whether a service boundary earns its distributed cost. Chapter 11 is the only place the formula, the defaults, and the evidence tiers are defined. I am not reprinting the equation here, because a preface that restates a formula with the exponents swapped is worse than a preface that points you to the source of truth.
 
-```
-RVx = (Ê^β × Ŝ) / (L̂^α + ε)
+What you need before Chapter 11 is the idea, not the algebra. A boundary is worth deploying separately only when three things hold at once: it is efficient at runtime, it changes independently of its neighbors, and the team that owns it can carry it. The score fuses those three signals. It is a detector, not a number to maximize.
 
-Where:
-Ê (Kinetic Efficiency): Useful computation over total transaction time
-Ŝ (Semantic Distinctness): Independence via temporal coupling analysis
-L̂ (Cognitive Load): Normalized complexity from static analysis
-α, β = Empirical parameters (defaults: α=1.2, β=0.8)
-ε = Stability constant (default: 0.1)
-```
+**How to read a score, once you have Chapter 11:**
+- **RVx > 0.7:** the boundary looks healthy on the declared profile; keep watching the components
+- **0.4 to 0.7:** at-risk; diagnose which signal is weak before you split or merge
+- **RVx < 0.4:** the boundary is not earning its keep; investigate, do not celebrate a later bounce without a code change that explains it
 
-**Interpretation:**
-- **RVx > 0.7:** Optimal service boundaries
-- **0.4 < RVx < 0.7:** Acceptable (monitor and optimize)
-- **RVx < 0.4:** Requires refactoring
+The defaults, the squash, and the honesty about what is proved versus hypothesized live in Chapter 11. If a slide or an older draft shows α and β reversed, discard the slide.
 
 ### Modern Extensions
 
@@ -162,7 +155,7 @@ Welcome to the world of microservices architecture. This guide will help you bui
 
 **Viquar Khan**  
 *Author and Creator of The Adaptive Granularity Governance: The Khan Microservice Pattern*  
-*February 10, 2026*
+*September 6, 2026*
 
 ---
 
@@ -180,6 +173,7 @@ Welcome to the world of microservices architecture. This guide will help you bui
 **Publication Information:**
 - First Edition: January 2017
 - Second Edition: January 2026 (Adaptive Granularity Governance edition)
+- Version 2.1: September 2026 (23-chapter science edition: cost, construct validity, Goodhart)
 - Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 For citation formats, see **[Citations Guide](CITATIONS.md)**  

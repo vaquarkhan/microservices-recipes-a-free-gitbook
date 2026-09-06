@@ -35,6 +35,8 @@ npm-debug.log*
 # Temporary files
 *.tmp
 .cache/
+**/__pycache__/
+*.py[cod]
 
 # 
 CLEANUP-SUMMARY.md
