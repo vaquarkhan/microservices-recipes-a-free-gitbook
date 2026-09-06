@@ -1,146 +1,121 @@
 # RVx Index: Formal Specification
 
-**Status:** Normative for this repository (v2.0).  
-**Methodology:** Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy).  
+**Status:** Normative for this repository (v3.0, aligned with Chapter 11 rewrite of 2026-09-06).  
+**Methodology:** Adaptive Granularity Governance: The Khan Microservice Pattern.  
 **Copyright:** © 2017-2026 Vaquar Khan. Prose under CC BY-NC-ND 4.0; see [LICENSING.md](../LICENSING.md).  
-**Scope:** Naming and packaging may change; **this document does not change** published formulas or default thresholds from the book chapters.
+**Scope:** Chapter 11 is the source of truth for formulas, bands, and honesty tiers. This file restates them so implementations do not drift.
 
 ## 1. Purpose
 
-The **RVx Index** (Revised VaquarKhan Index) scores whether a service boundary is earning its keep: benefits of separation versus cost of separation.
+The **RVx Index** scores whether a service boundary is earning its keep: runtime efficiency, evolutionary independence, and cognitive ownability, together.
 
-## 2. Core formula (product form)
-
-As stated in Chapter 11:
+## 2. Published formula (power form, then squash)
 
 \[
-\mathrm{RVx} = \frac{\hat{E} \times \hat{S}}{\hat{L} + \varepsilon}
+\mathrm{RVx}_{raw} = \frac{E^{\beta} \times S}{L^{\alpha} + \varepsilon}, \qquad
+\mathrm{RVx} = \frac{\mathrm{RVx}_{raw}}{1 + \mathrm{RVx}_{raw}}
 \]
 
 | Symbol | Name | Range | Meaning |
 |--------|------|-------|---------|
-| \(\hat{E}\) | Kinetic Efficiency | \([0,1]\) | Share of end-to-end time spent in useful compute |
-| \(\hat{S}\) | Semantic Distinctness | \([0,1]\) | Independence of change and meaning from other services |
-| \(\hat{L}\) | Cognitive Load | \([0,1]\) | Normalized complexity / ownership burden |
-| \(\varepsilon\) | Stability constant | default \(0.1\) | Avoids division by zero; soft floor on cost |
+| \(E\) | Kinetic Efficiency | \([0,1]\) | Share of critical-path time spent in useful local work |
+| \(S\) | Semantic Distinctness | \([0,1]\) | \(1 - \) co-change fraction across the boundary |
+| \(L\) | Cognitive Load (Capacity-Normalized Complexity) | \([0,1]\) | Static complexity / team capacity |
+| \(\beta\) | Efficiency exponent | default \(1.2\) | Emphasizes kinetic efficiency |
+| \(\alpha\) | Load exponent | default \(0.8\) | Softens the load penalty |
+| \(\varepsilon\) | Stability constant | default \(0.1\) | Avoids division by zero; caps reward for near-zero load |
 
-**Output range:** With inputs in \([0,1]\) and \(\varepsilon = 0.1\), RVx lies in roughly \([0, 1/0.1] = [0, 10]\) in theory, and typically about **0 to ~3** in practice. Higher is better.
+**Published range:** \(0 < \mathrm{RVx} < 1\). Implementations that emit only \(\mathrm{RVx}_{raw}\) must not compare that number to the bands below. Report \(E\), \(S\), \(L\), raw, published score, profile id, and composition form.
 
-### 2.1 Why 0.7 and 0.4 are meaningful
+When \(\alpha = \beta = 1\), the raw form reduces to \((E \times S) / (L + \varepsilon)\).
 
-Because \(\hat{E}\), \(\hat{S}\), and \(\hat{L}\) are **normalized to \([0,1]\)**, RVx is a dimensionless ratio of benefit to cost:
+## 3. Illustrative bands (calibrate per profile)
 
-- An RVx near **0.4** means benefits barely cover (or fail to cover) cognitive and operational cost.  
-- An RVx near **0.7** or above (with healthy \(\hat{S}\) and moderate \(\hat{L}\)) means the boundary is usually justified.  
+| Band | Published RVx | Reading |
+|------|----------------|---------|
+| Distributed monolith | \(\mathrm{RVx} < 0.4\) | Boundary is not earning its keep |
+| At risk | \(0.4 \le \mathrm{RVx} \le 0.7\) | Diagnose from components |
+| Healthy | \(\mathrm{RVx} > 0.7\) | Clearly earning its keep (high bar after squash) |
 
-Exact zone rules used in the book (do not change without a versioned amendment):
+**High-load gate:** if \(L > 0.7\), treat as an ownership problem regardless of the composite.
 
-| Zone | Condition (from Chapter 11) | Action |
-|------|-----------------------------|--------|
-| Nano-swarm / merge | \(\mathrm{RVx} \le 0.3\) and \(\hat{E} < 0.3\) | Merge |
-| Cognitive overload / split | \(\hat{L} > 0.7\) (regardless of RVx) | Split |
-| Healthy | \(\mathrm{RVx} > 0.6\) and \(\hat{S} > 0.6\) and \(\hat{L} < 0.7\) | Keep |
+At defaults, \(E = S = L = 1\) floors the published score at \(\approx 0.476\), just above the monolith band. That is why the gate exists.
 
-## 3. Power-law form (Chapter 3 measurement protocol)
+## 4. Composition rule
 
-Chapter 3 documents a calibrated power form used in measurement recipes:
+- No signal degenerate: multiplicative raw form, then squash.
+- Exactly one signal degenerate (confidence or floor-bound): additive mean over trustworthy signals, degenerate one down-weighted; log the form.
+- Two or more degenerate: do not publish a composite.
+
+Thresholds are fixed in the profile *before* scoring.
+
+## 5. Variable definitions
+
+### 5.1 Kinetic Efficiency \(E\)
 
 \[
-\mathrm{RVx} = \frac{\hat{E}^{\beta} \times \hat{S}}{\hat{L}^{\alpha} + \varepsilon}
+E = t_{\mathrm{useful}} / t_{\mathrm{total}}
 \]
 
-**Default parameters (do not change casually):**
+\(t_{\mathrm{total}}\) is root-span wall-clock (critical path). \(t_{\mathrm{useful}}\) is the union of local compute intervals on that path, not the sum of overlapping spans. Asynchronous fire-and-forget that does not sit on the caller critical path keeps \(E\) high. Workload must be declared and representative; do not score from a tail-biased debug sample without reweighting.
 
-| Parameter | Default | Role |
-|-----------|---------|------|
-| \(\beta\) | **1.2** | Emphasizes kinetic efficiency |
-| \(\alpha\) | **0.8** | Softens cognitive-load penalty relative to linear |
-| \(\varepsilon\) | **0.1** | Stability constant |
+**Source:** distributed traces (OpenTelemetry). Not static.
 
-When \(\alpha = \beta = 1\), this reduces to the product form in Section 2. Implementations should **document which form** they use and keep parameters versioned.
-
-## 4. Variable definitions
-
-### 4.1 Kinetic Efficiency \(\hat{E}\)
+### 5.2 Semantic Distinctness \(S\)
 
 \[
-\hat{E} = \frac{T_{\mathrm{compute}}}{T_{\mathrm{compute}} + T_{\mathrm{network}} + T_{\mathrm{serialize}} + T_{\mathrm{mesh}}}
+S = 1 - \frac{\text{change sets that touch this service and another across the boundary}}{\text{change sets that touch this service}}
 \]
 
-**Source:** runtime traces (OpenTelemetry, X-Ray, Jaeger).  
-**Static?** No. Measured from production or load-test traces.
+Change set = merged pull request or linked work item, not a raw commit. Exclude bot-only changes. Attribute shared libraries via an explicit map.
 
-### 4.2 Semantic Distinctness \(\hat{S}\)
+In a monorepo or shared-schema estate, \(S\) is often floor-bound. Annotate low confidence and apply the composition rule. Do not pretend.
 
-Measures whether the service changes independently of others (temporal coupling, shared commits, domain cohesion). Chapter 3 recipe:
+**Source:** version history. Chapter 1 Recipe 1.1 is the manual form.
+
+### 5.3 Cognitive Load \(L\)
 
 \[
-\hat{S} \approx 1 - \frac{\text{multi-service commits}}{\text{total commits}}
+L = \mathrm{clamp}(\mathrm{complexity} / \mathrm{capacity},\ 0,\ 1)
 \]
 
-(over a window such as 90 days), optionally combined with static domain checks.  
-**Source:** git history (+ optional static analysis).  
-**Static?** Partially: git-derived; may include static module graphs.
+Complexity combination is profile-declared. Capacity comes from an organizational system of record, not self-report. This is Capacity-Normalized Complexity, not NASA-TLX.
 
-### 4.3 Cognitive Load \(\hat{L}\)
+## 6. Saga Complexity Score (SCS)
 
-Normalized complexity / size / ownership burden. Chapter 3 example:
+Defined in Chapter 11, used by Chapter 5. Do not reuse \(S\) for a saga step count.
 
 \[
-\hat{L} = \frac{\mathrm{complexity} + \mathrm{LOC}/1000}{200}
-\]
-
-clamped to \([0,1]\).  
-**Source:** static analysis (e.g. SonarQube) and team topology signals.  
-**Static?** Mostly static; may include on-call / ownership metadata.
-
-## 5. Input classes
-
-| Input | Class |
-|-------|--------|
-| Complexity, LOC, module graph | **Static** |
-| Co-change / multi-service commits | **Git history** |
-| Latency breakdown, error rates | **Runtime traces** |
-
-## 6. Per-context calibration profiles
-
-Defaults above are starting points. Calibrate \(\alpha\), \(\beta\), and zone thresholds as **profiles**, not one global law:
-
-| Profile | Intent | Typical adjustment |
-|---------|--------|--------------------|
-| **BFSI** | Strong consistency, audit, lower change rate | Slightly higher \(\hat{L}\) weight (raise \(\alpha\)); stricter merge on low \(\hat{E}\) |
-| **Streaming** | High fan-out, latency sensitive | Emphasize \(\hat{E}\) (raise \(\beta\)); watch network tax |
-| **Batch** | Throughput over p99 | Soften latency-driven \(\hat{E}\) penalties; focus \(\hat{S}\) and ops cost |
-
-Publish profile IDs with every score. Thresholds and parameters are **calibrated**; see [validation/README.md](../validation/README.md).
-
-## 7. Saga Complexity Score (SCS)
-
-From Chapter 5 (unchanged):
-
-\[
-\mathrm{SCS} = (C \times 2) + (R \times 3) + (S \times 1)
+\mathrm{SCS} = w_c C + w_r R + w_x \varphi(X), \qquad
+\varphi(X) = 1 - e^{-X / X_0}
 \]
 
 | Symbol | Meaning |
 |--------|---------|
-| \(C\) | Number of **compensatable** steps |
-| \(R\) | Number of **pivot / hard-to-reverse** steps (weighted higher) |
-| \(S\) | Number of **supporting / side-effect** steps (e.g. notifications) |
+| \(C\) | Transaction complexity (normalized ordinal: steps, branches, waits, approval) |
+| \(R\) | Business risk (normalized ordinal: money, compliance, irreversibility) |
+| \(X\) | Cross-service interaction count |
+| \(X_0\) | Profile reference count |
+| \(w_c, w_r, w_x\) | Profile weights |
 
-**Decision bands (unchanged):**
+Low SCS favours choreography. High SCS favours orchestration. Design-time score, not mined from git.
 
-- \(\mathrm{SCS} \le 8\): choreography is viable  
-- \(\mathrm{SCS}\) 9–15: orchestration recommended  
-- \(\mathrm{SCS} > 15\): orchestration required  
+## 7. Per-context calibration
 
-SCS is **static design-time** (from the saga design), not from git or traces.
+Defaults are starting points. Calibrate \(\alpha\), \(\beta\), \(\varepsilon\), bands, and SCS weights as **profiles**. Publish the profile id with every score. See [validation/README.md](../validation/README.md).
 
-## 8. Normative references in this repo
+## 8. Honesty tiers (Chapter 11)
 
-- Chapter 11: RVx narrative and zones  
-- Chapter 3: measurement protocol with \(\alpha,\beta,\varepsilon\)  
-- Chapter 5: SCS formula  
-- [NAMING.md](../NAMING.md), [LICENSING.md](../LICENSING.md)  
-- [reference-impl/](../reference-impl/) MVP scorer  
-- [validation/README.md](../validation/README.md) study plan  
+- **Proven:** boundedness, monotonicity, weakest-link numerator, ranking depends on \(\beta/\alpha\).
+- **Demonstrated:** simulation and a 36-boundary AWS construct-validity benchmark. Not organic production.
+- **Hypothesised:** separation of healthy vs distributed-monolith boundaries on organically grown estates.
+
+## 9. Normative references in this repo
+
+- Chapter 11: practitioner treatment (source of truth)
+- Chapter 1: manual co-change recipe (S)
+- Chapter 5: saga topology; points here for SCS
+- Chapter 8: traces that feed E
+- Chapter 20: KM3 assessment instrumentation
+- [reference-impl/](../reference-impl/) MVP scorer (must emit the squashed score)
+- [validation/README.md](../validation/README.md) study plan

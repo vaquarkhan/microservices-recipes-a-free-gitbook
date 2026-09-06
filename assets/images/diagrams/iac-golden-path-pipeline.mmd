@@ -1,31 +1,14 @@
-flowchart TB
-    PR["Developer PR<br/>Terraform / CDK"]
-    PLAN["terraform plan<br/>artifact"]
-    POL["Policy-as-code<br/>OPA / CFN Guard"]
-    REV["Human or automated<br/>approval gate"]
-    APPLY["Controlled apply<br/>pipeline"]
-    OUT["Golden module outputs<br/>ARNs, roles, queues"]
-    OBS["Observability baselines<br/>OTel, tags, KMS"]
+flowchart LR
+    PR[Pull request] --> Plan[Automated plan]
+    Plan --> Pol[Policy against the plan]
+    Pol -->|fail| PR
+    Pol -->|pass| App[Human approval]
+    App --> Apply[Governed apply]
+    Apply --> Cloud[Cloud]
 
-    PR --> PLAN
-    PLAN --> POL
-    POL -->|pass| REV
-    POL -->|fail| PR
-    REV --> APPLY
-    APPLY --> OUT
-    OUT --> OBS
-
-    subgraph Vending["Microservice vending machine module"]
-        VM["VPC + IAM + SQS + DLQ<br/>+ encryption defaults"]
-    end
-
-    APPLY --> VM
-
-    style PR fill:#e8f4fc,stroke:#3498db
-    style PLAN fill:#fff9c4,stroke:#f39c12
-    style POL fill:#f8cecc,stroke:#b85450,stroke-width:2px
-    style REV fill:#e8f4fc,stroke:#3498db,stroke-width:2px
-    style APPLY fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style OUT fill:#d5e8d4,stroke:#82b366
-    style OBS fill:#e8f4fc,stroke:#3498db
-    style VM fill:#3498db,stroke:#2c3e50,color:#fff
+    style PR fill:#e1f5ff,stroke:#1565c0
+    style Plan fill:#fff9c4,stroke:#f57f17
+    style Pol fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style App fill:#ffe0b2,stroke:#ef6c00
+    style Apply fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style Cloud fill:#e1f5ff,stroke:#1565c0

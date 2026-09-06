@@ -1,20 +1,13 @@
 flowchart LR
-    H["1. Hypothesis<br/>Steady state y(t) in R"]
-    E["2. Controlled fault phi<br/>FIS / game day"]
-    M["3. Measure SLIs<br/>vs control baseline"]
-    A["4. Abort if SLO burn<br/>CloudWatch alarm"]
-    L["5. Learn<br/>Fix system or refine model"]
+    H[Write the hypothesis] --> I[Inject one bounded fault]
+    I --> M[Measure against the hypothesis]
+    M --> L[Learn: fix or refine]
+    L --> H
+    A[Abort on customer harm] -.-> I
+    A -.-> M
 
-    H --> E
-    E --> M
-    M --> A
-    A -->|within bounds| L
-    A -->|violation| R["Rollback phi<br/>Capture telemetry"]
-    R --> L
-
-    style H fill:#e8f4fc,stroke:#3498db,stroke-width:2px
-    style E fill:#fff3cd,stroke:#f39c12,stroke-width:2px
-    style M fill:#e8f4fc,stroke:#3498db
-    style A fill:#f8cecc,stroke:#b85450,stroke-width:2px
-    style L fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style R fill:#f8cecc,stroke:#b85450
+    style H fill:#e1f5ff,stroke:#1565c0
+    style I fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style M fill:#e1f5ff,stroke:#1565c0
+    style L fill:#c8e6c9,stroke:#2e7d32
+    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px

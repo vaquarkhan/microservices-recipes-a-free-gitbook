@@ -10,7 +10,7 @@
 ### APA (7th Edition)
 
 ```
-Khan, V. (2026). Microservices recipes: The architect's field guide. 
+Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1). 
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 

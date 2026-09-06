@@ -2,7 +2,7 @@
 title: "Microservices Recipes: The Architect's Field Guide"
 description: "A comprehensive guide to building, scaling, and managing microservices architectures. Featuring Adaptive Granularity Governance: The Khan Microservice Pattern."
 author: "Viquar Khan"
-email: "viquar.khan@example.com"
+email: "vaquar.khan@gmail.com"
 url: "https://vaquarkhan.github.io"
 baseurl: "/microservices-recipes-a-free-gitbook"
 
@@ -56,15 +56,14 @@ book:
   title: "Microservices Recipes: The Architect's Field Guide"
   subtitle: "Featuring Adaptive Granularity Governance: The Khan Microservice Pattern"
   author: "Viquar Khan"
-  version: "2024.1"
-  isbn: "978-0-000000-00-0"
+  version: "2.1"
   publisher: "Open Source"
-  publication_date: "2024-01-15"
+  publication_date: "2026-09-06"
   language: "en"
   
 # SEO
 lang: en_US
-logo: /assets/images/logo.png
+logo: /assets/images/logo.svg
 
 # Collections
 collections:

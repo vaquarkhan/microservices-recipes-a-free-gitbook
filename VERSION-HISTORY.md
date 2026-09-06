@@ -5,7 +5,15 @@
 
 ---
 
-## 🏷️ **Current Version: 2.0**
+## 🏷️ **Current Version: 2.1**
+
+### **Version 2.1** — *Science edition, 23 chapters* (September 6, 2026)
+
+- Chapters 21–23 added: pricing wasted time, construct validity, Goodhart and tamper-evidence.
+- Practitioner chapters 1–20 aligned to one spine. Chapter 11 remains the only source of truth for the RVx formula (β=1.2, α=0.8, ε=0.1; bands &lt;0.4 / 0.4–0.7 / &gt;0.7).
+- Editorial SVGs replace missing PNG figures. Cover and hero art added for GitHub Pages.
+- Preface, book preview, glossary, and quick reference no longer restate a swapped-exponent formula or a 20-chapter teaser.
+- Recipes corrected: Kinesis idempotency JMESPath, human-approval Step Functions (no heartbeat without `SendTaskHeartbeat`), gateway authorizer response shape, Collector Contrib for tail sampling.
 
 ### **Version 2.0** - *Adaptive Granularity Governance edition* (January 2026)
 **Major Release - Complete Architectural Overhaul**
@@ -101,9 +109,9 @@
 
 ## 📈 **Version Comparison Matrix**
 
-| Feature | Version 1.0 (2017) | Version 2.0 (2026) |
+| Feature | Version 1.0 (2017) | Version 2.1 (2026) |
 |---------|-------------------|-------------------|
-| **Chapters** | 8 foundational | 10 comprehensive |
+| **Chapters** | 8 foundational | 23 (Parts I–X) |
 | **Methodologies** | General principles | Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy) |
 | **Technology Focus** | Docker, basic K8s | Modern cloud-native |
 | **Networking** | Traditional service mesh | eBPF and post-sidecar |
@@ -118,10 +126,8 @@
 
 ## 🎯 **Future Roadmap**
 
-### **Version 2.1** - *Planned Q2 2026*
-- **AI/ML Integration Patterns** - Microservices for machine learning workloads
-- **Sustainability Metrics** - Green computing considerations for distributed systems
-- **Advanced Observability** - AIOps and intelligent monitoring patterns
+### **After 2.1**
+Version 2.1 shipped on September 6, 2026: 23 chapters, editorial SVGs, and the science arc (cost, construct validity, Goodhart). Further work is empirical validation of organic-production separation, not a new formula. See `validation/` and Chapter 22. The old "planned Q2 2026" 2.1 teaser on this page is retired.
 
 ### **Version 3.0** - *Conceptual 2026*
 - **Quantum-Ready Architectures** - Preparing for quantum computing integration
@@ -155,7 +161,7 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ## 📞 **Version Support**
 
 ### **Current Support:**
-- **Version 2.0** - ✅ Active development and community support
+- **Version 2.1** - ✅ Current public edition (23 chapters, September 2026)
 - **Version 1.0** - 📚 Archived, available for historical reference
 
 ### **Community Channels:**

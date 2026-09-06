@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">End-to-end test fragility</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="980" height="360" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">End-to-end test fragility</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Independent 99% hops compound. One run in ten is the environment.</text>
+  <rect x="24.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M36.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="94.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >End-to-end test</text>
+<rect x="182.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M194.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="252.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Service A</text>
+<text x="252.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >99 percent</text>
+<line x1="166.0" y1="205.0" x2="174.0" y2="205.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="340.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M352.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="410.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Service B</text>
+<text x="410.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >99 percent</text>
+<line x1="324.0" y1="205.0" x2="332.0" y2="205.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="498.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M510.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="568.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Service C</text>
+<text x="568.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >99 percent</text>
+<line x1="482.0" y1="205.0" x2="490.0" y2="205.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="656.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M668.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="726.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >… ten services</text>
+<line x1="640.0" y1="205.0" x2="648.0" y2="205.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="814.0" y="150.0" width="140.0" height="110.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M826.0 151.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="884.0" y="176.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Combined pass ≈ 90%</text>
+<text x="884.0" y="196.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >one run in ten</text>
+<text x="884.0" y="211.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >is environment</text>
+<line x1="798.0" y1="205.0" x2="806.0" y2="205.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+</svg>

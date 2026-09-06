@@ -1,23 +1,18 @@
 graph TB
-    subgraph "Khan Granularity Matrix"
-        subgraph Zone1["Zone I: NANO-SWARM<br/>RVx ≤ 0.3, Low Ê"]
-            Z1A["❌ MERGE<br/>Network tax too high<br/>Example: Simple data fetcher"]
-        end
-        
-        subgraph Zone2["Zone II: GOD SERVICE<br/>L̂ > 0.7, High Complexity"]
-            Z2A["✂️ SPLIT<br/>Too complex to manage<br/>Example: Monolithic user service"]
-        end
-        
-        subgraph Zone3["Zone III: DISTRIBUTED MONOLITH<br/>Ŝ ≤ 0.4, High Coupling"]
-            Z3A["🔄 REFACTOR<br/>Wrong boundaries<br/>Example: Tightly coupled services"]
-        end
-        
-        subgraph Zone4["Zone IV: OPTIMUM<br/>RVx > 0.6, Balanced"]
-            Z4A["✅ MAINTAIN<br/>Well-designed service<br/>Example: Payment processing"]
-        end
+    subgraph Healthy["Healthy microservice"]
+        H["High E, high S, manageable L<br/>Leave it alone"]
     end
-    
-    style Zone1 fill:#ffcccc,stroke:#cc0000,stroke-width:2px
-    style Zone2 fill:#ffffcc,stroke:#cccc00,stroke-width:2px
-    style Zone3 fill:#ffddaa,stroke:#ff8800,stroke-width:2px
-    style Zone4 fill:#ccffcc,stroke:#00cc00,stroke-width:2px
+    subgraph Chatty["Chatty boundary"]
+        C["Low E, good S and L<br/>Cut hops or merge the chattiest edge"]
+    end
+    subgraph Fragment["Distributed-monolith fragment"]
+        D["Good E, low S<br/>Merge, or find the missed seam"]
+    end
+    subgraph Load["Ownership problem"]
+        O["High L, whatever else is true<br/>Shrink the surface or change the owner"]
+    end
+
+    style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style C fill:#fff9c4,stroke:#f57f17
+    style D fill:#ffcdd2,stroke:#c62828
+    style O fill:#ffe0b2,stroke:#ef6c00

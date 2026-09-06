@@ -1,22 +1,22 @@
 sequenceDiagram
     autonumber
     participant U as User
-    participant A as Agent Orchestrator<br/>(Bedrock / planner)
-    participant R as Retrieval plane<br/>(RAG — untrusted)
-    participant G as Tool Gateway<br/>policy + RBAC
-    participant S as Domain Service<br/>(deterministic API)
-    participant H as Human approver<br/>(high-risk tier)
+    participant P as Planner<br/>(language model)
+    participant R as Retrieved content<br/>(untrusted data)
+    participant G as Tool gateway<br/>(authorize, validate, limit)
+    participant S as Domain service<br/>(deterministic API)
+    participant H as Human approver
 
-    U->>A: Goal / intent
-    A->>R: Fetch context
-    R-->>A: Documents (untrusted input)
-    A->>G: ToolCall(refund, args, idempotency_key)
-    G->>G: Risk tier check
-    alt amount above threshold
+    U->>P: Goal
+    P->>R: Fetch context
+    R-->>P: Documents and tool results
+    P->>G: Proposed tool call plus idempotency key
+    G->>G: Policy, schema, budget
+    alt high-risk action
         G->>H: Approval required
-        H-->>G: Approved / denied
+        H-->>G: Approved or denied
     end
-    G->>S: execute(refund) — versioned API
-    S-->>G: Receipt / domain event
-    G-->>A: Observation (structured)
-    A-->>U: Response + citations
+    G->>S: Versioned, authorized execute
+    S-->>G: Receipt
+    G-->>P: Structured observation
+    P-->>U: Response

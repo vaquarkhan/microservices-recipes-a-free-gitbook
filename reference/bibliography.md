@@ -459,22 +459,21 @@
     - Shows impact of coupling microservices to legacy data models
     - Lessons: Data sovereignty violation and deployment coordination failures
 
-125. **Fintech Startup Scale-Up (2021)**: Payment processing startup case study. *Case Study*, Chapter 11.
-    - Problem: Premature microservices adoption with 5-person team managing 23 services
-    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern consolidation to modular monolith
-    - Results: 3x feature velocity improvement, 60% cost reduction
+125. **Fintech Startup Scale-Up (composite)**: Premature split with a small team. *Illustrative pattern*, Chapters 11 and 18.
+    - Pattern: a handful of engineers owning too many independently deployed units
+    - Response in this book: measure the boundary, then consolidate to a modular monolith when the score and the team say so
+    - No verified velocity or cost-reduction percentage is claimed here
 
 ### E-Commerce & Retail
 
-126. **E-Commerce Platform Rescue (2019)**: Major retail company (Fortune 500) microservices recovery. *Case Study*, Chapter 11.
-    - Problem: 127 microservices causing performance degradation and operational chaos
-    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern RVx analysis and service consolidation to 63 services
-    - Results: 92% P99 latency improvement, 94% deployment success rate
+126. **E-Commerce over-decomposition (composite)**: Too many services, lock-step change. *Illustrative pattern*, Chapters 1, 2, and 11.
+    - Problem: a chatty estate that still deploys together
+    - Response in this book: score the boundary, merge what does not earn the tax
+    - Precise P99 or deployment-success percentages in older drafts were not evidenced and are withdrawn
 
-127. **E-Commerce Platform Recovery (2022)**: Mid-size e-commerce platform with 120 microservices. *Case Study*, Chapter 3.
-    - Initial State: Average RVx 0.25 (Nano-Swarm zone), 71% services in Zone I
-    - Adaptive Granularity Governance: The Khan Microservice Pattern Application: Consolidated 85 nano-services into 12 macro-services
-    - Results: P99 latency reduced from 2.3s to 180ms (92% improvement)
+127. **Nanoservice consolidation (composite)**: Fine-grained services that fail the independence test. *Illustrative pattern*, Chapters 1 and 11.
+    - Older drafts labelled this "Nano-Swarm" and quoted RVx 0.25 / Zone I. Those zone names and the 0.3 / 0.6 bands are retired.
+    - Current bands: &lt;0.4 coarse or failing, 0.4–0.7 at-risk, &gt;0.7 healthy. Chapter 11 is the source of truth.
 
 128. **E-Commerce Order Creation Saga**: Practical implementation of choreography vs orchestration patterns. *Technical Example*, Chapter 5.
     - Demonstrates Saga pattern for distributed transactions
@@ -482,10 +481,10 @@
 
 ### Healthcare
 
-129. **Healthcare System Modernization (2023)**: Healthcare provider microservices transformation. *Case Study*, Chapter 3.
-    - Challenge: HIPAA compliance requirements with distributed architecture
-    - Solution: Adaptive Granularity Governance: The Khan Microservice Pattern heterogeneous granularity approach
-    - Results: Compliance-friendly architecture with optimized service boundaries
+129. **Regulated-domain granularity (composite)**: Compliance constraints on how far you can split. *Illustrative pattern*, Chapters 3 and 7.
+    - Challenge: a domain that is legitimately coupled by regulation
+    - Response in this book: do not force a split the distinctness signal will later have to override
+    - No named provider and no outcome percentage is claimed
 
 130. **Healthcare Data Consistency**: Real-world example of strong consistency requirements in medical systems. *Technical Example*, Chapter 4.
     - Demonstrates necessity of ACID transactions for patient records
@@ -535,15 +534,15 @@
     - Results: Improved network performance and Layer 7 visibility
 
 138. **Loan Approval Workflow**: Complex orchestration with human approval steps. *Technical Example*, Chapter 5.
-    - Complexity Score: SCS = 28 (high complexity, high risk)
-    - Solution: AWS Step Functions with audit logging
-    - Pattern: Orchestration required for regulatory compliance
+    - SCS (Chapter 11) is a weighted, normalized design-time reading, not a raw "28." High C, high R, and a human-approval wait favour orchestration.
+    - Solution: AWS Step Functions with a timeout, not a heartbeat, on the human wait
+    - Pattern: Orchestration when the transaction needs an audit trail
 
 ---
 
 ## Industry Patterns & Anti-Patterns
 
-139. **The Nano-Swarm Anti-Pattern**: 200+ services for medium-sized applications. *Anti-Pattern*, Chapter 1.
+139. **The nanoservice / over-decomposition anti-pattern**: far more independently deployed units than the domain or the team can carry. *Anti-Pattern*, Chapter 1. Formerly called "Nano-Swarm" in older drafts.
     - Symptom: Network overhead exceeds business logic execution time
     - Impact: Deployment coordination becomes impossible
     - Example: Simple "create order" operation touching 15 services
@@ -602,10 +601,10 @@
     - Guarantee: At-least-once delivery with idempotency
     - Cost Optimization: TTL for automatic cleanup
 
-150. **Amazon DataZone for Federated Access**: Data Mesh implementation. *Recipe 7.1*, Chapter 7.
-    - Pattern: Producer-consumer with approval workflow
-    - Technology: DataZone + Lake Formation
-    - Governance: Automated policy enforcement
+150. **Gateway JWT authorizer**: Verify tokens at the edge, fail closed. *Recipe 7.1*, Chapter 7.
+    - Pattern: RS256 allowlist, issuer and audience checks, live client revocation
+    - Response shape: API Gateway `policyDocument` Allow/Deny
+    - Chapter 7 is security, not Data Mesh. DataZone is not this recipe.
 
 ---
 

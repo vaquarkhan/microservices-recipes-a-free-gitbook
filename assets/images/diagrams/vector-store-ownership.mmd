@@ -1,0 +1,17 @@
+graph LR
+    subgraph Shared["Shared store"]
+        S1[Service A] --> V[One index]
+        S2[Service B] --> V
+        S3[Service C] --> V
+    end
+
+    subgraph Owned["Service-owned stores"]
+        A1[Service A] --> VA[Index A]
+        B1[Service B] --> VB[Index B]
+        C1[Service C] --> VC[Index C]
+    end
+
+    style V fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style VA fill:#c8e6c9,stroke:#2e7d32
+    style VB fill:#c8e6c9,stroke:#2e7d32
+    style VC fill:#c8e6c9,stroke:#2e7d32

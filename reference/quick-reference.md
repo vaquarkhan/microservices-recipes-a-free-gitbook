@@ -15,17 +15,21 @@ This quick reference provides at-a-glance guidance for common microservices patt
 - [ ] **Autonomy**: Independently deployable and scalable
 - [ ] **Resilience**: Designed to handle failures gracefully
 
-### Adaptive Granularity Governance: The Khan Microservice Pattern Decision Matrix
+### Adaptive Granularity Governance: The Khan Microservice Pattern
 
-| Factor | Fine-Grained | Medium-Grained | Coarse-Grained |
-|--------|--------------|----------------|----------------|
-| **Complexity** | High | Medium | Low |
-| **Change Frequency** | High | Medium | Low |
-| **Team Capacity** | Multiple Teams | Single Team | Shared Team |
-| **Scaling Needs** | Independent | Moderate | Uniform |
-| **Data Coupling** | Low | Medium | High |
+Do not choose fine / medium / coarse from a vibe table. Score the boundary. Chapter 11 is the only source of truth for the formula.
 
-**Decision Rule**: Choose granularity based on your organizational context, not rigid rules.
+| RVx band | Meaning | First move |
+|----------|---------|------------|
+| **> 0.7** | Healthy on the declared profile | Keep publishing E, S, L beside the composite |
+| **0.4–0.7** | At-risk | Diagnose the weak signal before you split or merge |
+| **< 0.4** | Not earning its keep | Investigate; do not celebrate a bounce the code cannot explain |
+
+**Signals (names only; definitions in Chapter 11):** E from traces, S from merged PRs (not raw commits), L from static analysis over org-capacity from a system of record.
+
+**Social rule (Chapter 23):** never use the score in an individual performance review.
+
+**KM3 staircase (Chapter 20):** Ad hoc → Instrumented → Governed → Portfolio-managed → Self-correcting.
 
 ---
 

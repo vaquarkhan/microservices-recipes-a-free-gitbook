@@ -1,0 +1,12 @@
+flowchart LR
+    T[Brief trigger] --> S[Dependency slows]
+    S --> W[Callers wait and hold threads]
+    W --> R[Retries add load]
+    R --> S
+    T -.->|trigger is gone| X[System stays collapsed]
+
+    style T fill:#fff9c4,stroke:#f57f17
+    style S fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style W fill:#ffe0b2,stroke:#ef6c00
+    style R fill:#ffcdd2,stroke:#c62828
+    style X fill:#ffcdd2,stroke:#c62828,stroke-width:2px

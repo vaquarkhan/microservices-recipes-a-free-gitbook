@@ -50,21 +50,21 @@
               <div class="dropdown-content">
                 <div class="dropdown-section">
                   <h4>Part I: Sociotechnical Substrate</h4>
-                  <a href="{{ "/chapters/01-introduction-to-microservices.html" | relative_url }}">Ch 1: Definition Wars</a>
-                  <a href="{{ "/chapters/02-design-principles-and-patterns.html" | relative_url }}">Ch 2: Distributed Monolith</a>
-                  <a href="{{ "/chapters/03-service-communication.html" | relative_url }}">Ch 3: Domain Driven Design</a>
+                  <a href="{{ "/chapters/01-introduction-to-microservices.html" | relative_url }}">Ch 1: Earned Boundaries</a>
+                  <a href="{{ "/chapters/02-design-principles-and-patterns.html" | relative_url }}">Ch 2: Diagnosis and Remedies</a>
+                  <a href="{{ "/chapters/03-service-communication.html" | relative_url }}">Ch 3: Strategic DDD</a>
                 </div>
                 <div class="dropdown-section">
                   <h4>Part II: Data Architecture</h4>
                   <a href="{{ "/chapters/04-data-management.html" | relative_url }}">Ch 4: End of ACID</a>
-                  <a href="{{ "/chapters/05-deployment-and-operations.html" | relative_url }}">Ch 5: Saga Pattern</a>
-                  <a href="{{ "/chapters/06-resilience-and-reliability.html" | relative_url }}">Ch 6: Dual Write Problem</a>
-                  <a href="{{ "/chapters/07-security.html" | relative_url }}">Ch 7: Data Mesh vs Fabric</a>
+                  <a href="{{ "/chapters/05-deployment-and-operations.html" | relative_url }}">Ch 5: Sagas</a>
+                  <a href="{{ "/chapters/06-resilience-and-reliability.html" | relative_url }}">Ch 6: Outbox and Resilience</a>
+                  <a href="{{ "/chapters/07-security.html" | relative_url }}">Ch 7: Security</a>
                 </div>
                 <div class="dropdown-section">
                   <h4>Part III: Inter Process Communication</h4>
-                  <a href="{{ "/chapters/08-monitoring-and-observability.html" | relative_url }}">Ch 8: Trinity of Protocols</a>
-                  <a href="{{ "/chapters/09-testing-strategies.html" | relative_url }}">Ch 9: eBPF Networking</a>
+                  <a href="{{ "/chapters/08-monitoring-and-observability.html" | relative_url }}">Ch 8: Observability</a>
+                  <a href="{{ "/chapters/09-testing-strategies.html" | relative_url }}">Ch 9: Testing</a>
                   <a href="{{ "/chapters/10-asynchronous-messaging-patterns.html" | relative_url }}">Ch 10: Messaging Patterns</a>
                 </div>
                 <div class="dropdown-section">
@@ -94,6 +94,12 @@
                 <div class="dropdown-section">
                   <h4>Part IX: Organizational Maturity</h4>
                   <a href="{{ "/chapters/20-km3-maturity-model.html" | relative_url }}">Ch 20: KM3 Maturity</a>
+                </div>
+                <div class="dropdown-section">
+                  <h4>Part X: Science Behind the Metric</h4>
+                  <a href="{{ "/chapters/21-pricing-the-distributed-monolith.html" | relative_url }}">Ch 21: Pricing Granularity</a>
+                  <a href="{{ "/chapters/22-construct-validity.html" | relative_url }}">Ch 22: Trusting a Metric</a>
+                  <a href="{{ "/chapters/23-gaming-and-goodhart.html" | relative_url }}">Ch 23: Gaming and Goodhart</a>
                 </div>
               </div>
             </div>
@@ -299,6 +305,7 @@
             src.indexOf('diagrams/') !== -1 ||
             src.indexOf('cover-image') !== -1 ||
             src.indexOf('microservices-animation') !== -1 ||
+            src.indexOf('hero-transformation') !== -1 ||
             img.classList.contains('book-cover-img') ||
             img.classList.contains('book-hero-gif');
           if (!zoomable) return;

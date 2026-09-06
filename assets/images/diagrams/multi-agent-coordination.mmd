@@ -1,0 +1,17 @@
+graph LR
+    subgraph Orch["Orchestrator"]
+        O[Planner agent] --> A[Specialist A]
+        O --> B[Specialist B]
+        O --> C[Specialist C]
+    end
+
+    subgraph Peer["Peers"]
+        P1[Agent A] --- P2[Agent B]
+        P2 --- P3[Agent C]
+        P3 --- P1
+    end
+
+    style O fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style P1 fill:#e1f5ff,stroke:#1565c0
+    style P2 fill:#e1f5ff,stroke:#1565c0
+    style P3 fill:#e1f5ff,stroke:#1565c0

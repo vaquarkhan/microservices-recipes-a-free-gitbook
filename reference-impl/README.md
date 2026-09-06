@@ -10,7 +10,7 @@
 1. Accepts **static** complexity signals (LOC, complexity score).  
 2. Mines **temporal coupling** from git log co-change (semantic distinctness proxy).  
 3. Accepts **runtime** kinetic efficiency from a simple JSON trace summary.  
-4. Computes RVx using the Chapter 3 power form with defaults \(\beta=1.2\), \(\alpha=0.8\), \(\varepsilon=0.1\).
+4. Computes published RVx using the Chapter 11 power form, then squash: \(\mathrm{RVx}=\mathrm{raw}/(1+\mathrm{raw})\), defaults \(\beta=1.2\), \(\alpha=0.8\), \(\varepsilon=0.1\).
 
 ## What this MVP does not do
 

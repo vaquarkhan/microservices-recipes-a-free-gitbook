@@ -1,45 +1,23 @@
 sequenceDiagram
-    participant App as Application
-    participant DB as Database
-    participant Queue as Message Queue
-    participant Consumer as Event Consumer
-    
-    Note over App,Consumer: Dual Write Anti-Pattern: Why It Fails
-    
+    participant App
+    participant DB
+    participant Broker
+
     rect rgb(255, 235, 238)
-        Note over App,Consumer: Scenario 1: Database Success, Queue Failure
-        App->>DB: 1. Save Order
-        DB-->>App: ✅ Success
-        App->>Queue: 2. Publish OrderCreated Event
-        Queue-->>App: ❌ Network Timeout
-        Note over App,Consumer: Result: Order exists but no event published<br/>Downstream services never notified
+        Note over App,Broker: Dual write: the gap
+        App->>DB: Save order
+        DB-->>App: Committed
+        App->>Broker: Publish OrderCreated
+        Broker-->>App: Timeout / crash
+        Note over App: Zombie: order exists, no event
     end
-    
-    rect rgb(255, 243, 224)
-        Note over App,Consumer: Scenario 2: Queue Success, Database Failure
-        App->>Queue: 1. Publish OrderCreated Event
-        Queue-->>App: ✅ Success
-        Consumer->>Queue: Event consumed immediately
-        App->>DB: 2. Save Order
-        DB-->>App: ❌ Database Error
-        Note over App,Consumer: Result: Event published but order doesn't exist<br/>Phantom order processed downstream
-    end
-    
+
     rect rgb(232, 245, 233)
-        Note over App,Consumer: Solution: Transactional Outbox Pattern
-        App->>DB: BEGIN TRANSACTION
-        App->>DB: 1. Save Order
-        App->>DB: 2. Save Event to Outbox Table
-        App->>DB: COMMIT TRANSACTION
-        
-        loop Outbox Processor
-            Note over DB,Queue: Separate Process/Lambda
-            DB->>Queue: 3. Publish events from Outbox
-            DB->>DB: 4. Mark events as published
-        end
-        
-        Consumer->>Queue: 5. Consume event safely
-        Note over App,Consumer: Result: Atomic write + Guaranteed event delivery
+        Note over App,Broker: Outbox: one local transaction
+        App->>DB: BEGIN
+        App->>DB: INSERT order
+        App->>DB: INSERT outbox event
+        App->>DB: COMMIT
+        Note over DB: Relay publishes later
+        DB->>Broker: OrderCreated
     end
-    
-    Note over App,Consumer: VaquarKhan (Khan) Protocol Mandate:<br/>Never use dual writes for critical business events<br/>Always use Transactional Outbox or Event Sourcing

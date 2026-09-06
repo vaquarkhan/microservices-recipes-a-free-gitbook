@@ -1,0 +1,15 @@
+graph LR
+    subgraph Before["Two services"]
+        S1[Orders] -->|chatty sync| S2[Inventory]
+    end
+
+    subgraph After["One deployable"]
+        M1[Orders module] -->|in-process| M2[Inventory module]
+    end
+
+    Before --> After
+
+    style S1 fill:#ffcdd2,stroke:#c62828
+    style S2 fill:#ffcdd2,stroke:#c62828
+    style M1 fill:#c8e6c9,stroke:#2e7d32
+    style M2 fill:#c8e6c9,stroke:#2e7d32

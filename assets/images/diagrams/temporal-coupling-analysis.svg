@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="580" viewBox="0 0 980 580" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">Temporal coupling analysis</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="960" height="560" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Temporal coupling analysis</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Recipe 1.1 reads commits exploratorily. Chapter 11 publishes S from merged PRs.</text>
+  <rect x="28.0" y="88.0" width="300.0" height="200.0" rx="14" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1"  />
+<text x="44.0" y="110.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Git history, not the whiteboard</text>
+<rect x="48.0" y="122.0" width="260.0" height="70.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M60.0 123.0 h236.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="178.0" y="148.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >git log --numstat</text>
+<text x="178.0" y="168.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >who changed with whom</text>
+<rect x="48.0" y="210.0" width="260.0" height="64.0" rx="10" fill="#f4ecdc" stroke="#c4a574" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M60.0 211.0 h236.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="178.0" y="236.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Pair scoring</text>
+<text x="178.0" y="256.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Jaccard = together / either</text>
+<line x1="178.0" y1="194.0" x2="178.0" y2="202.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="360.0" y="100.0" width="280.0" height="120.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M372.0 101.0 h256.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="500.0" y="126.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Red · above ~0.7</text>
+<text x="500.0" y="146.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >CartService ↔ PricingService</text>
+<text x="500.0" y="161.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >keep in one context</text>
+<rect x="360.0" y="240.0" width="280.0" height="120.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M372.0 241.0 h256.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="500.0" y="266.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Amber · 0.2 to 0.7</text>
+<text x="500.0" y="286.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >investigate: real rule</text>
+<text x="500.0" y="301.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >or a dependency magnet?</text>
+<rect x="360.0" y="380.0" width="280.0" height="120.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M372.0 381.0 h256.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="500.0" y="406.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Green · below ~0.2</text>
+<text x="500.0" y="426.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >evolve independently</text>
+<text x="500.0" y="441.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >safer to separate</text>
+<line x1="309.1" y1="240.3" x2="355.7" y2="166.8" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="309.3" y1="243.5" x2="354.7" y2="294.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="308.5" y1="243.9" x2="358.0" y2="432.3" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="680.0" y="110.0" width="270.0" height="100.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M692.0 111.0 h246.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="815.0" y="136.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Do not split</text>
+<text x="815.0" y="156.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >would create lock-step deploys</text>
+<rect x="680.0" y="250.0" width="270.0" height="100.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M692.0 251.0 h246.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="815.0" y="276.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inspect first</text>
+<text x="815.0" y="296.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >break up utils / constants</text>
+<text x="815.0" y="311.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >before drawing a boundary</text>
+<rect x="680.0" y="390.0" width="270.0" height="100.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M692.0 391.0 h246.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="815.0" y="416.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Candidate seam</text>
+<text x="815.0" y="436.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >still name an honest reason</text>
+<line x1="642.0" y1="160.0" x2="672.0" y2="160.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="642.0" y1="300.0" x2="672.0" y2="300.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="642.0" y1="440.0" x2="672.0" y2="440.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="28.0" y="562.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="font-style:italic;" >Exploratory commit pairing here. Published S in Chapter 11 uses change sets (merged PRs), not raw commits.</text>
+</svg>

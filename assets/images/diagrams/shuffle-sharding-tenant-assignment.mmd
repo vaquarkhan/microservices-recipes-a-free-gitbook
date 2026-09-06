@@ -1,37 +1,21 @@
-graph TB
-    subgraph ShardPool["Shard universe S = {1..n}"]
-        S1["Shard S1"]
-        S2["Shard S2"]
-        S3["Shard S3"]
-        S4["Shard S4"]
-        S5["Shard S5"]
-        S6["Shard S6"]
+graph LR
+    subgraph A["Tenant A"]
+        A3[3]
+        A17[17]
+        A40[40]
     end
+    subgraph B["Tenant B"]
+        B8[8]
+        B17[17]
+        B52[52]
+    end
+    A17 --- X[Shared: 17]
+    B17 --- X
 
-    T1["Tenant A<br/>A(t) = {S1, S3, S5}<br/>k = 3"]
-    T2["Tenant B<br/>A(u) = {S2, S3, S6}<br/>k = 3"]
-    T3["Tenant C<br/>A(v) = {S1, S4, S6}<br/>k = 3"]
-
-    T1 --- S1
-    T1 --- S3
-    T1 --- S5
-    T2 --- S2
-    T2 --- S3
-    T2 --- S6
-    T3 --- S1
-    T3 --- S4
-    T3 --- S6
-
-    Note["Thin intersection:<br/>only S3 shared by A and B"]
-    S3 -.-> Note
-
-    style S1 fill:#e8f4fc,stroke:#3498db
-    style S2 fill:#e8f4fc,stroke:#3498db
-    style S3 fill:#fff3cd,stroke:#f39c12,stroke-width:3px
-    style S4 fill:#e8f4fc,stroke:#3498db
-    style S5 fill:#e8f4fc,stroke:#3498db
-    style S6 fill:#e8f4fc,stroke:#3498db
-    style T1 fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style T2 fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style T3 fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style Note fill:#f8f9fa,stroke:#6c757d
+    style A17 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style B17 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style X fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style A3 fill:#e1f5ff,stroke:#1565c0
+    style A40 fill:#e1f5ff,stroke:#1565c0
+    style B8 fill:#e1f5ff,stroke:#1565c0
+    style B52 fill:#e1f5ff,stroke:#1565c0

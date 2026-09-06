@@ -10,9 +10,19 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 
 ---
 
-## [Unreleased]
+## [2.1.0] - 2026-09-06
 
-- Chapters 12 to 20 and new diagram assets (local working tree; not yet in a release commit unless you add them).
+### Added
+- Chapters 21–23 (cost, construct validity, Goodhart).
+- Editorial SVG figures, cover, and hero art for GitHub Pages.
+- `tools/render_book_svgs.py` to regenerate diagrams in the atelier palette.
+
+### Changed
+- Front matter, preview, glossary, and quick reference aligned to 23 chapters and Chapter 11 as formula source of truth.
+- Recipe corrections: Kinesis Base64 JMESPath, Step Functions human-approval timeouts, API Gateway authorizer helpers, OTel Contrib note, Recipe 1.1 commit-vs-PR caveat.
+
+### Removed
+- Invented preview structure (Khan Protocol in Chapter 8, Nano-Swarm 0.3/0.6 bands, 20-chapter teaser, placeholder ISBN).
 
 ---
 

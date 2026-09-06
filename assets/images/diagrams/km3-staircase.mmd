@@ -1,0 +1,17 @@
+graph BT
+    L5[5 Self-correcting]
+    L4[4 Portfolio-managed]
+    L3[3 Governed]
+    L2[2 Instrumented]
+    L1[1 Ad hoc]
+
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+
+    style L1 fill:#eeeeee,stroke:#616161
+    style L2 fill:#e1f5ff,stroke:#1565c0
+    style L3 fill:#fff9c4,stroke:#f57f17
+    style L4 fill:#ffe0b2,stroke:#ef6c00
+    style L5 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px

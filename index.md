@@ -2,13 +2,13 @@
 
 <span class="book-edition-kicker">The Architect's Field Guide</span>
 
-![Book Cover](assets/images/cover-image-1.png){:.book-cover-img}
+![Book Cover](assets/images/cover-image-1.svg){:.book-cover-img}
 
 **Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 *by **Viquar Khan***
 
-**Version 2.0** - *Adaptive Granularity Governance Edition* (January 2026)
+**Version 2.1** — *23-chapter science edition* (September 2026)
 
 [Start reading →](chapters/01-introduction-to-microservices.md){: .book-cta} · [Preface](PREFACE.md) · [Author](AUTHOR.md)
 
@@ -23,6 +23,7 @@
 - **Author**: Vaquar Khan
 - **First Edition**: January 2017
 - **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
+- **Version 2.1**: September 6, 2026 (23-chapter science edition)
 - **Publisher**: Open Source (GitHub)
 - **Code license**: MIT
 - **Prose and figures**: CC BY-NC-ND 4.0
@@ -46,9 +47,9 @@ This work is protected by copyright law. Unauthorized reproduction, distribution
 
 ## 🎓 **Academic & Research Access**
 
-**📚 Complete 20-Chapter Edition**
+**📚 Complete 23-Chapter Edition**
 
-This open-source edition includes all **20 chapters**. Additional academic licensing and citation guidance remain available for students, faculty, and researchers.
+This open-source edition includes all **23 chapters**, including the three closing chapters on cost, construct validity, and Goodhart. Additional academic licensing and citation guidance remain available for students, faculty, and researchers.
 
 **[📧 Request Academic Access / Mentorship](FREE-ACCESS.md)** | **[📖 View Citations Guide](CITATIONS.md)** | **[📜 Version History](VERSION-HISTORY.md)**
 
@@ -60,7 +61,7 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 ## 🌐 **From Monolith to Microservices**
 
-![Microservices Transformation](assets/images/microservices-animation.gif){:.book-hero-gif}
+![Microservices Transformation](assets/images/hero-transformation.svg){:.book-hero-gif}
 
 *Visualizing the transformation journey with **Adaptive Granularity Governance: The Khan Microservice Pattern***
 
@@ -80,7 +81,7 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Metric | Value |
 |--------|-------|
-| **Chapters** | 20 comprehensive chapters |
+| **Chapters** | 23 chapters, Parts I–X |
 | **Read Time** | ~15 hours total |
 | **Code Examples** | 50+ practical implementations |
 | **Patterns** | 25+ architectural patterns |
@@ -93,7 +94,7 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 ### 🔰 For Beginners
 1. [Start with Chapter 1](chapters/01-introduction-to-microservices.md)
 2. [Read the Preface](PREFACE.md)
-3. Progress through Parts I → IX
+3. Progress through Parts I → X
 
 ### ⚡ For Experienced Practitioners
 1. Review the Table of Contents below
@@ -113,7 +114,7 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 - [📖 **Preface**](PREFACE.md) - The Architect's Mandate
 - [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Governance: The Khan Microservice Pattern
 - [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
-- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 20-Chapter Edition for Students & Researchers
+- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Complete 23-Chapter Edition for Students & Researchers
 - [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
 - [📜 **Version History**](VERSION-HISTORY.md) - Release Lineage & Evolution
 - [📜 **Copyright Notice**](COPYRIGHT.md) - Complete Copyright & Legal Information
@@ -127,9 +128,9 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 1](chapters/01-introduction-to-microservices.md)** | The Definition Wars & The Reality of SOA | 📖 15 min | 🎯 Intermediate |
-| **[Chapter 2](chapters/02-design-principles-and-patterns.md)** | The Distributed Monolith and Anti Patterns | 📖 25 min | 🎯 Advanced |
-| **[Chapter 3](chapters/03-service-communication.md)** | Strategic Decomposition: Domain Driven Design | 📖 20 min | 🎯 Advanced |
+| **[Chapter 1](chapters/01-introduction-to-microservices.md)** | Earned Boundaries, Not Fashionable Ones | 📖 35 min | 🎯 Intermediate |
+| **[Chapter 2](chapters/02-design-principles-and-patterns.md)** | The Distributed Monolith: Diagnosis and First Remedies | 📖 40 min | 🎯 Advanced |
+| **[Chapter 3](chapters/03-service-communication.md)** | Decouple the Language Before You Decouple the Code | 📖 40 min | 🎯 Advanced |
 
 ---
 
@@ -138,10 +139,10 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 4](chapters/04-data-management.md)** | The End of ACID | 📖 30 min | 🎯 Expert |
-| **[Chapter 5](chapters/05-deployment-and-operations.md)** | Distributed Transactions (The Saga Pattern) | 📖 25 min | 🎯 Expert |
-| **[Chapter 6](chapters/06-resilience-and-reliability.md)** | The Dual Write Problem | 📖 20 min | 🎯 Advanced |
-| **[Chapter 7](chapters/07-security.md)** | Data Mesh vs. Data Fabric | 📖 18 min | 🎯 Advanced |
+| **[Chapter 4](chapters/04-data-management.md)** | The End of ACID | 📖 45 min | 🎯 Expert |
+| **[Chapter 5](chapters/05-deployment-and-operations.md)** | The Consistency Tax of Spanning Services | 📖 45 min | 🎯 Expert |
+| **[Chapter 6](chapters/06-resilience-and-reliability.md)** | Close the Dual Write, Then Survive Failure | 📖 45 min | 🎯 Expert |
+| **[Chapter 7](chapters/07-security.md)** | Every Hop Is a Door. Prove Who Is Knocking. | 📖 50 min | 🎯 Expert |
 
 ---
 
@@ -150,9 +151,9 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 8](chapters/08-monitoring-and-observability.md)** | The Trinity of Protocols | 📖 22 min | 🎯 Advanced |
-| **[Chapter 9](chapters/09-testing-strategies.md)** | The Rise of eBPF Networking and the Post Sidecar Era | 📖 28 min | 🎯 Expert |
-| **[Chapter 10](chapters/10-asynchronous-messaging-patterns.md)** | Asynchronous Messaging Patterns | 📖 30 min | 🎯 Expert |
+| **[Chapter 8](chapters/08-monitoring-and-observability.md)** | You Cannot Attach a Debugger. Emit the Evidence First. | 📖 50 min | 🎯 Expert |
+| **[Chapter 9](chapters/09-testing-strategies.md)** | There Is No Whole System to Test. Test the Agreements. | 📖 50 min | 🎯 Expert |
+| **[Chapter 10](chapters/10-asynchronous-messaging-patterns.md)** | Publish What Happened. Do Not Wait. | 📖 50 min | 🎯 Expert |
 
 ---
 
@@ -161,7 +162,7 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | Adaptive Granularity Governance: The Khan Microservice Pattern - Origin, Metrics, and Maturity Model | 📖 45 min | 🎯 Expert |
+| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | A Boundary Earns Its Keep Only When All Three Hold | 📖 70 min | 🎯 Expert |
 
 ---
 
@@ -170,8 +171,8 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 12](chapters/12-shuffle-sharding.md)** | Shuffle Sharding & Blast-Radius Minimization | 📖 55 min | 🎯 Expert |
-| **[Chapter 13](chapters/13-chaos-engineering.md)** | Chaos Engineering & Evidence-Based Resilience | 📖 60 min | 🎯 Expert |
+| **[Chapter 12](chapters/12-shuffle-sharding.md)** | A Single Bad Shard Should Be a Footnote | 📖 55 min | 🎯 Expert |
+| **[Chapter 13](chapters/13-chaos-engineering.md)** | Break It on Purpose. Watch. Then You Know. | 📖 55 min | 🎯 Expert |
 
 ---
 
@@ -180,8 +181,8 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | Infrastructure as Code at Scale | 📖 58 min | 🎯 Expert |
-| **[Chapter 15](chapters/15-observability-2.md)** | Observability 2.0: Telemetry, Causality, and Cost | 📖 62 min | 🎯 Expert |
+| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | The Definition Is the Truth. Reality Is Reconciled Toward It. | 📖 55 min | 🎯 Expert |
+| **[Chapter 15](chapters/15-observability-2.md)** | Spend the Budget on Answers. Stay Sighted When It Counts. | 📖 55 min | 🎯 Expert |
 
 ---
 
@@ -190,8 +191,8 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | Agentic AI Architectures in Deterministic Systems | 📖 58 min | 🎯 Expert |
-| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval-Augmented Generation at Scale | 📖 60 min | 🎯 Expert |
+| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | The Model Proposes. The Executor Disposes. | 📖 55 min | 🎯 Expert |
+| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval as a Data-Plane Discipline, Not a Prompt Trick | 📖 55 min | 🎯 Expert |
 
 ---
 
@@ -200,8 +201,8 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 18](chapters/18-modular-monolith.md)** | The Modular Monolith | 📖 55 min | 🎯 Expert |
-| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | The Strangler Fig Pattern | 📖 55 min | 🎯 Expert |
+| **[Chapter 18](chapters/18-modular-monolith.md)** | The Right Number of Services Is Often One. | 📖 55 min | 🎯 Expert |
+| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | Replace It While It Is Still Running. | 📖 55 min | 🎯 Expert |
 
 ---
 
@@ -210,7 +211,18 @@ This open-source edition includes all **20 chapters**. Additional academic licen
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
-| **[Chapter 20](chapters/20-km3-maturity-model.md)** | The Khan Microservices Maturity Model (KM3) | 📖 50 min | 🎯 Expert |
+| **[Chapter 20](chapters/20-km3-maturity-model.md)** | Has This Organization Earned the Right to Distribute? | 📖 50 min | 🎯 Expert |
+
+---
+
+### 📐 **Part X: The Science Behind the Metric**
+*Focus: Cost, construct validity, and keeping a gating metric honest*
+
+| Chapter | Title | Read Time | Difficulty |
+|---------|-------|-----------|------------|
+| **[Chapter 21](chapters/21-pricing-the-distributed-monolith.md)** | Price the Waste. Name the Rest. Do Not Invent a Total. | 📖 50 min | 🎯 Expert |
+| **[Chapter 22](chapters/22-construct-validity.md)** | A Formula Confers No Truth. Outcomes Do. | 📖 50 min | 🎯 Expert |
+| **[Chapter 23](chapters/23-gaming-and-goodhart.md)** | Never Point the Number at the People. | 📖 50 min | 🎯 Expert |
 
 ---
 
@@ -278,4 +290,4 @@ If you find this resource valuable:
 
 ---
 
-<small>Last Updated: February 11, 2026 | Original work by Viquar Khan</small>
+<small>Last Updated: September 6, 2026 | Version 2.1 | Original work by Viquar Khan</small>

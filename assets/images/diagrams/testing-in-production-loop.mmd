@@ -1,0 +1,17 @@
+flowchart LR
+    H[Hypothesis] --> X[Expose a small slice]
+    X --> O[Observe SLIs vs control]
+    O --> D{Within bounds?}
+    D -->|yes| W[Widen or keep]
+    D -->|no| R[Withdraw immediately]
+    W --> L[Learn]
+    R --> L
+    L --> H
+
+    style H fill:#e1f5ff,stroke:#1565c0
+    style X fill:#fff9c4,stroke:#f57f17
+    style O fill:#e1f5ff,stroke:#1565c0
+    style D fill:#ffe0b2,stroke:#ef6c00
+    style R fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style W fill:#c8e6c9,stroke:#2e7d32
+    style L fill:#c8e6c9,stroke:#2e7d32

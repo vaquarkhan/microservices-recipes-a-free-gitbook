@@ -1,30 +1,19 @@
 graph TB
-    subgraph Monolith["Modular monolith — single deployable"]
-        OM["Orders module"]
-        IM["Inventory module"]
-        PM["Pricing module"]
+    subgraph App["One deployable"]
+        OM[Orders module]
+        IM[Inventory module]
     end
 
-    subgraph Aurora["Amazon Aurora cluster"]
-        OS["orders_schema<br/>role: orders_app"]
-        IS["inventory_schema<br/>role: inventory_app"]
-        PS["pricing_schema<br/>role: pricing_app"]
+    subgraph DB["Shared engine"]
+        OS[orders schema]
+        IS[inventory schema]
     end
 
-    OM --> OS
-    IM --> IS
-    PM --> PS
+    OM -->|orders_app grants| OS
+    IM -->|inventory_app grants| IS
+    OM -.->|blocked JOIN| IS
 
-    OM -.->|forbidden JOIN| IS
-    OM -->|domain events / public API| IM
-
-    ACL["ArchUnit CI<br/>blocks cross-module imports"]
-
-    OM --- ACL
-    IM --- ACL
-
-    style Monolith fill:#e8f4fc,stroke:#3498db,stroke-width:2px
-    style OS fill:#d5e8d4,stroke:#82b366
-    style IS fill:#d5e8d4,stroke:#82b366
-    style PS fill:#d5e8d4,stroke:#82b366
-    style ACL fill:#fff3cd,stroke:#f39c12,stroke-width:2px
+    style OS fill:#c8e6c9,stroke:#2e7d32
+    style IS fill:#c8e6c9,stroke:#2e7d32
+    style OM fill:#e1f5ff,stroke:#1565c0
+    style IM fill:#e1f5ff,stroke:#1565c0

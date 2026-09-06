@@ -44,9 +44,9 @@ body {
   font-family: var(--body-font);
   background-color: var(--desk-deep);
   background-image:
-    linear-gradient(180deg, rgba(18, 40, 51, 0.72), rgba(18, 40, 51, 0.88)),
-    url("../images/atelier-desk.jpg");
-  background-size: cover;
+    radial-gradient(ellipse at 20% 0%, rgba(196, 165, 116, 0.14), transparent 42%),
+    radial-gradient(ellipse at 90% 80%, rgba(154, 107, 63, 0.1), transparent 38%),
+    linear-gradient(180deg, #1b3a4b 0%, #122833 55%, #0e1f28 100%);
   background-attachment: fixed;
   background-position: center;
   line-height: 1.7;
@@ -454,7 +454,8 @@ body {
 .book-content img[src*="diagrams/"],
 .book-content img[src*="cover-image"],
 .book-content img.book-hero-gif,
-.book-content img[src*="microservices-animation"] {
+.book-content img[src*="microservices-animation"],
+.book-content img[src*="hero-transformation"] {
   cursor: zoom-in;
 }
 
@@ -643,7 +644,8 @@ body {
 }
 
 .book-content img.book-hero-gif,
-.book-content img[src*="microservices-animation"] {
+.book-content img[src*="microservices-animation"],
+.book-content img[src*="hero-transformation"] {
   max-width: min(100%, 560px);
   width: auto;
   height: auto;

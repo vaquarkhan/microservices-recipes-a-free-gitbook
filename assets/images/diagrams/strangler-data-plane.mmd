@@ -1,23 +1,14 @@
 flowchart TB
-    C["Clients"]
-    GW["API Gateway<br/>Strangler facade"]
-    NEW["New microservices<br/>Lambda / ECS"]
-    LEG["Legacy monolith<br/>private ALB"]
-    OUT["Transactional outbox"]
-    CDC["CDC / reconciliation"]
-    RM["Read models<br/>parity checks"]
+    C[Clients] --> G[Gateway]
+    G -->|matched| N[New system]
+    G -.->|catch-all| L[Legacy]
 
-    C --> GW
-    GW -->|matched routes| NEW
-    GW -->|greedy proxy| LEG
-    NEW --> OUT
-    LEG --> CDC
-    OUT --> RM
-    CDC --> RM
+    L --> CDC[CDC or outbox]
+    N --> OUT[Outbox]
+    CDC --> SYNC[Reconciliation]
+    OUT --> SYNC
 
-    style GW fill:#3498db,stroke:#2c3e50,color:#fff,stroke-width:2px
-    style NEW fill:#d5e8d4,stroke:#82b366,stroke-width:2px
-    style LEG fill:#f8cecc,stroke:#b85450,stroke-width:2px
-    style OUT fill:#fff9c4,stroke:#f39c12
-    style CDC fill:#fff9c4,stroke:#f39c12
-    style RM fill:#e8f4fc,stroke:#3498db
+    style G fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style N fill:#c8e6c9,stroke:#2e7d32
+    style L fill:#ffcdd2,stroke:#c62828
+    style SYNC fill:#e1f5ff,stroke:#1565c0

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">KM3 staircase</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="900" height="540" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">KM3 staircase</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Each step is gated by the one below it.</text>
+  <rect x="40.0" y="430.0" width="200.0" height="68.0" rx="10" fill="#f7f3eb" stroke="#ebe4d6" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M52.0 431.0 h176.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="140.0" y="456.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >1 Ad hoc</text>
+<text x="140.0" y="476.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >guessed boundaries</text>
+<rect x="150.0" y="350.0" width="230.0" height="68.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M162.0 351.0 h206.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="265.0" y="376.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >2 Instrumented</text>
+<text x="265.0" y="396.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >signals measured</text>
+<line x1="142.0" y1="429.8" x2="257.0" y2="418.8" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="270.0" y="270.0" width="250.0" height="68.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M282.0 271.0 h226.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="395.0" y="296.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >3 Governed</text>
+<text x="395.0" y="316.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >metric gates changes</text>
+<line x1="267.0" y1="349.8" x2="387.0" y2="338.7" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="400.0" y="190.0" width="270.0" height="68.0" rx="10" fill="#f4ecdc" stroke="#c4a574" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M412.0 191.0 h246.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="535.0" y="216.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >4 Portfolio-managed</text>
+<text x="535.0" y="236.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >estate investment</text>
+<line x1="397.0" y1="269.8" x2="527.0" y2="258.7" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<rect x="540.0" y="110.0" width="300.0" height="68.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M552.0 111.0 h276.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="690.0" y="136.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >5 Self-correcting</text>
+<text x="690.0" y="156.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >safety-gated loop</text>
+<line x1="537.0" y1="189.8" x2="682.0" y2="178.6" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="28.0" y="542.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="font-style:italic;" >A level cannot be claimed without the preconditions of the levels below it.</text>
+</svg>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520" role="img" aria-labelledby="figtitle">
+  <title id="figtitle">Dual-write problem and outbox</title>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#122833" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#122833" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#9a6b3f"/>
+    </marker>
+    <marker id="arrowDesk" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#1b3a4b"/>
+    </marker>
+    <marker id="arrowGood" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#2f6b55"/>
+    </marker>
+    <marker id="arrowBad" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#8b3a3a"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#3d5260"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="8" markerHeight="8" refX="6.2" refY="4" orient="auto">
+      <path d="M1 1.2 L6.4 4 L1 6.8 Z" fill="#b8860b"/>
+    </marker>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#f7f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#paperGrad)"/>
+  <rect x="10" y="10" width="960" height="500" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Dual-write problem and outbox</text>
+  <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Two writes are two failure domains. One local transaction is not.</text>
+  <rect x="28.0" y="84.0" width="924.0" height="190.0" rx="14" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1"  />
+<text x="44.0" y="106.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Dual write: the gap</text>
+<rect x="56.0" y="130.0" width="140.0" height="70.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M68.0 131.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="126.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >App</text>
+<text x="126.0" y="176.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Save order</text>
+<rect x="280.0" y="130.0" width="180.0" height="70.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M292.0 131.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="370.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Database</text>
+<text x="370.0" y="176.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Committed</text>
+<rect x="540.0" y="130.0" width="180.0" height="70.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M552.0 131.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="630.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Broker</text>
+<text x="630.0" y="176.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Timeout / crash</text>
+<rect x="760.0" y="130.0" width="160.0" height="70.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M772.0 131.0 h136.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="840.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Zombie</text>
+<text x="840.0" y="176.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >order exists, no event</text>
+<line x1="198.0" y1="165.0" x2="272.0" y2="165.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="198.0" y1="165.0" x2="532.0" y2="165.0" stroke="#8b3a3a" stroke-width="1.35" stroke-dasharray="5 4" marker-end="url(#arrowBad)" stroke-linecap="round"/>
+<text x="365.0" y="157.0" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >second write</text>
+<rect x="28.0" y="300.0" width="924.0" height="180.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
+<text x="44.0" y="322.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Outbox: one local transaction</text>
+<rect x="56.0" y="350.0" width="140.0" height="70.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M68.0 351.0 h116.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="126.0" y="376.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >App</text>
+<text x="126.0" y="396.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >BEGIN</text>
+<rect x="250.0" y="340.0" width="220.0" height="90.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M262.0 341.0 h196.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="360.0" y="366.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Database</text>
+<text x="360.0" y="386.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >INSERT order</text>
+<text x="360.0" y="401.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >INSERT outbox event</text>
+<text x="360.0" y="416.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >COMMIT</text>
+<rect x="530.0" y="350.0" width="180.0" height="70.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M542.0 351.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="620.0" y="376.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Relay</text>
+<text x="620.0" y="396.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >publishes later</text>
+<rect x="770.0" y="350.0" width="150.0" height="70.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M782.0 351.0 h126.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="845.0" y="376.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Broker</text>
+<text x="845.0" y="396.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >OrderCreated</text>
+<line x1="198.0" y1="385.0" x2="242.0" y2="385.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="472.0" y1="385.0" x2="522.0" y2="385.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<line x1="712.0" y1="385.0" x2="762.0" y2="385.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+</svg>

@@ -1,84 +1,24 @@
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','secondaryColor':'#fff','tertiaryColor':'#fff','fontSize':'16px'}}}%%
 graph LR
-    subgraph ORG["🏢 ORGANIZATIONAL STRUCTURE"]
-        direction TB
-        subgraph TEAM_FE["👥 Team A: Frontend"]
-            FE1["Frontend<br/>Developer"]
-            FE2["UI/UX<br/>Designer"]
-            FE3["Frontend<br/>Lead"]
-        end
-        
-        subgraph TEAM_BE["👥 Team B: Backend API"]
-            BE1["Backend<br/>Developer"]
-            BE2["API<br/>Architect"]
-            BE3["Backend<br/>Lead"]
-        end
-        
-        subgraph TEAM_DB["👥 Team C: Data Platform"]
-            DB1["Database<br/>Admin"]
-            DB2["Data<br/>Engineer"]
-            DB3["Platform<br/>Lead"]
-        end
-        
-        subgraph TEAM_DO["👥 Team D: DevOps"]
-            DO1["DevOps<br/>Engineer"]
-            DO2["Infrastructure<br/>Lead"]
-            DO3["Security<br/>Engineer"]
-        end
+    subgraph ORG["Organization"]
+        FE[Frontend team]
+        BE[Backend team]
+        DB[Database team]
     end
-    
-    subgraph SYS["⚙️ SYSTEM ARCHITECTURE MIRROR"]
-        direction TB
-        subgraph SYS_FE["🖥️ Frontend Layer"]
-            React["React<br/>SPA"]
-            Mobile["Mobile<br/>App"]
-            Web["Web<br/>Portal"]
-        end
-        
-        subgraph SYS_API["🔌 API Gateway Layer"]
-            Gateway["API<br/>Gateway"]
-            Auth["Auth<br/>Service"]
-            BFF["Backend for<br/>Frontend"]
-        end
-        
-        subgraph SYS_DATA["💾 Data Services Layer"]
-            UserDB[("User<br/>Database")]
-            Analytics[("Analytics<br/>DB")]
-            Cache[("Redis<br/>Cache")]
-        end
-        
-        subgraph SYS_INFRA["🔧 Infrastructure Layer"]
-            K8s["Kubernetes<br/>Cluster"]
-            Monitor["Monitoring<br/>Stack"]
-            CI["CI/CD<br/>Pipeline"]
-        end
+
+    subgraph SYS["Architecture that results"]
+        BFF[BFF service]
+        LOGIC[Business-logic service]
+        DATA[Data service + shared schema]
     end
-    
-    %% Conway's Law Connections - Team to System Mirror
-    FE3 -.->|"mirrors"| React
-    FE3 -.->|"mirrors"| Mobile
-    BE3 -.->|"mirrors"| Gateway
-    BE3 -.->|"mirrors"| Auth
-    DB3 -.->|"mirrors"| UserDB
-    DB3 -.->|"mirrors"| Analytics
-    DO2 -.->|"mirrors"| K8s
-    DO2 -.->|"mirrors"| Monitor
-    
-    %% System Communication Patterns
-    React -->|"API calls"| Gateway
-    Mobile -->|"API calls"| BFF
-    Gateway -->|"authenticates"| Auth
-    Auth -->|"queries"| UserDB
-    Gateway -->|"logs"| Analytics
-    
-    %% Styling with high contrast
-    classDef teamStyle fill:#FFE082,stroke:#F57C00,stroke-width:3px,color:#000,font-weight:bold
-    classDef systemStyle fill:#90CAF9,stroke:#1565C0,stroke-width:3px,color:#000,font-weight:bold
-    classDef dbStyle fill:#A5D6A7,stroke:#2E7D32,stroke-width:3px,color:#000,font-weight:bold
-    classDef infraStyle fill:#CE93D8,stroke:#6A1B9A,stroke-width:3px,color:#000,font-weight:bold
-    classDef mirrorConnection stroke:#E53935,stroke-width:3px,stroke-dasharray:8 4
-    
-    class FE1,FE2,FE3,BE1,BE2,BE3,DB1,DB2,DB3,DO1,DO2,DO3 teamStyle
-    class React,Mobile,Web,Gateway,Auth,BFF systemStyle
-    class UserDB,Analytics,Cache dbStyle
-    class K8s,Monitor,CI infraStyle
+
+    FE -->|"mirrors"| BFF
+    BE -->|"mirrors"| LOGIC
+    DB -->|"mirrors"| DATA
+    BFF --> LOGIC --> DATA
+
+    style FE fill:#FFE082,stroke:#F57C00,stroke-width:2px
+    style BE fill:#FFE082,stroke:#F57C00,stroke-width:2px
+    style DB fill:#FFE082,stroke:#F57C00,stroke-width:2px
+    style BFF fill:#90CAF9,stroke:#1565C0,stroke-width:2px
+    style LOGIC fill:#90CAF9,stroke:#1565C0,stroke-width:2px
+    style DATA fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px

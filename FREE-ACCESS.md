@@ -1,7 +1,7 @@
 ﻿# 🎓 Free Academic & Research Access
 
 **Microservices Recipes: The Architect's Field Guide**  
-*Complete Edition Available for Educational Use*
+*Complete 23-chapter edition, available for educational use*
 
 ---
 
@@ -89,11 +89,7 @@ To ensure publication success, emphasize:
 
 ### 🔬 Methodological Foundation & Validation
 
-The principles documented here are grounded in:
-- 10+ years of production-grade microservices orchestration
-- 50+ enterprise implementations across diverse global sectors
-- Systematic literature review of 200+ academic papers and industry benchmarks
-- Continuous peer validation via technical reviews and practitioner feedback
+The principles documented here are grounded in professional practice and in the evidence tiers stated in Chapter 11 and Chapter 22. I do not attach an invented count of enterprise implementations or papers to that claim. Cite the book; treat hypothesized results as hypothesized.
 
 ---
 

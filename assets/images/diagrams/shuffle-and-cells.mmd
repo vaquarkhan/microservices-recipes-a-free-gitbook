@@ -1,0 +1,15 @@
+graph TB
+    R[Request] --> CellPick[Cell by region or cohort]
+    CellPick --> C1[Cell]
+    CellPick --> C2[Other cells stay dark]
+    C1 --> SS[Tenant subset of k shards]
+    SS --> S1[Shard]
+    SS --> S2[Shard]
+    SS --> S3[Shard]
+
+    style C1 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style C2 fill:#eeeeee,stroke:#9e9e9e
+    style SS fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style S1 fill:#e1f5ff,stroke:#1565c0
+    style S2 fill:#e1f5ff,stroke:#1565c0
+    style S3 fill:#e1f5ff,stroke:#1565c0

@@ -1,206 +1,77 @@
-﻿# The Complete Microservices Architecture Guide
+﻿# Book Preview
 
 <div align="center">
-  <img src="assets/images/cover-image-1.png" alt="Microservices Recipes Book Cover" width="400"/>
-  
-  **Microservices Recipes: The Senior Architect's Field Guide**  
-  *By Viquar Khan*
+  <img src="assets/images/cover-image-1.svg" alt="Microservices Recipes book cover" width="360"/>
+
+  **Microservices Recipes: The Architect's Field Guide**  
+  *By Viquar Khan · Version 2.1 · 23 chapters*
 </div>
 
 ---
 
-## Introducing the Service Decomposition Workflow
+This page is a map of the book that is actually in the repository. It is not a teaser for a later paid edition. All **23 chapters** are here, on GitHub Pages and in the repo.
 
-### A Mathematically Rigorous Framework for Architectural Governance
+The spine is one argument: **a service boundary is worth deploying separately only when it earns its distributed cost.** Chapter 11 defines the measurement. Chapters 21–23 say what the measurement costs, whether it is valid, and how you keep it from being gamed.
 
-The **Khan Protocol** represents a mathematically rigorous framework for microservices architectural decision-making. Introduced throughout this book and formalized in Chapter 8, it provides quantitative guidance for the most critical architectural questions.
+## The method, without reprinting the formula
 
-### The Khan Index (RVx)
+**Adaptive Granularity Governance: The Khan Microservice Pattern** is the author's method for deciding service granularity with evidence instead of fashion. The RVx Index is the score at its centre. Chapter 11 is the only source of truth for the equation, the defaults, the squash, the bands, and the evidence tiers.
 
-```
-RVx = (Ê^β × Ŝ) / (L̂^α + ε)
-```
+Read a score as a check-engine light, not a high-score table:
 
-**Where:**
-- **Ê** (Kinetic Efficiency): Ratio of useful computation to total transaction time
-- **L̂** (Cognitive Load): Normalized complexity from static analysis
-- **Ŝ** (Semantic Distinctness): Independence measured via temporal coupling
-- **α, β**: Tuning parameters (default: α=1.2, β=0.8)
-- **ε**: Stability constant (default: 0.1)
+| Band | Meaning |
+|------|---------|
+| **> 0.7** | Healthy on the declared profile; still publish the three components |
+| **0.4–0.7** | At-risk; diagnose which signal is weak |
+| **< 0.4** | The boundary is not earning its keep |
 
-### Four Architectural Zones
+Older drafts and slides sometimes swapped α and β, used bands at 0.3 / 0.6, or named a "Nano-Swarm zone." Discard those. If a preview page restates the formula, it is already out of date.
 
-1. **Zone I - Nano-Swarm** (RVx ≤ 0.3): MERGE - Network tax exceeds value
-2. **Zone II - God Services** (L̂ > 0.7): SPLIT - Cognitive overload
-3. **Zone III - Distributed Monolith** (Ŝ ≤ 0.4): REFACTOR - Wrong boundaries
-4. **Zone IV - Khan Optimum** (RVx > 0.6): MAINTAIN - Balanced architecture
+## What the book actually contains
 
-### Implementation and Measurement
+### Part I — The sociotechnical substrate (Chapters 1–3)
+- **Chapter 1.** Earned boundaries, not fashionable ones. SOA inverted. Temporal coupling from Git.
+- **Chapter 2.** The distributed monolith: diagnosis, Conway, Team APIs, first remedies.
+- **Chapter 3.** Strategic DDD: bounded contexts, context maps, Event Storming. The filename still says "service communication." The chapter is about language.
 
-The Khan Protocol is fully implemented in Chapter 8 with:
-- **Measurement protocols** using OpenTelemetry, SonarQube, and Git analysis
-- **Python implementation** with complete code examples
-- **Organizational calibration guidance** for tuning parameters
-- **Integration with observability platforms** (Grafana, DataDog, New Relic)
+### Part II — Data architecture (Chapters 4–7)
+- **Chapter 4.** The end of ACID. CAP/PACELC, ownership, listen-to-yourself.
+- **Chapter 5.** Sagas and the consistency tax. The filename still says "deployment."
+- **Chapter 6.** Close the dual write, then survive failure. Outbox, timeouts, breakers.
+- **Chapter 7.** Security. Every hop is a door. Not Data Mesh. Recipe 7.1 is a gateway JWT authorizer.
 
-**Note**: The protocol is theoretically sound but requires empirical validation through pilot studies. Organizations implementing it should calibrate parameters based on their specific context and share results to build collective knowledge.
+### Part III — Evidence between processes (Chapters 8–10)
+- **Chapter 8.** Observability as the evidence you emit first.
+- **Chapter 9.** Test the agreements. Contracts, not a fictional whole-system suite.
+- **Chapter 10.** Publish what happened. Backpressure, poison, claim check.
 
-### Why It Matters
+### Part IV — The Khan Microservice Pattern (Chapter 11)
+Fulcrum, RVx, SCS, KM3 introduction, honesty tiers. This is the definition chapter.
 
-**Before Khan:**
-- Architectural decisions based on intuition
-- No quantitative framework for service granularity
-- Distributed monoliths discovered only after deployment
+### Part V — Resilience and scale (Chapters 12–13)
+Shuffle sharding inside cells. Chaos with an abort outside the blast radius.
 
-**After Khan:**
-- Data-driven architectural governance
-- Measurable thresholds for merge/split decisions
-- Continuous monitoring of architectural health
+### Part VI — Platform engineering (Chapters 14–15)
+IaC as desired state. Observability 2.0: wide events, tail sampling, eBPF as a cross-check.
 
----
+### Part VII — The AI frontier (Chapters 16–17)
+The model proposes; the executor disposes. RAG as a data-plane discipline with ACL prefilter.
 
-## What You've Read: The Foundation (Chapters 1-10)
+### Part VIII — Migration (Chapters 18–19)
+Modular monolith first. Strangler fig while the system is still running.
 
-### Part I: The Sociotechnical Substrate (Chapters 1-3)
-- Organization and architecture alignment, distributed monolith avoidance, Domain-Driven Design
+### Part IX — Organizational maturity (Chapter 20)
+KM3 assessment: Ad hoc → Instrumented → Governed → Portfolio-managed → Self-correcting. Not a badge race.
 
-### Part II: The Distributed Data Problem (Chapters 4-7)
-- Data consistency, Saga pattern, Transactional Outbox, Data Mesh vs. Fabric
+### Part X — The science behind the metric (Chapters 21–23)
+Price wasted time without inventing a dollar total. Construct validity and evidence tiers. Tamper-evidence and the rule that the metric never evaluates people.
 
-### Part III: The Communication Layer (Chapters 8-10)
-- Protocol selection, eBPF networking, asynchronous messaging with Khan Protocol
+## How to read it
 
----
+- [Start at Chapter 1](chapters/01-introduction-to-microservices.md)
+- [Preface](PREFACE.md)
+- [Chapter 11, the formula](chapters/11-khan-pattern-deep-dive.md)
+- [Quick reference](reference/quick-reference.md)
+- [Glossary](reference/glossary.md)
 
-## What Awaits: Advanced Chapters (11-20)
-
-### Part IV: Resilience Engineering & Advanced Scaling
-
-#### Chapter 11: Cell-Based Architecture
-**The AWS Pattern for Infinite Scale**
-
-Learn how Amazon achieves fault isolation at massive scale through cellular architecture. Discover routing cells, data cells, compute cells, and the mathematics of 99.999% availability.
-
-**Key Recipe**: Multi-region cellular architecture with automatic failover using Terraform and AWS CDK.
-
----
-
-#### Chapter 12: Shuffle Sharding
-**The Secret Weapon Against Cascading Failures**
-
-Master the advanced isolation technique that prevents noisy neighbors from destroying your system. Learn shuffle sharding mathematics, implementation strategies, and AWS native solutions.
-
-**Key Recipe**: Implementing shuffle sharding for multi-tenant SaaS with Python and Redis.
-
----
-
-#### Chapter 13: Chaos Engineering
-**Embracing Failure as a Design Principle**
-
-Move beyond hope-driven reliability to engineered resilience. From Netflix's Chaos Monkey to AWS Fault Injection Simulator, learn how to build systems that survive real-world chaos.
-
-**Key Recipe**: Building a chaos engineering pipeline with AWS FIS, Lambda, and EventBridge.
-
----
-
-#### Chapter 14: Infrastructure as Code (IaC) at Scale
-**Managing the Microservice Singularity**
-
-Solve the operational complexity explosion with Terraform at scale, AWS CDK patterns, GitOps, and Policy as Code using OPA and AWS Config.
-
-**Key Recipe**: Self-service platform with Terraform modules, AWS Service Catalog, and internal developer portals.
-
----
-
-#### Chapter 15: Observability 2.0
-**From Telemetry to Understanding**
-
-Transcend traditional monitoring with OpenTelemetry deep dive, distributed tracing at scale, Khan Index dashboards, and AI-powered anomaly detection.
-
-**Key Recipe**: Complete observability stack with OpenTelemetry, Grafana, Loki, and Tempo on EKS.
-
----
-
-### Part VI: The AI Frontier (2026 Edition)
-
-#### Chapter 16: Agentic AI Architectures
-**Integrating Probabilistic AI into Deterministic Systems**
-
-Navigate the transition from deterministic microservices to probabilistic AI agents. Learn multi-agent orchestration, prompt engineering at scale, and handling AI non-determinism.
-
-**Key Recipe**: Customer service AI agent system with Amazon Bedrock, Lambda, and DynamoDB.
-
----
-
-#### Chapter 17: RAG at Scale
-**From Demo to Distributed System**
-
-Transform toy RAG implementations into production-grade systems. Master vector database selection, chunking strategies, hybrid search, and the complete RAG pipeline.
-
-**Key Recipe**: Production RAG system with Amazon Bedrock Knowledge Bases, OpenSearch, and Lambda.
-
----
-
-### Part VII: The Migration Playbook
-
-#### Chapter 18: The Modular Monolith
-**The Great Consolidation of 2026**
-
-Understand when microservices are the wrong choice. Learn modular monolith patterns, the Khan decision matrix, and safe consolidation strategies.
-
-**Key Recipe**: Refactoring microservices into a modular monolith using Spring Modulith and Kotlin.
-
----
-
-#### Chapter 19: The Strangler Fig Pattern
-**Incrementally Migrating from Legacy Systems**
-
-Master the only proven pattern for safely migrating monoliths. Learn routing strategies, data migration patterns, and risk management.
-
-**Key Recipe**: Strangler fig migration using AWS App Mesh, Lambda, and DynamoDB Streams.
-
----
-
-### Part VIII: The Maturity Framework
-
-#### Chapter 20: The Microservices Maturity Assessment
-**Measuring Architectural Evolution**
-
-Assess and improve your microservices maturity with a comprehensive quantitative framework. Five maturity levels, assessment dimensions, and improvement roadmaps.
-
-**Key Recipe**: Automated maturity assessment dashboard with CloudWatch metrics and QuickSight.
-
----
-
-## How to Get the Full Book
-
-<div align="center">
-  <img src="assets/images/cover-image-2.png" alt="Full Book Preview" width="300"/>
-</div>
-
-### Free Edition (Chapters 1-10)
-Available on GitHub: [github.com/vaquarkhan/microservices-recipes-a-free-gitbook](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
-
-**Includes:**
-- Complete Khan Protocol documentation
-- All 10 foundation chapters
-- 30+ professional diagrams
-- Full access to community discussions
-
-### Full Edition (Chapters 1-20)
-**Coming Soon - 2026**
-
-**What You Get:**
-- All 20 chapters (350+ pages)
-- Advanced patterns (Cell-Based Architecture, Shuffle Sharding, Chaos Engineering)
-- AI integration patterns (Agentic AI, RAG at Scale)
-- Migration playbooks (Modular Monolith, Strangler Fig)
-- Microservices Maturity Assessment
-
----
-
-## Stay Connected
-
-- **LinkedIn**: [linkedin.com/in/vaquar-khan-b695577](https://www.linkedin.com/in/vaquar-khan-b695577/)
-- **GitHub**: [github.com/vaquarkhan](https://github.com/vaquarkhan)
-- **Free Mentorship**: [adplist.org/mentors/vaquar-khan](https://adplist.org/mentors/vaquar-khan)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) · [GitHub](https://github.com/vaquarkhan) · [Mentorship](https://adplist.org/mentors/vaquar-khan)

@@ -1,5 +1,43 @@
 ﻿# Glossary
 
+Terms used as load-bearing vocabulary in this edition are defined first. Generic microservices terms follow in A–Z. Chapter 11 remains the source of truth for the RVx formula.
+
+**RVx Index**
+A bounded score of whether a service boundary earns its distributed cost. It fuses kinetic efficiency (E, from traces), semantic distinctness (S, from merged pull requests / intent-level change sets), and capacity-normalized complexity (L). Formula, defaults (β=1.2, α=0.8, ε=0.1), squash, and bands live only in Chapter 11. Bands: &lt;0.4 failing/coarse, 0.4–0.7 at-risk, &gt;0.7 healthy. A detector, not a number to maximize. Never use it to evaluate individual people (Chapter 23).
+
+**Fulcrum**
+The measurement and governance loop around RVx: sense the three signals, score under a declared profile, diagnose, and act only behind a safety gate.
+
+**KM3 (Khan Microservice Maturity Model)**
+Five levels: Ad hoc, Instrumented, Governed, Portfolio-managed, Self-correcting. Chapter 20 is the assessment. Not a second ladder (no Awaken / Amplify / Automate merge).
+
+**Kinetic Efficiency (E)**
+Share of useful work in path time, from runtime traces. Chapter 11.
+
+**Semantic Distinctness (S)**
+Independence of change, from version-control history at **merged PR / intent** granularity, not raw commits. Recipe 1.1 is the exploratory commit-level form.
+
+**Cognitive Load (L)**
+Capacity-normalized complexity: static analysis over an organizational capacity figure from a system of record. Not NASA-TLX.
+
+**SCS**
+Saga Complexity Score. A different S than RVx. Defined in Chapter 11.
+
+**RVx-A**
+A skippable proposal in Chapter 11, not a security control. Chapter 7 is the security chapter.
+
+**Construct validity**
+Whether the score measures the thing it claims. Chapter 22. Evidence tiers: proved (math), demonstrated (controlled studies), hypothesized (organic production).
+
+**Goodhart's Law**
+When a measure becomes a target, it ceases to be a good measure. Chapter 23: tamper-evidence, disjoint data planes, never point the number at people.
+
+**Shuffle sharding**
+Assign each tenant a small random subset of shards so one bad tenant cannot take the fleet. Chapter 12.
+
+**Data Mesh / Data Fabric**
+Industry data-architecture terms. They are *not* the subject of Chapter 7 in this edition. Chapter 7 is security.
+
 ## A
 
 **API Gateway**
