@@ -2,7 +2,7 @@
 
 ## Viquar Khan
 
-**Viquar Khan** is a Senior Data Architect at AWS Professional Services, bringing over 20+ years of expertise in finance and data analytics, empowering global financial institutions to harness the full potential of AWS technologies. He designs advanced, customized data solutions tailored to complex industry needs.
+**Viquar Khan** is a Senior Data Architect at AWS Professional Services. He has spent more than twenty years on distributed systems and data architecture, mostly with financial institutions on AWS.
 
 ### Professional Background
 
@@ -27,14 +27,14 @@ These frameworks stand on the shoulders of giants, building upon foundational wo
 
 ### Publications
 
-- **Microservices Recipes: The Architect's Field Guide** (2017, 2026)
+- **Microservices Recipes: The Architect's Field Guide** (2017, 2026; Version 2.1, 23 chapters)
 - **Data Engineering with AWS Cookbook** (Packt Publishing, 2026)
 
 ### Philosophy
 
 > "Stop splitting, start governing." - Viquar Khan
 
-The modern architect acts not as a dictator of blueprints but as a gardener of ecosystems, cultivating a landscape where independent teams can thrive without descending into chaos.
+The job is not to draw a perfect target architecture. It is to keep the boundaries honest as the system and the team change.
 
 ### Connect with Viquar
 

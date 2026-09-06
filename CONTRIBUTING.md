@@ -2,7 +2,7 @@
 
 ## About This Work
 
-**Microservices Recipes: The Architect's Field Guide** is the original intellectual work of **Viquar Khan**. This book represents years of independent research, development, and real-world application of microservices architecture principles.
+**Microservices Recipes: The Architect's Field Guide** is the original work of **Viquar Khan**. Version 2.1 is 23 chapters. All of them are in this repository.
 
 ## Contribution Scope
 

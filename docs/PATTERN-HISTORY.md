@@ -28,6 +28,7 @@ On the clone used for this document, those searches all resolve to the same root
 Independent of git upload timing, the book edition history states:
 
 - **v2.0 (January 2026):** Adaptive Granularity Strategy and RVx Index introduced (historical name).
+- **v2.1 (September 2026):** Chapters 21–23 added (cost, construct validity, Goodhart). Chapter 11 remains the formula source of truth.
 
 See [VERSION-HISTORY.md](../VERSION-HISTORY.md).
 
