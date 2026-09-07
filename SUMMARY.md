@@ -5,10 +5,16 @@
 * [Home](index.md)
 * [Preface](PREFACE.md)
 * [About the Author](AUTHOR.md)
+* [Mentorship](MENTORSHIP.md)
+* [Academic use](FREE-ACCESS.md)
+* [Licensing](LICENSING.md)
+* [Naming](NAMING.md)
 * [How to cite](CITATIONS.md)
 * [Copyright](COPYRIGHT.md)
-* [Licensing](LICENSING.md)
-* [Mentorship](MENTORSHIP.md)
+* [Disclaimer](DISCLAIMER.md)
+* [Contributing](CONTRIBUTING.md)
+* [Version history](VERSION-HISTORY.md)
+* [Changelog](CHANGELOG.md)
 
 ## Part I — The sociotechnical substrate
 

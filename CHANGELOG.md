@@ -23,6 +23,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 
 ### Removed
 - Invented preview structure (Khan Protocol in Chapter 8, Nano-Swarm 0.3/0.6 bands, 20-chapter teaser, placeholder ISBN).
+- Ten leftover mermaid PNGs that were never regenerated (odd sizes, unused, some with retired formulas or invented outage numbers).
 
 ---
 
@@ -103,6 +104,7 @@ Public edition remained rooted in the 2017 foundational guide while content and 
 | **2022 to 2023** | K8s, mesh, observability modernization |
 | **2026-01 (2.0)** | Adaptive Granularity Strategy + RVx Index (historical name) |
 | **2026-07-09 (2.0.1)** | Rename to Adaptive Granularity Governance: The Khan Microservice Pattern; dual license; citation and RVx spec scaffolding |
+| **2026-09-06 (2.1)** | 23-chapter science edition; editorial SVGs; Chapters 21–23 |
 
 ---
 

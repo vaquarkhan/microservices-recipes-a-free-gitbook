@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this book or Adaptive Granularity Governance: The Khan Microservice Pattern, please cite it using these metadata."
-type: software
+type: book
 title: "Microservices Recipes: The Architect's Field Guide"
 version: "2.1"
 date-released: "2026-09-06"

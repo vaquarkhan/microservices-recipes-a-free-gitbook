@@ -26,19 +26,19 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 ## 📋 Table of Contents
 
 ### 📚 **Front Matter**
-- [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan and Adaptive Granularity Governance
-- [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
-- [⚖️ **Licensing**](LICENSING.md) - MIT for code; CC BY-NC-ND 4.0 for prose and figures
-- [🏷️ **Naming**](NAMING.md) - Methodology title and attribution
-- [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
-- [📜 **Copyright Notice**](COPYRIGHT.md) - Copyright and dual license
-- [⚖️ **Disclaimer**](DISCLAIMER.md) - Legal notice
-- [🤝 **Contributing**](CONTRIBUTING.md) - How to Contribute
-- [📜 **Version History**](VERSION-HISTORY.md) - Release lineage
-- [📋 **Changelog**](CHANGELOG.md) - 2017 to present change log
-- [🎓 **Free Academic Access**](FREE-ACCESS.md) - Academic edition notes
-- [📄 **CITATION.cff**](CITATION.cff) - Machine-readable citation metadata
+- [Preface](PREFACE.md) — why a boundary has to earn its keep
+- [About the Author](AUTHOR.md) — Viquar Khan
+- [Mentorship](MENTORSHIP.md) — free 1:1 on ADPList
+- [Licensing](LICENSING.md) — MIT for code; CC BY-NC-ND 4.0 for prose and figures
+- [Naming](NAMING.md) — methodology title and attribution
+- [Citations](CITATIONS.md) — how to cite this work
+- [Copyright](COPYRIGHT.md) — owner and dual license
+- [Disclaimer](DISCLAIMER.md) — legal notice
+- [Contributing](CONTRIBUTING.md)
+- [Version history](VERSION-HISTORY.md)
+- [Changelog](CHANGELOG.md)
+- [Academic use](FREE-ACCESS.md) — the full book is public; cite it
+- [CITATION.cff](CITATION.cff) — machine-readable citation metadata
 
 ---
 
@@ -305,7 +305,7 @@ If you find this resource valuable, please help me keep it free and accessible:
 
 ## 📜 **License & Usage**
 
-This book is released under the **[MIT License](LICENSE)** - free for personal and commercial use.
+Dual license. **Code** is [MIT](LICENSE). **Prose and figures** are [CC BY-NC-ND 4.0](LICENSING.md).
 
 ### **Citation**
 ```

@@ -73,9 +73,10 @@ All contributions are **subject to author review and approval**. The author rese
 
 By contributing, you acknowledge that:
 - This is the original work of Viquar Khan
-- Contributions become part of the work under MIT License
+- Code contributions become part of the work under MIT
+- Prose and figure contributions become part of the work under CC BY-NC-ND 4.0
 - The author retains full editorial control
-- original methodologies remain the intellectual property of Viquar Khan
+- Original methodologies remain the intellectual property of Viquar Khan. Cite them. No trademark is claimed.
 
 ---
 

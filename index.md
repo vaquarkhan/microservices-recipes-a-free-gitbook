@@ -40,7 +40,7 @@ The following are original methodologies by Viquar Khan. No trademark is claimed
 When referencing this work, please use proper academic citation. See **[Citations Guide](CITATIONS.md)** for complete formatting guidelines.
 
 ### **Legal Notice**
-This work is protected by copyright law. Unauthorized reproduction, distribution, or transmission of any part of this work without permission is prohibited. For permissions beyond the scope of the MIT License, contact the author.
+Code is MIT. Book prose and figures are CC BY-NC-ND 4.0. See [LICENSING.md](LICENSING.md). For uses beyond those licenses, contact the author.
 
 **[📖 View Complete Legal Disclaimer](DISCLAIMER.md)**
 
@@ -84,15 +84,18 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 ## 📋 Table of Contents
 
 ### 📚 **Front Matter**
-- [📖 **Preface**](PREFACE.md) - The Architect's Mandate
-- [👨‍💻 **About the Author**](AUTHOR.md) - Viquar Khan & Adaptive Granularity Governance: The Khan Microservice Pattern
-- [🎓 **Free Mentorship**](MENTORSHIP.md) - 1:1 Sessions with Viquar Khan
-- [🎓 **Academic use**](FREE-ACCESS.md) - The full book is public; cite it here
-- [📖 **Citations Guide**](CITATIONS.md) - How to Cite This Work Properly
-- [📜 **Version History**](VERSION-HISTORY.md) - Release Lineage & Evolution
-- [📜 **Copyright Notice**](COPYRIGHT.md) - Complete Copyright & Legal Information
-- [⚖️ **Disclaimer**](DISCLAIMER.md) - Copyright & Legal Notice
-- [🤝 **Contributing**](CONTRIBUTING.md) - How to Contribute
+- [Preface](PREFACE.md) — why a boundary has to earn its keep
+- [About the Author](AUTHOR.md) — Viquar Khan
+- [Mentorship](MENTORSHIP.md) — free 1:1 on ADPList
+- [Academic use](FREE-ACCESS.md) — the full book is public; cite it
+- [Licensing](LICENSING.md) — MIT for code; CC BY-NC-ND 4.0 for prose
+- [Naming](NAMING.md) — methodology title and attribution
+- [Citations](CITATIONS.md) — how to cite this work
+- [Copyright](COPYRIGHT.md) — owner and dual license
+- [Disclaimer](DISCLAIMER.md) — legal notice
+- [Contributing](CONTRIBUTING.md)
+- [Version history](VERSION-HISTORY.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 

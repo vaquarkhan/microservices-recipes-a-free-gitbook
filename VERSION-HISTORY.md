@@ -11,7 +11,7 @@
 
 - Chapters 21–23 added: pricing wasted time, construct validity, Goodhart and tamper-evidence.
 - Practitioner chapters 1–20 aligned to one spine. Chapter 11 remains the only source of truth for the RVx formula (β=1.2, α=0.8, ε=0.1; bands &lt;0.4 / 0.4–0.7 / &gt;0.7).
-- Editorial SVGs replace missing PNG figures. Cover and hero art added for GitHub Pages.
+- Editorial SVGs replace chapter figures. Original book covers from `assets/images` are used on Home, Preface, Author, and Copyright.
 - Preface, book preview, glossary, and quick reference no longer restate a swapped-exponent formula or a 20-chapter teaser.
 - Recipes corrected: Kinesis idempotency JMESPath, human-approval Step Functions (no heartbeat without `SendTaskHeartbeat`), gateway authorizer response shape, Collector Contrib for tail sampling.
 
@@ -78,7 +78,7 @@
 ## 🔄 **Evolution Timeline**
 
 ### **2017 - Genesis**
-- **Initial concept** developed version one when microservice stared
+- **Initial concept** developed as version one when microservices started
 - **First draft** based on real-world enterprise transformations
 - **Community feedback** incorporated from early adopters
 
@@ -134,8 +134,9 @@ There is no “coming soon” half of the book. Version 2.1 is the public editio
 
 ### **Recommended Citation (APA Style):**
 ```
-Khan, V. (2026). Microservices Recipes: The Architect's Field Guide (2nd ed.). 
+Khan, V. (2026). Microservices Recipes: The Architect's Field Guide (Version 2.1). 
 GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+https://orcid.org/0009-0008-3592-4162
 ```
 
 ### **Recommended Citation (IEEE Style):**

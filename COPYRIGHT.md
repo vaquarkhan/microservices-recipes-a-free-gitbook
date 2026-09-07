@@ -90,6 +90,7 @@ Full rules: [LICENSING.md](LICENSING.md). Naming: [NAMING.md](NAMING.md). Citati
 ## Version note
 
 - **v2.0** (January 2026): Adaptive Granularity Strategy and RVx Index introduced (historical name)  
-- Later rename: **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged)  
+- **v2.0.1** (July 2026): renamed to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx Index unchanged)  
+- **v2.1** (September 6, 2026): 23-chapter science edition  
 
 See [VERSION-HISTORY.md](VERSION-HISTORY.md) and [docs/PATTERN-HISTORY.md](docs/PATTERN-HISTORY.md).
