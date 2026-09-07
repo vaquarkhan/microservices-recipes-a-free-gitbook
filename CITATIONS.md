@@ -91,7 +91,7 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 **Example:**
 ```
-Khan, V. (2026). Introduction to microservices. In Microservices recipes: 
+Khan, V. (2026). Earned boundaries, not fashionable ones. In Microservices recipes: 
 The architect's field guide (Chapter 1). GitHub. 
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
@@ -101,14 +101,14 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ## BibTeX Entry
 
 ```bibtex
-@misc{khan2026microservices,
-  author = {Khan, Viquar},
-  title = {Microservices Recipes: The Architect's Field Guide},
-  year = {2026},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook}},
-  note = {Accessed: [date]}
+@book{khan2026microservices,
+  author       = {Khan, Viquar},
+  title        = {Microservices Recipes: The Architect's Field Guide},
+  year         = {2026},
+  edition      = {Version 2.1},
+  publisher    = {GitHub},
+  url          = {https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook},
+  note         = {ORCID: 0009-0008-3592-4162}
 }
 ```
 
@@ -164,43 +164,17 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ---
 
-## License Information
+## License
 
-This work is licensed under the MIT License. When citing, please respect:
+Dual license. See [LICENSING.md](LICENSING.md).
 
-- Proper attribution to the author
-- Link to the original repository
-- Acknowledgment of the open-source nature
+- **Code** is MIT. You may use and modify it, including commercially, with the MIT notice.
+- **Prose, diagrams, and figures** are [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Share with attribution. Do not make derivatives of the book text or use it commercially without permission.
 
----
+Citing a chapter is not a derivative. Rewriting a chapter and republishing it is.
 
-## Questions About Citations?
+## Questions
 
-For questions about proper citation or permission for specific uses:
-
-**Email:** vaquar.khan@gmail.com  
-**Subject:** Citation Question - Microservices Recipes
-
----
-
-## Recommended Citation Practices
-
-### For Academic Work
-- Use the full citation format appropriate for your field
-- Include access date for online resources
-- Cite specific chapters when referencing particular concepts
-
-### For Professional Work
-- Provide clear attribution
-- Link to the repository when possible
-- Mention the open-source nature of the work
-
-### For Derivative Works
-- Contact the author for permission
-- Provide prominent attribution
-- Respect the MIT License terms
-
----
-
-**Thank you for properly citing this work and supporting open knowledge sharing!**
+Email: vaquar.khan@gmail.com  
+Subject: Citation — Microservices Recipes
 

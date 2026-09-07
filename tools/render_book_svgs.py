@@ -1564,18 +1564,8 @@ DIAGRAMS = {
 }
 
 
-SKIPPED_MERMAID = [
-    "api-gateway-lambda-sync",
-    "black-friday-crisis-timeline",
-    "cell-based-architecture",
-    "compute-spectrum",
-    "ebpf-vs-sidecar",
-    "eventbridge-lambda-async",
-    "hybrid-architecture",
-    "isolated-vector-stores",
-    "km3-maturity-model",
-    "protocol-selection-tree",
-]
+# Leftover mermaid exports (odd sizes, unused, some with retired formulas
+# or invented outage numbers) were deleted from assets/images/diagrams/.
 
 
 def main() -> None:
@@ -1602,9 +1592,6 @@ def main() -> None:
     print(f"Wrote {len(created)} SVG files")
     for path in created:
         print(path.relative_to(ROOT).as_posix())
-    print("Skipped mermaid sources (not in the requested set):")
-    for name in SKIPPED_MERMAID:
-        print(f"  {name}")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-﻿# Academic use and mentorship
+﻿# Academic use
 
 The full book is public. All 23 chapters are in this repository and on GitHub Pages. There is no separate academic edition and no ten-chapter preview.
 

@@ -18,7 +18,7 @@ The whole book is here. Twenty-three chapters. There is no later paid half, and 
 
 I work on AWS. The examples lean that way. The arguments are not AWS-specific.
 
-If you use the method, cite it. Formats are in [CITATIONS.md](CITATIONS.md).
+If you use the method, cite it. Formats are in [CITATIONS.md](CITATIONS.md). ORCID: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162).
 
 **Viquar Khan**  
 September 6, 2026
