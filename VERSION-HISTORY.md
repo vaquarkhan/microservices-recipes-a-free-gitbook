@@ -162,4 +162,4 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ---
 
-See [CHANGELOG.md](CHANGELOG.md) for the 2017-to-present record. Do not drop older entries when you add a new version.
+See [CHANGELOG.md](CHANGELOG.md) for the 2017-to-present record. Do not drop older entries when you add a new version. The author’s own account of how the book grew is on [AUTHOR.md](AUTHOR.md).
