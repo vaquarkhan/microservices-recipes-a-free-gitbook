@@ -32,11 +32,11 @@ The research site is [Fulcrum / RVx](https://vaquarkhan.github.io/fulcrum-rxy/).
 
 What is proved is the shape of the formula. What is demonstrated is a replicated 36-boundary AWS estate, directional, with wide intervals. What is still hypothesized is organic production. Chapter 11 and Chapter 22 say that plainly. The calculator and simulations on the research site use the same math.
 
-**January 2026 — Version 2.0.** The field guide caught up to the research. I published Adaptive Granularity Strategy and the RVx Index. The book became a scored argument. Service Decomposition Workflow and KM3 came with it. Chapters were rewritten for current practice. That January name is historical. Keep it in citations.
+**January 2026 - Version 2.0.** The field guide caught up to the research. I published Adaptive Granularity Strategy and the RVx Index. The book became a scored argument. Service Decomposition Workflow and KM3 came with it. Chapters were rewritten for current practice. That January name is historical. Keep it in citations.
 
-**July 2026 — Version 2.0.1.** I renamed the method to **Adaptive Granularity Governance: The Khan Microservice Pattern**. The RVx formula did not change. Dual license, naming, and citation files went in so the work could be cited without guessing.
+**July 2026 - Version 2.0.1.** I renamed the method to **Adaptive Granularity Governance: The Khan Microservice Pattern**. The RVx formula did not change. Dual license, naming, and citation files went in so the work could be cited without guessing.
 
-**September 6, 2026 — Version 2.1.** Twenty-three chapters. Parts I–IX are the practitioner book. Part X is the science the metric has to survive: cost, construct validity, and Goodhart. Chapter 11 is still the only place the formula is written down. Further work is empirical validation, not a new equation.
+**September 6, 2026 - Version 2.1.** Twenty-three chapters. Parts I–IX are the practitioner book. Part X is the science the metric has to survive: cost, construct validity, and Goodhart. Chapter 11 is still the only place the formula is written down. Further work is empirical validation, not a new equation.
 
 The edition history is in [VERSION-HISTORY.md](VERSION-HISTORY.md). The dated change log is in [CHANGELOG.md](CHANGELOG.md). Those files are the record. Do not drop a year when a new version ships.
 
@@ -59,7 +59,7 @@ They stand on work I did not invent:
 
 ## Philosophy
 
-> "Stop splitting, start governing." — Viquar Khan
+> "Stop splitting, start governing." - Viquar Khan
 
 The job is not to draw a perfect target architecture. It is to keep the boundaries honest as the system and the team change.
 

@@ -7,7 +7,7 @@
 
 ## 🏷️ **Current Version: 2.1**
 
-### **Version 2.1** — *Science edition, 23 chapters* (September 6, 2026)
+### **Version 2.1** - *Science edition, 23 chapters* (September 6, 2026)
 
 - Chapters 21–23 added: pricing wasted time, construct validity, Goodhart and tamper-evidence.
 - Practitioner chapters 1–20 aligned to one spine. Chapter 11 remains the only source of truth for the RVx formula (β=1.2, α=0.8, ε=0.1; bands &lt;0.4 / 0.4–0.7 / &gt;0.7).
@@ -25,7 +25,7 @@
 - **RVx Index** - Quantitative service-boundary effectiveness score
 - **Service Decomposition Workflow** - Systematic methodology for service decomposition
 - **Microservices Maturity Assessment (KM3)** - Assessment framework for organizational readiness
-- **Chapter headers** — reading time and difficulty
+- **Chapter headers** - reading time and difficulty
 - **GitHub Pages layout**
 - **Updated case material** from 2020–2026 practice
 - **eBPF Networking Coverage** - Post-sidecar era networking patterns

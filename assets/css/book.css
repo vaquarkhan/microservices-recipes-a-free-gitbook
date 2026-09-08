@@ -1974,7 +1974,7 @@ img[src*="diagrams/"]:hover {
 }
 
 /* =============================================================================
-   GitHub Pages — centered book reading layout
+   GitHub Pages - centered book reading layout
    ============================================================================= */
 
 body {
@@ -2006,13 +2006,13 @@ body {
   line-height: 1.75;
 }
 
-/* Cover and hero media — book-style, not full-bleed */
+/* Cover and hero media - book-style, not full-bleed */
 .book-content img.book-cover-img,
 .book-content img.book-hero-gif,
 .book-content img[src*="cover-image"],
 .book-content img[src*="microservices-animation"],
 .book-content > p:first-of-type img {
-  /* Display scale only — source PNG/GIF unchanged (no recompression) */
+  /* Display scale only - source PNG/GIF unchanged (no recompression) */
   max-width: min(100%, 520px);
   width: auto;
   height: auto;

@@ -1,0 +1,44 @@
+{
+  "title": "Microservices Recipes: The Architect's Field Guide",
+  "version": "2.1.0",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "access_right": "open",
+  "license": "cc-by-nc-nd-4.0",
+  "creators": [
+    {
+      "name": "Khan, Viquar",
+      "affiliation": "Amazon Web Services",
+      "orcid": "0009-0008-3592-4162"
+    }
+  ],
+  "description": "<p>Version 2.1 of <em>Microservices Recipes: The Architect's Field Guide</em>, a 23-chapter field guide on microservice boundaries. It presents Adaptive Granularity Governance (the Khan Microservice Pattern) and the RVx Index. Chapter 11 is the only source of truth for the formula.</p><p>Dual license: MIT for source code; CC BY-NC-ND 4.0 for prose, diagrams, and figures. The GitHub handle <code>vaquarkhan</code> is an identifier, not the display name. The author is Viquar Khan.</p>",
+  "keywords": [
+    "microservices",
+    "software architecture",
+    "distributed systems",
+    "RVx Index",
+    "Fulcrum",
+    "Adaptive Granularity Governance",
+    "Khan Microservice Pattern"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-book",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/",
+      "relation": "isIdenticalTo",
+      "resource_type": "publication-book",
+      "scheme": "url"
+    },
+    {
+      "identifier": "0009-0008-3592-4162",
+      "relation": "isIdenticalTo",
+      "scheme": "orcid"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 *Featuring Adaptive Granularity Governance: The Khan Microservice Pattern*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
+[![DOI](https://zenodo.org/badge/latestdoi/165114193)](https://zenodo.org/badge/latestdoi/165114193)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
 [![Prose: CC BY-NC-ND 4.0](https://img.shields.io/badge/Prose-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSING.md)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -26,19 +27,19 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 ## 📋 Table of Contents
 
 ### 📚 **Front Matter**
-- [Preface](PREFACE.md) — why a boundary has to earn its keep
-- [About the Author](AUTHOR.md) — Viquar Khan
-- [Mentorship](MENTORSHIP.md) — free 1:1 on ADPList
-- [Licensing](LICENSING.md) — MIT for code; CC BY-NC-ND 4.0 for prose and figures
-- [Naming](NAMING.md) — methodology title and attribution
-- [Citations](CITATIONS.md) — how to cite this work
-- [Copyright](COPYRIGHT.md) — owner and dual license
-- [Disclaimer](DISCLAIMER.md) — legal notice
+- [Preface](PREFACE.md) - why a boundary has to earn its keep
+- [About the Author](AUTHOR.md) - Viquar Khan
+- [Mentorship](MENTORSHIP.md) - free 1:1 on ADPList
+- [Licensing](LICENSING.md) - MIT for code; CC BY-NC-ND 4.0 for prose and figures
+- [Naming](NAMING.md) - methodology title and attribution
+- [Citations](CITATIONS.md) - how to cite this work
+- [Copyright](COPYRIGHT.md) - owner and dual license
+- [Disclaimer](DISCLAIMER.md) - legal notice
 - [Contributing](CONTRIBUTING.md)
 - [Version history](VERSION-HISTORY.md)
 - [Changelog](CHANGELOG.md)
-- [Academic use](FREE-ACCESS.md) — the full book is public; cite it
-- [CITATION.cff](CITATION.cff) — machine-readable citation metadata
+- [Academic use](FREE-ACCESS.md) - the full book is public; cite it
+- [CITATION.cff](CITATION.cff) - machine-readable citation metadata
 
 ---
 
@@ -192,7 +193,7 @@ The job is not a perfect target architecture. It is to keep the boundaries hones
 | **Reading Time** | ~19 hours across the full book |
 | **Code Examples** | Recipes in every practitioner chapter |
 | **Patterns Covered** | Decomposition, data, resilience, platform, AI, migration |
-| **Evidence stance** | Proved / demonstrated / hypothesized — Chapter 11 and 22 |
+| **Evidence stance** | Proved / demonstrated / hypothesized - Chapter 11 and 22 |
 ---
 
 ## Topics covered
