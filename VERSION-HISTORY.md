@@ -94,6 +94,11 @@
 - **Service mesh evolution** documented with real implementations
 - **Observability** updated for OpenTelemetry-era practice
 
+### **2024-2025 - Original research (Fulcrum / RVx)**
+- The field still had no operational formula that said a given boundary *is* a distributed monolith. The concepts were in the book. The score was not.
+- Research years for **Fulcrum** and the **RVx Index**: Khan's Law, three-signal fusion (E, S, L), SCS, KM3, wasted-time cost. Companion site: [fulcrum-rxy](https://vaquarkhan.github.io/fulcrum-rxy/). Paper in 2026; arXiv forthcoming.
+- Math properties proved. 36-boundary AWS estate demonstrated (directional). Organic production still hypothesized.
+
 ### **2026 - Adaptive Granularity Governance**
 - **Systematic methodology** introduced (January 2026) under the historical name Adaptive Granularity Strategy, with the **RVx Index**
 - **July 2026:** renamed to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx unchanged); dual license and citation scaffolding published

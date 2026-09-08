@@ -78,6 +78,19 @@ Microservices Recipes: The Architect's Field Guide, GitHub, 2026.
 
 Historical citations that use "Adaptive Granularity Strategy" remain valid; prefer the current title for new work.
 
+### The Fulcrum / RVx research paper
+
+The research treatment of the same method. Companion site: [https://vaquarkhan.github.io/fulcrum-rxy/](https://vaquarkhan.github.io/fulcrum-rxy/). arXiv identifier not assigned yet.
+
+**APA:**
+```
+Khan, V. (2026). Fulcrum: Quantitative, governed granularity for microservice
+boundaries with the RVx Index. https://vaquarkhan.github.io/fulcrum-rxy/
+https://orcid.org/0009-0008-3592-4162
+```
+
+When the arXiv ID is public, add it to this block. Do not invent one.
+
 ---
 
 ## Citing Specific Chapters

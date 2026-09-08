@@ -24,9 +24,15 @@ I did not treat 1.0 as finished. The public edition stayed rooted in that 2017 g
 
 **2022–2023.** Kubernetes as the default runtime. Service mesh as it actually shipped. Observability as OpenTelemetry became the common language.
 
-**2024–2025.** I kept the repo open and took the feedback. The next edition was not a new slogan. It was a way to measure the question the first edition had only asked.
+**2024–2025.** This is when the research happened. By then the book had the concepts. Distributed monolith, granularity, Conway, sagas. What the field still did not have was a *formula*. You could describe a distributed monolith after you had lived through one. You could not score a boundary and say, with a number, that it was one. Coupling, cohesion, and Conway were prior work. They were not a diagnostic. I spent those two years on original research: what would have to be true for a boundary to earn a remote hop, and how you would know.
 
-**January 2026 — Version 2.0.** I published Adaptive Granularity Strategy and the RVx Index. The field guide became a scored argument. Service Decomposition Workflow and KM3 came with it. Chapters were rewritten for current practice. That January name is historical. Keep it in citations.
+That work is **Fulcrum** and the **RVx Index**. Three signals that live in three data planes: kinetic efficiency from traces (E), semantic distinctness from how the code actually changes (S), capacity-normalized complexity (L). A boundary that fails any one of them is not a microservice in function. It is a distributed-monolith fragment. The synthesis is the Khan family: Khan's Law of Service Granularity, the Fulcrum sense-decide-actuate-verify loop, RVx, SCS, KM3, and the wasted-time cost model. The borrowed primitives are credited. The composition is new.
+
+The research site is [Fulcrum / RVx](https://vaquarkhan.github.io/fulcrum-rxy/). The paper is *Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index* (Viquar Khan, 2026, ORCID [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)). It is being posted to arXiv; the identifier is not assigned yet, so do not invent one. Cite the site and this book until the arXiv link is live.
+
+What is proved is the shape of the formula. What is demonstrated is a replicated 36-boundary AWS estate, directional, with wide intervals. What is still hypothesized is organic production. Chapter 11 and Chapter 22 say that plainly. The calculator and simulations on the research site use the same math.
+
+**January 2026 — Version 2.0.** The field guide caught up to the research. I published Adaptive Granularity Strategy and the RVx Index. The book became a scored argument. Service Decomposition Workflow and KM3 came with it. Chapters were rewritten for current practice. That January name is historical. Keep it in citations.
 
 **July 2026 — Version 2.0.1.** I renamed the method to **Adaptive Granularity Governance: The Khan Microservice Pattern**. The RVx formula did not change. Dual license, naming, and citation files went in so the work could be cited without guessing.
 
@@ -48,6 +54,7 @@ They stand on work I did not invent:
 ## Publications
 
 - **Microservices Recipes: The Architect's Field Guide** (2017, 2026; Version 2.1, 23 chapters)
+- **Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index** (research paper, 2026; [site](https://vaquarkhan.github.io/fulcrum-rxy/); arXiv forthcoming)
 - **Data Engineering with AWS Cookbook** (Packt Publishing, 2026)
 
 ## Philosophy
@@ -59,6 +66,7 @@ The job is not to draw a perfect target architecture. It is to keep the boundari
 ## Connect
 
 - **ORCID**: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
+- **Fulcrum / RVx research**: [vaquarkhan.github.io/fulcrum-rxy](https://vaquarkhan.github.io/fulcrum-rxy/)
 - **Stack Overflow**: [7.5m people reached](https://stackoverflow.com/users/4812170/vaquar-khan)
 - **LinkedIn**: [www.linkedin.com/in/vaquar-khan-b695577/](https://www.linkedin.com/in/vaquar-khan-b695577/)
 - **GitHub**: [github.com/vaquarkhan](https://github.com/vaquarkhan)
