@@ -1,0 +1,42 @@
+name: Release on merge to default branch
+
+# Default branch is master (there is no main). Pages already deploys from master/main.
+# Tag and GitHub Release are created only after a PR is merged, on that merge commit.
+on:
+  pull_request:
+    types: [closed]
+    branches: [master, main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout merge commit on the default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      - name: Create v2.1.0 on the merged default branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          VERSION=v2.1.0
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo "Release $VERSION already exists. Skipping."
+            exit 0
+          fi
+          gh release create "$VERSION" \
+            --target "${{ github.event.pull_request.merge_commit_sha }}" \
+            --title "Version 2.1.0: 23-chapter science edition" \
+            --notes "Microservices Recipes: The Architect's Field Guide, Version 2.1.
+
+          Tagged on the default branch after PR #${{ github.event.pull_request.number }} merged.
+
+          Chapter 11 is the only source of truth for the RVx formula. Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. Author: Viquar Khan, ORCID 0009-0008-3592-4162.
+
+          Do not invent an arXiv ID or a Zenodo DOI. Cite the README badge after Zenodo processes this release."
