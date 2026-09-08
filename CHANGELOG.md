@@ -64,8 +64,10 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 Public edition remained rooted in the 2017 foundational guide while content and practice evolved. Highlights by period:
 
 ### 2024 to 2025
+- Research years for Fulcrum and the RVx Index. Microservice writing was still mostly theoretical: no published formula that scored a boundary as a distributed monolith.
+- Original work: Khan's Law, E × S / L fusion, Fulcrum loop, SCS, KM3, wasted-time cost. Site: https://vaquarkhan.github.io/fulcrum-rxy/
 - Community forks, stars, and feedback continued on GitHub.
-- Preparation for the January 2026 Adaptive Granularity / RVx edition.
+- That research became Version 2.0 (January 2026) and the 2026 paper (arXiv forthcoming).
 
 ### 2022 to 2023
 - Kubernetes-native patterns emphasized.
@@ -103,6 +105,7 @@ Public edition remained rooted in the 2017 foundational guide while content and 
 | **2018 to 2019** | Refinement, cases, anti-patterns |
 | **2020 to 2021** | Cloud-first and resilience updates |
 | **2022 to 2023** | K8s, mesh, observability modernization |
+| **2024 to 2025** | Fulcrum / RVx original research; no prior operational formula for a distributed monolith |
 | **2026-01 (2.0)** | Adaptive Granularity Strategy + RVx Index (historical name) |
 | **2026-07-09 (2.0.1)** | Rename to Adaptive Granularity Governance: The Khan Microservice Pattern; dual license; citation and RVx spec scaffolding |
 | **2026-09-06 (2.1)** | 23-chapter science edition; editorial SVGs; Chapters 21–23 |

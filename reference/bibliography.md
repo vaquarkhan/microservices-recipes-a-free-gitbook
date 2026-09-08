@@ -438,7 +438,9 @@
 
 ## Adaptive Granularity Governance and Author Original Research
 
-119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
+119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
+
+119a. **V. Khan**, "Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index," *Original research paper*, 2026. ORCID [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162). [https://vaquarkhan.github.io/fulcrum-rxy/](https://vaquarkhan.github.io/fulcrum-rxy/). arXiv forthcoming. Practitioner treatment: Chapter 11 of this book. Evidence tiers: formula properties proved; 36-boundary AWS estate demonstrated (directional); organic production hypothesized.
 
 120. **V. Khan**, "The Revised ViquarKhan Index (RVx): Mathematical Foundations for Service Boundary Analysis," *Technical Report*, 2019.
 

@@ -6,7 +6,7 @@ I wrote this book because I kept seeing the same failure. A team splits a workin
 
 The question that actually matters is not “how many services.” It is whether a boundary earns the cost of being remote. That is the spine of the book.
 
-**Adaptive Granularity Governance** (the Khan Microservice Pattern) is how I make that question answerable. The RVx Index is the score. Chapter 11 is the only place the formula, the defaults, and the evidence tiers are written down. I am not reprinting the equation here. If an old slide has the exponents swapped, throw the slide away.
+**Adaptive Granularity Governance** (the Khan Microservice Pattern) is how I make that question answerable. The RVx Index is the score. I spent 2024 and 2025 on the research because the concepts in this book were still theoretical: the field had no proven formula that named a distributed monolith. That work is the Fulcrum paper and the [research site](https://vaquarkhan.github.io/fulcrum-rxy/). Chapter 11 is the only place in this book the formula, the defaults, and the evidence tiers are written down. I am not reprinting the equation here. If an old slide has the exponents swapped, throw the slide away.
 
 Read a score as a warning light, not a trophy:
 
