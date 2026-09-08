@@ -220,7 +220,7 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 
 ## About the author
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services. He has kept this book in print, in public, from the 2017 eight-chapter edition through Version 2.1. On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**. The year-by-year record is on the [author page](AUTHOR.md).
 
 ### Mentorship
 [Book a 1:1 session on ADPList](https://adplist.org/mentors/vaquar-khan). I will not invent production metrics for work I have not seen.
