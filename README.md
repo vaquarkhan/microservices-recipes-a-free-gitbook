@@ -105,7 +105,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ---
 
-### 🤖 **Part VII: The AI Frontier (2026)**
+### Part VII: Agents and retrieval
 *Focus: Probabilistic components inside deterministic architectures*
 
 | Chapter | Title | Description | Read Time |
@@ -115,7 +115,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ---
 
-### 🚀 **Part VIII: The Migration Playbook**
+### Part VIII: Migration
 *Focus: Monolith-first discipline and incremental replacement*
 
 | Chapter | Title | Description | Read Time |
@@ -155,26 +155,17 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 
 ---
 
-## 🎯 **What Makes This Book Special**
+## The method
 
-### **Adaptive Granularity Governance: The Khan Microservice Pattern**
+**Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy) is how I decide whether a boundary earns a remote hop. Chapter 11 is the score. Chapters 21–23 cover cost, whether the measurement is valid, and how you keep it from being gamed.
 
-At the heart of this book is **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly the Adaptive Granularity Strategy): a systematic methodology for determining optimal microservice boundaries. This adaptive framework considers your specific:
+The method is an original synthesis from practice. Cite it if you reuse it ([CITATIONS.md](CITATIONS.md)).
 
-**Field basis:** The methodology is an original synthesis by the author, refined through professional practice. Please cite when you reuse it ([CITATIONS.md](CITATIONS.md)).
-
-- **Organizational maturity** and team structure
-- **Business domain complexity** and change frequency  
-- **Technical constraints** and operational capabilities
-- **Evolutionary growth** and learning patterns
-
-> *"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* - Viquar Khan
-
-Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
+The job is not a perfect target architecture. It is to keep the boundaries honest as the system and the team change.
 
 ---
 
-## 🚀 **Quick Start Guide**
+## Start here
 
 ### **For Beginners**
 1. Start with [**Chapter 1: Earned Boundaries**](chapters/01-introduction-to-microservices.md)
@@ -193,7 +184,7 @@ Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
 
 ---
 
-## 📊 **Book Statistics**
+## Scope
 
 | Metric | Value |
 |--------|-------|
@@ -248,14 +239,9 @@ Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
 
 **[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. Original methodologies by the author; please cite.
 
-### **Credentials**
-- 🏆 **JSR 368** Expert Group Member (Java Message Service 2.1)
-- 📚 **Author** of "Data Engineering with AWS Cookbook" (Packt, 2026)
-- 🌟 **7.5M+** developers reached on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan)
-- 👥 **1,400+** GitHub followers ([@vaquarkhan](https://github.com/vaquarkhan))
-- 🔧 **50+** open-source microservices repositories
+JSR 368 expert group (Java Message Service 2.1). Also author of *Data Engineering with AWS Cookbook* (Packt, 2026). Writes on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
 
-**Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [🎓 Free Mentorship](https://adplist.org/mentors/vaquar-khan)
+**Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [Mentorship](https://adplist.org/mentors/vaquar-khan)
 
 ---
 
@@ -265,41 +251,20 @@ Please cite the method if you reuse it ([CITATIONS.md](CITATIONS.md)).
 - **GitHub Pages**: [https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
 - **GitHub Repository**: [https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)
 
-### **🎓 Academic Access**
-- **Complete 23-Chapter Edition**: [Request Free Access](FREE-ACCESS.md) for students, faculty, and researchers under the academic terms in that page
-- **Citation Guide**: [Proper Citation Formats](CITATIONS.md) for academic use
-- **Version History**: [Release Lineage](VERSION-HISTORY.md) and evolution
+### Academic use
+The 23 chapters are in this repository. There is no separate academic edition. Cite it ([CITATIONS.md](CITATIONS.md)). Lineage: [VERSION-HISTORY.md](VERSION-HISTORY.md). Notes: [FREE-ACCESS.md](FREE-ACCESS.md).
 
-### **💾 Download Options**
-- **Clone Repository**: `git clone https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.git`
-- **Download ZIP**: [Latest Release](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/archive/main.zip)
-- **PDF Version**: Available through [Academic Access Program](FREE-ACCESS.md)
+### Download
+```
+git clone https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.git
+```
+ZIP of the default branch: [archive](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/archive/main.zip). GitHub Pages still deploys from `main`; this update lives on `update-book-09062026` until it is merged.
 
 ---
 
-## 🤝 **Community & Support**
+## Community
 
-### **🌟 Support This Open Knowledge Initiative**
-If you find this resource valuable, please help me keep it free and accessible:
-
-**⭐ [Star this repository](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook)** - Help others discover this work  
-**🍴 [Fork the project](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/fork)** - Build upon these methodologies  
-**📖 [Cite properly](CITATIONS.md)** - Support academic recognition  
-
-### **Get Involved**
-- 🐛 **[Report Issues](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues)** - Found an error or have suggestions?
-- 💡 **Share Case Studies** - Connect with the author to share real-world implementation experiences
-- 📊 **View Impact** - See global reach: 606 stars, 228 forks, 1,400+ followers on [@vaquarkhan](https://github.com/vaquarkhan)
-- 🔄 **[See Guidelines](CONTRIBUTING.md)** - Learn about acceptable contributions
-- ⭐ **Star this repo** if you find it valuable!
-
-### **Professional Networks**
-- 🔗 **LinkedIn**: [Viquar Khan](https://www.linkedin.com/in/vaquar-khan-b695577/)
-
-### **Stay Updated**
-- 📢 **Watch** this repository for updates
-- 🔔 **Follow** [@vaquarkhan](https://github.com/vaquarkhan) for announcements
-- 📧 **Subscribe** to release notifications
+[Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) if it is useful. [Cite it](CITATIONS.md) if you use the method. [Open an issue](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues) for errors. Case studies: see [CONTRIBUTING.md](CONTRIBUTING.md). Watch the repository for releases.
 
 ---
 
@@ -315,23 +280,9 @@ GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ---
 
-## 🚀 **Ready to Begin Your Journey?**
+## Read
 
-<div align="center">
-
-### **Choose Your Path**
-
-[![Start Reading](https://img.shields.io/badge/📖_Start_Reading-Chapter_1-blue?style=for-the-badge)](chapters/01-introduction-to-microservices.md)
-[![Read Preface](https://img.shields.io/badge/📜_Read_Preface-Philosophy-green?style=for-the-badge)](PREFACE.md)
-[![Quick Reference](https://img.shields.io/badge/⚡_Quick_Reference-Patterns-orange?style=for-the-badge)](reference/quick-reference.md)
-
----
-
-*"The journey of a thousand microservices begins with a single service boundary."*
-
-**Build better, more scalable systems with proven methodologies.** 🚀
-
-</div>
+[Chapter 1](chapters/01-introduction-to-microservices.md) · [Preface](PREFACE.md) · [Quick reference](reference/quick-reference.md)
 
 ---
 

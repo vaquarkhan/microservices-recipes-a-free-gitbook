@@ -80,4 +80,4 @@ By contributing, you acknowledge that:
 
 ---
 
-**Thank you for helping improve this resource while respecting its authorship and intellectual property.**
+Corrections and anonymized case notes help. Keep the 2017-to-present record in [CHANGELOG.md](CHANGELOG.md) and [VERSION-HISTORY.md](VERSION-HISTORY.md) when you propose a change.

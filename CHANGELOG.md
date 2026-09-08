@@ -24,6 +24,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 ### Removed
 - Invented preview structure (Khan Protocol in Chapter 8, Nano-Swarm 0.3/0.6 bands, 20-chapter teaser, placeholder ISBN).
 - Ten leftover mermaid PNGs that were never regenerated (odd sizes, unused, some with retired formulas or invented outage numbers).
+- Marketing phrasing on README, Author, and Version History. The 2017–2.1 lineage entries stay.
 
 ---
 
@@ -51,7 +52,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 - Professional chapter headers, diagrams, and GitHub Pages presentation.
 
 ### Changed
-- Major architectural overhaul from the 2017 foundational edition.
+- Major revision of the 2017 foundational edition. The 1.0 record stays in this file.
 - Case studies and patterns updated for 2020 to 2026 practice.
 
 **Disclosure line (provenance):** v2.0 (January 2026): Adaptive Granularity Strategy and RVx Index introduced.
