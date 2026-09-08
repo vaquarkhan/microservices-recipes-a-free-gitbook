@@ -8,14 +8,9 @@
 
 ### Professional Background
 
-A polyglot developer skilled in Java, Scala, Python, and other languages, Viquar has excelled in various technical roles. As an expert group member of JSR 368 (Java Message Service 2.1), he has shaped industry standards and actively contributes to open-source projects like Apache Spark and Terraform. His technical insights have reached and benefited over 7.5 million users on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
+He works in Java, Scala, and Python. He was an expert-group member of JSR 368 (Java Message Service 2.1) and contributes to open-source work including Apache Spark and Terraform. He writes on [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan).
 
-Viquar brings deep expertise in:
-- **Microservices Architecture**: Designing and implementing scalable, resilient distributed systems
-- **Cloud-Native Development**: Building applications for modern cloud platforms  
-- **Domain-Driven Design**: Applying DDD principles to create well-bounded microservices
-- **Data Engineering**: Advanced data pipeline and analytics solutions
-- **Team Leadership**: Guiding development teams through architectural transformations
+The work in this book comes from distributed systems, data architecture, and the teams that have to live with the boundaries.
 
 ### Adaptive Granularity Governance: The Khan Microservice Pattern
 
@@ -44,7 +39,7 @@ The job is not to draw a perfect target architecture. It is to keep the boundari
 - **LinkedIn**: [www.linkedin.com/in/vaquar-khan-b695577/](https://www.linkedin.com/in/vaquar-khan-b695577/)
 - **GitHub**: [github.com/vaquarkhan](https://github.com/vaquarkhan)
 - **Amazon Author**: [Viquar Khan on Amazon](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)
-- **🎓 Free Mentorship**: [Book 1:1 session on ADPList](https://adplist.org/mentors/vaquar-khan)
+- **Mentorship**: [1:1 on ADPList](https://adplist.org/mentors/vaquar-khan)
 
 ### Dedication
 
@@ -54,4 +49,4 @@ The job is not to draw a perfect target architecture. It is to keep the boundari
 
 ---
 
-*"The goal is not to build the perfect architecture, but to build an architecture that can evolve toward perfection."* - Viquar Khan
+*"Stop splitting, start governing."* — Viquar Khan

@@ -76,7 +76,7 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 
 ### 🏗️ For Architects
 1. Focus on strategic chapters (2, 3, 7)
-2. Study [Adaptive Granularity Governance: The Khan Microservice Pattern](AUTHOR.md#the-adaptive-granularity-strategy)
+2. Study [Adaptive Granularity Governance: The Khan Microservice Pattern](AUTHOR.md#adaptive-granularity-governance-the-khan-microservice-pattern)
 3. Review [Complete Book Preview](BOOK-PREVIEW.md)
 
 ---
@@ -162,8 +162,8 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 
 ---
 
-### 🤖 **Part VII: The AI Frontier (2026)**
-*Focus: Agentic systems and retrieval at production scale*
+### Part VII: Agents and retrieval
+*Focus: Agents and retrieval as production components*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
@@ -172,7 +172,7 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 
 ---
 
-### 🚀 **Part VIII: The Migration Playbook**
+### Part VIII: Migration
 *Focus: Evolutionary paths from monolith to services*
 
 | Chapter | Title | Read Time | Difficulty |
@@ -183,7 +183,7 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 ---
 
 ### 📈 **Part IX: Organizational Maturity**
-*Focus: Assessing and governing microservices excellence*
+*Focus: Assessing whether the organization is ready to distribute*
 
 | Chapter | Title | Read Time | Difficulty |
 |---------|-------|-----------|------------|
@@ -222,9 +222,8 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 
 **[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**.
 
-### 🎓 **Free Mentorship Available**
-**Book a FREE 1:1 mentorship session with Viquar Khan:**  
-**[📅 Schedule on ADPList](https://adplist.org/mentors/vaquar-khan)**
+### Mentorship
+[Book a 1:1 session on ADPList](https://adplist.org/mentors/vaquar-khan). I will not invent production metrics for work I have not seen.
 
 **Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)
 

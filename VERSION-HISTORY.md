@@ -16,7 +16,7 @@
 - Recipes corrected: Kinesis idempotency JMESPath, human-approval Step Functions (no heartbeat without `SendTaskHeartbeat`), gateway authorizer response shape, Collector Contrib for tail sampling.
 
 ### **Version 2.0** - *Adaptive Granularity Governance edition* (January 2026)
-**Major Release - Complete Architectural Overhaul**
+**Major revision**
 
 **Disclosure (historical name):** v2.0 (January 2026): Adaptive Granularity Strategy and RVx Index introduced.
 
@@ -25,9 +25,9 @@
 - **RVx Index** - Quantitative service-boundary effectiveness score
 - **Service Decomposition Workflow** - Systematic methodology for service decomposition
 - **Microservices Maturity Assessment (KM3)** - Assessment framework for organizational readiness
-- **Enhanced Chapter Structure** - Professional headers with reading time and difficulty indicators
-- **Modern Web Experience** - Responsive design with interactive elements
-- **Updated Case Studies** - Real-world implementations from 2020-2026
+- **Chapter headers** — reading time and difficulty
+- **GitHub Pages layout**
+- **Updated case material** from 2020–2026 practice
 - **eBPF Networking Coverage** - Post-sidecar era networking patterns
 - **Cloud-Native Focus** - AWS, Kubernetes, and modern container orchestration
 
@@ -35,12 +35,9 @@
 - RVx Index and KM3 introduced
 - Security, data, and observability chapters rewritten for current practice
 
-#### **🎨 Technical Improvements:**
-- **Clean Markdown Structure** - Compatible with all markdown processors
-- **Professional Styling** - Custom CSS with consistent branding
-- **Mobile-Responsive Design** - Optimized for all devices
-- **GitHub Pages Integration** - Direct web deployment
-- **Improved Navigation** - Enhanced user experience
+#### Site and markup
+- Markdown that builds on GitHub Pages
+- Book CSS and navigation for the Pages site
 
 ---
 
@@ -54,7 +51,7 @@
 ## 📜 **Legacy Versions**
 
 ### **Version 1.0** - *Foundational Edition* (2017)
-**Initial Release - The Original Microservices Guide**
+**Initial public edition**
 
 #### **📖 Original Content:**
 - **8 Core Chapters** covering fundamental microservices concepts
@@ -67,11 +64,11 @@
 - **Security Fundamentals** - Authentication and authorization patterns
 - **Testing Approaches** - Unit, integration, and contract testing
 
-#### **🎯 Key Contributions:**
-- **First practical guide** to microservices implementation
-- **Anti-pattern identification** - Common pitfalls and solutions
-- **Organizational considerations** - Conway's Law and team structures
-- **Technology-agnostic approach** - Principles over specific tools
+#### What 1.0 covered
+- Foundational field guide to implementation
+- Anti-patterns and common failure modes
+- Conway's Law and team structure
+- Principles over a specific tool stack
 
 ---
 
@@ -95,12 +92,12 @@
 ### **2022-2023 - Modern Patterns**
 - **Kubernetes-native patterns** integrated throughout
 - **Service mesh evolution** documented with real implementations
-- **Observability revolution** captured with OpenTelemetry standards
+- **Observability** updated for OpenTelemetry-era practice
 
 ### **2026 - Adaptive Granularity Governance**
 - **Systematic methodology** introduced (January 2026) under the historical name Adaptive Granularity Strategy, with the **RVx Index**
 - **July 2026:** renamed to **Adaptive Granularity Governance: The Khan Microservice Pattern** (RVx unchanged); dual license and citation scaffolding published
-- **Complete architectural framework** for modern distributed systems
+- Methodology and score added to the existing field guide
 
 ---
 
@@ -116,8 +113,7 @@
 | **Security** | Traditional auth | Zero-trust architectures |
 | **Case Studies** | 2015-2017 examples | 2020-2026 implementations |
 | **Assessment Tools** | Informal checklists | Microservices Maturity Assessment |
-| **Reading Experience** | Basic markdown | Professional web experience |
-| **Accessibility** | Text-only | Multi-modal with diagrams |
+| **Reading** | Markdown in the repo | GitHub Pages plus chapter figures |
 
 ---
 
@@ -141,14 +137,14 @@ https://orcid.org/0009-0008-3592-4162
 
 ### **Recommended Citation (IEEE Style):**
 ```
-V. Khan, "Microservices Recipes: The Architect's Field Guide," 2nd ed., 
+V. Khan, "Microservices Recipes: The Architect's Field Guide," ver. 2.1, 
 GitHub Repository, 2026. [Online]. Available: 
 https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ```
 
 ### **Recommended Citation (Chicago Style):**
 ```
-Khan, Viquar. Microservices Recipes: The Architect's Field Guide. 2nd ed. 
+Khan, Viquar. Microservices Recipes: The Architect's Field Guide. Version 2.1. 
 GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
 ```
 
@@ -166,6 +162,4 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ---
 
-**Maintaining excellence through continuous evolution** 🚀
-
-*Adaptive Granularity Governance: The Khan Microservice Pattern (formerly the Adaptive Granularity Strategy) represents years of real-world experience, community feedback, and architectural innovation. See [CHANGELOG.md](CHANGELOG.md) for 2017 to present.*
+See [CHANGELOG.md](CHANGELOG.md) for the 2017-to-present record. Do not drop older entries when you add a new version.
