@@ -1,28 +1,24 @@
-graph TB
-    subgraph "Choreography: no application coordinator"
-        Order1[Order service]
-        Inv1[Inventory service]
-        Pay1[Payment service]
-        Order1 -->|OrderCreated| Inv1
-        Inv1 -->|InventoryReserved| Pay1
-        Pay1 -->|PaymentProcessed| Order1
-        Pay1 -.->|PaymentFailed → release| Inv1
+sequenceDiagram
+    box rgb(231,240,235) Choreography
+    participant Order
+    participant Inventory
+    participant Payment
     end
+    Order->>Inventory: OrderCreated
+    Inventory->>Payment: InventoryReserved
+    Payment->>Order: PaymentProcessed
+    Payment-->>Inventory: PaymentFailed → release
+    Note over Order,Payment: Services react to events. There is no application coordinator.
 
-    subgraph "Orchestration: explicit state machine"
-        Orch[Saga orchestrator]
-        Order2[Order service]
-        Inv2[Inventory service]
-        Pay2[Payment service]
-        Orch -->|1. Create pending order| Order2
-        Orch -->|2. Reserve inventory| Inv2
-        Orch -->|3. Charge, the pivot| Pay2
-        Orch -.->|Compensate in reverse| Inv2
-        Orch -.->|Compensate in reverse| Order2
+    box rgb(246,238,216) Orchestration
+    participant Orchestrator
+    participant Ord as Order
+    participant Inv as Inventory
+    participant Pay as Payment
     end
-
-    style Orch fill:#fff3e0,stroke:#ef6c00,stroke-width:3px
-    style Inv1 fill:#e8f5e8,stroke:#2e7d32
-    style Inv2 fill:#e8f5e8,stroke:#2e7d32
-    style Pay1 fill:#ffcdd2,stroke:#c62828
-    style Pay2 fill:#ffcdd2,stroke:#c62828
+    Orchestrator->>Ord: 1. Create pending order
+    Ord-->>Orchestrator: Created
+    Orchestrator->>Inv: 2. Reserve inventory
+    Inv-->>Orchestrator: Reserved
+    Orchestrator->>Pay: 3. Charge (pivot)
+    Note over Orchestrator,Pay: On failure after a completed step, compensate in reverse.

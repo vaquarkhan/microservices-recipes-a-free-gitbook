@@ -179,7 +179,7 @@ Why tracing matters so much in microservices comes back to the availability arit
 
 **Head-based sampling** decides at the start of a request, at random, whether to record it. It is simple, and because the decision travels with the context, every hop agrees. It also decides before it knows whether the request was interesting, so the rare failure you most wanted to see may have been dropped.
 
-**Tail-based sampling** waits until the request finishes and then decides, keeping traces that were slow or errored regardless of the head coin-flip, at the cost of a collector that can buffer the whole tree until the decision. That collector is a production dependency. If it sheds load by dropping the buffer, you lose exactly the traces you bought the machinery to keep.
+**Tail-based sampling** waits until the request finishes and then decides, keeping traces that were slow or errored regardless of the head coin-flip, at the cost of a collector that can buffer the whole tree until the decision. That collector is a production dependency. If it sheds load by dropping the buffer, you lose exactly the traces you bought the machinery to keep. The OpenTelemetry `tail_sampling` processor ships in **Collector Contrib** (`otelcol-contrib`), not the core `otelcol` binary. A stock core build will refuse the config. Chapter 15 writes the recipe.
 
 **Parent-based sampling** is the rule that makes either strategy coherent: a downstream service honors the sampling decision it received, rather than flipping its own coin. Without that, you get broken trees, a root with no children, or children with no root.
 

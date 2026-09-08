@@ -25,6 +25,8 @@ readingTime: "55 minutes"
 
 An agent is a language model that has been given the ability to act. Instead of only producing text, it can call tools, read resources, and take steps toward a goal, looping through a cycle of planning, acting, observing the result, and planning again. This is a genuinely new capability, and it is also a genuinely new way to cause an outage, because an agent embedded in a production system is a probabilistic component wired into a deterministic one, and the seam between the two is where the trouble lives.
 
+This chapter is a proposed extension. The granularity claims here are hypothesized. Chapter 11 introduced RVx-A; Chapter 22 is the validity argument. I am not treating a simulation as a production proof.
+
 The mistake I see most often is treating an agent as either magic or as just another service. It is neither. It is a new kind of component with its own failure modes, and the job of the architect is to place it in the system so that its strengths, flexible reasoning over ambiguous inputs, are available where they help, while its weaknesses, non-determinism and a willingness to be talked into things, are contained where they would hurt. This chapter is about that placement. It builds directly on the RVx-A extension from Chapter 11, which measures the granularity of an agent's tool surface, and it is deliberately scoped: this is an architecture chapter about running agents safely, not a security paper about the underlying protocol. Chapter 7 already wrote the identity, capability, and injection contract. I will point at it rather than reprint it, and I will mark that boundary where it matters.
 
 ## 16.1 The core separation: planner and executor

@@ -110,6 +110,7 @@ exclude:
 include:
   - _pages
   - assets
+  - CONTRIBUTING.md
 
 # Sass
 sass:

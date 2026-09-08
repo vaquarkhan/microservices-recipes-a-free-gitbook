@@ -83,7 +83,7 @@ The limitation is size. The vector grows with the number of participating writer
 
 ### 4.3.2 Conflict-free replicated data types
 
-Version vectors detect conflicts. Conflict-free replicated data types, or CRDTs, prevent them mathematically. A CRDT is a data structure whose concurrent operations are commutative, associative, and idempotent, which guarantees that no matter what order updates arrive in, or how many times, every replica ends in the same state. There are two flavors: **state-based** (CvRDT), where replicas exchange full state and a merge function combines them, requiring the state to form a join-semilattice; and **operation-based** (CmRDT), where replicas exchange operations that must commute. Operation-based CRDTs typically need reliable *causal* broadcast. They do not need a total order, but they do need not to lose operations and not to apply a reply before its cause.
+Version vectors detect conflicts. Conflict-free replicated data types, or CRDTs, prevent them mathematically. A CRDT is a data structure whose concurrent operations are commutative, associative, and idempotent, which guarantees that no matter what order updates arrive in, or how many times, every replica ends in the same state. There are two flavors: **state-based** (CvRDT), where replicas exchange full state and a merge function combines them, requiring the state to form a join-semilattice; and **operation-based** (CmRDT), where replicas exchange operations that must commute. Operation-based CRDTs typically need reliable *causal* broadcast. They do not need a total order, but they do need not to lose operations and not to apply an operation before its cause.
 
 The grow-only counter is the simplest CRDT, useful for a metric like total views that only increases. A single shared integer would lose concurrent increments, so instead each node owns one slot in a vector and can only increment its own slot; the value is the sum, and the merge is the element-wise maximum:
 
@@ -205,7 +205,7 @@ resource "aws_lambda_event_source_mapping" "kinesis_trigger" {
 
 The bisect setting is the circuit breaker for data processing: without it, one malformed record in a batch of ten fails the whole batch and the function retries all ten forever, blocking the shard. With it, the batch is split until the bad record is isolated and sent to the dead-letter queue while the good records succeed.
 
-Since delivery is at least once, the consumer must turn duplicate events into a single side effect. This implementation uses a DynamoDB table as an idempotency store. Powertools expects a table whose primary key is `id`. The JMESPath below uses `powertools_json` because Kinesis payloads are Base64-encoded; a bare `data.order_id` will not see the fields.
+Since delivery is at least once, the consumer must turn duplicate events into a single side effect. This implementation uses a DynamoDB table as an idempotency store. Powertools expects a table whose primary key is `id`. Kinesis payloads are Base64-encoded, so the JMESPath uses `powertools_base64` to decode the record and `powertools_json` to parse the result; a bare `data.order_id` will not see the fields.
 
 ```python
 from aws_lambda_powertools.utilities.batch import (
@@ -234,7 +234,7 @@ persistence_layer = DynamoDBPersistenceLayer(table_name="IdempotencyStore")
 )
 def process_single_record(record: KinesisStreamRecord):
     # Runs at most once per order_id within the expiration window.
-    payload = record.json_data
+    payload = record.kinesis.data_as_json()
     order_id = payload.get("order_id")
     # persist the order; publish a domain event only after the write commits
     return {"status": "processed", "order_id": order_id}

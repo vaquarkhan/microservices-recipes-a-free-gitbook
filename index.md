@@ -1,92 +1,58 @@
-# 📖 Microservices Recipes
+<div class="title-page" markdown="1">
+
+# Microservices Recipes
 
 <span class="book-edition-kicker">The Architect's Field Guide</span>
 
 ![Book Cover](assets/images/cover-image-2.png){:.book-cover-img}
 
-**Featuring Adaptive Granularity Governance: The Khan Microservice Pattern**
+**Adaptive Granularity Governance: The Khan Microservice Pattern**
 
 *by **Viquar Khan***
 
-**Version 2.1** — *23-chapter science edition* (September 2026)
+**Version 2.1** · 23 chapters · September 2026
 
-[Start reading →](chapters/01-introduction-to-microservices.md){: .book-cta} · [Preface](PREFACE.md) · [Author](AUTHOR.md)
+<p class="title-actions">
+<a href="{{ "/chapters/01-introduction-to-microservices.html" | relative_url }}" class="book-cta">Start reading</a>
+<a href="{{ "/PREFACE.html" | relative_url }}">Preface</a>
+<a href="{{ "/AUTHOR.html" | relative_url }}">Author</a>
+</p>
 
----
+A service boundary is worth deploying separately only when it earns its distributed cost. Chapter 11 is the measurement. [Fulcrum / RVx](https://vaquarkhan.github.io/fulcrum-rxy/) is the research.
 
-## 📜 **Copyright & Publication Information**
-
-**Copyright © 2017-2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for book prose, diagrams, and figures. See [LICENSING.md](LICENSING.md).
-
-### **Publication Details**
-- **Title**: Microservices Recipes: The Architect's Field Guide
-- **Author**: Viquar Khan
-- **ORCID**: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
-- **First Edition**: January 2017
-- **Second Edition**: January 2026 (Adaptive Granularity Governance: The Khan Microservice Pattern Edition)
-- **Version 2.1**: September 6, 2026 (23-chapter science edition)
-- **Publisher**: Open Source (GitHub)
-- **Code license**: MIT
-- **Prose and figures**: CC BY-NC-ND 4.0
-- **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
-
-### **Original Methodologies (please cite)**
-The following are original methodologies by Viquar Khan. No trademark is claimed at this time:
-- **Adaptive Granularity Governance: The Khan Microservice Pattern** (formerly Adaptive Granularity Strategy)
-- **Service Decomposition Workflow**
-- **Microservices Maturity Assessment (KM3)**
-
-### **Citation Requirement**
-When referencing this work, please use proper academic citation. See **[Citations Guide](CITATIONS.md)** for complete formatting guidelines.
-
-### **Legal Notice**
-Code is MIT. Book prose and figures are CC BY-NC-ND 4.0. See [LICENSING.md](LICENSING.md). For uses beyond those licenses, contact the author.
-
-**[📖 View Complete Legal Disclaimer](DISCLAIMER.md)**
-
----
-
-## Cite this book
-
-All 23 chapters are public. There is no ten-chapter preview and no later paid edition.
-
-**[Citations](CITATIONS.md)** · **[Academic use](FREE-ACCESS.md)** · **[Version history](VERSION-HISTORY.md)** · **[Mentorship](https://adplist.org/mentors/vaquar-khan)**
-
----
-
-## 🌐 **From Monolith to Microservices**
-
-![Microservices Transformation](assets/images/microservices-animation.gif){:.book-hero-gif}
-
-*A monolith on the left. Earned service boundaries on the right.*
+</div>
 
 ---
 
 ## Start here
 
-### 🔰 For Beginners
-1. [Start with Chapter 1](chapters/01-introduction-to-microservices.md)
-2. [Read the Preface](PREFACE.md)
-3. Progress through Parts I → X
-
-### ⚡ For Experienced Practitioners
-1. Review the Table of Contents below
-2. Jump to specific challenge areas
-3. Use [Quick Reference](reference/quick-reference.md)
-
-### 🏗️ For Architects
-1. Focus on strategic chapters (2, 3, 7)
-2. Study [Adaptive Granularity Governance: The Khan Microservice Pattern](AUTHOR.md#adaptive-granularity-governance-the-khan-microservice-pattern)
-3. Review [Complete Book Preview](BOOK-PREVIEW.md)
+<div class="start-paths">
+  <a class="start-path" href="{{ "/chapters/01-introduction-to-microservices.html" | relative_url }}">
+    <em>I</em>
+    <strong>New to the argument</strong>
+    <span>Chapter 1, then the Preface. Read Parts I through X in order.</span>
+  </a>
+  <a class="start-path" href="{{ "/reference/quick-reference.html" | relative_url }}">
+    <em>II</em>
+    <strong>Already in the work</strong>
+    <span>Use the contents below. Keep the quick reference open.</span>
+  </a>
+  <a class="start-path" href="{{ "/chapters/11-khan-pattern-deep-dive.html" | relative_url }}">
+    <em>III</em>
+    <strong>Governing a portfolio</strong>
+    <span>Chapters 2, 3, and 7, then Chapter 11. The 2017–2026 record is on the author page.</span>
+  </a>
+</div>
 
 ---
 
-## 📋 Table of Contents
+## Contents
 
-### 📚 **Front Matter**
+### Front matter
+
 - [Preface](PREFACE.md) — why a boundary has to earn its keep
 - [About the Author](AUTHOR.md) — Viquar Khan
-- [Mentorship](MENTORSHIP.md) — free 1:1 on ADPList
+- [Mentorship](MENTORSHIP.md) — 1:1 on ADPList
 - [Academic use](FREE-ACCESS.md) — the full book is public; cite it
 - [Licensing](LICENSING.md) — MIT for code; CC BY-NC-ND 4.0 for prose
 - [Naming](NAMING.md) — methodology title and attribution
@@ -97,144 +63,125 @@ All 23 chapters are public. There is no ten-chapter preview and no later paid ed
 - [Version history](VERSION-HISTORY.md)
 - [Changelog](CHANGELOG.md)
 
----
+### Part I — The sociotechnical substrate
 
-### 📖 **Part I: The Sociotechnical Substrate**
-*Focus: Aligning organization and architecture to prevent the "Distributed Monolith"*
+*Align the shape of the organization with the shape of the architecture.*
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 1](chapters/01-introduction-to-microservices.md)** | Earned Boundaries, Not Fashionable Ones | 📖 35 min | 🎯 Intermediate |
-| **[Chapter 2](chapters/02-design-principles-and-patterns.md)** | The Distributed Monolith: Diagnosis and First Remedies | 📖 40 min | 🎯 Advanced |
-| **[Chapter 3](chapters/03-service-communication.md)** | Decouple the Language Before You Decouple the Code | 📖 40 min | 🎯 Advanced |
+| | | |
+|---|---|---|
+| 1 | [Earned Boundaries, Not Fashionable Ones](chapters/01-introduction-to-microservices.md) | 35 min |
+| 2 | [The Distributed Monolith: Diagnosis and First Remedies](chapters/02-design-principles-and-patterns.md) | 40 min |
+| 3 | [Decouple the Language Before You Decouple the Code](chapters/03-service-communication.md) | 40 min |
+{:.contents-table}
 
----
+### Part II — Data architecture
 
-### 🗄️ **Part II: Data Architecture**
-*Focus: Managing data consistency and transactions in distributed systems*
+*Splitting a system splits its data.*
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 4](chapters/04-data-management.md)** | The End of ACID | 📖 45 min | 🎯 Expert |
-| **[Chapter 5](chapters/05-deployment-and-operations.md)** | The Consistency Tax of Spanning Services | 📖 45 min | 🎯 Expert |
-| **[Chapter 6](chapters/06-resilience-and-reliability.md)** | Close the Dual Write, Then Survive Failure | 📖 45 min | 🎯 Expert |
-| **[Chapter 7](chapters/07-security.md)** | Every Hop Is a Door. Prove Who Is Knocking. | 📖 50 min | 🎯 Expert |
+| | | |
+|---|---|---|
+| 4 | [The End of ACID](chapters/04-data-management.md) | 45 min |
+| 5 | [The Consistency Tax of Spanning Services](chapters/05-deployment-and-operations.md) | 45 min |
+| 6 | [Close the Dual Write, Then Survive Failure](chapters/06-resilience-and-reliability.md) | 45 min |
+| 7 | [Every Hop Is a Door. Prove Who Is Knocking.](chapters/07-security.md) | 50 min |
+{:.contents-table}
 
----
+### Part III — Evidence between processes
 
-### 🌐 **Part III: Inter Process Communication**
-*Focus: Moving bits between services without creating latency storms*
+*You cannot attach a debugger to the space between services.*
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 8](chapters/08-monitoring-and-observability.md)** | You Cannot Attach a Debugger. Emit the Evidence First. | 📖 50 min | 🎯 Expert |
-| **[Chapter 9](chapters/09-testing-strategies.md)** | There Is No Whole System to Test. Test the Agreements. | 📖 50 min | 🎯 Expert |
-| **[Chapter 10](chapters/10-asynchronous-messaging-patterns.md)** | Publish What Happened. Do Not Wait. | 📖 50 min | 🎯 Expert |
+| | | |
+|---|---|---|
+| 8 | [You Cannot Attach a Debugger. Emit the Evidence First.](chapters/08-monitoring-and-observability.md) | 50 min |
+| 9 | [There Is No Whole System to Test. Test the Agreements.](chapters/09-testing-strategies.md) | 50 min |
+| 10 | [Publish What Happened. Do Not Wait.](chapters/10-asynchronous-messaging-patterns.md) | 50 min |
+{:.contents-table}
 
----
+### Part IV — Adaptive Granularity Governance
 
-### 🎯 **Part IV: Adaptive Granularity Governance: The Khan Microservice Pattern**
-*Focus: Quantitative framework for microservices decomposition*
+*The score. Chapter 11 is the only source of truth for the formula.*
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 11](chapters/11-khan-pattern-deep-dive.md)** | A Boundary Earns Its Keep Only When All Three Hold | 📖 70 min | 🎯 Expert |
+| | | |
+|---|---|---|
+| 11 | [A Boundary Earns Its Keep Only When All Three Hold](chapters/11-khan-pattern-deep-dive.md) | 70 min |
+{:.contents-table}
 
----
+### Part V — Resilience and scale
 
-### 🧱 **Part V: Resilience Engineering & Advanced Scaling**
-*Focus: Blast-radius control and evidence-based resilience*
+| | | |
+|---|---|---|
+| 12 | [A Single Bad Shard Should Be a Footnote](chapters/12-shuffle-sharding.md) | 55 min |
+| 13 | [Break It on Purpose. Watch. Then You Know.](chapters/13-chaos-engineering.md) | 55 min |
+{:.contents-table}
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 12](chapters/12-shuffle-sharding.md)** | A Single Bad Shard Should Be a Footnote | 📖 55 min | 🎯 Expert |
-| **[Chapter 13](chapters/13-chaos-engineering.md)** | Break It on Purpose. Watch. Then You Know. | 📖 55 min | 🎯 Expert |
+### Part VI — Platform
 
----
+| | | |
+|---|---|---|
+| 14 | [The Definition Is the Truth. Reality Is Reconciled Toward It.](chapters/14-infrastructure-as-code-at-scale.md) | 55 min |
+| 15 | [Spend the Budget on Answers. Stay Sighted When It Counts.](chapters/15-observability-2.md) | 55 min |
+{:.contents-table}
 
-### 🏗️ **Part VI: The Platform Engineering Shift**
-*Focus: Infrastructure APIs, telemetry, and cost-aware observability*
+### Part VII — Agents and retrieval
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 14](chapters/14-infrastructure-as-code-at-scale.md)** | The Definition Is the Truth. Reality Is Reconciled Toward It. | 📖 55 min | 🎯 Expert |
-| **[Chapter 15](chapters/15-observability-2.md)** | Spend the Budget on Answers. Stay Sighted When It Counts. | 📖 55 min | 🎯 Expert |
+| | | |
+|---|---|---|
+| 16 | [The Model Proposes. The Executor Disposes.](chapters/16-agentic-ai-architectures.md) | 55 min |
+| 17 | [Retrieval as a Data-Plane Discipline, Not a Prompt Trick](chapters/17-rag-at-scale.md) | 55 min |
+{:.contents-table}
 
----
+### Part VIII — Migration
 
-### Part VII: Agents and retrieval
-*Focus: Agents and retrieval as production components*
+| | | |
+|---|---|---|
+| 18 | [The Right Number of Services Is Often One.](chapters/18-modular-monolith.md) | 55 min |
+| 19 | [Replace It While It Is Still Running.](chapters/19-strangler-fig-pattern.md) | 55 min |
+{:.contents-table}
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 16](chapters/16-agentic-ai-architectures.md)** | The Model Proposes. The Executor Disposes. | 📖 55 min | 🎯 Expert |
-| **[Chapter 17](chapters/17-rag-at-scale.md)** | Retrieval as a Data-Plane Discipline, Not a Prompt Trick | 📖 55 min | 🎯 Expert |
+### Part IX — Organizational maturity
 
----
+| | | |
+|---|---|---|
+| 20 | [Has This Organization Earned the Right to Distribute?](chapters/20-km3-maturity-model.md) | 50 min |
+{:.contents-table}
 
-### Part VIII: Migration
-*Focus: Evolutionary paths from monolith to services*
+### Part X — The science behind the metric
 
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 18](chapters/18-modular-monolith.md)** | The Right Number of Services Is Often One. | 📖 55 min | 🎯 Expert |
-| **[Chapter 19](chapters/19-strangler-fig-pattern.md)** | Replace It While It Is Still Running. | 📖 55 min | 🎯 Expert |
+| | | |
+|---|---|---|
+| 21 | [Price the Waste. Name the Rest. Do Not Invent a Total.](chapters/21-pricing-the-distributed-monolith.md) | 50 min |
+| 22 | [A Formula Confers No Truth. Outcomes Do.](chapters/22-construct-validity.md) | 50 min |
+| 23 | [Never Point the Number at the People.](chapters/23-gaming-and-goodhart.md) | 50 min |
+{:.contents-table}
 
----
+### Reference
 
-### 📈 **Part IX: Organizational Maturity**
-*Focus: Assessing whether the organization is ready to distribute*
-
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 20](chapters/20-km3-maturity-model.md)** | Has This Organization Earned the Right to Distribute? | 📖 50 min | 🎯 Expert |
-
----
-
-### 📐 **Part X: The Science Behind the Metric**
-*Focus: Cost, construct validity, and keeping a gating metric honest*
-
-| Chapter | Title | Read Time | Difficulty |
-|---------|-------|-----------|------------|
-| **[Chapter 21](chapters/21-pricing-the-distributed-monolith.md)** | Price the Waste. Name the Rest. Do Not Invent a Total. | 📖 50 min | 🎯 Expert |
-| **[Chapter 22](chapters/22-construct-validity.md)** | A Formula Confers No Truth. Outcomes Do. | 📖 50 min | 🎯 Expert |
-| **[Chapter 23](chapters/23-gaming-and-goodhart.md)** | Never Point the Number at the People. | 📖 50 min | 🎯 Expert |
+- [Glossary](reference/glossary.md)
+- [Quick reference](reference/quick-reference.md)
+- [Bibliography](reference/bibliography.md)
 
 ---
 
-### 📚 **Reference Materials**
-
-| Resource | Description |
-|----------|-------------|
-| **[📖 Glossary](reference/glossary.md)** | Comprehensive definitions of microservices terms |
-| **[⚡ Quick Reference](reference/quick-reference.md)** | Handy reference cards for patterns and practices |
-| **[📚 Bibliography](reference/bibliography.md)** | Curated list of books, articles, and resources |
-
----
-
-## About the method
+## The method
 
 A boundary is worth deploying separately only when it is efficient at runtime, independent in how it changes, and small enough for its team to own. Chapter 11 measures that. Chapter 23 is the rule that keeps the measurement honest: do not use the score to review people.
 
----
-
-## About the author
-
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services. He has kept this book in print, in public, from the 2017 eight-chapter edition through Version 2.1. On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, **Service Decomposition Workflow**, and **Microservices Maturity Assessment**. The year-by-year record is on the [author page](AUTHOR.md).
-
-### Mentorship
-[Book a 1:1 session on ADPList](https://adplist.org/mentors/vaquar-khan). I will not invent production metrics for work I have not seen.
-
-**Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon Author](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6)
+![A monolith on the left. Earned service boundaries on the right.](assets/images/microservices-animation.gif){:.book-hero-gif}
 
 ---
 
-## Contribute
+## The author
 
-[Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) · [Cite it](CITATIONS.md) · [Open an issue](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/issues) · [Contributing](CONTRIBUTING.md)
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services. He has kept this book in print, in public, from the 2017 eight-chapter edition through Version 2.1. On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached.
 
-[Chapter 1](chapters/01-introduction-to-microservices.md) · [Preface](PREFACE.md) · [Quick reference](reference/quick-reference.md)
+[Mentorship on ADPList](https://adplist.org/mentors/vaquar-khan). [ORCID](https://orcid.org/0009-0008-3592-4162) · [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) · [GitHub](https://github.com/vaquarkhan)
 
 ---
 
-<small>Last Updated: September 6, 2026 | Version 2.1 | Original work by Viquar Khan</small>
+## Colophon
+
+**Copyright © 2017–2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](LICENSING.md).
+
+First edition January 2017. Second edition January 2026. Version 2.1 September 6, 2026. [Citations](CITATIONS.md) · [Copyright](COPYRIGHT.md) · [Disclaimer](DISCLAIMER.md)
+
+[Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) · [Cite it](CITATIONS.md) · [Contributing](CONTRIBUTING.md)

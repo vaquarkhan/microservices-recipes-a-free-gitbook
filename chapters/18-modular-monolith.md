@@ -104,10 +104,11 @@ This makes the boundary a physical impossibility rather than a guideline, which 
 REVOKE ALL ON SCHEMA inventory FROM orders_app;
 GRANT USAGE ON SCHEMA orders TO orders_app;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA orders TO orders_app;
+ALTER DEFAULT PRIVILEGES IN SCHEMA orders GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO orders_app;
 ```
 
 ![Schema-per-module isolation](../assets/images/diagrams/schema-per-module.png)
-*Figure 18.2: Schema-per-module isolation on shared infrastructure. Each module, orders and inventory in the diagram, has its own logical schema, and the application role for each module holds grants only on its own schema. The dashed line between them, the tempting cross-schema join, is shown blocked, because the grant simply does not exist. The message is that the data boundary is enforced by the database engine itself, so a developer cannot accidentally couple two modules through a join, and the discipline holds without relying on anyone remembering the rule. One shared `app` user would make this picture a lie.*
+*Figure 18.2: Schema-per-module isolation on shared infrastructure. Each module, orders and inventory in the diagram, has its own logical schema, and the application role for each module holds grants only on its own schema. The dashed line between them, the tempting cross-schema join, is shown blocked, because the grant simply does not exist. The message is that the data boundary is enforced by the database engine itself, so a developer cannot accidentally couple two modules through a join. `ALL TABLES` covers tables that exist at grant time; `ALTER DEFAULT PRIVILEGES` covers tables created later. One shared `app` user would make this picture a lie.*
 
 When modules need each other's data, they get it the same way separate services would, through a published interface or through integration events, not through a shared table. The orders module does not read the inventory table; it calls inventory's published method, or it subscribes to inventory's events and keeps its own read model. This feels like more work than a join, and it is, and that is the point: the friction is the boundary doing its job, and it is the same friction you would pay across a network, except here you pay it in-process instead of in milliseconds on the wire. You get the decoupling of separate data ownership without the distribution tax, which is the modular monolith's central bargain.
 

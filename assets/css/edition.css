@@ -1,0 +1,705 @@
+/* =============================================================================
+   Edition layer — online book, not a themed wiki
+   Loaded last. Original covers stay as-is.
+   ============================================================================= */
+
+/* Hide leftover Architect chrome if the remote theme injects it */
+#header,
+header.inner,
+.page-header,
+#footer.inner,
+.inner .clearfix {
+  display: none !important;
+}
+
+.brand-link {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: var(--desk) !important;
+}
+
+.github-link {
+  background: var(--desk) !important;
+  color: #fffaf2 !important;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  box-shadow: none;
+}
+
+.github-link:hover {
+  background: var(--copper) !important;
+  color: #fffaf2 !important;
+}
+
+/* Running header: tighter, more like a bound book */
+.book-header {
+  background: rgba(255, 250, 242, 0.94) !important;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #fffaf2;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 1.1rem;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--desk);
+}
+
+.nav-toggle[aria-expanded="true"] {
+  border-color: var(--copper);
+}
+
+.breadcrumb {
+  background: transparent !important;
+  padding: 0 0 0.25rem !important;
+  border-radius: 0;
+  margin-bottom: 0.5rem !important;
+}
+
+body.home-page .book-ornament {
+  display: none;
+}
+
+body.chapter-page .book-ornament {
+  width: min(160px, 50%);
+  margin: 0.75rem auto 1.25rem;
+  opacity: 0.7;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Title page                                                                  */
+/* -------------------------------------------------------------------------- */
+
+.title-page {
+  text-align: center;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.title-page > h1:first-child {
+  font-family: var(--display-font);
+  font-size: clamp(2.4rem, 6vw, 3.6rem) !important;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin: 0.25rem 0 0.4rem !important;
+}
+
+.title-page .book-edition-kicker {
+  margin-bottom: 1.6rem;
+}
+
+.title-page img.book-cover-img {
+  max-width: min(100%, 380px) !important;
+  margin: 0.25rem auto 1.6rem !important;
+  transform: rotate(-1.4deg);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.title-page img.book-cover-img:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.title-page p {
+  text-align: center !important;
+  margin: 0.45rem 0;
+}
+
+.title-page p:last-of-type {
+  max-width: 36rem;
+  margin: 1.15rem auto 0;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.title-page .book-cta {
+  margin: 0.35rem 0.35rem 0.15rem 0;
+}
+
+.title-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem 1rem;
+  margin: 1.1rem 0 0.35rem;
+  font-family: var(--ui-font);
+  font-size: 0.95rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Start-here paths                                                            */
+/* -------------------------------------------------------------------------- */
+
+.start-paths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.start-path {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.15rem 1.1rem 1.2rem;
+  background: #fffaf2;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit !important;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-path:hover {
+  transform: translateY(-3px);
+  border-color: var(--copper);
+  box-shadow: var(--shadow-md);
+  color: inherit !important;
+}
+
+.start-path em {
+  font-family: var(--display-font);
+  font-style: normal;
+  font-size: 1.35rem;
+  color: var(--copper);
+  line-height: 1;
+}
+
+.start-path strong {
+  font-family: var(--display-font);
+  font-size: 1.12rem;
+  color: var(--desk);
+}
+
+.start-path span {
+  font-family: var(--ui-font);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Book contents                                                               */
+/* -------------------------------------------------------------------------- */
+
+body.home-page .book-content {
+  max-width: 46rem;
+}
+
+body.home-page .book-content > h2 {
+  font-size: 1.85rem;
+}
+
+body.home-page .book-content > h3 {
+  font-family: var(--ui-font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper);
+  border: none;
+  margin: 2.1rem 0 0.35rem;
+  padding: 0;
+}
+
+body.home-page .book-content > h3::after {
+  display: none;
+}
+
+body.home-page .book-content > h3 + p {
+  margin-top: 0.15rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.contents-table,
+body.home-page .book-content table.contents-table {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0.35rem 0 0.75rem !important;
+  font-size: 1rem !important;
+  background: transparent !important;
+}
+
+.contents-table thead {
+  display: none;
+}
+
+.contents-table td,
+.contents-table th,
+body.home-page .book-content table.contents-table td {
+  border: none !important;
+  border-bottom: 1px dotted rgba(27, 58, 75, 0.22) !important;
+  background: transparent !important;
+  padding: 0.55rem 0.35rem !important;
+  vertical-align: baseline;
+}
+
+.contents-table tr td:first-child {
+  width: 2.4rem;
+  font-family: var(--display-font);
+  font-weight: 650;
+  color: var(--copper);
+  text-align: right;
+  padding-right: 0.85rem !important;
+}
+
+.contents-table tr td:nth-child(2) {
+  font-family: var(--body-font);
+}
+
+.contents-table tr td:last-child {
+  width: 4.5rem;
+  text-align: right;
+  font-family: var(--ui-font);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.contents-table a {
+  color: var(--desk) !important;
+  text-decoration: none !important;
+}
+
+.contents-table a:hover {
+  color: var(--copper) !important;
+}
+
+body.home-page .book-content > ul {
+  list-style: none;
+  padding: 0;
+}
+
+body.home-page .book-content > ul > li {
+  padding: 0.35rem 0;
+  border-bottom: 1px dotted rgba(27, 58, 75, 0.18);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chapter openings                                                            */
+/* -------------------------------------------------------------------------- */
+
+.chapter-page .book-content > h1:first-child {
+  font-size: clamp(1.85rem, 3.4vw, 2.35rem);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.chapter-page .book-content > blockquote:first-of-type,
+.chapter-page .book-content > .chapter-header + blockquote {
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0 0.75rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.chapter-page .book-content > .chapter-header + blockquote p,
+.chapter-page .book-content > blockquote:first-of-type p {
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+.chapter-page .book-content > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--display-font);
+  font-weight: 700;
+  font-size: 3.35rem;
+  line-height: 0.78;
+  padding: 0.12em 0.12em 0 0;
+  color: var(--copper);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chapter endpapers                                                           */
+/* -------------------------------------------------------------------------- */
+
+.chapter-navigation .nav-buttons {
+  gap: 1rem;
+}
+
+.nav-button {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 1rem 1.15rem !important;
+  background: #fffaf2 !important;
+  color: var(--desk) !important;
+}
+
+.nav-button:hover {
+  background: #fffaf2 !important;
+  color: var(--copper) !important;
+}
+
+.nav-button.next {
+  align-items: flex-end;
+}
+
+.nav-button .nav-dir {
+  font-family: var(--ui-font);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.nav-button .nav-title {
+  font-family: var(--display-font);
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Colophon footer                                                             */
+/* -------------------------------------------------------------------------- */
+
+.book-footer {
+  background: transparent !important;
+  padding-top: 2rem !important;
+}
+
+.footer-content {
+  gap: 1.75rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.footer-section h4 {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-section h4::after {
+  display: none !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.colophon-mark {
+  display: block;
+  width: 120px;
+  height: 24px;
+  margin: 0 auto 0.75rem;
+  opacity: 0.7;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chapters mega-menu                                                          */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 901px) {
+  .nav-dropdown:hover > .dropdown-content,
+  .nav-dropdown.is-open > .dropdown-content {
+    display: grid !important;
+  }
+
+  .nav-dropdown .dropdown-content {
+    grid-template-columns: 1fr 1fr;
+    min-width: 560px;
+    max-height: 72vh;
+    padding: 1.15rem 1.25rem;
+  }
+
+  .nav-dropdown .dropdown-content:not(:has(.dropdown-section)) {
+    display: block;
+    min-width: 220px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Mobile                                                                      */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .book-nav {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-brand {
+    flex: 1 1 auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.15rem;
+    padding: 0.35rem 0 0.85rem;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links .nav-link,
+  .nav-links .github-link {
+    padding: 0.65rem 0.15rem;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0.25rem 0 0.5rem 0.75rem;
+    min-width: 0;
+    max-height: none;
+  }
+
+  .start-paths {
+    grid-template-columns: 1fr;
+  }
+
+  .title-page img.book-cover-img {
+    transform: none;
+    max-width: min(100%, 260px) !important;
+  }
+
+  .chapter-page .book-content > p:first-of-type::first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Motion: book, not a landing page                                            */
+/* -------------------------------------------------------------------------- */
+
+.page-turn {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(154, 107, 63, 0.12) 0 14px, transparent 14px),
+    linear-gradient(180deg, #fffaf2 0%, #f7f3eb 100%);
+  transform: translateX(100%);
+  box-shadow: -24px 0 48px rgba(18, 40, 51, 0.18);
+}
+
+body.is-turning .page-turn {
+  animation: pageTurn 0.42s ease-in forwards;
+}
+
+@keyframes pageTurn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.reading-progress {
+  background: linear-gradient(90deg, var(--copper), var(--gilt), var(--copper));
+  background-size: 200% 100%;
+  animation: giltFlow 8s linear infinite;
+}
+
+@keyframes giltFlow {
+  from { background-position: 0 0; }
+  to { background-position: 200% 0; }
+}
+
+.title-page > h1:first-child {
+  animation: inkIn 0.7s ease both;
+}
+
+.title-page .book-edition-kicker {
+  animation: inkIn 0.65s 0.08s ease both;
+}
+
+.title-page img.book-cover-img {
+  animation: coverSettle 1.05s 0.12s cubic-bezier(0.22, 1, 0.36, 1) both, coverFloat 7s 1.3s ease-in-out infinite;
+}
+
+.title-page p {
+  animation: inkIn 0.55s 0.22s ease both;
+}
+
+.title-page .title-actions {
+  animation: inkIn 0.55s 0.32s ease both;
+}
+
+.title-page p:last-of-type {
+  animation-delay: 0.4s;
+}
+
+.title-page .book-cta {
+  animation: ctaGlow 3.6s 1s ease-in-out infinite;
+}
+
+@keyframes inkIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes coverSettle {
+  from {
+    opacity: 0;
+    transform: translateY(28px) rotate(-6deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-1.4deg) scale(1);
+  }
+}
+
+@keyframes coverFloat {
+  0%, 100% { transform: rotate(-1.4deg) translateY(0); }
+  50% { transform: rotate(-0.6deg) translateY(-7px); }
+}
+
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 2px 8px rgba(18, 40, 51, 0.08); }
+  50% { box-shadow: 0 8px 22px rgba(154, 107, 63, 0.35); }
+}
+
+.chapter-header {
+  animation: plateIn 0.75s ease both;
+}
+
+@keyframes plateIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.chapter-page .book-content > p:first-of-type::first-letter {
+  animation: dropCapIn 0.55s 0.15s ease both;
+}
+
+@keyframes dropCapIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.start-path {
+  animation: inkIn 0.55s ease both;
+}
+
+.start-path:nth-child(1) { animation-delay: 0.05s; }
+.start-path:nth-child(2) { animation-delay: 0.14s; }
+.start-path:nth-child(3) { animation-delay: 0.23s; }
+
+.contents-table tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contents-table tbody tr:hover {
+  background: rgba(196, 165, 116, 0.12) !important;
+  transform: translateX(4px);
+}
+
+.contents-table tbody tr:hover td {
+  background: transparent !important;
+}
+
+.book-content h2,
+.book-content h3,
+.book-content img,
+.book-content blockquote,
+.book-content table,
+.chapter-navigation {
+  --reveal-shift: 14px;
+}
+
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(var(--reveal-shift, 14px));
+}
+
+.reveal-ready.is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.nav-links.is-open {
+  animation: inkIn 0.28s ease both;
+}
+
+.back-to-top {
+  display: none;
+  animation: inkIn 0.25s ease both;
+}
+
+@media (max-width: 900px) {
+  .title-page img.book-cover-img {
+    animation: inkIn 0.7s ease both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-page img.book-cover-img,
+  .start-path,
+  .title-page > h1:first-child,
+  .title-page .book-edition-kicker,
+  .title-page p,
+  .title-page .title-actions,
+  .title-page .book-cta,
+  .chapter-header,
+  .chapter-page .book-content > p:first-of-type::first-letter,
+  .reading-progress,
+  .nav-links.is-open,
+  .back-to-top,
+  .reveal-ready,
+  .reveal-ready.is-in,
+  body.is-turning .page-turn {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .page-turn {
+    display: none;
+  }
+
+  .contents-table tbody tr:hover {
+    transform: none;
+  }
+}
