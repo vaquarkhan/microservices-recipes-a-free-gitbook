@@ -658,6 +658,12 @@ body.is-turning .page-turn {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
+.book-content img.book-hero-gif.reveal-ready,
+.book-content img[src*="microservices-animation"].reveal-ready {
+  opacity: 1;
+  transform: none;
+}
+
 .nav-links.is-open {
   animation: inkIn 0.28s ease both;
 }

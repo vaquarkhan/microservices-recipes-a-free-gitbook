@@ -44,6 +44,8 @@ A service boundary is worth deploying separately only when it earns its distribu
   </a>
 </div>
 
+![A monolith on the left. Earned service boundaries on the right.](assets/images/microservices-animation.gif){:.book-hero-gif}
+
 ---
 
 ## Contents
@@ -165,8 +167,6 @@ A service boundary is worth deploying separately only when it earns its distribu
 ## The method
 
 A boundary is worth deploying separately only when it is efficient at runtime, independent in how it changes, and small enough for its team to own. Chapter 11 measures that. Chapter 23 is the rule that keeps the measurement honest: do not use the score to review people.
-
-![A monolith on the left. Earned service boundaries on the right.](assets/images/microservices-animation.gif){:.book-hero-gif}
 
 ---
 
