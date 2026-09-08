@@ -574,41 +574,57 @@ def d_data_ownership_events() -> Svg:
 
 
 def d_saga_vs() -> Svg:
-    s = Svg(1000, 580, "Choreography versus orchestration", "No coordinator, or an explicit state machine.")
-    s.panel(28, 88, 470, 450, "Choreography: no application coordinator", tone="good")
-    o1 = boxed(s, 56, 130, 180, 70, "Order service", tone="desk")
-    i1 = boxed(s, 280, 230, 180, 70, "Inventory service", tone="good")
-    p1 = boxed(s, 56, 340, 180, 70, "Payment service", tone="bad")
-    s.connect(o1, i1, label="OrderCreated")
-    s.connect(i1, p1, label="InventoryReserved")
-    s.connect(p1, o1, frm="n", to="s", label="PaymentProcessed")
-    s.connect(p1, i1, dashed=True, color=BAD, label="PaymentFailed → release")
-
-    s.panel(520, 88, 452, 450, "Orchestration: explicit state machine", tone="warn")
-    orch = boxed(s, 610, 130, 260, 70, "Saga orchestrator", tone="warn")
-    o2 = boxed(s, 548, 250, 170, 64, "Order service", tone="desk")
-    i2 = boxed(s, 768, 250, 170, 64, "Inventory service", tone="good")
-    p2 = boxed(s, 658, 370, 180, 64, "Payment service", "charge is the pivot", tone="bad")
-    s.connect(orch, o2, frm="s", to="n", label="1. pending order")
-    s.connect(orch, i2, frm="s", to="n", label="2. reserve")
-    s.connect(orch, p2, frm="s", to="n", label="3. charge")
-    s.connect(orch, i2, dashed=True, color=BAD)
-    s.connect(orch, o2, dashed=True, color=BAD)
-    s.footnote("Compensate in reverse after a completed step fails.")
+    s = Svg(1000, 960, "Choreography versus orchestration", "No coordinator, or an explicit state machine.")
+    s.panel(28, 84, 944, 400, "Choreography: no application coordinator", tone="good")
+    draw_sequence(
+        s,
+        ["Order", "Inventory", "Payment"],
+        [
+            (0, 1, "OrderCreated"),
+            (1, 2, "InventoryReserved"),
+            (2, 0, "PaymentProcessed"),
+            (2, 1, "PaymentFailed → release", True),
+            ("note", 0, 2, "Services react to events. There is no application coordinator."),
+        ],
+        y0=122,
+        bottom=460,
+    )
+    s.panel(28, 504, 944, 410, "Orchestration: explicit state machine", tone="warn")
+    draw_sequence(
+        s,
+        ["Orchestrator", "Order", "Inventory", "Payment"],
+        [
+            (0, 1, "1. Create pending order"),
+            (1, 0, "Created"),
+            (0, 2, "2. Reserve inventory"),
+            (2, 0, "Reserved"),
+            (0, 3, "3. Charge (pivot)"),
+            ("note", 0, 3, "On failure after a completed step, compensate in reverse."),
+        ],
+        y0=542,
+        bottom=890,
+    )
     return s
 
 
-def draw_sequence(s: Svg, participants: list[str], messages: list[tuple], y0: float = 100) -> None:
+def draw_sequence(
+    s: Svg,
+    participants: list[str],
+    messages: list[tuple],
+    y0: float = 100,
+    bottom: float | None = None,
+) -> None:
     n = len(participants)
     usable = s.w - 80
     step = usable / n
     xs = [40 + step / 2 + i * step for i in range(n)]
+    y_end = s.h - 40 if bottom is None else bottom
     heads = []
     for i, name in enumerate(participants):
         box = boxed(s, xs[i] - 88, y0, 176, 54, name, tone="desk")
         heads.append(box)
         s.add(
-            f'<line x1="{xs[i]:.1f}" y1="{y0 + 54:.1f}" x2="{xs[i]:.1f}" y2="{s.h - 40:.1f}" '
+            f'<line x1="{xs[i]:.1f}" y1="{y0 + 54:.1f}" x2="{xs[i]:.1f}" y2="{y_end:.1f}" '
             f'stroke="{PAPER_EDGE}" stroke-width="1.2"/>'
         )
     y = y0 + 90
@@ -1166,27 +1182,27 @@ def d_multi_agent() -> Svg:
 
 
 def d_rag() -> Svg:
-    s = Svg(720, 640, "RAG architecture", "Ingest into an index. Query with ACL prefilter, rerank, then cite.")
-    s.panel(40, 90, 640, 220, "Ingestion", tone="desk")
-    d = boxed(s, 60, 140, 130, 70, "Documents", tone="desk")
-    c = boxed(s, 220, 140, 120, 70, "Chunks", tone="desk")
-    e = boxed(s, 370, 140, 120, 70, "Embed", tone="desk")
-    idx = boxed(s, 520, 140, 140, 70, "Vector index", tone="good")
+    s = Svg(1000, 620, "RAG architecture", "Ingest into an index. Query with ACL prefilter, rerank, then cite.")
+    s.panel(40, 90, 920, 180, "Ingestion", tone="desk")
+    d = boxed(s, 60, 130, 160, 70, "Documents", tone="desk")
+    c = boxed(s, 270, 130, 140, 70, "Chunks", tone="desk")
+    e = boxed(s, 460, 130, 140, 70, "Embed", tone="desk")
+    idx = boxed(s, 650, 130, 270, 70, "Vector index", tone="good")
     s.connect(d, c)
     s.connect(c, e)
     s.connect(e, idx)
-    s.panel(40, 340, 640, 250, "Query", tone="warn")
-    q = boxed(s, 60, 390, 110, 60, "Query", tone="desk")
-    qe = boxed(s, 200, 390, 120, 60, "Embed query", tone="desk")
-    r = boxed(s, 350, 390, 160, 60, "Retrieve + ACL", tone="warn")
-    rr = boxed(s, 540, 390, 120, 60, "Rerank", tone="desk")
-    g = boxed(s, 200, 490, 160, 60, "Generator", tone="desk")
-    a = boxed(s, 400, 490, 160, 60, "Cited answer", tone="good")
+    s.panel(40, 300, 920, 270, "Query", tone="warn")
+    q = boxed(s, 60, 340, 150, 64, "Query", tone="desk")
+    qe = boxed(s, 250, 340, 170, 64, "Embed query", tone="desk")
+    r = boxed(s, 460, 340, 220, 64, "Retrieve + ACL", tone="warn")
+    rr = boxed(s, 460, 460, 160, 64, "Rerank", tone="desk")
+    g = boxed(s, 640, 460, 150, 64, "Generator", tone="desk")
+    a = boxed(s, 810, 460, 130, 64, "Cited answer", tone="good")
     s.connect(q, qe)
     s.connect(qe, r)
-    s.connect(r, rr)
     s.connect(idx, r, frm="s", to="n")
-    s.connect(rr, g, frm="s", to="e")
+    s.connect(r, rr, frm="s", to="n")
+    s.connect(rr, g)
     s.connect(g, a)
     return s
 

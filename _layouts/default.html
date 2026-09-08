@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/book.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/atelier.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/edition.css" | relative_url }}">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
@@ -41,7 +42,10 @@
             <span class="brand-subtitle">The Architect's Field Guide</span>
           </div>
           
-          <div class="nav-links">
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="nav-links">
             <a href="{{ "/" | relative_url }}" class="nav-link">Home</a>
             <a href="{{ "/PREFACE.html" | relative_url }}" class="nav-link">Preface</a>
             <a href="{{ "/AUTHOR.html" | relative_url }}" class="nav-link">Author</a>
@@ -107,9 +111,9 @@
             <div class="nav-dropdown">
               <a href="#" class="nav-link dropdown-toggle">Reference ▼</a>
               <div class="dropdown-content">
-                <a href="{{ "/reference/glossary.html" | relative_url }}">📖 Glossary</a>
-                <a href="{{ "/reference/quick-reference.html" | relative_url }}">⚡ Quick Reference</a>
-                <a href="{{ "/reference/bibliography.html" | relative_url }}">📚 Bibliography</a>
+                <a href="{{ "/reference/glossary.html" | relative_url }}">Glossary</a>
+                <a href="{{ "/reference/quick-reference.html" | relative_url }}">Quick Reference</a>
+                <a href="{{ "/reference/bibliography.html" | relative_url }}">Bibliography</a>
               </div>
             </div>
             <a href="https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook" class="nav-link github-link" target="_blank">
@@ -125,7 +129,7 @@
       <!-- Breadcrumb Navigation -->
       {% if page.url != "/" %}
       <nav class="breadcrumb">
-        <a href="{{ "/" | relative_url }}">🏠 Home</a>
+        <a href="{{ "/" | relative_url }}">Home</a>
         {% assign url_parts = page.url | split: '/' %}
         {% assign breadcrumb_url = '' %}
         {% for part in url_parts %}
@@ -166,11 +170,13 @@
             {% assign prev_index = current_index | minus: 1 %}
             {% assign prev_chapter = chapters[prev_index] %}
             <a href="{{ prev_chapter.url | relative_url }}" class="nav-button prev">
-              ← Previous: {{ prev_chapter.title | truncate: 30 }}
+              <span class="nav-dir">Previous</span>
+              <span class="nav-title">{{ prev_chapter.title | truncate: 42 }}</span>
             </a>
           {% else %}
             <a href="{{ "/PREFACE.html" | relative_url }}" class="nav-button prev">
-              ← Previous: Preface
+              <span class="nav-dir">Previous</span>
+              <span class="nav-title">Preface</span>
             </a>
           {% endif %}
           
@@ -179,11 +185,13 @@
             {% assign next_index = current_index | plus: 1 %}
             {% assign next_chapter = chapters[next_index] %}
             <a href="{{ next_chapter.url | relative_url }}" class="nav-button next">
-              Next: {{ next_chapter.title | truncate: 30 }} →
+              <span class="nav-dir">Next</span>
+              <span class="nav-title">{{ next_chapter.title | truncate: 42 }}</span>
             </a>
           {% else %}
             <a href="{{ "/reference/glossary.html" | relative_url }}" class="nav-button next">
-              Next: Glossary →
+              <span class="nav-dir">Next</span>
+              <span class="nav-title">Glossary</span>
             </a>
           {% endif %}
         </div>
@@ -194,7 +202,7 @@
       <footer class="book-footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h4>📖 Microservices Recipes</h4>
+            <h4>The book</h4>
             <p>The Architect's Field Guide</p>
             <p>Featuring Adaptive Granularity Governance: The Khan Microservice Pattern</p>
           </div>
@@ -219,14 +227,15 @@
             <h4>Connect</h4>
             <a href="https://vaquarkhan.github.io/fulcrum-rxy/" target="_blank" rel="noopener">Fulcrum / RVx</a>
             <a href="https://orcid.org/0009-0008-3592-4162" target="_blank">ORCID</a>
-            <a href="https://linkedin.com/in/vaquar-khan" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/vaquar-khan-b695577/" target="_blank">LinkedIn</a>
             <a href="https://github.com/vaquarkhan" target="_blank">GitHub</a>
             <a href="https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6" target="_blank">Amazon Author</a>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>&copy; 2017–2026 Viquar Khan. Code: <a href="{{ "/LICENSE" | relative_url }}">MIT</a>. Prose: <a href="{{ "/LICENSING.html" | relative_url }}">CC BY-NC-ND 4.0</a>.</p>
+          <img class="colophon-mark" src="{{ "/assets/images/book-ornament.svg" | relative_url }}" alt="">
+          <p>&copy; 2017–2026 Viquar Khan. Version 2.1. Code: <a href="{{ "/LICENSE" | relative_url }}">MIT</a>. Prose: <a href="{{ "/LICENSING.html" | relative_url }}">CC BY-NC-ND 4.0</a>.</p>
         </div>
       </footer>
     </div>
@@ -236,6 +245,8 @@
     <button id="back-to-top" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
       ↑ Top
     </button>
+
+    <div class="page-turn" id="page-turn" aria-hidden="true"></div>
 
     <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
       <button type="button" class="image-lightbox-close" id="image-lightbox-close" aria-label="Close">&times;</button>
@@ -264,16 +275,29 @@
       }, { passive: true });
 
       document.addEventListener('DOMContentLoaded', function () {
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        if (navToggle && navLinks) {
+          navToggle.addEventListener('click', function () {
+            const open = navLinks.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+          });
+        }
+
         const dropdowns = document.querySelectorAll('.nav-dropdown');
         dropdowns.forEach(function (dropdown) {
           const toggle = dropdown.querySelector('.dropdown-toggle');
           const content = dropdown.querySelector('.dropdown-content');
           toggle.addEventListener('click', function (e) {
             e.preventDefault();
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            dropdown.classList.toggle('is-open');
+            const open = dropdown.classList.contains('is-open');
+            content.style.display = open ? (window.matchMedia('(min-width: 901px)').matches ? 'grid' : 'block') : 'none';
           });
           document.addEventListener('click', function (e) {
             if (!dropdown.contains(e.target)) {
+              dropdown.classList.remove('is-open');
               content.style.display = 'none';
             }
           });
@@ -333,6 +357,41 @@
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape') closeLightbox();
         });
+
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!reduceMotion && 'IntersectionObserver' in window) {
+          var revealSel = '.book-content h2, .book-content h3, .book-content img, .book-content blockquote, .book-content > table, .chapter-navigation';
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          document.querySelectorAll(revealSel).forEach(function (el) {
+            if (el.closest('.title-page') || el.closest('.chapter-header')) return;
+            if (el.classList.contains('book-cover-img') || el.classList.contains('book-scene') || el.classList.contains('book-plate')) return;
+            el.classList.add('reveal-ready');
+            io.observe(el);
+          });
+        }
+
+        if (!reduceMotion) {
+          document.querySelectorAll('.book-cta, .nav-button, .start-path, .contents-table a').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+              if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+              var href = link.getAttribute('href');
+              if (!href || href.charAt(0) === '#' || href.indexOf('http') === 0) return;
+              e.preventDefault();
+              document.body.classList.add('is-turning');
+              window.setTimeout(function () {
+                window.location.href = href;
+              }, 380);
+            });
+          });
+        }
       });
     </script>
   </body>

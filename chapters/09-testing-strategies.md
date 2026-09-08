@@ -18,8 +18,8 @@ readingTime: "50 minutes"
 <div class="chapter-header">
   <h2 class="chapter-subtitle">There Is No Whole System to Test. Test the Agreements.</h2>
   <div class="chapter-meta">
-    <span class="reading-time">?? 50 min read</span>
-    <span class="difficulty">?? Expert</span>
+    <span class="reading-time">📖 50 min read</span>
+    <span class="difficulty">🎯 Expert</span>
   </div>
 </div>
 

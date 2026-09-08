@@ -132,7 +132,7 @@ def create_user(user_id, email, full_name):
 
 The relay is a Lambda triggered by the stream. Filter for outbox inserts in code, or better, attach event-source filter criteria so user-profile writes never wake the function. Configure the mapping for resilience: a small batch size, bisect-batch-on-error so one poison record does not fail the whole batch, a few retries, and a dead-letter queue for records that still fail.
 
-`put_events` accepts at most ten entries and one megabyte. A partial success plus a raised exception retries the *whole* Lambda batch, including events EventBridge already accepted. That is at-least-once, not a bug you can code away. Put `event_id` in the detail, retry only remaining failures in-process, and require consumers to treat `event_id` as an idempotency key.
+`put_events` accepts at most ten entries and 256 KB per entry. A partial success plus a raised exception retries the *whole* Lambda batch, including events EventBridge already accepted. That is at-least-once, not a bug you can code away. Put `event_id` in the detail, retry only remaining failures in-process, and require consumers to treat `event_id` as an idempotency key.
 
 ```python
 import json

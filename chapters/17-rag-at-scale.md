@@ -28,6 +28,8 @@ Retrieval-augmented generation is the technique that lets a language model answe
 
 That framing is the thesis of this chapter, and it is worth stating bluntly: RAG at scale is a distributed database problem wearing a language-model costume. The failure modes that hurt production RAG systems, staleness, misrouting, hotspots, access-control leaks, and evaluation drift, are the same failure modes that hurt any distributed data system, and they yield to the same engineering rigor the data chapters of this book applied. The language model is the easy part. The retrieval, the freshness, the access control, and the evaluation are where the work is. Chapter 16's agents eat what this chapter retrieves. If the retrieval is ungrounded or over-privileged, the gateway in that chapter is already too late.
 
+This chapter is a proposed extension. The granularity claims here are hypothesized. See Chapter 22. I am not treating a simulation as a production proof.
+
 ## 17.1 How RAG works, and where it breaks
 
 The mechanism is straightforward. You take your corpus of documents and split it into chunks. You run each chunk through an embedding model, which turns text into a vector, a list of numbers that captures its meaning, such that chunks about similar things have nearby vectors. You store these vectors in a vector index. At query time, you embed the user's query the same way, find the chunks whose vectors are nearest to the query's vector, and hand those chunks to the language model as context, asking it to answer using them.

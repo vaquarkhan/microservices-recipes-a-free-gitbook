@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="figtitle">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="960" viewBox="0 0 1000 960" role="img" aria-labelledby="figtitle">
   <title id="figtitle">Choreography versus orchestration</title>
   <defs>
     <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
@@ -32,51 +32,62 @@
     </linearGradient>
   </defs>
   <rect width="100%" height="100%" fill="url(#paperGrad)"/>
-  <rect x="10" y="10" width="980" height="560" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
+  <rect x="10" y="10" width="980" height="940" rx="18" fill="none" stroke="#ebe4d6" stroke-width="1"/>
   <text id="visible-title" x="28" y="38" fill="#1b3a4b" font-size="20" font-weight="650" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">Choreography versus orchestration</text>
   <path d="M28 48 h360" stroke="#9a6b3f" stroke-width="1.2" stroke-linecap="round"/>
   <text x="28" y="66" fill="#3d5260" font-size="12" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif">No coordinator, or an explicit state machine.</text>
-  <rect x="28.0" y="88.0" width="470.0" height="450.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
-<text x="44.0" y="110.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Choreography: no application coordinator</text>
-<rect x="56.0" y="130.0" width="180.0" height="70.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M68.0 131.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="146.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order service</text>
-<rect x="280.0" y="230.0" width="180.0" height="70.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M292.0 231.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="370.0" y="256.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory service</text>
-<rect x="56.0" y="340.0" width="180.0" height="70.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M68.0 341.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="146.0" y="366.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Payment service</text>
-<line x1="236.8" y1="166.8" x2="276.8" y2="257.7" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="256.8" y="204.3" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >OrderCreated</text>
-<line x1="458.1" y1="265.5" x2="63.7" y2="372.9" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="260.9" y="311.2" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >InventoryReserved</text>
-<line x1="146.0" y1="338.0" x2="146.0" y2="208.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="146.0" y="265.0" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >PaymentProcessed</text>
-<line x1="236.7" y1="373.1" x2="277.0" y2="272.4" stroke="#8b3a3a" stroke-width="1.35" stroke-dasharray="5 4" marker-end="url(#arrowBad)" stroke-linecap="round"/>
-<text x="256.9" y="314.8" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >PaymentFailed → release</text>
-<rect x="520.0" y="88.0" width="452.0" height="450.0" rx="14" fill="#f6eed8" stroke="#b8860b" stroke-width="1"  />
-<text x="536.0" y="110.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Orchestration: explicit state machine</text>
-<rect x="610.0" y="130.0" width="260.0" height="70.0" rx="10" fill="#f6eed8" stroke="#b8860b" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M622.0 131.0 h236.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="740.0" y="156.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Saga orchestrator</text>
-<rect x="548.0" y="250.0" width="170.0" height="64.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M560.0 251.0 h146.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="633.0" y="276.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order service</text>
-<rect x="768.0" y="250.0" width="170.0" height="64.0" rx="10" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M780.0 251.0 h146.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="853.0" y="276.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory service</text>
-<rect x="658.0" y="370.0" width="180.0" height="64.0" rx="10" fill="#f3e4e1" stroke="#8b3a3a" stroke-width="1.25" filter="url(#cardShadow)" />
-<path d="M670.0 371.0 h156.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
-<text x="748.0" y="396.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Payment service</text>
-<text x="748.0" y="416.0" fill="#3d5260" font-size="11.5" font-weight="400" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >charge is the pivot</text>
-<line x1="738.2" y1="200.8" x2="640.2" y2="246.6" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="689.2" y="215.7" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >1. pending order</text>
-<line x1="741.8" y1="200.8" x2="845.7" y2="246.8" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="793.8" y="215.8" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >2. reserve</text>
-<line x1="740.1" y1="202.0" x2="747.6" y2="362.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
-<text x="743.9" y="274.0" fill="#3d5260" font-size="10.5" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >3. charge</text>
-<line x1="868.7" y1="166.5" x2="773.3" y2="276.0" stroke="#8b3a3a" stroke-width="1.35" stroke-dasharray="5 4" marker-end="url(#arrowBad)" stroke-linecap="round"/>
-<line x1="868.1" y1="165.7" x2="555.5" y2="279.3" stroke="#8b3a3a" stroke-width="1.35" stroke-dasharray="5 4" marker-end="url(#arrowBad)" stroke-linecap="round"/>
-<text x="28.0" y="562.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="font-style:italic;" >Compensate in reverse after a completed step fails.</text>
+  <rect x="28.0" y="84.0" width="944.0" height="400.0" rx="14" fill="#e7f0eb" stroke="#2f6b55" stroke-width="1"  />
+<text x="44.0" y="106.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Choreography: no application coordinator</text>
+<rect x="105.3" y="122.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M117.3 123.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="193.3" y="148.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order</text>
+<line x1="193.3" y1="176.0" x2="193.3" y2="460.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="412.0" y="122.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M424.0 123.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="500.0" y="148.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory</text>
+<line x1="500.0" y1="176.0" x2="500.0" y2="460.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="718.7" y="122.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M730.7 123.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="806.7" y="148.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Payment</text>
+<line x1="806.7" y1="176.0" x2="806.7" y2="460.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<line x1="193.3" y1="212.0" x2="500.0" y2="212.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="346.7" y="204.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >OrderCreated</text>
+<line x1="500.0" y1="248.0" x2="806.7" y2="248.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="653.3" y="240.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >InventoryReserved</text>
+<line x1="806.7" y1="284.0" x2="193.3" y2="284.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="500.0" y="276.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >PaymentProcessed</text>
+<line x1="806.7" y1="320.0" x2="500.0" y2="320.0" stroke="#8b3a3a" stroke-width="1.35" stroke-dasharray="5 4" marker-end="url(#arrowBad)" stroke-linecap="round"/>
+<text x="653.3" y="312.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >PaymentFailed → release</text>
+<rect x="183.3" y="340.0" width="633.3" height="36.0" rx="8" fill="#f6eed8" stroke="#b8860b" stroke-width="1"  />
+<text x="500.0" y="362.0" fill="#15252f" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Services react to events. There is no application coordinator.</text>
+<rect x="28.0" y="504.0" width="944.0" height="410.0" rx="14" fill="#f6eed8" stroke="#b8860b" stroke-width="1"  />
+<text x="44.0" y="526.0" fill="#9a6b3f" font-size="11" font-weight="600" text-anchor="start" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Orchestration: explicit state machine</text>
+<rect x="67.0" y="542.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M79.0 543.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="155.0" y="568.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Orchestrator</text>
+<line x1="155.0" y1="596.0" x2="155.0" y2="890.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="297.0" y="542.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M309.0 543.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="385.0" y="568.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Order</text>
+<line x1="385.0" y1="596.0" x2="385.0" y2="890.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="527.0" y="542.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M539.0 543.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="615.0" y="568.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Inventory</text>
+<line x1="615.0" y1="596.0" x2="615.0" y2="890.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<rect x="757.0" y="542.0" width="176.0" height="54.0" rx="10" fill="#e4eef2" stroke="#1b3a4b" stroke-width="1.25" filter="url(#cardShadow)" />
+<path d="M769.0 543.0 h152.0" stroke="#9a6b3f" stroke-width="1.15" stroke-linecap="round" opacity="0.85"/>
+<text x="845.0" y="568.0" fill="#15252f" font-size="13" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Payment</text>
+<line x1="845.0" y1="596.0" x2="845.0" y2="890.0" stroke="#ebe4d6" stroke-width="1.2"/>
+<line x1="155.0" y1="632.0" x2="385.0" y2="632.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="270.0" y="624.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >1. Create pending order</text>
+<line x1="385.0" y1="668.0" x2="155.0" y2="668.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="270.0" y="660.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Created</text>
+<line x1="155.0" y1="704.0" x2="615.0" y2="704.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="385.0" y="696.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >2. Reserve inventory</text>
+<line x1="615.0" y1="740.0" x2="155.0" y2="740.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="385.0" y="732.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >Reserved</text>
+<line x1="155.0" y1="776.0" x2="845.0" y2="776.0" stroke="#9a6b3f" stroke-width="1.35"  marker-end="url(#arrowCopper)" stroke-linecap="round"/>
+<text x="500.0" y="768.0" fill="#3d5260" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >3. Charge (pivot)</text>
+<rect x="145.0" y="796.0" width="710.0" height="36.0" rx="8" fill="#f6eed8" stroke="#b8860b" stroke-width="1"  />
+<text x="500.0" y="818.0" fill="#15252f" font-size="11" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif" style="" >On failure after a completed step, compensate in reverse.</text>
 </svg>

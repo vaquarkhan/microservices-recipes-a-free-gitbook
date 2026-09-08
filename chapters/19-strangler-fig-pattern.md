@@ -93,6 +93,9 @@ resource "aws_api_gateway_method" "any" {
   resource_id   = aws_api_gateway_resource.greedy.id
   http_method   = "ANY"
   authorization = "AWS_IAM"
+  request_parameters = {
+    "method.request.path.proxy" = true
+  }
 }
 
 resource "aws_api_gateway_integration" "legacy_proxy" {
