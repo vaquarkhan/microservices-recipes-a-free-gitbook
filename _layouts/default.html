@@ -372,7 +372,9 @@
           }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
           document.querySelectorAll(revealSel).forEach(function (el) {
             if (el.closest('.title-page') || el.closest('.chapter-header')) return;
-            if (el.classList.contains('book-cover-img') || el.classList.contains('book-scene') || el.classList.contains('book-plate')) return;
+            if (el.classList.contains('book-cover-img') || el.classList.contains('book-scene') || el.classList.contains('book-plate') || el.classList.contains('book-hero-gif')) return;
+            var src = el.getAttribute('src') || '';
+            if (src.indexOf('microservices-animation') !== -1) return;
             el.classList.add('reveal-ready');
             io.observe(el);
           });
