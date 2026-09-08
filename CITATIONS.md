@@ -11,7 +11,7 @@
 
 ```
 Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1). 
-GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Zenodo. https://doi.org/10.5281/zenodo.22654421
 https://orcid.org/0009-0008-3592-4162
 ```
 
@@ -21,8 +21,7 @@ https://orcid.org/0009-0008-3592-4162
 
 ```
 [1] V. Khan, "Microservices Recipes: The Architect's Field Guide," ver. 2.1,
-GitHub repository, 2026. [Online]. Available: 
-https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Zenodo, 2026, doi: 10.5281/zenodo.22654421.
 ```
 
 **In-text citation:** [1]
@@ -31,7 +30,7 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ```
 Khan, Viquar. Microservices Recipes: The Architect's Field Guide. 
-GitHub, 2026, github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
+Version 2.1, Zenodo, 2026, doi.org/10.5281/zenodo.22654421.
 ```
 
 **In-text citation:** (Khan)
@@ -40,7 +39,7 @@ GitHub, 2026, github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
 
 ```
 Khan, Viquar. Microservices Recipes: The Architect's Field Guide. 
-GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
+Version 2.1. Zenodo, 2026. https://doi.org/10.5281/zenodo.22654421.
 ```
 
 **In-text citation:** (Khan 2026)
@@ -48,8 +47,8 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 ### Harvard
 
 ```
-Khan, V. (2026) Microservices Recipes: The Architect's Field Guide. 
-Available at: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook 
+Khan, V. (2026) Microservices Recipes: The Architect's Field Guide. Version 2.1.
+Available at: https://doi.org/10.5281/zenodo.22654421 
 (Accessed: [date]).
 ```
 
@@ -93,7 +92,11 @@ When the arXiv ID is public, add it to this block. Do not invent one.
 
 ### Zenodo
 
-GitHub releases of this book are archived on Zenodo. The DOI badge on the README resolves to the latest versioned DOI after Zenodo processes the release. Do not invent a DOI. When the identifier is live, add it here and in `CITATION.cff`.
+Version 2.1.0 is archived at [https://zenodo.org/records/22654421](https://zenodo.org/records/22654421).
+
+**DOI:** [10.5281/zenodo.22654421](https://doi.org/10.5281/zenodo.22654421)
+
+Cite the DOI, not only the GitHub URL. Do not invent a later version's DOI; wait until Zenodo mints it.
 
 ---
 
@@ -123,8 +126,9 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
   title        = {Microservices Recipes: The Architect's Field Guide},
   year         = {2026},
   edition      = {Version 2.1},
-  publisher    = {GitHub},
-  url          = {https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.22654421},
+  url          = {https://doi.org/10.5281/zenodo.22654421},
   note         = {ORCID: 0009-0008-3592-4162}
 }
 ```
@@ -137,7 +141,8 @@ https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 **Author:** Khan, Viquar  
 **Year:** 2026  
 **Title:** Microservices Recipes: The Architect's Field Guide  
-**URL:** https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook  
+**DOI:** 10.5281/zenodo.22654421  
+**URL:** https://doi.org/10.5281/zenodo.22654421  
 **Access Date:** [Your access date]
 
 ---
@@ -150,8 +155,8 @@ When citing in academic papers, please include:
 2. **ORCID:** [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 3. **Year:** 2026
 4. **Title:** Microservices Recipes: The Architect's Field Guide
-5. **Source:** GitHub repository
-6. **URL:** https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+5. **Source:** Zenodo
+6. **DOI:** https://doi.org/10.5281/zenodo.22654421
 7. **Access Date:** When you accessed the material
 
 ---

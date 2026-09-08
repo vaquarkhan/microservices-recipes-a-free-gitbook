@@ -11,7 +11,7 @@ As defined by Sam Newman in his foundational text *Building Microservices*, micr
 *Featuring Adaptive Granularity Governance: The Khan Microservice Pattern*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/)
-[![DOI](https://zenodo.org/badge/latestdoi/165114193)](https://zenodo.org/badge/latestdoi/165114193)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22654421.svg)](https://doi.org/10.5281/zenodo.22654421)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
 [![Prose: CC BY-NC-ND 4.0](https://img.shields.io/badge/Prose-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSING.md)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -259,7 +259,7 @@ The 23 chapters are in this repository. There is no separate academic edition. C
 ```
 git clone https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.git
 ```
-ZIP of the default branch: [archive](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/archive/main.zip). GitHub Pages still deploys from `main`; this update lives on `update-book-09062026` until it is merged.
+ZIP of the default branch: [archive](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook/archive/master.zip). GitHub Pages deploys from `master`. DOI: [10.5281/zenodo.22654421](https://doi.org/10.5281/zenodo.22654421).
 
 ---
 
@@ -275,8 +275,8 @@ Dual license. **Code** is [MIT](LICENSE). **Prose and figures** are [CC BY-NC-ND
 
 ### **Citation**
 ```
-Khan, V. (2026). Microservices Recipes: The Architect's Field Guide. 
-GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Khan, V. (2026). Microservices Recipes: The Architect's Field Guide (Version 2.1).
+Zenodo. https://doi.org/10.5281/zenodo.22654421
 ```
 
 ---
@@ -296,15 +296,15 @@ Machine-readable metadata: [CITATION.cff](CITATION.cff). Full guide: [CITATIONS.
 **APA:**
 ```
 Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1)
-[Featuring Adaptive Granularity Governance: The Khan Microservice Pattern]. GitHub.
-https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+[Featuring Adaptive Granularity Governance: The Khan Microservice Pattern]. Zenodo.
+https://doi.org/10.5281/zenodo.22654421
 ```
 
 **IEEE:**
 ```
 [1] V. Khan, Microservices Recipes: The Architect's Field Guide, ver. 2.1,
-featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub, 2026.
-[Online]. Available: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+featuring Adaptive Granularity Governance: The Khan Microservice Pattern. Zenodo, 2026.
+doi: 10.5281/zenodo.22654421.
 ```
 
 ---

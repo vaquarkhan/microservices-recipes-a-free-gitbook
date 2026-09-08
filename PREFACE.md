@@ -35,6 +35,7 @@ Original methods, please cite:
 
 First edition: January 2019. Second edition: January 2026. Version 2.1: September 2026.
 
+DOI: https://doi.org/10.5281/zenodo.22654421
 Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 See [CITATIONS.md](CITATIONS.md), [LICENSING.md](LICENSING.md), and [DISCLAIMER.md](DISCLAIMER.md).
