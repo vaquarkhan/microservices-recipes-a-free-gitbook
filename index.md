@@ -182,6 +182,6 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 
 **Copyright © 2019–2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](LICENSING.md).
 
-First edition January 2019. Second edition January 2026. Version 2.1 September 6, 2026. [Citations](CITATIONS.md) · [Copyright](COPYRIGHT.md) · [Disclaimer](DISCLAIMER.md)
+First edition January 2019. Second edition January 2026. Version 2.1 September 6, 2026. DOI [10.5281/zenodo.22654421](https://doi.org/10.5281/zenodo.22654421). [Citations](CITATIONS.md) · [Copyright](COPYRIGHT.md) · [Disclaimer](DISCLAIMER.md)
 
 [Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) · [Cite it](CITATIONS.md) · [Contributing](CONTRIBUTING.md)

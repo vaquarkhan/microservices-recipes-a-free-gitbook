@@ -11,6 +11,9 @@ authors:
     orcid: "https://orcid.org/0009-0008-3592-4162"
 repository-code: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
 url: "https://vaquarkhan.github.io/microservices-recipes-a-free-gitbook/"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22654421"
 license: "MIT AND CC-BY-NC-ND-4.0"
 keywords:
   - microservices
@@ -28,5 +31,8 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0008-3592-4162"
   year: 2026
   version: "2.1"
-  url: "https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"
-  notes: "Featuring Adaptive Granularity Governance: The Khan Microservice Pattern. Formerly Adaptive Granularity Strategy."
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.22654421"
+  url: "https://doi.org/10.5281/zenodo.22654421"
+  notes: "Featuring Adaptive Granularity Governance: The Khan Microservice Pattern. Formerly Adaptive Granularity Strategy. GitHub: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook"

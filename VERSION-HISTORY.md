@@ -124,21 +124,20 @@ There is no “coming soon” half of the book. Version 2.1 is the public editio
 ### **Recommended Citation (APA Style):**
 ```
 Khan, V. (2026). Microservices Recipes: The Architect's Field Guide (Version 2.1). 
-GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Zenodo. https://doi.org/10.5281/zenodo.22654421
 https://orcid.org/0009-0008-3592-4162
 ```
 
 ### **Recommended Citation (IEEE Style):**
 ```
 V. Khan, "Microservices Recipes: The Architect's Field Guide," ver. 2.1, 
-GitHub Repository, 2026. [Online]. Available: 
-https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Zenodo, 2026, doi: 10.5281/zenodo.22654421.
 ```
 
 ### **Recommended Citation (Chicago Style):**
 ```
 Khan, Viquar. Microservices Recipes: The Architect's Field Guide. Version 2.1. 
-GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook.
+Zenodo, 2026. https://doi.org/10.5281/zenodo.22654421.
 ```
 
 

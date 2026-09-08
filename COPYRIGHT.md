@@ -19,7 +19,8 @@ This notice states who owns the work and how it is licensed. It does **not** can
 - **First Edition**: January 2019 (public GitHub gitbook; repository created 10 January 2019)
 - **Second Edition**: January 2026 (Adaptive Granularity Governance edition; formerly Adaptive Granularity Strategy)
 - **Version 2.1**: September 6, 2026 (23-chapter science edition)
-- **Publisher**: Open Source (GitHub)
+- **DOI**: [10.5281/zenodo.22654421](https://doi.org/10.5281/zenodo.22654421)
+- **Publisher**: Open Source (GitHub / Zenodo)
 - **Repository**: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 - **Code license**: [MIT License](LICENSE)
 - **Prose and figures license**: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)

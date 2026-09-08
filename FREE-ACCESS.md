@@ -8,7 +8,7 @@ Use [CITATIONS.md](CITATIONS.md). Machine-readable metadata: [CITATION.cff](CITA
 
 ```
 Khan, V. (2026). Microservices recipes: The architect's field guide (Version 2.1).
-GitHub. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
+Zenodo. https://doi.org/10.5281/zenodo.22654421
 ORCID: https://orcid.org/0009-0008-3592-4162
 ```
 
