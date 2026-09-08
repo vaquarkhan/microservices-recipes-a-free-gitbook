@@ -50,20 +50,20 @@ A service boundary is worth deploying separately only when it earns its distribu
 
 ### Front matter
 
-- [Preface](PREFACE.md) — why a boundary has to earn its keep
-- [About the Author](AUTHOR.md) — Viquar Khan
-- [Mentorship](MENTORSHIP.md) — 1:1 on ADPList
-- [Academic use](FREE-ACCESS.md) — the full book is public; cite it
-- [Licensing](LICENSING.md) — MIT for code; CC BY-NC-ND 4.0 for prose
-- [Naming](NAMING.md) — methodology title and attribution
-- [Citations](CITATIONS.md) — how to cite this work
-- [Copyright](COPYRIGHT.md) — owner and dual license
-- [Disclaimer](DISCLAIMER.md) — legal notice
+- [Preface](PREFACE.md) - why a boundary has to earn its keep
+- [About the Author](AUTHOR.md) - Viquar Khan
+- [Mentorship](MENTORSHIP.md) - 1:1 on ADPList
+- [Academic use](FREE-ACCESS.md) - the full book is public; cite it
+- [Licensing](LICENSING.md) - MIT for code; CC BY-NC-ND 4.0 for prose
+- [Naming](NAMING.md) - methodology title and attribution
+- [Citations](CITATIONS.md) - how to cite this work
+- [Copyright](COPYRIGHT.md) - owner and dual license
+- [Disclaimer](DISCLAIMER.md) - legal notice
 - [Contributing](CONTRIBUTING.md)
 - [Version history](VERSION-HISTORY.md)
 - [Changelog](CHANGELOG.md)
 
-### Part I — The sociotechnical substrate
+### Part I - The sociotechnical substrate
 
 *Align the shape of the organization with the shape of the architecture.*
 
@@ -74,7 +74,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 3 | [Decouple the Language Before You Decouple the Code](chapters/03-service-communication.md) | 40 min |
 {:.contents-table}
 
-### Part II — Data architecture
+### Part II - Data architecture
 
 *Splitting a system splits its data.*
 
@@ -86,7 +86,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 7 | [Every Hop Is a Door. Prove Who Is Knocking.](chapters/07-security.md) | 50 min |
 {:.contents-table}
 
-### Part III — Evidence between processes
+### Part III - Evidence between processes
 
 *You cannot attach a debugger to the space between services.*
 
@@ -97,7 +97,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 10 | [Publish What Happened. Do Not Wait.](chapters/10-asynchronous-messaging-patterns.md) | 50 min |
 {:.contents-table}
 
-### Part IV — Adaptive Granularity Governance
+### Part IV - Adaptive Granularity Governance
 
 *The score. Chapter 11 is the only source of truth for the formula.*
 
@@ -106,7 +106,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 11 | [A Boundary Earns Its Keep Only When All Three Hold](chapters/11-khan-pattern-deep-dive.md) | 70 min |
 {:.contents-table}
 
-### Part V — Resilience and scale
+### Part V - Resilience and scale
 
 | | | |
 |---|---|---|
@@ -114,7 +114,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 13 | [Break It on Purpose. Watch. Then You Know.](chapters/13-chaos-engineering.md) | 55 min |
 {:.contents-table}
 
-### Part VI — Platform
+### Part VI - Platform
 
 | | | |
 |---|---|---|
@@ -122,7 +122,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 15 | [Spend the Budget on Answers. Stay Sighted When It Counts.](chapters/15-observability-2.md) | 55 min |
 {:.contents-table}
 
-### Part VII — Agents and retrieval
+### Part VII - Agents and retrieval
 
 | | | |
 |---|---|---|
@@ -130,7 +130,7 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 17 | [Retrieval as a Data-Plane Discipline, Not a Prompt Trick](chapters/17-rag-at-scale.md) | 55 min |
 {:.contents-table}
 
-### Part VIII — Migration
+### Part VIII - Migration
 
 | | | |
 |---|---|---|
@@ -138,14 +138,14 @@ A service boundary is worth deploying separately only when it earns its distribu
 | 19 | [Replace It While It Is Still Running.](chapters/19-strangler-fig-pattern.md) | 55 min |
 {:.contents-table}
 
-### Part IX — Organizational maturity
+### Part IX - Organizational maturity
 
 | | | |
 |---|---|---|
 | 20 | [Has This Organization Earned the Right to Distribute?](chapters/20-km3-maturity-model.md) | 50 min |
 {:.contents-table}
 
-### Part X — The science behind the metric
+### Part X - The science behind the metric
 
 | | | |
 |---|---|---|

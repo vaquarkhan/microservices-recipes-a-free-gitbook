@@ -91,6 +91,10 @@ https://orcid.org/0009-0008-3592-4162
 
 When the arXiv ID is public, add it to this block. Do not invent one.
 
+### Zenodo
+
+GitHub releases of this book are archived on Zenodo. The DOI badge on the README resolves to the latest versioned DOI after Zenodo processes the release. Do not invent a DOI. When the identifier is live, add it here and in `CITATION.cff`.
+
 ---
 
 ## Citing Specific Chapters
@@ -189,5 +193,5 @@ Citing a chapter is not a derivative. Rewriting a chapter and republishing it is
 ## Questions
 
 Email: vaquar.khan@gmail.com  
-Subject: Citation — Microservices Recipes
+Subject: Citation - Microservices Recipes
 

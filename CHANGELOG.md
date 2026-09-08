@@ -21,6 +21,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/). Dates use IS
 - Front matter, preview, glossary, and quick reference aligned to 23 chapters and Chapter 11 as formula source of truth.
 - Recipe corrections: Kinesis Base64 JMESPath, Step Functions human-approval timeouts, API Gateway authorizer helpers, OTel Contrib note, Recipe 1.1 commit-vs-PR caveat.
 - Editorial pass: EventBridge PutEvents 256 KB/entry, Recipe 19.1 `method.request.path.proxy`, Chapter 14 Fulcrum cross-ref, Chapter 8 Contrib caveat for tail sampling, Chapter 4 causal-broadcast wording and Powertools accessor, Chapter 12 combinatorics wording, Chapter 18 `ALTER DEFAULT PRIVILEGES`, Chapter 20 modular-monolith in the 12–19 list. Redrew saga choreography-vs-orchestration and RAG architecture figures. Compressed the four original cover PNGs for Pages.
+- Em dashes replaced with ASCII hyphens in front matter. GitHub release `v2.1.0` prepared for Zenodo.
 
 ### Removed
 - Invented preview structure (Khan Protocol in Chapter 8, Nano-Swarm 0.3/0.6 bands, 20-chapter teaser, placeholder ISBN).

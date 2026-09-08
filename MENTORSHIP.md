@@ -16,10 +16,10 @@ Useful questions:
 
 ## Book
 
-**[ADPList — Viquar Khan](https://adplist.org/mentors/vaquar-khan)**
+**[ADPList - Viquar Khan](https://adplist.org/mentors/vaquar-khan)**
 
 Email if you need an accommodation: vaquar.khan@gmail.com  
-Subject: Mentorship — your name
+Subject: Mentorship - your name
 
 ORCID: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 

@@ -10,9 +10,9 @@ The question that actually matters is not “how many services.” It is whether
 
 Read a score as a warning light, not a trophy:
 
-- **Above 0.7** — healthy on the declared profile. Still show the three components.
-- **0.4 to 0.7** — at risk. Find the weak signal before you split or merge.
-- **Below 0.4** — the boundary is not earning its keep.
+- **Above 0.7** - healthy on the declared profile. Still show the three components.
+- **0.4 to 0.7** - at risk. Find the weak signal before you split or merge.
+- **Below 0.4** - the boundary is not earning its keep.
 
 The whole book is here. Twenty-three chapters. There is no later paid half, and there is no ten-chapter teaser. Parts I–III are the substrate: organization, data, evidence. Chapter 11 is the measurement. Parts V–IX are isolation, platform, agents, migration, and maturity. Part X is cost, validity, and Goodhart.
 

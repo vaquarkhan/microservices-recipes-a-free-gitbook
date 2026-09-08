@@ -23,34 +23,34 @@ The argument is one sentence: a service boundary is worth deploying separately o
 
 ## Contents
 
-### Part I — Chapters 1–3
+### Part I - Chapters 1–3
 Organization and architecture. Distributed monolith. Strategic DDD (the file is still named `03-service-communication.md`).
 
-### Part II — Chapters 4–7
+### Part II - Chapters 4–7
 Data, sagas, outbox, security. Chapter 7 is security, not Data Mesh.
 
-### Part III — Chapters 8–10
+### Part III - Chapters 8–10
 Observability, testing agreements, messaging.
 
-### Part IV — Chapter 11
+### Part IV - Chapter 11
 Fulcrum, RVx, SCS, KM3 introduction, evidence tiers.
 
-### Part V — Chapters 12–13
+### Part V - Chapters 12–13
 Shuffle sharding. Chaos with an abort outside the blast radius.
 
-### Part VI — Chapters 14–15
+### Part VI - Chapters 14–15
 Infrastructure as code. Observability 2.0.
 
-### Part VII — Chapters 16–17
+### Part VII - Chapters 16–17
 Agents. Retrieval with an ACL prefilter.
 
-### Part VIII — Chapters 18–19
+### Part VIII - Chapters 18–19
 Modular monolith. Strangler fig.
 
-### Part IX — Chapter 20
+### Part IX - Chapter 20
 KM3 assessment.
 
-### Part X — Chapters 21–23
+### Part X - Chapters 21–23
 Wasted time, construct validity, Goodhart.
 
 ## Read
