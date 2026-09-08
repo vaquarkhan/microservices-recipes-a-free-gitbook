@@ -1,5 +1,5 @@
 ---
-title: "Strategic Design with Domain-Driven Design"
+title: "Decouple the Language Before You Decouple the Code"
 chapter: 3
 author: "Viquar Khan"
 date: "2026-01-15"

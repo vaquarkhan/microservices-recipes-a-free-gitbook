@@ -1,5 +1,5 @@
 ---
-title: "Data Management"
+title: "The End of ACID"
 chapter: 4
 author: "Viquar Khan"
 date: "2026-01-15"

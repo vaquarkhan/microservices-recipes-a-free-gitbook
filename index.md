@@ -40,7 +40,7 @@ A service boundary is worth deploying separately only when it earns its distribu
   <a class="start-path" href="{{ "/chapters/11-khan-pattern-deep-dive.html" | relative_url }}">
     <em>III</em>
     <strong>Governing a portfolio</strong>
-    <span>Chapters 2, 3, and 7, then Chapter 11. The 2017–2026 record is on the author page.</span>
+    <span>Chapters 2, 3, and 7, then Chapter 11. The 2019–2026 record is on the author page.</span>
   </a>
 </div>
 
@@ -172,7 +172,7 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 
 ## The author
 
-**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services. He has kept this book in print, in public, from the 2017 eight-chapter edition through Version 2.1. On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached.
+**[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services. He has kept this book in public on GitHub from the January 2019 notes through Version 2.1. On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached.
 
 [Mentorship on ADPList](https://adplist.org/mentors/vaquar-khan). [ORCID](https://orcid.org/0009-0008-3592-4162) · [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) · [GitHub](https://github.com/vaquarkhan)
 
@@ -180,8 +180,8 @@ A boundary is worth deploying separately only when it is efficient at runtime, i
 
 ## Colophon
 
-**Copyright © 2017–2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](LICENSING.md).
+**Copyright © 2019–2026 by Viquar Khan.** Dual license: MIT for code; CC BY-NC-ND 4.0 for prose and figures. See [LICENSING.md](LICENSING.md).
 
-First edition January 2017. Second edition January 2026. Version 2.1 September 6, 2026. [Citations](CITATIONS.md) · [Copyright](COPYRIGHT.md) · [Disclaimer](DISCLAIMER.md)
+First edition January 2019. Second edition January 2026. Version 2.1 September 6, 2026. [Citations](CITATIONS.md) · [Copyright](COPYRIGHT.md) · [Disclaimer](DISCLAIMER.md)
 
 [Star the repo](https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook) · [Cite it](CITATIONS.md) · [Contributing](CONTRIBUTING.md)

@@ -1,5 +1,5 @@
 ---
-title: "The Strangler Fig Pattern"
+title: "Replace It While It Is Still Running."
 chapter: 19
 author: "Viquar Khan"
 date: "2026-01-15"

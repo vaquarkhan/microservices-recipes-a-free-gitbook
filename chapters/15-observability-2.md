@@ -1,5 +1,5 @@
 ---
-title: "Observability 2.0: Telemetry, Causality, and Cost"
+title: "Spend the Budget on Answers. Stay Sighted When It Counts."
 chapter: 15
 author: "Viquar Khan"
 date: "2026-01-15"

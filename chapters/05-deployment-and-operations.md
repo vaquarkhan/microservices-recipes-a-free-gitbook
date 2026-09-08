@@ -1,5 +1,5 @@
 ---
-title: "Distributed Transactions and the Saga Pattern"
+title: "The Consistency Tax of Spanning Services"
 chapter: 5
 author: "Viquar Khan"
 date: "2026-01-15"

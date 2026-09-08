@@ -1,5 +1,5 @@
 ---
-title: "Pricing the Distributed Monolith: The Economics of Granularity"
+title: "Price the Waste. Name the Rest. Do Not Invent a Total."
 chapter: 21
 author: "Viquar Khan"
 date: "2026-01-15"

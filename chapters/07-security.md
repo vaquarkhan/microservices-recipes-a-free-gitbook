@@ -1,5 +1,5 @@
 ---
-title: "Security"
+title: "Every Hop Is a Door. Prove Who Is Knocking."
 chapter: 7
 author: "Viquar Khan"
 date: "2026-01-15"

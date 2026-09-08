@@ -80,4 +80,4 @@ By contributing, you acknowledge that:
 
 ---
 
-Corrections and anonymized case notes help. Keep the 2017-to-present record in [CHANGELOG.md](CHANGELOG.md) and [VERSION-HISTORY.md](VERSION-HISTORY.md) when you propose a change.
+Corrections and anonymized case notes help. Keep the 2019-to-present record in [CHANGELOG.md](CHANGELOG.md) and [VERSION-HISTORY.md](VERSION-HISTORY.md) when you propose a change.

@@ -1,5 +1,5 @@
 ---
-title: "Infrastructure as Code at Scale"
+title: "The Definition Is the Truth. Reality Is Reconciled Toward It."
 chapter: 14
 author: "Viquar Khan"
 date: "2026-01-15"

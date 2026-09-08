@@ -12,17 +12,15 @@ On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his hel
 
 ORCID: [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162)
 
-## How this book grew, 2017 to 2026
+## How this book grew, 2019 to 2026
 
-I started this book in 2017 because the same failure kept showing up in the field. A team split a working system, called the result modern, and then paid for a distributed monolith: lock-step deploys, a shared database, and a request path that died because every hop could time out. Version 1.0 was eight chapters. SOA versus services. Domain language. Data. Communication. Deploy. Observe. Secure. Test. The argument was already there, even if I did not yet have a score for it: a boundary is worth deploying separately only when it earns its cost.
+I put this work on GitHub in January 2019 because the same failure kept showing up in the field. A team split a working system, called the result modern, and then paid for a distributed monolith: lock-step deploys, a shared database, and a request path that died because every hop could time out. Version 1.0 is that public start: a free gitbook of notes and recipes under this title. SOA versus services. Domain language. Data. Communication. Deploy. Observe. Secure. Test. The argument was already there, even if I did not yet have a score for it: a boundary is worth deploying separately only when it earns its cost.
 
-I did not treat 1.0 as finished. The public edition stayed rooted in that 2017 guide while the work around it changed.
+I did not treat 1.0 as finished. The public notes stayed under this title while the work around them changed. GitHub is the record: the repository was created on 10 January 2019; the numbered Field Guide chapters and covers arrived with Version 2 in 2026.
 
-**2018–2019.** Cases from implementations that held. Anti-patterns from ones that did not. Tool notes as containers and cloud practice moved.
+**2019.** Repository created 10 January 2019. Notes, patterns, anti-patterns, and tool links.
 
-**2020–2021.** Remote teams and cloud-first delivery. Resilience for systems that had to stay up while the people who ran them were no longer in one room.
-
-**2022–2023.** Kubernetes as the default runtime. Service mesh as it actually shipped. Observability as OpenTelemetry became the common language.
+**2021.** Further README updates on GitHub.
 
 **2024–2025.** This is when the research happened. By then the book had the concepts. Distributed monolith, granularity, Conway, sagas. What the field still did not have was a *formula*. You could describe a distributed monolith after you had lived through one. You could not score a boundary and say, with a number, that it was one. Coupling, cohesion, and Conway were prior work. They were not a diagnostic. I spent those two years on original research: what would have to be true for a boundary to earn a remote hop, and how you would know.
 
@@ -53,7 +51,7 @@ They stand on work I did not invent:
 
 ## Publications
 
-- **Microservices Recipes: The Architect's Field Guide** (2017, 2026; Version 2.1, 23 chapters)
+- **Microservices Recipes: The Architect's Field Guide** (2019, 2026; Version 2.1, 23 chapters)
 - **Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index** (research paper, 2026; [site](https://vaquarkhan.github.io/fulcrum-rxy/); arXiv forthcoming)
 - **Data Engineering with AWS Cookbook** (Packt Publishing, 2026)
 

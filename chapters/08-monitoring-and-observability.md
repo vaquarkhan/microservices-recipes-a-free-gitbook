@@ -1,5 +1,5 @@
 ---
-title: "Monitoring and Observability"
+title: "You Cannot Attach a Debugger. Emit the Evidence First."
 chapter: 8
 author: "Viquar Khan"
 date: "2026-01-15"

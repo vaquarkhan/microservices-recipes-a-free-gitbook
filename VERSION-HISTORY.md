@@ -50,11 +50,11 @@
 
 ## 📜 **Legacy Versions**
 
-### **Version 1.0** - *Foundational Edition* (2017)
-**Initial public edition**
+### **Version 1.0** - *Foundational public gitbook* (January 2019)
+**Initial public edition.** Repository created 10 January 2019.
 
 #### **📖 Original Content:**
-- **8 Core Chapters** covering fundamental microservices concepts
+- Notes and recipes under the title **Microservices Recipes**
 - **SOA vs Microservices** - Historical context and evolution
 - **Domain-Driven Design** - Strategic decomposition principles  
 - **Data Management Patterns** - ACID to eventual consistency
@@ -65,34 +65,22 @@
 - **Testing Approaches** - Unit, integration, and contract testing
 
 #### What 1.0 covered
-- Foundational field guide to implementation
-- Anti-patterns and common failure modes
+- A compiled gitbook of notes, links, anti-patterns, and failure modes
 - Conway's Law and team structure
 - Principles over a specific tool stack
+- Numbered Field Guide chapters and covers are Version 2 (2026), not this edition
 
 ---
 
 ## 🔄 **Evolution Timeline**
 
-### **2017 - Genesis**
-- **Initial concept** developed as version one when microservices started
-- **First draft** based on real-world enterprise transformations
-- **Community feedback** incorporated from early adopters
+### **2019 - Public start**
+- **Repository created** 10 January 2019
+- **First public edition** as a free GitHub gitbook of notes and recipes
+- **Community** stars, forks, and README growth through April 2019
 
-### **2018-2019 - Refinement**
-- **Case study additions** from successful implementations
-- **Anti-pattern documentation** from failed transformations
-- **Tool ecosystem updates** reflecting market evolution
-
-### **2020-2021 - Pandemic Adaptations**
-- **Remote team considerations** added to organizational patterns
-- **Cloud-first approaches** emphasized due to digital acceleration
-- **Resilience patterns** enhanced for distributed workforce support
-
-### **2022-2023 - Modern Patterns**
-- **Kubernetes-native patterns** integrated throughout
-- **Service mesh evolution** documented with real implementations
-- **Observability** updated for OpenTelemetry-era practice
+### **2021**
+- **README updates** on GitHub (March–April)
 
 ### **2024-2025 - Original research (Fulcrum / RVx)**
 - The field still had no operational formula that said a given boundary *is* a distributed monolith. The concepts were in the book. The score was not.
@@ -108,9 +96,9 @@
 
 ## 📈 **Version Comparison Matrix**
 
-| Feature | Version 1.0 (2017) | Version 2.1 (2026) |
+| Feature | Version 1.0 (2019) | Version 2.1 (2026) |
 |---------|-------------------|-------------------|
-| **Chapters** | 8 foundational | 23 (Parts I–X) |
+| **Form** | Public GitHub gitbook of notes | 23 numbered chapters (Parts I–X) |
 | **Methodologies** | General principles | Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy) |
 | **Technology Focus** | Docker, basic K8s | Modern cloud-native |
 | **Networking** | Traditional service mesh | eBPF and post-sidecar |
@@ -167,4 +155,4 @@ GitHub, 2026. https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 
 ---
 
-See [CHANGELOG.md](CHANGELOG.md) for the 2017-to-present record. Do not drop older entries when you add a new version. The author’s own account of how the book grew is on [AUTHOR.md](AUTHOR.md).
+See [CHANGELOG.md](CHANGELOG.md) for the 2019-to-present record. Do not drop older entries when you add a new version. The author’s own account of how the book grew is on [AUTHOR.md](AUTHOR.md).

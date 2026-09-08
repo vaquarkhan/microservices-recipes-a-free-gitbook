@@ -1,5 +1,5 @@
 ---
-title: "Design Principles and Patterns"
+title: "The Distributed Monolith: Diagnosis and First Remedies"
 chapter: 2
 author: "Viquar Khan"
 date: "2026-01-15"

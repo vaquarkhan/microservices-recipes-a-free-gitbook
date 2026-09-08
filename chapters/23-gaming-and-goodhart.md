@@ -1,5 +1,5 @@
 ---
-title: "Governing a Metric Without It Being Gamed"
+title: "Never Point the Number at the People."
 chapter: 23
 author: "Viquar Khan"
 date: "2026-01-15"

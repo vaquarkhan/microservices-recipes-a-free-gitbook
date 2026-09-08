@@ -1,5 +1,5 @@
 ---
-title: "Retrieval-Augmented Generation at Scale"
+title: "Retrieval as a Data-Plane Discipline, Not a Prompt Trick"
 chapter: 17
 author: "Viquar Khan"
 date: "2026-01-15"

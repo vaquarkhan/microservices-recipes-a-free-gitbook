@@ -1,5 +1,5 @@
 ---
-title: "Agentic AI Architectures in Deterministic Systems"
+title: "The Model Proposes. The Executor Disposes."
 chapter: 16
 author: "Viquar Khan"
 date: "2026-01-15"
