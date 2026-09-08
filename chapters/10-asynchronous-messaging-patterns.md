@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Messaging Patterns"
+title: "Publish What Happened. Do Not Wait."
 chapter: 10
 author: "Viquar Khan"
 date: "2026-01-15"

@@ -1,5 +1,5 @@
 ---
-title: "Resilience and Reliability"
+title: "Close the Dual Write, Then Survive the Failures You Cannot Prevent"
 chapter: 6
 author: "Viquar Khan"
 date: "2026-01-15"

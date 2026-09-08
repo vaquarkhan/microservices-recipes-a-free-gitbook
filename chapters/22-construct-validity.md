@@ -1,5 +1,5 @@
 ---
-title: "How to Trust an Architecture Metric"
+title: "A Formula Confers No Truth. Outcomes Do."
 chapter: 22
 author: "Viquar Khan"
 date: "2026-01-15"

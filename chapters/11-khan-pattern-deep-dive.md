@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Granularity Governance: The Khan Microservice Pattern"
+title: "A Boundary Earns Its Keep Only When All Three Hold"
 chapter: 11
 author: "Viquar Khan"
 date: "2026-01-15"
@@ -23,7 +23,7 @@ readingTime: "70 minutes"
   </div>
 </div>
 
-This chapter presents Fulcrum, a way to measure and govern the granularity of a microservice boundary, and the RVx Index, the score at its centre. The material here is the practitioner treatment of original research I did in 2024–2025 and wrote up as *Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index* (2026; [research site](https://vaquarkhan.github.io/fulcrum-rxy/); arXiv forthcoming). I have been developing the ideas openly since 2017 in this field guide. Until that research there was no operational formula that said a given boundary *is* a distributed monolith. Earlier chapters pointed here on purpose and did not restate the formula. This is the one place it is defined.
+This chapter presents Fulcrum, a way to measure and govern the granularity of a microservice boundary, and the RVx Index, the score at its centre. The material here is the practitioner treatment of original research I did in 2024–2025 and wrote up as *Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index* (2026; [research site](https://vaquarkhan.github.io/fulcrum-rxy/); arXiv forthcoming). I have been developing the ideas openly since 2019 in this field guide. Until that research there was no operational formula that said a given boundary *is* a distributed monolith. Earlier chapters pointed here on purpose and did not restate the formula. This is the one place it is defined.
 
 I have tried to keep two promises throughout. First, I say plainly what is proven, what is demonstrated in controlled conditions, and what is still a hypothesis with a test attached. Second, I do not sell the method as a cure. It measures one property, boundary granularity, and it measures it well enough to argue with numbers instead of opinions. It does not measure resilience, security, or correctness, and it is not a substitute for judgement. Chapter 7 said security is not an RVx signal. That still holds.
 

@@ -438,7 +438,7 @@
 
 ## Adaptive Granularity Governance and Author Original Research
 
-119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2017-2026. **Copyright © 2017-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
+119. **V. Khan**, "Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Strategy): A Quantitative Framework for Microservices Decomposition," *Original Research*, 2024-2026. **Copyright © 2019-2026 by Viquar Khan.** Licensed: prose under CC BY-NC-ND 4.0; see repository LICENSING.md.
 
 119a. **V. Khan**, "Fulcrum: Quantitative, Governed Granularity for Microservice Boundaries with the RVx Index," *Original research paper*, 2026. ORCID [0009-0008-3592-4162](https://orcid.org/0009-0008-3592-4162). [https://vaquarkhan.github.io/fulcrum-rxy/](https://vaquarkhan.github.io/fulcrum-rxy/). arXiv forthcoming. Practitioner treatment: Chapter 11 of this book. Evidence tiers: formula properties proved; 36-boundary AWS estate demonstrated (directional); organic production hypothesized.
 
@@ -665,7 +665,7 @@ All references in this book follow academic citation standards. For proper attri
 
 **Content Licensing**: This bibliography includes references to open-source projects, academic papers, and commercial products. All citations are provided for educational purposes under fair use doctrine. No content from cited sources has been reproduced verbatim beyond standard quotation limits (30 consecutive words maximum).
 
-**Copyright Notice**: Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern), the Service Decomposition Workflow, the Microservices Maturity Assessment (KM3), and the Revised ViquarKhan Index (RVx) are original methodologies by Viquar Khan; please cite. Book content is © 2017-2026 by Viquar Khan. Dual license: MIT for code, CC BY-NC-ND 4.0 for prose and figures. No trademark is claimed at this time. See [LICENSING.md](../LICENSING.md).
+**Copyright Notice**: Adaptive Granularity Governance: The Khan Microservice Pattern (formerly Adaptive Granularity Governance: The Khan Microservice Pattern), the Service Decomposition Workflow, the Microservices Maturity Assessment (KM3), and the Revised ViquarKhan Index (RVx) are original methodologies by Viquar Khan; please cite. Book content is © 2019-2026 by Viquar Khan. Dual license: MIT for code, CC BY-NC-ND 4.0 for prose and figures. No trademark is claimed at this time. See [LICENSING.md](../LICENSING.md).
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "The Modular Monolith"
+title: "The Right Number of Services Is Often One."
 chapter: 18
 author: "Viquar Khan"
 date: "2026-01-15"

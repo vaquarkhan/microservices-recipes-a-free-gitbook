@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Microservices"
+title: "Earned Boundaries, Not Fashionable Ones"
 chapter: 1
 author: "Viquar Khan"
 date: "2026-01-15"

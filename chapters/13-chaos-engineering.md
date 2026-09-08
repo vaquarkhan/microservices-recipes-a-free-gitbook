@@ -1,5 +1,5 @@
 ---
-title: "Chaos Engineering and Evidence-Based Resilience"
+title: "Break It on Purpose. Watch. Then You Know."
 chapter: 13
 author: "Viquar Khan"
 date: "2026-01-15"

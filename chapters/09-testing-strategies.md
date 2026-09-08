@@ -1,5 +1,5 @@
 ---
-title: "Testing Strategies"
+title: "There Is No Whole System to Test. Test the Agreements."
 chapter: 9
 author: "Viquar Khan"
 date: "2026-01-15"

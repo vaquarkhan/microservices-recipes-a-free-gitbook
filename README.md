@@ -240,7 +240,7 @@ The job is not a perfect target architecture. It is to keep the boundaries hones
 
 **[Viquar Khan](AUTHOR.md)** is a Senior Data Architect at AWS Professional Services with 20+ years of expertise in distributed systems. Creator of **Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)**. Original methodologies by the author; please cite.
 
-JSR 368 expert group (Java Message Service 2.1). Also author of *Data Engineering with AWS Cookbook* (Packt, 2026). On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached (Stack Overflow’s estimate). 2024–2025 research: [Fulcrum / RVx](https://vaquarkhan.github.io/fulcrum-rxy/). Book history, 2017 to 2026: [AUTHOR.md](AUTHOR.md).
+JSR 368 expert group (Java Message Service 2.1). Also author of *Data Engineering with AWS Cookbook* (Packt, 2026). On [Stack Overflow](https://stackoverflow.com/users/4812170/vaquar-khan) his helpful posts have 7.5 million people reached (Stack Overflow’s estimate). 2024–2025 research: [Fulcrum / RVx](https://vaquarkhan.github.io/fulcrum-rxy/). Book history, 2019 to 2026: [AUTHOR.md](AUTHOR.md).
 
 **Connect:** [ORCID](https://orcid.org/0009-0008-3592-4162) | [LinkedIn](https://www.linkedin.com/in/vaquar-khan-b695577/) | [GitHub](https://github.com/vaquarkhan) | [Amazon](https://us.amazon.com/stores/Viquar-Khan/author/B0DMJCG9W6) | [Mentorship](https://adplist.org/mentors/vaquar-khan)
 
@@ -311,7 +311,7 @@ featuring Adaptive Granularity Governance: The Khan Microservice Pattern. GitHub
 
 ## Copyright and licensing
 
-**Copyright © 2017-2026 by Viquar Khan.**
+**Copyright © 2019-2026 by Viquar Khan.**
 
 **Adaptive Granularity Governance: The Khan Microservice Pattern**, the **Service Decomposition Workflow**, and the **Microservices Maturity Assessment (KM3)** are original methodologies by Viquar Khan; please cite. No trademark is claimed at this time.
 

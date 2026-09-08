@@ -1,5 +1,5 @@
 ---
-title: "Shuffle Sharding and Blast-Radius Minimization"
+title: "A Single Bad Shard Should Be a Footnote"
 chapter: 12
 author: "Viquar Khan"
 date: "2026-01-15"

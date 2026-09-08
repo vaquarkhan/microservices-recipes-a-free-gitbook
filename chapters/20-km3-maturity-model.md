@@ -1,5 +1,5 @@
 ---
-title: "The Khan Microservice Maturity Model (KM3)"
+title: "Has This Organization Earned the Right to Distribute?"
 chapter: 20
 author: "Viquar Khan"
 date: "2026-01-15"

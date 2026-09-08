@@ -25,7 +25,7 @@ September 6, 2026
 
 ---
 
-**Copyright © 2017–2026 by Viquar Khan.**
+**Copyright © 2019–2026 by Viquar Khan.**
 
 Original methods, please cite:
 
@@ -33,7 +33,7 @@ Original methods, please cite:
 - Service Decomposition Workflow
 - Microservices Maturity Assessment (KM3)
 
-First edition: January 2017. Second edition: January 2026. Version 2.1: September 2026.
+First edition: January 2019. Second edition: January 2026. Version 2.1: September 2026.
 
 Repository: https://github.com/vaquarkhan/microservices-recipes-a-free-gitbook
 

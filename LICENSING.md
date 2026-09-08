@@ -11,7 +11,7 @@ This repository uses a **dual license**. Read this file before reusing material.
 
 ## Copyright (clear statement)
 
-**Copyright © 2017-2026 Viquar Khan.**
+**Copyright © 2019-2026 Viquar Khan.**
 
 The author retains copyright in the original expression of this work, including:
 
